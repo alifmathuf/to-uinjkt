@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBT Dashboard</title>
+
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/layout.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <div class="sidebar">
+    <div class="app-title">CBT SYSTEM</div>
+
+    <div class="menu">
+      <a href="dashboard.html"><i data-lucide="layout-dashboard"></i>Dashboard</a>
+      <a href="result.html"><i data-lucide="bar-chart"></i>Result</a>
+      <a href="review.html"><i data-lucide="eye"></i>Review</a>
+      <a href="leaderboard.html"><i data-lucide="trophy"></i>Leaderboard</a>
+      <a href="#"><i data-lucide="log-out"></i>Logout</a>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="topbar">
+      <div>
+        <span class="hamburger" onclick="toggleSidebar()">
+          ☰
+        </span>
+        <span class="app-title-desktop">CBT SYSTEM</span>
+      </div>
+
+      <div class="user-info">
+        <div>
+          <div>Selamat datang,</div>
+          <strong>Admin</strong>
+        </div>
+        <img src="assets/avatar.png">
+      </div>
+    </div>
+
+    <div class="card">
+      Dashboard Content Area
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/layout.js"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>
