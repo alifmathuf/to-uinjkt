@@ -1,0 +1,135 @@
+/* ===================================
+   STUDI KASUS STYLE - TERPISAH DARI PG
+=================================== */
+
+.case-container{
+  width:100%;
+  max-width:1400px;
+  margin:40px auto;
+  padding:40px 60px;
+  background:linear-gradient(145deg,#0f2236,#0b1a2a);
+  border-radius:20px;
+}
+
+/* ===== TOPBAR ===== */
+
+.case-topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-bottom:20px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  margin-bottom:30px;
+}
+
+.case-timer{
+  font-size:20px;
+  font-weight:600;
+  color:#38bdf8;
+}
+
+.case-title{
+  font-size:18px;
+  font-weight:600;
+}
+
+/* ===== CONTENT ===== */
+
+.case-content{
+  margin-bottom:30px;
+}
+
+.case-meta{
+  margin-bottom:15px;
+}
+
+.case-step{
+  font-size:14px;
+  color:#94a3b8;
+}
+
+.case-step-title{
+  font-size:16px;
+  font-weight:600;
+  margin-top:6px;
+}
+
+/* ===== TEXTAREA ===== */
+
+.case-textarea{
+  width:100%;
+  min-height:260px;
+  padding:18px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:#0b1624;
+  color:#ffffff;
+  font-size:14px;
+  line-height:1.7;
+  resize:none;
+}
+
+.case-textarea:focus{
+  outline:none;
+  border-color:#2563eb;
+}
+
+/* ===== WORD COUNTER ===== */
+
+.case-counter{
+  margin-top:10px;
+  text-align:right;
+  font-size:13px;
+  color:#94a3b8;
+}
+
+/* ===== FOOTER BUTTON ===== */
+
+.case-footer{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.case-btn-primary{
+  flex:1;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  background:linear-gradient(135deg,#2563eb,#1d4ed8);
+  color:white;
+  cursor:pointer;
+}
+
+.case-btn-secondary{
+  flex:1;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  background:#334155;
+  color:white;
+  cursor:pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width:768px){
+
+  .case-container{
+    padding:20px;
+  }
+
+  .case-topbar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  .case-footer{
+    flex-direction:column;
+  }
+
+  .case-textarea{
+    min-height:220px;
+  }
+}
