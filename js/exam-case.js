@@ -90,17 +90,17 @@ function updateCounter() {
 
 /* ================= SAVE STEP ================= */
 
-function saveStep() {
+function saveStep(){
 
   const text = document.getElementById("essayInput").value.trim();
+  const words = text === "" ? 0 : text.split(/\s+/).length;
 
-  if (!text) {
-    alert("Jawaban tidak boleh kosong");
+  if(words < 150){
+    alert("Minimal 150 kata!");
     return;
   }
 
   answers[currentStep] = text;
-
   localStorage.setItem("caseAnswers", JSON.stringify(answers));
 
   currentStep++;
@@ -108,6 +108,7 @@ function saveStep() {
 
   renderStep();
 }
+
 
 
 /* ================= FINISH ================= */
