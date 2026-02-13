@@ -86,7 +86,16 @@ function renderQuestion() {
 
   const q = soalUjian[current];
   if (!q) return;
+function updateProgress(){
 
+  const total = soalUjian.length;
+  const percent = ((current+1)/total)*100;
+
+  document.getElementById("progressText").innerText =
+    `${current+1} / ${total}`;
+
+  document.getElementById("progressFill").style.width =
+    percent + "%";
   document.getElementById("examInfo").innerText =
     `${examState.mapel.toUpperCase()} | ${examState.paket}`;
 
@@ -106,16 +115,7 @@ function renderQuestion() {
 }).join("")}
 
   `;
-function updateProgress(){
 
-  const total = soalUjian.length;
-  const percent = ((current+1)/total)*100;
-
-  document.getElementById("progressText").innerText =
-    `${current+1} / ${total}`;
-
-  document.getElementById("progressFill").style.width =
-    percent + "%";
 
    updateProgress();
   updateNumberNav();
