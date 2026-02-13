@@ -5,9 +5,12 @@
 .exam-topbar{
   display:flex;
   justify-content:space-between;
-  margin-bottom:20px;
-  font-weight:600;
+  align-items:center;
+  padding:20px 28px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  margin-bottom:24px;
 }
+
 
 .timer{
   background:var(--danger);
@@ -84,6 +87,9 @@ textarea{
 
 .exam-content{
   margin-bottom:30px;
+  padding:0 28px 28px 28px;
+}
+
 }
 
 .case-meta{
@@ -148,10 +154,13 @@ textarea{
 }
 @media(max-width:768px){
 
-  .exam-container{
-    margin:20px;
-    padding:20px;
-  }
+.exam-container{
+  width:100%;
+  max-width:1400px;   /* lebih lebar */
+  margin:auto;
+  padding:40px 60px;
+}
+
 
   .exam-topbar{
     flex-direction:column;
@@ -161,6 +170,11 @@ textarea{
 
   .exam-footer{
     flex-direction:column;
+  }
+}
+@media (max-width: 768px){
+  .exam-container{
+    padding:20px;
   }
 }
 
