@@ -16,20 +16,48 @@
 
 <div class="exam-container">
 
+  <!-- TOP BAR -->
   <div class="exam-topbar">
-    <div id="examInfo"></div>
-    <div id="timer" class="timer"></div>
+    <div class="exam-timer" id="caseTimer">30:00</div>
+
+    <div class="exam-title">
+      Studi Kasus:
+      <span id="caseTopic"></span>
+    </div>
   </div>
 
-  <div id="caseContainer"></div>
+  <!-- CONTENT -->
+  <div class="exam-content">
 
-  <div style="margin-top:20px;">
-    <button class="btn-primary" onclick="submitCase()">
+    <div class="case-meta">
+      <div id="caseStepInfo"></div>
+      <div id="caseStepTitle"></div>
+    </div>
+
+    <textarea id="essayInput"
+      class="essay-box"
+      placeholder="Tulis jawaban minimal 150 kata...">
+    </textarea>
+
+    <div class="word-counter">
+      <span id="wordCount">0</span> / 150
+    </div>
+
+  </div>
+
+  <!-- FOOTER BUTTON -->
+  <div class="exam-footer">
+    <button class="btn-primary" onclick="saveStep()">
+      Simpan & Lanjut
+    </button>
+
+    <button class="btn-secondary" onclick="finishCase()">
       Submit Jawaban
     </button>
   </div>
 
 </div>
+
 <footer class="footer">
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
