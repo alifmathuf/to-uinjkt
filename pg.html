@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ujian - CBT System</title>
+
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/exam.css">
+</head>
+
+<body>
+
+<div class="exam-container">
+
+  <div class="exam-topbar">
+    <div id="examInfo"></div>
+    <div id="timer" class="timer"></div>
+  </div>
+
+  <div id="questionBox" class="card"></div>
+
+  <div class="exam-nav">
+    <button onclick="prevQuestion()">Prev</button>
+    <button onclick="nextQuestion()">Next</button>
+    <button class="btn-primary" onclick="submitExam()">Submit</button>
+  </div>
+
+  <div id="numberNav" class="number-nav"></div>
+
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/exam-pg.js"></script>
+
+<script>
+Auth.protect();
+</script>
+
+</body>
+</html>
