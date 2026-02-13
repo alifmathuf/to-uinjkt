@@ -6,29 +6,47 @@
 
 .review-container h2{
   margin-bottom:30px;
-}
-
-.review-card{
-  background:var(--bg-card);
-  padding:20px;
-  margin-bottom:20px;
-  border-radius:12px;
-  border:1px solid var(--border-soft);
-}
-
-.review-number{
-  font-weight:600;
-  margin-bottom:10px;
-}
-
-.review-question{
-  margin-bottom:10px;
   color:var(--text-main);
 }
 
-.review-answer{
-  margin-bottom:6px;
+/* ===== TABLE STYLE ===== */
+
+.review-table{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--bg-card);
+  border:1px solid var(--border-soft);
+  border-radius:12px;
+  overflow:hidden;
 }
+
+.review-table thead{
+  background:var(--primary);
+  color:white;
+}
+
+.review-table th{
+  padding:14px;
+  text-align:left;
+  font-weight:600;
+}
+
+.review-table td{
+  padding:14px;
+  border-bottom:1px solid var(--border-soft);
+  vertical-align:top;
+  color:var(--text-main);
+}
+
+.review-table tr:last-child td{
+  border-bottom:none;
+}
+
+.review-table tr:hover{
+  background:rgba(0,0,0,0.02);
+}
+
+/* ===== STATUS ===== */
 
 .correct{
   color:#22c55e;
@@ -40,11 +58,19 @@
   font-weight:600;
 }
 
+/* ===== BUTTON ===== */
+
 .btn-back{
   display:inline-block;
+  margin-top:20px;
   padding:10px 16px;
   background:var(--primary);
   color:white;
   border-radius:8px;
   text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-back:hover{
+  opacity:0.9;
 }
