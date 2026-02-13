@@ -1,56 +1,50 @@
-document.addEventListener("DOMContentLoaded",()=>{
+/* =================================
+   REVIEW PAGE - KHUSUS PG
+================================= */
 
-  const examState = JSON.parse(localStorage.getItem("examState"));
-  const answers = JSON.parse(localStorage.getItem("pgAnswers"));
+const soal = JSON.parse(localStorage.getItem("reviewSoal")) || [];
+const jawaban = JSON.parse(localStorage.getItem("reviewJawaban")) || [];
 
-  if(!examState || !answers){
-    document.getElementById("reviewContainer").innerHTML=
-      "<p>Tidak ada data ujian.</p>";
-    return;
-  }
+const tbody = document.getElementById("reviewBody");
 
-  fetch(`./paket/${examState.paket}.json`)
-  .then(res=>res.json())
-  .then(data=>{
+if (!tbody) {
+  console.error("Element reviewBody tidak ditemukan.");
+}
 
-    const soal = data.slice(0,50);
-    const container =
-      document.getElementById("reviewContainer");
+if (soal.length === 0) {
 
-    soal.forEach((q,index)=>{
+  tbody.innerHTML = `
+    <tr>
+      <td colspan="4" style="text-align:center;">
+        Data review tidak ditemukan.
+      </td>
+    </tr>
+  `;
 
-      const card=document.createElement("div");
-      card.className="review-card";
+} else {
 
-      let optionsHTML="";
+  soal.forEach((s, i) => {
 
-      q.options.forEach((opt,i)=>{
+    const userIndex = jawaban[i];
+    const correctIndex = s.answer;
 
-        let className="option";
+    const userAnswer =
+      userIndex !== undefined && userIndex !== null
+      ? s.options[userIndex]
+      : "-";
 
-        if(i===q.answer){
-          className+=" correct";
-        }
+    const status =
+      userIndex === correctIndex
+      ? `<span class="status-benar">Benar</span>`
+      : `<span class="status-salah">Salah</span>`;
 
-        if(answers[index]===i && i!==q.answer){
-          className+=" wrong";
-        }
-
-        optionsHTML+=
-          `<div class="${className}">
-            ${opt}
-          </div>`;
-      });
-
-      card.innerHTML=`
-        <h4>Soal ${index+1}</h4>
-        <p>${q.q}</p>
-        ${optionsHTML}
-      `;
-
-      container.appendChild(card);
-    });
-
+    tbody.innerHTML += `
+      <tr>
+        <td>${i + 1}</td>
+        <td>${s.q}</td>
+        <td>${userAnswer}</td>
+        <td>${status}</td>
+      </tr>
+    `;
   });
-
-});
+}
