@@ -10,7 +10,7 @@ let soalUjian = [];
 let jawaban = [];
 let current = 0;
 
-const duration = 120 * 60; // 120 menit
+const duration = 120 * 60;
 let endTime;
 let timerInterval;
 
@@ -27,7 +27,6 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
     soalData = shuffle(data);
     soalUjian = soalData.slice(0, 50);
 
-    // restore jawaban jika reload
     const savedAnswers = localStorage.getItem("pgAnswers");
     jawaban = savedAnswers
       ? JSON.parse(savedAnswers)
@@ -82,17 +81,21 @@ function startTimer() {
 
 /* ================= RENDER QUESTION ================= */
 
-/* ================= RENDER QUESTION ================= */
-
 function renderQuestion() {
 
   const q = soalUjian[current];
   if (!q) return;
 
-  document.getElementById("examInfo").innerText =
-    `${examState.mapel.toUpperCase()} | ${examState.paket}`;
+  const examInfo = document.getElementById("examInfo");
+  if (examInfo) {
+    examInfo.innerText =
+      `${examState.mapel.toUpperCase()} | ${examState.paket}`;
+  }
 
-  document.getElementById("questionBox").innerHTML = `
+  const questionBox = document.getElementById("questionBox");
+  if (!questionBox) return;
+
+  questionBox.innerHTML = `
     <h3>Soal ${current + 1}</h3>
     <p>${q.q}</p>
     ${q.o.map((opt, i) => {
@@ -108,10 +111,15 @@ function renderQuestion() {
     }).join("")}
   `;
 
-  updateProgress();      // ✅ progress update
-  updateNumberNav();     // ✅ nav update
+  updateProgress();
+  updateNumberNav();
+  updateFinishButton();
+}
 
-   function updateProgress(){
+
+/* ================= PROGRESS ================= */
+
+function updateProgress(){
 
   const total = soalUjian.length;
   const percent = ((current + 1) / total) * 100;
@@ -125,20 +133,6 @@ function renderQuestion() {
 
   if (progressFill) {
     progressFill.style.width = percent + "%";
-  }
-}
-
-  // tombol submit aktif hanya di soal terakhir
-  const finishBtn = document.getElementById("finishBtn");
-  if (finishBtn) {
-    finishBtn.disabled = current !== soalUjian.length - 1;
-  }
-}
-
-  // 🔥 FIX tombol finish
-  const finishBtn = document.getElementById("finishBtn");
-  if (finishBtn) {
-    finishBtn.disabled = current !== soalUjian.length - 1;
   }
 }
 
@@ -205,6 +199,15 @@ function updateNumberNav() {
 }
 
 
+/* ================= FINISH BUTTON ================= */
+
+function updateFinishButton(){
+  const finishBtn = document.getElementById("finishBtn");
+  if (!finishBtn) return;
+  finishBtn.disabled = current !== soalUjian.length - 1;
+}
+
+
 /* ================= SUBMIT ================= */
 
 function submitExam(auto = false) {
@@ -224,14 +227,11 @@ function submitExam(auto = false) {
     }
   });
 
-  /* ===== SIMPAN UNTUK RESULT ===== */
   localStorage.setItem("pgScore", score);
-
-  /* ===== SIMPAN UNTUK REVIEW ===== */
+  localStorage.setItem("pgCorrect", score);
   localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
   localStorage.setItem("reviewJawaban", JSON.stringify(jawaban));
 
-  /* ===== CLEAN ===== */
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
 
