@@ -1,5 +1,5 @@
 /* ===============================
-   PG EXAM ENGINE - FINAL CLEAN
+   PG EXAM ENGINE - FINAL CLEAN PRODUCTION
 ================================ */
 
 const examState = JSON.parse(localStorage.getItem("examState"));
@@ -9,7 +9,8 @@ let soalData = [];
 let soalUjian = [];
 let jawaban = [];
 let current = 0;
-let duration = 120 * 60; // 120 menit
+
+const duration = 120 * 60; // 120 menit
 let endTime;
 let timerInterval;
 
@@ -26,14 +27,15 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
     soalData = shuffle(data);
     soalUjian = soalData.slice(0, 50);
 
+    // restore jawaban jika reload
     const savedAnswers = localStorage.getItem("pgAnswers");
     jawaban = savedAnswers
       ? JSON.parse(savedAnswers)
       : new Array(soalUjian.length).fill(null);
 
     startTimer();
-    renderQuestion();
     renderNumberNav();
+    renderQuestion();
     enterFullscreen();
   })
   .catch(err => {
@@ -61,7 +63,7 @@ function startTimer() {
 
     if (remaining <= 0) {
       clearInterval(timerInterval);
-      submitExam();
+      submitExam(true);
       return;
     }
 
@@ -92,7 +94,7 @@ function renderQuestion() {
     <h3>Soal ${current + 1}</h3>
     <p>${q.q}</p>
     ${q.o.map((opt, i) => `
-      <label style="display:block;margin:8px 0;cursor:pointer;">
+      <label style="display:block;margin:10px 0;cursor:pointer;">
         <input type="radio" name="jawab"
         ${jawaban[current] === i ? "checked" : ""}
         onchange="saveAnswer(${i})">
@@ -102,20 +104,21 @@ function renderQuestion() {
   `;
 
   updateNumberNav();
-}
-const finishBtn = document.getElementById("finishBtn");
 
-if(current === soalUjian.length - 1){
-  finishBtn.disabled = false;
-}else{
-  finishBtn.disabled = true;
+  // 🔥 FIX tombol finish
+  const finishBtn = document.getElementById("finishBtn");
+  if (finishBtn) {
+    finishBtn.disabled = current !== soalUjian.length - 1;
+  }
 }
+
 
 /* ================= SAVE ANSWER ================= */
 
 function saveAnswer(i) {
   jawaban[current] = i;
   localStorage.setItem("pgAnswers", JSON.stringify(jawaban));
+  updateNumberNav();
 }
 
 
@@ -141,6 +144,8 @@ function prevQuestion() {
 function renderNumberNav() {
 
   const nav = document.getElementById("numberNav");
+  if (!nav) return;
+
   nav.innerHTML = "";
 
   for (let i = 0; i < soalUjian.length; i++) {
@@ -155,25 +160,36 @@ function renderNumberNav() {
 
     nav.appendChild(btn);
   }
+
+  updateNumberNav();
 }
 
 function updateNumberNav() {
+
   const buttons = document.querySelectorAll("#numberNav button");
 
   buttons.forEach((btn, i) => {
     btn.classList.toggle("answered", jawaban[i] !== null);
+    btn.classList.toggle("active", i === current);
   });
 }
 
 
 /* ================= SUBMIT ================= */
 
-function submitExam() {
+function submitExam(auto = false) {
+
+  if (!auto) {
+    const confirmSubmit = confirm("Yakin ingin menyelesaikan ujian?");
+    if (!confirmSubmit) return;
+  }
+
+  clearInterval(timerInterval);
 
   let score = 0;
 
   soalUjian.forEach((s, i) => {
-    if (jawaban[i] === s.a) { // pakai properti JSON "a"
+    if (jawaban[i] === s.a) {
       score++;
     }
   });
@@ -185,7 +201,7 @@ function submitExam() {
   localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
   localStorage.setItem("reviewJawaban", JSON.stringify(jawaban));
 
-  /* ===== CLEAN TIMER ===== */
+  /* ===== CLEAN ===== */
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
 
@@ -210,7 +226,7 @@ function enterFullscreen() {
 
 document.addEventListener("fullscreenchange", () => {
   if (!document.fullscreenElement) {
-    submitExam();
+    submitExam(true);
   }
 });
 
