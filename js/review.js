@@ -1,50 +1,38 @@
-/* =================================
-   REVIEW PAGE - KHUSUS PG
-================================= */
+const soal = JSON.parse(localStorage.getItem("pgSoal"));
+const jawaban = JSON.parse(localStorage.getItem("pgAnswers"));
 
-const soal = JSON.parse(localStorage.getItem("reviewSoal")) || [];
-const jawaban = JSON.parse(localStorage.getItem("reviewJawaban")) || [];
+if(!soal || !jawaban){
+  document.getElementById("reviewTable").innerHTML =
+    "<p>Data tidak ditemukan.</p>";
+}else{
 
-const tbody = document.getElementById("reviewBody");
+  let html = "";
 
-if (!tbody) {
-  console.error("Element reviewBody tidak ditemukan.");
-}
+  soal.forEach((s,i)=>{
 
-if (soal.length === 0) {
+    const benar = jawaban[i] === s.a;
 
-  tbody.innerHTML = `
-    <tr>
-      <td colspan="4" style="text-align:center;">
-        Data review tidak ditemukan.
-      </td>
-    </tr>
-  `;
+    html += `
+      <div class="review-card">
+        <div class="review-number">
+          Soal ${i+1}
+        </div>
 
-} else {
+        <div class="review-question">
+          ${s.q}
+        </div>
 
-  soal.forEach((s, i) => {
+        <div class="review-answer">
+          Jawaban Anda: 
+          ${jawaban[i] !== null ? s.o[jawaban[i]] : "-"}
+        </div>
 
-    const userIndex = jawaban[i];
-    const correctIndex = s.answer;
-
-    const userAnswer =
-      userIndex !== undefined && userIndex !== null
-      ? s.options[userIndex]
-      : "-";
-
-    const status =
-      userIndex === correctIndex
-      ? `<span class="status-benar">Benar</span>`
-      : `<span class="status-salah">Salah</span>`;
-
-    tbody.innerHTML += `
-      <tr>
-        <td>${i + 1}</td>
-        <td>${s.q}</td>
-        <td>${userAnswer}</td>
-        <td>${status}</td>
-      </tr>
+        <div class="${benar ? 'correct' : 'wrong'}">
+          ${benar ? 'Benar' : 'Salah'}
+        </div>
+      </div>
     `;
   });
+
+  document.getElementById("reviewTable").innerHTML = html;
 }
