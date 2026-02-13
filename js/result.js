@@ -79,36 +79,7 @@ function exportPDF(){
   );
 }
 
-function renderChart(score){
 
-  const ctx = document.getElementById("scoreChart");
-
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: ['Benar', 'Salah'],
-      datasets: [{
-        data: [score, 50-score],
-        backgroundColor: [
-          '#22d3ee',
-          '#334155'
-        ],
-        borderWidth:0
-      }]
-    },
-    options:{
-      cutout:'70%',
-      plugins:{
-        legend:{
-          labels:{
-            color:'#cbd5e1',
-            font:{size:12}
-          }
-        }
-      }
-    }
-  });
-}
 plugins: [{
   id:'centerText',
   beforeDraw(chart){
