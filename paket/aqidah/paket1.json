@@ -1,1 +1,556 @@
-paket
+
+[
+  {
+    "q": "Disajikan deskripsi materi tentang hakikat Akidah Islam dan posisi Akidah dalam ajaran Islam.\n\nAkidah Islam merupakan keyakinan dasar seorang muslim terhadap Allah SWT yang menjadi fondasi utama dalam seluruh ajaran Islam. Akidah menempati posisi paling mendasar karena menjadi landasan bagi pelaksanaan ibadah dan pembentukan akhlak mulia dalam kehidupan sehari-hari.\n\nBerdasarkan deskripsi tersebut, rumusan tujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik dapat menyebutkan pengertian dan ruang lingkup Akidah Islam secara benar.",
+      "Peserta didik dapat menjelaskan kedudukan Akidah dalam ajaran Islam secara sistematis.",
+      "Peserta didik dapat menguraikan hubungan antara Akidah, ibadah, dan akhlak dalam Islam.",
+      "Peserta didik menunjukkan sikap beriman dan bertakwa kepada Allah SWT yang tercermin dalam perilaku sehari-hari sesuai ajaran Islam.",
+      "Peserta didik mampu menghafal dalil naqli tentang Akidah Islam."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Disajikan pernyataan materi tentang konsep dasar Asmaul Husna.\n\nAsmaul Husna merupakan nama-nama Allah SWT yang indah dan mulia yang mengandung makna dan sifat-sifat kesempurnaan Allah. Pemahaman terhadap Asmaul Husna tidak hanya terbatas pada hafalan, tetapi juga menuntut kemampuan berpikir kritis.\n\nRumusan tujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik dapat menyebutkan jumlah Asmaul Husna secara tepat.",
+      "Peserta didik dapat menghafal seluruh Asmaul Husna dengan lancar.",
+      "Peserta didik dapat menjelaskan pengertian Asmaul Husna secara sederhana.",
+      "Peserta didik dapat menganalisis makna beberapa Asmaul Husna serta mengaitkannya dengan perilaku manusia dalam kehidupan sehari-hari.",
+      "Peserta didik dapat menuliskan Asmaul Husna sesuai urutan."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Disajikan pernyataan materi tentang hakikat akhlak Islam dan kedudukan akhlak dalam ajaran Islam.\n\nAkhlak Islam mencerminkan nilai-nilai ajaran Islam dalam kehidupan sehari-hari dan berperan penting dalam membangun kehidupan sosial yang harmonis.\n\nRumusan tujuan pembelajaran ranah keterampilan yang paling tepat untuk menumbuhkan semangat gotong royong adalah …",
+    "o": [
+      "Peserta didik menunjukkan sikap menghargai dan menerima keberagaman aliran pemikiran dalam Islam.",
+      "Peserta didik dapat menyebutkan contoh-contoh akhlak terpuji dalam Islam.",
+      "Peserta didik dapat membedakan akhlak terpuji dan akhlak tercela secara lisan.",
+      "Peserta didik dapat menganalisis makna Asmaul Husna dan mengaitkannya dengan perilaku manusia.",
+      "Peserta didik dapat mempraktikkan sikap saling membantu dan bekerja sama dalam kegiatan kelompok sebagai wujud akhlak Islam."
+    ],
+    "a": 4
+  },
+  {
+    "q": "Disajikan deskripsi kasus pembelajaran Ilmu Kalam tentang berbagai aliran pemikiran dalam Islam.\n\nMateri disampaikan untuk menumbuhkan sikap saling menghargai terhadap keberagaman pemikiran dan tradisi.\n\nRumusan indikator tujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik menunjukkan sikap menghargai dan menerima keberagaman aliran pemikiran dalam Islam sebagai bagian dari tradisi keilmuan.",
+      "Peserta didik dapat menyebutkan nama-nama aliran dalam ilmu kalam.",
+      "Peserta didik mampu menjelaskan latar belakang sejarah munculnya aliran ilmu kalam.",
+      "Peserta didik dapat membandingkan perbedaan ajaran antaraliran.",
+      "Peserta didik mampu menghafal tokoh-tokoh utama aliran ilmu kalam."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Disajikan materi tentang makna dan objek pembahasan tasawuf beserta dalilnya.\n\nTasawuf tidak hanya dipahami secara tekstual, tetapi juga kontekstual agar dapat diterapkan secara kreatif dalam kehidupan modern.\n\nRumusan indikator tujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik dapat menyebutkan pengertian tasawuf dan objek pembahasannya.",
+      "Peserta didik dapat menghafal dalil naqli tentang tasawuf.",
+      "Peserta didik dapat menganalisis makna objek pembahasan tasawuf beserta dalilnya serta mengaitkannya dengan kehidupan masa kini secara kreatif.",
+      "Peserta didik dapat menjelaskan sejarah perkembangan tasawuf.",
+      "Peserta didik dapat menyebutkan tokoh-tokoh tasawuf."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru merancang pembelajaran Akidah Islam dengan pendekatan Project Based Learning (PBL).\n\nPeserta didik diminta menganalisis materi Allah dan Kemahaesaan Allah sesuai karakteristik peserta didik.\n\nTujuan pembelajaran yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyebutkan nama-nama Allah.",
+      "Peserta didik mampu membuat proyek mini tentang konsep tauhid sesuai tahap perkembangan kognitif.",
+      "Peserta didik mampu menghafalkan dalil tentang keesaan Allah.",
+      "Peserta didik mampu membandingkan konsep ketuhanan berbagai agama.",
+      "Peserta didik mampu menulis makalah akademik tentang tauhid."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pembelajaran Asmaul Husna menggunakan pendekatan Project Based Learning (PjBL).\n\nGuru menekankan struktur keilmuan dan karakteristik peserta didik.\n\nTujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Perbedaan akhlak mahmudah dan akhlak mazmumah.",
+      "Peserta didik dapat membuat proyek kreatif tentang makna dan sifat Asmaul Husna yang relevan dengan kehidupan.",
+      "Peserta didik dapat berdebat tentang pentingnya Asmaul Husna.",
+      "Peserta didik mampu membandingkan konsep ketuhanan berbagai agama.",
+      "Peserta didik dapat membuat ringkasan materi Asmaul Husna."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam evaluasi pembelajaran akhlak mahmudah dan akhlak mazmumah dengan pendekatan Discovery Based Learning (DBL).\n\nGuru ingin mengetahui pemahaman peserta didik terhadap konsep akhlak dalam kehidupan nyata.\n\nMateri ajar yang paling tepat adalah …",
+    "o": [
+      "Perbedaan mendasar antara akhlak mahmudah dan akhlak mazmumah.",
+      "Sejarah perkembangan akhlak dalam Islam.",
+      "Pengaruh budaya asing terhadap akhlak Islam.",
+      "Metode menghafalkan istilah akhlak mahmudah.",
+      "Definisi literal akhlak menurut bahasa Arab."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang mahasiswa merancang materi ajar aliran-aliran Ilmu Kalam dengan pendekatan TPACK.\n\nAlur materi ajar yang paling tepat adalah …",
+    "o": [
+      "Menghafalkan nama aliran tanpa pemahaman.",
+      "Menyusun peta konsep karakteristik utama masing-masing aliran Ilmu Kalam menggunakan media digital.",
+      "Membuat daftar aliran secara alfabetis.",
+      "Mengkritisi semua aliran selain yang dianut.",
+      "Menyusun soal pilihan ganda tanpa kajian."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pembelajaran aliran tasawuf menggunakan pendekatan Discovery Learning.\n\nGuru meminta mahasiswa menelusuri sejarah kemunculan tasawuf dan faktor yang melatarbelakanginya.\n\nAlur materi ajar yang paling tepat adalah …",
+    "o": [
+      "Membandingkan tokoh tasawuf dan non-Islam.",
+      "Meneliti secara logis sebab-sebab kemunculan tasawuf dan perkembangannya di dunia Islam.",
+      "Menyusun daftar tokoh tanpa kajian sejarah.",
+      "Menghafal tahun penting sejarah tasawuf.",
+      "Menghafal nama tokoh tasawuf."
+    ],
+    "a": 1
+  },
+  {
+  "q": "Disajikan materi tentang iman kepada malaikat Allah beserta tugas-tugasnya.\n\nGuru menekankan bahwa keimanan kepada malaikat tidak hanya sebatas pengetahuan, tetapi juga berpengaruh pada sikap dan perilaku.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan nama-nama malaikat Allah.",
+    "Peserta didik mampu menjelaskan tugas-tugas malaikat Allah.",
+    "Peserta didik menunjukkan sikap berhati-hati dalam bertindak karena meyakini adanya malaikat pencatat amal.",
+    "Peserta didik mampu menghafal dalil naqli tentang malaikat.",
+    "Peserta didik mampu menuliskan pengertian iman kepada malaikat."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang iman kepada kitab-kitab Allah.\n\nPeserta didik diminta memahami hubungan antara kitab-kitab Allah dan kehidupan manusia.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal nama-nama kitab Allah.",
+    "Peserta didik mampu menyebutkan nabi penerima kitab Allah.",
+    "Peserta didik mampu menganalisis fungsi kitab-kitab Allah sebagai pedoman hidup manusia.",
+    "Peserta didik mampu menuliskan dalil tentang kitab Allah.",
+    "Peserta didik mampu menjelaskan pengertian kitab Allah."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang iman kepada rasul Allah dan sifat-sifat wajib bagi rasul.\n\nPeserta didik diminta meneladani sifat-sifat tersebut dalam kehidupan sehari-hari.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan jumlah rasul Allah.",
+    "Peserta didik mampu menjelaskan sifat-sifat wajib rasul.",
+    "Peserta didik menunjukkan sikap jujur, amanah, dan bertanggung jawab sebagai teladan dari sifat rasul.",
+    "Peserta didik mampu menghafal nama-nama rasul ulul azmi.",
+    "Peserta didik mampu menuliskan dalil tentang rasul."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang iman kepada hari akhir beserta peristiwa-peristiwa yang mengiringinya.\n\nPeserta didik diminta mengaitkan materi tersebut dengan motivasi berbuat kebaikan.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal tanda-tanda kiamat.",
+    "Peserta didik mampu menyebutkan peristiwa hari akhir.",
+    "Peserta didik mampu menganalisis pengaruh iman kepada hari akhir terhadap perilaku manusia.",
+    "Peserta didik mampu menuliskan dalil tentang hari akhir.",
+    "Peserta didik mampu menjelaskan pengertian hari akhir."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang iman kepada qada dan qadar.\n\nPeserta didik diarahkan untuk bersikap seimbang antara ikhtiar dan tawakal.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian qada dan qadar.",
+    "Peserta didik mampu menghafal dalil tentang qada dan qadar.",
+    "Peserta didik menunjukkan sikap optimis, sabar, dan tawakal dalam menghadapi ketentuan Allah.",
+    "Peserta didik mampu menyebutkan contoh qada dan qadar.",
+    "Peserta didik mampu menuliskan pengertian iman kepada qada dan qadar."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang akhlak mahmudah berupa jujur.\n\nPeserta didik diminta mengaitkan nilai kejujuran dengan kehidupan di sekolah.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian jujur.",
+    "Peserta didik mampu menghafal dalil tentang kejujuran.",
+    "Peserta didik mampu mempraktikkan perilaku jujur dalam perkataan dan perbuatan di lingkungan sekolah.",
+    "Peserta didik mampu menuliskan contoh perilaku jujur.",
+    "Peserta didik mampu menyebutkan macam-macam jujur."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang akhlak mazmumah berupa iri dan dengki.\n\nPeserta didik diminta memahami dampak negatif dari perilaku tersebut.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal pengertian iri dan dengki.",
+    "Peserta didik mampu menyebutkan contoh iri dan dengki.",
+    "Peserta didik mampu menganalisis dampak negatif perilaku iri dan dengki dalam kehidupan sosial.",
+    "Peserta didik mampu menuliskan dalil tentang larangan iri.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan akhlak."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang adab kepada guru dalam Islam.\n\nPeserta didik diminta menerapkan adab tersebut dalam proses pembelajaran.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab kepada guru.",
+    "Peserta didik mampu menjelaskan pengertian adab.",
+    "Peserta didik menunjukkan sikap hormat, sopan, dan taat kepada guru dalam kegiatan belajar.",
+    "Peserta didik mampu menghafal dalil tentang adab kepada guru.",
+    "Peserta didik mampu menuliskan contoh adab kepada guru."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang adab kepada teman sebaya.\n\nPeserta didik diminta menyelesaikan konflik sederhana secara santun.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab kepada teman.",
+    "Peserta didik mampu menjelaskan pengertian adab pergaulan.",
+    "Peserta didik mampu menyelesaikan konflik dengan teman secara santun dan damai sesuai ajaran Islam.",
+    "Peserta didik mampu menghafal dalil tentang persaudaraan.",
+    "Peserta didik mampu menuliskan contoh adab kepada teman."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang pembiasaan akhlak terpuji dalam kehidupan sehari-hari.\n\nPeserta didik diminta merefleksikan sikap yang sudah dan belum mereka terapkan.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal macam-macam akhlak terpuji.",
+    "Peserta didik mampu menjelaskan pengertian akhlak terpuji.",
+    "Peserta didik menunjukkan komitmen untuk membiasakan akhlak terpuji dalam kehidupan sehari-hari.",
+    "Peserta didik mampu menuliskan contoh akhlak terpuji.",
+    "Peserta didik mampu menyebutkan dalil tentang akhlak terpuji."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang iman kepada Allah SWT melalui pengenalan sifat-sifat wajib, mustahil, dan jaiz bagi Allah.\n\nPeserta didik diminta mengaitkan pemahaman tersebut dengan penguatan keimanan.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal sifat-sifat Allah SWT.",
+    "Peserta didik mampu menyebutkan pengertian sifat wajib, mustahil, dan jaiz bagi Allah.",
+    "Peserta didik mampu menganalisis makna sifat-sifat Allah SWT serta implikasinya terhadap keimanan seorang muslim.",
+    "Peserta didik mampu menuliskan dalil tentang sifat Allah SWT.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan sifat Allah."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang akhlak terpuji berupa amanah.\n\nPeserta didik diminta mengaitkan nilai amanah dengan tugas dan tanggung jawab di sekolah.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian amanah.",
+    "Peserta didik mampu menghafal dalil tentang amanah.",
+    "Peserta didik menunjukkan sikap bertanggung jawab dan dapat dipercaya dalam melaksanakan tugas di sekolah.",
+    "Peserta didik mampu menuliskan contoh perilaku amanah.",
+    "Peserta didik mampu menyebutkan macam-macam amanah."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang akhlak mazmumah berupa sombong (takabbur).\n\nPeserta didik diminta memahami dampak negatif perilaku tersebut dalam kehidupan sosial.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal pengertian takabbur.",
+    "Peserta didik mampu menyebutkan contoh perilaku sombong.",
+    "Peserta didik mampu menganalisis dampak negatif perilaku sombong terhadap diri sendiri dan orang lain.",
+    "Peserta didik mampu menuliskan dalil tentang larangan sombong.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan akhlak."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang adab kepada orang tua dalam Islam.\n\nPeserta didik diminta mengaitkan materi dengan sikap mereka di rumah.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab kepada orang tua.",
+    "Peserta didik mampu menjelaskan pengertian birrul walidain.",
+    "Peserta didik menunjukkan sikap hormat, patuh, dan berbakti kepada orang tua dalam kehidupan sehari-hari.",
+    "Peserta didik mampu menghafal dalil tentang adab kepada orang tua.",
+    "Peserta didik mampu menuliskan contoh adab kepada orang tua."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang iman kepada malaikat Allah dengan penekanan pada tugas Malaikat Raqib dan Atid.\n\nPeserta didik diminta mengaitkan keimanan tersebut dengan perilaku sehari-hari.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan tugas Malaikat Raqib dan Atid.",
+    "Peserta didik mampu menghafal dalil tentang malaikat.",
+    "Peserta didik menunjukkan sikap berhati-hati dalam bertindak karena meyakini setiap perbuatan dicatat oleh malaikat.",
+    "Peserta didik mampu menuliskan pengertian iman kepada malaikat.",
+    "Peserta didik mampu menjelaskan jumlah malaikat yang wajib diketahui."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang adab berpakaian dalam Islam.\n\nPeserta didik diminta mengaitkan materi tersebut dengan aturan berpakaian di sekolah.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal dalil tentang berpakaian.",
+    "Peserta didik mampu menyebutkan jenis-jenis pakaian muslim.",
+    "Peserta didik mampu menganalisis prinsip adab berpakaian dalam Islam sesuai syariat.",
+    "Peserta didik mampu menuliskan contoh pakaian Islami.",
+    "Peserta didik mampu menjelaskan sejarah busana muslim."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang akhlak terpuji berupa rendah hati (tawadhu’).\n\nPeserta didik diminta menerapkan nilai tersebut dalam pergaulan.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian tawadhu’.",
+    "Peserta didik mampu menghafal dalil tentang tawadhu’.",
+    "Peserta didik mampu mempraktikkan sikap rendah hati dalam berinteraksi dengan guru dan teman.",
+    "Peserta didik mampu menuliskan contoh perilaku tawadhu’.",
+    "Peserta didik mampu menyebutkan macam-macam tawadhu’."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang akhlak mazmumah berupa hasad (dengki).\n\nPeserta didik diminta memahami akibat buruk dari perilaku tersebut.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal pengertian hasad.",
+    "Peserta didik mampu menyebutkan contoh perilaku hasad.",
+    "Peserta didik mampu menganalisis dampak negatif hasad terhadap kehidupan sosial.",
+    "Peserta didik mampu menuliskan dalil tentang larangan hasad.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan akhlak."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang adab berbicara dalam Islam.\n\nPeserta didik diminta mengaitkan materi dengan komunikasi sehari-hari.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab berbicara.",
+    "Peserta didik mampu menjelaskan pengertian adab berbicara.",
+    "Peserta didik menunjukkan sikap santun dan menjaga lisan dalam berbicara sehari-hari.",
+    "Peserta didik mampu menghafal dalil tentang adab berbicara.",
+    "Peserta didik mampu menuliskan contoh adab berbicara."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang pembiasaan akhlak mulia dalam kehidupan bermasyarakat.\n\nPeserta didik diminta merancang tindakan nyata sesuai nilai Islam.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal macam-macam akhlak mulia.",
+    "Peserta didik mampu menjelaskan pengertian akhlak mulia.",
+    "Peserta didik mampu merancang dan melaksanakan tindakan nyata pembiasaan akhlak mulia di lingkungan masyarakat.",
+    "Peserta didik mampu menuliskan contoh akhlak mulia.",
+    "Peserta didik mampu menyebutkan dalil tentang akhlak mulia."
+  ],
+  "a": 2
+},
+
+  {
+  "q": "Disajikan materi tentang iman kepada kitab-kitab Allah dengan penekanan pada Al-Qur’an sebagai kitab terakhir.\n\nPeserta didik diminta mengaitkan fungsi Al-Qur’an dengan kehidupan modern.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal nama-nama kitab Allah.",
+    "Peserta didik mampu menyebutkan nabi penerima kitab Allah.",
+    "Peserta didik mampu menganalisis fungsi Al-Qur’an sebagai pedoman hidup umat Islam sepanjang zaman.",
+    "Peserta didik mampu menuliskan dalil tentang kitab Allah.",
+    "Peserta didik mampu menjelaskan pengertian iman kepada kitab."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang akhlak terpuji berupa sabar.\n\nPeserta didik diminta mengaitkan sikap sabar dengan situasi sulit yang mereka hadapi.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian sabar.",
+    "Peserta didik mampu menghafal dalil tentang sabar.",
+    "Peserta didik menunjukkan sikap sabar dalam menghadapi ujian dan kesulitan sehari-hari.",
+    "Peserta didik mampu menuliskan contoh perilaku sabar.",
+    "Peserta didik mampu menyebutkan macam-macam sabar."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang akhlak mazmumah berupa dusta.\n\nPeserta didik diminta memahami akibat perilaku dusta dalam kehidupan bermasyarakat.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal pengertian dusta.",
+    "Peserta didik mampu menyebutkan contoh perilaku dusta.",
+    "Peserta didik mampu menganalisis dampak negatif perilaku dusta terhadap kepercayaan dan hubungan sosial.",
+    "Peserta didik mampu menuliskan dalil tentang larangan dusta.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan akhlak."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang adab bertetangga dalam Islam.\n\nPeserta didik diminta mengaitkan materi dengan kehidupan di lingkungan tempat tinggal.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab bertetangga.",
+    "Peserta didik mampu menjelaskan pengertian bertetangga.",
+    "Peserta didik menunjukkan sikap saling menghormati dan membantu antar tetangga dalam kehidupan sehari-hari.",
+    "Peserta didik mampu menghafal dalil tentang adab bertetangga.",
+    "Peserta didik mampu menuliskan contoh adab bertetangga."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang iman kepada rasul Allah dengan penekanan pada keteladanan Rasulullah saw.\n\nPeserta didik diminta meneladani akhlak Rasulullah dalam kehidupan sehari-hari.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan nama-nama rasul Allah.",
+    "Peserta didik mampu menjelaskan sifat-sifat rasul.",
+    "Peserta didik menunjukkan sikap meneladani akhlak Rasulullah saw. dalam perilaku sehari-hari.",
+    "Peserta didik mampu menghafal dalil tentang rasul.",
+    "Peserta didik mampu menuliskan sejarah singkat rasul."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang adab makan dan minum dalam Islam.\n\nPeserta didik diminta mengaitkan materi dengan kebiasaan sehari-hari.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian adab makan dan minum.",
+    "Peserta didik mampu menghafal dalil tentang adab makan dan minum.",
+    "Peserta didik mampu mempraktikkan adab makan dan minum sesuai ajaran Islam.",
+    "Peserta didik mampu menuliskan contoh adab makan dan minum.",
+    "Peserta didik mampu menyebutkan macam-macam adab makan dan minum."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang akhlak terpuji berupa syukur.\n\nPeserta didik diminta mengaitkan sikap syukur dengan nikmat yang mereka terima.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian syukur.",
+    "Peserta didik mampu menghafal dalil tentang syukur.",
+    "Peserta didik menunjukkan sikap bersyukur melalui ucapan dan perbuatan dalam kehidupan sehari-hari.",
+    "Peserta didik mampu menuliskan contoh perilaku syukur.",
+    "Peserta didik mampu menyebutkan macam-macam syukur."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang akhlak mazmumah berupa riya’.\n\nPeserta didik diminta memahami bahaya riya’ dalam beramal.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal pengertian riya’.",
+    "Peserta didik mampu menyebutkan contoh perilaku riya’.",
+    "Peserta didik mampu menganalisis dampak negatif riya’ terhadap keikhlasan dan pahala amal.",
+    "Peserta didik mampu menuliskan dalil tentang larangan riya’.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan riya’."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang adab bergaul dalam masyarakat majemuk.\n\nPeserta didik diminta mengaitkan materi dengan kehidupan bermasyarakat di Indonesia.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab bergaul.",
+    "Peserta didik mampu menjelaskan pengertian toleransi.",
+    "Peserta didik menunjukkan sikap toleran, saling menghormati, dan hidup rukun dalam masyarakat majemuk.",
+    "Peserta didik mampu menghafal dalil tentang toleransi.",
+    "Peserta didik mampu menuliskan contoh adab bergaul."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang pembiasaan akhlak mulia dalam kehidupan berbangsa dan bernegara.\n\nPeserta didik diminta merancang sikap positif sebagai warga negara.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal macam-macam akhlak mulia.",
+    "Peserta didik mampu menjelaskan pengertian akhlak mulia.",
+    "Peserta didik mampu merancang dan menerapkan sikap akhlak mulia dalam kehidupan berbangsa dan bernegara.",
+    "Peserta didik mampu menuliskan contoh akhlak mulia.",
+    "Peserta didik mampu menyebutkan dalil tentang akhlak mulia."
+  ],
+  "a": 2
+
+},
+  {
+  "q": "Disajikan materi tentang iman kepada hari akhir dengan penekanan pada kehidupan setelah mati.\n\nPeserta didik diminta mengaitkan keimanan tersebut dengan perilaku sehari-hari.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan pengertian hari akhir.",
+    "Peserta didik mampu menghafal dalil tentang hari akhir.",
+    "Peserta didik menunjukkan sikap berhati-hati dalam bertindak karena meyakini adanya pertanggungjawaban di akhirat.",
+    "Peserta didik mampu menuliskan tanda-tanda hari akhir.",
+    "Peserta didik mampu menjelaskan tahapan kehidupan setelah mati."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang akhlak terpuji berupa jujur.\n\nPeserta didik diminta mengaitkan sikap jujur dengan kehidupan di sekolah.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian jujur.",
+    "Peserta didik mampu menghafal dalil tentang jujur.",
+    "Peserta didik menunjukkan sikap jujur dalam perkataan dan perbuatan di lingkungan sekolah.",
+    "Peserta didik mampu menuliskan contoh perilaku jujur.",
+    "Peserta didik mampu menyebutkan macam-macam kejujuran."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang akhlak mazmumah berupa kikir.\n\nPeserta didik diminta memahami dampak negatif perilaku kikir dalam kehidupan sosial.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal pengertian kikir.",
+    "Peserta didik mampu menyebutkan contoh perilaku kikir.",
+    "Peserta didik mampu menganalisis dampak negatif perilaku kikir terhadap hubungan sosial.",
+    "Peserta didik mampu menuliskan dalil tentang larangan kikir.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan kikir."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang adab menuntut ilmu dalam Islam.\n\nPeserta didik diminta mengaitkan materi dengan kebiasaan belajar mereka.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab menuntut ilmu.",
+    "Peserta didik mampu menjelaskan pengertian menuntut ilmu.",
+    "Peserta didik menunjukkan sikap disiplin, rendah hati, dan menghormati guru dalam menuntut ilmu.",
+    "Peserta didik mampu menghafal dalil tentang menuntut ilmu.",
+    "Peserta didik mampu menuliskan contoh adab menuntut ilmu."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang iman kepada qada dan qadar Allah SWT.\n\nPeserta didik diminta mengaitkan keimanan tersebut dengan sikap menerima ketentuan Allah.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan pengertian qada dan qadar.",
+    "Peserta didik mampu menghafal dalil tentang qada dan qadar.",
+    "Peserta didik menunjukkan sikap ikhlas, sabar, dan tawakal terhadap ketentuan Allah SWT.",
+    "Peserta didik mampu menuliskan contoh qada dan qadar.",
+    "Peserta didik mampu menjelaskan perbedaan qada dan qadar."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang adab menjaga lingkungan dalam perspektif Islam.\n\nPeserta didik diminta mengaitkan materi dengan kebiasaan menjaga kebersihan.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian menjaga lingkungan.",
+    "Peserta didik mampu menghafal dalil tentang menjaga lingkungan.",
+    "Peserta didik mampu mempraktikkan perilaku menjaga kebersihan dan kelestarian lingkungan.",
+    "Peserta didik mampu menuliskan contoh menjaga lingkungan.",
+    "Peserta didik mampu menyebutkan macam-macam lingkungan."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang akhlak terpuji berupa tolong-menolong.\n\nPeserta didik diminta mengaitkan sikap tersebut dengan kehidupan bermasyarakat.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menjelaskan pengertian tolong-menolong.",
+    "Peserta didik mampu menghafal dalil tentang tolong-menolong.",
+    "Peserta didik menunjukkan sikap suka membantu dan peduli terhadap sesama dalam kehidupan sehari-hari.",
+    "Peserta didik mampu menuliskan contoh perilaku tolong-menolong.",
+    "Peserta didik mampu menyebutkan macam-macam tolong-menolong."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menyampaikan materi tentang akhlak mazmumah berupa ghibah.\n\nPeserta didik diminta memahami bahaya ghibah dalam kehidupan sosial.\n\nTujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal pengertian ghibah.",
+    "Peserta didik mampu menyebutkan contoh perilaku ghibah.",
+    "Peserta didik mampu menganalisis dampak negatif ghibah terhadap persaudaraan dan keharmonisan sosial.",
+    "Peserta didik mampu menuliskan dalil tentang larangan ghibah.",
+    "Peserta didik mampu menjelaskan sejarah pembahasan ghibah."
+  ],
+  "a": 2
+},
+{
+  "q": "Disajikan materi tentang adab bermedia sosial dalam perspektif akhlak Islam.\n\nPeserta didik diminta mengaitkan materi dengan penggunaan media sosial sehari-hari.\n\nTujuan pembelajaran ranah sikap yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menyebutkan adab bermedia sosial.",
+    "Peserta didik mampu menjelaskan pengertian media sosial.",
+    "Peserta didik menunjukkan sikap bijak, santun, dan bertanggung jawab dalam menggunakan media sosial.",
+    "Peserta didik mampu menghafal dalil tentang bermedia sosial.",
+    "Peserta didik mampu menuliskan contoh adab bermedia sosial."
+  ],
+  "a": 2
+},
+{
+  "q": "Guru menjelaskan materi tentang pembiasaan akhlak mulia sebagai pelajar muslim.\n\nPeserta didik diminta merancang sikap positif dalam kehidupan sehari-hari.\n\nTujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+  "o": [
+    "Peserta didik mampu menghafal macam-macam akhlak mulia.",
+    "Peserta didik mampu menjelaskan pengertian akhlak mulia.",
+    "Peserta didik mampu merancang dan menerapkan pembiasaan akhlak mulia sebagai pelajar muslim.",
+    "Peserta didik mampu menuliskan contoh akhlak mulia.",
+    "Peserta didik mampu menyebutkan dalil tentang akhlak mulia."
+  ],
+  "a": 2
+}
+]
+
