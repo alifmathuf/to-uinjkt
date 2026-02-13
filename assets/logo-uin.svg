@@ -1,0 +1,25 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Shield -->
+  <path d="M40 40 L260 40 L240 160 L150 190 L60 160 Z" 
+        fill="#ffffff" stroke="#16a34a" stroke-width="6"/>
+
+  <!-- Atom lines -->
+  <ellipse cx="150" cy="70" rx="110" ry="35" 
+           fill="none" stroke="#facc15" stroke-width="6"/>
+  <ellipse cx="150" cy="70" rx="35" ry="110" 
+           fill="none" stroke="#facc15" stroke-width="6"
+           transform="rotate(60 150 70)"/>
+  <ellipse cx="150" cy="70" rx="35" ry="110" 
+           fill="none" stroke="#facc15" stroke-width="6"
+           transform="rotate(-60 150 70)"/>
+
+  <!-- Text -->
+  <text x="150" y="130" text-anchor="middle"
+        font-size="60" font-weight="700"
+        font-family="Poppins, sans-serif"
+        fill="#1e3a8a">
+        uin
+  </text>
+
+</svg>
