@@ -157,22 +157,3 @@ textarea{
     min-height: 100px;
   }
 }
-
-.case-btn-group{
-  display:flex;
-  gap:10px;
-  justify-content:flex-end;
-  margin-top:20px;
-}
-
-.case-btn-group button{
-  width:auto;
-  padding:8px 16px;
-}
-
-.btn-secondary{
-  background:#334155;
-  color:white;
-  border:none;
-  border-radius:8px;
-}
