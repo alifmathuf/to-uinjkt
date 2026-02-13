@@ -1,0 +1,36 @@
+.leaderboard-card{
+  max-width:900px;
+  margin:auto;
+}
+
+.table-wrapper{
+  overflow-x:auto;
+  margin-top:20px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td{
+  padding:12px;
+  text-align:left;
+}
+
+thead{
+  background:var(--bg-secondary);
+}
+
+tbody tr{
+  border-bottom:1px solid #1e293b;
+}
+
+tbody tr:hover{
+  background:rgba(37,99,235,0.1);
+}
+
+.rank-medal{
+  font-size:18px;
+  font-weight:700;
+}
