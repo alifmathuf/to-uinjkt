@@ -83,7 +83,23 @@ function startTimer() {
 /* ================= RENDER QUESTION ================= */
 
 function renderQuestion() {
+function updateProgress(){
 
+  const total = soalUjian.length;
+  const percent = ((current+1)/total)*100;
+
+  document.getElementById("progressText").innerText =
+    `${current+1} / ${total}`;
+
+  document.getElementById("progressFill").style.width =
+    percent + "%";
+}
+  // 🔥 FIX tombol finish
+  const finishBtn = document.getElementById("finishBtn");
+  if (finishBtn) {
+    finishBtn.disabled = current !== soalUjian.length - 1;
+  }
+}
   const q = soalUjian[current];
   if (!q) return;
 
@@ -109,23 +125,7 @@ function renderQuestion() {
 
   updateNumberNav();
 
-   function updateProgress(){
-
-  const total = soalUjian.length;
-  const percent = ((current+1)/total)*100;
-
-  document.getElementById("progressText").innerText =
-    `${current+1} / ${total}`;
-
-  document.getElementById("progressFill").style.width =
-    percent + "%";
-}
-  // 🔥 FIX tombol finish
-  const finishBtn = document.getElementById("finishBtn");
-  if (finishBtn) {
-    finishBtn.disabled = current !== soalUjian.length - 1;
-  }
-}
+   
 
 
 /* ================= SAVE ANSWER ================= */
