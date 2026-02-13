@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard - CBT System</title>
+
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/leaderboard.css">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="app-title">CBT SYSTEM</div>
+
+    <div class="menu">
+      <a href="dashboard.html">
+        <i data-lucide="layout-dashboard"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="result.html">
+        <i data-lucide="bar-chart-2"></i>
+        <span>Result</span>
+      </a>
+
+      <a href="review.html">
+        <i data-lucide="eye"></i>
+        <span>Review</span>
+      </a>
+
+      <a href="leaderboard.html">
+        <i data-lucide="trophy"></i>
+        <span>Leaderboard</span>
+      </a>
+
+      <a href="#" onclick="Auth.logout()">
+        <i data-lucide="log-out"></i>
+        <span>Logout</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <div class="topbar">
+      <span class="hamburger" onclick="toggleSidebar()">☰</span>
+
+      <div class="user-info">
+        <div>
+          <div id="greeting"></div>
+          <strong id="userInfo"></strong>
+        </div>
+        <img src="assets/avatar.png">
+      </div>
+    </div>
+
+    <div class="card leaderboard-card">
+      <h2>🏆 Leaderboard Top 10</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Nama</th>
+              <th>Kelas</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody">
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/leaderboard.js"></script>
+
+<script>
+Auth.protect();
+lucide.createIcons();
+</script>
+
+</body>
+</html>
