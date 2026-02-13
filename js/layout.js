@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded",()=>{
   });
 });
 
+document.getElementById("avatar").innerHTML =
+  generateAvatar(user.nama);
+
 function generateAvatar(){
 
   const user = JSON.parse(localStorage.getItem("cbtUser"));
