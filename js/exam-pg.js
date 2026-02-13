@@ -1,5 +1,5 @@
 /* ===============================
-   PG EXAM ENGINE - SECURE (FIX JSON FORMAT)
+   PG EXAM ENGINE - FINAL CLEAN
 ================================ */
 
 const examState = JSON.parse(localStorage.getItem("examState"));
@@ -167,16 +167,23 @@ function submitExam() {
   let score = 0;
 
   soalUjian.forEach((s, i) => {
-    if (jawaban[i] === s.a) {   // FIX: pakai "a"
+    if (jawaban[i] === s.a) { // pakai properti JSON "a"
       score++;
     }
   });
 
+  /* ===== SIMPAN UNTUK RESULT ===== */
   localStorage.setItem("pgScore", score);
+
+  /* ===== SIMPAN UNTUK REVIEW ===== */
+  localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
+  localStorage.setItem("reviewJawaban", JSON.stringify(jawaban));
+
+  /* ===== CLEAN TIMER ===== */
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
 
-  window.location.href = "result.html";
+  window.location.href = "pages/result.html";
 }
 
 
