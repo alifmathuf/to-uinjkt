@@ -6,7 +6,6 @@
 <title>Login - CBT System</title>
 
 <link rel="stylesheet" href="css/app.css">
-<script src="https://unpkg.com/lucide@latest"></script>
 
 <style>
 .login-wrapper{
@@ -77,11 +76,9 @@
 <body>
 
 <div class="login-wrapper">
-
   <div class="login-card">
 
     <div class="app-brand">CBT SYSTEM</div>
-
     <h2>Login Peserta</h2>
 
     <div class="input-group">
@@ -94,32 +91,28 @@
       <input type="text" id="kelas">
     </div>
 
-    <button class="login-btn" onclick="login()">Masuk</button>
+    <button class="login-btn" onclick="handleLogin()">Masuk</button>
 
   </div>
-
 </div>
 
+<script src="js/auth.js"></script>
+
 <script>
-/* Auto redirect jika sudah login */
-if(localStorage.getItem("nama")){
-  window.location.href="dashboard.html";
-}
+Auth.autoRedirect();
 
-function login(){
+function handleLogin(){
 
-  const nama=document.getElementById("nama").value.trim();
-  const kelas=document.getElementById("kelas").value.trim();
+  const nama = document.getElementById("nama").value.trim();
+  const kelas = document.getElementById("kelas").value.trim();
 
   if(!nama || !kelas){
     alert("Nama dan Kelas wajib diisi!");
     return;
   }
 
-  localStorage.setItem("nama",nama);
-  localStorage.setItem("kelas",kelas);
-
-  window.location.href="dashboard.html";
+  Auth.login(nama, kelas);
+  window.location.href = "dashboard.html";
 }
 </script>
 
