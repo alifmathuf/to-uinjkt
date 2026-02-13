@@ -134,10 +134,12 @@
   }
    
 .case-btn-group{
-  display:flex;
-  gap:14px;
-  justify-content:flex-end;
-  margin-top:20px;
+ padding: 14px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
 }
 
 .case-btn-group button{
@@ -150,4 +152,9 @@
   color:white;
   border:none;
   border-radius:8px;
+}
+@media (max-width: 600px) {
+  textarea {
+    min-height: 100px;
+  }
 }
