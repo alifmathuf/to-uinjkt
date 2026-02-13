@@ -82,43 +82,58 @@ function startTimer() {
 
 /* ================= RENDER QUESTION ================= */
 
+/* ================= RENDER QUESTION ================= */
+
 function renderQuestion() {
 
   const q = soalUjian[current];
   if (!q) return;
-function updateProgress(){
 
-  const total = soalUjian.length;
-  const percent = ((current+1)/total)*100;
-
-  document.getElementById("progressText").innerText =
-    `${current+1} / ${total}`;
-
-  document.getElementById("progressFill").style.width =
-    percent + "%";
   document.getElementById("examInfo").innerText =
     `${examState.mapel.toUpperCase()} | ${examState.paket}`;
 
   document.getElementById("questionBox").innerHTML = `
     <h3>Soal ${current + 1}</h3>
     <p>${q.q}</p>
- ${q.o.map((opt, i) => {
-  const huruf = String.fromCharCode(65 + i); // A,B,C,D,E
-  return `
-    <label>
-      <input type="radio" name="jawab"
-      ${jawaban[current] === i ? "checked" : ""}
-      onchange="saveAnswer(${i})">
-      <strong>${huruf}.</strong> ${opt}
-    </label>
+    ${q.o.map((opt, i) => {
+      const huruf = String.fromCharCode(65 + i);
+      return `
+        <label>
+          <input type="radio" name="jawab"
+          ${jawaban[current] === i ? "checked" : ""}
+          onchange="saveAnswer(${i})">
+          <strong>${huruf}.</strong> ${opt}
+        </label>
+      `;
+    }).join("")}
   `;
-}).join("")}
 
-  `;
+  updateProgress();      // ✅ progress update
+  updateNumberNav();     // ✅ nav update
 
+   function updateProgress(){
 
-   updateProgress();
-  updateNumberNav();
+  const total = soalUjian.length;
+  const percent = ((current + 1) / total) * 100;
+
+  const progressText = document.getElementById("progressText");
+  const progressFill = document.getElementById("progressFill");
+
+  if (progressText) {
+    progressText.innerText = `${current + 1} / ${total}`;
+  }
+
+  if (progressFill) {
+    progressFill.style.width = percent + "%";
+  }
+}
+
+  // tombol submit aktif hanya di soal terakhir
+  const finishBtn = document.getElementById("finishBtn");
+  if (finishBtn) {
+    finishBtn.disabled = current !== soalUjian.length - 1;
+  }
+}
 
   // 🔥 FIX tombol finish
   const finishBtn = document.getElementById("finishBtn");
