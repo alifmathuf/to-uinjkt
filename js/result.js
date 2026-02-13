@@ -78,3 +78,30 @@ function exportPDF(){
     `hasil-${user.nama}.pdf`
   );
 }
+const correct = parseInt(localStorage.getItem("pgCorrect")) || 0;
+const score = parseInt(localStorage.getItem("pgScore")) || 0;
+
+document.getElementById("pgCorrect").innerHTML =
+  `📘 ${correct}`;
+
+document.getElementById("pgScore").innerHTML =
+  `🎯 ${score}`;
+
+if(score >= 75){
+  document.getElementById("pgStatus").innerHTML =
+    `<span style="color:#22c55e;">✔ Lulus</span>`;
+}else{
+  document.getElementById("pgStatus").innerHTML =
+    `<span style="color:#ef4444;">✖ Tidak Lulus</span>`;
+}
+
+/* Studi kasus */
+
+const words = parseInt(localStorage.getItem("caseWords")) || 0;
+const chars = parseInt(localStorage.getItem("caseChars")) || 0;
+
+document.getElementById("caseWords").innerHTML =
+  `📝 ${words}`;
+
+document.getElementById("caseChars").innerHTML =
+  `🔤 ${chars}`;
