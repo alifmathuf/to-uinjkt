@@ -78,6 +78,7 @@ function exportPDF(){
     `hasil-${user.nama}.pdf`
   );
 }
+
 function renderChart(score){
 
   const ctx = document.getElementById("scoreChart");
