@@ -91,10 +91,12 @@
   gap:15px;
 }
 
+
+
 .case-btn-primary{
   flex:1;
-  padding:12px;
-  border-radius:10px;
+  padding:14px;
+  border-radius:16px;
   border:none;
   background:linear-gradient(135deg,#2563eb,#1d4ed8);
   color:white;
@@ -103,14 +105,19 @@
 
 .case-btn-secondary{
   flex:1;
-  padding:12px;
-  border-radius:10px;
+  padding:14px;
+  border-radius:16px;
   border:none;
   background:#334155;
   color:white;
   cursor:pointer;
 }
 
+@media (max-width: 600px) {
+  textarea {
+    min-height: 100px;
+  }
+}
 /* ===== RESPONSIVE ===== */
 
 @media (max-width:768px){
@@ -133,28 +140,5 @@
     min-height:220px;
   }
    
-.case-btn-group{
- padding: 14px;
-  border-radius: 16px;
-  font-size: 15px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-}
 
-.case-btn-group button{
-  width:auto;
-  padding:8px 16px;
-}
 
-.btn-secondary{
-  background:#334155;
-  color:white;
-  border:none;
-  border-radius:8px;
-}
-@media (max-width: 600px) {
-  textarea {
-    min-height: 100px;
-  }
-}
