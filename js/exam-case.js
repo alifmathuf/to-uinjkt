@@ -116,3 +116,35 @@ function finishCase() {
 
   window.location.href = "result.html";
 }
+let duration = 30 * 60;
+let caseEndTime;
+
+function startCaseTimer(){
+
+  const saved = localStorage.getItem("caseEndTime");
+
+  if(saved){
+    caseEndTime = parseInt(saved);
+  } else {
+    caseEndTime = Date.now() + duration*1000;
+    localStorage.setItem("caseEndTime", caseEndTime);
+  }
+
+  setInterval(()=>{
+
+    const remain = Math.floor((caseEndTime - Date.now())/1000);
+
+    if(remain <= 0){
+      finishCase();
+      return;
+    }
+
+    const m = Math.floor(remain/60);
+    const s = remain%60;
+
+    document.getElementById("caseTimer").innerText =
+      `${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
+
+  },1000);
+}
+
