@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CBT Dashboard</title>
+<title>Dashboard - CBT System</title>
 
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/dashboard.css">
+
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -14,50 +16,83 @@
 
 <div class="layout">
 
+  <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="app-title">CBT SYSTEM</div>
 
     <div class="menu">
-      <a href="dashboard.html"><i data-lucide="layout-dashboard"></i>Dashboard</a>
-      <a href="result.html"><i data-lucide="bar-chart"></i>Result</a>
-      <a href="review.html"><i data-lucide="eye"></i>Review</a>
-      <a href="leaderboard.html"><i data-lucide="trophy"></i>Leaderboard</a>
-      <a href="#"><i data-lucide="log-out"></i>Logout</a>
+      <a href="dashboard.html">
+        <i data-lucide="layout-dashboard"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="result.html">
+        <i data-lucide="bar-chart-2"></i>
+        <span>Result</span>
+      </a>
+
+      <a href="review.html">
+        <i data-lucide="eye"></i>
+        <span>Review</span>
+      </a>
+
+      <a href="leaderboard.html">
+        <i data-lucide="trophy"></i>
+        <span>Leaderboard</span>
+      </a>
+
+      <a href="#" onclick="Auth.logout()">
+        <i data-lucide="log-out"></i>
+        <span>Logout</span>
+      </a>
     </div>
   </div>
 
+  <!-- CONTENT -->
   <div class="content">
 
     <div class="topbar">
+
       <div>
-        <span class="hamburger" onclick="toggleSidebar()">
-          ☰
-        </span>
+        <span class="hamburger" onclick="toggleSidebar()">☰</span>
         <span class="app-title-desktop">CBT SYSTEM</span>
       </div>
 
       <div class="user-info">
         <div>
-          <div>Selamat datang,</div>
-          <strong>Admin</strong>
+          <div id="greeting"></div>
+          <strong id="userInfo"></strong>
         </div>
         <img src="assets/avatar.png">
       </div>
+
     </div>
 
-    <div class="card">
-      Dashboard Content Area
+    <!-- STEPPER -->
+    <div class="stepper">
+
+      <div class="step active" data-step="1">Mapel</div>
+      <div class="step" data-step="2">Paket</div>
+      <div class="step" data-step="3">Tipe</div>
+      <div class="step" data-step="4">Konfirmasi</div>
+
     </div>
+
+    <!-- ACCORDION CONTENT -->
+    <div id="stepContent"></div>
 
   </div>
 
 </div>
+
 <script src="js/auth.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/dashboard.js"></script>
+
 <script>
 Auth.protect();
+lucide.createIcons();
 </script>
-<script src="js/layout.js"></script>
-<script>lucide.createIcons();</script>
 
 </body>
 </html>
