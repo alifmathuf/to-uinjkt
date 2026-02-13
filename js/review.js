@@ -26,8 +26,10 @@ if(soal.length === 0){
     const isCorrect = userAnswerIndex === correctIndex;
 
     const statusIcon = isCorrect
-      ? `<span class="status-true">✔ Benar</span>`
-      : `<span class="status-false">✖ Salah</span>`;
+     const statusIcon = isCorrect
+  ? `<span class="correct">✔</span>`
+  : `<span class="wrong">✖</span>`;
+
 
     const row = `
       <tr>
