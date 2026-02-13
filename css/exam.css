@@ -45,3 +45,14 @@
 .number-nav button.answered{
   background:var(--success);
 }
+textarea{
+  width:100%;
+  min-height:120px;
+  margin-top:10px;
+  padding:10px;
+  border-radius:8px;
+  border:none;
+  background:var(--bg-secondary);
+  color:white;
+  resize:vertical;
+}
