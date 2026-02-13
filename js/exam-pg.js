@@ -93,14 +93,18 @@ function renderQuestion() {
   document.getElementById("questionBox").innerHTML = `
     <h3>Soal ${current + 1}</h3>
     <p>${q.q}</p>
-    ${q.o.map((opt, i) => `
-      <label style="display:block;margin:10px 0;cursor:pointer;">
-        <input type="radio" name="jawab"
-        ${jawaban[current] === i ? "checked" : ""}
-        onchange="saveAnswer(${i})">
-        ${opt}
-      </label>
-    `).join("")}
+ ${q.o.map((opt, i) => {
+  const huruf = String.fromCharCode(65 + i); // A,B,C,D,E
+  return `
+    <label>
+      <input type="radio" name="jawab"
+      ${jawaban[current] === i ? "checked" : ""}
+      onchange="saveAnswer(${i})">
+      <strong>${huruf}.</strong> ${opt}
+    </label>
+  `;
+}).join("")}
+
   `;
 
   updateNumberNav();
