@@ -1,0 +1,36 @@
+.result-card{
+  max-width:700px;
+  margin:auto;
+  text-align:center;
+}
+
+.score-box{
+  margin:20px 0;
+}
+
+.score-number{
+  font-size:48px;
+  font-weight:700;
+}
+
+.score-label{
+  color:var(--text-secondary);
+}
+
+canvas{
+  margin-top:20px;
+}
+
+.result-buttons{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.result-buttons button{
+  padding:10px 20px;
+  border-radius:8px;
+  background:var(--bg-secondary);
+  color:white;
+}
