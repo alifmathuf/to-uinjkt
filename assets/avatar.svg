@@ -1,15 +1,36 @@
 <svg id="avatarSvg" width="120" height="120" viewBox="0 0 120 120"
 xmlns="http://www.w3.org/2000/svg">
+
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Soft Premium Gradient -->
+    <linearGradient id="premiumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#3b82f6"/>
       <stop offset="100%" stop-color="#14b8a6"/>
     </linearGradient>
+
+    <!-- Soft Glow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6"
+        flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
   </defs>
-  <circle cx="60" cy="60" r="60" fill="url(#grad1)"/>
-  <text id="avatarText" x="50%" y="54%" text-anchor="middle"
-        fill="white" font-size="42"
-        font-family="Poppins"
-        font-weight="600" dy=".3em">
+
+  <!-- Circle Background -->
+  <circle cx="60" cy="60" r="54"
+          fill="url(#premiumGrad)"
+          filter="url(#shadow)"/>
+
+  <!-- Initial Letter -->
+  <text id="avatarText"
+        x="50%"
+        y="52%"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="Poppins, Montserrat, sans-serif"
+        font-size="42"
+        font-weight="600"
+        fill="#ffffff">
+    A
   </text>
+
 </svg>
