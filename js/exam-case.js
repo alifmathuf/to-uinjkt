@@ -25,7 +25,7 @@ let selectedTopic = localStorage.getItem("caseTopic");
 let currentStep = parseInt(localStorage.getItem("caseStep")) || 0;
 let answers = JSON.parse(localStorage.getItem("caseAnswers")) || [];
 
-let duration = 30 * 60; // 30 menit
+let duration = 30 * 60;
 let caseEndTime;
 let timerInterval;
 
@@ -36,14 +36,15 @@ initCase();
 
 function initCase(){
 
-  // Random topic hanya pertama kali
   if(!selectedTopic){
     selectedTopic = topics[Math.floor(Math.random()*topics.length)];
     localStorage.setItem("caseTopic", selectedTopic);
   }
 
-  document.getElementById("caseTopic").innerText =
-    selectedTopic.toUpperCase();
+  const topicEl = document.getElementById("caseTopic");
+  if(topicEl){
+    topicEl.innerText = selectedTopic.toUpperCase();
+  }
 
   startCaseTimer();
   renderStep();
@@ -96,7 +97,7 @@ function renderStep(){
   }
 
   document.getElementById("caseStepInfo").innerText =
-    `Soal ${currentStep+1} dari 4`;
+    `Soal ${currentStep+1} dari ${steps.length}`;
 
   document.getElementById("caseStepTitle").innerText =
     steps[currentStep];
@@ -104,23 +105,34 @@ function renderStep(){
   const textarea = document.getElementById("essayInput");
   textarea.value = answers[currentStep] || "";
 
-
-
-   updateProgress();
+  updateProgress();
   updateCounter();
+  updateButtons();
 }
+
+
+/* ================= PROGRESS ================= */
 
 function updateProgress(){
 
-  const total = soalUjian.length;
-  const percent = ((current+1)/total)*100;
+  const total = steps.length;
+  const percent = ((currentStep+1)/total)*100;
 
-  document.getElementById("progressText").innerText =
-    `${current+1} / ${total}`;
+  const progressText = document.getElementById("progressText");
+  const progressFill = document.getElementById("progressFill");
 
-  document.getElementById("progressFill").style.width =
-    percent + "%";
+  if(progressText){
+    progressText.innerText =
+      `${currentStep+1} / ${total}`;
+  }
+
+  if(progressFill){
+    progressFill.style.width =
+      percent + "%";
+  }
 }
+
+
 /* ================= WORD COUNTER ================= */
 
 function updateCounter(){
@@ -136,6 +148,23 @@ document
   .addEventListener("input", updateCounter);
 
 
+/* ================= BUTTON CONTROL ================= */
+
+function updateButtons(){
+
+  const saveBtn = document.getElementById("saveBtn");
+  const finishBtn = document.getElementById("finishBtn");
+
+  if(saveBtn){
+    saveBtn.disabled = currentStep === steps.length - 1;
+  }
+
+  if(finishBtn){
+    finishBtn.disabled = currentStep !== steps.length - 1;
+  }
+}
+
+
 /* ================= SAVE STEP ================= */
 
 function saveStep(){
@@ -149,7 +178,6 @@ function saveStep(){
   }
 
   answers[currentStep] = text;
-
   localStorage.setItem("caseAnswers", JSON.stringify(answers));
 
   currentStep++;
@@ -178,15 +206,8 @@ function finishCase(){
   localStorage.setItem("caseTotalWords", totalWords);
   localStorage.setItem("caseTotalChars", totalChars);
 
-  // reset state agar ujian berikutnya fresh
   localStorage.removeItem("caseStep");
   localStorage.removeItem("caseEndTime");
 
   window.location.href = "result.html";
 }
-function checkFinishAvailability(){
-  const filled = jawaban.every(j => j && j.trim().length > 0);
-  document.getElementById("finishBtn").disabled = !filled;
-}
-
-
