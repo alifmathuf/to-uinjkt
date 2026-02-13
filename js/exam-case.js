@@ -8,7 +8,7 @@ if (!caseState) window.location.href = "../dashboard.html";
 /* ================= CONFIG ================= */
 
 const topics = [
-  "Media Pembelajaran",
+  "Media",
   "LKPD",
   "Strategi Pembelajaran",
   "Penilaian"
@@ -170,4 +170,16 @@ function finishCase(){
   localStorage.removeItem("caseEndTime");
 
   window.location.href = "result.html";
+}
+function checkFinishAvailability(){
+  const filled = jawaban.every(j => j && j.trim().length > 0);
+  document.getElementById("finishBtn").disabled = !filled;
+}
+
+function saveAnswer(index,value){
+  jawaban[index]=value;
+  localStorage.setItem("caseAnswers",
+    JSON.stringify(jawaban));
+
+  checkFinishAvailability();
 }
