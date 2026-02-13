@@ -3,16 +3,14 @@
 ================================ */
 
 const user = Auth.getUser();
-
+document.getElementById("avatar").innerHTML =
+  generateAvatar(user.nama);
 
 document.getElementById("greeting").innerText =
   "Selamat datang,";
 
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
-
-document.getElementById("avatar").innerHTML =
-  generateAvatar(user.nama);
 
 let currentStep = 1;
 
