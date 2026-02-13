@@ -64,3 +64,23 @@ button{
 .btn-primary:hover{
   opacity:.9;
 }
+html,body{
+  height:100%;
+}
+
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+.main-content{
+  flex:1;
+}
+
+.footer{
+  text-align:center;
+  padding:18px;
+  font-size:13px;
+  color:var(--text-muted);
+  border-top:1px solid var(--border-soft);
+}
