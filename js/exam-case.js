@@ -104,10 +104,23 @@ function renderStep(){
   const textarea = document.getElementById("essayInput");
   textarea.value = answers[currentStep] || "";
 
+
+
+   updateProgress();
   updateCounter();
 }
 
+function updateProgress(){
 
+  const total = soalUjian.length;
+  const percent = ((current+1)/total)*100;
+
+  document.getElementById("progressText").innerText =
+    `${current+1} / ${total}`;
+
+  document.getElementById("progressFill").style.width =
+    percent + "%";
+}
 /* ================= WORD COUNTER ================= */
 
 function updateCounter(){
