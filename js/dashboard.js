@@ -30,21 +30,6 @@ steps.forEach(step=>{
     updateStep();
   });
 });
-function setAvatarInitial(){
-
-  const user = JSON.parse(localStorage.getItem("cbtUser"));
-  if(!user || !user.nama) return;
-
-  const initial = user.nama.charAt(0).toUpperCase();
-
-  const avatarText = document.getElementById("avatarText");
-  if(avatarText){
-    avatarText.textContent = initial;
-  }
-}
-
-document.addEventListener("DOMContentLoaded", setAvatarInitial);
-
 
 function updateStep(){
 
