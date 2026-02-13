@@ -34,7 +34,61 @@
   font-weight:600;
   margin-top:5px;
 }
+.exam-nav{
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
 
+.exam-nav button{
+  padding:8px 16px;
+  border-radius:8px;
+  background:var(--bg-secondary);
+  color:white;
+}
+
+.number-nav{
+  margin-top:25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(40px,1fr));
+  gap:8px;
+}
+
+.number-nav button{
+  padding:8px;
+  background:var(--bg-secondary);
+  border-radius:6px;
+  color:white;
+}
+
+.number-nav button.answered{
+  background:var(--success);
+}
+textarea{
+  width:100%;
+  min-height:120px;
+  margin-top:10px;
+  padding:10px;
+  border-radius:8px;
+  border:none;
+  background:var(--bg-secondary);
+  color:white;
+  resize:vertical;
+}
+.exam-container{
+  max-width:900px;
+  margin:40px auto;
+  padding:30px;
+  background:var(--bg-card);
+  border-radius:20px;
+}
+
+.exam-topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
 .essay-box{
   width:100%;
   min-height:220px;
