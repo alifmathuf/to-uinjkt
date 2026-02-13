@@ -183,7 +183,7 @@ function submitExam() {
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
 
-  window.location.href = "pages/result.html";
+  window.location.href = "result.html";
 }
 
 
