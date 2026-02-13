@@ -78,17 +78,3 @@ function exportPDF(){
     `hasil-${user.nama}.pdf`
   );
 }
-
-
-plugins: [{
-  id:'centerText',
-  beforeDraw(chart){
-    const {width,height,ctx} = chart;
-    ctx.restore();
-    ctx.font = "bold 22px Poppins";
-    ctx.fillStyle = "#e2e8f0";
-    ctx.textAlign = "center";
-    ctx.fillText(score, width/2, height/2);
-    ctx.save();
-  }
-}]
