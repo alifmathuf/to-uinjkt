@@ -5,32 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login - CBT System</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
 
 <style>
-.login-container{
+
+/* ====== LAYOUT ====== */
+
+.login-wrapper{
+  display:flex;
+  min-height:100vh;
+}
+
+/* LEFT SIDE (BRANDING) */
+
+.login-brand{
+  flex:1;
+  background:linear-gradient(135deg,#1e3a8a,#1e40af);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  padding:40px;
+  text-align:center;
+}
+
+.login-brand img{
+  width:120px;
+  margin-bottom:20px;
+}
+
+.login-brand h1{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.login-brand p{
+  font-weight:300;
+  opacity:.9;
+}
+
+/* RIGHT SIDE (FORM) */
+
+.login-form-area{
+  flex:1;
   display:flex;
   justify-content:center;
   align-items:center;
-  height:100vh;
+  background:var(--bg-main);
   padding:20px;
 }
 
 .login-card{
-  background:var(--bg-card);
-  padding:40px;
-  border-radius:16px;
   width:100%;
   max-width:400px;
-  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  background:var(--bg-card);
+  padding:40px;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
-.login-title{
+.login-card h2{
   text-align:center;
   margin-bottom:30px;
-  font-size:22px;
   font-weight:600;
 }
 
@@ -40,65 +79,48 @@
 
 .input-group label{
   display:block;
-  margin-bottom:6px;
   font-size:14px;
+  margin-bottom:6px;
   color:var(--text-muted);
 }
 
 .input-group input{
   width:100%;
-  padding:10px;
-  border-radius:8px;
+  padding:12px;
+  border-radius:10px;
   border:none;
   background:#0f172a;
   color:white;
+  font-size:14px;
+}
+
+.input-group input:focus{
+  outline:none;
+  border:1px solid #3b82f6;
 }
 
 .btn-login{
   width:100%;
   padding:12px;
   border:none;
-  border-radius:8px;
-  background:var(--primary-gradient);
+  border-radius:10px;
+  background:linear-gradient(135deg,#2563eb,#1e40af);
   color:white;
   font-weight:600;
   cursor:pointer;
+  transition:.3s;
 }
 
 .btn-login:hover{
-  opacity:.9;
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(0,0,0,.3);
 }
-</style>
 
-</head>
+/* MOBILE */
 
-<body>
+@media(max-width:768px){
+  .login-wrapper{
+    flex-direction:column;
+  }
 
-<div class="login-container">
-  <div class="login-card">
-
-    <div class="login-title">
-      CBT SYSTEM LOGIN
-    </div>
-
-    <div class="input-group">
-      <label>Nama</label>
-      <input type="text" id="nama">
-    </div>
-
-    <div class="input-group">
-      <label>Kelas</label>
-      <input type="text" id="kelas">
-    </div>
-
-    <button class="btn-login" onclick="login()">
-      Masuk
-    </button>
-
-  </div>
-</div>
-
-<script src="js/auth.js"></script>
-
-</body>
-</html>
+  .
