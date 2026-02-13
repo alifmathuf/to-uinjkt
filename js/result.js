@@ -1,9 +1,23 @@
 /* ===============================
-   RESULT ENGINE
+   RESULT ENGINE - FINAL CLEAN
 ================================ */
 
+Auth.protect();
+
 const user = Auth.getUser();
-const score = parseInt(localStorage.getItem("pgScore")) || 0;
+
+const correct = parseInt(localStorage.getItem("pgScore")) || 0;
+const total = 50;
+const finalScore = Math.round((correct / total) * 100);
+
+const totalWords =
+  parseInt(localStorage.getItem("caseTotalWords")) || 0;
+
+const totalChars =
+  parseInt(localStorage.getItem("caseTotalChars")) || 0;
+
+
+/* ================= USER INFO ================= */
 
 document.getElementById("greeting").innerText =
   "Hasil Ujian";
@@ -11,14 +25,49 @@ document.getElementById("greeting").innerText =
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
 
+
+/* ================= PG RESULT ================= */
+
 document.getElementById("scoreText").innerText =
-  score + " / 50";
+  finalScore;
+
+document.getElementById("correctCount").innerText =
+  correct;
+
+document.getElementById("finalScore").innerText =
+  finalScore;
+
+
+/* ================= STATUS ================= */
+
+const statusBox =
+  document.getElementById("statusBox");
+
+if(finalScore >= 75){
+  statusBox.innerHTML =
+    `<i data-lucide="check-circle"></i> LULUS`;
+  statusBox.className = "status-pass";
+}else{
+  statusBox.innerHTML =
+    `<i data-lucide="x-circle"></i> TIDAK LULUS`;
+  statusBox.className = "status-fail";
+}
+
+
+/* ================= STUDI KASUS ================= */
+
+document.getElementById("totalWords").innerText =
+  totalWords;
+
+document.getElementById("totalChars").innerText =
+  totalChars;
+
+
+/* ================= SAVE LEADERBOARD ================= */
 
 saveToLeaderboard();
-renderChart();
 
 
-/* SAVE LEADERBOARD */
 function saveToLeaderboard(){
 
   let leaderboard =
@@ -27,40 +76,51 @@ function saveToLeaderboard(){
   leaderboard.push({
     nama:user.nama,
     kelas:user.kelas,
-    score:score,
+    score:finalScore,
     date:new Date().toLocaleString()
   });
 
   leaderboard.sort((a,b)=>b.score-a.score);
   leaderboard = leaderboard.slice(0,10);
 
-  localStorage.setItem("leaderboard",
-    JSON.stringify(leaderboard));
+  localStorage.setItem(
+    "leaderboard",
+    JSON.stringify(leaderboard)
+  );
 }
 
 
-/* CHART */
+/* ================= CHART ================= */
+
+let chartInstance;
+
 function renderChart(){
 
   const ctx =
     document.getElementById("scoreChart");
 
-  new Chart(ctx,{
+  if(chartInstance){
+    chartInstance.destroy();
+  }
+
+  chartInstance = new Chart(ctx,{
     type:"doughnut",
     data:{
       labels:["Benar","Salah"],
       datasets:[{
-        data:[score,50-score],
+        data:[correct, total-correct],
         backgroundColor:[
-          "#2563eb",
-          "#1e293b"
-        ]
+          "#22c55e",
+          "#334155"
+        ],
+        borderWidth:0
       }]
     },
     options:{
+      responsive:true,
       plugins:{
         legend:{
-          labels:{color:"white"}
+          position:"bottom"
         }
       }
     }
@@ -68,7 +128,8 @@ function renderChart(){
 }
 
 
-/* EXPORT PDF */
+/* ================= EXPORT PDF ================= */
+
 function exportPDF(){
 
   const element =
@@ -78,30 +139,9 @@ function exportPDF(){
     `hasil-${user.nama}.pdf`
   );
 }
-const correct = parseInt(localStorage.getItem("pgCorrect")) || 0;
-const score = parseInt(localStorage.getItem("pgScore")) || 0;
 
-document.getElementById("pgCorrect").innerHTML =
-  `📘 ${correct}`;
 
-document.getElementById("pgScore").innerHTML =
-  `🎯 ${score}`;
+/* ================= INIT ================= */
 
-if(score >= 75){
-  document.getElementById("pgStatus").innerHTML =
-    `<span style="color:#22c55e;">✔ Lulus</span>`;
-}else{
-  document.getElementById("pgStatus").innerHTML =
-    `<span style="color:#ef4444;">✖ Tidak Lulus</span>`;
-}
-
-/* Studi kasus */
-
-const words = parseInt(localStorage.getItem("caseWords")) || 0;
-const chars = parseInt(localStorage.getItem("caseChars")) || 0;
-
-document.getElementById("caseWords").innerHTML =
-  `📝 ${words}`;
-
-document.getElementById("caseChars").innerHTML =
-  `🔤 ${chars}`;
+renderChart();
+lucide.createIcons();
