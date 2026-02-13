@@ -11,42 +11,58 @@
 </head>
 
 <body>
-<div id="caseBox"></div>
-
 
 <div class="exam-container">
 
-  <!-- TOP BAR -->
+  <!-- ================= TOP BAR ================= -->
   <div class="exam-topbar">
-    <div class="exam-timer" id="caseTimer">30:00</div>
 
+    <!-- TIMER (LEFT) -->
+    <div class="exam-timer" id="caseTimer">
+      30:00
+    </div>
+
+    <!-- TITLE (RIGHT) -->
     <div class="exam-title">
       Studi Kasus:
       <span id="caseTopic"></span>
     </div>
+
   </div>
 
-  <!-- CONTENT -->
+
+  <!-- ================= CONTENT ================= -->
   <div class="exam-content">
 
+    <!-- STEP INFO -->
     <div class="case-meta">
-      <div id="caseStepInfo"></div>
-      <div id="caseStepTitle"></div>
+      <div class="case-step" id="caseStepInfo">
+        Soal 1 dari 4
+      </div>
+
+      <div class="case-title" id="caseStepTitle">
+        Deskripsi Masalah Nyata
+      </div>
     </div>
 
-    <textarea id="essayInput"
+    <!-- TEXTAREA -->
+    <textarea
+      id="essayInput"
       class="essay-box"
-      placeholder="Tulis jawaban minimal 150 kata...">
-    </textarea>
+      placeholder="Tulis jawaban minimal 150 kata..."
+    ></textarea>
 
+    <!-- WORD COUNTER -->
     <div class="word-counter">
-      <span id="wordCount">0</span> / 150
+      <span id="wordCount">0</span> / minimal 150 kata
     </div>
 
   </div>
 
-  <!-- FOOTER BUTTON -->
+
+  <!-- ================= FOOTER ================= -->
   <div class="exam-footer">
+
     <button class="btn-primary" onclick="saveStep()">
       Simpan & Lanjut
     </button>
@@ -54,13 +70,19 @@
     <button class="btn-secondary" onclick="finishCase()">
       Submit Jawaban
     </button>
+
   </div>
 
 </div>
 
+
+<!-- ================= FOOTER GLOBAL ================= -->
 <footer class="footer">
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
+
+
+<!-- ================= SCRIPTS ================= -->
 <script src="js/auth.js"></script>
 <script src="js/exam-case.js"></script>
 
