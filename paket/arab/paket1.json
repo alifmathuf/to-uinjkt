@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Disajikan deskripsi materi tentang klasifikasi kata dalam bahasa Arab.\n\nSeorang pengajar bahasa Arab menyampaikan materi tentang klasifikasi kata dalam bahasa Arab dengan tujuan untuk meningkatkan keimanan, ketakwaan, dan akhlak mulia peserta didik. Sebagai mahasiswa, Anda diminta untuk menentukan rumusan tujuan pembelajaran ranah sikap yang paling sesuai dengan indikator tujuan tersebut.\n\nRumusan tujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat memahami perbedaan antara kata benda, kata kerja, dan kata sifat dalam bahasa Arab.",
+      "Peserta didik dapat meningkatkan kedisiplinan dan tanggung jawab dalam mempelajari materi klasifikasi kata dalam bahasa Arab.",
+      "Peserta didik dapat mempraktikkan penggunaan kata dalam kalimat dengan baik dan benar.",
+      "Peserta didik dapat meningkatkan keimanan dan ketakwaan melalui pemahaman tentang klasifikasi kata dalam bahasa Arab.",
+      "Peserta didik dapat mengidentifikasi perbedaan antara kalimat nominal dan kalimat verbal dalam bahasa Arab."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Disajikan pernyataan materi tentang struktur jumlah fi’liyyah (kalimat verba).\n\nSeorang dosen mengajarkan materi tentang struktur jumlah fi’liyyah dalam bahasa Arab dengan tujuan agar peserta didik mampu berpikir kritis dalam memahami dan menganalisis kalimat verba tersebut. Sebagai mahasiswa, Anda diminta untuk menentukan rumusan tujuan pembelajaran ranah pengetahuan yang paling sesuai.\n\nRumusan tujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat menghafal contoh kalimat fi’liyyah yang diberikan oleh guru.",
+      "Peserta didik dapat menjelaskan struktur kalimat fi’liyyah dan cara pembentukannya secara teori.",
+      "Peserta didik dapat menganalisis dan mengevaluasi kalimat fi’liyyah dalam konteks komunikasi sehari-hari.",
+      "Peserta didik dapat membentuk kalimat fi’liyyah berdasarkan contoh yang diberikan oleh guru.",
+      "Peserta didik dapat mengenali kata kerja dalam kalimat fi’liyyah tanpa memperhatikan konteksnya."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan deskripsi materi tentang konsep dan teori keterampilan reseptif.\n\nSeorang guru bahasa Arab mengajarkan materi tentang fashahah dengan tujuan agar peserta didik memiliki kemampuan berpikir dinamis dan inovatif serta semangat gotong royong. Sebagai mahasiswa, Anda diminta untuk menentukan rumusan tujuan pembelajaran ranah keterampilan yang paling sesuai.\n\nRumusan tujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat berbicara dengan lancar dalam bahasa Arab tanpa memahami struktur kalimat.",
+      "Peserta didik dapat berlatih berbicara dalam bahasa Arab dengan teman sekelas untuk meningkatkan keterampilan berbicara secara berkelompok.",
+      "Peserta didik dapat menghafal definisi fashahah tanpa memperhatikan penerapannya.",
+      "Peserta didik dapat mempraktikkan pengucapan kata secara fasih melalui latihan individu.",
+      "Peserta didik dapat menggunakan bahasa Arab tanpa berpartisipasi dalam diskusi kelompok."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan pernyataan materi tentang fashahah.\n\nSeorang pengajar menjelaskan materi tentang ilmu lughah dan ruang lingkupnya dengan tujuan agar peserta didik memiliki sikap penerimaan terhadap tradisi. Sebagai mahasiswa, Anda diminta untuk menentukan rumusan indikator tujuan pembelajaran ranah sikap yang paling sesuai.\n\nRumusan indikator tujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat mendefinisikan ruang lingkup ilmu lughah dan menerapkannya dalam kehidupan sehari-hari.",
+      "Peserta didik dapat memahami perbedaan antara ilmu lughah dan ilmu lainnya serta menghargai berbagai tradisi bahasa Arab.",
+      "Peserta didik dapat mengidentifikasi bentuk-bentuk ilmu lughah dalam berbagai disiplin ilmu.",
+      "Peserta didik dapat berbicara tentang ilmu lughah tanpa menghargai tradisi bahasa Arab.",
+      "Peserta didik dapat menunjukkan sikap positif dengan mengabaikan tradisi lisan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan deskripsi rumusan tujuan pembelajaran materi tentang ilmu lughah dan ruang lingkupnya.\n\nSeorang pengajar mengajarkan konsep dan teori keterampilan reseptif dengan tujuan agar peserta didik memiliki kemampuan berpikir dinamis dan inovatif. Sebagai mahasiswa, Anda diminta untuk menentukan rumusan indikator tujuan pembelajaran ranah pengetahuan yang paling sesuai.\n\nRumusan indikator tujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat menjelaskan definisi keterampilan reseptif tanpa contoh.",
+      "Peserta didik dapat mengidentifikasi berbagai teori keterampilan reseptif dan menjelaskan penerapannya dalam konteks pendidikan.",
+      "Peserta didik dapat menyebutkan teori keterampilan reseptif tanpa memahami keterkaitannya.",
+      "Peserta didik dapat menganalisis keterampilan reseptif dan menghubungkannya dengan metode inovatif.",
+      "Peserta didik dapat menghafal teori keterampilan reseptif tanpa penerapan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan deskripsi aktivitas pembelajaran pada materi ilmu sharaf dengan pendekatan PBL.\n\nMahasiswa diminta menganalisis materi ajar klasifikasi kata isim dan fi’il berdasarkan struktur keilmuan dalam perencanaan tujuan pembelajaran sesuai karakteristik peserta didik.\n\nRumusan yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat memahami konsep dasar ilmu sharaf dan menganalisis penggunaan isim dan fi’il secara kritis.",
+      "Peserta didik dapat mendeskripsikan fungsi kata tanpa pendekatan berbasis masalah.",
+      "Peserta didik dapat menilai pentingnya isim dan fi’il hanya secara teoritis.",
+      "Peserta didik dapat mengidentifikasi perbedaan kata kerja dan kata benda tanpa konteks.",
+      "Peserta didik dapat menghafal teori tanpa penerapan."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Disajikan deskripsi aktivitas guru dalam pelaksanaan tujuan pembelajaran ilmu nahwu dengan pendekatan PjBL.\n\nFokus materi adalah struktur jumlah ismiyyah. Mahasiswa diminta menentukan rumusan tujuan pembelajaran yang paling sesuai dengan pendekatan PjBL.\n\nRumusan tujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik memahami konsep jumlah ismiyyah tanpa konteks.",
+      "Peserta didik merancang dan mempresentasikan proyek penerapan jumlah ismiyyah secara kreatif dan kolaboratif.",
+      "Peserta didik menghafal definisi jumlah ismiyyah.",
+      "Peserta didik menjelaskan teori tanpa komunikasi aktif.",
+      "Peserta didik menyusun kalimat tanpa pendekatan proyek."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan narasi kasus evaluasi pembelajaran pada materi ilmu balaghah dengan pendekatan DBL.\n\nMahasiswa diminta menentukan rumusan evaluasi tujuan pembelajaran yang sesuai karakteristik peserta didik.\n\nRumusan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik menghafal definisi balaghah.",
+      "Peserta didik mengevaluasi teks sastra Arab berdasarkan prinsip balaghah dan menjelaskan makna retorisnya.",
+      "Peserta didik mengidentifikasi unsur balaghah tanpa konteks.",
+      "Peserta didik mendiskusikan teori tanpa keterampilan menulis.",
+      "Peserta didik menghafal teori tanpa penerapan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan praktik pedagogi perencanaan materi ajar ilmu lughah dengan pendekatan TPACK.\n\nMahasiswa diminta menentukan alur materi ajar yang tepat untuk kontribusi ilmu lughah dalam pembelajaran bahasa.\n\nAlur materi ajar yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik menghafal teori tanpa teknologi.",
+      "Peserta didik mempelajari ilmu lughah menggunakan aplikasi teknologi untuk memahami konteks linguistik.",
+      "Peserta didik memahami kontribusi ilmu lughah tanpa metode efektif.",
+      "Peserta didik menjelaskan struktur kalimat tanpa teknologi.",
+      "Peserta didik belajar secara pasif tanpa teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan narasi evaluasi pembelajaran keterampilan produktif dengan pendekatan DL.\n\nMahasiswa diminta menentukan alur materi ajar keterampilan produktif yang paling sesuai dengan karakteristik peserta didik.\n\nAlur materi ajar yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik belajar berbicara dan menulis tanpa latihan langsung.",
+      "Peserta didik mengembangkan keterampilan berbicara dan menulis melalui kegiatan praktis yang terstruktur dan intensif.",
+      "Peserta didik memahami teori tanpa praktik.",
+      "Peserta didik menghafal kosakata tanpa integrasi.",
+      "Peserta didik berlatih berbicara tanpa memperhatikan struktur."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan pernyataan praktik pedagogi tentang perencanaan materi ajar ilmu lughah secara logis dengan pendekatan TPACK.\n\nSeorang guru melaksanakan materi ajar pembelajaran bahasa secara logis dengan model pelayanan konseling. Mahasiswa diminta menentukan alur materi ajar tentang teori-teori pemerolehan bahasa dalam mengevaluasi tujuan pembelajaran yang sesuai dengan karakteristik peserta didik.\n\nRumusan alur materi ajar yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik memahami teori pemerolehan bahasa melalui kegiatan berbicara dan menulis terstruktur dalam bahasa asing",
+      "Peserta didik mengidentifikasi teori pemerolehan bahasa dan menghubungkannya dengan konteks sosial melalui bimbingan konseling",
+      "Peserta didik menghafal teori pemerolehan bahasa tanpa memahami penerapannya dalam kehidupan sehari-hari",
+      "Peserta didik menjelaskan teori pemerolehan bahasa tanpa melibatkan keterampilan berbicara dan mendengarkan",
+      "Peserta didik mempelajari teori pemerolehan bahasa tanpa memperhatikan karakteristik individual"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan pernyataan praktik pedagogi tentang pelaksanaan materi ajar keterampilan bahasa secara logis dengan pendekatan DL.\n\nSeorang guru melaksanakan program penguatan profil pelajar Pancasila (P5). Mahasiswa diminta menentukan pengembangan materi ajar nilai-nilai P5 dalam merencanakan tujuan pembelajaran sesuai karakteristik peserta didik.\n\nPengembangan materi ajar yang paling sesuai adalah …",
+    "o": [
+      "Mengembangkan materi P5 melalui ceramah satu arah",
+      "Melakukan asesmen berkelanjutan dengan menggabungkan evaluasi berbasis teknologi dan observasi langsung",
+      "Memberikan tugas hafalan nilai P5 tanpa refleksi",
+      "Menggunakan satu metode evaluasi tanpa variasi",
+      "Menilai peserta didik hanya dari hasil tes tertulis"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan kasus penerapan pembelajaran dengan materi Bahasa Arab di Antara Rumpun Semit sesuai struktur keilmuan.\n\nMahasiswa diminta memilih rancangan pembelajaran berbasis perbedaan individu yang sesuai dengan materi pembelajaran tersebut.\n\nRancangan pembelajaran yang paling tepat adalah …",
+    "o": [
+      "Peserta didik belajar tentang rumpun Semit tanpa memperhatikan perbedaan kemampuan bahasa",
+      "Peserta didik belajar bahasa Arab tanpa mempertimbangkan latar belakang bahasa asli",
+      "Peserta didik menghafal kosakata Arab tanpa mempertimbangkan perbedaan kemampuan",
+      "Peserta didik memahami hubungan bahasa Arab dengan rumpun Semit melalui materi yang disesuaikan dengan kemampuan masing-masing",
+      "Peserta didik belajar melalui ceramah tanpa memperhatikan perbedaan individu"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Disajikan pernyataan kasus penerapan pembelajaran dengan materi Keterampilan Interaktif sesuai struktur keilmuan.\n\nMahasiswa diminta memilih rancangan pembelajaran berbasis perbedaan individu sesuai pengetahuan pedagogik.\n\nRancangan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik berlatih keterampilan interaktif dengan teknik berbeda sesuai gaya belajar dan kemampuan individu",
+      "Peserta didik mengembangkan keterampilan interaktif tanpa memperhatikan perbedaan gaya belajar",
+      "Peserta didik belajar keterampilan interaktif tanpa penyesuaian kemampuan individu",
+      "Peserta didik melakukan keterampilan interaktif tanpa memperhatikan perbedaan peserta didik",
+      "Peserta didik hanya menerima instruksi tanpa mempertimbangkan karakteristik individu"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Disajikan pernyataan penerapan pembelajaran dengan materi Keterampilan Mediatif sesuai struktur keilmuan.\n\nMahasiswa diminta memilih rancangan pembelajaran berbasis perbedaan individu sesuai pengetahuan teknologi.\n\nRancangan pembelajaran yang paling tepat adalah …",
+    "o": [
+      "Menggunakan satu metode pembelajaran tanpa teknologi",
+      "Mengintegrasikan teknologi digital untuk mendukung keterampilan mediatif sesuai kebutuhan individu",
+      "Menyajikan materi secara konvensional tanpa variasi",
+      "Memberikan tugas seragam tanpa mempertimbangkan gaya belajar",
+      "Menghindari penggunaan teknologi dalam pembelajaran"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan kasus penerapan pembelajaran keterampilan produktif yang materinya kurang sesuai dengan perkembangan zaman.\n\nMahasiswa diminta menentukan penggunaan model pembelajaran berbasis pelayanan bimbingan konseling guna menciptakan suasana belajar progresif.\n\nLangkah yang paling tepat adalah …",
+    "o": [
+      "Menyusun ulang materi ajar dan fokus pada evaluasi hasil belajar",
+      "Menggunakan model pembelajaran berbasis pelayanan bimbingan konseling untuk menciptakan suasana belajar progresif",
+      "Mengubah materi ajar menjadi lebih teknis",
+      "Mengutamakan teori tanpa praktik",
+      "Mengabaikan perubahan zaman"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan narasi evaluasi pembelajaran keterampilan produktif dengan pendekatan DL.\n\nMahasiswa diminta menentukan alur materi ajar keterampilan produktif sesuai karakteristik peserta didik.\n\nAlur materi ajar yang paling sesuai adalah …",
+    "o": [
+      "Mempelajari teori tanpa latihan langsung",
+      "Mengembangkan keterampilan berbicara dan menulis melalui kegiatan praktis terstruktur dan intensif",
+      "Menghafal kosakata tanpa praktik",
+      "Latihan berbicara tanpa struktur kalimat",
+      "Menulis tanpa umpan balik"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan narasi kemampuan guru dalam penguasaan materi bahasa Arab di era digital dan AI.\n\nMahasiswa diminta menilai kemampuan guru sebagai modal pengembangan diri secara berkelanjutan.\n\nPenilaian yang paling tepat adalah …",
+    "o": [
+      "Menilai penggunaan teknologi hanya untuk mempercepat pengajaran",
+      "Mengabaikan teknologi dan fokus metode tradisional",
+      "Menilai guru dari penguasaan teori saja",
+      "Mengutamakan pengajaran langsung tanpa teknologi",
+      "Menilai kemampuan guru mengintegrasikan teknologi digital dan AI untuk memperkaya pembelajaran"
+    ],
+    "a": 4
+  },
+  {
+    "q": "Disajikan narasi kemampuan guru dalam penggunaan AI untuk pembelajaran bahasa Arab yang bermakna.\n\nMahasiswa diminta mengidentifikasi masalah dan solusi sesuai karakteristik peserta didik Gen Z dan Alpha.\n\nMasalah yang mungkin dihadapi adalah …",
+    "o": [
+      "Ketergantungan teknologi yang mengurangi interaksi langsung",
+      "Kesulitan menyesuaikan gaya belajar Gen Z dan Alpha",
+      "Penggunaan teknologi yang mengabaikan aspek sosial",
+      "Mengabaikan aspek kreatif penggunaan AI",
+      "Semua jawaban di atas"
+    ],
+    "a": 4
+  },
+  {
+    "q": "Disajikan kasus penerapan pembelajaran dengan materi pendidikan karakter berbasis pembelajaran mendalam menggunakan teknologi.\n\nMahasiswa diminta memilih rancangan pembelajaran yang paling sesuai.\n\nRancangan pembelajaran yang tepat adalah …",
+    "o": [
+      "Pembelajaran ceramah tanpa teknologi",
+      "Mempelajari teori tanpa teknologi",
+      "Tatap muka tanpa alat digital",
+      "Pembelajaran melalui platform e-learning dengan diskusi mendalam dan analisis nilai karakter",
+      "Pembelajaran berbasis materi cetak tanpa interaksi"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Disajikan narasi tentang penerapan pembelajaran bahasa Arab berbasis proyek pada materi jumlah ismiyyah.\n\nMahasiswa diminta menentukan tujuan pembelajaran ranah keterampilan yang paling sesuai dengan pendekatan Project Based Learning (PjBL).\n\nTujuan pembelajaran yang paling tepat adalah …",
+    "o": [
+      "Peserta didik menghafal contoh jumlah ismiyyah",
+      "Peserta didik memahami teori jumlah ismiyyah secara pasif",
+      "Peserta didik merancang dan mempresentasikan proyek penggunaan jumlah ismiyyah dalam konteks komunikasi sehari-hari",
+      "Peserta didik mengidentifikasi unsur jumlah ismiyyah tanpa praktik",
+      "Peserta didik menuliskan definisi jumlah ismiyyah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan materi tentang keterampilan menyimak (istima’) dalam pembelajaran bahasa Arab.\n\nMahasiswa diminta menentukan indikator tujuan pembelajaran ranah pengetahuan yang paling sesuai.\n\nIndikator yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menirukan bunyi bahasa Arab",
+      "Peserta didik mampu memahami dan menganalisis informasi lisan berbahasa Arab yang didengar",
+      "Peserta didik mampu berbicara lancar tanpa mendengarkan",
+      "Peserta didik mampu menulis teks Arab tanpa menyimak",
+      "Peserta didik mampu menghafal kosakata"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan kasus rendahnya partisipasi peserta didik dalam pembelajaran keterampilan berbicara (kalam).\n\nMahasiswa diminta menentukan solusi pedagogik yang paling tepat sesuai karakteristik peserta didik.\n\nSolusi yang paling tepat adalah …",
+    "o": [
+      "Meningkatkan ceramah guru",
+      "Memberikan tugas hits dialog",
+      "Menerapkan pembelajaran kolaboratif melalui diskusi dan simulasi percakapan",
+      "Mengurangi waktu praktik berbicara",
+      "Memberikan tes tertulis"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan materi tentang keterampilan membaca (qira’ah) dengan teks Arab autentik.\n\nMahasiswa diminta menentukan tujuan pembelajaran ranah pengetahuan yang paling sesuai.\n\nTujuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu membaca teks Arab tanpa memahami isi",
+      "Peserta didik mampu menghafal teks bacaan",
+      "Peserta didik mampu memahami dan menganalisis isi teks Arab secara kritis",
+      "Peserta didik mampu menyalin teks Arab",
+      "Peserta didik mampu mengenali huruf Arab"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan penerapan pembelajaran bahasa Arab berbasis diferensiasi.\n\nMahasiswa diminta menentukan rancangan pembelajaran yang paling sesuai dengan perbedaan kemampuan peserta didik.\n\nRancangan yang paling tepat adalah …",
+    "o": [
+      "Semua peserta didik diberi tugas yang sama",
+      "Peserta didik belajar dengan metode ceramah",
+      "Peserta didik mengerjakan tugas sesuai minat, kemampuan, dan gaya belajar masing-masing",
+      "Peserta didik hanya menghafal kosakata",
+      "Peserta didik mengikuti ujian tertulis"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan materi tentang keterampilan menulis (kitabah) dalam bahasa Arab.\n\nMahasiswa diminta menentukan tujuan pembelajaran ranah keterampilan yang paling sesuai.\n\nTujuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyalin teks Arab",
+      "Peserta didik mampu menghafal struktur kalimat",
+      "Peserta didik mampu menulis teks Arab sederhana dengan struktur dan kosakata yang tepat",
+      "Peserta didik mampu membaca teks Arab",
+      "Peserta didik mampu menerjemahkan teks"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan kasus penggunaan media digital dalam pembelajaran bahasa Arab.\n\nMahasiswa diminta menentukan manfaat utama penggunaan media digital tersebut.\n\nManfaat yang paling tepat adalah …",
+    "o": [
+      "Mengurangi peran guru",
+      "Meningkatkan ketergantungan teknologi",
+      "Meningkatkan motivasi dan keterlibatan peserta didik dalam pembelajaran bahasa Arab",
+      "Menggantikan interaksi sosial",
+      "Mempercepat penyelesaian materi tanpa pemahaman"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang mengintegrasikan nilai-nilai moderasi beragama.\n\nMahasiswa diminta menentukan tujuan pembelajaran ranah sikap yang paling sesuai.\n\nTujuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menghafal kosakata Arab",
+      "Peserta didik mampu menerjemahkan teks Arab",
+      "Peserta didik menunjukkan sikap toleran, moderat, dan saling menghargai melalui pembelajaran bahasa Arab",
+      "Peserta didik mampu menulis kalimat Arab",
+      "Peserta didik mampu membaca teks Arab"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan kasus evaluasi pembelajaran bahasa Arab yang hanya menilai aspek kognitif.\n\nMahasiswa diminta menentukan perbaikan evaluasi yang paling tepat.\n\nPerbaikan yang paling tepat adalah …",
+    "o": [
+      "Menambah jumlah soal pilihan ganda",
+      "Fokus pada hafalan kosakata",
+      "Mengintegrasikan penilaian sikap dan keterampilan selain pengetahuan",
+      "Mengurangi praktik berbicara",
+      "Menghilangkan penilaian proses"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan narasi refleksi pembelajaran bahasa Arab berbasis pembelajaran mendalam (deep learning).\n\nMahasiswa diminta menentukan ciri pembelajaran mendalam yang paling tepat.\n\nCiri yang paling tepat adalah …",
+    "o": [
+      "Pembelajaran berfokus pada hafalan",
+      "Pembelajaran berpusat pada guru",
+      "Pembelajaran mendorong pemahaman bermakna, refleksi, dan penerapan konsep",
+      "Pembelajaran tanpa evaluasi",
+      "Pembelajaran satu arah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang menekankan integrasi keterampilan menyimak dan berbicara.\n\nMahasiswa diminta menentukan pendekatan pembelajaran yang paling sesuai.\n\nPendekatan yang paling tepat adalah …",
+    "o": [
+      "Pendekatan gramatika-terjemah",
+      "Pendekatan komunikatif yang menekankan penggunaan bahasa secara nyata",
+      "Pendekatan hafalan kosakata",
+      "Pendekatan ceramah satu arah",
+      "Pendekatan evaluasi tertulis"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan kasus peserta didik mengalami kesulitan memahami struktur kalimat bahasa Arab.\n\nMahasiswa diminta menentukan strategi pembelajaran yang paling tepat.\n\nStrategi yang paling tepat adalah …",
+    "o": [
+      "Memberikan latihan hafalan struktur kalimat",
+      "Menambah materi teori gramatika",
+      "Menggunakan contoh kontekstual dan latihan bertahap",
+      "Mengurangi waktu pembelajaran",
+      "Memberikan tes tertulis tambahan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab berbasis kolaborasi.\n\nMahasiswa diminta menentukan manfaat utama dari pembelajaran kolaboratif.\n\nManfaat yang paling tepat adalah …",
+    "o": [
+      "Peserta didik belajar secara individual",
+      "Peserta didik menjadi pasif",
+      "Peserta didik saling belajar, berinteraksi, dan meningkatkan keterampilan berbahasa",
+      "Peserta didik hanya mendengarkan guru",
+      "Peserta didik fokus pada hafalan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan materi tentang pemanfaatan video berbahasa Arab sebagai media pembelajaran.\n\nMahasiswa diminta menentukan tujuan pembelajaran ranah pengetahuan yang paling sesuai.\n\nTujuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menyalin isi video",
+      "Peserta didik mampu menghafal dialog video",
+      "Peserta didik mampu memahami informasi dan konteks bahasa Arab yang disajikan dalam video",
+      "Peserta didik mampu menulis ulang teks video",
+      "Peserta didik mampu membaca teks tanpa menonton video"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab dengan memanfaatkan permainan edukatif.\n\nMahasiswa diminta menentukan dampak positif utama dari penggunaan permainan tersebut.\n\nDampak yang paling tepat adalah …",
+    "o": [
+      "Mengurangi waktu belajar",
+      "Meningkatkan suasana santai tanpa tujuan",
+      "Meningkatkan motivasi, partisipasi, dan pemahaman peserta didik",
+      "Menghilangkan peran guru",
+      "Menggantikan seluruh materi pembelajaran"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan kasus pembelajaran bahasa Arab yang kurang memperhatikan nilai karakter.\n\nMahasiswa diminta menentukan upaya perbaikan yang paling tepat.\n\nUpaya yang paling tepat adalah …",
+    "o": [
+      "Fokus pada penyelesaian materi",
+      "Menambah tugas hafalan",
+      "Mengintegrasikan nilai-nilai karakter seperti disiplin, tanggung jawab, dan kerja sama dalam pembelajaran",
+      "Mengurangi interaksi peserta didik",
+      "Menambah evaluasi tertulis"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab berbasis literasi digital.\n\nMahasiswa diminta menentukan kompetensi yang paling dikembangkan melalui pembelajaran tersebut.\n\nKompetensi yang paling tepat adalah …",
+    "o": [
+      "Kemampuan menghafal kosakata",
+      "Kemampuan menyalin teks",
+      "Kemampuan mengakses, memahami, dan memanfaatkan informasi digital berbahasa Arab secara kritis",
+      "Kemampuan mengerjakan soal tertulis",
+      "Kemampuan mendengarkan ceramah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang mendorong peserta didik melakukan refleksi diri.\n\nMahasiswa diminta menentukan tujuan pembelajaran ranah sikap yang paling sesuai.\n\nTujuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menghafal kosakata",
+      "Peserta didik mampu membaca teks",
+      "Peserta didik menunjukkan sikap percaya diri, tanggung jawab, dan kesadaran belajar berkelanjutan",
+      "Peserta didik mampu menulis kalimat",
+      "Peserta didik mampu menerjemahkan teks"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan evaluasi pembelajaran bahasa Arab yang menilai proses dan hasil belajar.\n\nMahasiswa diminta menentukan jenis evaluasi yang paling sesuai.\n\nJenis evaluasi yang paling tepat adalah …",
+    "o": [
+      "Evaluasi sumatif saja",
+      "Evaluasi formatif saja",
+      "Evaluasi autentik yang menilai proses dan produk pembelajaran",
+      "Evaluasi tertulis pilihan ganda",
+      "Evaluasi hafalan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang mengaitkan materi dengan kehidupan nyata peserta didik.\n\nMahasiswa diminta menentukan prinsip pembelajaran yang diterapkan.\n\nPrinsip yang paling tepat adalah …",
+    "o": [
+      "Pembelajaran abstrak",
+      "Pembelajaran kontekstual",
+      "Pembelajaran teoritis",
+      "Pembelajaran satu arah",
+      "Pembelajaran berbasis hafalan"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang menekankan pembentukan karakter religius peserta didik.\n\nMahasiswa diminta menentukan strategi pembelajaran yang paling sesuai.\n\nStrategi yang paling tepat adalah …",
+    "o": [
+      "Pembelajaran berpusat pada guru",
+      "Pembelajaran berbasis hafalan",
+      "Pembelajaran yang mengintegrasikan nilai-nilai religius dalam materi dan aktivitas bahasa Arab",
+      "Pembelajaran satu arah",
+      "Pembelajaran tanpa refleksi"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan kasus penggunaan metode ceramah secara dominan dalam pembelajaran bahasa Arab.\n\nMahasiswa diminta menentukan dampak negatif yang paling mungkin terjadi.\n\nDampak yang paling tepat adalah …",
+    "o": [
+      "Peserta didik menjadi lebih aktif",
+      "Peserta didik memahami materi secara mendalam",
+      "Peserta didik cenderung pasif dan kurang terampil menggunakan bahasa Arab",
+      "Peserta didik semakin termotivasi",
+      "Peserta didik lebih kreatif"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang menerapkan asesmen berkelanjutan.\n\nMahasiswa diminta menentukan tujuan utama dari asesmen tersebut.\n\nTujuan yang paling tepat adalah …",
+    "o": [
+      "Menentukan kelulusan peserta didik",
+      "Menilai hasil akhir saja",
+      "Memantau perkembangan belajar peserta didik secara berkelanjutan",
+      "Mengurangi beban tugas guru",
+      "Menggantikan ujian akhir"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang mendorong kreativitas peserta didik.\n\nMahasiswa diminta menentukan aktivitas pembelajaran yang paling sesuai.\n\nAktivitas yang paling tepat adalah …",
+    "o": [
+      "Menghafal kosakata",
+      "Mengerjakan soal pilihan ganda",
+      "Membuat dialog atau teks kreatif berbahasa Arab sesuai tema",
+      "Menyalin teks dari buku",
+      "Mendengarkan ceramah guru"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab dengan pemanfaatan lingkungan sekitar sebagai sumber belajar.\n\nMahasiswa diminta menentukan prinsip pembelajaran yang diterapkan.\n\nPrinsip yang paling tepat adalah …",
+    "o": [
+      "Pembelajaran teoritis",
+      "Pembelajaran kontekstual",
+      "Pembelajaran abstrak",
+      "Pembelajaran individual",
+      "Pembelajaran satu arah"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan kasus rendahnya kemampuan berpikir kritis peserta didik dalam pembelajaran bahasa Arab.\n\nMahasiswa diminta menentukan solusi pembelajaran yang paling tepat.\n\nSolusi yang paling tepat adalah …",
+    "o": [
+      "Menambah latihan hafalan",
+      "Mengurangi diskusi",
+      "Menerapkan pembelajaran berbasis masalah (Problem Based Learning)",
+      "Memperbanyak ceramah",
+      "Memberikan soal tertulis rutin"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang menekankan kolaborasi dan gotong royong.\n\nMahasiswa diminta menentukan bentuk kegiatan pembelajaran yang paling sesuai.\n\nKegiatan yang paling tepat adalah …",
+    "o": [
+      "Tugas individu",
+      "Ujian tertulis",
+      "Diskusi kelompok dan kerja sama menyelesaikan tugas berbahasa Arab",
+      "Hafalan kosakata",
+      "Ceramah guru"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab berbasis teknologi digital.\n\nMahasiswa diminta menentukan peran guru yang paling tepat dalam pembelajaran tersebut.\n\nPeran guru yang paling tepat adalah …",
+    "o": [
+      "Satu-satunya sumber informasi",
+      "Pengawas pasif",
+      "Fasilitator dan pembimbing dalam pemanfaatan teknologi",
+      "Pengganti teknologi",
+      "Pengamat tanpa interaksi"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan pembelajaran bahasa Arab yang menuntut kemandirian belajar peserta didik.\n\nMahasiswa diminta menentukan indikator keberhasilan yang paling sesuai.\n\nIndikator yang paling tepat adalah …",
+    "o": [
+      "Peserta didik menunggu instruksi guru",
+      "Peserta didik hanya mengerjakan tugas wajib",
+      "Peserta didik mampu mengatur waktu dan strategi belajar bahasa Arab secara mandiri",
+      "Peserta didik menghafal materi",
+      "Peserta didik mengerjakan soal pilihan ganda"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan refleksi akhir pembelajaran bahasa Arab yang menekankan pembelajaran sepanjang hayat.\n\nMahasiswa diminta menentukan tujuan pembelajaran yang paling sesuai.\n\nTujuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik menyelesaikan materi pelajaran",
+      "Peserta didik memperoleh nilai tinggi",
+      "Peserta didik memiliki motivasi dan kesadaran untuk terus belajar bahasa Arab secara berkelanjutan",
+      "Peserta didik menghafal kosakata",
+      "Peserta didik lulus ujian"
+    ],
+    "a": 2
+  }
+]
