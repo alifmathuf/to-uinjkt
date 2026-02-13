@@ -1,89 +1,50 @@
-:root{
-  --primary: #14213d;          /* dark blue utama */
-  --secondary: #1f3c88;        /* blue lebih soft */
-  --soft-bg: #f5f7fa;          /* white soft */
-  --border: #e2e8f0;
-  --text-dark: #1e293b;
-  --success: #15803d;
-  --danger: #b91c1c;
-}
-
-body{
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--soft-bg);
-  margin:0;
-  padding:30px;
-  color: var(--text-dark);
-}
-
 .review-container{
-  max-width:1200px;
-  margin:auto;
-  background:#ffffff;
-  padding:30px;
-  border-radius:14px;
-  box-shadow:0 6px 25px rgba(20,33,61,0.08);
+  max-width:1100px;
+  margin:40px auto;
+  padding:20px;
 }
 
-h2{
-  margin-bottom:25px;
-  color: var(--primary);
+.review-container h2{
+  margin-bottom:30px;
+}
+
+.review-card{
+  background:var(--bg-card);
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:12px;
+  border:1px solid var(--border-soft);
+}
+
+.review-number{
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.review-question{
+  margin-bottom:10px;
+  color:var(--text-main);
+}
+
+.review-answer{
+  margin-bottom:6px;
+}
+
+.correct{
+  color:#22c55e;
   font-weight:600;
 }
 
-.review-table{
-  width:100%;
-  border-collapse:collapse;
-  font-size:14px;
+.wrong{
+  color:#ef4444;
+  font-weight:600;
 }
 
-.review-table thead{
-  background: var(--primary);
-}
-
-.review-table th{
+.btn-back{
+  display:inline-block;
+  padding:10px 16px;
+  background:var(--primary);
   color:white;
-  padding:14px;
-  text-align:left;
-  font-weight:500;
-}
-
-.review-table td{
-  padding:14px;
-  border-bottom:1px solid var(--border);
-  vertical-align:top;
-}
-
-.review-table tr:hover{
-  background:#eef2f7;
-}
-
-.status-true{
-  color: var(--success);
-  font-weight:600;
-}
-
-.status-false{
-  color: var(--danger);
-  font-weight:600;
-}
-
-.review-footer{
-  margin-top:25px;
-  text-align:right;
-}
-
-.review-footer button{
-  background: var(--secondary);
-  color:white;
-  border:none;
-  padding:10px 20px;
   border-radius:8px;
-  cursor:pointer;
-  transition:0.3s;
-  font-weight:500;
-}
-
-.review-footer button:hover{
-  background: var(--primary);
+  text-decoration:none;
 }
