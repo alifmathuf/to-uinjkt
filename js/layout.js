@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
   });
 });
+
 function generateAvatar(){
 
   const user = JSON.parse(localStorage.getItem("cbtUser"));
