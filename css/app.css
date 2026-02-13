@@ -1,0 +1,66 @@
+/* ===============================
+   DESIGN SYSTEM - CBT PREMIUM
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@600;700&display=swap');
+
+:root{
+  --bg-primary:#0f172a;
+  --bg-secondary:#16213e;
+  --bg-card:#1e293b;
+  --primary:#2563eb;
+  --primary-soft:#3b82f6;
+  --gradient:linear-gradient(135deg,#1e3a8a,#2563eb);
+  --text-primary:#ffffff;
+  --text-secondary:#94a3b8;
+  --success:#10b981;
+  --danger:#ef4444;
+  --radius:12px;
+  --transition:0.3s ease;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg-primary);
+  color:var(--text-primary);
+  min-height:100vh;
+}
+
+h1,h2,h3,h4{
+  font-family:'Montserrat',sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button{
+  border:none;
+  cursor:pointer;
+  font-family:'Poppins',sans-serif;
+}
+
+.card{
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  padding:20px;
+}
+
+.btn-primary{
+  background:var(--gradient);
+  color:white;
+  padding:10px 20px;
+  border-radius:8px;
+  transition:var(--transition);
+}
+
+.btn-primary:hover{
+  opacity:.9;
+}
