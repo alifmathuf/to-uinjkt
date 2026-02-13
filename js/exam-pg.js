@@ -103,7 +103,13 @@ function renderQuestion() {
 
   updateNumberNav();
 }
+const finishBtn = document.getElementById("finishBtn");
 
+if(current === soalUjian.length - 1){
+  finishBtn.disabled = false;
+}else{
+  finishBtn.disabled = true;
+}
 
 /* ================= SAVE ANSWER ================= */
 
