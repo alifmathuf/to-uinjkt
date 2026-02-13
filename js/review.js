@@ -1,5 +1,6 @@
-const soal = JSON.parse(localStorage.getItem("pgSoal"));
-const jawaban = JSON.parse(localStorage.getItem("pgAnswers"));
+const soal = JSON.parse(localStorage.getItem("reviewSoal")) || [];
+const jawaban = JSON.parse(localStorage.getItem("reviewJawaban")) || [];
+
 
 if(!soal || !jawaban){
   document.getElementById("reviewTable").innerHTML =
