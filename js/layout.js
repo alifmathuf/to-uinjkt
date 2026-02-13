@@ -13,3 +13,17 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
   });
 });
+function generateAvatar(){
+
+  const user = JSON.parse(localStorage.getItem("cbtUser"));
+  if(!user) return;
+
+  const initial = user.nama.charAt(0).toUpperCase();
+
+  const avatarText = document.getElementById("avatarText");
+  if(avatarText){
+    avatarText.textContent = initial;
+  }
+}
+
+document.addEventListener("DOMContentLoaded",generateAvatar);
