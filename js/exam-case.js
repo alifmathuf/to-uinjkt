@@ -1,137 +1,118 @@
-/* ===============================
-   STUDI KASUS ENGINE
-================================ */
+/* =================================
+   STUDI KASUS ENGINE - ESSAY MODE
+================================= */
 
-const examState = JSON.parse(localStorage.getItem("examState"));
-if(!examState) window.location.href="dashboard.html";
+const caseState = JSON.parse(localStorage.getItem("examState"));
+if (!caseState) window.location.href = "dashboard.html";
 
-let soalData=[];
-let soalUjian=[];
-let jawaban=[];
-let duration=30*60; // 30 menit
-let endTime;
+const topics = [
+  "Media Pembelajaran",
+  "LKPD",
+  "Strategi Pembelajaran",
+  "Penilaian"
+];
+
+let selectedTopic = localStorage.getItem("caseTopic");
+if (!selectedTopic) {
+  selectedTopic = topics[Math.floor(Math.random() * topics.length)];
+  localStorage.setItem("caseTopic", selectedTopic);
+}
+
+const steps = [
+  "Deskripsi Masalah Nyata",
+  "Upaya Penyelesaian",
+  "Hasil",
+  "Hikmah / Pengalaman Berharga"
+];
+
+let currentStep = parseInt(localStorage.getItem("caseStep")) || 0;
+let answers = JSON.parse(localStorage.getItem("caseAnswers")) || [];
 
 
-/* LOAD SOAL */
-fetch(`./paket/${examState.paket}.json`)
-.then(res=>res.json())
-.then(data=>{
+/* ================= INIT ================= */
 
-  soalData=shuffle(data);
-  soalUjian=soalData.slice(0,4);
-
-  const saved=localStorage.getItem("caseAnswers");
-  jawaban=saved?JSON.parse(saved):
-           new Array(4).fill("");
-
-  renderCase();
-  startTimer();
-  enterFullscreen();
-});
+renderStep();
 
 
-/* TIMER */
-function startTimer(){
+function renderStep() {
 
-  const savedEnd=localStorage.getItem("caseEndTime");
+  const container = document.getElementById("caseBox");
 
-  if(savedEnd){
-    endTime=parseInt(savedEnd);
-  }else{
-    endTime=Date.now()+duration*1000;
-    localStorage.setItem("caseEndTime",endTime);
+  if (currentStep >= steps.length) {
+    finishCase();
+    return;
   }
 
-  setInterval(()=>{
+  container.innerHTML = `
+    <h3>${selectedTopic}</h3>
+    <h4>${steps[currentStep]}</h4>
 
-    const remaining=Math.floor(
-      (endTime-Date.now())/1000
-    );
+    <textarea id="essayInput" 
+      maxlength="150"
+      placeholder="Tulis jawaban maksimal 150 kata..."
+      style="width:100%;height:150px;"></textarea>
 
-    if(remaining<=0){
-      submitCase();
-    }
+    <div style="margin-top:8px;">
+      <span id="wordCount">0</span>/150 kata
+    </div>
 
-    const m=Math.floor(remaining/60);
-    const s=remaining%60;
+    <button onclick="saveStep()" 
+      style="margin-top:12px;">Simpan & Lanjut</button>
+  `;
 
-    document.getElementById("timer").innerText=
-      `${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
-
-  },1000);
+  document
+    .getElementById("essayInput")
+    .addEventListener("input", updateCounter);
 }
 
 
-/* RENDER */
-function renderCase(){
+/* ================= WORD COUNTER ================= */
 
-  document.getElementById("examInfo").innerText=
-    `${examState.mapel} | Studi Kasus`;
+function updateCounter() {
 
-  const container=document.getElementById("caseContainer");
-  container.innerHTML="";
+  const text = document.getElementById("essayInput").value.trim();
+  const words = text === "" ? 0 : text.split(/\s+/).length;
 
-  soalUjian.forEach((q,index)=>{
-
-    const div=document.createElement("div");
-    div.className="card";
-    div.style.marginBottom="20px";
-
-    div.innerHTML=`
-      <h3>Soal ${index+1}</h3>
-      <p>${q.q}</p>
-      <textarea
-        oninput="saveAnswer(${index},this.value)"
-      >${jawaban[index]}</textarea>
-    `;
-
-    container.appendChild(div);
-  });
+  document.getElementById("wordCount").innerText = words;
 }
 
 
-/* AUTOSAVE */
-function saveAnswer(index,value){
-  jawaban[index]=value;
-  localStorage.setItem("caseAnswers",
-    JSON.stringify(jawaban));
-}
+/* ================= SAVE STEP ================= */
 
+function saveStep() {
 
-/* SUBMIT */
-function submitCase(){
+  const text = document.getElementById("essayInput").value.trim();
 
-  localStorage.removeItem("caseEndTime");
-
-  localStorage.setItem("caseResult",
-    JSON.stringify(jawaban));
-
-  window.location.href="result.html";
-}
-
-
-/* SHUFFLE */
-function shuffle(arr){
-  return arr.sort(()=>Math.random()-0.5);
-}
-
-
-/* FULLSCREEN */
-function enterFullscreen(){
-  if(document.documentElement.requestFullscreen){
-    document.documentElement.requestFullscreen();
+  if (!text) {
+    alert("Jawaban tidak boleh kosong");
+    return;
   }
+
+  answers[currentStep] = text;
+
+  localStorage.setItem("caseAnswers", JSON.stringify(answers));
+
+  currentStep++;
+  localStorage.setItem("caseStep", currentStep);
+
+  renderStep();
 }
 
-document.addEventListener("fullscreenchange",()=>{
-  if(!document.fullscreenElement){
-    submitCase();
-  }
-});
 
+/* ================= FINISH ================= */
 
-/* DISABLE BACK */
-history.pushState(null,null,location.href);
-window.onpopstate=function(){
-  history.go(1);
-};
+function finishCase() {
+
+  const totalWords = answers.reduce((acc, txt) => {
+    return acc + (txt.split(/\s+/).length);
+  }, 0);
+
+  const totalChars = answers.reduce((acc, txt) => {
+    return acc + txt.length;
+  }, 0);
+
+  localStorage.setItem("caseTotalWords", totalWords);
+  localStorage.setItem("caseTotalChars", totalChars);
+
+  window.location.href = "result.html";
+}
