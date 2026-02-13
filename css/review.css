@@ -9,7 +9,7 @@
   color:var(--text-main);
 }
 
-/* ===== TABLE STYLE ===== */
+/* ===== TABLE ===== */
 
 .review-table{
   width:100%;
@@ -21,7 +21,7 @@
 }
 
 .review-table thead{
-  background:var(--primary);
+  background:#0f172a; /* DARK BLUE FIX */
   color:white;
 }
 
@@ -29,6 +29,7 @@
   padding:14px;
   text-align:left;
   font-weight:600;
+  font-size:14px;
 }
 
 .review-table td{
@@ -36,6 +37,7 @@
   border-bottom:1px solid var(--border-soft);
   vertical-align:top;
   color:var(--text-main);
+  font-size:14px;
 }
 
 .review-table tr:last-child td{
@@ -43,18 +45,20 @@
 }
 
 .review-table tr:hover{
-  background:rgba(0,0,0,0.02);
+  background:rgba(255,255,255,0.03);
 }
 
-/* ===== STATUS ===== */
+/* ===== STATUS ICON ONLY ===== */
 
 .correct{
   color:#22c55e;
+  font-size:18px;
   font-weight:600;
 }
 
 .wrong{
   color:#ef4444;
+  font-size:18px;
   font-weight:600;
 }
 
@@ -62,15 +66,18 @@
 
 .btn-back{
   display:inline-block;
-  margin-top:20px;
-  padding:10px 16px;
-  background:var(--primary);
-  color:var(--secondary);
+  margin-top:22px;
+  padding:8px 14px;
+  background:var(--bg-card); /* serasi dengan isi tabel */
+  color:var(--text-main);
+  border:1px solid var(--border-soft);
   border-radius:8px;
   text-decoration:none;
-  transition:0.3s;
+  transition:0.2s;
+  font-size:14px;
 }
 
 .btn-back:hover{
-  opacity:0.9;
+  background:var(--primary);
+  color:white;
 }
