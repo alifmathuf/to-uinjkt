@@ -40,7 +40,7 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
   })
   .catch(err => {
     console.error(err);
-    alert("Mohon maaf! Paket soal belum tersedia.");
+    alert("Soal gagal dimuat. Periksa folder paket.");
   });
 
 
@@ -83,23 +83,7 @@ function startTimer() {
 /* ================= RENDER QUESTION ================= */
 
 function renderQuestion() {
-function updateProgress(){
 
-  const total = soalUjian.length;
-  const percent = ((current+1)/total)*100;
-
-  document.getElementById("progressText").innerText =
-    `${current+1} / ${total}`;
-
-  document.getElementById("progressFill").style.width =
-    percent + "%";
-}
-  // 🔥 FIX tombol finish
-  const finishBtn = document.getElementById("finishBtn");
-  if (finishBtn) {
-    finishBtn.disabled = current !== soalUjian.length - 1;
-  }
-}
   const q = soalUjian[current];
   if (!q) return;
 
@@ -122,10 +106,26 @@ function updateProgress(){
 }).join("")}
 
   `;
+function updateProgress(){
 
+  const total = soalUjian.length;
+  const percent = ((current+1)/total)*100;
+
+  document.getElementById("progressText").innerText =
+    `${current+1} / ${total}`;
+
+  document.getElementById("progressFill").style.width =
+    percent + "%";
+
+   updateProgress();
   updateNumberNav();
 
-   
+  // 🔥 FIX tombol finish
+  const finishBtn = document.getElementById("finishBtn");
+  if (finishBtn) {
+    finishBtn.disabled = current !== soalUjian.length - 1;
+  }
+}
 
 
 /* ================= SAVE ANSWER ================= */
