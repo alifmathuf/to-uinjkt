@@ -34,3 +34,24 @@ canvas{
   background:var(--bg-secondary);
   color:white;
 }
+.result-card{
+  background:var(--bg-card);
+  padding:20px;
+  border-radius:14px;
+  border:1px solid var(--border-soft);
+}
+
+.result-item{
+  display:flex;
+  justify-content:space-between;
+  padding:12px 0;
+  border-bottom:1px solid var(--border-soft);
+}
+
+.result-item:last-child{
+  border-bottom:none;
+}
+
+.result-icon{
+  margin-right:6px;
+}
