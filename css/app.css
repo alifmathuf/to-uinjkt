@@ -8,11 +8,11 @@
   --bg-primary:#0f172a;
   --bg-secondary:#16213e;
   --bg-card:#1e293b;
-  --primary:#4f46e5;
-  --primary-soft:#14b8a6;
+  --primary:#3b82f6;
+  --primary-soft:#2563eb;
   --gradient:linear-gradient(135deg,#1e3a8a,#2563eb);
-  --text-primary:#e2e8f0;
-  --text-secondary:#cbd5e1;
+  --text-primary:#cbd5e1;
+  --text-secondary:#94a3b8;
   --success:#10b981;
   --danger:#ef4444;
   --radius:12px;
@@ -55,7 +55,7 @@ button{
 
 .btn-primary{
   background:var(--gradient);
-  color:white;
+  color:var(--text-main);
   padding:10px 20px;
   border-radius:8px;
   transition:var(--transition);
