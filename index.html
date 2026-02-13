@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - CBT System</title>
+
+<link rel="stylesheet" href="css/app.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+.login-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:var(--gradient);
+}
+
+.login-card{
+  background:var(--bg-card);
+  padding:40px;
+  border-radius:16px;
+  width:100%;
+  max-width:400px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.login-card h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.input-group{
+  margin-bottom:20px;
+}
+
+.input-group label{
+  font-size:14px;
+  color:var(--text-secondary);
+  display:block;
+  margin-bottom:6px;
+}
+
+.input-group input{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:none;
+  background:var(--bg-secondary);
+  color:white;
+}
+
+.login-btn{
+  width:100%;
+  padding:12px;
+  background:var(--gradient);
+  color:white;
+  border-radius:8px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.login-btn:hover{
+  opacity:.9;
+}
+
+.app-brand{
+  text-align:center;
+  margin-bottom:20px;
+  font-weight:700;
+  font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-wrapper">
+
+  <div class="login-card">
+
+    <div class="app-brand">CBT SYSTEM</div>
+
+    <h2>Login Peserta</h2>
+
+    <div class="input-group">
+      <label>Nama</label>
+      <input type="text" id="nama">
+    </div>
+
+    <div class="input-group">
+      <label>Kelas</label>
+      <input type="text" id="kelas">
+    </div>
+
+    <button class="login-btn" onclick="login()">Masuk</button>
+
+  </div>
+
+</div>
+
+<script>
+/* Auto redirect jika sudah login */
+if(localStorage.getItem("nama")){
+  window.location.href="dashboard.html";
+}
+
+function login(){
+
+  const nama=document.getElementById("nama").value.trim();
+  const kelas=document.getElementById("kelas").value.trim();
+
+  if(!nama || !kelas){
+    alert("Nama dan Kelas wajib diisi!");
+    return;
+  }
+
+  localStorage.setItem("nama",nama);
+  localStorage.setItem("kelas",kelas);
+
+  window.location.href="dashboard.html";
+}
+</script>
+
+</body>
+</html>
