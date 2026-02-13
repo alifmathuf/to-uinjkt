@@ -26,7 +26,6 @@ if(soal.length === 0){
     const isCorrect = userAnswerIndex === correctIndex;
 
     const statusIcon = isCorrect
-     const statusIcon = isCorrect
   ? `<span class="correct">✔</span>`
   : `<span class="wrong">✖</span>`;
 
