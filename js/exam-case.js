@@ -43,22 +43,33 @@ function renderStep() {
     return;
   }
 
-  container.innerHTML = `
-    <h3>${selectedTopic}</h3>
-    <h4>${steps[currentStep]}</h4>
+ container.innerHTML = `
+<div class="case-header">
+  <div class="case-left">
+    <span>Soal ${currentStep+1} dari 4</span>
+  </div>
 
-    <textarea id="essayInput" 
-      maxlength="150"
-      placeholder="Tulis jawaban maksimal 150 kata..."
-      style="width:100%;height:150px;"></textarea>
+  <div class="case-right">
+    <span class="badge">STUDI KASUS</span>
+    <span class="topic">${selectedTopic.toUpperCase()}</span>
+    <div id="caseTimer" class="timer"></div>
+  </div>
+</div>
 
-    <div style="margin-top:8px;">
-      <span id="wordCount">0</span>/150 kata
-    </div>
+<h4>${steps[currentStep]}</h4>
 
-    <button onclick="saveStep()" 
-      style="margin-top:12px;">Simpan & Lanjut</button>
-  `;
+<textarea id="essayInput"
+  placeholder="Minimal 150 kata..."
+  class="essay-box"></textarea>
+
+<div class="word-info">
+  <span id="wordCount">0</span> / minimal 150 kata
+</div>
+
+<button class="btn-primary"
+  onclick="saveStep()">Simpan & Lanjut</button>
+`;
+
 
   document
     .getElementById("essayInput")
