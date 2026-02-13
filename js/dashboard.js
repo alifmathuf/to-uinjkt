@@ -4,9 +4,11 @@
 
 const user = Auth.getUser();
 
+
 document.getElementById("greeting").innerText =
   "Selamat datang,";
-
+document.getElementById("avatar").innerHTML =
+  generateAvatar(user.nama);
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
 
@@ -40,6 +42,30 @@ function updateStep(){
   renderContent();
 }
 
+function generateAvatar(name){
+
+  const initial = name
+    ? name.trim().charAt(0).toUpperCase()
+    : "U";
+
+  const colors = ["#1e3a8a","#334155","#0f172a","#1f2937"];
+  const bg = colors[initial.charCodeAt(0) % colors.length];
+
+  return `
+    <svg width="40" height="40" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="20" fill="${bg}" />
+      <text x="50%" y="55%"
+        text-anchor="middle"
+        fill="white"
+        font-size="18"
+        font-weight="600"
+        font-family="Segoe UI"
+      >
+        ${initial}
+      </text>
+    </svg>
+  `;
+}
 
 function renderContent(){
 
@@ -131,6 +157,7 @@ function startExam(){
     window.location.href="studi-kasus.html";
   }
 }
+
 
 
 /* INIT */
