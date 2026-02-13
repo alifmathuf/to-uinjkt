@@ -4,11 +4,26 @@
   box-shadow:0 20px 60px rgba(0,0,0,0.3);
 }
 
+.exam-container{
+  max-width:900px;
+  margin:40px auto;
+  padding:30px;
+  background:var(--bg-card);
+  border-radius:20px;
+}
+
+.exam-topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
 .exam-timer{
   font-size:20px;
   font-weight:600;
   color:var(--accent);
 }
+
 
 .exam-title{
   font-size:16px;
@@ -64,6 +79,7 @@
 .number-nav button.answered{
   background:var(--success);
 }
+
 textarea{
   width:100%;
   min-height:120px;
@@ -75,20 +91,7 @@ textarea{
   color:white;
   resize:vertical;
 }
-.exam-container{
-  max-width:900px;
-  margin:40px auto;
-  padding:30px;
-  background:var(--bg-card);
-  border-radius:20px;
-}
 
-.exam-topbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:30px;
-}
 .essay-box{
   width:100%;
   min-height:220px;
@@ -107,12 +110,6 @@ textarea{
   margin-top:8px;
   font-size:13px;
   color:var(--text-muted);
-}
-
-.exam-footer{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
 }
 
 .btn-primary{
@@ -135,10 +132,17 @@ textarea{
   cursor:pointer;
 }
 
+.exam-footer{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+}
+
   .exam-footer{
     flex-direction:column;
   }
 }
+
 @media (max-width: 768px){
   .exam-container{
     padding:20px;
