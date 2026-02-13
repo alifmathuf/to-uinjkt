@@ -1,0 +1,47 @@
+.exam-container{
+  padding:30px;
+}
+
+.exam-topbar{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+.timer{
+  background:var(--danger);
+  padding:6px 12px;
+  border-radius:8px;
+}
+
+.exam-nav{
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
+
+.exam-nav button{
+  padding:8px 16px;
+  border-radius:8px;
+  background:var(--bg-secondary);
+  color:white;
+}
+
+.number-nav{
+  margin-top:25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(40px,1fr));
+  gap:8px;
+}
+
+.number-nav button{
+  padding:8px;
+  background:var(--bg-secondary);
+  border-radius:6px;
+  color:white;
+}
+
+.number-nav button.answered{
+  background:var(--success);
+}
