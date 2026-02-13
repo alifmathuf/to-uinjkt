@@ -1,0 +1,20 @@
+.review-card{
+  margin-bottom:20px;
+  padding:20px;
+  background:var(--bg-card);
+  border-radius:12px;
+}
+
+.option{
+  padding:8px;
+  margin-top:6px;
+  border-radius:6px;
+}
+
+.correct{
+  background:#065f46;
+}
+
+.wrong{
+  background:#7f1d1d;
+}
