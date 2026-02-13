@@ -176,10 +176,4 @@ function checkFinishAvailability(){
   document.getElementById("finishBtn").disabled = !filled;
 }
 
-function saveAnswer(index,value){
-  jawaban[index]=value;
-  localStorage.setItem("caseAnswers",
-    JSON.stringify(jawaban));
 
-  checkFinishAvailability();
-}
