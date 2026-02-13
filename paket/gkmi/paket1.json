@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Seorang guru kelas 1 MI ingin merumuskan tujuan pembelajaran ranah sikap untuk menumbuhkan keimanan dan ketakwaan pada materi Pengenalan Huruf dan Kata. Manakah rumusan yang paling tepat?",
+    "o": [
+      "Siswa mampu menyebutkan huruf dan kata dengan benar.",
+      "Siswa menunjukkan rasa senang dalam belajar huruf dan kata.",
+      "Siswa mampu membaca huruf dan kata dengan lafal yang tepat.",
+      "Siswa menunjukkan rasa syukur atas nikmat Allah berupa kemampuan membaca.",
+      "Siswa menghafal huruf hijaiyah dan kata sederhana."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guru kelas 4 MI ingin merumuskan tujuan pembelajaran ranah pengetahuan agar peserta didik mampu berpikir kritis pada materi Pancasila dan peran keluarga. Rumusan yang paling tepat adalah…",
+    "o": [
+      "Peserta didik menyebutkan sila-sila Pancasila.",
+      "Peserta didik menjelaskan pengertian keluarga.",
+      "Peserta didik menganalisis peran keluarga dalam menerapkan nilai Pancasila.",
+      "Peserta didik menghafal contoh perilaku keluarga.",
+      "Peserta didik menirukan contoh sikap dalam keluarga."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam kegiatan bermain di PAUD, guru ingin menilai sikap, pengetahuan, dan keterampilan anak secara autentik. Teknik penilaian yang paling tepat digunakan adalah…",
+    "o": [
+      "Tes tertulis di akhir pembelajaran.",
+      "Penilaian hasil akhir saja.",
+      "Observasi dan catatan anekdot selama kegiatan bermain.",
+      "Ulangan harian.",
+      "Penilaian kecepatan menyelesaikan tugas."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Prinsip utama dari model Project Based Learning (PjBL) dalam proses pembelajaran adalah…",
+    "o": [
+      "Pembelajaran berpusat pada guru.",
+      "Pembelajaran berbasis hafalan.",
+      "Pembelajaran diawali dengan masalah nyata yang relevan dengan kehidupan peserta didik.",
+      "Pembelajaran menekankan ceramah.",
+      "Pembelajaran berfokus pada hasil akhir saja."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam perencanaan pembelajaran Bahasa Indonesia kelas II MI dengan pendekatan Problem Based Learning (PBL), rumusan tujuan yang paling sesuai dengan struktur keilmuan adalah…",
+    "o": [
+      "Siswa mampu menyebutkan kata benda dalam kalimat sederhana.",
+      "Siswa mampu menyalin kalimat sederhana dengan tulisan rapi.",
+      "Siswa mampu membaca teks pendek dengan lafal dan intonasi benar.",
+      "Siswa mampu menjawab pertanyaan berdasarkan bacaan.",
+      "Siswa mampu menyusun kalimat sederhana melalui diskusi kelompok."
+    ],
+    "a": 4
+  },
+  {
+    "q": "Aktivitas guru dalam pembelajaran PPKn dengan pendekatan Project Based Learning (PjBL) yang paling mencerminkan karakteristik peserta didik MI adalah…",
+    "o": [
+      "Siswa menonton video tentang kehidupan sosial.",
+      "Siswa mendengarkan penjelasan guru.",
+      "Siswa berdiskusi tentang pengalaman pribadi.",
+      "Siswa membuat proyek laporan hasil observasi kehidupan sosial di lingkungan sekitar.",
+      "Siswa menjawab pertanyaan dari bacaan."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Dalam materi IPS dengan pendekatan TPACK (Technological Pedagogical Content Knowledge), alur penyusunan materi yang paling sesuai adalah…",
+    "o": [
+      "Menyampaikan materi melalui ceramah.",
+      "Menyusun materi berdasarkan urutan buku cetak.",
+      "Menggabungkan konten sosial budaya, diskusi kelompok, dan media digital interaktif.",
+      "Memberikan tugas membaca tanpa diskusi.",
+      "Memutar film tanpa aktivitas lanjutan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pada pelaksanaan materi Matematika tentang Bilangan Pecahan dengan pendekatan Deep Learning (DL), alur materi yang paling tepat adalah…",
+    "o": [
+      "Memberikan definisi dan latihan soal.",
+      "Menyajikan pecahan melalui gambar konkret dan situasi nyata sebelum simbolik.",
+      "Menugaskan siswa menghafal jenis pecahan.",
+      "Memberikan soal ujian sejak awal.",
+      "Menjelaskan rumus tanpa ilustrasi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Tujuan utama penerapan pendekatan TPACK dalam perencanaan pembelajaran di MI adalah…",
+    "o": [
+      "Menyamakan metode pembelajaran di seluruh sekolah.",
+      "Mengintegrasikan teknologi tanpa mempertimbangkan kebutuhan peserta didik.",
+      "Menyesuaikan konten, pedagogi, dan teknologi dengan karakteristik peserta didik.",
+      "Mengganti seluruh pembelajaran tatap muka menjadi daring.",
+      "Fokus sepenuhnya pada materi yang ada di buku teks."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Strategi pembelajaran yang paling efektif untuk memenuhi karakteristik belajar Generasi Z dan Alpha adalah…",
+    "o": [
+      "Metode ceramah satu arah yang intensif.",
+      "Pembelajaran berbasis hafalan materi.",
+      "Pembelajaran interaktif, digital, dan kolaboratif.",
+      "Penugasan individu secara manual tanpa bantuan teknologi.",
+      "Tes tertulis sebagai instrumen kegiatan utama."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam Kurikulum Merdeka di MI, manakah rumusan tujuan pembelajaran yang berorientasi pada Profil Pelajar Pancasila?",
+    "o": [
+      "Siswa mampu menghafal seluruh isi materi pelajaran.",
+      "Siswa mampu menyelesaikan soal pilihan ganda dengan cepat.",
+      "Siswa menunjukkan sikap gotong royong dan tanggung jawab dalam kegiatan belajar.",
+      "Siswa mampu menyalin materi secara presisi dari papan tulis.",
+      "Siswa mampu menjawab setiap pertanyaan lisan dari guru."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Prinsip asesmen yang paling tepat diterapkan oleh guru dalam kerangka Kurikulum Merdeka adalah…",
+    "o": [
+      "Asesmen hanya dilakukan satu kali di akhir semester.",
+      "Asesmen berfokus murni pada nilai akhir kuantitatif.",
+      "Asesmen sebagai proses (formatif) untuk mendukung pembelajaran.",
+      "Asesmen digunakan terutama untuk memberi peringkat siswa.",
+      "Asesmen hanya dilakukan melalui tes tertulis."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Apa tujuan utama dari penerapan pembelajaran berdiferensiasi di kelas MI?",
+    "o": [
+      "Menyamakan level kemampuan semua siswa tanpa kecuali.",
+      "Memberikan perlakuan berbeda secara acak tanpa perencanaan.",
+      "Memenuhi kebutuhan belajar siswa yang memiliki gaya belajar beragam.",
+      "Mempercepat penyelesaian materi kurikulum.",
+      "Mengurangi beban belajar peserta didik."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Komponen inti yang wajib tersedia dalam modul ajar Kurikulum Merdeka adalah…",
+    "o": [
+      "Identitas sekolah dan nama guru pengampu.",
+      "Tujuan pembelajaran, kegiatan pembelajaran, dan asesmen.",
+      "Daftar nilai harian seluruh siswa.",
+      "Rangkuman materi singkat tanpa aktivitas.",
+      "Kunci jawaban dari soal-soal latihan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Langkah awal yang paling krusial dalam model Problem Based Learning (PBL) adalah…",
+    "o": [
+      "Memberikan penjelasan teori secara mendalam.",
+      "Menyajikan masalah kontekstual yang relevan kepada peserta didik.",
+      "Memberikan latihan soal untuk menguji kemampuan awal.",
+      "Melakukan evaluasi akhir di awal pertemuan.",
+      "Menyimpulkan inti materi yang akan dipelajari."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran abad 21, peran guru mengalami pergeseran. Peran yang paling tepat saat ini adalah…",
+    "o": [
+      "Menjadi satu-satunya sumber informasi di kelas.",
+      "Menjadi pusat utama dalam seluruh proses pembelajaran.",
+      "Menjadi fasilitator dan pembimbing bagi proses belajar siswa.",
+      "Menjadi penentu tunggal seluruh aktivitas siswa.",
+      "Berfokus hanya pada pemberian tugas secara rutin."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Apa tujuan utama dari integrasi literasi dan numerasi dalam pembelajaran di MI?",
+    "o": [
+      "Meningkatkan kapasitas memori hafalan siswa.",
+      "Mengejar target skor ujian nasional semata.",
+      "Mengembangkan kemampuan berpikir kritis dan pemecahan masalah.",
+      "Mengurangi kepadatan materi pelajaran.",
+      "Menyederhanakan konsep-konsep pembelajaran yang sulit."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Prinsip utama dalam memilih media digital untuk pembelajaran di MI adalah…",
+    "o": [
+      "Memilih media yang sedang tren di media sosial.",
+      "Menggunakan media yang paling mahal teknologinya.",
+      "Media harus sesuai dengan tujuan dan karakteristik peserta didik.",
+      "Menggunakan media yang sama dengan sekolah-sekolah unggulan.",
+      "Memilih media yang paling mudah ditemukan oleh guru."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Indikator utama keberhasilan dari model pembelajaran kolaboratif adalah…",
+    "o": [
+      "Siswa lebih nyaman bekerja secara mandiri.",
+      "Siswa mampu menyelesaikan tugas individu dengan cepat.",
+      "Siswa mampu bekerja sama dan saling menghargai perbedaan pendapat.",
+      "Siswa berhasil memperoleh nilai tertinggi secara personal.",
+      "Siswa patuh mengikuti seluruh instruksi dari guru."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Manfaat utama dari dilakukannya refleksi pembelajaran bagi guru adalah…",
+    "o": [
+      "Untuk mengidentifikasi kesalahan yang dilakukan siswa.",
+      "Untuk menentukan urutan peringkat di dalam kelas.",
+      "Untuk memperbaiki dan meningkatkan kualitas pembelajaran berikutnya.",
+      "Untuk mengurangi durasi jam mengajar di kelas.",
+      "Untuk mengganti seluruh perangkat pembelajaran secara total."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam dimensi Profil Pelajar Pancasila, kegiatan yang paling mencerminkan kemampuan bernalar kritis di MI adalah…",
+    "o": [
+      "Siswa menghafal teks dari buku paket secara lisan.",
+      "Siswa menyalin catatan dari papan tulis ke buku tugas.",
+      "Siswa menganalisis masalah sederhana dan memberikan alasan logis.",
+      "Siswa menjawab soal pilihan ganda sesuai kunci jawaban.",
+      "Siswa diam mendengarkan ceramah guru sepanjang sesi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Ciri khas utama dari sistem asesmen dalam model Project Based Learning (PjBL) adalah…",
+    "o": [
+      "Hanya menilai kualitas produk akhir yang dihasilkan.",
+      "Menilai proses pengerjaan dan produk secara berkesinambungan.",
+      "Hanya menggunakan instrumen tes tertulis objektif.",
+      "Memberikan nilai berdasarkan kecepatan siswa menyelesaikan proyek.",
+      "Menilai hasil secara individu tanpa melihat kerja tim."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Manakah contoh penerapan berdiferensiasi konten yang tepat di kelas MI?",
+    "o": [
+      "Memberikan set soal yang sama persis untuk semua tingkat kemampuan.",
+      "Guru menyajikan materi dengan tingkat kesulitan yang seragam.",
+      "Menyediakan bahan bacaan dengan tingkat kompleksitas berbeda sesuai kemampuan siswa.",
+      "Hanya menggunakan satu jenis buku paket sebagai sumber utama.",
+      "Mempercepat durasi penjelasan materi untuk mengejar target."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Langkah awal yang paling tepat dalam merencanakan pembelajaran di MI berbasis Kurikulum Merdeka adalah…",
+    "o": [
+      "Menyusun butir-butir soal untuk evaluasi akhir.",
+      "Menentukan metode mengajar yang akan digunakan guru.",
+      "Menganalisis capaian pembelajaran (CP) dan karakteristik peserta didik.",
+      "Menyiapkan peralatan media pembelajaran di kelas.",
+      "Menentukan sumber belajar digital yang akan dipakai."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Aktivitas literasi membaca di kelas rendah MI yang paling efektif untuk menumbuhkan minat baca adalah…",
+    "o": [
+      "Mengadakan tes membaca secara rutin setiap pagi.",
+      "Mewajibkan siswa menghafal isi teks bacaan singkat.",
+      "Membacakan buku cerita menarik dan mendiskusikannya bersama.",
+      "Memberikan tugas menyalin teks panjang dari buku.",
+      "Memberikan soal pilihan ganda berdasarkan teks."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Contoh aktivitas numerasi yang relevan untuk diterapkan di lingkungan MI adalah…",
+    "o": [
+      "Menghafal rumus-rumus matematika dasar.",
+      "Menyelesaikan soal hitungan abstrak tanpa konteks.",
+      "Menggunakan masalah harian yang melibatkan logika perhitungan sederhana.",
+      "Menyalin soal latihan dari buku ke buku tulis.",
+      "Mengerjakan soal ulangan harian secara mandiri."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Prinsip utama yang harus dipegang dalam pemanfaatan teknologi di MI adalah…",
+    "o": [
+      "Teknologi diposisikan sebagai tujuan akhir pembelajaran.",
+      "Teknologi digunakan untuk menggantikan peran guru sepenuhnya.",
+      "Teknologi berfungsi mendukung tercapainya tujuan pembelajaran.",
+      "Teknologi wajib digunakan dalam setiap menit pembelajaran.",
+      "Teknologi dipilih hanya karena mengikuti tren saat ini."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Peran guru yang paling ideal dalam memfasilitasi pembelajaran kolaboratif di kelas adalah…",
+    "o": [
+      "Mengontrol secara penuh setiap detail aktivitas siswa.",
+      "Menjadi pusat utama dalam setiap sesi diskusi kelompok.",
+      "Memfasilitasi interaksi dan kerja sama antarpeserta didik.",
+      "Memberikan jawaban langsung saat siswa mengalami kesulitan.",
+      "Menentukan hasil kerja tanpa melibatkan proses siswa."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Indikator utama keberhasilan dari proses pembelajaran berbasis karakter adalah…",
+    "o": [
+      "Siswa berhasil meraih nilai akademik yang sangat tinggi.",
+      "Siswa mampu menghafal seluruh teori tentang etika.",
+      "Siswa menunjukkan perilaku jujur dan tanggung jawab dalam keseharian.",
+      "Siswa memiliki kecepatan tinggi dalam menyelesaikan tugas.",
+      "Siswa mampu menjawab soal-soal tentang nilai moral."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Tujuan utama dari dilakukannya refleksi oleh peserta didik setelah proses belajar adalah…",
+    "o": [
+      "Untuk mencari tahu dan menilai kesalahan teman sekelas.",
+      "Hanya untuk mengetahui berapa nilai akhir yang diperoleh.",
+      "Menyadari proses dan capaian belajar yang telah mereka lalui.",
+      "Membandingkan hasil belajar pribadi dengan siswa lain.",
+      "Mengulang kembali materi dari awal secara mandiri."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Tahap akhir yang paling tepat dalam siklus model Project Based Learning (PjBL) adalah…",
+    "o": [
+      "Menentukan topik utama dari proyek yang akan dikerjakan.",
+      "Menyusun jadwal pelaksanaan kegiatan proyek secara detail.",
+      "Melakukan refleksi dan evaluasi menyeluruh terhadap hasil proyek.",
+      "Mengumpulkan data dan informasi awal untuk bahan proyek.",
+      "Merumuskan pertanyaan pemantik untuk memulai diskusi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Keterampilan 4C yang paling dominan muncul saat siswa MI melakukan diskusi kelompok dan mempresentasikan ide adalah…",
+    "o": [
+      "Creativity dan Collaboration.",
+      "Communication dan Critical Thinking.",
+      "Critical Thinking dan Creativity.",
+      "Collaboration dan Creativity.",
+      "Communication dan Collaboration."
+    ],
+    "a": 4
+  },
+  {
+    "q": "Tujuan utama dari diterapkannya pembelajaran tematik integratif di lingkungan MI adalah…",
+    "o": [
+      "Untuk memisahkan batasan antar mata pelajaran secara tegas.",
+      "Untuk memberikan materi sebanyak-banyaknya kepada siswa.",
+      "Memberikan pengalaman belajar yang utuh dan bermakna bagi siswa.",
+      "Untuk mempermudah tugas administrasi penilaian guru.",
+      "Untuk menghemat alokasi waktu dalam jadwal pembelajaran."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Apa fungsi utama dari dilakukannya asesmen diagnostik pada awal Kurikulum Merdeka?",
+    "o": [
+      "Sebagai dasar untuk menentukan nilai akhir di rapor.",
+      "Untuk mengetahui hasil akhir dari sebuah kompetensi.",
+      "Mengidentifikasi kebutuhan, minat, dan kemampuan awal siswa.",
+      "Untuk membandingkan tingkat kepintaran antar peserta didik.",
+      "Sebagai syarat utama dalam penentuan peringkat kelas."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Peran peserta didik yang diharapkan dalam model Problem Based Learning (PBL) adalah…",
+    "o": [
+      "Pasif mendengarkan seluruh penjelasan dari guru.",
+      "Fokus pada menghafal materi untuk persiapan ujian.",
+      "Aktif mencari informasi dan solusi atas masalah yang diberikan.",
+      "Menunggu instruksi detail dari guru sebelum melangkah.",
+      "Hanya mencatat apa yang tertulis di papan tulis."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Manakah di bawah ini yang merupakan fungsi utama dari Lembar Kerja Peserta didik (LKPD)?",
+    "o": [
+      "Sebagai instrumen tunggal dalam evaluasi akhir.",
+      "Sebagai bahan bacaan untuk dihafal oleh peserta didik.",
+      "Memandu aktivitas belajar siswa secara sistematis dan terarah.",
+      "Sebagai pengganti buku teks pelajaran di dalam kelas.",
+      "Sebagai kumpulan soal-soal latihan mandiri di rumah."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Indikator soal yang paling mencerminkan prinsip Higher Order Thinking Skills (HOTS) adalah…",
+    "o": [
+      "Siswa diminta untuk menyebutkan definisi suatu istilah.",
+      "Siswa diminta untuk memilih satu jawaban benar dari daftar.",
+      "Siswa diminta menganalisis dan memecahkan masalah kontekstual.",
+      "Siswa diminta mengingat kembali urutan peristiwa sejarah.",
+      "Siswa diminta menyalin kembali teks dari sumber bacaan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Bentuk keterlibatan orang tua yang paling mendukung keberhasilan pembelajaran siswa MI adalah…",
+    "o": [
+      "Membantu mengerjakan seluruh tugas sekolah anak.",
+      "Ikut menentukan standar nilai yang harus dicapai anak.",
+      "Mendampingi serta memberikan motivasi belajar di rumah.",
+      "Mengambil alih peran guru dalam menjelaskan materi akademik.",
+      "Mengatur secara ketat setiap detik aktivitas belajar anak."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Manfaat paling utama dari penggunaan lingkungan sekitar sebagai sumber belajar di MI adalah…",
+    "o": [
+      "Dapat mengurangi beban materi pelajaran yang berat.",
+      "Membatasi ruang gerak belajar siswa agar lebih fokus.",
+      "Mengaitkan materi pelajaran dengan pengalaman nyata siswa.",
+      "Mempermudah tugas guru dalam menyampaikan teori.",
+      "Efisiensi waktu karena tidak perlu media tambahan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Prinsip dasar yang harus diterapkan dalam pembelajaran inklusif di madrasah adalah…",
+    "o": [
+      "Memisahkan siswa berkebutuhan khusus ke kelas yang berbeda.",
+      "Memberikan tugas yang sama persis tanpa adanya penyesuaian.",
+      "Menghargai keberagaman dan memberi dukungan sesuai kebutuhan.",
+      "Fokus memberikan layanan hanya pada siswa yang berprestasi.",
+      "Mengurangi target capaian pembelajaran secara drastis."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Strategi guru yang paling efektif untuk menanamkan nilai disiplin pada siswa MI adalah…",
+    "o": [
+      "Memberikan sanksi atau hukuman pada setiap pelanggaran kecil.",
+      "Menjelaskan aturan secara lisan berulang kali di depan kelas.",
+      "Memberikan keteladanan dan pembiasaan perilaku disiplin nyata.",
+      "Memberikan tugas tambahan yang banyak sebagai efek jera.",
+      "Menegur siswa yang melanggar di hadapan teman-temannya."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Contoh penerapan berdiferensiasi proses yang paling tepat dalam pembelajaran adalah…",
+    "o": [
+      "Semua siswa wajib menyelesaikan tugas dengan metode yang sama.",
+      "Guru menetapkan durasi waktu belajar yang kaku bagi semua siswa.",
+      "Siswa bebas memilih cara belajar melalui diskusi, praktik, atau literasi.",
+      "Guru menggunakan metode ceramah sebagai satu-satunya cara mengajar.",
+      "Guru mempercepat durasi penjelasan agar materi cepat selesai."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Kegunaan utama dari asesmen formatif yang dilakukan selama proses pembelajaran adalah…",
+    "o": [
+      "Untuk menentukan nilai angka akhir di buku rapor.",
+      "Sebagai bahan untuk membandingkan kecerdasan antar siswa.",
+      "Memberikan umpan balik instan untuk perbaikan kualitas belajar.",
+      "Untuk melengkapi dokumen administrasi guru di sekolah.",
+      "Sebagai penentu utama dalam kelulusan tingkat satuan pendidikan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Tujuan utama dari pengenalan literasi digital bagi siswa tingkat MI adalah…",
+    "o": [
+      "Agar siswa mampu mengoperasikan sebanyak mungkin aplikasi.",
+      "Agar siswa terbiasa menggunakan gawai dalam waktu lama.",
+      "Membentuk kemampuan menggunakan teknologi secara bijak dan aman.",
+      "Agar siswa tidak ketinggalan tren terbaru di media sosial.",
+      "Meningkatkan keterampilan kecepatan mengetik pada perangkat."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Peran guru yang paling ideal dalam pembelajaran tematik di kelas rendah (1-3) MI adalah…",
+    "o": [
+      "Sebagai penyampai materi tunggal yang dominan.",
+      "Sebagai satu-satunya sumber validasi informasi bagi siswa.",
+      "Sebagai fasilitator yang mengintegrasikan berbagai muatan pelajaran.",
+      "Berfokus hanya sebagai penguji hasil belajar di akhir sesi.",
+      "Sebagai pengawas ketertiban selama siswa beraktivitas mandiri."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Keunggulan utama dari penggunaan media konkret (benda nyata) dalam pembelajaran di MI adalah…",
+    "o": [
+      "Proses persiapannya tidak memakan waktu bagi guru.",
+      "Hanya efektif untuk menarik perhatian siswa dalam waktu singkat.",
+      "Membantu visualisasi konsep abstrak menjadi pemahaman yang nyata.",
+      "Dapat mempersingkat durasi jam pembelajaran di kelas.",
+      "Dapat menggantikan kehadiran guru dalam menjelaskan materi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Aktivitas refleksi yang paling bermakna untuk dilakukan oleh siswa setelah pembelajaran adalah…",
+    "o": [
+      "Menulis ulang kembali seluruh materi yang ada di papan tulis.",
+      "Mengerjakan soal-soal latihan tambahan yang diberikan guru.",
+      "Mengungkapkan pengalaman dan tingkat pemahaman secara jujur.",
+      "Mendengarkan kembali penjelasan ulang dari guru secara pasif.",
+      "Membaca buku teks secara berulang hingga hafal."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Tujuan utama dari dibangunnya kolaborasi yang kuat antara guru dan orang tua adalah…",
+    "o": [
+      "Agar orang tua bisa menggantikan peran guru mengajar di sekolah.",
+      "Untuk menambah beban tanggung jawab akademik bagi orang tua.",
+      "Mendukung optimalisasi perkembangan belajar dan karakter siswa.",
+      "Agar guru dapat mengontrol aktivitas siswa di rumah secara penuh.",
+      "Sebagai formalitas dalam penentuan nilai akhir rapor."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Manakah yang menjadi karakteristik utama dari pendekatan pembelajaran kontekstual?",
+    "o": [
+      "Proses belajar sepenuhnya terpaku pada urutan di buku teks.",
+      "Sistem pembelajaran yang sangat menekankan pada aspek hafalan.",
+      "Mengaitkan setiap materi pelajaran dengan situasi dunia nyata siswa.",
+      "Evaluasi keberhasilan hanya dilihat dari nilai tes akhir semester.",
+      "Metode penyampaian materi didominasi oleh ceramah satu arah."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Berdasarkan Kurikulum Merdeka, apa tujuan akhir yang ingin dicapai dalam pembelajaran di MI?",
+    "o": [
+      "Siswa berhasil memperoleh nilai sempurna di seluruh mata pelajaran.",
+      "Siswa mampu menuntaskan seluruh materi dalam waktu singkat.",
+      "Mengembangkan potensi, karakter, dan kompetensi siswa secara utuh.",
+      "Siswa dipastikan lulus ujian sekolah dengan nilai yang membanggakan.",
+      "Siswa menguasai seluruh teori yang ada di dalam kurikulum."
+    ],
+    "a": 2
+  }
+]
