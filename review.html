@@ -11,17 +11,42 @@
 
 <body>
 
-<div class="review-container">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Jawaban</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
 
-  <h2>Review Jawaban Pilihan Ganda</h2>
+  <div class="review-container">
+    <h2>Review Jawaban Ujian</h2>
 
-  <div id="reviewTable"></div>
+    <table class="review-table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Soal</th>
+          <th>Jawaban Anda</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="reviewBody">
+      </tbody>
+    </table>
 
-  <div style="margin-top:30px;text-align:center;">
-    <a href="result.html" class="btn-back">Kembali ke Result</a>
+    <div class="review-footer">
+      <button onclick="window.location.href='result.html'">
+        Kembali
+      </button>
+    </div>
+
   </div>
 
-</div>
+<script src="review.js"></script>
+</body>
+</html>
 
 <script src="js/review.js"></script>
 
