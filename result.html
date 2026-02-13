@@ -9,8 +9,13 @@
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/result.css">
 
+<!-- Chart -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- PDF -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<!-- Lucide Icons -->
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -28,8 +33,8 @@
         <span>Dashboard</span>
       </a>
 
-      <a href="result.html">
-        <i data-lucide="bar-chart-2"></i>
+      <a href="result.html" class="active">
+        <i data-lucide="bar-chart-3"></i>
         <span>Result</span>
       </a>
 
@@ -53,66 +58,59 @@
   <!-- CONTENT -->
   <div class="content">
 
+    <!-- TOPBAR -->
     <div class="topbar">
       <div>
         <span class="hamburger" onclick="toggleSidebar()">☰</span>
-        <span class="app-title-desktop"></span>
+        <span class="app-title-desktop">Hasil Ujian</span>
       </div>
 
       <div class="user-info">
         <div>
-         <div id="greeting"></div>
+          <div id="greeting"></div>
           <strong id="userInfo"></strong>
         </div>
-     <div id="avatar"></div>
+        <div id="avatar"></div>
       </div>
     </div>
 
-    <div class="result-section">
-<canvas id="scoreChart" height="120"></canvas>
-  <h3>Hasil PG</h3>
+    <!-- RESULT CARD -->
+    <div id="resultCard" class="card result-card">
 
-  <div class="result-card">
-    <div class="result-item">
-      <span>Jawaban Benar</span>
-      <strong id="pgCorrect"></strong>
-    </div>
+      <h2>Hasil Ujian</h2>
 
-    <div class="result-item">
-      <span>Skor Akhir</span>
-      <strong id="pgScore"></strong>
-    </div>
+      <!-- PG RESULT -->
+      <div class="score-box">
+        <div class="score-number" id="scoreText">0</div>
+        <div class="score-label">Nilai Pilihan Ganda</div>
+      </div>
 
-    <div class="result-item">
-      <span>Status Lulus</span>
-      <strong id="pgStatus"></strong>
-    </div>
-  </div>
+      <div class="pg-detail">
+        <div><i data-lucide="check-circle"></i> Jawaban Benar: <span id="correctCount">0</span></div>
+        <div><i data-lucide="award"></i> Skor Akhir: <span id="finalScore">0</span></div>
+        <div id="statusBox"></div>
+      </div>
 
-  <h3 style="margin-top:40px;">Hasil Studi Kasus</h3>
+      <canvas id="scoreChart" height="120"></canvas>
 
-  <div class="result-card">
-    <div class="result-item">
-      <span>Total Kata</span>
-      <strong id="caseWords"></strong>
-    </div>
+      <hr style="margin:30px 0; opacity:.2;">
 
-    <div class="result-item">
-      <span>Total Karakter</span>
-      <strong id="caseChars"></strong>
-    </div>
-  </div>
+      <!-- STUDI KASUS RESULT -->
+      <div class="case-result">
+        <h3>Hasil Studi Kasus</h3>
+        <div><i data-lucide="file-text"></i> Total Kata: <span id="totalWords">0</span></div>
+        <div><i data-lucide="type"></i> Total Karakter: <span id="totalChars">0</span></div>
+      </div>
 
-</div>
-
-      
-
+      <!-- BUTTONS -->
       <div class="result-buttons">
         <button class="btn-primary" onclick="exportPDF()">
+          <i data-lucide="download"></i>
           Export PDF
         </button>
 
         <button onclick="window.location.href='review.html'">
+          <i data-lucide="eye"></i>
           Review Jawaban
         </button>
       </div>
@@ -122,7 +120,6 @@
   </div>
 
 </div>
-  
 
 <script src="js/auth.js"></script>
 <script src="js/layout.js"></script>
