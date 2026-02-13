@@ -5,15 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login - CBT System</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/app.css">
 
 <style>
-.login-wrapper{
+.login-container{
   display:flex;
   justify-content:center;
   align-items:center;
-  min-height:100vh;
-  background:var(--gradient);
+  height:100vh;
+  padding:20px;
 }
 
 .login-card{
@@ -22,12 +24,14 @@
   border-radius:16px;
   width:100%;
   max-width:400px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
-.login-card h2{
+.login-title{
   text-align:center;
   margin-bottom:30px;
+  font-size:22px;
+  font-weight:600;
 }
 
 .input-group{
@@ -35,10 +39,10 @@
 }
 
 .input-group label{
-  font-size:14px;
-  color:var(--text-secondary);
   display:block;
   margin-bottom:6px;
+  font-size:14px;
+  color:var(--text-muted);
 }
 
 .input-group input{
@@ -46,40 +50,36 @@
   padding:10px;
   border-radius:8px;
   border:none;
-  background:var(--bg-secondary);
+  background:#0f172a;
   color:white;
 }
 
-.login-btn{
+.btn-login{
   width:100%;
   padding:12px;
-  background:var(--gradient);
-  color:white;
+  border:none;
   border-radius:8px;
+  background:var(--primary-gradient);
+  color:white;
   font-weight:600;
-  transition:0.3s;
+  cursor:pointer;
 }
 
-.login-btn:hover{
+.btn-login:hover{
   opacity:.9;
 }
-
-.app-brand{
-  text-align:center;
-  margin-bottom:20px;
-  font-weight:700;
-  font-size:20px;
-}
 </style>
+
 </head>
 
 <body>
 
-<div class="login-wrapper">
+<div class="login-container">
   <div class="login-card">
 
-    <div class="app-brand">CBT SYSTEM</div>
-    <h2>Login Peserta</h2>
+    <div class="login-title">
+      CBT SYSTEM LOGIN
+    </div>
 
     <div class="input-group">
       <label>Nama</label>
@@ -91,30 +91,14 @@
       <input type="text" id="kelas">
     </div>
 
-    <button class="login-btn" onclick="handleLogin()">Masuk</button>
+    <button class="btn-login" onclick="login()">
+      Masuk
+    </button>
 
   </div>
 </div>
 
 <script src="js/auth.js"></script>
-
-<script>
-Auth.autoRedirect();
-
-function handleLogin(){
-
-  const nama = document.getElementById("nama").value.trim();
-  const kelas = document.getElementById("kelas").value.trim();
-
-  if(!nama || !kelas){
-    alert("Nama dan Kelas wajib diisi!");
-    return;
-  }
-
-  Auth.login(nama, kelas);
-  window.location.href = "dashboard.html";
-}
-</script>
 
 </body>
 </html>
