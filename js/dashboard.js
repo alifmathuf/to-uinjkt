@@ -3,8 +3,7 @@
 ================================ */
 
 const user = Auth.getUser();
-document.getElementById("avatar").innerHTML =
-  generateAvatar(user.nama);
+
 
 document.getElementById("greeting").innerText =
   "Selamat datang,";
@@ -134,6 +133,8 @@ function startExam(){
   }
 }
 
+document.getElementById("avatar").innerHTML =
+  generateAvatar(user.nama);
 function generateAvatar(name){
 
   const initial = name
