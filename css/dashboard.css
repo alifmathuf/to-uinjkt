@@ -1,0 +1,52 @@
+/* ===============================
+   DASHBOARD UI
+================================ */
+
+.stepper{
+  display:flex;
+  gap:15px;
+  margin-bottom:25px;
+}
+
+.step{
+  padding:8px 16px;
+  background:var(--bg-secondary);
+  border-radius:20px;
+  font-size:14px;
+  cursor:pointer;
+  transition:var(--transition);
+}
+
+.step.active{
+  background:var(--gradient);
+}
+
+.accordion{
+  background:var(--bg-card);
+  border-radius:12px;
+  padding:20px;
+}
+
+.option-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+  gap:15px;
+  margin-top:15px;
+}
+
+.option-item{
+  padding:12px;
+  background:var(--bg-secondary);
+  border-radius:10px;
+  cursor:pointer;
+  text-align:center;
+  transition:var(--transition);
+}
+
+.option-item:hover{
+  background:var(--primary);
+}
+
+.option-item.active{
+  background:var(--gradient);
+}
