@@ -68,14 +68,42 @@
       </div>
     </div>
 
-    <div id="resultCard" class="card result-card">
+    <div class="result-section">
 
-      <h2>Hasil Ujian</h2>
+  <h3>Hasil PG</h3>
 
-      <div class="score-box">
-        <div class="score-number" id="scoreText"></div>
-        <div class="score-label">Nilai Anda</div>
-      </div>
+  <div class="result-card">
+    <div class="result-item">
+      <span>Jawaban Benar</span>
+      <strong id="pgCorrect"></strong>
+    </div>
+
+    <div class="result-item">
+      <span>Skor Akhir</span>
+      <strong id="pgScore"></strong>
+    </div>
+
+    <div class="result-item">
+      <span>Status Lulus</span>
+      <strong id="pgStatus"></strong>
+    </div>
+  </div>
+
+  <h3 style="margin-top:40px;">Hasil Studi Kasus</h3>
+
+  <div class="result-card">
+    <div class="result-item">
+      <span>Total Kata</span>
+      <strong id="caseWords"></strong>
+    </div>
+
+    <div class="result-item">
+      <span>Total Karakter</span>
+      <strong id="caseChars"></strong>
+    </div>
+  </div>
+
+</div>
 
       <canvas id="scoreChart" height="120"></canvas>
 
