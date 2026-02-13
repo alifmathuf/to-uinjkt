@@ -40,7 +40,7 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
   })
   .catch(err => {
     console.error(err);
-    alert("Soal gagal dimuat. Periksa folder paket.");
+    alert("Mohon maaf! Paket soal belum tersedia.");
   });
 
 
