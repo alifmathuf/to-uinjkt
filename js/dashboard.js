@@ -133,9 +133,6 @@ function startExam(){
   }
 }
 
-document.getElementById("avatar").innerHTML =
-  generateAvatar(user.nama);
-
 
 /* INIT */
 updateStep();
