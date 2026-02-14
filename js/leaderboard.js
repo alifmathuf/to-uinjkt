@@ -5,10 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const user = Auth.getUser();
   if (!user) return;
 
-  document.getElementById("greeting").innerText = "Leaderboard";
-  document.getElementById("userInfo").innerText =
-    `${user.nama} (${user.kelas})`;
-
   const tbody = document.getElementById("leaderboardBody");
 
   if (typeof firebase === "undefined") {
@@ -24,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const db = firebase.database();
 
-  // 🔥 Ambil SEMUA leaderboard semua paket
   db.ref("leaderboard")
     .once("value")
     .then(snapshot => {
@@ -40,27 +35,31 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      const allData = snapshot.val();
+      const allMapel = snapshot.val();
       let leaderboard = [];
 
-      Object.keys(allData).forEach(examId => {
+      // LOOP SEMUA MAPEL
+      Object.keys(allMapel).forEach(mapel => {
 
-        const examGroup = allData[examId];
+        const users = allMapel[mapel];
 
-        Object.keys(examGroup).forEach(userId => {
+        // LOOP SEMUA USER DALAM MAPEL
+        Object.keys(users).forEach(userId => {
 
-          const item = examGroup[userId];
+          const item = users[userId];
 
           leaderboard.push({
-            nama: item.nama,
-            kelas: item.kelas,
-            score: item.score
+            nama: item.nama || "-",
+            kelas: item.kelas || "-",
+            score: item.score || 0,
+            mapel: mapel
           });
 
         });
 
       });
 
+      // URUTKAN
       leaderboard.sort((a, b) => b.score - a.score);
 
       tbody.innerHTML = "";
@@ -75,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         tbody.innerHTML += `
           <tr>
-            <td class="rank-medal">${medal}</td>
+            <td>${medal}</td>
             <td>${item.nama}</td>
             <td>${item.kelas}</td>
             <td>${item.score}</td>
@@ -86,6 +85,13 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => {
       console.log("Leaderboard error:", err);
+      tbody.innerHTML = `
+        <tr>
+          <td colspan="4" style="text-align:center;">
+            Gagal memuat data.
+          </td>
+        </tr>
+      `;
     });
 
 });
