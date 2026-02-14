@@ -39,7 +39,10 @@
   font-weight:600;
   color:varvar(--text-primary);
 }
-
+.casetopTitle{
+  font-size:13px;
+  color:var(--text-secondary);
+}
 
 /* ===== CONTENT ===== */
 
