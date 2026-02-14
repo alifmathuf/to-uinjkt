@@ -1,50 +1,91 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 /* ================= USER LOAD ================= */
 
 const userData = JSON.parse(localStorage.getItem("cbtUser"));
 
 if(!userData){
   window.location.href = "login.html";
+  return;
 }
 
-document.getElementById("userName").innerText = userData.nama;
-document.getElementById("userKelas").innerText = userData.kelas;
+// Greeting
+const greeting = document.getElementById("greeting");
+const userInfo = document.getElementById("userInfo");
+const avatar = document.getElementById("avatar");
+
+if(greeting){
+  const hour = new Date().getHours();
+  let text = "Selamat Datang";
+  if(hour < 12) text = "Selamat Pagi";
+  else if(hour < 15) text = "Selamat Siang";
+  else if(hour < 18) text = "Selamat Sore";
+  else text = "Selamat Malam";
+  greeting.innerText = text;
+}
+
+if(userInfo){
+  userInfo.innerText = userData.nama + " - " + userData.kelas;
+}
+
+// Avatar (inisial nama)
+if(avatar){
+  const initial = userData.nama.charAt(0).toUpperCase();
+  avatar.innerHTML = `<div class="avatar-circle">${initial}</div>`;
+}
 
 
-/* ================= MENU DATA ================= */
+/* ================= FIREBASE READY CHECK ================= */
 
-const menuData = [
-  { title:"Latihan PG", icon:"📝", link:"exam-pg.html" },
-  { title:"Studi Kasus", icon:"📚", link:"exam-case.html" },
-  { title:"Leaderboard", icon:"🏆", link:"leaderboard.html" }
-];
+if(typeof firebase !== "undefined"){
+  console.log("Firebase ready");
+}else{
+  console.warn("Firebase belum terload");
+}
 
 
-/* ================= RENDER GRID ================= */
+/* ================= MENU GRID (STEP 1) ================= */
 
-const grid = document.getElementById("menuGrid");
+const stepContent = document.getElementById("stepContent");
 
-menuData.forEach(item => {
+function renderMenuGrid(){
 
-  const card = document.createElement("div");
-  card.classList.add("menu-card");
+  if(!stepContent) return;
 
-  card.innerHTML = `
-    <div class="icon">${item.icon}</div>
-    <h4>${item.title}</h4>
+  stepContent.innerHTML = `
+    <div class="menu-grid" id="menuGrid"></div>
   `;
 
-  card.onclick = () => {
-    window.location.href = item.link;
-  };
+  const menuData = [
+    { title:"Latihan PG", icon:"📝", link:"exam-pg.html" },
+    { title:"Studi Kasus", icon:"📚", link:"exam-case.html" },
+    { title:"Leaderboard", icon:"🏆", link:"leaderboard.html" }
+  ];
 
-  grid.appendChild(card);
+  const grid = document.getElementById("menuGrid");
+
+  menuData.forEach(item => {
+
+    const card = document.createElement("div");
+    card.classList.add("menu-card");
+
+    card.innerHTML = `
+      <div class="menu-icon">${item.icon}</div>
+      <div class="menu-title">${item.title}</div>
+    `;
+
+    card.onclick = () => {
+      window.location.href = item.link;
+    };
+
+    grid.appendChild(card);
+  });
+
+}
+
+
+/* ================= INITIAL LOAD ================= */
+
+renderMenuGrid();
 
 });
-
-
-/* ================= LOGOUT ================= */
-
-function logout(){
-  localStorage.removeItem("cbtUser");
-  window.location.href="login.html";
-}
