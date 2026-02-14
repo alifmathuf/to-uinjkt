@@ -1,15 +1,69 @@
 /* ===============================
-   DASHBOARD ENGINE
+   DASHBOARD ENGINE + FIREBASE SYNC
 ================================ */
+
+// ===============================
+// 🔥 FIREBASE CONFIG
+// GANTI DENGAN CONFIG PUNYA ANDA
+// ===============================
+
+const firebaseConfig = {
+  apiKey: "ISI_API_KEY",
+  authDomain: "ISI_AUTH_DOMAIN",
+  databaseURL: "ISI_DATABASE_URL",
+  projectId: "ISI_PROJECT_ID",
+  storageBucket: "ISI_STORAGE_BUCKET",
+  messagingSenderId: "ISI_SENDER_ID",
+  appId: "ISI_APP_ID"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+
+// ===============================
+// USER
+// ===============================
 
 const user = Auth.getUser();
 
+if(!user){
+  window.location.href="login.html";
+}
 
 document.getElementById("greeting").innerText =
   "Selamat datang,";
 
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
+
+
+// ===============================
+// 🔥 SYNC USER KE LEADERBOARD GLOBAL
+// ===============================
+
+function syncUserToLeaderboard(){
+
+  const userRef = db.ref("leaderboard/" + user.id);
+
+  userRef.once("value", snapshot=>{
+    if(!snapshot.exists()){
+      userRef.set({
+        nama: user.nama,
+        kelas: user.kelas,
+        totalScore: 0,
+        lastUpdate: Date.now()
+      });
+    }
+  });
+}
+
+syncUserToLeaderboard();
+
+
+// ===============================
+// STEPPER STATE
+// ===============================
 
 let currentStep = 1;
 
@@ -23,13 +77,21 @@ const stepContent = document.getElementById("stepContent");
 const steps = document.querySelectorAll(".step");
 
 
-/* STEP CLICK */
+// ===============================
+// STEP CLICK
+// ===============================
+
 steps.forEach(step=>{
   step.addEventListener("click",()=>{
     currentStep = parseInt(step.dataset.step);
     updateStep();
   });
 });
+
+
+// ===============================
+// UPDATE STEP
+// ===============================
 
 function updateStep(){
 
@@ -47,7 +109,6 @@ function updateStep(){
     }
   });
 
-  // smooth animation
   stepContent.style.opacity = 0;
   stepContent.style.transform = "translateY(5px)";
 
@@ -59,6 +120,9 @@ function updateStep(){
 }
 
 
+// ===============================
+// RENDER CONTENT
+// ===============================
 
 function renderContent(){
 
@@ -102,6 +166,10 @@ function renderContent(){
 }
 
 
+// ===============================
+// RENDER OPTIONS
+// ===============================
+
 function renderOptions(list,type){
 
   const wrapper=document.createElement("div");
@@ -133,9 +201,13 @@ function renderOptions(list,type){
   stepContent.appendChild(wrapper);
 }
 
+
+// ===============================
+// AVATAR GENERATOR
+// ===============================
+
 function generateAvatar(){
 
-  const user = Auth.getUser();
   if(!user || !user.nama) return;
 
   const name = user.nama.trim();
@@ -146,7 +218,6 @@ function generateAvatar(){
 
   avatar.innerText = firstLetter;
 
-  // generate warna konsisten dari nama
   const colors = [
     "#2563eb",
     "#0ea5e9",
@@ -163,6 +234,10 @@ function generateAvatar(){
 
 generateAvatar();
 
+
+// ===============================
+// START EXAM
+// ===============================
 
 function startExam(){
 
@@ -182,7 +257,8 @@ function startExam(){
 }
 
 
-         
+// ===============================
+// INIT
+// ===============================
 
-/* INIT */
 updateStep();
