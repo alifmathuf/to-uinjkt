@@ -2,14 +2,13 @@
    DASHBOARD UI
 ================================ */
 
-/* ================= STEP PROGRESS ================= */
+/* ================= 4 STEP PROGRESS ================= */
 
 .stepper{
   display:flex;
   align-items:center;
   margin:30px 0;
-  gap:12px;
-  flex-wrap:wrap;
+  gap:14px;
 }
 
 .step{
@@ -18,7 +17,6 @@
   gap:8px;
   font-size:14px;
   color:var(--text-secondary);
-  position:relative;
 }
 
 .step .circle{
@@ -26,7 +24,53 @@
   height:12px;
   border-radius:50%;
   background:var(--border-soft);
-  transition:0.3s;
+  transition:0.3s ease;
+}
+
+/* Garis penghubung */
+.line{
+  flex:1;
+  height:1px;
+  background:var(--border-soft);
+  min-width:40px;
+}
+
+/* STEP ACTIVE */
+.step.active{
+  color:var(--primary);
+  font-weight:600;
+}
+
+.step.active .circle{
+  background:var(--primary);
+}
+
+/* STEP COMPLETED */
+.step.completed{
+  color:var(--success);
+}
+
+.step.completed .circle{
+  background:var(--success);
+}
+
+.line.completed{
+  background:var(--success);
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width:768px){
+
+  .stepper{
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .line{
+    display:none; /* biar tidak aneh di layar kecil */
+  }
 }
 
 /* Garis penghubung */
