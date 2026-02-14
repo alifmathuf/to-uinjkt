@@ -2,38 +2,62 @@
    DASHBOARD UI
 ================================ */
 
-/* STEP NAVIGATION */
+/* ================= STEP PROGRESS ================= */
+
 .stepper{
   display:flex;
   align-items:center;
-  gap:14px;
+  margin:30px 0;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
 .step{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  color:var(--text-secondary);
   position:relative;
-  padding:8px 14px;
 }
 
-/* Garis antar step */
-.step:not(:last-child)::after{
-  content:"";
-  position:absolute;
-  right:-10px;
-  top:50%;
-  transform:translateY(-50%);
-  width:1px;
-  height:16px;
+.step .circle{
+  width:12px;
+  height:12px;
+  border-radius:50%;
   background:var(--border-soft);
+  transition:0.3s;
 }
 
-
-.step:hover{
-  background:var(--bg-hover);
+/* Garis penghubung */
+.line{
+  flex:1;
+  height:1px;
+  background:var(--border-soft);
+  min-width:40px;
 }
 
+/* ACTIVE STEP */
 .step.active{
-  background:var(--gradient-primary);
-  color:var(--text-primary);
+  color:var(--primary);
+  font-weight:600;
+}
+
+.step.active .circle{
+  background:var(--primary);
+}
+
+/* COMPLETED STEP */
+.step.completed{
+  color:var(--success);
+}
+
+.step.completed .circle{
+  background:var(--success);
+}
+
+.line.completed{
+  background:var(--success);
 }
 
 
