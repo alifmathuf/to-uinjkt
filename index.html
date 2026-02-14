@@ -1,60 +1,189 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Try Out PPG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Tryout PPG</title>
 
-  <link rel="stylesheet" href="css/app.css">
+<link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
+<link rel="shortcut icon" href="assets/logo-uin.svg">
 
-  <style>
-    body{
-      margin:0;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      background:var(--bg-main);
-      color:white;
-      font-family:'Poppins',sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
 
-    .loader{
-      text-align:center;
-      margin-bottom:40px;
-    }
+<style>
 
-    .footer{
-      position:absolute;
-      bottom:20px;
-      font-size:14px;
-      opacity:.7;
-    }
-  </style>
+/* ====== LAYOUT ====== */
+
+.login-wrapper{
+  display:flex;
+  min-height:100vh;
+}
+
+/* LEFT SIDE (BRANDING) */
+
+.login-brand{
+  flex:1;
+  background:linear-gradient(135deg,#1e3a8a,#1e40af);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  padding:40px;
+  text-align:center;
+}
+
+.login-brand img{
+  width:120px;
+  margin-bottom:20px;
+}
+
+.login-brand h1{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.login-brand p{
+  font-weight:300;
+  opacity:.9;
+}
+
+/* RIGHT SIDE (FORM) */
+
+.login-form-area{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--bg-main);
+  padding:20px;
+}
+
+.login-card{
+  width:100%;
+  max-width:400px;
+  background:var(--bg-card);
+  padding:40px;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.login-card h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-weight:600;
+}
+
+.input-group{
+  margin-bottom:20px;
+}
+
+.input-group label{
+  display:block;
+  font-size:14px;
+  margin-bottom:6px;
+  color:var(--text-muted);
+}
+
+.input-group input{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  background:#0f172a;
+  color:white;
+  font-size:14px;
+}
+
+.input-group input:focus{
+  outline:none;
+  border:1px solid #3b82f6;
+}
+
+.btn-login{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn-login:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+  .login-wrapper{
+    flex-direction:column;
+  }
+
+  .login-brand{
+    padding:30px 20px;
+  }
+
+  .login-brand img{
+    width:80px;
+  }
+
+  .login-card{
+    padding:30px;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <div class="loader">
-    <h2>Memuat Sistem...</h2>
+<div class="login-wrapper">
+
+  <!-- BRANDING -->
+  <div class="login-brand">
+    <img src="assets/logo.png" alt="Logo">
+    <h1>TRY OUT PPG</h1><br>
+    <p>Kumpulan soal-soal Try Out PPG BATCH IV UIN SYAHID JAKARTA </p>
+   
+    <p><br>Apresiasi dan terima kasih kami sampaikan kepada segenap panitia dan Prodi PPG UIN Jakarta atas bimbingan dan dukungannya</p>
   </div>
 
-  <footer class="footer">
-    © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
-  </footer>
+  <!-- FORM -->
+  <div class="login-form-area">
+    <div class="login-card">
 
-  <script>
-    /* ===== AUTO REDIRECT ===== */
+      <h2>Login Peserta</h2>
 
-    const user = localStorage.getItem("cbtUser");
+      <div class="input-group">
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Masukkan nama">
+      </div>
 
-    if(user){
-      window.location.replace("dashboard.html");
-    }else{
-      window.location.replace("login.html");
-    }
-  </script>
+      <div class="input-group">
+        <label>Kelas</label>
+        <input type="text" id="kelas" placeholder="Masukkan kelas">
+      </div>
+
+      <button class="btn-login" onclick="login()">
+        Masuk
+      </button>
+
+    </div>
+  </div>
+
+</div>
+<footer class="footer">
+  © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
+</footer>
+<script src="js/auth.js"></script>
 
 </body>
 </html>
