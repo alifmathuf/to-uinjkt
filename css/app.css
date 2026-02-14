@@ -5,24 +5,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@600;700&display=swap');
 
 :root{
-  --bg-primary:#0f172a;
-  --bg-secondary:#111827;
-  --bg-card:#1e293b;
 
-  --primary:#1d4ed8;
-  --primary-soft:#2563eb;
-  --gradient:linear-gradient(135deg,#1e3a8a,#1d4ed8);
+  /* ================= BACKGROUND ================= */
+  --bg-primary:#0f172a;        /* main background */
+  --bg-secondary:#111827;      /* section background */
+  --bg-card:#1e293b;           /* card surface */
+  --bg-hover:#1f2937;          /* hover state */
 
+  /* ================= BRAND ================= */
+  --primary:#1d4ed8;           
+  --primary-soft:#2563eb;      
+  --primary-light:#3b82f6;
+
+  --gradient-primary:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primary-soft)
+  );
+
+  /* ================= TEXT ================= */
   --text-primary:#f8fafc;
   --text-secondary:#94a3b8;
   --text-muted:#64748b;
 
+  /* ================= BORDER ================= */
   --border-soft:#334155;
+  --border-strong:#475569;
 
+  /* ================= STATE ================= */
   --success:#16a34a;
   --danger:#dc2626;
+  --warning:#f59e0b;
 
+  /* ================= UI ================= */
   --radius:12px;
+  --radius-sm:8px;
+  --shadow-soft:0 4px 10px rgba(0,0,0,0.25);
   --transition:0.25s ease;
 }
 
