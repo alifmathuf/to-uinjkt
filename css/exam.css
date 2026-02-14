@@ -6,7 +6,7 @@
 
 .exam-container{
   width:100%;
-  max-width:760px;
+  max-width:680px;
   margin:40px auto;
   padding:32px;
   background:var(--bg-card);
