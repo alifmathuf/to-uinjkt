@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Studi Kasus - Tryout PPG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studi Kasus - Tryout PPG</title>
 
-<link rel="stylesheet" href="css/app.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/exam-case.css">
-
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/exam-case.css">
 </head>
 
 <body>
@@ -18,38 +17,39 @@
   <!-- ================= TOP BAR ================= -->
   <div class="exam-topbar">
 
-    <!-- TIMER (LEFT) -->
+    <!-- TIMER -->
     <div class="case-timer" id="caseTimer">
       30:00
     </div>
 
-    <!-- TITLE (RIGHT) -->
-    <div class="case-title"Title">
+    <!-- TITLE -->
+    <div class="case-title">
       Studi Kasus:
-      <div class="caseTopic"> </div>
       <span id="caseTopic"></span>
     </div>
 
   </div>
 
-
   <!-- ================= CONTENT ================= -->
   <div class="case-content">
-<div class="progress-wrapper">
-  <div class="progress-info">
-    <span id="progressText">1 / 50</span>
-  </div>
-  <div class="progress-bar">
-    <div id="progressFill"></div>
-  </div>
-</div>
+
+    <!-- PROGRESS -->
+    <div class="progress-wrapper">
+      <div class="progress-info">
+        <span id="progressText">1 / 4</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+
     <!-- STEP INFO -->
     <div class="case-meta">
       <div class="case-step" id="caseStepInfo">
         Soal 1 dari 4
       </div>
 
-      <div class="case-title" id="caseStepTitle">
+      <div class="case-step-title" id="caseStepTitle">
         Deskripsi Masalah Nyata
       </div>
     </div>
@@ -68,7 +68,6 @@
 
   </div>
 
-
   <!-- ================= FOOTER ================= -->
   <div class="case-footer">
 
@@ -79,24 +78,44 @@
     <button class="case-btn-secondary" onclick="finishCase()">
       Selesai
     </button>
+
+  </div>
+
 </div>
-
-
-</div>
-
 
 <!-- ================= FOOTER GLOBAL ================= -->
 <footer class="footer">
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
 
+<!-- ================= FIREBASE (WAJIB JIKA BELUM ADA DI AUTH.JS) ================= -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "ISI_API_KEY_KAMU",
+    authDomain: "ISI_AUTH_DOMAIN_KAMU",
+    databaseURL: "ISI_DATABASE_URL_KAMU",
+    projectId: "ISI_PROJECT_ID_KAMU",
+    storageBucket: "ISI_STORAGE_BUCKET_KAMU",
+    messagingSenderId: "ISI_MESSAGING_ID_KAMU",
+    appId: "ISI_APP_ID_KAMU"
+  };
+
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
+  const database = firebase.database();
+</script>
 
 <!-- ================= SCRIPTS ================= -->
 <script src="js/auth.js"></script>
 <script src="js/exam-case.js"></script>
 
 <script>
-Auth.protect();
+  Auth.protect();
 </script>
 
 </body>
