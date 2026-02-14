@@ -113,9 +113,7 @@ textarea:focus{
 /* ================= CONTENT ================= */
 
 .content{
-  padding:24px;
-  max-width:1000px;
-  margin:auto;
+  padding:32px;
 }
 
 
