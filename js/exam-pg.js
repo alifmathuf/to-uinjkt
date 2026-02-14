@@ -140,8 +140,35 @@ function updateProgress(){
 /* ================= SAVE ANSWER ================= */
 
 function saveAnswer(i) {
+
   jawaban[current] = i;
+
+  // ✅ Backup local
   localStorage.setItem("pgAnswers", JSON.stringify(jawaban));
+
+  // ✅ Kirim ke Firebase realtime
+  try{
+
+    if(typeof firebase !== "undefined"){
+
+      const user = Auth.getUser();
+      if(!user) return;
+
+      const examId = examState.mapel + "_" + examState.paket;
+
+      database.ref(`exams/${user.id}/${examId}`).update({
+        mapel: examState.mapel,
+        paket: examState.paket,
+        answers: jawaban,
+        lastSaved: Date.now()
+      });
+
+    }
+
+  }catch(err){
+    console.log("Firebase save skipped:", err);
+  }
+
   updateNumberNav();
 }
 
@@ -234,7 +261,8 @@ function submitExam(auto = false) {
 
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
-
+  localStorage.setItem("lastExamId",
+  examState.mapel + "_" + examState.paket);
   window.location.href = "result.html";
 }
 
