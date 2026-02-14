@@ -1,5 +1,5 @@
 /* ===============================
-   PG EXAM ENGINE - FINAL CLEAN PRODUCTION
+   PG EXAM ENGINE - STABLE FIREBASE VERSION
 ================================ */
 
 const examState = JSON.parse(localStorage.getItem("examState"));
@@ -39,7 +39,7 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
   })
   .catch(err => {
     console.error(err);
-    alert("Soal gagal dimuat. Periksa folder paket.");
+    alert("Soal gagal dimuat.");
   });
 
 
@@ -79,7 +79,7 @@ function startTimer() {
 }
 
 
-/* ================= RENDER QUESTION ================= */
+/* ================= RENDER ================= */
 
 function renderQuestion() {
 
@@ -113,27 +113,23 @@ function renderQuestion() {
 
   updateProgress();
   updateNumberNav();
-  updateFinishButton();
 }
 
 
 /* ================= PROGRESS ================= */
 
 function updateProgress(){
-
   const total = soalUjian.length;
   const percent = ((current + 1) / total) * 100;
 
   const progressText = document.getElementById("progressText");
   const progressFill = document.getElementById("progressFill");
 
-  if (progressText) {
+  if (progressText)
     progressText.innerText = `${current + 1} / ${total}`;
-  }
 
-  if (progressFill) {
+  if (progressFill)
     progressFill.style.width = percent + "%";
-  }
 }
 
 
@@ -142,32 +138,17 @@ function updateProgress(){
 function saveAnswer(i) {
 
   jawaban[current] = i;
-
-  // ✅ Backup local
   localStorage.setItem("pgAnswers", JSON.stringify(jawaban));
 
-  // ✅ Kirim ke Firebase realtime
-  try{
+  const user = Auth.getUser();
+  if (!user || typeof firebase === "undefined") return;
 
-    if(typeof firebase !== "undefined"){
+  const examId = examState.mapel + "_" + examState.paket;
+  const db = firebase.database();
 
-      const user = Auth.getUser();
-      if(!user) return;
-
-      const examId = examState.mapel + "_" + examState.paket;
-
-      database.ref(`exams/${user.id}/${examId}`).update({
-        mapel: examState.mapel,
-        paket: examState.paket,
-        answers: jawaban,
-        lastSaved: Date.now()
-      });
-
-    }
-
-  }catch(err){
-    console.log("Firebase save skipped:", err);
-  }
+  db.ref(`exams/${user.id}/${examId}/answers`)
+    .set(jawaban)
+    .catch(err => console.log("Realtime save error:", err));
 
   updateNumberNav();
 }
@@ -226,73 +207,65 @@ function updateNumberNav() {
 }
 
 
-/* ================= FINISH BUTTON ================= */
-
-function updateFinishButton(){
-  const finishBtn = document.getElementById("finishBtn");
-  if (!finishBtn) return;
-  finishBtn.disabled = current !== soalUjian.length - 1;
-}
-
-
 /* ================= SUBMIT ================= */
 
-function submitExam(auto = false) {
+async function submitExam(auto = false) {
 
   if (!auto) {
-    const confirmSubmit = confirm("Yakin ingin menyelesaikan ujian?");
-    if (!confirmSubmit) return;
+    if (!confirm("Yakin ingin menyelesaikan ujian?")) return;
   }
 
   clearInterval(timerInterval);
 
   let score = 0;
-
   soalUjian.forEach((s, i) => {
-    if (jawaban[i] === s.a) {
-      score++;
-    }
+    if (jawaban[i] === s.a) score++;
   });
-   
-try{
 
-  if(typeof firebase !== "undefined"){
+  const user = Auth.getUser();
+  const examId = examState.mapel + "_" + examState.paket;
 
-    const user = Auth.getUser();
-    if(user){
+  try {
 
-      const examId = examState.mapel + "_" + examState.paket;
+    if (user && typeof firebase !== "undefined") {
 
-      database.ref(`exams/${user.id}/${examId}`).update({
+      const db = firebase.database();
+
+      await db.ref(`exams/${user.id}/${examId}`).set({
+        userId: user.id,
+        nama: user.nama,
+        kelas: user.kelas,
         mapel: examState.mapel,
         paket: examState.paket,
         answers: jawaban,
         score: score,
-        correct: score,
         total: soalUjian.length,
         submittedAt: Date.now(),
         status: "finished"
       });
 
-      // Simpan untuk dipakai di result & review
-      localStorage.setItem("lastExamId", examId);
+      await db.ref(`leaderboard/${examId}/${user.id}`).set({
+        nama: user.nama,
+        kelas: user.kelas,
+        score: score,
+        total: soalUjian.length,
+        submittedAt: Date.now()
+      });
 
+      localStorage.setItem("lastExamId", examId);
     }
 
+  } catch (err) {
+    console.log("Firebase submit error:", err);
   }
 
-}catch(err){
-  console.log("Firebase submit skipped:", err);
-}
   localStorage.setItem("pgScore", score);
-  localStorage.setItem("pgCorrect", score);
   localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
   localStorage.setItem("reviewJawaban", JSON.stringify(jawaban));
 
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
-  localStorage.setItem("lastExamId",
-  examState.mapel + "_" + examState.paket);
+
   window.location.href = "result.html";
 }
 
