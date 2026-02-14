@@ -1,550 +1,508 @@
 [
   {
-  "q": "Disajikan deskripsi materi tentang Kondisi dan Peradaban Jazirah Arab Pra Islam.\n\nDian, seorang siswa kelas 7, baru saja mempelajari kondisi sosial, budaya, dan kepercayaan masyarakat Arab sebelum datangnya Islam. Ia menemukan bahwa masyarakat saat itu banyak melakukan penyimpangan akhlak seperti praktik riba, perbudakan, dan penyembahan berhala.\n\nSebagai tindak lanjut, guru ingin membentuk karakter peserta didik yang beriman dan bertakwa. Tujuan pembelajaran ranah sikap yang paling tepat adalah...",
-  "o": [
-    "Menjelaskan bentuk-bentuk kepercayaan masyarakat Arab pra-Islam.",
-    "Membandingkan sistem sosial Arab sebelum dan sesudah Islam.",
-    "Menumbuhkan keimanan, ketakwaan, dan akhlak mulia setelah memahami kondisi Jazirah Arab pra-Islam.",
-    "Mendeskripsikan struktur sosial ekonomi masyarakat Arab pra-Islam.",
-    "Menganalisis perubahan budaya Arab setelah dakwah Nabi."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Disajikan pernyataan materi tentang Nabi Muhammad sebelum Hijrah ke Madinah.\n\nSaat mempelajari sejarah dakwah Nabi Muhammad sebelum hijrah ke Madinah, para siswa diajak untuk menganalisis tantangan yang dihadapi Nabi. Guru berharap siswa dapat berpikir kritis melihat strategi Nabi dalam berdakwah.\n\nRumusan tujuan pembelajaran ranah pengetahuan yang paling sesuai adalah...",
-  "o": [
-    "Menyebutkan peristiwa-peristiwa penting sebelum hijrah.",
-    "Merinci nama sahabat yang mendukung Nabi di Makkah.",
-    "Menganalisis tantangan dan strategi dakwah Nabi Muhammad.",
-    "Menghafal silsilah Nabi Muhammad SAW.",
-    "Menyusun garis waktu hijrah Nabi Muhammad."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Disajikan pernyataan materi tentang Sistem pemerintahan masa kepemimpinan Abu Bakar atau Umar bin Khattab.\n\nDalam diskusi kelas, siswa diajak mengkaji kebijakan pemerintahan Abu Bakar dan Umar bin Khattab. Guru ingin menanamkan semangat gotong royong.\n\nTujuan pembelajaran ranah keterampilan yang paling sesuai adalah...",
-  "o": [
-    "Menyebutkan bentuk pemerintahan masa Abu Bakar dan Umar bin Khattab.",
-    "Menghafal kebijakan politik Khalifah Abu Bakar dan Umar.",
-    "Mempraktikkan kerja sama melalui perancangan sistem pemerintahan.",
-    "Membandingkan sistem pemerintahan Islam dan Barat.",
-    "Menganalisis konflik politik masa Khulafaur Rasyidin."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Disajikan deskripsi kasus pengembangan materi tentang Teori Masuknya Islam di Indonesia atau Asia Tenggara.\n\nKetika mempelajari teori masuknya Islam ke Indonesia, guru ingin membentuk sikap siswa agar mampu menerima perbedaan budaya.\n\nIndikator tujuan pembelajaran ranah sikap yang paling sesuai adalah...",
-  "o": [
-    "Menghafal teori Gujarat, Persia, dan Arab tentang masuknya Islam.",
-    "Menyebutkan tokoh penyebar Islam di Nusantara.",
-    "Menunjukkan sikap menghargai keberagaman budaya.",
-    "Membandingkan metode dakwah Islam dan kolonialisme.",
-    "Menghargai tradisi lokal dalam penyebaran Islam."
-  ],
-  "a": 4
-},
-
-{
-  "q": "Disajikan deskripsi materi tentang Sistem Pemerintahan Islam pada masa Kekhalifahan Dinasti Ayyubiyah.\n\nSaat belajar tentang sistem pemerintahan Dinasti Ayyubiyah, guru ingin menumbuhkan pola pikir dinamis dan inovatif.\n\nIndikator tujuan pembelajaran ranah pengetahuan yang paling tepat adalah...",
-  "o": [
-    "Menyebutkan raja-raja besar Dinasti Ayyubiyah.",
-    "Menghafal tahun penting Dinasti Ayyubiyah.",
-    "Menjelaskan struktur birokrasi Dinasti Ayyubiyah.",
-    "Membuat peta wilayah kekuasaan Dinasti Ayyubiyah.",
-    "Mengklasifikasikan peninggalan budaya Dinasti Ayyubiyah."
-  ],
-  "a": 3
-},
-
-{
-  "q": "Disajikan deskripsi materi tentang pengajaran moderasi beragama.\n\nDalam pengajaran moderasi beragama, alasan tepat memilih pengembangan materi ajar tertentu adalah...",
-  "o": [
-    "Moderasi beragama menekankan keseimbangan iman dan kehidupan sosial.",
-    "Moderasi menekankan hafalan teks agama.",
-    "Moderasi beragama menyeimbangkan iman dan kehidupan sosial.",
-    "Moderasi beragama menghindari interaksi sosial.",
-    "Moderasi beragama memprioritaskan ritual individu di atas sosial."
-  ],
-  "a": 0
-},
+    "q": "Disajikan deskripsi materi tentang Kondisi dan Peradaban Jazirah Arab Pra Islam.\n\nDian, seorang siswa kelas 7, baru saja mempelajari kondisi sosial, budaya, dan kepercayaan masyarakat Arab sebelum datangnya Islam. Ia menemukan bahwa masyarakat saat itu banyak melakukan penyimpangan akhlak seperti praktik riba, perbudakan, dan penyembahan berhala.\n\nSebagai tindak lanjut, guru ingin membentuk karakter peserta didik yang beriman dan bertakwa. Tujuan pembelajaran ranah sikap yang paling tepat adalah...",
+    "o": [
+      "Menjelaskan bentuk-bentuk kepercayaan masyarakat Arab pra-Islam.",
+      "Membandingkan sistem sosial Arab sebelum dan sesudah Islam.",
+      "Menumbuhkan keimanan, ketakwaan, dan akhlak mulia setelah memahami kondisi Jazirah Arab pra-Islam.",
+      "Mendeskripsikan struktur sosial ekonomi masyarakat Arab pra-Islam.",
+      "Menganalisis perubahan budaya Arab setelah dakwah Nabi."
+    ],
+    "a": 2
+  },
   {
-  "q": "Dalam pembelajaran berbasis proyek tentang kehidupan Arab pra-Islam, guru meminta siswa meneliti berbagai aspek kehidupan masyarakat.\n\nTujuan pembelajaran yang tepat adalah...",
-  "o": [
-    "Membandingkan kehidupan sosial masyarakat Arab sebelum dan sesudah Islam.",
-    "Menyusun laporan sistem kepercayaan masyarakat Arab pra-Islam.",
-    "Menganalisis kondisi sosial, budaya, dan politik Arab pra-Islam.",
-    "Menghafal tokoh penting Jazirah Arab pra-Islam.",
-    "Menentukan letak geografis wilayah Hijaz."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran Nabi Muhammad sebelum hijrah dengan pendekatan Project Based Learning, siswa diminta membuat peta konsep kondisi sosial masyarakat Makkah dan Madinah.\n\nTujuan pembelajaran yang sesuai adalah...",
-  "o": [
-    "Menganalisis struktur sosial Makkah dan Madinah sebelum hijrah.",
-    "Menyusun presentasi tentang kehidupan sosial Makkah dan Madinah.",
-    "Mengidentifikasi perbedaan kondisi sosial sebelum dan sesudah Islam.",
-    "Membandingkan perkembangan ekonomi Makkah dan Madinah.",
-    "Menganalisis proses dakwah Nabi Muhammad."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Setelah mempelajari kebijakan Khulafaur Rasyidin, guru melakukan evaluasi berbasis Discovery Learning.\n\nCara terbaik mengukur capaian pembelajaran adalah...",
-  "o": [
-    "Menyusun laporan evaluasi kebijakan Khulafaur Rasyidin.",
-    "Menggunakan tanya jawab untuk menilai pemahaman siswa.",
-    "Menyajikan studi kasus kebijakan pemerintahan Khulafaur Rasyidin.",
-    "Mengadakan ujian tertulis tentang kebijakan Khalifah.",
-    "Menyediakan soal pilihan ganda untuk evaluasi."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran berbasis TPACK tentang perkembangan ilmu pengetahuan pada masa Khalifah, alur materi yang tepat adalah...",
-  "o": [
-    "Menggunakan video animasi untuk menjelaskan penerapan ilmu pengetahuan.",
-    "Membahas perkembangan ilmu pengetahuan melalui ceramah.",
-    "Menyusun proyek pengembangan ilmu pengetahuan masa Khalifah.",
-    "Menggunakan alat peraga perkembangan ilmu pengetahuan.",
-    "Menggunakan alat peraga sejarah."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran sejarah masuknya Islam ke berbagai wilayah dengan pendekatan diferensiasi, alur pembelajaran yang tepat adalah...",
-  "o": [
-    "Menggunakan satu sumber buku teks untuk menjelaskan masuknya Islam.",
-    "Menggunakan ceramah tanpa media tambahan.",
-    "Memberikan berbagai sumber belajar sesuai gaya belajar siswa.",
-    "Membagi siswa berdasarkan negara asal Islam.",
-    "Menyusun soal ujian tertulis tentang sejarah Islam."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran sistem pemerintahan Dinasti Ayyubiyah menggunakan pendekatan konseling, alur evaluasi yang tepat adalah...",
-  "o": [
-    "Memberikan ceramah tentang kebijakan Dinasti Ayyubiyah.",
-    "Mengumpulkan data politik Dinasti Ayyubiyah.",
-    "Menyusun proyek analisis keruntuhan Dinasti Ayyubiyah.",
-    "Menggunakan model diskusi kelompok terarah.",
-    "Memberikan tugas hafalan tentang tokoh Dinasti Ayyubiyah."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pelaksanaan program Penguatan Profil Pelajar Pancasila (P5), pengembangan materi ajar yang tepat adalah...",
-  "o": [
-    "Menyusun teks proklamasi dan sejarah Pancasila.",
-    "Mengintegrasikan nilai Pancasila dalam setiap mata pelajaran.",
-    "Mengaitkan nilai Pancasila dengan kehidupan sehari-hari.",
-    "Memberikan ujian tertulis tentang Pancasila.",
-    "Memberikan tugas hafalan nilai Pancasila."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam penguatan Profil Pelajar Rahmatan lil ‘Alamin (PPRA), pengembangan materi ajar yang tepat adalah...",
-  "o": [
-    "Menjelaskan teks-teks klasik tentang Islam rahmatan lil alamin.",
-    "Mengajarkan prinsip toleransi melalui diskusi kelompok.",
-    "Menggunakan video kisah toleransi Islam.",
-    "Menggunakan media massa untuk menyampaikan nilai Islam.",
-    "Mengkaji literatur tanpa praktik nilai rahmatan lil alamin."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Guru ingin mengembangkan asesmen autentik pada materi sejarah perkembangan Islam.\n\nBentuk asesmen yang paling tepat adalah...",
-  "o": [
-    "Tes pilihan ganda tentang tahun peristiwa.",
-    "Ujian lisan hafalan tokoh.",
-    "Proyek pembuatan timeline sejarah perkembangan Islam.",
-    "Tes benar salah tentang fakta sejarah.",
-    "Mengisi lembar kerja singkat."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran sejarah kebudayaan Islam, guru ingin menanamkan kemampuan berpikir tingkat tinggi (HOTS).\n\nAktivitas yang paling sesuai adalah...",
-  "o": [
-    "Menghafal nama-nama dinasti Islam.",
-    "Menyebutkan tahun berdirinya kerajaan Islam.",
-    "Menganalisis faktor kemajuan dan kemunduran peradaban Islam.",
-    "Menyalin materi dari buku teks.",
-    "Menjawab soal pilihan ganda tingkat rendah."
-  ],
-  "a": 2
-},
+    "q": "Disajikan pernyataan materi tentang Nabi Muhammad sebelum Hijrah ke Madinah.\n\nSaat mempelajari sejarah dakwah Nabi Muhammad sebelum hijrah ke Madinah, para siswa diajak untuk menganalisis tantangan yang dihadapi Nabi. Guru berharap siswa dapat berpikir kritis melihat strategi Nabi dalam berdakwah.\n\nRumusan tujuan pembelajaran ranah pengetahuan yang paling sesuai adalah...",
+    "o": [
+      "Menyebutkan peristiwa-peristiwa penting sebelum hijrah.",
+      "Merinci nama sahabat yang mendukung Nabi di Makkah.",
+      "Menganalisis tantangan dan strategi dakwah Nabi Muhammad.",
+      "Menghafal silsilah Nabi Muhammad SAW.",
+      "Menyusun garis waktu hijrah Nabi Muhammad."
+    ],
+    "a": 2
+  },
   {
-  "q": "Dalam pembelajaran tentang strategi dakwah Nabi Muhammad di Makkah, guru ingin menanamkan keteladanan dalam berdakwah.\n\nSikap yang paling tepat dikembangkan adalah...",
-  "o": [
-    "Berani memaksakan pendapat kepada orang lain.",
-    "Sabar dan bijaksana dalam menyampaikan kebenaran.",
-    "Menghindari dialog dengan masyarakat.",
-    "Menolak perbedaan pendapat.",
-    "Mengutamakan kepentingan pribadi."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Saat mempelajari Piagam Madinah, guru meminta siswa menganalisis nilai-nilai yang terkandung di dalamnya.\n\nNilai utama yang dapat diambil adalah...",
-  "o": [
-    "Kebebasan tanpa batas.",
-    "Persatuan dan toleransi antarumat beragama.",
-    "Dominasi satu kelompok atas kelompok lain.",
-    "Kepentingan ekonomi semata.",
-    "Persaingan antar suku."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran tentang ekspansi wilayah pada masa Khulafaur Rasyidin, siswa diminta mengidentifikasi faktor keberhasilan.\n\nFaktor utama keberhasilan tersebut adalah...",
-  "o": [
-    "Jumlah pasukan yang besar.",
-    "Teknologi persenjataan modern.",
-    "Semangat persatuan dan kepemimpinan yang adil.",
-    "Dukungan kerajaan Romawi.",
-    "Strategi monopoli perdagangan."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Guru menjelaskan perkembangan ilmu pengetahuan pada masa Dinasti Abbasiyah.\n\nContoh kemajuan di bidang ilmu pengetahuan adalah...",
-  "o": [
-    "Pembangunan benteng pertahanan.",
-    "Penerjemahan karya-karya ilmiah ke dalam bahasa Arab.",
-    "Perluasan wilayah kekuasaan.",
-    "Pembentukan pasukan perang.",
-    "Penghapusan sistem pajak."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam materi tentang Wali Songo, siswa diminta menganalisis metode dakwah yang digunakan.\n\nMetode dakwah yang menonjol adalah...",
-  "o": [
-    "Pendekatan kekerasan.",
-    "Pendekatan budaya dan seni.",
-    "Pemaksaan ajaran.",
-    "Isolasi sosial.",
-    "Perang terbuka."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Ketika membahas faktor kemunduran peradaban Islam, guru mengajak siswa berpikir kritis.\n\nSalah satu faktor internal kemunduran adalah...",
-  "o": [
-    "Serangan bangsa Mongol.",
-    "Perang Salib.",
-    "Perpecahan dan konflik internal.",
-    "Penjajahan bangsa Eropa.",
-    "Bencana alam besar."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran sejarah Islam di Indonesia, guru menekankan pentingnya toleransi.\n\nContoh sikap toleransi adalah...",
-  "o": [
-    "Menghargai tradisi lokal selama tidak bertentangan dengan ajaran Islam.",
-    "Menolak seluruh budaya lokal.",
-    "Menghapus adat istiadat masyarakat.",
-    "Memaksakan praktik ibadah tertentu.",
-    "Mengabaikan perbedaan sosial."
-  ],
-  "a": 0
-},
-
-{
-  "q": "Guru menggunakan metode diskusi kelompok untuk membahas kepemimpinan Umar bin Khattab.\n\nNilai kepemimpinan yang dapat diteladani adalah...",
-  "o": [
-    "Otoriter dalam mengambil keputusan.",
-    "Adil dan tegas dalam menegakkan hukum.",
-    "Mengutamakan keluarga dalam jabatan.",
-    "Menghindari musyawarah.",
-    "Bersikap keras tanpa pertimbangan."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran tentang Perang Badar, siswa diminta menganalisis hikmah dari peristiwa tersebut.\n\nHikmah yang dapat diambil adalah...",
-  "o": [
-    "Kemenangan ditentukan oleh jumlah pasukan.",
-    "Kekuatan fisik lebih penting dari strategi.",
-    "Pertolongan Allah bagi orang yang beriman dan berusaha.",
-    "Kekalahan adalah akhir perjuangan.",
-    "Perang adalah tujuan utama dakwah."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Guru meminta siswa membuat refleksi tentang hijrah Nabi Muhammad.\n\nMakna hijrah yang relevan dalam kehidupan sekarang adalah...",
-  "o": [
-    "Berpindah tempat tinggal semata.",
-    "Menghindari tanggung jawab.",
-    "Berubah menuju kehidupan yang lebih baik.",
-    "Meninggalkan masyarakat.",
-    "Mengasingkan diri."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam materi perkembangan Islam di Andalusia, siswa mempelajari kemajuan peradaban.\n\nContoh kemajuan tersebut adalah...",
-  "o": [
-    "Pembangunan masjid dan pusat ilmu pengetahuan.",
-    "Perluasan wilayah ke Asia.",
-    "Penghapusan sistem pendidikan.",
-    "Penutupan perpustakaan.",
-    "Pengurangan aktivitas perdagangan."
-  ],
-  "a": 0
-},
-
-{
-  "q": "Guru menjelaskan tentang pentingnya musyawarah dalam pemerintahan Islam.\n\nContoh penerapan musyawarah adalah...",
-  "o": [
-    "Pemimpin mengambil keputusan sendiri.",
-    "Diskusi bersama untuk mencapai mufakat.",
-    "Mengabaikan pendapat rakyat.",
-    "Mengutamakan kepentingan golongan tertentu.",
-    "Menunda keputusan tanpa alasan."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran sejarah Islam modern, guru menekankan pentingnya persatuan umat.\n\nSikap yang mencerminkan persatuan adalah...",
-  "o": [
-    "Mengutamakan perbedaan mazhab.",
-    "Menyebarkan kebencian antar kelompok.",
-    "Menghargai perbedaan dan menjaga ukhuwah.",
-    "Menolak dialog antar golongan.",
-    "Mengisolasi diri dari masyarakat."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Guru memberikan tugas proyek membuat poster tentang kontribusi ilmuwan Muslim.\n\nTujuan pembelajaran yang ingin dicapai adalah...",
-  "o": [
-    "Menghafal nama ilmuwan Muslim.",
-    "Menumbuhkan apresiasi terhadap kontribusi ilmuwan Muslim.",
-    "Menyalin informasi dari buku.",
-    "Mengisi soal pilihan ganda.",
-    "Menyusun daftar tahun kelahiran ilmuwan."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran sejarah peradaban Islam, guru ingin mengembangkan kemampuan analisis siswa.\n\nKegiatan yang paling tepat adalah...",
-  "o": [
-    "Menghafal tanggal peristiwa penting.",
-    "Menyusun ringkasan materi.",
-    "Menganalisis sebab dan akibat suatu peristiwa sejarah.",
-    "Menyalin teks buku pelajaran.",
-    "Menjawab soal definisi."
-  ],
-  "a": 2
-},
+    "q": "Disajikan pernyataan materi tentang Sistem pemerintahan masa kepemimpinan Abu Bakar atau Umar bin Khattab.\n\nDalam diskusi kelas, siswa diajak mengkaji kebijakan pemerintahan Abu Bakar dan Umar bin Khattab. Guru ingin menanamkan semangat gotong royong.\n\nTujuan pembelajaran ranah keterampilan yang paling sesuai adalah...",
+    "o": [
+      "Menyebutkan bentuk pemerintahan masa Abu Bakar dan Umar bin Khattab.",
+      "Menghafal kebijakan politik Khalifah Abu Bakar dan Umar.",
+      "Mempraktikkan kerja sama melalui perancangan sistem pemerintahan.",
+      "Membandingkan sistem pemerintahan Islam dan Barat.",
+      "Menganalisis konflik politik masa Khulafaur Rasyidin."
+    ],
+    "a": 2
+  },
   {
-  "q": "Dalam pembelajaran tentang peristiwa Fathu Makkah, guru meminta siswa mengambil hikmah dari peristiwa tersebut.\n\nHikmah utama dari peristiwa Fathu Makkah adalah...",
-  "o": [
-    "Balas dendam terhadap musuh.",
-    "Kemenangan melalui kekerasan.",
-    "Sikap pemaaf dan toleransi Rasulullah.",
-    "Dominasi kekuasaan semata.",
-    "Penaklukan untuk kepentingan ekonomi."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Guru menjelaskan tentang Perang Uhud dan faktor kekalahan kaum Muslimin.\n\nFaktor penyebab kekalahan tersebut adalah...",
-  "o": [
-    "Kurangnya jumlah pasukan.",
-    "Tidak adanya strategi perang.",
-    "Ketidaktaatan sebagian pasukan terhadap perintah Rasulullah.",
-    "Kelemahan senjata.",
-    "Kurangnya doa."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran tentang Dinasti Umayyah, siswa diminta menyebutkan kemajuan yang dicapai.\n\nSalah satu kemajuan pada masa Dinasti Umayyah adalah...",
-  "o": [
-    "Penghapusan sistem administrasi.",
-    "Pembangunan infrastruktur dan perluasan wilayah.",
-    "Penutupan jalur perdagangan.",
-    "Pengurangan pendidikan.",
-    "Pembubaran lembaga pemerintahan."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Guru membahas tentang perkembangan ilmu kedokteran dalam peradaban Islam.\n\nTokoh ilmuwan Muslim di bidang kedokteran adalah...",
-  "o": [
-    "Al-Khawarizmi.",
-    "Ibnu Sina.",
-    "Al-Farabi.",
-    "Ibnu Khaldun.",
-    "Al-Ghazali."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran tentang masuknya Islam ke Indonesia, siswa menganalisis peran perdagangan.\n\nPeran perdagangan dalam penyebaran Islam adalah...",
-  "o": [
-    "Menyebarkan agama melalui kekerasan.",
-    "Memaksakan ajaran kepada penduduk lokal.",
-    "Media interaksi damai antara pedagang Muslim dan masyarakat.",
-    "Menutup hubungan dengan budaya lokal.",
-    "Mengisolasi komunitas Muslim."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Guru menjelaskan tentang berdirinya kerajaan Islam di Nusantara.\n\nKerajaan Islam pertama di Indonesia adalah...",
-  "o": [
-    "Demak.",
-    "Mataram Islam.",
-    "Samudera Pasai.",
-    "Banten.",
-    "Ternate."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran tentang tokoh pembaharu Islam modern, guru meminta siswa mengidentifikasi tujuan pembaruan.\n\nTujuan pembaruan tersebut adalah...",
-  "o": [
-    "Menghapus ajaran Islam.",
-    "Menyesuaikan ajaran Islam dengan perkembangan zaman tanpa meninggalkan prinsip dasar.",
-    "Menolak pendidikan modern.",
-    "Mengisolasi umat dari dunia luar.",
-    "Mengurangi peran ulama."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Guru menjelaskan tentang peran masjid pada masa Rasulullah.\n\nFungsi masjid pada masa Rasulullah adalah...",
-  "o": [
-    "Hanya sebagai tempat ibadah.",
-    "Sebagai pusat ibadah dan pemerintahan.",
-    "Sebagai tempat perdagangan.",
-    "Sebagai markas militer saja.",
-    "Sebagai tempat tinggal sahabat."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran tentang Hijrah ke Habasyah, siswa diminta memahami tujuannya.\n\nTujuan hijrah ke Habasyah adalah...",
-  "o": [
-    "Memperluas wilayah kekuasaan.",
-    "Menghindari tekanan dan mencari perlindungan.",
-    "Mencari keuntungan ekonomi.",
-    "Menjalin kerja sama militer.",
-    "Menaklukkan kerajaan Habasyah."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Guru membahas tentang perkembangan ekonomi pada masa Rasulullah di Madinah.\n\nLangkah Rasulullah dalam memperkuat ekonomi umat adalah...",
-  "o": [
-    "Menutup pasar non-Muslim.",
-    "Mendirikan pasar yang jujur dan bebas riba.",
-    "Mewajibkan pajak tinggi.",
-    "Melarang perdagangan.",
-    "Menghapus zakat."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran tentang Perang Khandaq, siswa diminta memahami strategi yang digunakan.\n\nStrategi utama yang digunakan adalah...",
-  "o": [
-    "Serangan langsung.",
-    "Diplomasi penuh.",
-    "Membuat parit sebagai benteng pertahanan.",
-    "Mengungsi ke luar kota.",
-    "Menyerah tanpa perlawanan."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Guru menjelaskan tentang kemajuan arsitektur Islam.\n\nContoh peninggalan arsitektur Islam adalah...",
-  "o": [
-    "Candi Borobudur.",
-    "Ka'bah.",
-    "Masjid Cordoba.",
-    "Colosseum.",
-    "Tembok Cina."
-  ],
-  "a": 2
-},
-
-{
-  "q": "Dalam pembelajaran sejarah Islam, guru menekankan pentingnya mengambil ibrah.\n\nIbrah berarti...",
-  "o": [
-    "Cerita hiburan.",
-    "Pelajaran yang dapat diambil dari suatu peristiwa.",
-    "Catatan angka sejarah.",
-    "Hafalan fakta.",
-    "Perdebatan tanpa kesimpulan."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Guru meminta siswa menganalisis faktor keberhasilan dakwah Rasulullah.\n\nSalah satu faktor keberhasilan tersebut adalah...",
-  "o": [
-    "Kekayaan pribadi Rasulullah.",
-    "Strategi dakwah yang bijaksana dan akhlak mulia.",
-    "Tekanan politik.",
-    "Jumlah pasukan besar.",
-    "Bantuan kerajaan asing."
-  ],
-  "a": 1
-},
-
-{
-  "q": "Dalam pembelajaran sejarah peradaban Islam, guru ingin menumbuhkan rasa bangga terhadap peradaban Islam.\n\nSikap yang tepat adalah...",
-  "o": [
-    "Meremehkan peradaban lain.",
-    "Menyombongkan diri.",
-    "Menghargai kontribusi peradaban Islam bagi dunia.",
-    "Menutup diri dari perkembangan zaman.",
-    "Mengabaikan sejarah."
-  ],
-  "a": 2
-}
+    "q": "Disajikan deskripsi kasus pengembangan materi tentang Teori Masuknya Islam di Indonesia atau Asia Tenggara.\n\nKetika mempelajari teori masuknya Islam ke Indonesia, guru ingin membentuk sikap siswa agar mampu menerima perbedaan budaya.\n\nIndikator tujuan pembelajaran ranah sikap yang paling sesuai adalah...",
+    "o": [
+      "Menghafal teori Gujarat, Persia, dan Arab tentang masuknya Islam.",
+      "Menyebutkan tokoh penyebar Islam di Nusantara.",
+      "Menunjukkan sikap menghargai keberagaman budaya.",
+      "Membandingkan metode dakwah Islam dan kolonialisme.",
+      "Menghargai tradisi lokal dalam penyebaran Islam."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan deskripsi materi tentang Sistem Pemerintahan Islam pada masa Kekhalifahan Dinasti Ayyubiyah.\n\nSaat belajar tentang sistem pemerintahan Dinasti Ayyubiyah, guru ingin menumbuhkan pola pikir dinamis dan inovatif.\n\nIndikator tujuan pembelajaran ranah pengetahuan yang paling tepat adalah...",
+    "o": [
+      "Menyebutkan raja-raja besar Dinasti Ayyubiyah.",
+      "Menghafal tahun penting Dinasti Ayyubiyah.",
+      "Menjelaskan struktur birokrasi Dinasti Ayyubiyah.",
+      "Membuat peta wilayah kekuasaan Dinasti Ayyubiyah.",
+      "Mengklasifikasikan peninggalan budaya Dinasti Ayyubiyah."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Disajikan deskripsi materi tentang pengajaran moderasi beragama.\n\nDalam pengajaran moderasi beragama, alasan tepat memilih pengembangan materi ajar tertentu adalah...",
+    "o": [
+      "Moderasi beragama menekankan keseimbangan iman dan kehidupan sosial.",
+      "Moderasi menekankan hafalan teks agama.",
+      "Moderasi beragama menyeimbangkan iman dan kehidupan sosial.",
+      "Moderasi beragama menghindari interaksi sosial.",
+      "Moderasi beragama memprioritaskan ritual individu di atas sosial."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran berbasis proyek tentang kehidupan Arab pra-Islam, guru meminta siswa meneliti berbagai aspek kehidupan masyarakat.\n\nTujuan pembelajaran yang tepat adalah...",
+    "o": [
+      "Membandingkan kehidupan sosial masyarakat Arab sebelum dan sesudah Islam.",
+      "Menyusun laporan sistem kepercayaan masyarakat Arab pra-Islam.",
+      "Menganalisis kondisi sosial, budaya, dan politik Arab pra-Islam.",
+      "Menghafal tokoh penting Jazirah Arab pra-Islam.",
+      "Menentukan letak geografis wilayah Hijaz."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran Nabi Muhammad sebelum hijrah dengan pendekatan Project Based Learning, siswa diminta membuat peta konsep kondisi sosial masyarakat Makkah dan Madinah.\n\nTujuan pembelajaran yang sesuai adalah...",
+    "o": [
+      "Menganalisis struktur sosial Makkah dan Madinah sebelum hijrah.",
+      "Menyusun presentasi tentang kehidupan sosial Makkah dan Madinah.",
+      "Mengidentifikasi perbedaan kondisi sosial sebelum dan sesudah Islam.",
+      "Membandingkan perkembangan ekonomi Makkah dan Madinah.",
+      "Menganalisis proses dakwah Nabi Muhammad."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Setelah mempelajari kebijakan Khulafaur Rasyidin, guru melakukan evaluasi berbasis Discovery Learning.\n\nCara terbaik mengukur capaian pembelajaran adalah...",
+    "o": [
+      "Menyusun laporan evaluasi kebijakan Khulafaur Rasyidin.",
+      "Menggunakan tanya jawab untuk menilai pemahaman siswa.",
+      "Menyajikan studi kasus kebijakan pemerintahan Khulafaur Rasyidin.",
+      "Mengadakan ujian tertulis tentang kebijakan Khalifah.",
+      "Menyediakan soal pilihan ganda untuk evaluasi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran berbasis TPACK tentang perkembangan ilmu pengetahuan pada masa Khalifah, alur materi yang tepat adalah...",
+    "o": [
+      "Menggunakan video animasi untuk menjelaskan penerapan ilmu pengetahuan.",
+      "Membahas perkembangan ilmu pengetahuan melalui ceramah.",
+      "Menyusun proyek pengembangan ilmu pengetahuan masa Khalifah.",
+      "Menggunakan alat peraga perkembangan ilmu pengetahuan.",
+      "Menggunakan alat peraga sejarah."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran sejarah masuknya Islam ke berbagai wilayah dengan pendekatan dierensiasi, alur pembelajaran yang tepat adalah...",
+    "o": [
+      "Menggunakan satu sumber buku teks untuk menjelaskan masuknya Islam.",
+      "Menggunakan ceramah tanpa media tambahan.",
+      "Memberikan berbagai sumber belajar sesuai gaya belajar siswa.",
+      "Membagi siswa berdasarkan negara asal Islam.",
+      "Menyusun soal ujian tertulis tentang sejarah Islam."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran sistem pemerintahan Dinasti Ayyubiyah menggunakan pendekatan konseling, alur evaluasi yang tepat adalah...",
+    "o": [
+      "Memberikan ceramah tentang kebijakan Dinasti Ayyubiyah.",
+      "Mengumpulkan data politik Dinasti Ayyubiyah.",
+      "Menyusun proyek analisis keruntuhan Dinasti Ayyubiyah.",
+      "Menggunakan model diskusi kelompok terarah.",
+      "Memberikan tugas hafalan tentang tokoh Dinasti Ayyubiyah."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Dalam pelaksanaan program Penguatan Profil Pelajar Pancasila (P5), pengembangan materi ajar yang tepat adalah...",
+    "o": [
+      "Menyusun teks proklamasi dan sejarah Pancasila.",
+      "Mengintegrasikan nilai Pancasila dalam setiap mata pelajaran.",
+      "Mengaitkan nilai Pancasila dengan kehidupan sehari-hari.",
+      "Memberikan ujian tertulis tentang Pancasila.",
+      "Memberikan tugas hafalan nilai Pancasila."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam penguatan Profil Pelajar Rahmatan lil ‘Alamin (PPRA), pengembangan materi ajar yang tepat adalah...",
+    "o": [
+      "Menjelaskan teks-teks klasik tentang Islam rahmatan lil alamin.",
+      "Mengajarkan prinsip toleransi melalui diskusi kelompok.",
+      "Menggunakan video kisah toleransi Islam.",
+      "Menggunakan media massa untuk menyampaikan nilai Islam.",
+      "Mengkaji literatur tanpa praktik nilai rahmatan lil alamin."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin mengembangkan asesmen autentik pada materi sejarah perkembangan Islam.\n\nBentuk asesmen yang paling tepat adalah...",
+    "o": [
+      "Tes pilihan ganda tentang tahun peristiwa.",
+      "Ujian lisan hafalan tokoh.",
+      "Proyek pembuatan timeline sejarah perkembangan Islam.",
+      "Tes benar salah tentang fakta sejarah.",
+      "Mengisi lembar kerja singkat."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran sejarah kebudayaan Islam, guru ingin menanamkan kemampuan berpikir tingkat tinggi (HOTS).\n\nAktivitas yang paling sesuai adalah...",
+    "o": [
+      "Menghafal nama-nama dinasti Islam.",
+      "Menyebutkan tahun berdirinya kerajaan Islam.",
+      "Menganalisis faktor kemajuan dan kemunduran peradaban Islam.",
+      "Menyalin materi dari buku teks.",
+      "Menjawab soal pilihan ganda tingkat rendah."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran tentang strategi dakwah Nabi Muhammad di Makkah, guru ingin menanamkan keteladanan dalam berdakwah.\n\nSikap yang paling tepat dikembangkan adalah...",
+    "o": [
+      "Berani memaksakan pendapat kepada orang lain.",
+      "Sabar dan bijaksana dalam menyampaikan kebenaran.",
+      "Menghindari dialog dengan masyarakat.",
+      "Menolak perbedaan pendapat.",
+      "Mengutamakan kepentingan pribadi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Saat mempelajari Piagam Madinah, guru meminta siswa menganalisis nilai-nilai yang terkandung di dalamnya.\n\nNilai utama yang dapat diambil adalah...",
+    "o": [
+      "Kebebasan tanpa batas.",
+      "Persatuan dan toleransi antarumat beragama.",
+      "Dominasi satu kelompok atas kelompok lain.",
+      "Kepentingan ekonomi semata.",
+      "Persaingan antar suku."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tentang ekspansi wilayah pada masa Khulafaur Rasyidin, siswa diminta mengidentifikasi faktor keberhasilan.\n\nFaktor utama keberhasilan tersebut adalah...",
+    "o": [
+      "Jumlah pasukan yang besar.",
+      "Teknologi persenjataan modern.",
+      "Semangat persatuan dan kepemimpinan yang adil.",
+      "Dukungan kerajaan Romawi.",
+      "Strategi monopoli perdagangan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menjelaskan perkembangan ilmu pengetahuan pada masa Dinasti Abbasiyah.\n\nContoh kemajuan di bidang ilmu pengetahuan adalah...",
+    "o": [
+      "Pembangunan benteng pertahanan.",
+      "Penerjemahan karya-karya ilmiah ke dalam bahasa Arab.",
+      "Perluasan wilayah kekuasaan.",
+      "Pembentukan pasukan perang.",
+      "Penghapusan sistem pajak."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam materi tentang Wali Songo, siswa diminta menganalisis metode dakwah yang digunakan.\n\nMetode dakwah yang menonjol adalah...",
+    "o": [
+      "Pendekatan kekerasan.",
+      "Pendekatan budaya dan seni.",
+      "Pemaksaan ajaran.",
+      "Isolasi sosial.",
+      "Perang terbuka."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Ketika membahas faktor kemunduran peradaban Islam, guru mengajak siswa berpikir kritis.\n\nSalah satu faktor internal kemunduran adalah...",
+    "o": [
+      "Serangan bangsa Mongol.",
+      "Perang Salib.",
+      "Perpecahan dan konflik internal.",
+      "Penjajahan bangsa Eropa.",
+      "Bencana alam besar."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran sejarah Islam di Indonesia, guru menekankan pentingnya toleransi.\n\nContoh sikap toleransi adalah...",
+    "o": [
+      "Menghargai tradisi lokal selama tidak bertentangan dengan ajaran Islam.",
+      "Menolak seluruh budaya lokal.",
+      "Menghapus adat istiadat masyarakat.",
+      "Memaksakan praktik ibadah tertentu.",
+      "Mengabaikan perbedaan sosial."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Guru menggunakan metode diskusi kelompok untuk membahas kepemimpinan Umar bin Khattab.\n\nNilai kepemimpinan yang dapat diteladani adalah...",
+    "o": [
+      "Otoriter dalam mengambil keputusan.",
+      "Adil dan tegas dalam menegakkan hukum.",
+      "Mengutamakan keluarga dalam jabatan.",
+      "Menghindari musyawarah.",
+      "Bersikap keras tanpa pertimbangan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tentang Perang Badar, siswa diminta menganalisis hikmah dari peristiwa tersebut.\n\nHikmah yang dapat diambil adalah...",
+    "o": [
+      "Kemenangan ditentukan oleh jumlah pasukan.",
+      "Kekuatan fisik lebih penting dari strategi.",
+      "Pertolongan Allah bagi orang yang beriman dan berusaha.",
+      "Kekalahan adalah akhir perjuangan.",
+      "Perang adalah tujuan utama dakwah."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru meminta siswa membuat refleksi tentang hijrah Nabi Muhammad.\n\nMakna hijrah yang relevan dalam kehidupan sekarang adalah...",
+    "o": [
+      "Berpindah tempat tinggal semata.",
+      "Menghindari tanggung jawab.",
+      "Berubah menuju kehidupan yang lebih baik.",
+      "Meninggalkan masyarakat.",
+      "Mengasingkan diri."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam materi perkembangan Islam di Andalusia, siswa mempelajari kemajuan peradaban.\n\nContoh kemajuan tersebut adalah...",
+    "o": [
+      "Pembangunan masjid dan pusat ilmu pengetahuan.",
+      "Perluasan wilayah ke Asia.",
+      "Penghapusan sistem pendidikan.",
+      "Penutupan perpustakaan.",
+      "Pengurangan aktivitas perdagangan."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Guru menjelaskan tentang pentingnya musyawarah dalam pemerintahan Islam.\n\nContoh penerapan musyawarah adalah...",
+    "o": [
+      "Pemimpin mengambil keputusan sendiri.",
+      "Diskusi bersama untuk mencapai mufakat.",
+      "Mengabaikan pendapat rakyat.",
+      "Mengutamakan kepentingan golongan tertentu.",
+      "Menunda keputusan tanpa alasan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran sejarah Islam modern, guru menekankan pentingnya persatuan umat.\n\nSikap yang mencerminkan persatuan adalah...",
+    "o": [
+      "Mengutamakan perbedaan mazhab.",
+      "Menyebarkan kebencian antar kelompok.",
+      "Menghargai perbedaan dan menjaga ukhuwah.",
+      "Menolak dialog antar golongan.",
+      "Mengisolasi diri dari masyarakat."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru memberikan tugas proyek membuat poster tentang kontribusi ilmuwan Muslim.\n\nTujuan pembelajaran yang ingin dicapai adalah...",
+    "o": [
+      "Menghafal nama ilmuwan Muslim.",
+      "Menumbuhkan apresiasi terhadap kontribusi ilmuwan Muslim.",
+      "Menyalin informasi dari buku.",
+      "Mengisi soal pilihan ganda.",
+      "Menyusun daftar tahun kelahiran ilmuwan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran sejarah peradaban Islam, guru ingin mengembangkan kemampuan analisis siswa.\n\nKegiatan yang paling tepat adalah...",
+    "o": [
+      "Menghafal tanggal peristiwa penting.",
+      "Menyusun ringkasan materi.",
+      "Menganalisis sebab dan akibat suatu peristiwa sejarah.",
+      "Menyalin teks buku pelajaran.",
+      "Menjawab soal definisi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran tentang peristiwa Fathu Makkah, guru meminta siswa mengambil hikmah dari peristiwa tersebut.\n\nHikmah utama dari peristiwa Fathu Makkah adalah...",
+    "o": [
+      "Balas dendam terhadap musuh.",
+      "Kemenangan melalui kekerasan.",
+      "Sikap pemaaf dan toleransi Rasulullah.",
+      "Dominasi kekuasaan semata.",
+      "Penaklukan untuk kepentingan ekonomi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menjelaskan tentang Perang Uhud dan faktor kekalahan kaum Muslimin.\n\nFaktor penyebab kekalahan tersebut adalah...",
+    "o": [
+      "Kurangnya jumlah pasukan.",
+      "Tidak adanya strategi perang.",
+      "Ketidaktaatan sebagian pasukan terhadap perintah Rasulullah.",
+      "Kelemahan senjata.",
+      "Kurangnya doa."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran tentang Dinasti Umayyah, siswa diminta menyebutkan kemajuan yang dicapai.\n\nSalah satu kemajuan pada masa Dinasti Umayyah adalah...",
+    "o": [
+      "Penghapusan sistem administrasi.",
+      "Pembangunan infrastruktur dan perluasan wilayah.",
+      "Penutupan jalur perdagangan.",
+      "Pengurangan pendidikan.",
+      "Pembubaran lembaga pemerintahan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru membahas tentang perkembangan ilmu kedokteran dalam peradaban Islam.\n\nTokoh ilmuwan Muslim di bidang kedokteran adalah...",
+    "o": [
+      "Al-Khawarizmi.",
+      "Ibnu Sina.",
+      "Al-Farabi.",
+      "Ibnu Khaldun.",
+      "Al-Ghazali."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tentang masuknya Islam ke Indonesia, siswa menganalisis peran perdagangan.\n\nPeran perdagangan dalam penyebaran Islam adalah...",
+    "o": [
+      "Menyebarkan agama melalui kekerasan.",
+      "Memaksakan ajaran kepada penduduk lokal.",
+      "Media interaksi damai antara pedagang Muslim dan masyarakat.",
+      "Menutup hubungan dengan budaya lokal.",
+      "Mengisolasi komunitas Muslim."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menjelaskan tentang berdirinya kerajaan Islam di Nusantara.\n\nKerajaan Islam pertama di Indonesia adalah...",
+    "o": [
+      "Demak.",
+      "Mataram Islam.",
+      "Samudera Pasai.",
+      "Banten.",
+      "Ternate."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran tentang tokoh pembaharu Islam modern, guru meminta siswa mengidentifikasi tujuan pembaruan.\n\nTujuan pembaruan tersebut adalah...",
+    "o": [
+      "Menghapus ajaran Islam.",
+      "Menyesuaikan ajaran Islam dengan perkembangan zaman tanpa meninggalkan prinsip dasar.",
+      "Menolak pendidikan modern.",
+      "Mengisolasi umat dari dunia luar.",
+      "Mengurangi peran ulama."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru menjelaskan tentang peran masjid pada masa Rasulullah.\n\nFungsi masjid pada masa Rasulullah adalah...",
+    "o": [
+      "Hanya sebagai tempat ibadah.",
+      "Sebagai pusat ibadah dan pemerintahan.",
+      "Sebagai tempat perdagangan.",
+      "Sebagai markas militer saja.",
+      "Sebagai tempat tinggal sahabat."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tentang Hijrah ke Habasyah, siswa diminta memahami tujuannya.\n\nTujuan hijrah ke Habasyah adalah...",
+    "o": [
+      "Memperluas wilayah kekuasaan.",
+      "Menghindari tekanan dan mencari perlindungan.",
+      "Mencari keuntungan ekonomi.",
+      "Menjalin kerja sama militer.",
+      "Menaklukkan kerajaan Habasyah."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru membahas tentang perkembangan ekonomi pada masa Rasulullah di Madinah.\n\nLangkah Rasulullah dalam memperkuat ekonomi umat adalah...",
+    "o": [
+      "Menutup pasar non-Muslim.",
+      "Mendirikan pasar yang jujur dan bebas riba.",
+      "Mewajibkan pajak tinggi.",
+      "Melarang perdagangan.",
+      "Menghapus zakat."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tentang Perang Khandaq, siswa diminta memahami strategi yang digunakan.\n\nStrategi utama yang digunakan adalah...",
+    "o": [
+      "Serangan langsung.",
+      "Diplomasi penuh.",
+      "Membuat parit sebagai benteng pertahanan.",
+      "Mengungsi ke luar kota.",
+      "Menyerah tanpa perlawanan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menjelaskan tentang kemajuan arsitektur Islam.\n\nContoh peninggalan arsitektur Islam adalah...",
+    "o": [
+      "Candi Borobudur.",
+      "Ka'bah.",
+      "Masjid Cordoba.",
+      "Colosseum.",
+      "Tembok Cina."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran sejarah Islam, guru menekankan pentingnya mengambil ibrah.\n\nIbrah berarti...",
+    "o": [
+      "Cerita hiburan.",
+      "Pelajaran yang dapat diambil dari suatu peristiwa.",
+      "Catatan angka sejarah.",
+      "Hafalan fakta.",
+      "Perdebatan tanpa kesimpulan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru meminta siswa menganalisis faktor keberhasilan dakwah Rasulullah.\n\nSalah satu faktor keberhasilan tersebut adalah...",
+    "o": [
+      "Kekayaan pribadi Rasulullah.",
+      "Strategi dakwah yang bijaksana dan akhlak mulia.",
+      "Tekanan politik.",
+      "Jumlah pasukan besar.",
+      "Bantuan kerajaan asing."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran sejarah peradaban Islam, guru ingin menumbuhkan rasa bangga terhadap peradaban Islam.\n\nSikap yang tepat adalah...",
+    "o": [
+      "Meremehkan peradaban lain.",
+      "Menyombongkan diri.",
+      "Menghargai kontribusi peradaban Islam bagi dunia.",
+      "Menutup diri dari perkembangan zaman.",
+      "Mengabaikan sejarah."
+    ],
+    "a": 2
+  }
 ]
