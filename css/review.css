@@ -1,13 +1,16 @@
+/* ================= REVIEW PAGE ================= */
+
 .review-container{
   max-width:1100px;
   margin:40px auto;
-  padding:20px;
+  padding:24px;
 }
 
 .review-container h2{
   margin-bottom:30px;
-  color:var(--text-main);
+  color:var(--text-primary);
 }
+
 
 /* ===== TABLE ===== */
 
@@ -16,13 +19,14 @@
   border-collapse:collapse;
   background:var(--bg-card);
   border:1px solid var(--border-soft);
-  border-radius:12px;
+  border-radius:var(--radius);
   overflow:hidden;
+  box-shadow:var(--shadow-soft);
 }
 
 .review-table thead{
-  background:#0f172a; /* DARK BLUE FIX */
-  color:white;
+  background:var(--bg-secondary);
+  color:var(--text-primary);
 }
 
 .review-table th{
@@ -36,7 +40,7 @@
   padding:14px;
   border-bottom:1px solid var(--border-soft);
   vertical-align:top;
-  color:var(--text-main);
+  color:var(--text-secondary);
   font-size:14px;
 }
 
@@ -45,40 +49,42 @@
 }
 
 .review-table tr:hover{
-  background:rgba(255,255,255,0.03);
+  background:var(--bg-hover);
 }
 
-/* ===== STATUS ICON ONLY ===== */
+
+/* ===== STATUS ICON ===== */
 
 .correct{
-  color:#22c55e;
+  color:var(--success);
   font-size:18px;
   font-weight:600;
 }
 
 .wrong{
-  color:#ef4444;
+  color:var(--danger);
   font-size:18px;
   font-weight:600;
 }
 
+
 /* ===== BUTTON ===== */
 
 .review-footer{
-  margin-top:20px;
+  margin-top:24px;
   text-align:right;
 }
 
 .review-footer button{
-  background:#1e3a8a;
-  color:white;
-  border:none;
   padding:10px 18px;
-  border-radius:6px;
+  border-radius:var(--radius-sm);
+  border:1px solid var(--border-soft);
+  background:var(--bg-secondary);
+  color:var(--text-primary);
   cursor:pointer;
-  transition:0.3s;
+  transition:var(--transition);
 }
 
 .review-footer button:hover{
-  background:#172554;
+  background:var(--bg-hover);
 }
