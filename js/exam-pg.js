@@ -1,5 +1,6 @@
 /* ===============================
    PG EXAM ENGINE - STABLE FIREBASE VERSION
+   PREMIUM UI UPGRADE (SAFE)
 ================================ */
 
 const examState = JSON.parse(localStorage.getItem("examState"));
@@ -73,6 +74,15 @@ function startTimer() {
     if (timerEl) {
       timerEl.innerText =
         `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+
+      if (remaining <= 300) {
+        timerEl.classList.add("warning");
+      }
+
+      if (remaining <= 60) {
+        timerEl.classList.remove("warning");
+        timerEl.classList.add("danger");
+      }
     }
 
   }, 1000);
@@ -111,25 +121,9 @@ function renderQuestion() {
     }).join("")}
   `;
 
-  updateProgress();
   updateNumberNav();
-}
-
-
-/* ================= PROGRESS ================= */
-
-function updateProgress(){
-  const total = soalUjian.length;
-  const percent = ((current + 1) / total) * 100;
-
-  const progressText = document.getElementById("progressText");
-  const progressFill = document.getElementById("progressFill");
-
-  if (progressText)
-    progressText.innerText = `${current + 1} / ${total}`;
-
-  if (progressFill)
-    progressFill.style.width = percent + "%";
+  renderStepper();
+  updateFinishButton();
 }
 
 
@@ -151,6 +145,7 @@ function saveAnswer(i) {
     .catch(err => console.log("Realtime save error:", err));
 
   updateNumberNav();
+  renderStepper();
 }
 
 
@@ -204,6 +199,40 @@ function updateNumberNav() {
     btn.classList.toggle("answered", jawaban[i] !== null);
     btn.classList.toggle("active", i === current);
   });
+}
+
+
+/* ================= STEPPER PREMIUM ================= */
+
+function renderStepper(){
+
+  const stepper = document.getElementById("stepper");
+  if (!stepper) return;
+
+  stepper.innerHTML = "";
+
+  for (let i = 0; i < soalUjian.length; i++) {
+
+    const step = document.createElement("div");
+    step.classList.add("step");
+    step.innerText = i + 1;
+
+    if (i === current) step.classList.add("active");
+    if (jawaban[i] !== null) step.classList.add("answered");
+
+    step.onclick = () => {
+      current = i;
+      renderQuestion();
+    };
+
+    stepper.appendChild(step);
+  }
+}
+
+function updateFinishButton(){
+  const btn = document.getElementById("finishBtn");
+  if (!btn) return;
+  btn.disabled = current !== soalUjian.length - 1;
 }
 
 
