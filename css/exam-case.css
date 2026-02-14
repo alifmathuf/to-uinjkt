@@ -155,6 +155,10 @@
     min-width:auto;
   }
 }
+ /* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
   .case-container{
     padding:24px;
   }
@@ -166,16 +170,21 @@
   }
 
   .case-footer{
-    flex-direction:column;
+    flex-direction:row;   /* tetap sejajar */
+    gap:12px;
+  }
+
+  .case-footer button{
+    flex:1;
   }
 
   .case-textarea{
-    min-height:220px;
+    min-height:160px;
   }
 }
 
 @media (max-width:600px){
   .case-textarea{
-    min-height:180px;
+    min-height:150px;
   }
 }
