@@ -30,21 +30,34 @@
     </div>
   </div>
 
-  <!-- ================= QUESTION ================= -->
-  <div id="questionBox" class="card">
-    <!-- Soal akan dimuat oleh exam-pg.js -->
-  </div>
+  <!-- ================= MAIN LAYOUT ================= -->
+  <div class="exam-layout">
 
-  <!-- ================= NAVIGATION ================= -->
-  <div class="exam-nav">
-    <button onclick="prevQuestion()">Prev</button>
-    <button onclick="nextQuestion()">Next</button>
-    <button class="btn-primary" onclick="submitExam()">Selesai</button>
-  </div>
+    <!-- LEFT SIDE : QUESTION AREA -->
+    <div class="exam-main">
 
-  <!-- ================= NUMBER NAVIGATION ================= -->
-  <div id="numberNav" class="number-nav">
-    <!-- Nomor soal otomatis di-generate JS -->
+      <!-- QUESTION -->
+      <div id="questionBox" class="card">
+        <!-- Soal dimuat oleh exam-pg.js -->
+      </div>
+
+      <!-- NAVIGATION BUTTON -->
+      <div class="exam-nav">
+        <button onclick="prevQuestion()">Prev</button>
+        <button onclick="nextQuestion()">Next</button>
+        <button class="btn-primary" onclick="submitExam()">Selesai</button>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE : NUMBER NAVIGATION -->
+    <div class="exam-sidebar">
+      <div class="sidebar-title">Navigasi Soal</div>
+      <div id="numberNav" class="number-nav">
+        <!-- Nomor soal otomatis di-generate JS -->
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -54,19 +67,20 @@
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
 
-<!-- ================= FIREBASE (WAJIB JIKA BELUM ADA DI AUTH.JS) ================= -->
+<!-- ================= FIREBASE ================= -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
 <script>
   const firebaseConfig = {
-  apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
-  authDomain: "cbtuin-d26aa.firebaseapp.com",
-  databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "cbtuin-d26aa",
-  storageBucket: "cbtuin-d26aa.firebasestorage.app",
-  messagingSenderId: "93548126228",
-  appId: "1:93548126228:web:c456aedaad373237a0c701"
-};
+    apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
+    authDomain: "cbtuin-d26aa.firebaseapp.com",
+    databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "cbtuin-d26aa",
+    storageBucket: "cbtuin-d26aa.firebasestorage.app",
+    messagingSenderId: "93548126228",
+    appId: "1:93548126228:web:c456aedaad373237a0c701"
+  };
 
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
