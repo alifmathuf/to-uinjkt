@@ -29,11 +29,11 @@
 
 /* Garis penghubung */
 .line{
-  flex:1;
+  width:60px;              /* fixed, bukan flex */
   height:1px;
   background:var(--border-soft);
-  min-width:40px;
 }
+
 
 /* STEP ACTIVE */
 .step.active{
