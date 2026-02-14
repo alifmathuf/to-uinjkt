@@ -1,12 +1,9 @@
 /* ===============================
-   PG EXAM ENGINE - FINAL + FIREBASE
+   PG EXAM ENGINE - FINAL CLEAN PRODUCTION
 ================================ */
 
 const examState = JSON.parse(localStorage.getItem("examState"));
 if (!examState) window.location.href = "dashboard.html";
-
-const user = Auth.getUser();
-if (!user) window.location.href = "login.html";
 
 let soalData = [];
 let soalUjian = [];
@@ -120,6 +117,26 @@ function renderQuestion() {
 }
 
 
+/* ================= PROGRESS ================= */
+
+function updateProgress(){
+
+  const total = soalUjian.length;
+  const percent = ((current + 1) / total) * 100;
+
+  const progressText = document.getElementById("progressText");
+  const progressFill = document.getElementById("progressFill");
+
+  if (progressText) {
+    progressText.innerText = `${current + 1} / ${total}`;
+  }
+
+  if (progressFill) {
+    progressFill.style.width = percent + "%";
+  }
+}
+
+
 /* ================= SAVE ANSWER ================= */
 
 function saveAnswer(i) {
@@ -146,6 +163,51 @@ function prevQuestion() {
 }
 
 
+/* ================= NUMBER NAV ================= */
+
+function renderNumberNav() {
+
+  const nav = document.getElementById("numberNav");
+  if (!nav) return;
+
+  nav.innerHTML = "";
+
+  for (let i = 0; i < soalUjian.length; i++) {
+
+    const btn = document.createElement("button");
+    btn.innerText = i + 1;
+
+    btn.onclick = () => {
+      current = i;
+      renderQuestion();
+    };
+
+    nav.appendChild(btn);
+  }
+
+  updateNumberNav();
+}
+
+function updateNumberNav() {
+
+  const buttons = document.querySelectorAll("#numberNav button");
+
+  buttons.forEach((btn, i) => {
+    btn.classList.toggle("answered", jawaban[i] !== null);
+    btn.classList.toggle("active", i === current);
+  });
+}
+
+
+/* ================= FINISH BUTTON ================= */
+
+function updateFinishButton(){
+  const finishBtn = document.getElementById("finishBtn");
+  if (!finishBtn) return;
+  finishBtn.disabled = current !== soalUjian.length - 1;
+}
+
+
 /* ================= SUBMIT ================= */
 
 function submitExam(auto = false) {
@@ -165,8 +227,6 @@ function submitExam(auto = false) {
     }
   });
 
-  /* ================= SIMPAN LOCAL ================= */
-
   localStorage.setItem("pgScore", score);
   localStorage.setItem("pgCorrect", score);
   localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
@@ -175,26 +235,35 @@ function submitExam(auto = false) {
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
 
-  /* ================= FIREBASE UPDATE ================= */
-
-  updateLeaderboard(score);
-
   window.location.href = "result.html";
 }
 
 
-/* ================= UPDATE LEADERBOARD ================= */
+/* ================= SHUFFLE ================= */
 
-function updateLeaderboard(score){
+function shuffle(arr) {
+  return arr.sort(() => Math.random() - 0.5);
+}
 
-  if (typeof firebase === "undefined") return;
 
-  const db = firebase.database();
+/* ================= FULLSCREEN ================= */
 
-  const userRef = db.ref("leaderboard/" + user.id);
+function enterFullscreen() {
+  if (document.documentElement.requestFullscreen) {
+    document.documentElement.requestFullscreen().catch(() => {});
+  }
+}
 
-  userRef.once("value").then(snapshot => {
+document.addEventListener("fullscreenchange", () => {
+  if (!document.fullscreenElement) {
+    submitExam(true);
+  }
+});
 
-    const oldData = snapshot.val();
 
-    // Jika belum
+/* ================= DISABLE BACK ================= */
+
+history.pushState(null, null, location.href);
+window.onpopstate = function () {
+  history.go(1);
+};
