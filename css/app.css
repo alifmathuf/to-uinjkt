@@ -5,29 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@600;700&display=swap');
 
 :root{
+:root{
   --bg-primary:#0f172a;        /* Deep navy */
-  --bg-secondary:#111827;      /* Slightly darker depth */
-  --bg-card:#1e293b;           /* Card layer */
+  --bg-secondary:#111827;      /* Section background */
+  --bg-card:#1e293b;           /* Card surface */
 
-  --primary:#1d4ed8;           /* Deep royal blue */
-  --primary-soft:#2563eb;      /* Hover state */
+  --primary:#1d4ed8;           /* Corporate blue */
+  --primary-soft:#2563eb;      /* Hover */
 
-  --accent:#14b8a6;            /* Soft tosca highlight */
-
-  --gradient:linear-gradient(
-    135deg,
-    #1e3a8a,
-    #1d4ed8
-  );
-
-  --text-primary:#f1f5f9;      /* Softer white */
+  --text-primary:#f8fafc;      /* Clean white */
   --text-secondary:#94a3b8;
 
-  --success:#22c55e;
-  --danger:#ef4444;
+  --success:#16a34a;
+  --danger:#dc2626;
 
   --radius:12px;
-  --transition:0.3s ease;
+  --transition:0.25s ease;
 }
 
 *{
