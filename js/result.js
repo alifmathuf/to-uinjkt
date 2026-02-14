@@ -9,34 +9,37 @@ const user = Auth.getUser();
 
 const user = Auth.getUser();
 
-const examId = localStorage.getItem("lastExamId");
+Auth.protect();
 
-if(!user || !examId){
+const user = Auth.getUser();
+
+if(!user){
   window.location.href = "dashboard.html";
 }
 
-database.ref(`exams/${user.id}/${examId}`)
+// Ambil ujian terakhir dari Firebase
+database.ref(`exams/${user.id}`)
+.orderByChild("submittedAt")
+.limitToLast(1)
 .once("value")
 .then(snapshot=>{
 
-  const data = snapshot.val();
-
-  if(!data){
-    alert("Data hasil tidak ditemukan.");
+  if(!snapshot.exists()){
+    alert("Belum ada hasil ujian.");
     window.location.href = "dashboard.html";
     return;
   }
 
-  const correct = data.correct || 0;
-  const total = data.total || 50;
-  const finalScore = Math.round((correct / total) * 100);
+  const examData = Object.values(snapshot.val())[0];
 
-  // Tampilkan ke halaman
+  const correct = examData.correct || 0;
+  const total = examData.total || 50;
+  const finalScore = Math.round((correct/total)*100);
+
   document.getElementById("scoreText").innerText = finalScore;
   document.getElementById("correctCount").innerText = correct;
   document.getElementById("finalScore").innerText = finalScore;
 
-  // Update status lulus
   const statusBox = document.getElementById("statusBox");
 
   if(finalScore >= 75){
