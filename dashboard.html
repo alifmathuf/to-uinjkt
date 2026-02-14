@@ -114,6 +114,23 @@
 Auth.protect();
 lucide.createIcons();
 </script>
+<!-- Firebase CDN -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
 
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBHUA0gGQpBElhN8c_-9Q5uJ4p7dQzipl4",
+    authDomain: "cbt-uinjkt.firebaseapp.com",
+    databaseURL: "https://cbt-uinjkt-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "cbt-uinjkt",
+    storageBucket: "cbt-uinjkt.firebasestorage.app",
+    messagingSenderId: "87309432353",
+    appId: "1:87309432353:web:cc1fac54a4bb69a1189560"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+</script>
 </body>
 </html>
