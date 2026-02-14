@@ -29,7 +29,7 @@
 
 /* Garis penghubung */
 .line{
-  width:60px;              /* fixed, bukan flex */
+  width:20px;              /* fixed, bukan flex */
   height:1px;
   background:var(--border-soft);
 }
