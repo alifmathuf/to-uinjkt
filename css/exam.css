@@ -4,9 +4,14 @@
    PG EXAM STYLE - ENTERPRISE CLEAN
 =================================== */
 
-.exam-container{
+body{
+  display:flex;
+  justify-content:center;
+
+}
+.case-container{
   width:100%;
-  max-width:680px;
+  max-width:720px;
   margin:40px auto;
   padding:32px;
   background:var(--bg-card);
