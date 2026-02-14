@@ -65,16 +65,16 @@
 
 .case-textarea{
   width:100%;
-   width:900px
-  min-height:260px;
-  padding:18px;
+  min-height:180px;   /* lebih pendek */
+  max-height:320px;   /* batas maksimal */
+  padding:16px;
   border-radius:var(--radius-sm);
   border:1px solid var(--border-soft);
   background:var(--bg-secondary);
   color:var(--text-primary);
   font-size:14px;
-  line-height:1.7;
-  resize:none;
+  line-height:1.6;
+  resize:vertical;
   transition:var(--transition);
 }
 
