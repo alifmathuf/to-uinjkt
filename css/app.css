@@ -5,15 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@600;700&display=swap');
 
 :root{
-  --bg-primary:#0f172a;        /* Deep navy */
-  --bg-secondary:#111827;      /* Slightly darker depth */
-  --bg-card:#1e293b;           /* Card layer */
-  --primary:#1d4ed8;           /* Deep royal blue */
-  --primary-soft:#2563eb;      /* Hover state */
-  --gradient:linear-gradient(135deg,#1e3a8a,#1d4ed8);
-  --text-primary:#f1f5f9;      /* Softer white */
+  --bg-primary:#0f172a;
+  --bg-secondary:#16213e;
+  --bg-card:#1e293b;
+  --primary:#3b82f6;
+  --primary-soft:#2563eb;
+  --gradient:linear-gradient(135deg,#1e3a8a,#2563eb);
+  --text-primary:#cbd5e1;
   --text-secondary:#94a3b8;
-  --success:#22c55e;
+  --success:#10b981;
   --danger:#ef4444;
   --radius:12px;
   --transition:0.3s ease;
