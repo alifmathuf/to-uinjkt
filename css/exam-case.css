@@ -31,12 +31,13 @@
 .case-timer{
   font-size:16px;
   font-weight:600;
-  color:var(--primary);
+  color:var(--text-primary);
 }
 
 .case-title{
   font-size:15px;
   font-weight:600;
+  color:var(--text-primary);
 }
 
 
