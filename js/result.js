@@ -1,5 +1,6 @@
 /* ===============================
    RESULT ENGINE - FINAL CLEAN
+   + FIREBASE GLOBAL LEADERBOARD
 ================================ */
 
 Auth.protect();
@@ -65,10 +66,13 @@ document.getElementById("totalChars").innerText =
 
 /* ================= SAVE LEADERBOARD ================= */
 
-saveToLeaderboard();
+saveToLocalLeaderboard();   // lama (backup)
+saveToFirebaseLeaderboard(); // baru (GLOBAL)
 
 
-function saveToLeaderboard(){
+/* ===== LOCAL (TETAP ADA SUPAYA TIDAK RUSAK SISTEM) ===== */
+
+function saveToLocalLeaderboard(){
 
   let leaderboard =
     JSON.parse(localStorage.getItem("leaderboard")) || [];
@@ -87,6 +91,27 @@ function saveToLeaderboard(){
     "leaderboard",
     JSON.stringify(leaderboard)
   );
+}
+
+
+/* ===== FIREBASE GLOBAL SAVE ===== */
+
+function saveToFirebaseLeaderboard(){
+
+  if(typeof firebase === "undefined") return;
+  if(!user || !user.id) return;
+
+  database.ref("leaderboard/" + user.id).set({
+    nama:user.nama,
+    kelas:user.kelas,
+    score:finalScore,
+    correct:correct,
+    total:total,
+    totalWords:totalWords,
+    totalChars:totalChars,
+    updatedAt: Date.now()
+  });
+
 }
 
 
@@ -159,7 +184,6 @@ function generateAvatar(){
 
   avatar.innerText = firstLetter;
 
-  // generate warna konsisten dari nama
   const colors = [
     "#2563eb",
     "#0ea5e9",
