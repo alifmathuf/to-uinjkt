@@ -1,69 +1,65 @@
-.exam-container{
-  background:linear-gradient(145deg,#10263c,#0d1f33);
-  border-radius:18px;
-  box-shadow:0 20px 60px rgba(0,0,0,0.3);
 }
 
+/* ===================================
+   PG EXAM STYLE - ENTERPRISE CLEAN
+=================================== */
+
 .exam-container{
- width: 100%;
+  width:100%;
   max-width:900px;
   margin:40px auto;
-  padding:30px;
+  padding:32px;
   background:var(--bg-card);
-  border-radius:20px;
+  border-radius:var(--radius);
+  border:1px solid var(--border-soft);
+  box-shadow:var(--shadow-soft);
 }
+
+
+/* ===== TOPBAR ===== */
 
 .exam-topbar{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 28px;
-  border-bottom:1px solid rgba(255,255,255,0.08);
-  margin-bottom:24px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--border-soft);
+  margin-bottom:28px;
 }
 
 .exam-timer{
-  font-size:20px;
+  font-size:18px;
   font-weight:600;
-  color:var(--accent);
+  color:var(--primary);
 }
-
 
 .exam-title{
   font-size:16px;
   font-weight:600;
 }
 
+
+/* ===== CONTENT ===== */
+
 .exam-content{
   margin-bottom:30px;
-  padding:0 28px 28px 28px;
 }
 
-.case-meta{
-  margin-bottom:15px;
-}
 
-#caseStepInfo{
-  font-size:14px;
-  color:var(--text-muted);
-}
+/* ===== NAVIGATION ===== */
 
-#caseStepTitle{
-  font-size:16px;
-  font-weight:600;
-  margin-top:5px;
-}
 .exam-nav{
   display:flex;
-  gap:10px;
+  gap:12px;
   margin-top:20px;
 }
 
 .exam-nav button{
   padding:8px 16px;
-  border-radius:8px;
+  border-radius:var(--radius-sm);
   background:var(--bg-secondary);
-  color:white;
+  color:var(--text-primary);
+  border:1px solid var(--border-soft);
 }
 
 .number-nav{
@@ -76,24 +72,36 @@
 .number-nav button{
   padding:8px;
   background:var(--bg-secondary);
-  border-radius:6px;
-  color:white;
+  border-radius:var(--radius-sm);
+  color:var(--text-primary);
+  border:1px solid var(--border-soft);
 }
 
 .number-nav button.answered{
   background:var(--success);
+  border-color:transparent;
 }
+
+
+/* ===== ESSAY / TEXTAREA ===== */
 
 textarea{
   width:100%;
   min-height:120px;
   margin-top:10px;
-  padding:10px;
-  border-radius:8px;
-  border:none;
+  padding:12px;
+  border-radius:var(--radius-sm);
+  border:1px solid var(--border-soft);
   background:var(--bg-secondary);
-  color:white;
+  color:var(--text-primary);
   resize:vertical;
+  transition:var(--transition);
+}
+
+textarea:focus{
+  outline:none;
+  border-color:var(--primary);
+  background:var(--bg-hover);
 }
 
 .essay-box{
@@ -102,10 +110,10 @@ textarea{
   padding:15px;
   font-size:14px;
   line-height:1.6;
-  border-radius:12px;
+  border-radius:var(--radius-sm);
   border:1px solid var(--border-soft);
-  background:#0f172a;
-  color:var(--text-main);
+  background:var(--bg-secondary);
+  color:var(--text-primary);
   resize:none;
 }
 
@@ -116,48 +124,22 @@ textarea{
   color:var(--text-muted);
 }
 
-.exam-actions {
-  display: flex;
-  gap: 14px;
-}
 
-.btn-primary{
-  flex:1;
-  background:linear-gradient(135deg,#2563eb,#1d4ed8);
-  color:white;
-  border:none;
-  padding:12px;
-  border-radius:10px;
-  cursor:pointer;
-}
+/* ===== ACTION BUTTONS ===== */
 
-.btn-secondary{
-  flex:1;
-  background:#334155;
-  color:white;
-  border:none;
-  padding:12px;
-  border-radius:10px;
-  cursor:pointer;
+.exam-actions{
+  display:flex;
+  gap:14px;
 }
 
 .exam-footer{
   display:flex;
   justify-content:space-between;
-  gap:15px;
+  gap:16px;
 }
 
-  .exam-footer{
-    flex-direction:column;
-  }
-}
 
-@media (max-width: 600px) {
-  textarea {
-    min-height: 100px;
-  }
-}
-/* ================= PG QUESTION SPACING ================= */
+/* ===== PG QUESTION SPACING ===== */
 
 #questionBox{
   line-height:1.7;
@@ -178,14 +160,14 @@ textarea{
   padding:14px 16px;
   margin-bottom:14px;
   border:1px solid var(--border-soft);
-  border-radius:12px;
+  border-radius:var(--radius-sm);
   cursor:pointer;
-  transition:0.2s ease;
+  transition:var(--transition);
   background:var(--bg-secondary);
 }
 
 #questionBox label:hover{
-  background:rgba(255,255,255,0.05);
+  background:var(--bg-hover);
   transform:translateY(-1px);
 }
 
@@ -195,3 +177,22 @@ textarea{
   transform:scale(1.1);
 }
 
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width:768px){
+
+  .exam-container{
+    padding:24px;
+  }
+
+  .exam-footer{
+    flex-direction:column;
+  }
+}
+
+@media (max-width:600px){
+  textarea{
+    min-height:100px;
+  }
+}
