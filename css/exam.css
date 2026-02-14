@@ -301,14 +301,26 @@
 /* LEFT SIDE */
 .progress-left{
   flex:1;
+  max-width:100%;
   overflow-x:auto;
   overflow-y:hidden;
 }
 
-/* RIGHT SIDE (TIMER) */
-.progress-right{
-  min-width:110px;
-  text-align:right;
+.stepper{
+  display:inline-flex;        /* penting */
+  align-items:center;
+  gap:14px;
+  padding-bottom:4px;
+  white-space:nowrap;         /* cegah turun baris */
+}
+
+.progress-left::-webkit-scrollbar{
+  height:4px;
+}
+
+.progress-left::-webkit-scrollbar-thumb{
+  background:var(--border-soft);
+  border-radius:10px;
 }
 
 .timer{
