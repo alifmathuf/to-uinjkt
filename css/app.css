@@ -15,11 +15,7 @@
 
   --accent:#14b8a6;            /* Soft tosca highlight */
 
-  --gradient:linear-gradient(
-    135deg,
-    #1e3a8a,
-    #1d4ed8
-  );
+  --gradient:linear-gradient(135deg,#1e3a8a,#1d4ed8);
 
   --text-primary:#f1f5f9;      /* Softer white */
   --text-secondary:#94a3b8;
