@@ -1,58 +1,92 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-/* ================= USER LOAD ================= */
+/* ================= SAFE USER LOAD ================= */
 
-const userData = JSON.parse(localStorage.getItem("cbtUser"));
+let userData = null;
+
+try{
+  userData = JSON.parse(localStorage.getItem("cbtUser"));
+}catch(e){
+  console.error("User parse error");
+}
 
 if(!userData){
   window.location.href = "login.html";
   return;
 }
 
-// Greeting
-const greeting = document.getElementById("greeting");
-const userInfo = document.getElementById("userInfo");
-const avatar = document.getElementById("avatar");
+/* ================= UI INIT ================= */
 
-if(greeting){
-  const hour = new Date().getHours();
-  let text = "Selamat Datang";
-  if(hour < 12) text = "Selamat Pagi";
-  else if(hour < 15) text = "Selamat Siang";
-  else if(hour < 18) text = "Selamat Sore";
-  else text = "Selamat Malam";
-  greeting.innerText = text;
+initUserUI();
+initStepper();
+renderStep1();
+
+
+/* ================= FUNCTIONS ================= */
+
+function initUserUI(){
+
+  const greeting = document.getElementById("greeting");
+  const userInfo = document.getElementById("userInfo");
+  const avatar = document.getElementById("avatar");
+
+  if(greeting){
+    const hour = new Date().getHours();
+    greeting.innerText =
+      hour < 12 ? "Selamat Pagi" :
+      hour < 15 ? "Selamat Siang" :
+      hour < 18 ? "Selamat Sore" :
+      "Selamat Malam";
+  }
+
+  if(userInfo){
+    userInfo.innerText = userData.nama + " - " + userData.kelas;
+  }
+
+  if(avatar){
+    avatar.innerHTML =
+      `<div class="avatar-circle">
+        ${userData.nama.charAt(0).toUpperCase()}
+      </div>`;
+  }
 }
 
-if(userInfo){
-  userInfo.innerText = userData.nama + " - " + userData.kelas;
+
+/* ================= STEPPER ================= */
+
+function initStepper(){
+
+  const steps = document.querySelectorAll(".step");
+
+  steps.forEach(step=>{
+    step.addEventListener("click", function(){
+      const stepNumber = this.dataset.step;
+      setActiveStep(stepNumber);
+    });
+  });
 }
 
-// Avatar (inisial nama)
-if(avatar){
-  const initial = userData.nama.charAt(0).toUpperCase();
-  avatar.innerHTML = `<div class="avatar-circle">${initial}</div>`;
+function setActiveStep(stepNumber){
+
+  const steps = document.querySelectorAll(".step");
+
+  steps.forEach(step=>{
+    step.classList.remove("active");
+    if(step.dataset.step == stepNumber){
+      step.classList.add("active");
+    }
+  });
 }
 
 
-/* ================= FIREBASE READY CHECK ================= */
+/* ================= STEP 1 CONTENT ================= */
 
-if(typeof firebase !== "undefined"){
-  console.log("Firebase ready");
-}else{
-  console.warn("Firebase belum terload");
-}
+function renderStep1(){
 
+  const container = document.getElementById("stepContent");
+  if(!container) return;
 
-/* ================= MENU GRID (STEP 1) ================= */
-
-const stepContent = document.getElementById("stepContent");
-
-function renderMenuGrid(){
-
-  if(!stepContent) return;
-
-  stepContent.innerHTML = `
+  container.innerHTML = `
     <div class="menu-grid" id="menuGrid"></div>
   `;
 
@@ -64,28 +98,31 @@ function renderMenuGrid(){
 
   const grid = document.getElementById("menuGrid");
 
-  menuData.forEach(item => {
-
+  menuData.forEach(item=>{
     const card = document.createElement("div");
-    card.classList.add("menu-card");
+    card.className = "menu-card";
 
     card.innerHTML = `
       <div class="menu-icon">${item.icon}</div>
       <div class="menu-title">${item.title}</div>
     `;
 
-    card.onclick = () => {
-      window.location.href = item.link;
-    };
+    card.onclick = () => window.location.href = item.link;
 
     grid.appendChild(card);
   });
-
 }
 
 
-/* ================= INITIAL LOAD ================= */
+/* ================= SAFE FIREBASE OPTIONAL ================= */
 
-renderMenuGrid();
+try{
+  if(typeof firebase !== "undefined"){
+    console.log("Firebase OK");
+    // optional database usage here
+  }
+}catch(e){
+  console.warn("Firebase error tidak menghentikan UI");
+}
 
 });
