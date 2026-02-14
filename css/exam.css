@@ -1,15 +1,14 @@
-}
-
 /* ===================================
-   PG EXAM STYLE - ENTERPRISE CLEAN
+   PG EXAM STYLE — FOCUS COMPACT MODE
 =================================== */
 
+/* ===== CONTAINER ===== */
 
 .exam-container{
   width:100%;
-  max-width:760px;
+  max-width:700px;          /* lebih fokus dari 760px */
   margin:60px auto;
-  padding:28px;
+  padding:24px;
   background:var(--bg-card);
   border-radius:var(--radius);
   border:1px solid var(--border-soft);
@@ -23,19 +22,19 @@
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding-bottom:20px;
+  padding-bottom:18px;
   border-bottom:1px solid var(--border-soft);
-  margin-bottom:28px;
+  margin-bottom:24px;
 }
 
 .exam-timer{
-  font-size:18px;
+  font-size:16px;
   font-weight:600;
   color:var(--primary);
 }
 
 .exam-title{
-  font-size:16px;
+  font-size:15px;
   font-weight:600;
 }
 
@@ -43,7 +42,7 @@
 /* ===== CONTENT ===== */
 
 .exam-content{
-  margin-bottom:30px;
+  margin-bottom:26px;
 }
 
 
@@ -51,31 +50,41 @@
 
 .exam-nav{
   display:flex;
-  gap:12px;
-  margin-top:20px;
+  gap:10px;
+  margin-top:18px;
 }
 
 .exam-nav button{
-  padding:8px 16px;
+  padding:8px 14px;
   border-radius:var(--radius-sm);
   background:var(--bg-secondary);
   color:var(--text-primary);
   border:1px solid var(--border-soft);
+  cursor:pointer;
+  transition:var(--transition);
 }
 
+.exam-nav button:hover{
+  background:var(--bg-hover);
+}
+
+
+/* ===== NUMBER NAV ===== */
+
 .number-nav{
-  margin-top:25px;
+  margin-top:22px;
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(40px,1fr));
-  gap:8px;
+  grid-template-columns:repeat(auto-fill,minmax(36px,1fr));
+  gap:6px;
 }
 
 .number-nav button{
-  padding:8px;
+  padding:7px;
   background:var(--bg-secondary);
   border-radius:var(--radius-sm);
   color:var(--text-primary);
   border:1px solid var(--border-soft);
+  cursor:pointer;
 }
 
 .number-nav button.answered{
@@ -84,82 +93,28 @@
 }
 
 
-/* ===== ESSAY / TEXTAREA ===== */
-
-textarea{
-  width:100%;
-  min-height:120px;
-  margin-top:10px;
-  padding:12px;
-  border-radius:var(--radius-sm);
-  border:1px solid var(--border-soft);
-  background:var(--bg-secondary);
-  color:var(--text-primary);
-  resize:vertical;
-  transition:var(--transition);
-}
-
-textarea:focus{
-  outline:none;
-  border-color:var(--primary);
-  background:var(--bg-hover);
-}
-
-.essay-box{
-  width:100%;
-  min-height:220px;
-  padding:15px;
-  font-size:14px;
-  line-height:1.6;
-  border-radius:var(--radius-sm);
-  border:1px solid var(--border-soft);
-  background:var(--bg-secondary);
-  color:var(--text-primary);
-  resize:none;
-}
-
-.word-counter{
-  text-align:right;
-  margin-top:8px;
-  font-size:13px;
-  color:var(--text-muted);
-}
-
-
-/* ===== ACTION BUTTONS ===== */
-
-.exam-actions{
-  display:flex;
-  gap:14px;
-}
-
-.exam-footer{
-  display:flex;
-  justify-content:space-between;
-  gap:16px;
-}
-
-
-/* ===== PG QUESTION SPACING ===== */
+/* ===== QUESTION AREA ===== */
 
 #questionBox{
-  line-height:1.7;
+  line-height:1.65;
 }
 
 #questionBox h3{
-  margin-bottom:18px;
+  margin-bottom:14px;
 }
 
 #questionBox p{
-  margin-bottom:22px;
-  font-size:15px;
+  margin-bottom:18px;
+  font-size:14px;
 }
 
-/* Opsi jawaban jadi card */
+
+/* ===== OPTION CARD ===== */
+
 #questionBox label{
   display:block;
-  padding:14px 16px;
-  margin-bottom:14px;
+  padding:12px 14px;
+  margin-bottom:12px;
   border:1px solid var(--border-soft);
   border-radius:var(--radius-sm);
   cursor:pointer;
@@ -172,10 +127,44 @@ textarea:focus{
   transform:translateY(-1px);
 }
 
-/* Radio spacing */
 #questionBox input[type="radio"]{
   margin-right:10px;
-  transform:scale(1.1);
+  transform:scale(1.05);
+}
+
+
+/* ===== FOOTER BUTTON ===== */
+
+.exam-footer{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  margin-top:30px;
+}
+
+.exam-footer button{
+  min-width:140px;
+  padding:10px 16px;
+  border-radius:var(--radius-sm);
+  font-size:14px;
+  cursor:pointer;
+  transition:var(--transition);
+}
+
+.exam-footer .btn-primary{
+  background:var(--primary);
+  color:var(--text-primary);
+  border:none;
+}
+
+.exam-footer .btn-primary:hover{
+  background:var(--primary-soft);
+}
+
+.exam-footer .btn-secondary{
+  background:var(--bg-secondary);
+  color:var(--text-primary);
+  border:1px solid var(--border-soft);
 }
 
 
@@ -184,11 +173,17 @@ textarea:focus{
 @media (max-width:768px){
 
   .exam-container{
-    padding:24px;
+    margin:40px auto;
+    padding:20px;
   }
 
   .exam-footer{
-    flex-direction:column;
+    flex-direction:row;   /* tetap sejajar */
+  }
+
+  .exam-footer button{
+    flex:1;
+    min-width:0;
   }
 }
 
