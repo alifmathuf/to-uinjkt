@@ -1,27 +1,35 @@
 /* ===============================
-   DASHBOARD UI
+   DASHBOARD UI — CLEAN STABLE
 ================================ */
 
-/* ================= 4 STEP PROGRESS ================= */
 
-/* ===== SAFE STEPPER (NO LAYOUT BREAK) ===== */
+/* ===== WRAPPER ===== */
+
+.dashboard-container{
+  width:100%;
+  max-width:1000px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+
+/* ===============================
+   STEPPER PROGRESS
+================================ */
 
 .stepper{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
   margin:30px 0;
-  width:100%;
-  overflow:hidden;   /* cegah dorong layout */
 }
 
 .step{
   display:flex;
   align-items:center;
-  gap:6px;
+  gap:8px;
   font-size:14px;
   color:var(--text-secondary);
-  white-space:nowrap; /* cegah wrap aneh */
 }
 
 .step .circle{
@@ -31,15 +39,15 @@
   background:var(--border-soft);
 }
 
-/* Garis */
+/* garis penghubung */
 .line{
-  width:40px;
+  width:50px;
   height:1px;
   background:var(--border-soft);
-  flex-shrink:0;  /* penting */
+  flex-shrink:0;
 }
 
-/* ACTIVE */
+/* active */
 .step.active{
   color:var(--primary);
   font-weight:600;
@@ -49,7 +57,7 @@
   background:var(--primary);
 }
 
-/* COMPLETED */
+/* completed */
 .step.completed{
   color:var(--success);
 }
@@ -63,48 +71,12 @@
 }
 
 
+/* ===============================
+   ACCORDION
+================================ */
 
-/* ===== RESPONSIVE ===== */
-
-@media (max-width:768px){
-
-  .stepper{
-    flex-wrap:wrap;
-    gap:10px;
-  }
-
-  .line{
-    display:none; /* biar tidak aneh di layar kecil */
-  }
-}
-
-
-/* ACTIVE STEP */
-.step.active{
-  color:var(--primary);
-  font-weight:600;
-}
-
-.step.active .circle{
-  background:var(--primary);
-}
-
-/* COMPLETED STEP */
-.step.completed{
-  color:var(--success);
-}
-
-.step.completed .circle{
-  background:var(--success);
-}
-
-.line.completed{
-  background:var(--success);
-}
-
-
-/* ACCORDION CONTAINER */
 .accordion{
+  margin-top:20px;
   background:var(--bg-card);
   border-radius:var(--radius);
   padding:24px;
@@ -113,16 +85,17 @@
 }
 
 
-/* OPTION GRID */
+/* ===============================
+   OPTION GRID
+================================ */
+
 .option-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+  grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
   gap:16px;
   margin-top:20px;
 }
 
-
-/* OPTION ITEM */
 .option-item{
   padding:14px;
   background:var(--bg-secondary);
@@ -141,4 +114,25 @@
 .option-item.active{
   background:var(--gradient-primary);
   border-color:transparent;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width:768px){
+
+  .stepper{
+    gap:10px;
+  }
+
+  .line{
+    width:30px;
+  }
+
+  .dashboard-container{
+    padding:0 16px;
+  }
+
 }
