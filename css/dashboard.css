@@ -5,19 +5,27 @@
 /* STEP NAVIGATION */
 .stepper{
   display:flex;
-  gap:16px;
-  margin-bottom:32px;
+  align-items:center;
+  gap:14px;
 }
 
 .step{
-  padding:8px 18px;
-  background:var(--bg-secondary);
-  border-radius:var(--radius-sm);
-  font-size:14px;
-  cursor:pointer;
-  transition:var(--transition);
-  color:var(--text-secondary);
+  position:relative;
+  padding:8px 14px;
 }
+
+/* Garis antar step */
+.step:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  right:-10px;
+  top:50%;
+  transform:translateY(-50%);
+  width:1px;
+  height:16px;
+  background:var(--border-soft);
+}
+
 
 .step:hover{
   background:var(--bg-hover);
