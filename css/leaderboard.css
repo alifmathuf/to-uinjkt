@@ -1,36 +1,56 @@
+/* ================= LEADERBOARD ================= */
+
 .leaderboard-card{
   max-width:900px;
   margin:auto;
+  padding:28px;
+  background:var(--bg-card);
+  border-radius:var(--radius);
+  border:1px solid var(--border-soft);
+  box-shadow:var(--shadow-soft);
 }
 
 .table-wrapper{
   overflow-x:auto;
-  margin-top:20px;
+  margin-top:24px;
 }
+
+
+/* ===== TABLE ===== */
 
 table{
   width:100%;
   border-collapse:collapse;
 }
 
-th, td{
-  padding:12px;
-  text-align:left;
-}
-
 thead{
   background:var(--bg-secondary);
+  color:var(--text-primary);
+}
+
+th, td{
+  padding:14px;
+  text-align:left;
+  font-size:14px;
 }
 
 tbody tr{
-  border-bottom:1px solid #1e293b;
+  border-bottom:1px solid var(--border-soft);
+}
+
+tbody tr:last-child{
+  border-bottom:none;
 }
 
 tbody tr:hover{
-  background:rgba(37,99,235,0.1);
+  background:var(--bg-hover);
 }
+
+
+/* ===== RANK MEDAL ===== */
 
 .rank-medal{
   font-size:18px;
   font-weight:700;
+  color:var(--primary);
 }
