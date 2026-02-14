@@ -7,10 +7,51 @@ Auth.protect();
 
 const user = Auth.getUser();
 
-const correct = parseInt(localStorage.getItem("pgScore")) || 0;
-const total = 50;
-const finalScore = Math.round((correct / total) * 100);
+const user = Auth.getUser();
 
+const examId = localStorage.getItem("lastExamId");
+
+if(!user || !examId){
+  window.location.href = "dashboard.html";
+}
+
+database.ref(`exams/${user.id}/${examId}`)
+.once("value")
+.then(snapshot=>{
+
+  const data = snapshot.val();
+
+  if(!data){
+    alert("Data hasil tidak ditemukan.");
+    window.location.href = "dashboard.html";
+    return;
+  }
+
+  const correct = data.correct || 0;
+  const total = data.total || 50;
+  const finalScore = Math.round((correct / total) * 100);
+
+  // Tampilkan ke halaman
+  document.getElementById("scoreText").innerText = finalScore;
+  document.getElementById("correctCount").innerText = correct;
+  document.getElementById("finalScore").innerText = finalScore;
+
+  // Update status lulus
+  const statusBox = document.getElementById("statusBox");
+
+  if(finalScore >= 75){
+    statusBox.innerHTML =
+      `<i data-lucide="check-circle"></i> LULUS`;
+    statusBox.className = "status-pass";
+  }else{
+    statusBox.innerHTML =
+      `<i data-lucide="x-circle"></i> TIDAK LULUS`;
+    statusBox.className = "status-fail";
+  }
+
+  lucide.createIcons();
+
+});
 const totalWords =
   parseInt(localStorage.getItem("caseTotalWords")) || 0;
 
