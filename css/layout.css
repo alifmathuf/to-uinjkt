@@ -113,9 +113,9 @@ textarea:focus{
 /* ================= CONTENT ================= */
 
 .content{
+  flex:1;
   padding:32px;
 }
-
 
 
 /* ================= TOPBAR ================= */
