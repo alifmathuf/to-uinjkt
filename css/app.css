@@ -175,8 +175,9 @@ button:disabled{
   color:white;
   font-size:16px;
   text-transform:uppercase;
-  background:var(--gradient);
-  box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  background:var(--primary);
+background:var(--gradient-primary);
+  --shadow-soft:0 8px 20px rgba(0,0,0,0.35);
 }
 ::-webkit-scrollbar{
   width:8px;
