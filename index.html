@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Try Out PPG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Try Out PPG</title>
 
-<link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/app.css">
 
-<style>
-body{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  background:var(--bg-main);
-  color:white;
-  font-family:'Poppins',sans-serif;
-}
-.loader{
-  text-align:center;
-}
-</style>
+  <style>
+    body{
+      margin:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      background:var(--bg-main);
+      color:white;
+      font-family:'Poppins',sans-serif;
+    }
 
+    .loader{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .footer{
+      position:absolute;
+      bottom:20px;
+      font-size:14px;
+      opacity:.7;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="loader">
-  <h2>Memuat Sistem...</h2>
-</div>
+  <div class="loader">
+    <h2>Memuat Sistem...</h2>
+  </div>
 
-<script>
-/* ===== AUTO REDIRECT ===== */
+  <footer class="footer">
+    © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
+  </footer>
 
-const user = localStorage.getItem("cbtUser");
+  <script>
+    /* ===== AUTO REDIRECT ===== */
 
-if(user){
-  window.location.href = "dashboard.html";
-}else{
-  window.location.href = "login.html";
-}
-</script>
-<footer class="footer">
-  © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
-</footer>
+    const user = localStorage.getItem("cbtUser");
+
+    if(user){
+      window.location.replace("dashboard.html");
+    }else{
+      window.location.replace("login.html");
+    }
+  </script>
+
 </body>
 </html>
