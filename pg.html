@@ -17,17 +17,21 @@
   <!-- ================= TOPBAR ================= -->
   <div class="exam-topbar">
     <div id="examInfo"></div>
-    <div id="timer" class="timer">00:00</div>
   </div>
 
-  <!-- ================= PROGRESS ================= -->
-  <div class="progress-wrapper">
-    <div class="progress-info">
-      <span id="progressText">1 / 50</span>
+  <!-- ================= PREMIUM PROGRESS + TIMER ================= -->
+  <div class="exam-progress-bar">
+
+    <!-- LEFT : STEPPER -->
+    <div class="progress-left">
+      <div id="stepper" class="stepper"></div>
     </div>
-    <div class="progress-bar">
-      <div id="progressFill"></div>
+
+    <!-- RIGHT : TIMER -->
+    <div class="progress-right">
+      <div id="timer" class="timer">00:00</div>
     </div>
+
   </div>
 
   <!-- ================= MAIN LAYOUT ================= -->
@@ -45,7 +49,9 @@
       <div class="exam-nav">
         <button onclick="prevQuestion()">Prev</button>
         <button onclick="nextQuestion()">Next</button>
-        <button class="btn-primary" onclick="submitExam()">Selesai</button>
+        <button class="btn-primary" id="finishBtn" onclick="submitExam()" disabled>
+          Selesai
+        </button>
       </div>
 
     </div>
