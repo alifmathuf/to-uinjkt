@@ -12,7 +12,7 @@ body{
 }
 .case-container{
   width:100%;
-  max-width:720px;      /* lebih fokus */
+  max-width:760px;      /* lebih fokus */
   margin:60px auto;
   padding:28px;         /* jangan 40px 60px lagi */
   background:var(--bg-card);
