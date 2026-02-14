@@ -28,10 +28,10 @@
         <i data-lucide="layout-dashboard"></i>
         <span>Dashboard</span>
       </a>
-
       <a href="result.html">
-        <i data-lucide="bar-chart-2"></i>
+      <i data-lucide="bar-chart-2"></i>
         <span>Result</span>
+      </a>
 
       <a href="review.html">
         <i data-lucide="eye"></i>
@@ -72,20 +72,35 @@
 
     </div>
 
-    <!-- STEPPER -->
-    <div class="stepper">
+<!-- STEPPER -->
+<div class="stepper">
 
-      <div class="step active" data-step="1">Mapel</div>
-      <div class="step" data-step="2">Paket</div>
-      <div class="step" data-step="3">Tipe</div>
-      <div class="step" data-step="4">Konfirmasi</div>
-
-    </div>
-
-    <!-- ACCORDION CONTENT -->
-    <div id="stepContent"></div>
-
+  <div class="step active" data-step="1">
+    <span class="dot"></span>
+    <span class="label">Mapel</span>
   </div>
+
+  <div class="step" data-step="2">
+    <span class="dot"></span>
+    <span class="label">Paket</span>
+  </div>
+
+  <div class="step" data-step="3">
+    <span class="dot"></span>
+    <span class="label">Tipe</span>
+  </div>
+
+  <div class="step" data-step="4">
+    <span class="dot"></span>
+    <span class="label">Konfirmasi</span>
+  </div>
+
+  <div class="progress-line"></div>
+
+</div>
+
+<!-- STEP CONTENT -->
+<div id="stepContent"></div>
 
 </div>
 <footer class="footer">
