@@ -151,8 +151,7 @@
   <div class="login-brand">
     <img src="assets/logo.png" alt="Logo">
     <h1>TRY OUT PPG</h1><br>
-    <p>Kumpulan soal-soal Try Out PPG BATCH IV UIN SYAHID JAKARTA </p>
-   
+    <p>Kumpulan soal-soal Try Out PPG BATCH IV UIN SYAHID JAKARTA</p>
     <p><br>Apresiasi dan terima kasih kami sampaikan kepada segenap panitia dan Prodi PPG UIN Jakarta atas bimbingan dan dukungannya</p>
   </div>
 
@@ -180,9 +179,32 @@
   </div>
 
 </div>
+
 <footer class="footer">
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
+
+<!-- ================= FIREBASE ================= -->
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBHUA0gGQpBElhN8c_-9Q5uJ4p7dQzipl4",
+    authDomain: "cbt-uinjkt.firebaseapp.com",
+    databaseURL: "https://cbt-uinjkt-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "cbt-uinjkt",
+    storageBucket: "cbt-uinjkt.firebasestorage.app",
+    messagingSenderId: "87309432353",
+    appId: "1:87309432353:web:cc1fac54a4bb69a1189560"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+</script>
+
+<!-- AUTH SCRIPT (HARUS PALING AKHIR) -->
 <script src="js/auth.js"></script>
 
 </body>
