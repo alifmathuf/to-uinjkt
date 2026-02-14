@@ -282,3 +282,138 @@
   }
 
 }
+/* ===================================
+   PREMIUM PROGRESS + TIMER (CBT 2.0)
+=================================== */
+
+.exam-progress-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:14px 18px;
+  background:var(--bg-secondary);
+  border:1px solid var(--border-soft);
+  border-radius:var(--radius);
+  margin:10px 0 26px;
+}
+
+/* LEFT SIDE */
+.progress-left{
+  flex:1;
+  overflow:hidden;
+}
+
+/* RIGHT SIDE (TIMER) */
+.progress-right{
+  min-width:110px;
+  text-align:right;
+}
+
+.timer{
+  font-weight:700;
+  font-size:15px;
+  color:var(--primary);
+}
+.stepper{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  position:relative;
+}
+
+/* STEP BULATAN */
+.step{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:var(--bg-primary);
+  border:2px solid var(--border-soft);
+  color:var(--text-secondary);
+  font-size:12px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:var(--transition);
+  flex-shrink:0;
+}
+
+.step:hover{
+  background:var(--bg-hover);
+}
+
+/* ACTIVE */
+.step.active{
+  background:var(--primary);
+  border-color:transparent;
+  color:var(--text-primary);
+  transform:scale(1.08);
+}
+
+/* ANSWERED */
+.step.answered{
+  background:var(--success);
+  border-color:transparent;
+  color:var(--text-primary);
+}
+
+/* GARIS ANTAR STEP */
+.step + .step{
+  position:relative;
+}
+
+.step + .step::before{
+  content:"";
+  position:absolute;
+  left:-14px;
+  top:50%;
+  transform:translateY(-50%);
+  width:14px;
+  height:2px;
+  background:var(--border-soft);
+}
+.timer.warning{
+  color:var(--warning);
+}
+
+.timer.danger{
+  color:var(--danger);
+  animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+  0%{opacity:1;}
+  50%{opacity:.5;}
+  100%{opacity:1;}
+}
+@media (max-width:768px){
+
+  .exam-progress-bar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .progress-right{
+    width:100%;
+    text-align:left;
+  }
+
+  .stepper{
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    padding-bottom:6px;
+    scrollbar-width:none;
+  }
+
+  .stepper::-webkit-scrollbar{
+    display:none;
+  }
+
+  .step{
+    flex:0 0 auto;
+  }
+
+}
