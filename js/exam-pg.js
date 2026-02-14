@@ -253,7 +253,37 @@ function submitExam(auto = false) {
       score++;
     }
   });
+   
+try{
 
+  if(typeof firebase !== "undefined"){
+
+    const user = Auth.getUser();
+    if(user){
+
+      const examId = examState.mapel + "_" + examState.paket;
+
+      database.ref(`exams/${user.id}/${examId}`).update({
+        mapel: examState.mapel,
+        paket: examState.paket,
+        answers: jawaban,
+        score: score,
+        correct: score,
+        total: soalUjian.length,
+        submittedAt: Date.now(),
+        status: "finished"
+      });
+
+      // Simpan untuk dipakai di result & review
+      localStorage.setItem("lastExamId", examId);
+
+    }
+
+  }
+
+}catch(err){
+  console.log("Firebase submit skipped:", err);
+}
   localStorage.setItem("pgScore", score);
   localStorage.setItem("pgCorrect", score);
   localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
