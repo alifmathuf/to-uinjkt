@@ -55,17 +55,17 @@
 
 .progress-track{
   width:100%;
-  height:6px;
-  background:var(--bg-secondary);
+  height:8px;                 /* sedikit lebih tebal */
+  background:var(--bg-primary);  /* lebih gelap dari card */
   border-radius:10px;
   overflow:hidden;
-  border:1px solid var(--border-soft);
 }
 
 .progress-fill{
   height:100%;
   width:0%;
-  background:var(--primary);
+  background:var(--gradient-primary);  /* pakai gradient root */
+  box-shadow:0 0 8px rgba(37,99,235,0.4);
   transition:width .3s ease;
 }
 
