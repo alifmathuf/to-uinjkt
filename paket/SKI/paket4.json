@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Seorang guru akan mengajar materi “Kondisi Sosial-Budaya Jazirah Arab Sebelum Islam” kepada siswa kelas VII. Guru ingin merumuskan tujuan pembelajaran ranah sikap agar siswa terdorong untuk mensyukuri datangnya ajaran Islam yang membawa perubahan besar terhadap peradaban Arab. Manakah rumusan tujuan ranah sikap yang paling sesuai dengan indikator pembelajaran tersebut?",
+    "o": [
+      "Siswa mampu menjelaskan kondisi masyarakat Arab sebelum Islam dengan benar",
+      "Siswa dapat menuliskan faktor-faktor kemunduran moral bangsa Arab pra-Islam",
+      "Siswa dapat menunjukkan sikap syukur atas datangnya Islam sebagai rahmat peradaban",
+      "Siswa dapat menyebutkan peninggalan budaya Arab sebelum Islam",
+      "Siswa dapat menilai kehidupan masyarakat Arab pra-Islam secara objektif"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran Sejarah Kebudayaan Islam (SKI) tentang perjuangan dakwah Nabi Muhammad sebelum Hijrah ke Madinah, seorang guru ingin menyusun tujuan pembelajaran ranah pengetahuan yang mendorong peserta didik agar mampu berpikir kritis terhadap tantangan dakwah Nabi di Makkah. Manakah rumusan tujuan pembelajaran yang paling sesuai?",
+    "o": [
+      "Siswa dapat menyebutkan tokoh-tokoh Quraisy yang menentang dakwah Nabi",
+      "Siswa dapat menjelaskan tahapan dakwah Nabi secara sembunyi-sembunyi dan terang-terangan",
+      "Siswa dapat menganalisis alasan kaum Quraisy menolak ajaran tauhid yang dibawa Nabi",
+      "Siswa dapat menghafal kronologi perjalanan Nabi dari Thaif ke Makkah",
+      "Siswa dapat menulis ringkasan tentang kondisi sosial masyarakat Makkah pra-Hijrah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran SKI tentang sistem pemerintahan masa Khalifah Abu Bakar ash-Shiddiq, guru ingin menyusun tujuan pembelajaran ranah keterampilan yang mendorong semangat gotong royong peserta didik. Manakah rumusan tujuan pembelajaran ranah keterampilan berikut yang paling tepat?",
+    "o": [
+      "Siswa dapat menyebutkan bentuk-bentuk musyawarah dalam pemerintahan Abu Bakar",
+      "Siswa dapat membuat ringkasan peran Abu Bakar dalam membangun negara Madinah",
+      "Siswa dapat menyusun rencana kerja kelompok yang mencerminkan nilai gotong royong sebagaimana diterapkan Abu Bakar dalam kepemimpinannya",
+      "Siswa dapat mendiskusikan pentingnya kejujuran dalam pemerintahan Abu Bakar",
+      "Siswa dapat menilai keputusan Abu Bakar dalam menghadapi kaum murtad"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru sedang menyusun rencana pembelajaran SKI dengan topik Teori Masuknya Islam di Indonesia. Ia ingin merancang indikator tujuan pembelajaran ranah sikap yang mendorong peserta didik menghargai keberagaman tradisi lokal yang dipengaruhi Islam. Manakah indikator tujuan sikap yang paling tepat untuk mendukung terbentuknya sikap penerimaan terhadap tradisi lokal dalam penyebaran Islam?",
+    "o": [
+      "Menyebutkan contoh akulturasi budaya Islam dan tradisi lokal",
+      "Menyimak penjelasan guru tentang proses penyebaran Islam",
+      "Menunjukkan sikap terbuka terhadap keberagaman praktik keislaman berbasis budaya lokal",
+      "Mengerjakan tugas tentang teori Gujarat dan Arab dalam masuknya Islam ke Indonesia",
+      "Membuat peta konsep persebaran Islam di berbagai wilayah Nusantara"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pada masa pemerintahan Dinasti Ayubiyah (1171–1250 M), sistem pemerintahan Islam menunjukkan kemajuan signifikan, termasuk dalam bidang militer, pendidikan, dan peradilan. Salah satu tokohnya, Shalahuddin Al-Ayyubi, dikenal sebagai pemimpin yang visioner, mampu menyatukan umat Islam dalam menghadapi Perang Salib, serta mendorong pendidikan dan ilmu pengetahuan di wilayah kekuasaannya. Berdasarkan deskripsi di atas, rumusan indikator tujuan pembelajaran ranah pengetahuan manakah yang paling sesuai untuk mengembangkan kemampuan berpikir dinamis dan inovatif peserta didik?",
+    "o": [
+      "Menyebutkan nama-nama khalifah Dinasti Ayubiyah",
+      "Menjelaskan penyebab runtuhnya Dinasti Ayubiyah",
+      "Menjelaskan strategi politik Shalahuddin Al-Ayyubi dalam menyatukan umat Islam",
+      "Menganalisis keunggulan sistem pemerintahan Dinasti Ayubiyah dalam pengelolaan pendidikan",
+      "Menghafalkan silsilah pemerintahan Dinasti Ayubiyah secara runtut"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Seorang guru merancang tujuan pembelajaran dengan pendekatan Problem-Based Learning (PBL) untuk materi Peradaban Bangsa Arab Pra Islam. Guru menekankan pentingnya peserta didik menemukan sebab-sebab keterbelakangan bangsa Arab sebelum Islam melalui analisis sumber sejarah dan refleksi nilai keagamaan. Manakah tujuan pembelajaran yang paling tepat?",
+    "o": [
+      "Peserta didik mampu menyebutkan nama-nama suku Arab sebelum Islam dengan benar",
+      "Peserta didik mampu mengidentifikasi nilai-nilai sosial dan budaya masyarakat Arab pra Islam",
+      "Peserta didik mampu membuat daftar wilayah geografis Jazirah Arab pra Islam",
+      "Peserta didik mampu menjelaskan runtutan peristiwa sejarah sebelum lahirnya Islam",
+      "Peserta didik mampu menganalisis faktor-faktor keterbelakangan bangsa Arab sebelum Islam dan kaitannya dengan pentingnya wahyu"
+    ],
+    "a": 4
+  },
+  {
+    "q": "Dalam pendekatan Project-Based Learning (PjBL) pada materi Kondisi Sosial-Kultural Masyarakat Madinah Pra-Hijrah, peserta didik membuat infografis tentang konflik antar suku dan nilai perdamaian. Materi ajar manakah yang paling tepat?",
+    "o": [
+      "Menceritakan silsilah keturunan Nabi Muhammad dari Bani Hasyim",
+      "Menghafal nama-nama suku Aus dan Khazraj",
+      "Menjelaskan latar belakang konflik antar suku di Madinah dan dampaknya terhadap tatanan sosial",
+      "Menyebutkan nama-nama tokoh Yahudi di Madinah sebelum Hijrah",
+      "Membuat laporan tentang perjalanan Nabi Muhammad ke Thaif"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran kepemimpinan Abu Bakar Ash-Shiddiq dengan pendekatan Discovery-Based Learning, peserta didik diminta mengaitkan strategi menghadapi riddah dengan nilai kepemimpinan masa kini. Materi ajar yang paling sesuai adalah...",
+    "o": [
+      "Menghafal nama-nama nabi palsu pada masa Abu Bakar",
+      "Menjelaskan strategi militer Khalid bin Walid",
+      "Mengidentifikasi nilai kepemimpinan Abu Bakar dalam merespons krisis keimanan masyarakat",
+      "Menyebutkan jumlah suku yang murtad",
+      "Menjelaskan proses pengumpulan Al-Qur’an"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam perencanaan pembelajaran berbasis TPACK tentang kontribusi Khalifah Utsman bin Affan terhadap ilmu pengetahuan, urutan materi ajar yang paling logis adalah...",
+    "o": [
+      "Pengumpulan Al-Qur’an – Sistem Peradilan – Pembentukan Pasukan Perang",
+      "Pembangunan Infrastruktur – Pengumpulan Al-Qur’an – Kebijakan Ekonomi",
+      "Pengumpulan Al-Qur’an – Standarisasi Mushaf – Distribusi ke wilayah Islam",
+      "Kebijakan Ekonomi – Zakat dan Wakaf – Perkembangan Teknologi",
+      "Penunjukan Gubernur – Penyebaran Islam – Penulisan Hadis"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran Discovery Learning tentang masuknya Islam ke Indonesia, urutan alur materi yang paling tepat adalah...",
+    "o": [
+      "Penyebaran Islam oleh para wali – Peran kerajaan Islam – Kedatangan pedagang Gujarat",
+      "Teori Gujarat – Teori Mekkah – Teori Persia",
+      "Kedatangan pedagang Muslim – Interaksi sosial-budaya – Berdirinya kerajaan Islam",
+      "Proses Islamisasi – Perdagangan rempah – Kedatangan bangsa Barat",
+      "Perang Salib – Penaklukan Malaka – Perkembangan Islam di Jawa"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran keruntuhan Dinasti Ayyubiyah dengan pendekatan konseling, urutan materi yang paling tepat adalah...",
+    "o": [
+      "Perang Salib – Meninggalnya Shalahuddin – Ketidakharmonisan internal – Intervensi Mamluk",
+      "Kejayaan Dinasti – Perang Salib – Kontribusi ulama – Dukungan militer",
+      "Pembentukan kekuasaan – Penyerangan Mongol – Kejayaan peradaban – Reformasi Islam",
+      "Latar belakang berdirinya – Konsolidasi wilayah – Kemajuan teknologi – Penyerangan luar",
+      "Keruntuhan Baghdad – Penjajahan Barat – Reformasi Dinasti – Perjanjian Damai"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran keruntuhan Dinasti Ayyubiyah yang menekankan empati dan refleksi nilai, alur materi yang tepat adalah...",
+    "o": [
+      "Kejayaan Shalahuddin – Penaklukan Yerusalem – Serangan Tentara Salib – Penyatuan Wilayah",
+      "Wafatnya Shalahuddin – Konflik pewaris – Lemahnya struktur politik – Intervensi Mamluk",
+      "Dinasti Fatimiyah – Dominasi Syiah – Perebutan kekuasaan – Kedatangan Mongol",
+      "Perluasan wilayah – Penurunan ekonomi – Kemenangan Tentara Salib – Keruntuhan budaya",
+      "Pusat pendidikan berkembang – Lembaga keilmuan melemah – Konflik keagamaan – Invasi Persia"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam program Penguatan Profil Pelajar Rahmatan Lil-Alamin (PPRA), alur materi yang paling tepat adalah...",
+    "o": [
+      "Ceramah panjang lalu soal pilihan ganda",
+      "Video tokoh inspiratif lalu diskusi kelompok tentang penerapan nilai",
+      "Menghafalkan teks dan ujian tertulis",
+      "Menyusun makalah individu",
+      "Membaca buku dan ceramah singkat"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam mengajarkan moderasi beragama (wasathiyah), langkah paling tepat adalah...",
+    "o": [
+      "Menekankan perbedaan pendapat tanpa aspek toleransi",
+      "Menyajikan sejarah perjuangan Islam yang ekstrem",
+      "Mendorong dialog aktif dan studi kasus tentang moderasi dalam kehidupan sosial",
+      "Fokus sejarah dakwah awal tanpa konteks kekinian",
+      "Hanya menjelaskan teori tanpa diskusi"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Alasan paling tepat mengimplementasikan moderasi beragama dalam pembelajaran adalah...",
+    "o": [
+      "Sebagai wujud toleransi tanpa menekankan saling menghormati",
+      "Memperkuat pemahaman ekstrem dalam beragama",
+      "Menjaga keharmonisan sosial dan menghindari konflik antar kelompok",
+      "Untuk keuntungan pribadi",
+      "Hanya relevan bagi sebagian umat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam merancang pembelajaran berbasis masalah mengenai peradaban bangsa Arab pra-Islam, manakah rancangan pembelajaran yang paling tepat untuk membantu siswa memahami sistem sosial, ekonomi, dan budaya masyarakat Arab pra-Islam?",
+    "o": [
+      "Menggunakan metode ceramah tanpa diskusi kelompok",
+      "Menerapkan pembelajaran berbasis masalah dengan menganalisis dampak sistem perdagangan di Jazirah Arab terhadap kehidupan sosial dan budaya",
+      "Memberikan tugas individu membaca dan menulis laporan tanpa diskusi",
+      "Menayangkan video dokumenter tanpa refleksi",
+      "Memberikan tes pilihan ganda tentang peradaban Arab pra-Islam"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam merancang pembelajaran berbasis masalah tentang perjalanan Hijrah Nabi Muhammad SAW, rancangan yang paling tepat adalah...",
+    "o": [
+      "Ceramah panjang tanpa diskusi",
+      "Menyusun skenario analisis tantangan Hijrah dan merancang strategi kontekstual masa kini",
+      "Kuis tanpa diskusi",
+      "Menulis esai individu tanpa kolaborasi",
+      "Menonton film dan membuat rangkuman"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran akhir pemerintahan Abu Bakar atau Umar bin Khattab yang mengintegrasikan teknologi, strategi paling tepat adalah...",
+    "o": [
+      "Ceramah tanpa teknologi",
+      "Menggunakan simulasi teknologi untuk menganalisis keputusan kepemimpinan",
+      "Tes urutan kejadian tanpa analisis",
+      "Dokumentasi visual tanpa diskusi",
+      "Aplikasi untuk menguji hafalan saja"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran berbasis perbedaan individu tentang peristiwa kematian Utsman bin Affan, strategi paling tepat adalah...",
+    "o": [
+      "Ceramah konvensional tanpa mempertimbangkan gaya belajar",
+      "Pembagian kelompok berdasarkan kemampuan dengan analisis menggunakan berbagai media",
+      "Membaca teks panjang tanpa bantuan",
+      "Tanya jawab untuk menguji hafalan",
+      "Tes tertulis dengan tingkat kesulitan sama untuk semua"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran strategi dakwah Walisongo dengan mempertimbangkan perbedaan individu, rancangan paling tepat adalah...",
+    "o": [
+      "Ceramah satu arah tanpa variasi metode",
+      "Diskusi kelompok dengan tugas disesuaikan kemampuan dan gaya belajar",
+      "Video tunggal dan kuis standar",
+      "Ceramah singkat tanpa kegiatan lain",
+      "Tes tertulis ringkasan untuk semua siswa"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tradisi Islam Nusantara yang memanfaatkan teknologi dan perbedaan gaya belajar, strategi paling sesuai adalah...",
+    "o": [
+      "Video lalu laporan tanpa mempertimbangkan gaya belajar",
+      "Aplikasi diskusi berbasis teknologi dengan topik pilihan dan kolaborasi",
+      "Ceramah rinci tanpa interaksi",
+      "Modul teks lalu ujian tertulis",
+      "Proyek individu tanpa teknologi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran mendalam tentang berdirinya Dinasti Umayyah di Damaskus, strategi paling tepat adalah...",
+    "o": [
+      "Ceramah panjang tanpa diskusi",
+      "Laporan tertulis tanpa eksplorasi kolaboratif",
+      "Penelitian kelompok tentang faktor politik, sosial, dan ekonomi lalu presentasi berbasis teknologi",
+      "Video lalu kuis umum",
+      "Membaca teks dan ujian hafalan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran mendalam tentang runtuhnya Bani Umayyah di Damaskus, strategi paling sesuai adalah...",
+    "o": [
+      "Ceramah panjang tanpa analisis",
+      "Studi kasus dengan analisis faktor politik, sosial, ekonomi dan presentasi visual",
+      "Buku teks lalu tes tertulis",
+      "Video lalu diskusi tanpa analisis",
+      "Simulasi tanpa menghasilkan wawasan"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran pendidikan karakter berbasis proyek untuk menumbuhkan integritas dan tanggung jawab, strategi paling tepat adalah...",
+    "o": [
+      "Ceramah lalu ujian",
+      "Esai individu lalu presentasi kelompok",
+      "Video motivasi tanpa analisis",
+      "Proyek kampanye sosial berbasis teknologi tentang integritas dan tanggung jawab",
+      "Tes pilihan ganda definisi"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Dalam pembelajaran moderasi beragama berbasis TPACK, rancangan paling sesuai adalah...",
+    "o": [
+      "Video ceramah lalu ringkasan",
+      "Diskusi teks lalu ujian tertulis",
+      "Video, artikel, infografis lalu presentasi berbasis teknologi",
+      "Buku teks lalu hafalan",
+      "Ceramah lalu tanya jawab"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam penerapan PBL pada materi kehidupan sosial, politik, dan ekonomi di Jazirah Arab, langkah awal paling tepat adalah...",
+    "o": [
+      "Memberikan kuis awal",
+      "Cerita sejarah tanpa diskusi",
+      "Memberikan masalah nyata yang relevan dan meminta siswa mencari solusi",
+      "Menghafal fakta penting",
+      "Ceramah panjang"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pendekatan Project Based Learning pada materi Hijrah Nabi Muhammad SAW, strategi paling tepat adalah...",
+    "o": [
+      "Ringkasan buku",
+      "Menghafal kronologi",
+      "Proyek multimedia yang mengaitkan nilai hijrah dengan semangat modern",
+      "Ceramah dua jam",
+      "Soal pilihan ganda"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pendekatan Discovery Based Learning tentang strategi dakwah Umar bin Khattab, strategi paling tepat adalah...",
+    "o": [
+      "Menyalin modul",
+      "Mendengarkan ceramah detail",
+      "Analisis kelompok nilai dakwah Umar dan mengaitkannya dengan tantangan modern",
+      "Membuat soal ujian",
+      "Menghafal biografi"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pendekatan Discovery Learning tentang strategi dakwah Utsman bin Affan, strategi paling tepat adalah...",
+    "o": [
+      "Tes pilihan ganda",
+      "Menyalin materi",
+      "Diskusi aktif dan membuat infografis relevansi strategi dakwah era digital",
+      "Rangkuman buku",
+      "Video tanpa tindak lanjut"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran pemikiran tokoh Islam Indonesia era kontemporer dengan pendekatan TPACK, strategi paling tepat adalah...",
+    "o": [
+      "Meringkas buku",
+      "Menggunakan PowerPoint saja",
+      "Video interaktif lalu membuat konten digital relevansi pemikiran tokoh",
+      "Ujian esai seluruh isi buku",
+      "Resume biografi tanpa diskusi"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran sejarah masuknya Islam di Asia Tenggara yang menggunakan pendekatan pelayanan bimbingan konseling untuk membangun karakter, strategi paling tepat adalah...",
+    "o": [
+      "Menghafalkan jalur masuknya Islam",
+      "Membuat peta jalur perdagangan Islam",
+      "Mengadakan refleksi kelompok untuk menggali nilai spiritual dan sosial dari proses Islamisasi",
+      "Menonton video tanpa diskusi",
+      "Membuat makalah sejarah kerajaan Islam"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran sistem pemerintahan Dinasti Abbasiyah yang inklusif bagi siswa berkebutuhan khusus, strategi paling tepat adalah...",
+    "o": [
+      "Memberikan teks bacaan yang sama untuk semua siswa",
+      "Menayangkan film tanpa subtitle",
+      "Menyediakan materi audio dan teks bergambar bagi tunanetra dan slow learner",
+      "Memberikan tugas menulis tanpa pendampingan",
+      "Ulangan lisan tanpa mempertimbangkan hambatan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran perkembangan ilmu pengetahuan masa Dinasti Abbasiyah agar relevan dengan IPTEK modern, pendekatan paling tepat adalah...",
+    "o": [
+      "Ceramah tanpa diskusi",
+      "Menghafal nama tokoh",
+      "Proyek membuat video kontribusi tokoh Abbasiyah terhadap ilmu modern",
+      "Tanya jawab cepat",
+      "Mengganti topik sejarah"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran pendidikan karakter agar lebih bermakna dan progresif, strategi paling tepat adalah...",
+    "o": [
+      "Ceramah intensif beberapa pertemuan",
+      "Latihan soal pilihan ganda berulang",
+      "Proyek sosial seperti merancang kegiatan bakti sosial berbasis nilai karakter",
+      "Menghafal definisi nilai karakter",
+      "Lembar kerja tertutup"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran moderasi beragama agar lebih relevan dan membahagiakan, strategi paling tepat adalah...",
+    "o": [
+      "Menyalin ayat dan hadits",
+      "Ceramah sepanjang pembelajaran",
+      "Membuat video pendek praktik toleransi di lingkungan sekitar",
+      "Mencari definisi di buku teks",
+      "Soal pilihan ganda tanpa pembahasan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pendekatan PBL mengenai kehidupan sosial dan politik di Jazirah Arab, teknik asesmen sikap paling tepat adalah...",
+    "o": [
+      "Tes esai tertulis",
+      "Observasi dengan lembar penilaian sikap",
+      "Penilaian diri pemahaman materi",
+      "Presentasi hasil diskusi",
+      "Tes pilihan ganda"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pendekatan PjBL membuat video dakwah digital tentang Dakwah Nabi di Madinah, instrumen asesmen keterampilan paling tepat adalah...",
+    "o": [
+      "Lembar observasi proses pembuatan video",
+      "Kuis online",
+      "Angket penilaian sikap",
+      "Daftar cek pemahaman konsep",
+      "Tes pilihan ganda"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam Discovery Learning tentang kepemimpinan Umar bin Khattab, teknik asesmen sikap paling tepat adalah...",
+    "o": [
+      "Soal pilihan ganda",
+      "Penilaian diri (self-assessment) sikap dalam kerja kelompok",
+      "Tes lisan hasil kelompok",
+      "Jurnal refleksi pribadi",
+      "Isian singkat"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam diskusi kebijakan pengumpulan mushaf pada masa Utsman bin Affan, instrumen asesmen sikap paling tepat adalah...",
+    "o": [
+      "Lembar observasi dengan rubrik penilaian sikap",
+      "Tes pilihan ganda",
+      "Isian singkat",
+      "Angket kepuasan belajar",
+      "Portofolio hasil kerja"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam tugas membuat peta tematik interaktif tentang masuknya Islam di Afrika, teknik asesmen paling tepat adalah...",
+    "o": [
+      "Tes pilihan ganda",
+      "Penilaian portofolio tugas siswa",
+      "Wawancara individual",
+      "Observasi sikap",
+      "Penilaian diri"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam tugas esai kritis tentang relevansi pemikiran Ibnu Rusyd terhadap konteks modern, teknik asesmen paling tepat adalah...",
+    "o": [
+      "Tes pilihan ganda",
+      "Penilaian proyek kelompok",
+      "Laporan penelitian individu",
+      "Penilaian portofolio tugas esai",
+      "Tes esai tanpa rubrik"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Dalam presentasi kelompok tentang kejayaan Bani Umayyah di Andalusia, teknik asesmen keterampilan presentasi paling tepat adalah...",
+    "o": [
+      "Portofolio kelompok",
+      "Tes lisan",
+      "Lembar observasi presentasi kelompok",
+      "Ujian esai",
+      "Tes tertulis lanjutan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam presentasi pengaruh kebijakan pemerintahan Umayyah di Andalusia terhadap masyarakat, instrumen asesmen paling tepat adalah...",
+    "o": [
+      "Pilihan ganda",
+      "Portofolio kelompok",
+      "Lembar observasi selama presentasi",
+      "Tes esai individu",
+      "Rubrik diskusi"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam diskusi solusi masalah sosial berbasis nilai karakter, teknik asesmen kolaborasi paling tepat adalah...",
+    "o": [
+      "Tes pilihan ganda",
+      "Portofolio individu",
+      "Observasi keterampilan komunikasi selama diskusi",
+      "Ujian tertulis teori",
+      "Kuis interaktif"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam diskusi kasus intoleransi berbasis moderasi beragama, instrumen asesmen paling tepat adalah...",
+    "o": [
+      "Tes tertulis konsep",
+      "Portofolio hasil diskusi",
+      "Observasi keterampilan berargumentasi dalam diskusi",
+      "Kuis pilihan ganda",
+      "Wawancara sikap"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran Hijrah Nabi menggunakan multimedia agar berkualitas berkelanjutan, praktik paling tepat adalah...",
+    "o": [
+      "Menambah video tanpa interaksi",
+      "Menggabungkan teknologi dengan diskusi kelas",
+      "Fokus teknologi tanpa interaksi sosial",
+      "Tanpa teknologi",
+      "Teks panjang tanpa diskusi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran kepemimpinan Utsman bin Affan agar lebih efektif, praktik paling tepat adalah...",
+    "o": [
+      "Slide penuh teks dan gambar",
+      "Diskusi kelompok kecil dan mengaitkan dengan pengalaman sehari-hari",
+      "Video panjang tanpa tanya jawab",
+      "Ceramah tanpa teknologi",
+      "Slide teks panjang tanpa diskusi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran Dinasti Ayubiyah agar interaktif dan efektif, praktik paling tepat adalah...",
+    "o": [
+      "Ujian tertulis panjang tanpa interaksi",
+      "Slide teks singkat dan diskusi interaktif",
+      "Ceramah tanpa teknologi",
+      "Gambar tanpa penjelasan",
+      "Video tanpa refleksi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penggunaan AI tanpa evaluasi dan feedback, penilaian paling tepat adalah...",
+    "o": [
+      "Sudah optimal",
+      "Perlu mengembangkan keterampilan teknologi",
+      "Sudah baik dan berkelanjutan",
+      "Tidak perlu evaluasi",
+      "Perlu evaluasi dan feedback berkelanjutan"
+    ],
+    "a": 4
+  },
+  {
+    "q": "Dalam penggunaan AI pada pembelajaran SKI yang kurang menyesuaikan gaya belajar siswa, masalah yang terjadi adalah...",
+    "o": [
+      "Sudah tepat tanpa penyesuaian",
+      "AI terlalu teknis bagi Gen Z",
+      "AI hanya cocok untuk siswa mahir teknologi",
+      "Kurangnya penyesuaian terhadap gaya belajar siswa",
+      "AI bisa diterapkan tanpa memperhatikan karakteristik siswa"
+    ],
+    "a": 3
+  }
+]
