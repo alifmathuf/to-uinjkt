@@ -23,10 +23,8 @@
   <div class="sidebar">
     <div class="app-title">Tryout PPG</div>
 <div id="sidebarOverlay" class="sidebar-overlay"></div>
-
-      <a href="dashboard.html">
     <div class="menu">
-   
+      <a href="dashboard.html">
         <i data-lucide="layout-dashboard"></i>
         <span>Dashboard</span>
       </a>
@@ -35,7 +33,7 @@
         <i data-lucide="bar-chart-2"></i>
         <span>Result</span>
       </a>
-
+<button class="btn-primary glow-primary">
       <a href="review.html">
         <i data-lucide="eye"></i>
         <span>Review</span>
@@ -74,42 +72,19 @@
       </div>
 
     </div>
-<div class="dashboard-container">
 
-  <div class="stepper">
+    <!-- STEPPER -->
+    <div class="stepper">
 
-  <div class="step completed">
-    <div class="circle"></div>
-    <span>Mapel</span>
-  </div>
+      <div class="step active" data-step="1">Mapel</div>
+      <div class="step" data-step="2">Paket</div>
+      <div class="step" data-step="3">Tipe</div>
+      <div class="step" data-step="4">Konfirmasi</div>
 
-  <div class="line completed"></div>
+    </div>
 
-  <div class="step completed">
-    <div class="circle"></div>
-    <span>Paket</span>
-  </div>
-
-  <div class="line completed"></div>
-
-  <div class="step active">
-    <div class="circle"></div>
-    <span>Tipe</span>
-  </div>
-
-  <div class="line"></div>
-
-  <div class="step">
-    <div class="circle"></div>
-    <span>Konfirmasi</span>
-  </div>
-
-</div>
-
- 
     <!-- ACCORDION CONTENT -->
-
-<div id="stepContent"></div>
+    <div id="stepContent"></div>
 
   </div>
 
