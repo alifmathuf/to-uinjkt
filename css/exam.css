@@ -299,9 +299,10 @@
 }
 
 /* LEFT SIDE */
-.progress-left{
+..progress-left{
   flex:1;
-  overflow:hidden;
+  overflow-x:auto;
+  overflow-y:hidden;
 }
 
 /* RIGHT SIDE (TIMER) */
@@ -414,6 +415,28 @@
 
   .step{
     flex:0 0 auto;
+  }
+
+}
+
+
+.stepper{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  min-width:max-content;   /* PENTING */
+}
+
+@media (max-width:768px){
+
+  .exam-progress-bar{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .progress-right{
+    width:100%;
+    text-align:left;
   }
 
 }
