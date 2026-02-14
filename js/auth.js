@@ -56,14 +56,21 @@ const Auth = {
 ================================ */
 
 function saveUserToFirebase(user){
+function saveUserToFirebase(user){
 
+  // Kalau firebase atau database belum ada → skip saja
   if(typeof firebase === "undefined") return;
+  if(typeof database === "undefined") return;
 
-  database.ref("users/" + user.id).set({
-    nama: user.nama,
-    kelas: user.kelas,
-    lastLogin: Date.now()
-  });
+  try{
+    database.ref("users/" + user.id).set({
+      nama: user.nama,
+      kelas: user.kelas,
+      lastLogin: Date.now()
+    });
+  }catch(e){
+    console.log("Firebase belum siap:", e);
+  }
 
 }
 
