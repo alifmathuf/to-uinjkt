@@ -25,45 +25,68 @@ document.addEventListener("DOMContentLoaded",()=>{
   }
 
   // 🔥 AMBIL DATA DARI FIREBASE
-  database.ref("leaderboard").on("value", snapshot => {
+  database.ref("exams")
+.once("value")
+.then(snapshot=>{
 
-    const data = snapshot.val();
+  const allUsers = snapshot.val();
 
-    if(!data){
-      tbody.innerHTML = `
-        <tr>
-          <td colspan="4" style="text-align:center;">
-            Belum ada data.
-          </td>
-        </tr>
-      `;
-      return;
-    }
+  if(!allUsers){
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="4" style="text-align:center;">
+          Belum ada data.
+        </td>
+      </tr>
+    `;
+    return;
+  }
 
-    const leaderboard = Object.values(data);
+  let leaderboard = [];
 
-    // urutkan skor tertinggi
-    leaderboard.sort((a,b)=>b.score-a.score);
+  // Loop semua user
+  Object.keys(allUsers).forEach(userId => {
 
-    tbody.innerHTML = "";
+    const userExams = allUsers[userId];
 
-    leaderboard.slice(0,10).forEach((item,index)=>{
+    Object.keys(userExams).forEach(examId => {
 
-      let medal = index===0 ? "🥇"
-                : index===1 ? "🥈"
-                : index===2 ? "🥉"
-                : index+1;
+      const exam = userExams[examId];
 
-      tbody.innerHTML += `
-        <tr>
-          <td class="rank-medal">${medal}</td>
-          <td>${item.nama}</td>
-          <td>${item.kelas}</td>
-          <td>${item.score}</td>
-        </tr>
-      `;
+      if(exam.status === "finished"){
+
+        leaderboard.push({
+          nama: exam.nama || "-",   // fallback
+          kelas: exam.kelas || "-",
+          score: Math.round((exam.correct / exam.total) * 100)
+        });
+
+      }
+
     });
 
+  });
+
+  // Urutkan skor tertinggi
+  leaderboard.sort((a,b)=>b.score - a.score);
+
+  tbody.innerHTML = "";
+
+  leaderboard.slice(0,10).forEach((item,index)=>{
+
+    let medal = index===0 ? "🥇"
+              : index===1 ? "🥈"
+              : index===2 ? "🥉"
+              : index+1;
+
+    tbody.innerHTML += `
+      <tr>
+        <td class="rank-medal">${medal}</td>
+        <td>${item.nama}</td>
+        <td>${item.kelas}</td>
+        <td>${item.score}</td>
+      </tr>
+    `;
   });
 
 });
