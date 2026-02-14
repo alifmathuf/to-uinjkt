@@ -5,13 +5,17 @@
 .layout{
   display:flex;
   min-height:100vh;
+  background:var(--bg-primary);
 }
 
-/* SIDEBAR */
+
+/* ================= SIDEBAR ================= */
+
 .sidebar{
   width:240px;
   background:var(--bg-secondary);
-  padding:20px;
+  padding:24px;
+  border-right:1px solid var(--border-soft);
   transition:var(--transition);
   display:flex;
   flex-direction:column;
@@ -20,77 +24,96 @@
 .sidebar .app-title{
   font-size:20px;
   font-weight:700;
-  margin-bottom:30px;
+  margin-bottom:32px;
+  color:var(--text-primary);
 }
+
+
+/* ===== MENU ===== */
 
 .menu a{
   display:flex;
   align-items:center;
   gap:12px;
-  padding:10px;
-  border-radius:8px;
+  padding:12px 14px;
+  border-radius:var(--radius-sm);
   color:var(--text-secondary);
-  margin-bottom:5px;
+  margin-bottom:6px;
   position:relative;
   transition:var(--transition);
 }
 
-.menu a.active,
 .menu a:hover{
-  color:white;
-  background:rgba(37,99,235,0.1);
+  background:var(--bg-hover);
+  color:var(--text-primary);
+}
+
+.menu a.active{
+  background:var(--bg-hover);
+  color:var(--text-primary);
 }
 
 .menu a.active::before{
   content:"";
   position:absolute;
-  left:0;
-  top:0;
-  bottom:0;
+  left:-24px;
+  top:6px;
+  bottom:6px;
   width:4px;
   background:var(--primary);
   border-radius:4px;
 }
 
-/* CONTENT */
+
+/* ================= CONTENT ================= */
+
 .content{
   flex:1;
-  padding:30px;
+  padding:32px;
 }
 
-/* TOPBAR */
+
+/* ================= TOPBAR ================= */
+
 .topbar{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:30px;
+  margin-bottom:32px;
 }
 
 .app-title-desktop{
   font-size:20px;
   font-weight:700;
+  color:var(--text-primary);
 }
 
 .user-info{
   display:flex;
   align-items:center;
-  gap:15px;
+  gap:14px;
 }
 
 .user-info img{
   width:40px;
   height:40px;
   border-radius:50%;
+  border:2px solid var(--border-soft);
 }
 
-/* HAMBURGER */
+
+/* ================= HAMBURGER ================= */
+
 .hamburger{
   display:none;
   font-size:22px;
   cursor:pointer;
+  color:var(--text-primary);
 }
 
-/* MOBILE */
+
+/* ================= MOBILE ================= */
+
 @media(max-width:768px){
 
   .layout{
@@ -103,6 +126,7 @@
     top:0;
     height:100%;
     z-index:1000;
+    box-shadow:var(--shadow-soft);
   }
 
   .sidebar.open{
@@ -116,5 +140,9 @@
 
   .app-title-desktop{
     display:none;
+  }
+
+  .content{
+    padding:24px;
   }
 }
