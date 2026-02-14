@@ -33,11 +33,29 @@ steps.forEach(step=>{
 
 function updateStep(){
 
-  steps.forEach(s=>s.classList.remove("active"));
-  document.querySelector(`[data-step="${currentStep}"]`)
-    .classList.add("active");
+  steps.forEach(s=>{
+    s.classList.remove("active","completed");
 
-  renderContent();
+    const stepNumber = parseInt(s.dataset.step);
+
+    if(stepNumber < currentStep){
+      s.classList.add("completed");
+    }
+
+    if(stepNumber === currentStep){
+      s.classList.add("active");
+    }
+  });
+
+  // smooth animation
+  stepContent.style.opacity = 0;
+  stepContent.style.transform = "translateY(5px)";
+
+  setTimeout(()=>{
+    renderContent();
+    stepContent.style.opacity = 1;
+    stepContent.style.transform = "translateY(0)";
+  },150);
 }
 
 
