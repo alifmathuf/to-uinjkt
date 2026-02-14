@@ -22,21 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const examId = localStorage.getItem("lastExamId");
-  if (!examId) {
-    tbody.innerHTML = `
-      <tr>
-        <td colspan="4" style="text-align:center;">
-          Belum ada ujian.
-        </td>
-      </tr>
-    `;
-    return;
-  }
-
   const db = firebase.database();
 
-  db.ref(`leaderboard/${examId}`)
+  // 🔥 Ambil SEMUA leaderboard semua paket
+  db.ref("leaderboard")
     .once("value")
     .then(snapshot => {
 
@@ -51,17 +40,23 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      const data = snapshot.val();
+      const allData = snapshot.val();
       let leaderboard = [];
 
-      Object.keys(data).forEach(userId => {
+      Object.keys(allData).forEach(examId => {
 
-        const item = data[userId];
+        const examGroup = allData[examId];
 
-        leaderboard.push({
-          nama: item.nama,
-          kelas: item.kelas,
-          score: item.score
+        Object.keys(examGroup).forEach(userId => {
+
+          const item = examGroup[userId];
+
+          leaderboard.push({
+            nama: item.nama,
+            kelas: item.kelas,
+            score: item.score
+          });
+
         });
 
       });
@@ -90,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
     .catch(err => {
-      console.log("Leaderboard load error:", err);
+      console.log("Leaderboard error:", err);
     });
 
 });
