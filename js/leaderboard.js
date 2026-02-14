@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  Auth.protect();
-
-  const user = Auth.getUser();
-  if (!user) return;
-
   const tbody = document.getElementById("leaderboardBody");
+
+  if (!tbody) return;
 
   if (typeof firebase === "undefined") {
     tbody.innerHTML = `
@@ -18,9 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const db = firebase.database();
-
-  db.ref("leaderboard")
+  firebase.database()
+    .ref("leaderboard")
     .once("value")
     .then(snapshot => {
 
@@ -38,28 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const allMapel = snapshot.val();
       let leaderboard = [];
 
-      // LOOP SEMUA MAPEL
       Object.keys(allMapel).forEach(mapel => {
-
         const users = allMapel[mapel];
 
-        // LOOP SEMUA USER DALAM MAPEL
         Object.keys(users).forEach(userId => {
-
           const item = users[userId];
 
           leaderboard.push({
             nama: item.nama || "-",
             kelas: item.kelas || "-",
-            score: item.score || 0,
-            mapel: mapel
+            score: item.score || 0
           });
-
         });
-
       });
 
-      // URUTKAN
       leaderboard.sort((a, b) => b.score - a.score);
 
       tbody.innerHTML = "";
@@ -88,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tbody.innerHTML = `
         <tr>
           <td colspan="4" style="text-align:center;">
-            Gagal memuat data.
+            Error mengambil data.
           </td>
         </tr>
       `;
