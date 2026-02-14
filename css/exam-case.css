@@ -5,19 +5,15 @@
 
 /* ================= CENTER MODE FIX ================= */
 
-/* ================= CENTER MODE FIX ================= */
-
 body{
   display:flex;
   justify-content:center;
-}
 
+}
 .case-container{
   width:100%;
-  max-width:760px;   /* lebar ideal fokus */
+  max-width:720px;      /* lebih fokus */
   margin:60px auto;
-}
-
   padding:28px;         /* jangan 40px 60px lagi */
   background:var(--bg-card);
   border-radius:var(--radius);
