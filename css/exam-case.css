@@ -65,6 +65,7 @@
 
 .case-textarea{
   width:100%;
+   width:900px
   min-height:260px;
   padding:18px;
   border-radius:var(--radius-sm);
