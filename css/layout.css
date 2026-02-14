@@ -40,12 +40,28 @@ textarea:focus{
 .sidebar{
   width:240px;
   padding:24px;
-  background:var(--bg-secondary);
+  background:rgba(17,24,39,0.85);
+  backdrop-filter:blur(14px);
   border-right:1px solid var(--border-soft);
-  backdrop-filter:blur(8px);
   display:flex;
   flex-direction:column;
   transition:var(--transition);
+}
+
+.sidebar-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(2px);
+  z-index:900;
+  opacity:0;
+  pointer-events:none;
+  transition:var(--transition);
+}
+
+.sidebar-overlay.show{
+  opacity:1;
+  pointer-events:auto;
 }
 
 .sidebar .app-title{
@@ -55,6 +71,10 @@ textarea:focus{
   color:var(--text-primary);
 }
 
+.glow-primary{
+  box-shadow:0 0 0 1px var(--primary),
+             0 0 20px rgba(37,99,235,0.25);
+}
 /* ===== MENU ===== */
 
 .menu a{
