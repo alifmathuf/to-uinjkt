@@ -95,6 +95,18 @@ a{
   border:1px solid var(--border-soft);
 }
 
+.card-elevated{
+  background:var(--bg-card);
+  border:1px solid var(--border-soft);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-soft);
+  transition:var(--transition);
+}
+
+.card-elevated:hover{
+  transform:translateY(-2px);
+}
+
 /* Button */
 button{
   border:none;
