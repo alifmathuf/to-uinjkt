@@ -1,161 +1,96 @@
 /* ===============================
-   RESULT ENGINE - FINAL CLEAN
-   + FIREBASE GLOBAL LEADERBOARD
+   RESULT ENGINE - CLEAN STABLE
 ================================ */
 
 Auth.protect();
 
 const user = Auth.getUser();
-
-const user = Auth.getUser();
-
-Auth.protect();
-
-const user = Auth.getUser();
-
-if(!user){
+if (!user) {
   window.location.href = "dashboard.html";
 }
 
-// Ambil ujian terakhir dari Firebase
-database.ref(`exams/${user.id}`)
-.orderByChild("submittedAt")
-.limitToLast(1)
-.once("value")
-.then(snapshot=>{
-
-  if(!snapshot.exists()){
-    alert("Belum ada hasil ujian.");
-    window.location.href = "dashboard.html";
-    return;
-  }
-
-  const examData = Object.values(snapshot.val())[0];
-
-  const correct = examData.correct || 0;
-  const total = examData.total || 50;
-  const finalScore = Math.round((correct/total)*100);
-
-  document.getElementById("scoreText").innerText = finalScore;
-  document.getElementById("correctCount").innerText = correct;
-  document.getElementById("finalScore").innerText = finalScore;
-
-  const statusBox = document.getElementById("statusBox");
-
-  if(finalScore >= 75){
-    statusBox.innerHTML =
-      `<i data-lucide="check-circle"></i> LULUS`;
-    statusBox.className = "status-pass";
-  }else{
-    statusBox.innerHTML =
-      `<i data-lucide="x-circle"></i> TIDAK LULUS`;
-    statusBox.className = "status-fail";
-  }
-
-  lucide.createIcons();
-
-});
-const totalWords =
-  parseInt(localStorage.getItem("caseTotalWords")) || 0;
-
-const totalChars =
-  parseInt(localStorage.getItem("caseTotalChars")) || 0;
-
-
 /* ================= USER INFO ================= */
 
-document.getElementById("greeting").innerText =
-  "Hasil Ujian";
-
+document.getElementById("greeting").innerText = "Hasil Ujian";
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
 
 
-/* ================= PG RESULT ================= */
+/* ================= AMBIL DATA TERAKHIR ================= */
 
-document.getElementById("scoreText").innerText =
-  finalScore;
+const db = firebase.database();
 
-document.getElementById("correctCount").innerText =
-  correct;
+db.ref(`exams/${user.id}`)
+  .orderByChild("submittedAt")
+  .limitToLast(1)
+  .once("value")
+  .then(snapshot => {
 
-document.getElementById("finalScore").innerText =
-  finalScore;
+    if (!snapshot.exists()) {
+      alert("Belum ada hasil ujian.");
+      window.location.href = "dashboard.html";
+      return;
+    }
 
+    const examData = Object.values(snapshot.val())[0];
 
-/* ================= STATUS ================= */
+    const correct = examData.score || 0;
+    const total = examData.total || 50;
+    const finalScore = Math.round((correct / total) * 100);
 
-const statusBox =
-  document.getElementById("statusBox");
+    /* ================= TAMPILKAN NILAI ================= */
 
-if(finalScore >= 75){
-  statusBox.innerHTML =
-    `<i data-lucide="check-circle"></i> LULUS`;
-  statusBox.className = "status-pass";
-}else{
-  statusBox.innerHTML =
-    `<i data-lucide="x-circle"></i> TIDAK LULUS`;
-  statusBox.className = "status-fail";
-}
+    document.getElementById("scoreText").innerText = finalScore;
+    document.getElementById("correctCount").innerText = correct;
+    document.getElementById("finalScore").innerText = finalScore;
 
+    const statusBox = document.getElementById("statusBox");
 
-/* ================= STUDI KASUS ================= */
+    if (finalScore >= 75) {
+      statusBox.innerHTML =
+        `<i data-lucide="check-circle"></i> LULUS`;
+      statusBox.className = "status-pass";
+    } else {
+      statusBox.innerHTML =
+        `<i data-lucide="x-circle"></i> TIDAK LULUS`;
+      statusBox.className = "status-fail";
+    }
 
-document.getElementById("totalWords").innerText =
-  totalWords;
+    lucide.createIcons();
 
-document.getElementById("totalChars").innerText =
-  totalChars;
+    /* ================= SAVE LEADERBOARD ================= */
 
+    saveToFirebaseLeaderboard(
+      finalScore,
+      correct,
+      total
+    );
 
-/* ================= SAVE LEADERBOARD ================= */
+    renderChart(correct, total);
 
-saveToLocalLeaderboard();   // lama (backup)
-saveToFirebaseLeaderboard(); // baru (GLOBAL)
-
-
-/* ===== LOCAL (TETAP ADA SUPAYA TIDAK RUSAK SISTEM) ===== */
-
-function saveToLocalLeaderboard(){
-
-  let leaderboard =
-    JSON.parse(localStorage.getItem("leaderboard")) || [];
-
-  leaderboard.push({
-    nama:user.nama,
-    kelas:user.kelas,
-    score:finalScore,
-    date:new Date().toLocaleString()
+  })
+  .catch(err => {
+    console.log("Result load error:", err);
   });
 
-  leaderboard.sort((a,b)=>b.score-a.score);
-  leaderboard = leaderboard.slice(0,10);
 
-  localStorage.setItem(
-    "leaderboard",
-    JSON.stringify(leaderboard)
-  );
-}
+/* ================= SAVE GLOBAL LEADERBOARD ================= */
 
+function saveToFirebaseLeaderboard(score, correct, total) {
 
-/* ===== FIREBASE GLOBAL SAVE ===== */
+  if (!user || typeof firebase === "undefined") return;
 
-function saveToFirebaseLeaderboard(){
+  const examId = localStorage.getItem("lastExamId");
+  if (!examId) return;
 
-  if(typeof firebase === "undefined") return;
-  if(!user || !user.id) return;
-
-  database.ref("leaderboard/" + user.id).set({
-    nama:user.nama,
-    kelas:user.kelas,
-    score:finalScore,
-    correct:correct,
-    total:total,
-    totalWords:totalWords,
-    totalChars:totalChars,
+  db.ref(`leaderboard/${examId}/${user.id}`).set({
+    nama: user.nama,
+    kelas: user.kelas,
+    score: score,
+    correct: correct,
+    total: total,
     updatedAt: Date.now()
   });
-
 }
 
 
@@ -163,83 +98,28 @@ function saveToFirebaseLeaderboard(){
 
 let chartInstance;
 
-function renderChart(){
+function renderChart(correct, total) {
 
-  const ctx =
-    document.getElementById("scoreChart");
+  const ctx = document.getElementById("scoreChart");
+  if (!ctx) return;
 
-  if(chartInstance){
-    chartInstance.destroy();
-  }
+  if (chartInstance) chartInstance.destroy();
 
-  chartInstance = new Chart(ctx,{
-    type:"doughnut",
-    data:{
-      labels:["Benar","Salah"],
-      datasets:[{
-        data:[correct, total-correct],
-        backgroundColor:[
-          "#22c55e",
-          "#334155"
-        ],
-        borderWidth:0
+  chartInstance = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      labels: ["Benar", "Salah"],
+      datasets: [{
+        data: [correct, total - correct],
+        backgroundColor: ["#22c55e", "#334155"],
+        borderWidth: 0
       }]
     },
-    options:{
-      responsive:true,
-      plugins:{
-        legend:{
-          position:"bottom"
-        }
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: "bottom" }
       }
     }
   });
 }
-
-
-/* ================= EXPORT PDF ================= */
-
-function exportPDF(){
-
-  const element =
-    document.getElementById("resultCard");
-
-  html2pdf().from(element).save(
-    `hasil-${user.nama}.pdf`
-  );
-}
-
-
-/* ================= INIT ================= */
-
-renderChart();
-lucide.createIcons();
-
-function generateAvatar(){
-
-  const user = Auth.getUser();
-  if(!user || !user.nama) return;
-
-  const name = user.nama.trim();
-  const firstLetter = name.charAt(0).toUpperCase();
-
-  const avatar = document.getElementById("avatar");
-  if(!avatar) return;
-
-  avatar.innerText = firstLetter;
-
-  const colors = [
-    "#2563eb",
-    "#0ea5e9",
-    "#14b8a6",
-    "#8b5cf6",
-    "#f59e0b",
-    "#ef4444"
-  ];
-
-  const index = name.charCodeAt(0) % colors.length;
-
-  avatar.style.background = colors[index];
-}
-
-generateAvatar();
