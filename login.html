@@ -10,137 +10,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
-
-<style>
-
-/* ====== LAYOUT ====== */
-
-.login-wrapper{
-  display:flex;
-  min-height:100vh;
-}
-
-/* LEFT SIDE (BRANDING) */
-
-.login-brand{
-  flex:1;
-  background:linear-gradient(135deg,#1e3a8a,#1e40af);
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  color:white;
-  padding:40px;
-  text-align:center;
-}
-
-.login-brand img{
-  width:120px;
-  margin-bottom:20px;
-}
-
-.login-brand h1{
-  font-size:28px;
-  font-weight:700;
-  margin-bottom:10px;
-}
-
-.login-brand p{
-  font-weight:300;
-  opacity:.9;
-}
-
-/* RIGHT SIDE (FORM) */
-
-.login-form-area{
-  flex:1;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:var(--bg-main);
-  padding:20px;
-}
-
-.login-card{
-  width:100%;
-  max-width:400px;
-  background:var(--bg-card);
-  padding:40px;
-  border-radius:18px;
-  box-shadow:0 20px 40px rgba(0,0,0,.4);
-}
-
-.login-card h2{
-  text-align:center;
-  margin-bottom:30px;
-  font-weight:600;
-}
-
-.input-group{
-  margin-bottom:20px;
-}
-
-.input-group label{
-  display:block;
-  font-size:14px;
-  margin-bottom:6px;
-  color:var(--text-muted);
-}
-
-.input-group input{
-  width:100%;
-  padding:12px;
-  border-radius:10px;
-  border:none;
-  background:#0f172a;
-  color:white;
-  font-size:14px;
-}
-
-.input-group input:focus{
-  outline:none;
-  border:1px solid #3b82f6;
-}
-
-.btn-login{
-  width:100%;
-  padding:12px;
-  border:none;
-  border-radius:10px;
-  background:linear-gradient(135deg,#2563eb,#1e40af);
-  color:white;
-  font-weight:600;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.btn-login:hover{
-  transform:translateY(-2px);
-  box-shadow:0 10px 20px rgba(0,0,0,.3);
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-  .login-wrapper{
-    flex-direction:column;
-  }
-
-  .login-brand{
-    padding:30px 20px;
-  }
-
-  .login-brand img{
-    width:80px;
-  }
-
-  .login-card{
-    padding:30px;
-  }
-}
-
-</style>
-
 </head>
 
 <body>
@@ -184,20 +53,20 @@
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
 
-<!-- ================= FIREBASE ================= -->
+<!-- ================= FIREBASE (SAMA DENGAN HALAMAN LAIN) ================= -->
 
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
 <script>
   const firebaseConfig = {
-    apiKey: "AIzaSyBHUA0gGQpBElhN8c_-9Q5uJ4p7dQzipl4",
-    authDomain: "cbt-uinjkt.firebaseapp.com",
-    databaseURL: "https://cbt-uinjkt-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "cbt-uinjkt",
-    storageBucket: "cbt-uinjkt.firebasestorage.app",
-    messagingSenderId: "87309432353",
-    appId: "1:87309432353:web:cc1fac54a4bb69a1189560"
+    apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
+    authDomain: "cbtuin-d26aa.firebaseapp.com",
+    databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "cbtuin-d26aa",
+    storageBucket: "cbtuin-d26aa.firebasestorage.app",
+    messagingSenderId: "93548126228",
+    appId: "1:93548126228:web:c456aedaad373237a0c701"
   };
 
   firebase.initializeApp(firebaseConfig);
@@ -206,6 +75,13 @@
 
 <!-- AUTH SCRIPT (HARUS PALING AKHIR) -->
 <script src="js/auth.js"></script>
+
+<script>
+  // Auto redirect kalau sudah login
+  if (typeof Auth !== "undefined") {
+    Auth.autoRedirect();
+  }
+</script>
 
 </body>
 </html>
