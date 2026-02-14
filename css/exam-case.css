@@ -6,7 +6,7 @@
 
 .case-container{
   width:100%;
-  max-width:900px;
+  max-width:780px;
   margin:40px auto;
   padding:40px 60px;
   background:var(--bg-card);
@@ -65,7 +65,6 @@
 
 .case-textarea{
   width:100%;
-   width:900px;
   min-height:180px;   /* lebih pendek */
   max-height:320px;   /* batas maksimal */
   padding:16px;
