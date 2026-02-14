@@ -299,7 +299,7 @@
 }
 
 /* LEFT SIDE */
-..progress-left{
+.progress-left{
   flex:1;
   overflow-x:auto;
   overflow-y:hidden;
