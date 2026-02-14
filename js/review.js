@@ -1,17 +1,37 @@
-const soal = JSON.parse(localStorage.getItem("reviewSoal")) || [];
-const jawaban = JSON.parse(localStorage.getItem("reviewJawaban")) || [];
+Auth.protect();
 
-const tbody = document.getElementById("reviewBody");
+const user = Auth.getUser();
+const examId = localStorage.getItem("lastExamId");
 
-if(soal.length === 0){
-  tbody.innerHTML = `
-    <tr>
-      <td colspan="4" style="text-align:center">
-        Data review tidak ditemukan
-      </td>
-    </tr>
-  `;
-}else{
+if(!user || !examId){
+  window.location.href = "dashboard.html";
+}
+
+database.ref(`exams/${user.id}/${examId}`)
+.once("value")
+.then(snapshot=>{
+
+  const data = snapshot.val();
+  if(!data) return;
+
+  const jawaban = data.answers;
+  const mapel = data.mapel;
+  const paket = data.paket;
+
+  // Ambil ulang soal dari file JSON
+  fetch(`paket/${mapel}/${paket}.json`)
+  .then(res=>res.json())
+  .then(soalData=>{
+
+      renderReview(soalData.slice(0, jawaban.length), jawaban);
+
+  });
+
+});
+function renderReview(soal, jawaban){
+
+  const tbody = document.getElementById("reviewBody");
+  tbody.innerHTML = "";
 
   soal.forEach((s, i)=>{
 
@@ -26,9 +46,8 @@ if(soal.length === 0){
     const isCorrect = userAnswerIndex === correctIndex;
 
     const statusIcon = isCorrect
-  ? `<span class="correct">✔</span>`
-  : `<span class="wrong">✖</span>`;
-
+      ? `<span class="correct">✔</span>`
+      : `<span class="wrong">✖</span>`;
 
     const row = `
       <tr>
