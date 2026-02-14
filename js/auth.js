@@ -1,6 +1,5 @@
 /* ===============================
-   AUTH MODULE - CBT SYSTEM
-   + FIREBASE SUPPORT
+   AUTH MODULE - STABLE VERSION
 ================================ */
 
 const Auth = {
@@ -16,11 +15,22 @@ const Auth = {
       loginAt: Date.now()
     };
 
-    // Simpan ke localStorage (tetap seperti sistem lama)
+    // 1️⃣ SIMPAN LOCAL (WAJIB)
     localStorage.setItem("cbtUser", JSON.stringify(userData));
 
-    // Simpan ke Firebase (GLOBAL)
-    saveUserToFirebase(userData);
+    // 2️⃣ COBA SIMPAN FIREBASE (TIDAK BOLEH BLOK LOGIN)
+    try{
+      if(typeof firebase !== "undefined" && typeof database !== "undefined"){
+        database.ref("users/" + userId).set({
+          nama: nama,
+          kelas: kelas,
+          lastLogin: Date.now()
+        });
+      }
+    }catch(err){
+      console.log("Firebase skip:", err);
+    }
+
   },
 
   logout(){
@@ -52,30 +62,6 @@ const Auth = {
 
 
 /* ===============================
-   FIREBASE SAVE USER
-================================ */
-
-function saveUserToFirebase(user){
-function saveUserToFirebase(user){
-
-  // Kalau firebase atau database belum ada → skip saja
-  if(typeof firebase === "undefined") return;
-  if(typeof database === "undefined") return;
-
-  try{
-    database.ref("users/" + user.id).set({
-      nama: user.nama,
-      kelas: user.kelas,
-      lastLogin: Date.now()
-    });
-  }catch(e){
-    console.log("Firebase belum siap:", e);
-  }
-
-}
-
-
-/* ===============================
    GENERATE USER ID
 ================================ */
 
@@ -103,18 +89,7 @@ function login(){
   }
 
   Auth.login(nama, kelas);
+
+  // Redirect HARUS selalu jalan
   window.location.href = "dashboard.html";
 }
-
-
-/* ===============================
-   TOAST SYSTEM
-================================ */
-
-function showToast(message,type="success"){
-
-  let container = document.querySelector(".toast-container");
-
-  if(!container){
-    container = document.createElement("div");
-    container.className =
