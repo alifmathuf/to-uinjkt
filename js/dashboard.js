@@ -1,128 +1,188 @@
-document.addEventListener("DOMContentLoaded", function(){
+/* ===============================
+   DASHBOARD ENGINE
+================================ */
 
-/* ================= SAFE USER LOAD ================= */
-
-let userData = null;
-
-try{
-  userData = JSON.parse(localStorage.getItem("cbtUser"));
-}catch(e){
-  console.error("User parse error");
-}
-
-if(!userData){
-  window.location.href = "login.html";
-  return;
-}
-
-/* ================= UI INIT ================= */
-
-initUserUI();
-initStepper();
-renderStep1();
+const user = Auth.getUser();
 
 
-/* ================= FUNCTIONS ================= */
+document.getElementById("greeting").innerText =
+  "Selamat datang,";
 
-function initUserUI(){
+document.getElementById("userInfo").innerText =
+  `${user.nama} (${user.kelas})`;
 
-  const greeting = document.getElementById("greeting");
-  const userInfo = document.getElementById("userInfo");
-  const avatar = document.getElementById("avatar");
+let currentStep = 1;
 
-  if(greeting){
-    const hour = new Date().getHours();
-    greeting.innerText =
-      hour < 12 ? "Selamat Pagi" :
-      hour < 15 ? "Selamat Siang" :
-      hour < 18 ? "Selamat Sore" :
-      "Selamat Malam";
-  }
+let state = {
+  mapel:null,
+  paket:null,
+  tipe:null
+};
 
-  if(userInfo){
-    userInfo.innerText = userData.nama + " - " + userData.kelas;
-  }
-
-  if(avatar){
-    avatar.innerHTML =
-      `<div class="avatar-circle">
-        ${userData.nama.charAt(0).toUpperCase()}
-      </div>`;
-  }
-}
+const stepContent = document.getElementById("stepContent");
+const steps = document.querySelectorAll(".step");
 
 
-/* ================= STEPPER ================= */
-
-function initStepper(){
-
-  const steps = document.querySelectorAll(".step");
-
-  steps.forEach(step=>{
-    step.addEventListener("click", function(){
-      const stepNumber = this.dataset.step;
-      setActiveStep(stepNumber);
-    });
+/* STEP CLICK */
+steps.forEach(step=>{
+  step.addEventListener("click",()=>{
+    currentStep = parseInt(step.dataset.step);
+    updateStep();
   });
-}
+});
 
-function setActiveStep(stepNumber){
+function updateStep(){
 
-  const steps = document.querySelectorAll(".step");
+  steps.forEach(s=>{
+    s.classList.remove("active","completed");
 
-  steps.forEach(step=>{
-    step.classList.remove("active");
-    if(step.dataset.step == stepNumber){
-      step.classList.add("active");
+    const stepNumber = parseInt(s.dataset.step);
+
+    if(stepNumber < currentStep){
+      s.classList.add("completed");
+    }
+
+    if(stepNumber === currentStep){
+      s.classList.add("active");
     }
   });
+
+  // smooth animation
+  stepContent.style.opacity = 0;
+  stepContent.style.transform = "translateY(5px)";
+
+  setTimeout(()=>{
+    renderContent();
+    stepContent.style.opacity = 1;
+    stepContent.style.transform = "translateY(0)";
+  },150);
 }
 
 
-/* ================= STEP 1 CONTENT ================= */
 
-function renderStep1(){
+function renderContent(){
 
-  const container = document.getElementById("stepContent");
-  if(!container) return;
+  stepContent.innerHTML="";
 
-  container.innerHTML = `
-    <div class="menu-grid" id="menuGrid"></div>
-  `;
+  if(currentStep===1){
+    renderOptions([
+      "Aqidah","Qurdist","Fiqih","SKI",
+      "PAI","Arab","GKRA","GKMI"
+    ],"mapel");
+  }
 
-  const menuData = [
-    { title:"Latihan PG", icon:"📝", link:"exam-pg.html" },
-    { title:"Studi Kasus", icon:"📚", link:"exam-case.html" },
-    { title:"Leaderboard", icon:"🏆", link:"leaderboard.html" }
+  if(currentStep===2){
+    renderOptions([
+      "paket1","paket2","paket3",
+      "paket4","paket5"
+    ],"paket");
+  }
+
+  if(currentStep===3){
+    renderOptions([
+      "Pilihan Ganda",
+      "Studi Kasus"
+    ],"tipe");
+  }
+
+  if(currentStep===4){
+    stepContent.innerHTML=`
+      <div class="accordion">
+        <h3>Konfirmasi Ujian</h3>
+        <p><b>Mapel:</b> ${state.mapel}</p>
+        <p><b>Paket:</b> ${state.paket}</p>
+        <p><b>Tipe:</b> ${state.tipe}</p>
+        <br>
+        <button class="btn-primary" onclick="startExam()">
+          Mulai Ujian
+        </button>
+      </div>
+    `;
+  }
+}
+
+
+function renderOptions(list,type){
+
+  const wrapper=document.createElement("div");
+  wrapper.className="accordion";
+
+  const grid=document.createElement("div");
+  grid.className="option-grid";
+
+  list.forEach(item=>{
+
+    const div=document.createElement("div");
+    div.className="option-item";
+    div.innerText=item;
+
+    if(state[type]===item){
+      div.classList.add("active");
+    }
+
+    div.onclick=()=>{
+      state[type]=item;
+      currentStep++;
+      updateStep();
+    };
+
+    grid.appendChild(div);
+  });
+
+  wrapper.appendChild(grid);
+  stepContent.appendChild(wrapper);
+}
+
+function generateAvatar(){
+
+  const user = Auth.getUser();
+  if(!user || !user.nama) return;
+
+  const name = user.nama.trim();
+  const firstLetter = name.charAt(0).toUpperCase();
+
+  const avatar = document.getElementById("avatar");
+  if(!avatar) return;
+
+  avatar.innerText = firstLetter;
+
+  // generate warna konsisten dari nama
+  const colors = [
+    "#2563eb",
+    "#0ea5e9",
+    "#14b8a6",
+    "#8b5cf6",
+    "#f59e0b",
+    "#ef4444"
   ];
 
-  const grid = document.getElementById("menuGrid");
+  const index = name.charCodeAt(0) % colors.length;
 
-  menuData.forEach(item=>{
-    const card = document.createElement("div");
-    card.className = "menu-card";
-
-    card.innerHTML = `
-      <div class="menu-icon">${item.icon}</div>
-      <div class="menu-title">${item.title}</div>
-    `;
-
-    card.onclick = () => window.location.href = item.link;
-
-    grid.appendChild(card);
-  });
+  avatar.style.background = colors[index];
 }
 
+generateAvatar();
 
-/* ================= SAFE FIREBASE OPTIONAL ================= */
 
-try{
-  if(typeof firebase !== "undefined"){
-    console.log("Firebase OK");
-    // optional database usage here
+function startExam(){
+
+  if(!state.mapel || !state.paket || !state.tipe){
+    alert("Lengkapi semua pilihan!");
+    return;
   }
-}catch(e){
-  console.warn("Firebase error tidak menghentikan UI");
+
+  localStorage.setItem("examState",
+    JSON.stringify(state));
+
+  if(state.tipe==="Pilihan Ganda"){
+    window.location.href="pg.html";
+  } else {
+    window.location.href="studi-kasus.html";
+  }
 }
 
-});
+
+         
+
+/* INIT */
+updateStep();
