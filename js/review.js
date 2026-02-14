@@ -1,34 +1,44 @@
 Auth.protect();
 
 const user = Auth.getUser();
-const examId = localStorage.getItem("lastExamId");
 
-if(!user || !examId){
+if(!user){
   window.location.href = "dashboard.html";
 }
 
-database.ref(`exams/${user.id}/${examId}`)
+// Ambil ujian terakhir dari Firebase
+database.ref(`exams/${user.id}`)
+.orderByChild("submittedAt")
+.limitToLast(1)
 .once("value")
 .then(snapshot=>{
 
-  const data = snapshot.val();
-  if(!data) return;
+  if(!snapshot.exists()){
+    alert("Belum ada data ujian.");
+    window.location.href = "dashboard.html";
+    return;
+  }
 
-  const jawaban = data.answers;
-  const mapel = data.mapel;
-  const paket = data.paket;
+  // Ambil data ujian terakhir
+  const examData = Object.values(snapshot.val())[0];
+
+  const jawaban = examData.answers;
+  const mapel = examData.mapel;
+  const paket = examData.paket;
 
   // Ambil ulang soal dari file JSON
   fetch(`paket/${mapel}/${paket}.json`)
   .then(res=>res.json())
   .then(soalData=>{
 
-      renderReview(soalData.slice(0, jawaban.length), jawaban);
+    tampilkanReview(soalData.slice(0, jawaban.length), jawaban);
 
   });
 
 });
-function renderReview(soal, jawaban){
+
+
+function tampilkanReview(soal, jawaban){
 
   const tbody = document.getElementById("reviewBody");
   tbody.innerHTML = "";
