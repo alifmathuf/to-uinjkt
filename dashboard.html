@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard - Tryout UP</title>
-  <link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
-<link rel="shortcut icon" href="assets/logo-uin.svg">
 
+<link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
+<link rel="shortcut icon" href="assets/logo-uin.svg">
 
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/layout.css">
@@ -22,14 +22,16 @@
   <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="app-title">Tryout PPG</div>
-<div id="sidebarOverlay" class="sidebar-overlay"></div>
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
     <div class="menu">
       <a href="dashboard.html">
         <i data-lucide="layout-dashboard"></i>
         <span>Dashboard</span>
       </a>
+
       <a href="result.html">
-      <i data-lucide="bar-chart-2"></i>
+        <i data-lucide="bar-chart-2"></i>
         <span>Result</span>
       </a>
 
@@ -53,11 +55,12 @@
   <!-- CONTENT -->
   <div class="content">
 
+    <!-- TOPBAR -->
     <div class="topbar">
 
       <div>
         <span class="hamburger" onclick="toggleSidebar()">☰</span>
-        <span class="app-title-desktop"></span>
+        <span class="app-title-desktop">Tryout PPG</span>
       </div>
 
       <div class="user-info">
@@ -65,72 +68,81 @@
           <div id="greeting"></div>
           <strong id="userInfo"></strong>
         </div>
-     <div id="avatar"></div>
-
-
+        <div id="avatar"></div>
       </div>
 
     </div>
 
-<!-- STEPPER -->
-<div class="stepper">
+    <!-- STEPPER -->
+    <div class="stepper">
 
-  <div class="step active" data-step="1">
-    <span class="dot"></span>
-    <span class="label">Mapel</span>
+      <div class="step active" data-step="1">
+        <span class="dot"></span>
+        <span class="label">Mapel</span>
+      </div>
+
+      <div class="step" data-step="2">
+        <span class="dot"></span>
+        <span class="label">Paket</span>
+      </div>
+
+      <div class="step" data-step="3">
+        <span class="dot"></span>
+        <span class="label">Tipe</span>
+      </div>
+
+      <div class="step" data-step="4">
+        <span class="dot"></span>
+        <span class="label">Konfirmasi</span>
+      </div>
+
+      <div class="progress-line"></div>
+
+    </div>
+
+    <!-- STEP CONTENT -->
+    <div id="stepContent"></div>
+
   </div>
-
-  <div class="step" data-step="2">
-    <span class="dot"></span>
-    <span class="label">Paket</span>
-  </div>
-
-  <div class="step" data-step="3">
-    <span class="dot"></span>
-    <span class="label">Tipe</span>
-  </div>
-
-  <div class="step" data-step="4">
-    <span class="dot"></span>
-    <span class="label">Konfirmasi</span>
-  </div>
-
-  <div class="progress-line"></div>
-
 </div>
 
-<!-- STEP CONTENT -->
-<div id="stepContent"></div>
-
-</div>
 <footer class="footer">
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
-<script src="js/auth.js"></script>
-<script src="js/layout.js"></script>
-<script src="js/dashboard.js"></script>
 
-<script>
-Auth.protect();
-lucide.createIcons();
-</script>
-<!-- Firebase CDN -->
+<!-- ================= FIREBASE ================= -->
+
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
 
 <script>
   const firebaseConfig = {
-    apiKey: "AIzaSyBHUA0gGQpBElhN8c_-9Q5uJ4p7dQzipl4",
-    authDomain: "cbt-uinjkt.firebaseapp.com",
-    databaseURL: "https://cbt-uinjkt-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "cbt-uinjkt",
-    storageBucket: "cbt-uinjkt.firebasestorage.app",
-    messagingSenderId: "87309432353",
-    appId: "1:87309432353:web:cc1fac54a4bb69a1189560"
+    apiKey: "ISI_APIKEY_KAMU",
+    authDomain: "ISI_AUTHDOMAIN_KAMU",
+    databaseURL: "ISI_DATABASE_URL_KAMU",
+    projectId: "ISI_PROJECT_ID_KAMU",
+    storageBucket: "ISI_BUCKET_KAMU",
+    messagingSenderId: "ISI_SENDER_ID",
+    appId: "ISI_APP_ID"
   };
 
-  firebase.initializeApp(firebaseConfig);
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
   const database = firebase.database();
 </script>
+
+<!-- ================= APP SCRIPT ================= -->
+
+<script src="js/auth.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/dashboard.js"></script>
+
+<script>
+  Auth.protect();
+  lucide.createIcons();
+</script>
+
 </body>
 </html>
