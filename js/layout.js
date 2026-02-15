@@ -1,20 +1,41 @@
+// ===============================
+// SIDEBAR TOGGLE
+// ===============================
 function toggleSidebar(){
-  document.querySelector(".sidebar").classList.toggle("open");
+  const sidebar = document.querySelector(".sidebar");
+  const body = document.body;
+
+  if(!sidebar) return;
+
+  sidebar.classList.toggle("open");
+  body.classList.toggle("sidebar-open"); 
+  // membantu jika ada overlay / lock scroll
 }
 
-/* Auto highlight menu */
-document.addEventListener("DOMContentLoaded",()=>{
-  const links=document.querySelectorAll(".menu a");
-  const current=location.pathname.split("/").pop();
 
-  links.forEach(link=>{
-    if(link.getAttribute("href")===current){
+// ===============================
+// AUTO ACTIVE MENU
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".menu a");
+  const current = location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if(link.getAttribute("href") === current){
       link.classList.add("active");
     }
   });
+
+  generateAvatar(); // jalankan setelah DOM siap
 });
 
+
+// ===============================
+// GENERATE AVATAR
+// ===============================
 function generateAvatar(){
+
+  if(typeof Auth === "undefined") return;
 
   const user = Auth.getUser();
   if(!user || !user.nama) return;
@@ -27,7 +48,7 @@ function generateAvatar(){
 
   avatar.innerText = firstLetter;
 
-  // generate warna konsisten dari nama
+  // warna konsisten berdasarkan nama
   const colors = [
     "#2563eb",
     "#0ea5e9",
@@ -41,5 +62,3 @@ function generateAvatar(){
 
   avatar.style.background = colors[index];
 }
-
-generateAvatar();
