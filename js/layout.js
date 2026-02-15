@@ -66,3 +66,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 function toggleSidebar(){
   document.querySelector(".sidebar").classList.toggle("active");
 }
+if(window.innerWidth > 1024){
+  document.querySelector(".sidebar").classList.add("collapsed");
+}
