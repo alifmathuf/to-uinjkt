@@ -1,45 +1,29 @@
-function toggleSidebar(){
-  document.querySelector(".sidebar").classList.toggle("open");
-}
+document.addEventListener("DOMContentLoaded", () => {
 
-/* Auto highlight menu */
-document.addEventListener("DOMContentLoaded",()=>{
-  const links=document.querySelectorAll(".menu a");
-  const current=location.pathname.split("/").pop();
+  const toggleBtn = document.querySelector(".hamburger");
+  const sidebar = document.querySelector(".sidebar");
+  const menuLinks = document.querySelectorAll(".menu a");
 
-  links.forEach(link=>{
-    if(link.getAttribute("href")===current){
-      link.classList.add("active");
+  // toggle buka/tutup
+  if(toggleBtn){
+    toggleBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      sidebar.classList.toggle("open");
+    });
+  }
+
+  // tutup saat klik menu
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+    });
+  });
+
+  // tutup saat klik luar sidebar
+  document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
+      sidebar.classList.remove("open");
     }
   });
+
 });
-
-function generateAvatar(){
-
-  const user = Auth.getUser();
-  if(!user || !user.nama) return;
-
-  const name = user.nama.trim();
-  const firstLetter = name.charAt(0).toUpperCase();
-
-  const avatar = document.getElementById("avatar");
-  if(!avatar) return;
-
-  avatar.innerText = firstLetter;
-
-  // generate warna konsisten dari nama
-  const colors = [
-    "#2563eb",
-    "#0ea5e9",
-    "#14b8a6",
-    "#8b5cf6",
-    "#f59e0b",
-    "#ef4444"
-  ];
-
-  const index = name.charCodeAt(0) % colors.length;
-
-  avatar.style.background = colors[index];
-}
-
-generateAvatar();
