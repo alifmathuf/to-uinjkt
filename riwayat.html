@@ -104,9 +104,30 @@ const database = firebase.database();
     </div>
 
     <!-- STEP CONTENT -->
-    <div class="card">
-  <h2>Riwayat Ujian</h2>
-  <div id="historyList" class="history-list"></div>
+<div class="card">
+  <h2>Statistik Nilai</h2>
+
+  <div class="stats-grid">
+
+    <div class="stat-box">
+      <div class="stat-value" id="avgScore">0</div>
+      <div class="stat-label">Rata-rata</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-value" id="highestScore">0</div>
+      <div class="stat-label">Tertinggi</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-value" id="examCount">0</div>
+      <div class="stat-label">Ujian Selesai</div>
+    </div>
+
+  </div>
+
+  <canvas id="scoreChart" height="120"></canvas>
+
 </div>
 
   </div>
