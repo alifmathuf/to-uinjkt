@@ -1,3 +1,12 @@
+
+function toggleSidebar(){
+  document.querySelector(".sidebar").classList.toggle("active");
+}
+if(window.innerWidth > 1024){
+  document.querySelector(".sidebar").classList.add("collapsed");
+}
+
+
 function toggleSidebar(){
   const sidebar = document.querySelector(".sidebar");
   const overlay = document.getElementById("sidebarOverlay");
@@ -64,9 +73,3 @@ document.addEventListener("DOMContentLoaded",()=>{
 document.addEventListener("DOMContentLoaded",()=>{
   generateAvatar();
 });
-function toggleSidebar(){
-  document.querySelector(".sidebar").classList.toggle("active");
-}
-if(window.innerWidth > 1024){
-  document.querySelector(".sidebar").classList.add("collapsed");
-}
