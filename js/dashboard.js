@@ -181,7 +181,17 @@ function startExam(){
   }
 }
 
+function toggleUserMenu(){
+  document.getElementById("userDropdown")
+    .classList.toggle("show");
+}
 
+window.onclick = function(e){
+  if(!e.target.closest(".user-menu")){
+    document.getElementById("userDropdown")
+      .classList.remove("show");
+  }
+}
          
 
 /* INIT */
