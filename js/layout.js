@@ -1,29 +1,38 @@
+function toggleSidebar() {
+  document.querySelector(".sidebar").classList.toggle("open");
+  document.getElementById("sidebarOverlay").classList.toggle("show");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-
-  const toggleBtn = document.querySelector(".hamburger");
   const sidebar = document.querySelector(".sidebar");
-  const menuLinks = document.querySelectorAll(".menu a");
+  const overlay = document.getElementById("sidebarOverlay");
+  const links = document.querySelectorAll(".menu a");
 
-  // toggle buka/tutup
-  if(toggleBtn){
-    toggleBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      sidebar.classList.toggle("open");
-    });
-  }
+  // Tutup saat klik overlay
+  overlay.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+    overlay.classList.remove("show");
+  });
 
-  // tutup saat klik menu
-  menuLinks.forEach(link => {
+  // Tutup saat klik menu
+  links.forEach(link => {
     link.addEventListener("click", () => {
       sidebar.classList.remove("open");
+      overlay.classList.remove("show");
     });
   });
 
-  // tutup saat klik luar sidebar
+  // Tutup saat klik luar sidebar (desktop)
   document.addEventListener("click", (e) => {
-    if (!sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
+    const hamburger = document.querySelector(".hamburger");
+
+    if (
+      sidebar.classList.contains("open") &&
+      !sidebar.contains(e.target) &&
+      !hamburger.contains(e.target)
+    ) {
       sidebar.classList.remove("open");
+      overlay.classList.remove("show");
     }
   });
-
 });
