@@ -337,3 +337,41 @@ textarea:focus{
   }
 
 }
+/* SIDEBAR */
+.sidebar{
+  position:fixed;
+  left:-260px;
+  top:0;
+  width:260px;
+  height:100%;
+  z-index:999;
+  transition:.3s;
+}
+
+.sidebar.open{
+  left:0;
+}
+
+/* OVERLAY */
+.sidebar-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.4);
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+  z-index:998;
+}
+
+.sidebar.open ~ .sidebar-overlay{
+  opacity:1;
+  visibility:visible;
+}
+
+/* HAMBURGER */
+.hamburger{
+  font-size:22px;
+  cursor:pointer;
+  z-index:1001;
+  position:relative;
+}
