@@ -151,3 +151,15 @@ canvas{
     gap:12px;
   }
 }
+
+#resultSheet{
+  background:#fff;
+  padding:30px;
+  color:#000;
+}
+
+@media print{
+  body{
+    background:#fff;
+  }
+}
