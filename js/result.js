@@ -1,5 +1,5 @@
 /* ===============================
-   RESULT ENGINE - CLEAN STABLE
+   RESULT ENGINE - FINAL STABLE
 ================================ */
 
 Auth.protect();
@@ -15,13 +15,11 @@ document.getElementById("greeting").innerText = "Hasil Ujian";
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
 
-
-/* ================= AMBIL DATA TERAKHIR ================= */
-
 const db = firebase.database();
 
+/* ================= AMBIL UJIAN TERAKHIR ================= */
+
 db.ref(`exams/${user.id}`)
-  .orderByChild("submittedAt")
   .limitToLast(1)
   .once("value")
   .then(snapshot => {
@@ -32,10 +30,18 @@ db.ref(`exams/${user.id}`)
       return;
     }
 
-    const examData = Object.values(snapshot.val())[0];
+    const examKey = Object.keys(snapshot.val())[0];
+    const examData = snapshot.val()[examKey];
 
     const correct = examData.score || 0;
-    const total = examData.total || 50;
+    const total = examData.total || 0;
+
+    if (!total) {
+      alert("Data nilai belum tersedia.");
+      window.location.href = "dashboard.html";
+      return;
+    }
+
     const finalScore = Math.round((correct / total) * 100);
 
     /* ================= TAMPILKAN NILAI ================= */
@@ -56,14 +62,17 @@ db.ref(`exams/${user.id}`)
       statusBox.className = "status-fail";
     }
 
-    lucide.createIcons();
+    if (typeof lucide !== "undefined") {
+      lucide.createIcons();
+    }
 
     /* ================= SAVE LEADERBOARD ================= */
 
     saveToFirebaseLeaderboard(
       finalScore,
       correct,
-      total
+      total,
+      examKey
     );
 
     renderChart(correct, total);
@@ -76,11 +85,9 @@ db.ref(`exams/${user.id}`)
 
 /* ================= SAVE GLOBAL LEADERBOARD ================= */
 
-function saveToFirebaseLeaderboard(score, correct, total) {
+function saveToFirebaseLeaderboard(score, correct, total, examId) {
 
   if (!user || typeof firebase === "undefined") return;
-
-  const examId = localStorage.getItem("lastExamId");
   if (!examId) return;
 
   db.ref(`leaderboard/${examId}/${user.id}`).set({
@@ -93,7 +100,6 @@ function saveToFirebaseLeaderboard(score, correct, total) {
   });
 }
 
-function generateAvatar(){
 
 /* ================= CHART ================= */
 
@@ -124,16 +130,20 @@ function renderChart(correct, total) {
     }
   });
 }
+
+
+/* ================= DOWNLOAD PDF ================= */
+
 function downloadPDF(){
 
   const element = document.getElementById("resultSheet");
 
   const opt = {
-    margin:       10,
-    filename:     'hasil-ujian.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2 },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    margin: 10,
+    filename: 'hasil-ujian.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
   };
 
   html2pdf().set(opt).from(element).save();
