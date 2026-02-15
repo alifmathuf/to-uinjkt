@@ -14,24 +14,28 @@
 
 <script src="https://unpkg.com/lucide@latest"></script>
 
-<!-- FIREBASE -->
+<!-- ================= FIREBASE ================= -->
+
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
 <script>
-const firebaseConfig = {
-  apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
-  authDomain: "cbtuin-d26aa.firebaseapp.com",
-  databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "cbtuin-d26aa",
-  storageBucket: "cbtuin-d26aa.firebasestorage.app",
-  messagingSenderId: "93548126228",
-  appId: "1:93548126228:web:c456aedaad373237a0c701"
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
+    authDomain: "cbtuin-d26aa.firebaseapp.com",
+    databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "cbtuin-d26aa",
+    storageBucket: "cbtuin-d26aa.firebasestorage.app",
+    messagingSenderId: "93548126228",
+    appId: "1:93548126228:web:c456aedaad373237a0c701"
+  };
 
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
 </script>
+
+<!-- ============================================ -->
+
 </head>
 
 <body>
@@ -44,15 +48,19 @@ const database = firebase.database();
     <div id="sidebarOverlay" class="sidebar-overlay"></div>
 
     <div class="menu">
-
-      <a href="dashboard.html" class="active">
+      <a href="dashboard.html">
         <i data-lucide="layout-dashboard"></i>
         <span>Dashboard</span>
       </a>
 
-      <a href="admin.html">
-        <i data-lucide="settings"></i>
-        <span>Admin Panel</span>
+      <a href="result.html">
+        <i data-lucide="bar-chart-2"></i>
+        <span>Result</span>
+      </a>
+
+      <a href="review.html">
+        <i data-lucide="eye"></i>
+        <span>Review</span>
       </a>
 
       <a href="leaderboard.html">
@@ -60,23 +68,16 @@ const database = firebase.database();
         <span>Leaderboard</span>
       </a>
 
-      <a href="statistik.html">
-        <i data-lucide="bar-chart"></i>
-        <span>Statistik</span>
+      <a href="#" onclick="Auth.logout()">
+        <i data-lucide="log-out"></i>
+        <span>Logout</span>
       </a>
-
-      <a href="riwayat.html">
-        <i data-lucide="history"></i>
-        <span>Riwayat</span>
-      </a>
-
     </div>
   </div>
 
   <!-- CONTENT -->
   <div class="content">
 
-    <!-- TOPBAR -->
     <div class="topbar">
       <div>
         <span class="hamburger" onclick="toggleSidebar()">☰</span>
@@ -88,12 +89,7 @@ const database = firebase.database();
           <div id="greeting"></div>
           <strong id="userInfo"></strong>
         </div>
-
-        <!-- avatar & logout -->
-        <div class="user-avatar" onclick="Auth.logout()" title="Logout">
-          <i data-lucide="log-out"></i>
-        </div>
-
+        <div id="avatar"></div>
       </div>
     </div>
 
@@ -133,13 +129,15 @@ const database = firebase.database();
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
 
+<!-- ================= JS APP ================= -->
+
 <script src="js/auth.js"></script>
 <script src="js/layout.js"></script>
 <script src="js/dashboard.js"></script>
 
 <script>
-Auth.protect();
-lucide.createIcons();
+  Auth.protect();
+  lucide.createIcons();
 </script>
 
 </body>
