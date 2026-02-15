@@ -1,12 +1,7 @@
 /* ===============================
    AUTH MODULE - STABLE VERSION
+   + ADMIN SUPPORT SAFE
 ================================ */
-
-const user = Auth.getUser();
-
-if(user.role === "admin"){
-  document.getElementById("adminLink").style.display="block";
-}
 
 const Auth = {
 
@@ -14,22 +9,27 @@ const Auth = {
 
     const userId = generateUserId(nama, kelas);
 
+    // ✅ tentukan role admin otomatis
+    const role = (nama.toLowerCase() === "admin") ? "admin" : "user";
+
     const userData = {
       id: userId,
       nama: nama,
       kelas: kelas,
+      role: role,
       loginAt: Date.now()
     };
 
-    // 1️⃣ SIMPAN LOCAL (WAJIB)
+    // 1️⃣ SIMPAN LOCAL
     localStorage.setItem("cbtUser", JSON.stringify(userData));
 
-    // 2️⃣ COBA SIMPAN FIREBASE (TIDAK BOLEH BLOK LOGIN)
+    // 2️⃣ SIMPAN FIREBASE (optional)
     try{
       if(typeof firebase !== "undefined" && typeof database !== "undefined"){
         database.ref("users/" + userId).set({
           nama: nama,
           kelas: kelas,
+          role: role,
           lastLogin: Date.now()
         });
       }
@@ -81,6 +81,22 @@ function generateUserId(nama, kelas){
 
 
 /* ===============================
+   SHOW ADMIN MENU (SAFE)
+================================ */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const user = Auth.getUser();
+  const adminLink = document.getElementById("adminLink");
+
+  if(user && adminLink && user.role === "admin"){
+    adminLink.style.display = "block";
+  }
+
+});
+
+
+/* ===============================
    GLOBAL LOGIN FUNCTION
 ================================ */
 
@@ -96,6 +112,5 @@ function login(){
 
   Auth.login(nama, kelas);
 
-  // Redirect HARUS selalu jalan
   window.location.href = "dashboard.html";
 }
