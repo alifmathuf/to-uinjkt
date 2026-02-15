@@ -1,54 +1,113 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riwayat Ujian</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riwayat Ujian</title>
 
-  <!-- CSS Punya Anda -->
-  <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="dashboard.css">
-  <link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="layout.css">
 
-  <!-- Firebase v8 -->
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Chart / Icon (jika dipakai) -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+<style>
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+}
 
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #cbd5e1;
+}
+
+.sidebar a:hover {
+  background: #1f2937;
+  color: white;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.history-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.history-card h4 {
+  margin-bottom: 10px;
+}
+
+.history-card p {
+  margin: 4px 0;
+  color: #cbd5e1;
+}
+</style>
 </head>
 <body>
 
-  <div class="container">
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>CBT Panel</h2>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="riwayat.html">Riwayat</a>
+  <a href="statistik.html">Statistik</a>
+  <a href="leaderboard.html">Leaderboard</a>
+</div>
 
-    <header class="dashboard-header">
-      <h2>Riwayat Ujian</h2>
-      <p id="userInfo"></p>
-    </header>
+<!-- MAIN -->
+<div class="main">
 
-    <section class="card">
-      <div id="historyList">
-        <p>Memuat riwayat...</p>
-      </div>
-    </section>
-
-    <div style="margin-top:20px;">
-      <button onclick="window.location.href='dashboard.html'" class="btn">
-        Kembali ke Dashboard
-      </button>
-    </div>
-
+  <div class="topbar">
+    <h2>Riwayat Ujian</h2>
+    <div id="userInfo"></div>
   </div>
 
-  <!-- Auth Anda -->
-  <script src="auth.js"></script>
+  <div class="history-grid" id="historyList">
+    <p>Memuat riwayat...</p>
+  </div>
 
-  <!-- Config Firebase Anda -->
-  <script src="firebase-config.js"></script>
+</div>
 
-  <!-- Script Riwayat -->
-  <script src="riwayat.js"></script>
+<script src="auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="riwayat.js"></script>
 
 </body>
 </html>
