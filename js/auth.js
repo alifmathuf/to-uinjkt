@@ -2,6 +2,12 @@
    AUTH MODULE - STABLE VERSION
 ================================ */
 
+const user = Auth.getUser();
+
+if(user.role === "admin"){
+  document.getElementById("adminLink").style.display="block";
+}
+
 const Auth = {
 
   login(nama, kelas){
