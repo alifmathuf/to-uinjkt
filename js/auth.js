@@ -93,3 +93,16 @@ function login(){
   // Redirect HARUS selalu jalan
   window.location.href = "dashboard.html";
 }
+async function isAdmin(){
+  const user = JSON.parse(localStorage.getItem("user"));
+  if(!user) return false;
+
+  const snap = await firebase.database()
+    .ref("admins")
+    .orderByChild("email")
+    .equalTo(user.email)
+    .once("value");
+
+  return snap.exists();
+}
+
