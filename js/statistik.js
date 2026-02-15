@@ -1,64 +1,59 @@
+Auth.protect();
 const user = Auth.getUser();
-
-if (!user) {
-  console.error("User tidak ditemukan");
-}
-
 const db = firebase.database();
 
-db.ref("exams/" + user.id).on("value", snap => {
+document.getElementById("userInfo").innerText =
+  `${user.nama} (${user.kelas})`;
 
-  const scores = [];
+db.ref(`exams/${user.id}`)
+  .once("value")
+  .then(snapshot => {
 
-  snap.forEach(child => {
-    const d = child.val();
+    if (!snapshot.exists()) return;
 
-    scores.push({
-      mapel: d.mapel,
-      score: Math.round((d.score / d.total) * 100)
+    const data = snapshot.val();
+    const scores = [];
+
+    Object.keys(data).forEach(mapel => {
+      const exam = data[mapel];
+      if (!exam.score || !exam.total) return;
+
+      const nilai = Math.round((exam.score / exam.total) * 100);
+      scores.push(nilai);
     });
+
+    if (scores.length === 0) return;
+
+    const totalExam = scores.length;
+    const avg = Math.round(scores.reduce((a,b)=>a+b,0) / totalExam);
+    const max = Math.max(...scores);
+    const min = Math.min(...scores);
+
+    document.getElementById("totalExam").innerText = totalExam;
+    document.getElementById("avgScore").innerText = avg;
+    document.getElementById("maxScore").innerText = max;
+    document.getElementById("minScore").innerText = min;
+
+    renderChart(scores);
+
   });
 
-  renderCharts(scores);
+function renderChart(scores){
 
-});
-
-function renderCharts(scores) {
-
-  if (!scores.length) {
-    console.log("Belum ada data ujian");
-    return;
-  }
-
-  const ctx1 = document.getElementById("scoreChart");
-  const ctx2 = document.getElementById("mapelChart");
-
-  new Chart(ctx1, {
-    type: "line",
+  new Chart(document.getElementById("statChart"), {
+    type: "bar",
     data: {
-      labels: scores.map((_, i) => "Ujian " + (i + 1)),
+      labels: scores.map((_,i)=>"Ujian "+(i+1)),
       datasets: [{
-        label: "Nilai (%)",
-        data: scores.map(s => s.score),
-        tension: 0.3
+        label: "Nilai",
+        data: scores
       }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false }
+      }
     }
   });
-
-  const mapelCount = {};
-
-  scores.forEach(s => {
-    mapelCount[s.mapel] = (mapelCount[s.mapel] || 0) + 1;
-  });
-
-  new Chart(ctx2, {
-    type: "doughnut",
-    data: {
-      labels: Object.keys(mapelCount),
-      datasets: [{
-        data: Object.values(mapelCount)
-      }]
-    }
-  });
-
 }
