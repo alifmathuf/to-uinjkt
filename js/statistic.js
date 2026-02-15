@@ -1,9 +1,12 @@
 const user = Auth.getUser();
 const db = firebase.database();
 
-const scores = [];
+let scoreChart;
+let mapelChart;
 
-db.ref("exams/" + user.id).once("value", snap => {
+db.ref("exams/" + user.id).on("value", snap => {
+
+  const scores = [];
 
   snap.forEach(child => {
     const d = child.val();
@@ -13,14 +16,16 @@ db.ref("exams/" + user.id).once("value", snap => {
     });
   });
 
-  renderCharts();
+  renderCharts(scores);
 });
 
-function renderCharts(){
+function renderCharts(scores){
 
-  const ctx = document.getElementById("scoreChart");
+  // destroy chart lama supaya tidak dobel
+  if(scoreChart) scoreChart.destroy();
+  if(mapelChart) mapelChart.destroy();
 
-  new Chart(ctx, {
+  scoreChart = new Chart(document.getElementById("scoreChart"), {
     type: "line",
     data: {
       labels: scores.map((_,i)=>"Ujian "+(i+1)),
@@ -37,7 +42,7 @@ function renderCharts(){
     mapelCount[s.mapel]=(mapelCount[s.mapel]||0)+1;
   });
 
-  new Chart(document.getElementById("mapelChart"), {
+  mapelChart = new Chart(document.getElementById("mapelChart"), {
     type: "doughnut",
     data: {
       labels:Object.keys(mapelCount),
@@ -46,5 +51,4 @@ function renderCharts(){
       }]
     }
   });
-
 }
