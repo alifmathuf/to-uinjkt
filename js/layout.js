@@ -1,7 +1,6 @@
 function toggleSidebar(){
   document.querySelector(".sidebar").classList.toggle("open");
-}
-function toggleSidebar() {
+
   const sidebar = document.querySelector(".sidebar");
   const overlay = document.getElementById("sidebarOverlay");
 
