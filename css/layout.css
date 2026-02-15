@@ -162,7 +162,7 @@ textarea:focus{
   height:40px;
   border:none;
   border-radius:50%;
-  background:rgba(17,24,39,0.85);
+  background:transparent;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -171,15 +171,17 @@ textarea:focus{
 }
 
 /* warna icon */
+/* icon logout ikut warna sidebar */
 .user-info button svg{
   width:20px;
   height:20px;
-  stroke:var(--text-primary);
+  stroke:var(--text-secondary);
+  transition:var(--transition);
 }
 
-/* hover */
-.user-info button:hover{
-  background:var(--bg-hover);
+/* saat hover → sama seperti menu */
+.user-info button:hover svg{
+  stroke:var(--text-primary);
 }
 
 
