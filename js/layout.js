@@ -1,49 +1,6 @@
-const sidebar = document.querySelector(".sidebar");
-const overlay = document.getElementById("sidebarOverlay");
-
-// pastikan overlay mati saat halaman load
-overlay.classList.remove("show");
-sidebar.classList.remove("open");
-
-// ================= TOGGLE =================
-function toggleSidebar() {
-
-  const isOpen = sidebar.classList.contains("open");
-
-  if (isOpen) {
-    // tutup
-    sidebar.classList.remove("open");
-    overlay.classList.remove("show");
-  } else {
-    // buka
-    sidebar.classList.add("open");
-    overlay.classList.add("show");
-  }
+function toggleSidebar(){
+  document.querySelector(".sidebar").classList.toggle("open");
 }
-
-// ================= KLIK OVERLAY = TUTUP =================
-overlay.addEventListener("click", () => {
-  sidebar.classList.remove("open");
-  overlay.classList.remove("show");
-});
-
-// ================= TUTUP SAAT MENU DIKLIK (MOBILE) =================
-document.querySelectorAll(".menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    if (window.innerWidth <= 768) {
-      sidebar.classList.remove("open");
-      overlay.classList.remove("show");
-    }
-  });
-});
-
-// ================= RESET SAAT RESIZE =================
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 768) {
-    overlay.classList.remove("show");
-  }
-});
-
 
 /* Auto highlight menu */
 document.addEventListener("DOMContentLoaded",()=>{
