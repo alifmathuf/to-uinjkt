@@ -138,13 +138,15 @@ textarea:focus{
 
 /* ===== LOGOUT BUTTON ===== */
 .logout-btn{
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 20px; /* ukuran sama dengan icon sidebar */
-    color: #6c757d; /* warna netral sesuai tema */
-    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1f3f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .logout-btn:hover{
     color: #dc3545; /* merah elegan saat hover */
