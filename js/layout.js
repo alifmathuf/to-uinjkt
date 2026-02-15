@@ -1,12 +1,6 @@
 function toggleSidebar(){
   document.querySelector(".sidebar").classList.toggle("open");
 
-  const sidebar = document.querySelector(".sidebar");
-  const overlay = document.getElementById("sidebarOverlay");
-
-  sidebar.classList.toggle("open");
-  overlay.classList.toggle("show");
-}
 
 /* Auto highlight menu */
 document.addEventListener("DOMContentLoaded",()=>{
