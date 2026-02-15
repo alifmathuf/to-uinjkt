@@ -13,7 +13,13 @@ function toggleSidebar(){
     overlay.classList.toggle("show");
   }
 }
-
+// klik overlay menutup sidebar
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.getElementById("sidebarOverlay");
+  if(overlay){
+    overlay.addEventListener("click", toggleSidebar);
+  }
+});
 
 // ===============================
 // AUTO ACTIVE MENU
