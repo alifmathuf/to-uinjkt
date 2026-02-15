@@ -269,19 +269,6 @@ textarea:focus{
   align-items:center;
   gap:10px;
 }
-
-.logout-btn{
-  background:transparent;
-  border:none;
-  cursor:pointer;
-  padding:6px;
-  border-radius:8px;
-  transition:.2s;
-}
-
-.logout-btn:hover{
-  background:var(--bg-hover);
-}
 /* ================= LOGOUT TOP RIGHT ================= */
 
 .logout-btn{
