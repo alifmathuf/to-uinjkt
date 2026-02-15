@@ -78,7 +78,16 @@
   </main>
 
 </div>
+<script>
+Auth.protect();
 
+isAdmin().then(admin=>{
+  if(!admin){
+    alert("Bukan admin!");
+    location.href="dashboard.html";
+  }
+});
+</script>
 <script src="js/layout.js"></script>
 <script src="js/admin.js"></script>
 
