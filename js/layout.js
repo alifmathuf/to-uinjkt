@@ -14,7 +14,7 @@ document.querySelectorAll(".menu a").forEach(link => {
     document.querySelector(".sidebar").classList.remove("open");
     document.getElementById("sidebarOverlay").classList.remove("show");
   });
-});
+
 
 /* Auto highlight menu */
 document.addEventListener("DOMContentLoaded",()=>{
