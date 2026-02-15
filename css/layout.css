@@ -282,38 +282,37 @@ textarea:focus{
 .logout-btn:hover{
   background:var(--bg-hover);
 }
-/* ================= LOGOUT TOP RIGHT ================= */
+/* ================= LOGOUT SIZE = AVATAR ================= */
 
 .logout-btn{
   display:flex;
   align-items:center;
   justify-content:center;
-  width:40x;
-  height:40px;
+  width:40px;      /* sama dengan avatar */
+  height:40px;     /* sama dengan avatar */
+  border-radius:50%; /* bentuk lingkaran seperti avatar */
   background:transparent;
   border:none;
-  border-radius:10px;
   cursor:pointer;
   color:var(--text-secondary);
   transition:var(--transition);
 }
 
-/* hover sama seperti menu sidebar */
+/* hover selaras tema */
 .logout-btn:hover{
   background:var(--bg-hover);
   color:var(--primary);
-  transform:translateY(-1px);
 }
 
-/* icon size */
+/* ukuran icon di dalam */
 .logout-btn i,
 .logout-btn svg{
-  font-size:18px;
-  width:18px;
-  height:18px;
+  font-size:20px;
+  width:20px;
+  height:20px;
 }
 
-/* jika ingin efek aktif */
+/* efek klik */
 .logout-btn:active{
-  transform:scale(0.95);
+  transform:scale(0.92);
 }
