@@ -282,3 +282,20 @@ textarea:focus{
     color: #ffffff; /* saat hover jadi terang */
     transform: scale(1.1);
 }
+ .sidebar{
+    position:fixed;
+    left:-260px;
+    top:0;
+    height:100%;
+    z-index:1000;
+    box-shadow:var(--shadow-soft);
+  }
+
+  .sidebar.open{
+    left:0;
+  }
+
+  .hamburger{
+    display:block;
+    margin-bottom:20px;
+  }
