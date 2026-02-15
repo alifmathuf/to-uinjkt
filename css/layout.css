@@ -162,7 +162,7 @@ textarea:focus{
   height:40px;
   border:none;
   border-radius:50%;
-  background:transparent;
+  background:rgba(17,24,39,0.85);
   display:flex;
   align-items:center;
   justify-content:center;
