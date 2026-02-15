@@ -1,0 +1,32 @@
+.card{
+  background:var(--bg-card);
+  border:1px solid var(--border-soft);
+  border-radius:14px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:var(--shadow-soft);
+}
+
+.card h3{
+  margin-bottom:12px;
+}
+
+.card input,
+.card select{
+  width:100%;
+  padding:10px;
+  margin:6px 0 12px;
+  border-radius:8px;
+  border:1px solid var(--border-soft);
+  background:var(--bg-secondary);
+  color:var(--text-primary);
+}
+
+.card button{
+  padding:10px 16px;
+  background:var(--primary);
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  cursor:pointer;
+}
