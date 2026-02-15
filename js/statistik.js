@@ -5,6 +5,9 @@ let scoreChart;
 let mapelChart;
 
 db.ref("exams/" + user.id).on("value", snap => {
+  console.log("DATA SNAP:", snap.val());
+});
+
 
   const scores = [];
 
