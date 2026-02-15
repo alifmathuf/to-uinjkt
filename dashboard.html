@@ -69,7 +69,7 @@ const database = firebase.database();
         <i data-lucide="history"></i>
         <span>Riwayat</span>
       </a>
-    </div>
+
     </div>
   </div>
 
@@ -84,34 +84,18 @@ const database = firebase.database();
       </div>
 
       <div class="user-info">
+        <div>
+          <div id="greeting"></div>
+          <strong id="userInfo"></strong>
+        </div>
 
-  <div class="user-text">
-    <div id="greeting"></div>
-    <strong id="userInfo"></strong>
-  </div>
+        <!-- avatar & logout -->
+        <div class="user-avatar" onclick="Auth.logout()" title="Logout">
+          <i data-lucide="log-out"></i>
+        </div>
 
-  <div class="user-menu">
-
-    <div id="avatar" class="avatar-circle"></div>
-
-    <div class="dropdown-menu" id="userDropdown">
-      <a href="#" id="profileBtn">Profil</a>
-      <a href="#" id="settingsBtn">Pengaturan</a>
-      <a href="#" onclick="Auth.logout()">Logout</a>
+      </div>
     </div>
-
-  </div>
-
-</div>
-<div id="userDropdown" class="user-dropdown">
-  <a href="profile.html">Profil</a>
-  <a href="#">Pengaturan</a>
-  <a id="adminLink" href="admin.html" style="display:none">Admin Panel</a>
-  <a href="#" onclick="Auth.logout()">Logout</a>
-</div>
-
-  </div>
-</div>
 
     <!-- STEPPER -->
     <div class="stepper">
