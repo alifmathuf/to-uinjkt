@@ -63,3 +63,6 @@ function generateAvatar(){
 document.addEventListener("DOMContentLoaded",()=>{
   generateAvatar();
 });
+function toggleSidebar(){
+  document.querySelector(".sidebar").classList.toggle("active");
+}
