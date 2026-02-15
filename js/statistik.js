@@ -1,18 +1,18 @@
 const user = Auth.getUser();
+
+if (!user) {
+  console.error("User tidak ditemukan");
+}
+
 const db = firebase.database();
 
-let scoreChart;
-let mapelChart;
-
 db.ref("exams/" + user.id).on("value", snap => {
-  console.log("DATA SNAP:", snap.val());
-});
-
 
   const scores = [];
 
   snap.forEach(child => {
     const d = child.val();
+
     scores.push({
       mapel: d.mapel,
       score: Math.round((d.score / d.total) * 100)
@@ -20,38 +20,45 @@ db.ref("exams/" + user.id).on("value", snap => {
   });
 
   renderCharts(scores);
+
 });
 
-function renderCharts(scores){
+function renderCharts(scores) {
 
-  // destroy chart lama supaya tidak dobel
-  if(scoreChart) scoreChart.destroy();
-  if(mapelChart) mapelChart.destroy();
+  if (!scores.length) {
+    console.log("Belum ada data ujian");
+    return;
+  }
 
-  scoreChart = new Chart(document.getElementById("scoreChart"), {
+  const ctx1 = document.getElementById("scoreChart");
+  const ctx2 = document.getElementById("mapelChart");
+
+  new Chart(ctx1, {
     type: "line",
     data: {
-      labels: scores.map((_,i)=>"Ujian "+(i+1)),
+      labels: scores.map((_, i) => "Ujian " + (i + 1)),
       datasets: [{
         label: "Nilai (%)",
-        data: scores.map(s=>s.score),
-        tension:0.3
+        data: scores.map(s => s.score),
+        tension: 0.3
       }]
     }
   });
 
   const mapelCount = {};
-  scores.forEach(s=>{
-    mapelCount[s.mapel]=(mapelCount[s.mapel]||0)+1;
+
+  scores.forEach(s => {
+    mapelCount[s.mapel] = (mapelCount[s.mapel] || 0) + 1;
   });
 
-  mapelChart = new Chart(document.getElementById("mapelChart"), {
+  new Chart(ctx2, {
     type: "doughnut",
     data: {
-      labels:Object.keys(mapelCount),
-      datasets:[{
-        data:Object.values(mapelCount)
+      labels: Object.keys(mapelCount),
+      datasets: [{
+        data: Object.values(mapelCount)
       }]
     }
   });
+
 }
