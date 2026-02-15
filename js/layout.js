@@ -60,24 +60,3 @@ function generateAvatar(nama){
 
   return `<div class="avatar-circle">${initials}</div>`;
 }
-/* ===============================
-   USER DROPDOWN TOGGLE
-================================ */
-
-document.addEventListener("DOMContentLoaded",()=>{
-
-  const avatar = document.getElementById("avatar");
-  const dropdown = document.getElementById("userDropdown");
-
-  if(!avatar || !dropdown) return;
-
-  avatar.addEventListener("click", (e)=>{
-    e.stopPropagation();
-    dropdown.classList.toggle("show");
-  });
-
-  document.addEventListener("click", ()=>{
-    dropdown.classList.remove("show");
-  });
-
-});
