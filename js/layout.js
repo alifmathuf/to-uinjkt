@@ -1,18 +1,6 @@
-function toggleSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  const overlay = document.getElementById("sidebarOverlay");
-
-  sidebar.classList.toggle("open");
-  overlay.classList.toggle("show");
+function toggleSidebar(){
+  document.querySelector(".sidebar").classList.toggle("open");
 }
-document.querySelectorAll(".menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.querySelector(".sidebar").classList.remove("open");
-    document.getElementById("sidebarOverlay").classList.remove("show");
-  });
-});
-
-
 
 /* Auto highlight menu */
 document.addEventListener("DOMContentLoaded",()=>{
