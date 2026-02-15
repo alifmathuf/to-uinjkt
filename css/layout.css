@@ -35,25 +35,24 @@ textarea:focus{
 }
 
 
-/* ================= SIDEBAR ================= */
-
-/* posisi default (tertutup) */
+/* ===== SIDEBAR ===== */
 .sidebar{
   position: fixed;
-  left: -260px;
   top: 0;
-  height: 100%;
-  width: 260px;
-  transition: 0.3s ease;
-  z-index: 1000;
-}
-
-/* saat terbuka */
-.sidebar.open{
   left: 0;
+  width: 260px;
+  height: 100%;
+  background: #0f1b2d; /* solid, tidak transparan */
+  transition: transform 0.3s ease;
+  z-index: 1001;
 }
 
-/* overlay */
+/* drawer mode (mobile & toggle) */
+.sidebar.closed{
+  transform: translateX(-100%);
+}
+
+/* ===== OVERLAY ===== */
 .sidebar-overlay{
   position: fixed;
   inset: 0;
@@ -61,21 +60,41 @@ textarea:focus{
   opacity: 0;
   pointer-events: none;
   transition: 0.3s;
+  z-index: 1000;
 }
 
-/* overlay aktif */
 .sidebar-overlay.show{
   opacity: 1;
   pointer-events: auto;
 }
 
-
-.sidebar .app-title{
-  font-size:20px;
-  font-weight:700;
-  margin-bottom:32px;
-  color:var(--text-primary);
+/* ===== CONTENT SHIFT (desktop) ===== */
+.content{
+  margin-left: 260px;
+  transition: 0.3s ease;
 }
+
+/* jika sidebar tertutup */
+.content.full{
+  margin-left: 0;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px){
+
+  .sidebar{
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open{
+    transform: translateX(0);
+  }
+
+  .content{
+    margin-left: 0;
+  }
+}
+
 
 .glow-primary{
   box-shadow:0 0 0 1px var(--primary),
