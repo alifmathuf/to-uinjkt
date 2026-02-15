@@ -233,32 +233,6 @@ textarea:focus{
 
 @media(max-width:768px){
 
-  .layout{
-    flex-direction:column;
-  }
-
-  .sidebar{
-    position:fixed;
-    left:-260px;
-    top:0;
-    height:100%;
-    z-index:1000;
-    box-shadow:var(--shadow-soft);
-  }
-
-  .sidebar.open{
-    left:0;
-  }
-
-  .hamburger{
-    display:block;
-    margin-bottom:20px;
-  }
-
-  .app-title-desktop{
-    display:none;
-  }
-
   .content{
     padding:24px;
   }
