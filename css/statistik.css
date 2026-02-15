@@ -1,0 +1,25 @@
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.stat-box{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  padding:16px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+.stat-value{
+  font-size:26px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+.stat-label{
+  font-size:13px;
+  opacity:.7;
+}
