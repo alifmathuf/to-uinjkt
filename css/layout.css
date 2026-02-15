@@ -257,3 +257,28 @@ textarea:focus{
     padding:24px;
   }
 }
+
+.user-box{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.user-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logout-btn{
+  background:transparent;
+  border:none;
+  cursor:pointer;
+  padding:6px;
+  border-radius:8px;
+  transition:.2s;
+}
+
+.logout-btn:hover{
+  background:var(--bg-hover);
+}
