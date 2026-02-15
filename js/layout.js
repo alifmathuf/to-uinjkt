@@ -1,12 +1,15 @@
-/* ===============================
-   SIDEBAR TOGGLE
-================================ */
 function toggleSidebar(){
   const sidebar = document.querySelector(".sidebar");
-  if(sidebar){
-    sidebar.classList.toggle("open");
+  const overlay = document.getElementById("sidebarOverlay");
+
+  sidebar.classList.toggle("open");
+
+  if(overlay){
+    overlay.classList.toggle("active");
   }
 }
+document.getElementById("sidebarOverlay")
+?.addEventListener("click", toggleSidebar);
 
 
 /* ===============================
@@ -30,6 +33,7 @@ document.addEventListener("DOMContentLoaded",()=>{
    GENERATE AVATAR
 ================================ */
 function generateAvatar(){
+document.addEventListener("DOMContentLoaded",()=>{
 
   const avatar = document.getElementById("avatar");
   if(!avatar || typeof Auth === "undefined") return;
@@ -37,12 +41,10 @@ function generateAvatar(){
   const user = Auth.getUser();
   if(!user || !user.nama) return;
 
-  const name = user.nama.trim();
-  const firstLetter = name.charAt(0).toUpperCase();
+  const firstLetter = user.nama.charAt(0).toUpperCase();
 
   avatar.innerText = firstLetter;
 
-  /* warna konsisten */
   const colors = [
     "#2563eb",
     "#0ea5e9",
@@ -52,10 +54,9 @@ function generateAvatar(){
     "#ef4444"
   ];
 
-  const index = name.charCodeAt(0) % colors.length;
-  avatar.style.background = colors[index];
-}
-
+  avatar.style.background =
+    colors[user.nama.charCodeAt(0) % colors.length];
+});
 
 /* ===============================
    INIT UI SAFE
