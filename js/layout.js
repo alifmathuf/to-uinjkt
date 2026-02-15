@@ -5,9 +5,11 @@ function toggleSidebar() {
   sidebar.classList.toggle("open");
   overlay.classList.toggle("show");
 }
-document.getElementById("sidebarOverlay").addEventListener("click", () => {
-  document.querySelector(".sidebar").classList.remove("open");
-  document.getElementById("sidebarOverlay").classList.remove("show");
+document.querySelectorAll(".menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector(".sidebar").classList.remove("open");
+    document.getElementById("sidebarOverlay").classList.remove("show");
+  });
 });
 
 
