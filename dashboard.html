@@ -83,14 +83,26 @@ const database = firebase.database();
         <span class="app-title-desktop"></span>
       </div>
 
-      <div class="user-menu" onclick="toggleUserMenu()">
-  <div>
+      <div class="user-info">
+
+  <div class="user-text">
     <div id="greeting"></div>
     <strong id="userInfo"></strong>
   </div>
-  <div id="avatar"></div>
-</div>
 
+  <div class="user-menu">
+
+    <div id="avatar" class="avatar-circle"></div>
+
+    <div class="dropdown-menu" id="userDropdown">
+      <a href="#" id="profileBtn">Profil</a>
+      <a href="#" id="settingsBtn">Pengaturan</a>
+      <a href="#" onclick="Auth.logout()">Logout</a>
+    </div>
+
+  </div>
+
+</div>
 <div id="userDropdown" class="user-dropdown">
   <a href="profile.html">Profil</a>
   <a href="#">Pengaturan</a>
