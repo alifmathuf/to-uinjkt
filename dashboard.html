@@ -24,7 +24,7 @@ const firebaseConfig = {
   authDomain: "cbtuin-d26aa.firebaseapp.com",
   databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "cbtuin-d26aa",
-  storageBucket: "cbtuin-d26aa.firebasestorage.app",
+  storageBucket: "cbtuin-d26aa.appspot.com",
   messagingSenderId: "93548126228",
   appId: "1:93548126228:web:c456aedaad373237a0c701"
 };
@@ -38,65 +38,68 @@ const database = firebase.database();
 
 <div class="layout">
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <div class="app-title">Tryout PPG</div>
-    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+  <!-- OVERLAY (untuk menutup sidebar di mobile) -->
+  <div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
-    <div class="menu">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="app-title">Tryout PPG</div>
+
+    <nav class="menu">
 
       <a href="dashboard.html" class="active">
-        <i data-lucide="layout-dashboard"></i>
+        <i data-lucide="layout-dashboard" class="icon"></i>
         <span>Dashboard</span>
       </a>
 
       <a href="admin.html">
-        <i data-lucide="settings"></i>
+        <i data-lucide="settings" class="icon"></i>
         <span>Admin Panel</span>
       </a>
 
       <a href="leaderboard.html">
-        <i data-lucide="trophy"></i>
+        <i data-lucide="trophy" class="icon"></i>
         <span>Leaderboard</span>
       </a>
 
       <a href="statistik.html">
-        <i data-lucide="bar-chart"></i>
+        <i data-lucide="bar-chart" class="icon"></i>
         <span>Statistik</span>
       </a>
 
       <a href="riwayat.html">
-        <i data-lucide="history"></i>
+        <i data-lucide="history" class="icon"></i>
         <span>Riwayat</span>
       </a>
 
-    </div>
-  </div>
+    </nav>
+  </aside>
 
   <!-- CONTENT -->
-  <div class="content">
+  <main class="content">
 
     <!-- TOPBAR -->
-    <div class="topbar">
-      <div>
-        <span class="hamburger" onclick="toggleSidebar()">☰</span>
-        <span class="app-title-desktop"></span>
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+        <span class="app-title-desktop">Tryout PPG</span>
       </div>
 
       <div class="user-info">
-        <div>
+        <div class="user-text">
           <div id="greeting"></div>
           <strong id="userInfo"></strong>
         </div>
 
-        <!-- avatar & logout -->
-        <div class="user-avatar" </i>
-       <button class="logout-btn" onclick="Auth.logout()" title="Logout">
-           <i data-lucide="log-out"></i>
-        </div>
+        <div class="avatar-wrap">
+          <div id="avatar" class="avatar"></div>
 
+          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
+            <i data-lucide="log-out" class="icon"></i>
+          </button>
+        </div>
       </div>
-    </div>
+    </header>
 
     <!-- STEPPER -->
     <div class="stepper">
@@ -127,7 +130,7 @@ const database = firebase.database();
     <!-- STEP CONTENT -->
     <div id="stepContent"></div>
 
-  </div>
+  </main>
 </div>
 
 <footer class="footer">
