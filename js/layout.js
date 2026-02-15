@@ -27,29 +27,12 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 /* ===============================
-   AVATAR RENDER (SAFE)
-================================ */
-document.addEventListener("DOMContentLoaded",()=>{
-
-  const avatarEl = document.getElementById("avatar");
-
-  if(!avatarEl) return;
-
-  if(typeof Auth !== "undefined"){
-    const user = Auth.getUser();
-
-    if(user && user.nama){
-      avatarEl.innerHTML = generateAvatar(user.nama);
-    }
-  }
-
-});
-
-
-/* ===============================
    GENERATE AVATAR
 ================================ */
 function generateAvatar(){
+
+  const avatar = document.getElementById("avatar");
+  if(!avatar || typeof Auth === "undefined") return;
 
   const user = Auth.getUser();
   if(!user || !user.nama) return;
@@ -57,12 +40,9 @@ function generateAvatar(){
   const name = user.nama.trim();
   const firstLetter = name.charAt(0).toUpperCase();
 
-  const avatar = document.getElementById("avatar");
-  if(!avatar) return;
-
   avatar.innerText = firstLetter;
 
-  // generate warna konsisten dari nama
+  /* warna konsisten */
   const colors = [
     "#2563eb",
     "#0ea5e9",
@@ -73,8 +53,13 @@ function generateAvatar(){
   ];
 
   const index = name.charCodeAt(0) % colors.length;
-
   avatar.style.background = colors[index];
 }
 
-generateAvatar();
+
+/* ===============================
+   INIT UI SAFE
+================================ */
+document.addEventListener("DOMContentLoaded",()=>{
+  generateAvatar();
+});
