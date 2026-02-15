@@ -3,62 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Statistik</title>
+<title>Statistik Ujian</title>
 
-<!-- CSS -->
-<link rel="stylesheet" href="css/app.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="layout.css">
 
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #cbd5e1;
+}
+
+.sidebar a:hover {
+  background: #1f2937;
+  color: white;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.card .value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.chart-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+}
+</style>
 </head>
 <body>
 
-<div class="content">
-  <h2>Statistik Performa</h2>
-
-  <div class="card">
-    <canvas id="scoreChart"></canvas>
-  </div>
-
-  <div class="card">
-    <canvas id="mapelChart"></canvas>
-  </div>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>CBT Panel</h2>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="riwayat.html">Riwayat</a>
+  <a href="statistik.html">Statistik</a>
+  <a href="leaderboard.html">Leaderboard</a>
 </div>
 
-<!-- ================= SCRIPT ================= -->
+<!-- MAIN -->
+<div class="main">
 
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <div class="topbar">
+    <h2>Statistik Ujian</h2>
+    <div id="userInfo"></div>
+  </div>
 
-<!-- Firebase v8 SDK -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <!-- SUMMARY CARDS -->
+  <div class="cards">
+    <div class="card">
+      <h3>Total Ujian</h3>
+      <div class="value" id="totalExam">0</div>
+    </div>
+    <div class="card">
+      <h3>Rata-rata Nilai</h3>
+      <div class="value" id="avgScore">0</div>
+    </div>
+    <div class="card">
+      <h3>Nilai Tertinggi</h3>
+      <div class="value" id="maxScore">0</div>
+    </div>
+    <div class="card">
+      <h3>Nilai Terendah</h3>
+      <div class="value" id="minScore">0</div>
+    </div>
+  </div>
 
-<script>
-const firebaseConfig = {
-  apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
-  authDomain: "cbtuin-d26aa.firebaseapp.com",
-  databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "cbtuin-d26aa",
-  storageBucket: "cbtuin-d26aa.firebasestorage.app",
-  messagingSenderId: "93548126228",
-  appId: "1:93548126228:web:c456aedaad373237a0c701"
-};
+  <!-- CHART -->
+  <div class="chart-box">
+    <canvas id="statChart"></canvas>
+  </div>
 
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-</script>
-<script src="js/firebase-config.js"></script>
+</div>
 
-<!-- Auth -->
-<script src="js/auth.js"></script>
-
-<!-- Statistik -->
-<script src="js/statistik.js"></script>
-
-<script>
-Auth.protect();
-</script>
+<script src="auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="statistik.js"></script>
 
 </body>
 </html>
