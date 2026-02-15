@@ -269,7 +269,7 @@ textarea:focus{
   align-items:center;
   gap:10px;
 }
-/* ================= LOGOUT ICON = SIDEBAR ICON ================= */
+/* ================= FIX ALIGN LOGOUT ================= */
 
 .logout-btn{
   display:flex;
@@ -282,24 +282,32 @@ textarea:focus{
   border:none;
   cursor:pointer;
   transition:var(--transition);
-  color:var(--text-secondary); /* warna sama seperti menu */
+  color:var(--text-secondary);
+
+  /* mencegah efek naik dari global button:hover */
+  transform:none !important;
 }
 
-/* icon ukuran sama seperti sidebar */
+/* icon presisi tengah */
 .logout-btn i,
 .logout-btn svg{
   font-size:18px;
   width:18px;
   height:18px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-/* hover sama seperti menu sidebar */
+/* hover sama sidebar */
 .logout-btn:hover{
   background:var(--bg-hover);
   color:var(--text-primary);
+  transform:none; /* tetap lurus */
 }
 
-/* saat aktif / klik */
+/* klik */
 .logout-btn:active{
-  transform:scale(0.95);
+  transform:scale(0.94);
 }
