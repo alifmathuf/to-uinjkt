@@ -101,7 +101,7 @@ textarea:focus{
 .menu a.active::before{
   content:"";
   position:absolute;
-  left:-24px;
+  left:-16px; /* dari -24 */
   top:6px;
   bottom:6px;
   width:4px;
@@ -245,9 +245,17 @@ textarea:focus{
   }
 
   .hamburger{
-    display:block;
-    margin-bottom:20px;
-  }
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+  color:var(--text-primary);
+  padding:8px;
+  border-radius:8px;
+}
+
+.hamburger:hover{
+  background:var(--bg-hover);
+}
 
   .app-title-desktop{
     display:none;
@@ -315,11 +323,6 @@ textarea:focus{
 
 .sidebar.collapsed a{
   justify-content:center;
-}
-   
-.user-avatar:hover{
-  background:var(--primary);
-  color:white;
 }
 
 @media (max-width:768px){
