@@ -14,21 +14,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   });
 });
 
-document.getElementById("avatar").innerHTML =
-  generateAvatar(user.nama);
-
-function toggleUserMenu(){
-  document.getElementById("userDropdown")
-    .classList.toggle("show");
-}
-
-window.onclick = function(e){
-  if(!e.target.closest(".user-menu")){
-    document.getElementById("userDropdown")
-      .classList.remove("show");
-  }
-}
-
 function generateAvatar(){
 
   const user = Auth.getUser();
@@ -58,4 +43,3 @@ function generateAvatar(){
 }
 
 generateAvatar();
-
