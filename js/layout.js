@@ -3,13 +3,15 @@
 // ===============================
 function toggleSidebar(){
   const sidebar = document.querySelector(".sidebar");
-  const body = document.body;
+  const overlay = document.getElementById("sidebarOverlay");
 
   if(!sidebar) return;
 
   sidebar.classList.toggle("open");
-  body.classList.toggle("sidebar-open"); 
-  // membantu jika ada overlay / lock scroll
+
+  if(overlay){
+    overlay.classList.toggle("show");
+  }
 }
 
 
