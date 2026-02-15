@@ -1,49 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel - Tryout</title>
+
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
 <div class="layout">
 
   <!-- SIDEBAR -->
-  <div class="sidebar">
-    <div class="app-title">Admin Panel</div>
+  <aside class="sidebar">
 
-    <div class="menu">
-      <a onclick="loadPage('home')" class="active">
-        <i data-lucide="layout-dashboard"></i>
-        <span>Dashboard</span>
-      </a>
-
-      <a onclick="loadPage('paket')">
-        <i data-lucide="file-text"></i>
-        <span>Paket Soal</span>
-      </a>
-
-      <a onclick="loadPage('mapel')">
-        <i data-lucide="book-open"></i>
-        <span>Mapel</span>
-      </a>
-
-      <a onclick="loadPage('ujian')">
-        <i data-lucide="settings"></i>
-        <span>Pengaturan Ujian</span>
-      </a>
-
-      <a onclick="loadPage('peserta')">
-        <i data-lucide="users"></i>
-        <span>Peserta</span>
-      </a>
-
-      <a onclick="loadPage('maintenance')">
-        <i data-lucide="shield"></i>
-        <span>Maintenance</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- CONTENT -->
-  <div class="content">
-    <div class="topbar">
-      <h2 id="pageTitle">Dashboard Admin</h2>
+    <div class="brand">
+      <img src="assets/logo-uin.svg">
+      <span>Admin Panel</span>
     </div>
 
-    <div id="adminContent"></div>
-  </div>
+    <nav class="menu">
+      <a class="active"><span class="material-symbols-outlined">dashboard</span>Dashboard</a>
+      <a><span class="material-symbols-outlined">menu_book</span>Bank Soal</a>
+      <a><span class="material-symbols-outlined">upload_file</span>Upload Soal</a>
+      <a><span class="material-symbols-outlined">group</span>User</a>
+      <a><span class="material-symbols-outlined">bar_chart</span>Statistik</a>
+      <a><span class="material-symbols-outlined">settings</span>Pengaturan</a>
+    </nav>
+
+    <div class="logout">
+      <span class="material-symbols-outlined">logout</span>
+      Logout
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <button id="toggleSidebar" class="toggle">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <div class="topbar-right">
+        <div class="avatar" id="avatar"></div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="content">
+
+      <!-- DASHBOARD -->
+      <div class="card">
+        <h2>Selamat Datang Admin</h2>
+        <p>Kelola sistem tryout dari panel ini.</p>
+      </div>
+
+      <!-- UPLOAD SOAL -->
+      <div class="card">
+        <h3>Upload Soal JSON</h3>
+
+        <input type="file" id="fileInput" accept=".json">
+        <button class="btn-primary" id="uploadBtn">Upload</button>
+
+        <p class="info">Upload file JSON untuk disimpan ke GitHub.</p>
+      </div>
+
+    </section>
+
+  </main>
 
 </div>
+
+<script src="js/layout.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>
