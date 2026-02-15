@@ -135,6 +135,8 @@ textarea:focus{
   font-weight:700;
   color:var(--text-primary);
 }
+
+.user-info{
 /* ===== USER ACTION (AVATAR + LOGOUT) ===== */
 
 .user-info{
@@ -162,7 +164,7 @@ textarea:focus{
   height:40px;
   border:none;
   border-radius:50%;
-  background:var(-bg-secondary);
+  background:transparent;
   display:flex;
   align-items:center;
   justify-content:center;
