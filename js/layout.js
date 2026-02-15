@@ -1,19 +1,83 @@
+/* ===============================
+   SIDEBAR TOGGLE
+================================ */
 function toggleSidebar(){
-  document.querySelector(".sidebar").classList.toggle("open");
+  const sidebar = document.querySelector(".sidebar");
+  if(sidebar){
+    sidebar.classList.toggle("open");
+  }
 }
 
-/* Auto highlight menu */
+
+/* ===============================
+   AUTO ACTIVE MENU
+================================ */
 document.addEventListener("DOMContentLoaded",()=>{
-  const links=document.querySelectorAll(".menu a");
-  const current=location.pathname.split("/").pop();
+
+  const links = document.querySelectorAll(".menu a");
+  const current = location.pathname.split("/").pop();
 
   links.forEach(link=>{
-    if(link.getAttribute("href")===current){
+    if(link.getAttribute("href") === current){
       link.classList.add("active");
     }
   });
+
 });
 
-document.getElementById("avatar").innerHTML =
-  generateAvatar(user.nama);
 
+/* ===============================
+   AVATAR RENDER (SAFE)
+================================ */
+document.addEventListener("DOMContentLoaded",()=>{
+
+  const avatarEl = document.getElementById("avatar");
+
+  if(!avatarEl) return;
+
+  if(typeof Auth !== "undefined"){
+    const user = Auth.getUser();
+
+    if(user && user.nama){
+      avatarEl.innerHTML = generateAvatar(user.nama);
+    }
+  }
+
+});
+
+
+/* ===============================
+   GENERATE AVATAR
+================================ */
+function generateAvatar(nama){
+
+  const initials = nama
+    .split(" ")
+    .map(n => n[0])
+    .join("")
+    .substring(0,2)
+    .toUpperCase();
+
+  return `<div class="avatar-circle">${initials}</div>`;
+}
+/* ===============================
+   USER DROPDOWN TOGGLE
+================================ */
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+  const avatar = document.getElementById("avatar");
+  const dropdown = document.getElementById("userDropdown");
+
+  if(!avatar || !dropdown) return;
+
+  avatar.addEventListener("click", (e)=>{
+    e.stopPropagation();
+    dropdown.classList.toggle("show");
+  });
+
+  document.addEventListener("click", ()=>{
+    dropdown.classList.remove("show");
+  });
+
+});
