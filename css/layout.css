@@ -1,5 +1,5 @@
 /* =================================================
-   GLOBAL LAYOUT SYSTEM — FINAL PRO VERSION
+   GLOBAL LAYOUT SYSTEM — FINAL PRO VERSION (FIXED)
 ================================================= */
 
 /* ================= BASE ================= */
@@ -23,9 +23,7 @@ button:hover{
 }
 
 /* Focus accessibility */
-:focus{
-  outline:none;
-}
+:focus{ outline:none; }
 
 button:focus,
 a:focus,
@@ -40,18 +38,20 @@ textarea:focus{
 .sidebar{
   width:240px;
   padding:24px;
-  background:rgba(17,24,39,0.85);
+  background:rgba(17,24,39,0.96); /* lebih solid */
   backdrop-filter:blur(14px);
   border-right:1px solid var(--border-soft);
   display:flex;
   flex-direction:column;
   transition:var(--transition);
+  z-index:1000;
 }
 
+/* overlay luar sidebar */
 .sidebar-overlay{
   position:fixed;
   inset:0;
-  background:rgba(0,0,0,0.4);
+  background:rgba(0,0,0,0.35);
   backdrop-filter:blur(2px);
   z-index:900;
   opacity:0;
@@ -71,10 +71,7 @@ textarea:focus{
   color:var(--text-primary);
 }
 
-.glow-primary{
-  box-shadow:0 0 0 1px var(--primary),
-             0 0 20px rgba(37,99,235,0.25);
-}
+
 /* ===== MENU ===== */
 
 .menu a{
@@ -86,6 +83,7 @@ textarea:focus{
   color:var(--text-secondary);
   margin-bottom:6px;
   position:relative;
+  text-decoration:none;
 }
 
 .menu a:hover{
@@ -109,6 +107,13 @@ textarea:focus{
   border-radius:4px;
 }
 
+/* icon warna ikut text */
+.icon{
+  width:18px;
+  height:18px;
+  stroke:currentColor;
+}
+
 
 /* ================= CONTENT ================= */
 
@@ -126,9 +131,8 @@ textarea:focus{
   align-items:center;
   padding-bottom:16px;
   margin-bottom:24px;
-  border-bottom:1px solid var(--border-soft); /* garis tipis */
+  border-bottom:1px solid var(--border-soft);
 }
-
 
 .app-title-desktop{
   font-size:20px;
@@ -142,11 +146,40 @@ textarea:focus{
   gap:14px;
 }
 
-.user-info img{
+/* avatar + logout */
+.avatar-wrap{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.avatar{
   width:40px;
   height:40px;
   border-radius:50%;
-  border:2px solid var(--border-soft);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:600;
+  font-size:16px;
+}
+
+.logout-btn{
+  background:none;
+  border:none;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--text-secondary);
+  padding:6px;
+  border-radius:8px;
+}
+
+.logout-btn:hover{
+  background:var(--bg-hover);
+  color:var(--text-primary);
 }
 
 
@@ -157,69 +190,8 @@ textarea:focus{
   font-size:22px;
   cursor:pointer;
   color:var(--text-primary);
-}
-
-
-/* ================= TOAST SYSTEM ================= */
-
-#toastContainer{
-  position:fixed;
-  top:20px;
-  right:20px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  z-index:9999;
-}
-
-.toast{
-  padding:14px 18px;
-  border-radius:var(--radius);
-  background:var(--bg-card);
-  border:1px solid var(--border-soft);
-  color:var(--text-primary);
-  min-width:220px;
-  box-shadow:var(--shadow-soft);
-  animation:slideIn 0.3s ease;
-}
-
-.toast.success{
-  border-left:4px solid var(--success);
-}
-
-.toast.error{
-  border-left:4px solid var(--danger);
-}
-
-@keyframes slideIn{
-  from{ transform:translateX(20px); opacity:0 }
-  to{ transform:translateX(0); opacity:1 }
-}
-
-
-/* ================= LOADER ================= */
-
-.loader{
-  border:3px solid var(--bg-secondary);
-  border-top:3px solid var(--primary);
-  border-radius:50%;
-  width:28px;
-  height:28px;
-  animation:spin 0.8s linear infinite;
-  margin:auto;
-}
-
-@keyframes spin{
-  to{ transform:rotate(360deg); }
-}
-
-
-/* ================= EMPTY STATE ================= */
-
-.empty-state{
-  text-align:center;
-  padding:40px;
-  color:var(--text-muted);
+  background:none;
+  border:none;
 }
 
 
@@ -236,12 +208,16 @@ textarea:focus{
     left:-260px;
     top:0;
     height:100%;
-    z-index:1000;
     box-shadow:var(--shadow-soft);
   }
 
   .sidebar.open{
     left:0;
+  }
+
+  .sidebar.open ~ .sidebar-overlay{
+    opacity:1;
+    pointer-events:auto;
   }
 
   .hamburger{
@@ -256,41 +232,4 @@ textarea:focus{
   .content{
     padding:24px;
   }
-}
-
-
-/* USER MENU */
-.user-menu{
-  position:relative;
-}
-
-.dropdown-menu{
-  position:absolute;
-  right:0;
-  top:55px;
-  background:var(--bg-card);
-  border:1px solid var(--border-soft);
-  border-radius:12px;
-  box-shadow:var(--shadow-soft);
-  min-width:160px;
-  display:none;
-  flex-direction:column;
-  overflow:hidden;
-  z-index:100;
-}
-
-.dropdown-menu a{
-  padding:12px 16px;
-  text-decoration:none;
-  color:var(--text-primary);
-  font-size:14px;
-  transition:0.2s;
-}
-
-.dropdown-menu a:hover{
-  background:var(--bg-hover);
-}
-
-.dropdown-menu.show{
-  display:flex;
 }
