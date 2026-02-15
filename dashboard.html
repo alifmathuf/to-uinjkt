@@ -83,7 +83,7 @@
     <div class="topbar">
       <div>
         <span class="hamburger" onclick="toggleSidebar()">☰</span>
-        <span class="app-title-desktop">Dashboard</span>
+        <span class="app-title-desktop"></span>
       </div>
 
       <div class="user-info">
@@ -96,9 +96,11 @@
   <div id="avatar"></div>
  
 </div>
-      <div class="logout-btn"></div>
-      <button class="logout-btn" onclick="logout()" title="Logout">
-            <i class="fas fa-power-off"></i>
+   
+<button class="logout-btn" onclick="Auth.logout()" title="Logout">
+    <i data-lucide="log-out"></i>
+</button>
+
         </button>
     </div>
 
