@@ -1,0 +1,21 @@
+.history-item{
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding:16px;
+  margin-bottom:12px;
+  box-shadow: var(--shadow);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.history-score{
+  font-size:22px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+.history-meta{
+  font-size:13px;
+  opacity:.7;
+}
