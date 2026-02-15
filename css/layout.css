@@ -137,51 +137,16 @@ textarea:focus{
 }
 
 .user-info{
-/* ===== USER ACTION (AVATAR + LOGOUT) ===== */
-
-.user-info{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
 }
 
-/* avatar */
-#avatar{
+.user-info img{
   width:40px;
   height:40px;
   border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:600;
-  color:#fff;
-  font-size:16px;
-}
-
-/* tombol logout */
-.user-info button{
-  width:40px;
-  height:40px;
-  border:none;
-  border-radius:50%;
-  background:transparent;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  transition:var(--transition);
-}
-
-/* warna icon */
-.user-info button svg{
-  width:20px;
-  height:20px;
-  stroke:var(--text-primary);
-}
-
-/* hover */
-.user-info button:hover{
-  background:var(--bg-hover);
+  border:2px solid var(--border-soft);
 }
 
 
