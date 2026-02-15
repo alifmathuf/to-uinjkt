@@ -52,26 +52,25 @@
         <i data-lucide="layout-dashboard"></i>
         <span>Dashboard</span>
       </a>
+<a href="statistik.html">
+  <i data-lucide="bar-chart"></i>
+  <span>Statistik</span>
+</a>
+<a href="riwayat.html">
+  <i data-lucide="history"></i>
+  <span>Riwayat</span>
+</a>
 
-      <a href="result.html">
-        <i data-lucide="bar-chart-2"></i>
-        <span>Result</span>
-      </a>
-
-      <a href="review.html">
-        <i data-lucide="eye"></i>
-        <span>Review</span>
-      </a>
-
+<a href="admin.html">
+  <i data-lucide="settings"></i>
+  <span>Admin Panel</span>
+</a>
       <a href="leaderboard.html">
         <i data-lucide="trophy"></i>
         <span>Leaderboard</span>
       </a>
 
-      <a href="#" onclick="Auth.logout()">
-        <i data-lucide="log-out"></i>
-        <span>Logout</span>
-      </a>
+      
     </div>
   </div>
 
@@ -85,12 +84,18 @@
       </div>
 
       <div class="user-info">
-        <div>
-          <div id="greeting"></div>
-          <strong id="userInfo"></strong>
-        </div>
-        <div id="avatar"></div>
-      </div>
+
+  <div class="user-text">
+    <div id="greeting"></div>
+    <strong id="userInfo"></strong>
+  </div>
+
+  <div id="avatar"></div>
+
+  <button onclick="Auth.logout()" title="Logout">
+    <i data-lucide="log-out"></i>
+  </button>
+</div>
     </div>
 
     <!-- STEPPER -->
