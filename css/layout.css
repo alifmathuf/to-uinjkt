@@ -37,32 +37,38 @@ textarea:focus{
 
 /* ================= SIDEBAR ================= */
 
+/* posisi default (tertutup) */
 .sidebar{
-  width:240px;
-  padding:24px;
-  background:rgba(17,24,39,0.85);
-  backdrop-filter:blur(14px);
-  border-right:1px solid var(--border-soft);
-  display:flex;
-  flex-direction:column;
-  transition:var(--transition);
+  position: fixed;
+  left: -260px;
+  top: 0;
+  height: 100%;
+  width: 260px;
+  transition: 0.3s ease;
+  z-index: 1000;
 }
 
+/* saat terbuka */
+.sidebar.open{
+  left: 0;
+}
+
+/* overlay */
 .sidebar-overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.4);
-  backdrop-filter:blur(2px);
-  z-index:900;
-  opacity:0;
-  pointer-events:none;
-  transition:var(--transition);
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
 }
 
+/* overlay aktif */
 .sidebar-overlay.show{
-  opacity:1;
-  pointer-events:auto;
+  opacity: 1;
+  pointer-events: auto;
 }
+
 
 .sidebar .app-title{
   font-size:20px;
