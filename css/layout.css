@@ -175,7 +175,7 @@ textarea:focus{
 .user-info button svg{
   width:20px;
   height:20px;
-  stroke:var(-bg-secondary;
+  stroke:#92A7C8;
   transition:var(--transition);
 }
 
