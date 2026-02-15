@@ -9,11 +9,7 @@ document.getElementById("sidebarOverlay").addEventListener("click", () => {
   document.querySelector(".sidebar").classList.remove("open");
   document.getElementById("sidebarOverlay").classList.remove("show");
 });
-document.querySelectorAll(".menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.querySelector(".sidebar").classList.remove("open");
-    document.getElementById("sidebarOverlay").classList.remove("show");
-  });
+
 
 
 /* Auto highlight menu */
