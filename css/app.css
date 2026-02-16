@@ -541,3 +541,26 @@ background:var(--gradient-primary);
   font-size:26px;
   margin-top:6px;
 }
+/* GRID STATISTIK */
+.stat-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:16px;
+  margin-bottom:20px;
+}
+
+/* CARD */
+.stat-card{
+  background:var(--bg-card);
+  border-radius:12px;
+  padding:18px;
+  text-align:center;
+  border:1px solid var(--border-soft);
+}
+
+/* RESPONSIVE HP */
+@media(max-width:768px){
+  .stat-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
