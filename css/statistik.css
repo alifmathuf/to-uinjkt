@@ -31,3 +31,39 @@
   padding:20px;
   box-shadow:var(--shadow-soft);
 }
+
+
+
+.stat-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:16px;
+  margin-bottom:25px;
+}
+
+.stat-card{
+  background:#fff;
+  padding:18px;
+  border-radius:16px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  text-align:center;
+}
+
+.stat-card span{
+  font-size:13px;
+  color:#64748b;
+}
+
+.stat-card strong{
+  display:block;
+  font-size:26px;
+  margin-top:6px;
+  color:var(--primary);
+}
+
+.chart-card{
+  background:#fff;
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
