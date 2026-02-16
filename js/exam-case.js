@@ -211,17 +211,56 @@ function finishCase(){
 
   window.location.href = "result.html";
 }
- function exportCasePDF(){
+function exportCasePDF(){
 
-  const element = document.getElementById("caseAnswerBox");
+  const cases = document.querySelectorAll(".case-result");
 
-  const opt = {
+  if(!cases.length){
+    alert("Data studi kasus tidak ditemukan");
+    return;
+  }
+
+  let html = `
+    <h2 style="text-align:center">HASIL STUDI KASUS</h2>
+    <hr><br>
+  `;
+
+  cases.forEach(caseItem => {
+
+    const judul = caseItem.querySelector(".case-title")?.innerText || "";
+
+    const deskripsi = caseItem.querySelector(".case-desc")?.innerText || "-";
+    const upaya = caseItem.querySelector(".case-effort")?.innerText || "-";
+    const hasil = caseItem.querySelector(".case-result-text")?.innerText || "-";
+    const hikmah = caseItem.querySelector(".case-wisdom")?.innerText || "-";
+
+    html += `
+      <h3>${judul}</h3>
+
+      <table border="1" cellspacing="0" cellpadding="6" width="100%">
+        <tr style="background:#eee">
+          <th>Deskripsi</th>
+          <th>Upaya</th>
+          <th>Hasil</th>
+          <th>Hikmah</th>
+        </tr>
+        <tr>
+          <td>${deskripsi}</td>
+          <td>${upaya}</td>
+          <td>${hasil}</td>
+          <td>${hikmah}</td>
+        </tr>
+      </table>
+
+      <br><br>
+    `;
+  });
+
+  html2pdf().from(html).set({
     margin: 10,
-    filename: 'jawaban-studi-kasus.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
+    filename: "Studi_Kasus.pdf",
     html2canvas: { scale: 2 },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
-
-  html2pdf().set(opt).from(element).save();
+    jsPDF: { unit: "mm", format: "a4", orientation: "landscape" }
+  }).save();
 }
+
