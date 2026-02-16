@@ -30,6 +30,12 @@ db.ref(`exams/${user.id}`)
   setScore("maxScore", max);
   setScore("minScore", min);
 
+  const statusBadge = avg >= 70
+  ? '<span class="badge badge-pass">LULUS</span>'
+  : '<span class="badge badge-fail">TIDAK</span>';
+
+document.getElementById("statusBadge").innerHTML = statusBadge;
+
   renderChart(scores);
 });
 
