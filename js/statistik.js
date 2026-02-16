@@ -47,10 +47,16 @@ function renderChart(scores){
     type:"bar",
     data:{
       labels:scores.map((_,i)=>"Ujian "+(i+1)),
-      datasets:[{
-        data:scores,
-        borderRadius:8
-      }]
+      datasets: [{
+  data: scores,
+  borderWidth: 2,
+ backgroundColor: "rgba(59,130,246,0.12)",
+hoverBackgroundColor: "rgba(59,130,246,0.25)",
+  borderColor: "#3b82f6",
+  borderRadius: 8,
+  barThickness: 40
+}]
+
     },
     options:{
       responsive:true,
