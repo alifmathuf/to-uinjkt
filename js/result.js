@@ -66,14 +66,10 @@ db.ref(`exams/${user.id}`)
       lucide.createIcons();
     }
 
-    /* ================= SAVE LEADERBOARD ================= */
+    /* ================= SIMPAN DATA (AMAN) ================= */
 
-    saveToFirebaseLeaderboard(
-      finalScore,
-      correct,
-      total,
-      examKey
-    );
+    saveExamResult(correct, total, examKey);
+    saveToFirebaseLeaderboard(finalScore, correct, total, examKey);
 
     renderChart(correct, total);
 
@@ -81,6 +77,29 @@ db.ref(`exams/${user.id}`)
   .catch(err => {
     console.log("Result load error:", err);
   });
+
+
+/* ================= SIMPAN HASIL UJIAN ================= */
+/* tidak menimpa jika sudah ada */
+
+function saveExamResult(correct, total, examKey){
+
+  if (!user || !examKey) return;
+
+  const ref = db.ref(`exams/${user.id}/${examKey}`);
+
+  ref.once("value").then(snap => {
+
+    if (snap.exists()) return; // cegah overwrite
+
+    ref.set({
+      score: correct,
+      total: total,
+      submittedAt: Date.now()
+    });
+
+  });
+}
 
 
 /* ================= SAVE GLOBAL LEADERBOARD ================= */
