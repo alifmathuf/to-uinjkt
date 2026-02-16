@@ -11,13 +11,23 @@ db.ref(`exams/${user.id}`).once("value").then(snapshot => {
 
   Object.keys(data).forEach(key => {
     const exam = data[key];
-    if (!exam.score || !exam.total) return;
+
+    // ✅ jangan abaikan nilai 0
+    if (exam.score == null || exam.total == null) return;
+    if (exam.total == 0) return;
 
     const nilai = Math.round((exam.score / exam.total) * 100);
     scores.push(nilai);
   });
 
-  if (scores.length === 0) return;
+  // ✅ jika belum ada data
+  if (scores.length === 0) {
+    document.getElementById("totalExam").innerText = "0";
+    document.getElementById("avgScore").innerText = "0";
+    document.getElementById("maxScore").innerText = "0";
+    document.getElementById("minScore").innerText = "0";
+    return;
+  }
 
   const totalExam = scores.length;
   const avg = Math.round(scores.reduce((a,b)=>a+b,0) / totalExam);
@@ -34,11 +44,18 @@ db.ref(`exams/${user.id}`).once("value").then(snapshot => {
 });
 
 function renderChart(scores){
-  new Chart(document.getElementById("statChart"), {
+
+  const ctx = document.getElementById("statChart");
+  if (!ctx) return;
+
+  new Chart(ctx, {
     type: "bar",
     data: {
       labels: scores.map((_,i)=>"Ujian "+(i+1)),
-      datasets: [{ data: scores }]
+      datasets: [{
+        label: "Nilai",
+        data: scores
+      }]
     },
     options: {
       responsive: true,
