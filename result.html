@@ -137,8 +137,6 @@ firebase.initializeApp(firebaseConfig);
          Lihat Jawaban PG
       </button>
 
-    </div>
-
   </div>
 </div>
 
@@ -152,7 +150,8 @@ firebase.initializeApp(firebaseConfig);
 <script src="js/result.js"></script>
 
 <script>
-lucide.createIcons();
+  Auth.protect();
+  lucide.createIcons();
 </script>
 
 </body>
