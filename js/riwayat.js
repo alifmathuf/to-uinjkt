@@ -5,7 +5,7 @@ const db = firebase.database();
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
 
-db.ref(`exams/${user.id}`)
+db.ref(`hasil_ujian/${user.id}`)
   .once("value")
   .then(snapshot => {
 
@@ -30,18 +30,19 @@ db.ref(`exams/${user.id}`)
         : "-";
 
       container.innerHTML += `
-        <div class="history-card">
-          <h4>${mapel}</h4>
-          <p>Nilai: <b>${nilai}</b></p>
-          <p>Benar: ${exam.score} / ${exam.total}</p>
-          <p>Tanggal: ${tanggal}</p>
+        <div class="history-item">
+          <div>
+            <strong>${mapel}</strong>
+            <div class="history-meta">${tanggal}</div>
+          </div>
+          <div class="history-score">${nilai}</div>
         </div>
       `;
     });
 
   })
   .catch(err => {
-    console.log("Riwayat error:", err);
+    console.log(err);
     document.getElementById("historyList").innerHTML =
       "<p>Gagal memuat data.</p>";
   });
