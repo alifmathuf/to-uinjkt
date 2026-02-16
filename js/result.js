@@ -153,17 +153,107 @@ function renderChart(correct, total) {
 
 /* ================= DOWNLOAD PDF ================= */
 
-function downloadPDF(){
+<script>
+const { jsPDF } = window.jspdf;
 
-  const element = document.getElementById("resultSheet");
+/* ===============================
+   EXPORT JAWABAN PG
+================================ */
+function exportPG(){
 
-  const opt = {
-    margin: 10,
-    filename: 'hasil-ujian.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
+  const review = JSON.parse(localStorage.getItem("reviewData"));
 
-  html2pdf().set(opt).from(element).save();
+  if(!review || review.length === 0){
+    alert("Data tidak ditemukan");
+    return;
+  }
+
+  const doc = new jsPDF();
+  let y = 15;
+
+  doc.setFontSize(16);
+  doc.text("HASIL JAWABAN PILIHAN GANDA", 14, y);
+  y += 10;
+
+  doc.setFontSize(10);
+
+  review.forEach((item, i) => {
+
+    if(y > 270){
+      doc.addPage();
+      y = 15;
+    }
+
+    doc.text(`${i+1}. ${item.q}`, 14, y);
+    y += 6;
+
+    doc.text(`Jawaban Anda : ${item.user}`, 20, y);
+    y += 5;
+
+    doc.text(`Jawaban Benar: ${item.correct}`, 20, y);
+    y += 5;
+
+    doc.text(`Status : ${item.user === item.correct ? "BENAR" : "SALAH"}`, 20, y);
+    y += 8;
+
+  });
+
+  doc.save("hasil-pg.pdf");
 }
+
+
+/* ===============================
+   EXPORT STUDI KASUS
+================================ */
+function exportCase(){
+
+  const caseData = JSON.parse(localStorage.getItem("caseResult"));
+
+  if(!caseData){
+    alert("Data studi kasus tidak ditemukan");
+    return;
+  }
+
+  const doc = new jsPDF();
+  let y = 15;
+
+  doc.setFontSize(16);
+  doc.text("HASIL STUDI KASUS", 14, y);
+  y += 10;
+
+  doc.setFontSize(12);
+  doc.text(caseData.title || "Strategi Pembelajaran", 14, y);
+  y += 8;
+
+  doc.setFontSize(10);
+
+  const sections = [
+    { label:"Deskripsi", text: caseData.deskripsi },
+    { label:"Upaya", text: caseData.upaya },
+    { label:"Hasil", text: caseData.hasil },
+    { label:"Hikmah", text: caseData.hikmah }
+  ];
+
+  sections.forEach(sec => {
+
+    if(!sec.text) return;
+
+    if(y > 260){
+      doc.addPage();
+      y = 15;
+    }
+
+    doc.setFont(undefined, 'bold');
+    doc.text(sec.label, 14, y);
+    y += 6;
+
+    doc.setFont(undefined, 'normal');
+    const splitText = doc.splitTextToSize(sec.text, 180);
+    doc.text(splitText, 14, y);
+    y += splitText.length * 6 + 4;
+
+  });
+
+  doc.save("hasil-studi-kasus.pdf");
+}
+</script>
