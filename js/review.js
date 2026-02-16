@@ -74,42 +74,42 @@ function tampilkanReview(soal, jawaban){
 
 }
 
+
 function exportReviewPDF(){
 
   const soalList = document.querySelectorAll(".question-review");
 
-  if(!soalList.length){
+  if(soalList.length === 0){
     alert("Data soal tidak ditemukan");
     return;
   }
 
   let html = `
-    <h2 style="text-align:center">HASIL REVIEW UJIAN</h2>
+    <h2 style="text-align:center">REVIEW HASIL UJIAN</h2>
     <hr>
   `;
 
-  soalList.forEach((soal, i) => {
+  soalList.forEach((item, i)=>{
 
-    const nomor = i + 1;
-    const isiSoal = soal.querySelector(".question-text")?.innerText || "";
-    const jawaban = soal.querySelector(".user-answer")?.innerText || "-";
-    const status = soal.classList.contains("correct")
-      ? "BENAR"
-      : "SALAH";
+    const soal   = item.querySelector(".soal-text")?.innerText || "-";
+    const user   = item.querySelector(".jawaban-user")?.innerText || "-";
+    const benar  = item.querySelector(".jawaban-benar")?.innerText || "-";
+    const status = item.querySelector(".status")?.innerText || "-";
 
     html += `
-      <div style="margin-bottom:15px">
-        <strong>${nomor}. ${isiSoal}</strong><br>
-        Jawaban: ${jawaban}<br>
-        Status: <b>${status}</b>
+      <div style="margin-bottom:18px;">
+        <b>${i+1}. ${soal}</b><br>
+        Jawaban Anda : ${user}<br>
+        Kunci Jawaban : ${benar}<br>
+        Status : <b>${status}</b>
       </div>
     `;
   });
 
   html2pdf().from(html).set({
     margin: 10,
-    filename: "Review_Ujian.pdf",
+    filename: "review-hasil.pdf",
     html2canvas: { scale: 2 },
-    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+    jsPDF: { orientation: "portrait", unit: "mm", format: "a4" }
   }).save();
 }
