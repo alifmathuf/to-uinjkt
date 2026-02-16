@@ -74,17 +74,42 @@ function tampilkanReview(soal, jawaban){
 
 }
 
-      function exportpgPDF(){
+function exportReviewPDF(){
 
-  const element = document.getElementById("pgAnswerBox");
+  const soalList = document.querySelectorAll(".question-review");
 
-  const opt = {
+  if(!soalList.length){
+    alert("Data soal tidak ditemukan");
+    return;
+  }
+
+  let html = `
+    <h2 style="text-align:center">HASIL REVIEW UJIAN</h2>
+    <hr>
+  `;
+
+  soalList.forEach((soal, i) => {
+
+    const nomor = i + 1;
+    const isiSoal = soal.querySelector(".question-text")?.innerText || "";
+    const jawaban = soal.querySelector(".user-answer")?.innerText || "-";
+    const status = soal.classList.contains("correct")
+      ? "BENAR"
+      : "SALAH";
+
+    html += `
+      <div style="margin-bottom:15px">
+        <strong>${nomor}. ${isiSoal}</strong><br>
+        Jawaban: ${jawaban}<br>
+        Status: <b>${status}</b>
+      </div>
+    `;
+  });
+
+  html2pdf().from(html).set({
     margin: 10,
-    filename: 'jawaban-pg.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
+    filename: "Review_Ujian.pdf",
     html2canvas: { scale: 2 },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
-
-  html2pdf().set(opt).from(element).save();
+    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+  }).save();
 }
