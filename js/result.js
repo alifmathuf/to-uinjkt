@@ -5,9 +5,7 @@
 Auth.protect();
 
 const user = Auth.getUser();
-if (!user) {
-  window.location.href = "dashboard.html";
-}
+if (!user) window.location.href = "dashboard.html";
 
 /* ================= USER INFO ================= */
 
@@ -20,85 +18,83 @@ const db = firebase.database();
 /* ================= AMBIL UJIAN TERAKHIR ================= */
 
 db.ref(`exams/${user.id}`)
-  .limitToLast(1)
-  .once("value")
-  .then(snapshot => {
+.limitToLast(1)
+.once("value")
+.then(snapshot => {
 
-    if (!snapshot.exists()) {
-      alert("Belum ada hasil ujian.");
-      window.location.href = "dashboard.html";
-      return;
-    }
+  if (!snapshot.exists()) {
+    alert("Belum ada hasil ujian.");
+    window.location.href = "dashboard.html";
+    return;
+  }
 
-    const examKey = Object.keys(snapshot.val())[0];
-    const examData = snapshot.val()[examKey];
+  const examKey = Object.keys(snapshot.val())[0];
+  const examData = snapshot.val()[examKey];
 
-    const correct = examData.score || 0;
-    const total = examData.total || 0;
+  const correct = examData.score || 0;
+  const total = examData.total || 0;
 
-    if (!total) {
-      alert("Data nilai belum tersedia.");
-      window.location.href = "dashboard.html";
-      return;
-    }
+  const finalScore = Math.round((correct / total) * 100);
 
-    const finalScore = Math.round((correct / total) * 100);
+  /* ================= TAMPILKAN NILAI PG ================= */
 
-    /* ================= TAMPILKAN NILAI ================= */
+  document.getElementById("scoreText").innerText = finalScore;
+  document.getElementById("correctCount").innerText = correct;
+  document.getElementById("finalScore").innerText = finalScore;
 
-    document.getElementById("scoreText").innerText = finalScore;
-    document.getElementById("correctCount").innerText = correct;
-    document.getElementById("finalScore").innerText = finalScore;
+  const statusBox = document.getElementById("statusBox");
 
-    const statusBox = document.getElementById("statusBox");
+  if (finalScore >= 75) {
+    statusBox.innerHTML = `<i data-lucide="check-circle"></i> LULUS`;
+    statusBox.className = "status-pass";
+  } else {
+    statusBox.innerHTML = `<i data-lucide="x-circle"></i> TIDAK LULUS`;
+    statusBox.className = "status-fail";
+  }
 
-    if (finalScore >= 75) {
-      statusBox.innerHTML =
-        `<i data-lucide="check-circle"></i> LULUS`;
-      statusBox.className = "status-pass";
-    } else {
-      statusBox.innerHTML =
-        `<i data-lucide="x-circle"></i> TIDAK LULUS`;
-      statusBox.className = "status-fail";
-    }
+  if (typeof lucide !== "undefined") lucide.createIcons();
 
-    if (typeof lucide !== "undefined") {
-      lucide.createIcons();
-    }
+  saveToFirebaseLeaderboard(finalScore, correct, total, examKey);
+  renderChart(correct, total);
 
-    /* ================= SIMPAN DATA (AMAN) ================= */
+  /* ================= LOAD STUDI KASUS ================= */
 
-    saveExamResult(correct, total, examKey);
-    saveToFirebaseLeaderboard(finalScore, correct, total, examKey);
+  loadCaseResult();
 
-    renderChart(correct, total);
-
-  })
-  .catch(err => {
-    console.log("Result load error:", err);
-  });
+})
+.catch(err => console.log("Result load error:", err));
 
 
-/* ================= SIMPAN HASIL UJIAN ================= */
-/* tidak menimpa jika sudah ada */
+/* ================= LOAD STUDI KASUS ================= */
 
-function saveExamResult(correct, total, examKey){
+function loadCaseResult(){
 
-  if (!user || !examKey) return;
+  const answers = JSON.parse(localStorage.getItem("caseAnswers")) || [];
+  const totalWords = localStorage.getItem("caseTotalWords") || 0;
+  const totalChars = localStorage.getItem("caseTotalChars") || 0;
+  const topic = localStorage.getItem("caseTopic") || "-";
 
-  const ref = db.ref(`exams/${user.id}/${examKey}`);
+  // tampilkan di result
+  const topicEl = document.getElementById("caseTopic");
+  const wordEl = document.getElementById("caseWords");
+  const charEl = document.getElementById("caseChars");
 
-  ref.once("value").then(snap => {
+  if(topicEl) topicEl.innerText = topic;
+  if(wordEl) wordEl.innerText = totalWords;
+  if(charEl) charEl.innerText = totalChars;
 
-    if (snap.exists()) return; // cegah overwrite
+  // siapkan data export PDF
+  const caseResult = {
+    title: topic,
+    deskripsi: answers[0] || "",
+    upaya: answers[1] || "",
+    hasil: answers[2] || "",
+    hikmah: answers[3] || "",
+    words: totalWords,
+    chars: totalChars
+  };
 
-    ref.set({
-      score: correct,
-      total: total,
-      submittedAt: Date.now()
-    });
-
-  });
+  localStorage.setItem("caseResult", JSON.stringify(caseResult));
 }
 
 
@@ -106,8 +102,7 @@ function saveExamResult(correct, total, examKey){
 
 function saveToFirebaseLeaderboard(score, correct, total, examId) {
 
-  if (!user || typeof firebase === "undefined") return;
-  if (!examId) return;
+  if (!user || !examId) return;
 
   db.ref(`leaderboard/${examId}/${user.id}`).set({
     nama: user.nama,
@@ -151,23 +146,17 @@ function renderChart(correct, total) {
 }
 
 
-/* ================= DOWNLOAD PDF ================= */
+/* ================= EXPORT PDF PG ================= */
 
-<script>
-const { jsPDF } = window.jspdf;
-
-/* ===============================
-   EXPORT JAWABAN PG
-================================ */
 function exportPG(){
 
   const review = JSON.parse(localStorage.getItem("reviewData"));
-
   if(!review || review.length === 0){
     alert("Data tidak ditemukan");
     return;
   }
 
+  const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
   let y = 15;
 
@@ -186,25 +175,20 @@ function exportPG(){
 
     doc.text(`${i+1}. ${item.q}`, 14, y);
     y += 6;
-
     doc.text(`Jawaban Anda : ${item.user}`, 20, y);
     y += 5;
-
     doc.text(`Jawaban Benar: ${item.correct}`, 20, y);
     y += 5;
-
     doc.text(`Status : ${item.user === item.correct ? "BENAR" : "SALAH"}`, 20, y);
     y += 8;
-
   });
 
   doc.save("hasil-pg.pdf");
 }
 
 
-/* ===============================
-   EXPORT STUDI KASUS
-================================ */
+/* ================= EXPORT PDF STUDI KASUS ================= */
+
 function exportCase(){
 
   const caseData = JSON.parse(localStorage.getItem("caseResult"));
@@ -214,6 +198,7 @@ function exportCase(){
     return;
   }
 
+  const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
   let y = 15;
 
@@ -222,10 +207,8 @@ function exportCase(){
   y += 10;
 
   doc.setFontSize(12);
-  doc.text(caseData.title || "Strategi Pembelajaran", 14, y);
+  doc.text(caseData.title, 14, y);
   y += 8;
-
-  doc.setFontSize(10);
 
   const sections = [
     { label:"Deskripsi", text: caseData.deskripsi },
@@ -233,6 +216,8 @@ function exportCase(){
     { label:"Hasil", text: caseData.hasil },
     { label:"Hikmah", text: caseData.hikmah }
   ];
+
+  doc.setFontSize(10);
 
   sections.forEach(sec => {
 
@@ -243,17 +228,15 @@ function exportCase(){
       y = 15;
     }
 
-    doc.setFont(undefined, 'bold');
+    doc.setFont(undefined,'bold');
     doc.text(sec.label, 14, y);
     y += 6;
 
-    doc.setFont(undefined, 'normal');
-    const splitText = doc.splitTextToSize(sec.text, 180);
-    doc.text(splitText, 14, y);
-    y += splitText.length * 6 + 4;
-
+    doc.setFont(undefined,'normal');
+    const split = doc.splitTextToSize(sec.text, 180);
+    doc.text(split, 14, y);
+    y += split.length * 6 + 4;
   });
 
   doc.save("hasil-studi-kasus.pdf");
 }
-</script>
