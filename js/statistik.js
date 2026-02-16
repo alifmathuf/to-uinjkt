@@ -45,21 +45,27 @@ db.ref(`exams/${user.id}`).once("value").then(snapshot => {
 
 function renderChart(scores){
 
-  const ctx = document.getElementById("statChart");
-  if (!ctx) return;
-
-  new Chart(ctx, {
-    type: "bar",
+  new Chart(document.getElementById("statChart"), {
+    type: "line",
     data: {
       labels: scores.map((_,i)=>"Ujian "+(i+1)),
       datasets: [{
-        label: "Nilai",
-        data: scores
+        data: scores,
+        tension: 0.4,
+        fill: true,
+        pointRadius: 4
       }]
     },
     options: {
-      responsive: true,
-      plugins: { legend: { display:false } }
+      responsive:true,
+      plugins:{ legend:{ display:false }},
+      scales:{
+        y:{
+          beginAtZero:true,
+          ticks:{ stepSize:20 }
+        }
+      }
     }
   });
+
 }
