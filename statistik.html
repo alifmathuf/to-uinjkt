@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Statistik</title>
+<title>Statistik Nilai</title>
 
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/layout.css">
@@ -11,48 +11,76 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+<body>
 
-<body class="layout">
+<div class="layout">
 
-<div class="sidebar"></div>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">TRYOUT</div>
+    <nav class="menu">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="riwayat.html">Riwayat</a>
+      <a href="statistik.html" class="active">Statistik</a>
+      <a href="leaderboard.html">Leaderboard</a>
+    </nav>
+  </aside>
 
-<div class="content">
+  <!-- MAIN -->
+  <main class="main">
 
-  <div class="topbar">
-    <h2>Statistik Nilai</h2>
-    <div id="userInfo"></div>
-  </div>
+    <header class="topbar">
+      <button class="toggle" onclick="toggleSidebar()">☰</button>
+      <div class="user-area">
+        <span id="userInfo"></span>
+        <div id="avatar" class="avatar"></div>
+      </div>
+    </header>
 
-  <div class="stat-grid">
+    <section class="content">
 
-    <div class="stat-card">
-      <span>Total Ujian</span>
-      <strong id="totalExam">0</strong>
-    </div>
+      <h2>Statistik Nilai</h2>
 
-    <div class="stat-card">
-      <span>Rata-rata</span>
-      <strong id="avgScore">0</strong>
-    </div>
+      <div class="stat-grid">
+        <div class="stat-box">
+          <h3 id="totalExam">0</h3>
+          <p>Total Ujian</p>
+        </div>
+        <div class="stat-box">
+          <h3 id="avgScore">0</h3>
+          <p>Rata-rata</p>
+        </div>
+        <div class="stat-box">
+          <h3 id="maxScore">0</h3>
+          <p>Nilai Tertinggi</p>
+        </div>
+        <div class="stat-box">
+          <h3 id="minScore">0</h3>
+          <p>Nilai Terendah</p>
+        </div>
+      </div>
 
-    <div class="stat-card">
-      <span>Nilai Tertinggi</span>
-      <strong id="maxScore">0</strong>
-    </div>
+      <canvas id="statChart"></canvas>
 
-    <div class="stat-card">
-      <span>Nilai Terendah</span>
-      <strong id="minScore">0</strong>
-    </div>
-
-  </div>
-
-  <div class="chart-card">
-    <canvas id="statChart"></canvas>
-  </div>
-
+    </section>
+  </main>
 </div>
 
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<!-- Firebase Config -->
+<script src="js/firebase-init.js"></script>
+
+<!-- Auth -->
+<script src="js/auth.js"></script>
+
+<!-- Avatar & layout -->
+<script src="js/layout.js"></script>
+
+<!-- Statistik -->
 <script src="js/statistik.js"></script>
+
 </body>
 </html>
