@@ -50,29 +50,21 @@ function setScore(id,val){
 
 function renderChart(scores){
   new Chart(document.getElementById("statChart"), {
-    type:"bar",
-    data:{
-      labels:scores.map((_,i)=>"Ujian "+(i+1)),
+    type: "bar",
+    data: {
+      labels: scores.map((_,i)=>"Ujian "+(i+1)),
       datasets: [{
-  data: scores,
-  borderWidth: 2,
- backgroundColor: "rgba(59,130,246,0.12)",
-hoverBackgroundColor: "rgba(59,130,246,0.25)",
-  borderColor: "#3b82f6",
-  borderRadius: 8,
-  barThickness: 40
-}]
-
+        data: scores,
+        borderRadius:8,
+        borderSkipped:false
+      }]
     },
-    options:{
+    options: {
       responsive:true,
+      plugins:{ legend:{ display:false }},
       scales:{
-        y:{
-          beginAtZero:true,
-          ticks:{ stepSize:20 }
-        }
-      },
-      plugins:{ legend:{display:false}}
+        y:{ beginAtZero:true, max:100, ticks:{ stepSize:20 } }
+      }
     }
   });
 }
