@@ -32,13 +32,15 @@ db.ref(`exams/${user.id}`).once("value").then(snapshot => {
       : "-";
 
     container.innerHTML += `
-      <div class="history-card">
-        <h4>${exam.mapel || "Ujian"} - ${exam.paket || "-"}</h4>
-        <p>Nilai: <b>${nilai}</b></p>
-        <p>Benar: ${exam.score} / ${exam.total}</p>
-        <p>Tanggal: ${tanggal}</p>
-      </div>
-    `;
+  <div class="history-card">
+    <h4>${exam.mapel}</h4>
+    <div class="history-meta">${tanggal}</div>
+    <div class="history-score">${nilai}</div>
+    <div class="history-meta">
+      Benar ${exam.score} dari ${exam.total}
+    </div>
+  </div>
+`;
   });
 
   // jika semua terfilter
