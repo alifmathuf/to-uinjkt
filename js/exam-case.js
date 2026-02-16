@@ -213,54 +213,45 @@ function finishCase(){
 }
 function exportCasePDF(){
 
-  const cases = document.querySelectorAll(".case-result");
+  const title = document.querySelector(".case-title")?.innerText;
 
-  if(!cases.length){
+  if(!title){
     alert("Data studi kasus tidak ditemukan");
     return;
   }
 
-  let html = `
+  const items = document.querySelectorAll(".case-grid div");
+
+  const deskripsi = items[0]?.innerText || "-";
+  const upaya     = items[1]?.innerText || "-";
+  const hasil     = items[2]?.innerText || "-";
+  const hikmah    = items[3]?.innerText || "-";
+
+  const html = `
     <h2 style="text-align:center">HASIL STUDI KASUS</h2>
-    <hr><br>
+    <hr>
+    <h3>${title}</h3>
+
+    <table width="100%" border="1" cellspacing="0" cellpadding="8">
+      <tr>
+        <th>Deskripsi</th>
+        <th>Upaya</th>
+        <th>Hasil</th>
+        <th>Hikmah</th>
+      </tr>
+      <tr>
+        <td>${deskripsi}</td>
+        <td>${upaya}</td>
+        <td>${hasil}</td>
+        <td>${hikmah}</td>
+      </tr>
+    </table>
   `;
-
-  cases.forEach(caseItem => {
-
-    const judul = caseItem.querySelector(".case-title")?.innerText || "";
-
-    const deskripsi = caseItem.querySelector(".case-desc")?.innerText || "-";
-    const upaya = caseItem.querySelector(".case-effort")?.innerText || "-";
-    const hasil = caseItem.querySelector(".case-result-text")?.innerText || "-";
-    const hikmah = caseItem.querySelector(".case-wisdom")?.innerText || "-";
-
-    html += `
-      <h3>${judul}</h3>
-
-      <table border="1" cellspacing="0" cellpadding="6" width="100%">
-        <tr style="background:#eee">
-          <th>Deskripsi</th>
-          <th>Upaya</th>
-          <th>Hasil</th>
-          <th>Hikmah</th>
-        </tr>
-        <tr>
-          <td>${deskripsi}</td>
-          <td>${upaya}</td>
-          <td>${hasil}</td>
-          <td>${hikmah}</td>
-        </tr>
-      </table>
-
-      <br><br>
-    `;
-  });
 
   html2pdf().from(html).set({
     margin: 10,
-    filename: "Studi_Kasus.pdf",
+    filename: "studi-kasus.pdf",
     html2canvas: { scale: 2 },
-    jsPDF: { unit: "mm", format: "a4", orientation: "landscape" }
+    jsPDF: { orientation: "landscape", unit: "mm", format: "a4" }
   }).save();
 }
-
