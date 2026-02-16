@@ -35,3 +35,6 @@ window.loginAdmin = async function () {
     console.log(err);
   }
 };
+if(!sessionStorage.getItem("adminLogin")){
+  window.location.href = "login.html";
+}
