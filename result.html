@@ -127,15 +127,10 @@ firebase.initializeApp(firebaseConfig);
 
     <div class="result-buttons">
 
-      <!-- ✔ fungsi harus downloadPDF() -->
-      <button class="btn-primary" onclick="downloadPDF()">
-  
-        Export PDF
-      </button>
-
-     <button onclick="window.location.href='review.html'" class="btn-primary">
-         Lihat Jawaban PG
-      </button>
+      <div class="result-actions">
+  <button onclick="exportPG()" class="btn-primary">Export Jawaban PG</button>
+  <button onclick="exportCase()" class="btn-secondary">Export Studi Kasus</button>
+</div>
 
   </div>
 </div>
