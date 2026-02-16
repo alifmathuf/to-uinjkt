@@ -74,13 +74,13 @@ function tampilkanReview(soal, jawaban){
 
 }
 
-      function exportCasePDF(){
+      function exportpgPDF(){
 
-  const element = document.getElementById("caseAnswerBox");
+  const element = document.getElementById("pgAnswerBox");
 
   const opt = {
     margin: 10,
-    filename: 'jawaban-studi-kasus.pdf',
+    filename: 'jawaban-pg.pdf',
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2 },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
