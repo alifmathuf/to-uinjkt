@@ -4,48 +4,66 @@ const db = firebase.database();
 
 const container = document.getElementById("historyList");
 
-db.ref(`exams/${user.id}`).once("value").then(snapshot => {
+db.ref(`exams/${user.id}`)
+.once("value")
+.then(snapshot => {
 
   if (!snapshot.exists()) {
-    container.innerHTML = "<p>Belum ada riwayat ujian.</p>";
+    container.innerHTML="<p>Belum ada riwayat ujian.</p>";
     return;
   }
 
-  const data = snapshot.val();
-  container.innerHTML = "";
+  const data = Object.values(snapshot.val());
 
-  const exams = Object.values(data);
+  // urut terbaru di atas
+  data.sort((a,b)=> (b.submittedAt||0) - (a.submittedAt||0));
 
-  // ✅ urutkan dari terbaru
-  exams.sort((a,b) => (b.submittedAt || 0) - (a.submittedAt || 0));
+  container.innerHTML="";
 
-  exams.forEach(exam => {
+  data.forEach(exam => {
 
-    // ✅ jangan abaikan nilai 0
-    if (exam.score == null || exam.total == null) return;
-    if (exam.total == 0) return;
+    if (!exam.score || !exam.total) return;
 
-    const nilai = Math.round((exam.score / exam.total) * 100);
+    const nilai = Math.round((exam.score/exam.total)*100);
+
+    const warna =
+      nilai>=75 ? "score-green" :
+      nilai>=50 ? "score-yellow" :
+      "score-red";
+
+    const badge =
+      nilai>=75
+      ? `<span class="badge badge-pass">LULUS</span>`
+      : `<span class="badge badge-fail">TIDAK</span>`;
 
     const tanggal = exam.submittedAt
       ? new Date(exam.submittedAt).toLocaleString()
       : "-";
 
     container.innerHTML += `
-  <div class="history-card">
-    <h4>${exam.mapel}</h4>
-    <div class="history-meta">${tanggal}</div>
-    <div class="history-score">${nilai}</div>
-    <div class="history-meta">
-      Benar ${exam.score} dari ${exam.total}
-    </div>
-  </div>
-`;
-  });
+      <div class="history-card">
 
-  // jika semua terfilter
-  if(container.innerHTML === ""){
-    container.innerHTML = "<p>Belum ada riwayat ujian.</p>";
-  }
+        <div class="history-head">
+          <div class="history-title">
+            ${exam.mapel || "Ujian"} - ${exam.paket || ""}
+          </div>
+          ${badge}
+        </div>
+
+        <div>Nilai:
+          <span class="${warna}">${nilai}</span>
+        </div>
+
+        <div class="history-meta">
+          Benar: ${exam.score} / ${exam.total}
+        </div>
+
+        <div class="history-meta">
+          ${tanggal}
+        </div>
+
+      </div>
+    `;
+  });
 
 });
