@@ -248,3 +248,77 @@ background:var(--gradient-primary);
   color:var(--text-muted);
   border-top:1px solid var(--border-soft);
 }
+
+
+/* ================= CARD SYSTEM ================= */
+
+.card-modern{
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .25s ease;
+}
+
+.card-modern:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.12);
+}
+
+/* ================= SCORE COLOR ================= */
+
+.score-green{ color:#22c55e; font-weight:700; }
+.score-yellow{ color:#f59e0b; font-weight:700; }
+.score-red{ color:#ef4444; font-weight:700; }
+
+/* ================= BADGE ================= */
+
+.badge{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.badge-pass{
+  background:#dcfce7;
+  color:#16a34a;
+}
+
+.badge-fail{
+  background:#fee2e2;
+  color:#dc2626;
+}
+
+/* ================= HISTORY CARD ================= */
+
+.history-card{
+  background: var(--bg-card);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+  transition: .25s;
+  border:1px solid rgba(0,0,0,.05);
+}
+
+.history-card:hover{
+  transform: translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.history-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+.history-title{
+  font-weight:600;
+}
+
+.history-meta{
+  font-size:13px;
+  opacity:.7;
+}
