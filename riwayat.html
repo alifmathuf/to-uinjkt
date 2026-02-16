@@ -32,29 +32,70 @@
 <body>
 
 <div class="layout">
+<div class="layout">
+
+  <!-- OVERLAY (untuk menutup sidebar di mobile) -->
+  <div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <div class="logo">TRYOUT</div>
+    <div class="app-title">Tryout PPG</div>
+
     <nav class="menu">
-      <a href="dashboard.html">Dashboard</a>
-      <a href="riwayat.html" class="active">Riwayat</a>
-      <a href="statistik.html">Statistik</a>
-      <a href="leaderboard.html">Leaderboard</a>
+
+      <a href="dashboard.html" class="active">
+        <i data-lucide="layout-dashboard" class="icon"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="admin.html">
+        <i data-lucide="settings" class="icon"></i>
+        <span>Admin Panel</span>
+      </a>
+
+      <a href="leaderboard.html">
+        <i data-lucide="trophy" class="icon"></i>
+        <span>Peringkat</span>
+      </a>
+
+      <a href="statistik.html">
+        <i data-lucide="bar-chart" class="icon"></i>
+        <span>Statistik</span>
+      </a>
+
+      <a href="riwayat.html">
+        <i data-lucide="history" class="icon"></i>
+        <span>Riwayat</span>
+      </a>
+
     </nav>
   </aside>
 
-  <!-- MAIN -->
-  <main class="main">
+  <!-- CONTENT -->
+  <main class="content">
 
+    <!-- TOPBAR -->
     <header class="topbar">
-      <button class="toggle" onclick="toggleSidebar()">☰</button>
-      <div class="user-area">
-        <span id="userInfo"></span>
-        <div id="avatar" class="avatar"></div>
+      <div class="topbar-left">
+        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+        <span class="app-title-desktop">Tryout PPG</span>
+      </div>
+
+      <div class="user-info">
+        <div class="user-text">
+          <div id="greeting"></div>
+          <strong id="userInfo"></strong>
+        </div>
+
+        <div class="avatar-wrap">
+          <div id="avatar" class="avatar"></div>
+
+          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
+            <i data-lucide="log-out" class="icon"></i>
+          </button>
+        </div>
       </div>
     </header>
-
     <section class="content">
       <h2>Riwayat Ujian</h2>
       <div id="historyList" class="history-container"></div>
