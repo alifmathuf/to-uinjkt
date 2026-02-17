@@ -10,6 +10,7 @@
 
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/riwayat.css">
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -32,8 +33,6 @@ firebase.initializeApp(firebaseConfig);
 
 <body>
 
-
-
 <div class="layout">
 
   <!-- OVERLAY (untuk menutup sidebar di mobile) -->
@@ -41,7 +40,6 @@ firebase.initializeApp(firebaseConfig);
 
   <!-- SIDEBAR -->
   <aside class="sidebar" id="sidebar">
-    <!-- TOMBOL CLOSE (Mobile Only) -->
     <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
       <i data-lucide="x"></i>
     </button>
@@ -49,7 +47,7 @@ firebase.initializeApp(firebaseConfig);
     <div class="app-title">Try Out PPG</div>
 
     <nav class="menu">
-      <a href="dashboard.html" class="active">
+      <a href="dashboard.html">
         <i data-lucide="layout-dashboard" class="icon"></i>
         <span>Dashboard</span>
       </a>
@@ -64,7 +62,7 @@ firebase.initializeApp(firebaseConfig);
         <span>Statistik</span>
       </a>
 
-      <a href="riwayat.html">
+      <a href="riwayat.html" class="active">
         <i data-lucide="history" class="icon"></i>
         <span>Riwayat</span>
       </a>
@@ -106,6 +104,7 @@ firebase.initializeApp(firebaseConfig);
         </div>
       </div>
     </header>
+
     <!-- CONTENT AREA -->
     <div class="content-area">
       
