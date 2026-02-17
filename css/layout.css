@@ -43,7 +43,7 @@ textarea:focus{
   border-right: 1px solid var(--border-soft);
   display: flex;
   flex-direction: column;
-  transition: var(--transition);
+  transition: transform 0.3s ease, visibility 0.3s ease;
   z-index: 1000;
   
   /* Posisi fixed untuk mobile */
@@ -57,97 +57,31 @@ textarea:focus{
   visibility: hidden;
 }
 
-/* Sidebar terbuka (mobile & desktop) */
-.sidebar.open,
-.sidebar.active {
+/* Sidebar terbuka */
+.sidebar.open {
   transform: translateX(0);
   visibility: visible;
 }
 
-/* Desktop: sidebar selalu terlihat */
-@media (min-width: 1025px) {
-  .sidebar {
-    position: relative;
-    transform: translateX(0);
-    visibility: visible;
-    height: auto;
-    min-height: 100vh;
-  }
-  
-  /* Overlay tidak perlu di desktop */
-  .sidebar-overlay {
-    display: none !important;
-  }
-}
-
-/* Mobile: overlay aktif saat sidebar terbuka */
-@media (max-width: 1024px) {
-  .sidebar.open + .sidebar-overlay,
-  .sidebar.active + .sidebar-overlay,
-  .sidebar-overlay.show {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
-/* Overlay luar sidebar */
+/* Overlay */
 .sidebar-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
-  z-index: 900;
+  z-index: 999;
   opacity: 0;
-  pointer-events: none;
-  transition: var(--transition);
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.sidebar-overlay.show {
+/* Overlay aktif saat sidebar terbuka */
+.sidebar-overlay.active {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
 
-.sidebar .app-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 32px;
-  color: var(--text-primary);
-}
-
-/* Toggle button untuk mobile */
-.sidebar-toggle {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 1100;
-  background: var(--primary);
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: var(--transition);
-}
-
-.sidebar-toggle:hover {
-  background: var(--primary-dark);
-  transform: scale(1.05);
-}
-
-/* Sembunyikan toggle di desktop */
-@media (min-width: 1025px) {
-  .sidebar-toggle {
-    display: none;
-  }
-}
-
-/* Close button di dalam sidebar (mobile) */
+/* Tombol close di sidebar (mobile only) */
 .sidebar-close {
   display: none;
   position: absolute;
@@ -156,11 +90,10 @@ textarea:focus{
   background: none;
   border: none;
   color: var(--text-secondary);
-  font-size: 20px;
   cursor: pointer;
-  padding: 4px;
-  border-radius: 4px;
-  transition: var(--transition);
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
 }
 
 .sidebar-close:hover {
@@ -168,11 +101,14 @@ textarea:focus{
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 1024px) {
-  .sidebar-close {
-    display: block;
-  }
+.sidebar .app-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--text-primary);
+  padding-right: 40px; /* Space untuk tombol close */
 }
+
 /* ===== MENU ===== */
 
 .menu a{
@@ -221,6 +157,7 @@ textarea:focus{
 .content{
   flex:1;
   padding:32px;
+  margin-left: 0; /* Default mobile: tidak ada margin */
 }
 
 
@@ -287,50 +224,94 @@ textarea:focus{
 /* ================= HAMBURGER ================= */
 
 .hamburger{
-  display:none;
+  display:none; /* Hidden di desktop */
   font-size:22px;
   cursor:pointer;
   color:var(--text-primary);
   background:none;
   border:none;
+  padding: 8px;
+  margin-right: 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.hamburger:hover {
+  background: var(--bg-hover);
 }
 
 
-/* ================= MOBILE ================= */
+/* ================= DESKTOP (1025px ke atas) ================= */
 
-@media(max-width:768px){
-
-  .layout{
-    flex-direction:column;
+@media (min-width: 1025px) {
+  .sidebar {
+    position: relative;
+    transform: translateX(0);
+    visibility: visible;
+    height: auto;
+    min-height: 100vh;
   }
-
-  .sidebar{
-    position:fixed;
-    left:-260px;
-    top:0;
-    height:100%;
-    box-shadow:var(--shadow-soft);
+  
+  .sidebar-overlay {
+    display: none !important;
   }
-
-  .sidebar.open{
-    left:0;
+  
+  .sidebar-close {
+    display: none !important;
   }
-
-  .sidebar.open ~ .sidebar-overlay{
-    opacity:1;
-    pointer-events:auto;
+  
+  .hamburger {
+    display: none !important;
   }
-
-  .hamburger{
-    display:block;
-    margin-bottom:20px;
+  
+  .content {
+    margin-left: 240px; /* Space untuk sidebar */
   }
+}
 
-  .app-title-desktop{
-    display:none;
+
+/* ================= MOBILE (1024px ke bawah) ================= */
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
   }
+  
+  .sidebar-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app-title-desktop {
+    display: none;
+  }
+  
+  .content {
+    padding: 20px;
+    width: 100%;
+  }
+}
 
-  .content{
-    padding:24px;
+
+/* ================= SMALL MOBILE (768px ke bawah) ================= */
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .user-info {
+    width: 100%;
+    justify-content: flex-end;
   }
 }
