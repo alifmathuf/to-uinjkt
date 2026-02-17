@@ -108,3 +108,21 @@ async function isAdmin(){
   return snap.exists();
 }
 
+function clearUserStorage() {
+  const user = Auth.getUser();
+  if (!user) return;
+
+  const keys = [
+    "pgAnswers",
+    "examEndTime",
+    "reviewData",
+    "reviewSoal",
+    "reviewJawaban",
+    "caseAnswers",
+    "caseResult"
+  ];
+
+  keys.forEach(k => {
+    localStorage.removeItem(`${k}_${user.id}`);
+  });
+}
