@@ -6,6 +6,7 @@ function getKey(key) {
   if (!user) return key;
   return `${key}_${user.id}`;
 }
+
 const caseState = JSON.parse(localStorage.getItem("examState"));
 if (!caseState) window.location.href = "../dashboard.html";
 
@@ -25,9 +26,10 @@ const steps = [
   "Hikmah / Pengalaman Berharga"
 ];
 
-let selectedTopic = localStorage.getItem("caseTopic");
-let currentStep = parseInt(localStorage.getItem("caseStep")) || 0;
-let answers = JSON.parse(localStorage.getItem("caseAnswers")) || [];
+// ✅ SUDAH PAKAI getKey
+let selectedTopic = localStorage.getItem(getKey("caseTopic"));
+let currentStep = parseInt(localStorage.getItem(getKey("caseStep"))) || 0;
+let answers = JSON.parse(localStorage.getItem(getKey("caseAnswers"))) || [];
 
 let duration = 30 * 60;
 let caseEndTime;
@@ -42,7 +44,7 @@ function initCase(){
 
   if(!selectedTopic){
     selectedTopic = topics[Math.floor(Math.random()*topics.length)];
-    localStorage.setItem("caseTopic", selectedTopic);
+    localStorage.setItem(getKey("caseTopic"), selectedTopic);
   }
 
   const topicEl = document.getElementById("caseTopic");
@@ -59,13 +61,13 @@ function initCase(){
 
 function startCaseTimer(){
 
-  const saved = localStorage.getItem("caseEndTime");
+  const saved = localStorage.getItem(getKey("caseEndTime"));
 
   if(saved){
     caseEndTime = parseInt(saved);
   } else {
     caseEndTime = Date.now() + duration*1000;
-    localStorage.setItem("caseEndTime", caseEndTime);
+    localStorage.setItem(getKey("caseEndTime"), caseEndTime);
   }
 
   timerInterval = setInterval(()=>{
@@ -182,10 +184,12 @@ function saveStep(){
   }
 
   answers[currentStep] = text;
-  localStorage.setItem("caseAnswers", JSON.stringify(answers));
+
+  // ✅ FIX STORAGE
+  localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
 
   currentStep++;
-  localStorage.setItem("caseStep", currentStep);
+  localStorage.setItem(getKey("caseStep"), currentStep);
 
   renderStep();
 }
@@ -207,14 +211,16 @@ function finishCase(){
     return acc + (txt ? txt.length : 0);
   },0);
 
-  localStorage.setItem("caseTotalWords", totalWords);
-  localStorage.setItem("caseTotalChars", totalChars);
+  // ✅ FIX STORAGE
+  localStorage.setItem(getKey("caseTotalWords"), totalWords);
+  localStorage.setItem(getKey("caseTotalChars"), totalChars);
 
-  localStorage.removeItem("caseStep");
-  localStorage.removeItem("caseEndTime");
+  localStorage.removeItem(getKey("caseStep"));
+  localStorage.removeItem(getKey("caseEndTime"));
 
   window.location.href = "result.html";
 }
+
 
 /* ================= FULLSCREEN PROTECTION ================= */
 
