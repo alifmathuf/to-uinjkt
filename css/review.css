@@ -1,199 +1,99 @@
-/* ================= REVIEW PAGE ================= */
+/* ================= LAYOUT - MOBILE FIRST ================= */
 
-.review-container {
-  max-width: 900px;              /* Diperkecil dari 1100px */
-  margin: 0 auto;                /* Hapus margin vertikal, gunakan padding */
-  padding: 16px;                 /* Lebih kecil untuk mobile */
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  padding: 12px;                    /* Padding kecil untuk mobile */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;          /* Mulai dari atas untuk scrolling */
+  overflow-x: hidden;
 }
 
-.review-container h2 {
-  margin-bottom: 20px;
-  color: var(--text-primary);
-  font-size: 1.25rem;            /* Ukuran font responsif */
-  line-height: 1.4;
+/* Card Container - Tidak terlalu lebar */
+.card.review-card {
+  width: 100%;
+  max-width: 800px;                 /* Dibatasi agar tidak terlalu lebar */
+  margin: 0 auto;
+  padding: 16px;                    /* Padding mobile */
+  box-sizing: border-box;
+  overflow: hidden;                 /* Mencegah overflow */
 }
 
 
-/* ===== TABLE WRAPPER - SCROLLING MOBILE ===== */
+/* ================= TABLE - SCROLLING VERTICAL MOBILE ================= */
 
 .table-wrapper {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: auto;                 /* Scroll horizontal jika perlu */
+  overflow-y: visible;
   -webkit-overflow-scrolling: touch;
-  border: 1px solid var(--border-soft);
+  margin: 16px 0;
   border-radius: var(--radius);
-  background: var(--bg-card);
-  box-shadow: var(--shadow-soft);
+  /* Hapus border di sini, biar di tabel */
 }
 
-/* Custom scrollbar untuk mobile/tablet */
-.table-wrapper::-webkit-scrollbar {
-  height: 6px;
-}
-
-.table-wrapper::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
-  border-radius: 3px;
-}
-
-.table-wrapper::-webkit-scrollbar-thumb {
-  background: var(--border-soft);
-  border-radius: 3px;
-}
-
-
-/* ===== TABLE ===== */
-
+/* Pastikan tabel tidak melebihi wrapper */
 .review-table {
   width: 100%;
-  min-width: 600px;              /* Minimum width agar kolom tidak terlalu sempit */
-  border-collapse: collapse;
-  background: var(--bg-card);
-}
-
-.review-table thead {
-  background: var(--bg-secondary);
-  color: var(--text-primary);
-}
-
-.review-table th {
-  padding: 12px 16px;
-  text-align: left;
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  border-bottom: 2px solid var(--border-soft);  /* Garis tebal header */
-  white-space: nowrap;           /* Mencegah header wrap */
-}
-
-.review-table td {
-  padding: 14px 16px;
-  border-bottom: 1px solid var(--border-soft);  /* Garis pemisah antar baris */
-  vertical-align: top;
-  color: var(--text-secondary);
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Garis pemisah antar kolom (opsional tipis) */
-.review-table th:not(:last-child),
-.review-table td:not(:last-child) {
-  border-right: 1px solid var(--border-soft);
-}
-
-.review-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.review-table tbody tr:hover {
-  background: var(--bg-hover);
-}
-
-/* Kolom specific widths */
-.review-table th:nth-child(1),
-.review-table td:nth-child(1) {
-  width: 60px;
-  text-align: center;
-}
-
-.review-table th:nth-child(4),
-.review-table td:nth-child(4) {
-  width: 100px;
-  text-align: center;
-  white-space: nowrap;
+  min-width: 100%;                  /* Minimum full width container */
+  table-layout: fixed;              /* Kolom tetap proporsional */
 }
 
 
-/* ===== STATUS ICON ===== */
-
-.correct {
-  color: var(--success);
-  font-size: 16px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.wrong {
-  color: var(--danger);
-  font-size: 16px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* Icon styling */
-.correct::before {
-  content: "✓";
-  font-size: 14px;
-}
-
-.wrong::before {
-  content: "✕";
-  font-size: 14px;
-}
-
-
-/* ===== BUTTON ===== */
+/* ================= FOOTER - TOMBOL SEJAJAR MOBILE ================= */
 
 .review-footer {
-  margin-top: 24px;
   display: flex;
-  flex-direction: column;        /* Stack di mobile */
-  gap: 12px;
+  flex-direction: row;              /* Sejajar horizontal di mobile */
+  justify-content: center;          /* Tengah */
+  align-items: center;
+  gap: 12px;                        /* Jarak antar tombol */
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-soft);
+  flex-wrap: wrap;                  /* Wrap jika tidak muat */
 }
 
 .review-footer button {
-  width: 100%;                   /* Full width di mobile */
-  padding: 12px 20px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-soft);
-  background: var(--bg-secondary);
-  color: var(--text-primary);
-  cursor: pointer;
-  transition: var(--transition);
+  flex: 1;                          /* Sama besar */
+  min-width: 120px;                 /* Minimum lebar tombol */
+  max-width: 200px;                 /* Maksimum lebar tombol */
+  padding: 12px 16px;
   font-size: 14px;
-  font-weight: 500;
-}
-
-.review-footer button:hover {
-  background: var(--bg-hover);
-}
-
-.review-footer button:active {
-  transform: translateY(1px);
+  white-space: nowrap;              /* Teks tidak wrap */
 }
 
 
 /* ================= TABLET (768px+) ================= */
 
 @media (min-width: 768px) {
-  .review-container {
+  .layout {
     padding: 24px;
-    margin: 24px auto;
+    align-items: center;            /* Tengah vertikal di tablet+ */
   }
 
-  .review-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 24px;
+  .card.review-card {
+    padding: 24px;
   }
 
-  .review-table th,
-  .review-table td {
-    padding: 16px;
+  .table-wrapper {
+    overflow-x: visible;            /* Tidak perlu scroll di tablet */
+    margin: 20px 0;
+  }
+
+  .review-table {
+    min-width: auto;                /* Kembali normal */
   }
 
   .review-footer {
-    flex-direction: row;         /* Horizontal di tablet+ */
-    justify-content: flex-end;
-    gap: 12px;
+    gap: 16px;
+    justify-content: flex-end;      /* Kanan di tablet+ */
   }
 
   .review-footer button {
-    width: auto;                 /* Auto width di tablet+ */
+    flex: 0 0 auto;                 /* Tidak flex, ukuran natural */
     min-width: 140px;
   }
 }
@@ -202,21 +102,12 @@
 /* ================= DESKTOP (1024px+) ================= */
 
 @media (min-width: 1024px) {
-  .review-container {
-    max-width: 900px;
-    margin: 40px auto;
+  .layout {
+    padding: 40px 24px;
+  }
+
+  .card.review-card {
+    max-width: 900px;               /* Sedikit lebih lebar di desktop */
     padding: 32px;
-  }
-
-  .table-wrapper {
-    border: none;                /* Hapus border di desktop, tabel sudah cukup */
-    box-shadow: none;
-    background: transparent;
-  }
-
-  .review-table {
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-soft);
   }
 }
