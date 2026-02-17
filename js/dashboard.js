@@ -152,7 +152,7 @@ async function startExam(){
   try {
 
     if(document.documentElement.requestFullscreen){
-      await document.documentElement.requestFullscreen();
+     document.documentElement.requestFullscreen().catch(()=>{});
     }
 
     if(state.tipe==="Pilihan Ganda"){
