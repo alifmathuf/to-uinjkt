@@ -70,8 +70,8 @@ db.ref(`exams/${user.id}`)
 function loadCaseResult(){
 
   const answers = JSON.parse(localStorage.getItem("caseAnswers")) || [];
-  const totalWords = localStorage.getItem("caseTotalWords") || 0;
-  const totalChars = localStorage.getItem("caseTotalChars") || 0;
+  const totalWords = parseInt(localStorage.getItem("caseTotalWords")) || 0;
+const totalChars = parseInt(localStorage.getItem("caseTotalChars")) || 0;
   const topic = localStorage.getItem("caseTopic") || "-";
 
   // tampilkan di result
