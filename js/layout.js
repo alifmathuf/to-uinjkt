@@ -1,149 +1,134 @@
 // ==========================================
-// SIDEBAR TOGGLE - FIXED VERSION
+// SIDEBAR TOGGLE - FINAL FIXED VERSION
 // ==========================================
 
 /**
- * Toggle sidebar untuk mobile dan desktop
- * Bisa buka dan tutup dengan benar
+ * Toggle sidebar (buka jika tertutup, tutup jika terbuka)
  */
 function toggleSidebar() {
-    const sidebar = document.querySelector(".sidebar");
+    const sidebar = document.getElementById("sidebar");
     const overlay = document.getElementById("sidebarOverlay");
     
     if (!sidebar) return;
     
-    // Toggle class 'open' untuk mobile
-    sidebar.classList.toggle("open");
+    const isOpen = sidebar.classList.contains("open");
     
-    // Toggle overlay jika ada
-    if (overlay) {
-        overlay.classList.toggle("active");
-    }
-    
-    // Toggle class 'active' untuk kompatibilitas dengan CSS lama
-    sidebar.classList.toggle("active");
-    
-    // Prevent body scroll saat sidebar terbuka di mobile
-    if (sidebar.classList.contains("open")) {
-        document.body.style.overflow = 'hidden';
+    if (isOpen) {
+        closeSidebar();
     } else {
-        document.body.style.overflow = '';
+        openSidebar();
     }
 }
 
 /**
- * Tutup sidebar (fungsi spesifik untuk tombol close)
- */
-function closeSidebar() {
-    const sidebar = document.querySelector(".sidebar");
-    const overlay = document.getElementById("sidebarOverlay");
-    
-    if (!sidebar) return;
-    
-    sidebar.classList.remove("open", "active");
-    
-    if (overlay) {
-        overlay.classList.remove("active");
-    }
-    
-    document.body.style.overflow = '';
-}
-
-/**
- * Buka sidebar (fungsi spesifik untuk tombol hamburger)
+ * Buka sidebar
  */
 function openSidebar() {
-    const sidebar = document.querySelector(".sidebar");
+    const sidebar = document.getElementById("sidebar");
     const overlay = document.getElementById("sidebarOverlay");
     
     if (!sidebar) return;
     
-    sidebar.classList.add("open", "active");
+    // Buka sidebar
+    sidebar.classList.add("open");
     
+    // Aktifkan overlay
     if (overlay) {
         overlay.classList.add("active");
     }
     
-    document.body.style.overflow = 'hidden';
+    // Prevent body scroll
+    document.body.style.overflow = "hidden";
+}
+
+/**
+ * Tutup sidebar
+ */
+function closeSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("sidebarOverlay");
+    
+    if (!sidebar) return;
+    
+    // Tutup sidebar
+    sidebar.classList.remove("open");
+    
+    // Nonaktifkan overlay
+    if (overlay) {
+        overlay.classList.remove("active");
+    }
+    
+    // Restore body scroll
+    document.body.style.overflow = "";
 }
 
 // ==========================================
 // INITIALIZATION
 // ==========================================
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Setup toggle button
-    const toggleBtn = document.getElementById("sidebarToggle") || document.querySelector(".toggle-sidebar");
-    if (toggleBtn) {
-        toggleBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            toggleSidebar();
-        });
-    }
-    
-    // Setup overlay click untuk menutup
+document.addEventListener("DOMContentLoaded", function() {
+    initSidebar();
+    initActiveMenu();
+    generateAvatar();
+});
+
+function initSidebar() {
+    // Overlay click untuk menutup
     const overlay = document.getElementById("sidebarOverlay");
     if (overlay) {
         overlay.addEventListener("click", closeSidebar);
     }
     
-    // Setup tombol close di dalam sidebar (jika ada)
-    const closeBtn = document.getElementById("sidebarClose") || document.querySelector(".sidebar-close");
-    if (closeBtn) {
-        closeBtn.addEventListener("click", function(e) {
-            e.stopPropagation();
-            closeSidebar();
-        });
-    }
-    
-    // Tutup sidebar saat klik link di mobile
+    // Tutup saat klik link di mobile
     const menuLinks = document.querySelectorAll(".sidebar .menu a");
-    menuLinks.forEach(link => {
+    menuLinks.forEach(function(link) {
         link.addEventListener("click", function() {
+            // Tutup sidebar hanya di mobile (<= 1024px)
             if (window.innerWidth <= 1024) {
                 closeSidebar();
             }
         });
     });
     
-    // Tutup sidebar saat tekan Escape
+    // Tutup dengan tombol Escape
     document.addEventListener("keydown", function(e) {
         if (e.key === "Escape") {
             closeSidebar();
         }
     });
     
-    // Handle resize window
-    handleResize();
-    window.addEventListener("resize", handleResize);
+    // Handle resize window dengan debounce
+    let resizeTimer;
+    window.addEventListener("resize", function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(handleWindowResize, 250);
+    });
     
-    // Init lainnya
-    initActiveMenu();
-    generateAvatar();
-});
+    // Initial check
+    handleWindowResize();
+}
 
 /**
  * Handle window resize
  */
-function handleResize() {
-    const sidebar = document.querySelector(".sidebar");
+function handleWindowResize() {
+    const sidebar = document.getElementById("sidebar");
     const overlay = document.getElementById("sidebarOverlay");
     
     if (!sidebar) return;
     
     if (window.innerWidth > 1024) {
-        // Desktop: collapsed mode, hapus open/active mobile
-        sidebar.classList.remove("open", "active");
-        sidebar.classList.add("collapsed");
-        
+        // Desktop: selalu buka, hapus overlay
+        sidebar.classList.remove("open");
         if (overlay) {
             overlay.classList.remove("active");
         }
-        
-        document.body.style.overflow = '';
+        document.body.style.overflow = "";
     } else {
-        // Mobile: hapus collapsed, siap untuk toggle
-        sidebar.classList.remove("collapsed");
+        // Mobile: pastikan tertutup saat resize dari desktop
+        if (!sidebar.classList.contains("open")) {
+            // Sudah tertutup, biarkan
+        }
     }
 }
 
@@ -153,14 +138,18 @@ function handleResize() {
 
 function initActiveMenu() {
     const links = document.querySelectorAll(".menu a");
-    const current = location.pathname.split("/").pop() || "index.html";
+    const currentPage = location.pathname.split("/").pop() || "dashboard.html";
     
-    links.forEach(link => {
+    links.forEach(function(link) {
         const href = link.getAttribute("href");
-        if (href === current || href === "./" + current) {
+        // Hapus semua active dulu
+        link.classList.remove("active");
+        
+        // Tambah active jika match
+        if (href === currentPage || 
+            (currentPage === "" && href === "dashboard.html") ||
+            (currentPage === "index.html" && href === "dashboard.html")) {
             link.classList.add("active");
-        } else {
-            link.classList.remove("active");
         }
     });
 }
