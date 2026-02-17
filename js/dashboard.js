@@ -135,7 +135,7 @@ function renderOptions(list,type){
 
 
 
-function startExam(){
+async function startExam(){
 
   if(!state.mapel || !state.paket || !state.tipe){
     alert("Lengkapi semua pilihan!");
@@ -145,10 +145,24 @@ function startExam(){
   localStorage.setItem("examState",
     JSON.stringify(state));
 
-  if(state.tipe==="Pilihan Ganda"){
-    window.location.href="pg.html";
-  } else {
-    window.location.href="studi-kasus.html";
+  if(!confirm("Ujian akan dimulai dalam mode fullscreen. Lanjutkan?")){
+    return;
+  }
+
+  try {
+
+    if(document.documentElement.requestFullscreen){
+      await document.documentElement.requestFullscreen();
+    }
+
+    if(state.tipe==="Pilihan Ganda"){
+      window.location.href="pg.html";
+    } else {
+      window.location.href="studi-kasus.html";
+    }
+
+  } catch (err){
+    alert("Browser menolak mode fullscreen.");
   }
 }
 
