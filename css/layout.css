@@ -36,8 +36,8 @@ textarea:focus{
 /* ================= SIDEBAR ================= */
 
 .sidebar {
-  width: 220px;                     /* Diperkecil dari 240px */
-  padding: 20px;                    /* Diperkecil dari 24px */
+  width: 180px;                     /* Diperkecil dari 240px */
+  padding: 19px;                    /* Diperkecil dari 24px */
   background: rgba(17, 24, 39, 0.96);
   backdrop-filter: blur(14px);
   border-right: 1px solid var(--border-soft);
