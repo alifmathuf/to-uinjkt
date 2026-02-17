@@ -1,84 +1,99 @@
-// Auth Protection
 Auth.protect();
 
 const user = Auth.getUser();
-const db = firebase.database();
-const container = document.getElementById("reviewList");
 
-db.ref(`exams/${user.id}`)
+if (!user) {
+  window.location.href = "dashboard.html";
+}
+
+// Ambil ujian terakhir dari Firebase
+database.ref(`exams/${user.id}`)
   .orderByChild("submittedAt")
+  .limitToLast(1)
   .once("value")
   .then(snapshot => {
 
     if (!snapshot.exists()) {
-      container.innerHTML = `
-        <div class="empty-state">
-          Belum ada riwayat ujian.
-        </div>`;
+      document.getElementById("reviewBody").innerHTML = `
+        <tr>
+          <td colspan="4" class="empty-state">
+            Belum ada data ujian.
+          </td>
+        </tr>`;
       return;
     }
 
-    const data = [];
-    snapshot.forEach(child => data.push(child.val()));
-    data.reverse();
+    // Ambil data ujian terakhir
+    const examData = Object.values(snapshot.val())[0];
+    const jawaban = examData.answers;
+    const mapel = examData.mapel;
+    const paket = examData.paket;
 
-    container.innerHTML = "";
-
-    data.forEach(exam => {
-      if (!exam.score || !exam.total) return;
-
-      const nilai = Math.round((exam.score / exam.total) * 100);
-
-      const scoreClass =
-        nilai >= 75 ? "score-green" :
-        nilai >= 60 ? "score-yellow" :
-        "score-red";
-
-      const badgeClass =
-        nilai >= 75 ? "badge-lulus" : "badge-tidak";
-
-      const badgeText =
-        nilai >= 75 ? "LULUS" : "TIDAK LULUS";
-
-      const tanggal = exam.submittedAt
-        ? new Date(exam.submittedAt).toLocaleString("id-ID", {
-            day: '2-digit',
-            month: 'short',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-          })
-        : "-";
-
-      container.innerHTML += `
-        <div class="review-card">
-          <div class="review-title">
-            ${exam.mapel || "Ujian"} 
-            <span class="paket">• ${exam.paket || "-"}</span>
-          </div>
-          
-          <div class="review-meta">
-            <span>✓ Benar: ${exam.score}/${exam.total}</span>
-            <span>🕐 ${tanggal}</span>
-          </div>
-
-          <div class="review-score ${scoreClass}">
-            ${nilai}
-          </div>
-
-          <div class="badge-status ${badgeClass}">
-            ${badgeText}
-          </div>
-        </div>
-      `;
-    });
+    // Ambil ulang soal dari file JSON
+    fetch(`paket/${mapel}/${paket}.json`)
+      .then(res => res.json())
+      .then(soalData => {
+        tampilkanReview(soalData.slice(0, jawaban.length), jawaban);
+      })
+      .catch(err => {
+        console.error("Error loading soal:", err);
+        document.getElementById("reviewBody").innerHTML = `
+          <tr>
+            <td colspan="4" class="empty-state">
+              Gagal memuat soal.
+            </td>
+          </tr>`;
+      });
 
   })
   .catch(err => {
-    console.error(err);
-    container.innerHTML = `
-      <div class="empty-state">
-        Gagal memuat riwayat.<br>
-        <small>Silakan refresh halaman</small>
-      </div>`;
+    console.error("Error loading exam:", err);
+    document.getElementById("reviewBody").innerHTML = `
+      <tr>
+        <td colspan="4" class="empty-state">
+          Gagal memuat data ujian.
+        </td>
+      </tr>`;
   });
+
+
+function tampilkanReview(soal, jawaban) {
+
+  const tbody = document.getElementById("reviewBody");
+  tbody.innerHTML = "";
+
+  soal.forEach((s, i) => {
+
+    const userAnswerIndex = jawaban[i];
+    const correctIndex = s.a;
+
+    const userAnswerText =
+      userAnswerIndex !== null && userAnswerIndex !== undefined
+        ? s.o[userAnswerIndex]
+        : "-";
+
+    const isCorrect = userAnswerIndex === correctIndex;
+
+    const statusIcon = isCorrect
+      ? `<span class="correct">✓</span>`
+      : `<span class="wrong">✗</span>`;
+
+    // Batasi panjang teks soal
+    let soalText = s.q;
+    if (soalText.length > 100) {
+      soalText = soalText.substring(0, 100) + "...";
+    }
+
+    const row = `
+      <tr>
+        <td class="col-no">${i + 1}</td>
+        <td class="col-soal" title="${s.q}">${soalText}</td>
+        <td class="col-jawaban">${userAnswerText}</td>
+        <td class="col-status">${statusIcon}</td>
+      </tr>
+    `;
+
+    tbody.innerHTML += row;
+
+  });
+}
