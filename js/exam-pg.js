@@ -283,18 +283,21 @@ async function submitExam(auto = false) {
     console.log("Firebase submit error:", err);
   }
 
-  localStorage.setItem("pgScore", score);
-  localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
-  localStorage.setItem("reviewJawaban", JSON.stringify(jawaban));
- 
+  
+ localStorage.setItem(getKey("pgScore"), score);
+localStorage.setItem(getKey("reviewSoal"), JSON.stringify(soalUjian));
+localStorage.setItem(getKey("reviewJawaban"), JSON.stringify(jawaban));
    // ================= BUILD REVIEW DATA =================
+let reviewData = [];
+
+soalUjian.forEach((s, i) => {
 let reviewData = [];
 
 soalUjian.forEach((s, i) => {
 
   reviewData.push({
     q: s.q,
-    options: s.o,          // opsi jawaban
+    options: s.o,
     user: jawaban[i] !== null 
       ? String.fromCharCode(65 + jawaban[i]) 
       : "-",
@@ -304,8 +307,7 @@ soalUjian.forEach((s, i) => {
 
 });
 
-// simpan untuk halaman result
-localStorage.setItem("reviewData", JSON.stringify(reviewData));
+localStorage.setItem(getKey("reviewData"), JSON.stringify(reviewData));
 
   localStorage.removeItem(getKey("examEndTime"));
 localStorage.removeItem(getKey("pgAnswers"));
