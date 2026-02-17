@@ -39,18 +39,14 @@ const database = firebase.database();
 <div class="layout">
 
   <!-- OVERLAY (untuk menutup sidebar di mobile) -->
-  <div id="sidebarOverlay" class="sidebar-overlay"></div>
+  <div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
   <!-- SIDEBAR -->
-  <aside class="sidebar" id="sidebar">
-    <!-- TOMBOL CLOSE (Mobile Only) -->
-    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
-      <i data-lucide="x"></i>
-    </button>
-    
-    <div class="app-title">Tryout PPG</div>
+  <aside class="sidebar">
+    <div class="app-title"></div>
 
     <nav class="menu">
+
       <a href="dashboard.html" class="active">
         <i data-lucide="layout-dashboard" class="icon"></i>
         <span>Dashboard</span>
@@ -71,12 +67,12 @@ const database = firebase.database();
         <span>Riwayat</span>
       </a>
 
-      <a href="result.html">
+        <a href="result.html" class="active">
         <i data-lucide="bar-chart-3"></i>
         <span>Result</span>
       </a>
 
-      <a href="review.html">
+  <a href="review.html">
         <i data-lucide="eye"></i>
         <span>Review</span>
       </a>
@@ -102,13 +98,16 @@ const database = firebase.database();
         <div class="avatar-wrap">
           <div id="avatar" class="avatar"></div>
 
-         
+          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
+            <i data-lucide="log-out" class="icon"></i>
+          </button>
         </div>
       </div>
     </header>
 
     <!-- STEPPER -->
     <div class="stepper">
+
       <div class="step active" data-step="1">
         <span class="dot"></span>
         <span class="label">Mapel</span>
