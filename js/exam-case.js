@@ -161,12 +161,14 @@ function updateButtons(){
   const saveBtn = document.getElementById("saveBtn");
   const finishBtn = document.getElementById("finishBtn");
 
+  // Tombol simpan aktif hanya sampai step 3 (index 0-2)
   if(saveBtn){
-    saveBtn.disabled = currentStep === steps.length - 1;
+    saveBtn.disabled = currentStep >= 3; // disable di step 4
   }
 
+  // Tombol selesai hanya muncul & enable di step 4 (index 3)
   if(finishBtn){
-    finishBtn.disabled = currentStep !== steps.length - 1;
+    finishBtn.disabled = currentStep !== 3; 
   }
 }
 
