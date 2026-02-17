@@ -1,0 +1,530 @@
+[
+  {
+    "q": "Seorang pengajar bahasa Arab menyampaikan materi tentang klasifikasi kata dalam bahasa Arab dengan tujuan untuk meningkatkan keimanan, ketakwaan, dan akhlak mulia peserta didik.\n\nSebagai mahasiswa, Anda diminta untuk menentukan rumusan tujuan pembelajaran ranah sikap yang paling sesuai dengan indikator tujuan.\n\nRumusan tujuan pembelajaran yang paling sesuai dengan indikator di atas adalah...",
+    "o": [
+      "Peserta didik dapat memahami perbedaan antara kata benda, kata kerja, dan kata sifat dalam bahasa Arab.",
+      "Peserta didik dapat meningkatkan kedisiplinan dan tanggung jawab dalam mempelajari materi klasifikasi kata dalam bahasa Arab.",
+      "Peserta didik dapat mempraktikkan penggunaan kata dalam kalimat dengan baik dan benar.",
+      "Peserta didik dapat meningkatkan keimanan dan ketakwaan melalui pemahaman tentang klasifikasi kata dalam bahasa Arab.",
+      "Peserta didik dapat mengidentifikasi perbedaan antara kalimat nominal dan kalimat verbal dalam bahasa Arab."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Seorang dosen mengajarkan materi tentang struktur jumlah fi‘liyyah (kalimat verba) dalam bahasa Arab.\n\nTujuannya adalah agar peserta didik mampu berpikir kritis dalam memahami dan menganalisis kalimat verba tersebut.\n\nSebagai mahasiswa, Anda diminta untuk menentukan rumusan tujuan pembelajaran ranah pengetahuan yang paling sesuai dengan indikator.\n\nRumusan tujuan pembelajaran yang paling sesuai adalah...",
+    "o": [
+      "Peserta didik dapat menghafal contoh kalimat fi‘liyyah yang diberikan oleh guru.",
+      "Peserta didik dapat menjelaskan struktur kalimat fi‘liyyah dan cara pembentukannya secara teori.",
+      "Peserta didik dapat menganalisis dan mengevaluasi kalimat fi‘liyyah dalam konteks komunikasi sehari-hari.",
+      "Peserta didik dapat membentuk kalimat fi‘liyyah berdasarkan contoh yang diberikan oleh guru.",
+      "Peserta didik dapat mengenali kata kerja dalam kalimat fi‘liyyah tanpa memperhatikan konteksnya."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru bahasa Arab mengajarkan materi tentang Fashahah, dengan tujuan agar peserta didik memiliki semangat gotong royong dalam belajar.\n\nSebagai mahasiswa, Anda diminta untuk menentukan rumusan tujuan pembelajaran ranah keterampilan yang paling sesuai dengan indikator ini.\n\nRumusan tujuan pembelajaran yang paling sesuai adalah...",
+    "o": [
+      "Peserta didik dapat berbicara dengan lancar dan fasih dalam bahasa Arab, meskipun tanpa memahami struktur kalimatnya.",
+      "Peserta didik dapat berlatih berbicara dalam bahasa Arab dengan teman sekelas untuk meningkatkan keterampilan berbicara secara berkelompok.",
+      "Peserta didik dapat menghafal definisi dari fashahah tanpa memperhatikan penerapannya dalam kehidupan sehari-hari.",
+      "Peserta didik dapat mempraktikkan pengucapan dan pengenalan kata dengan fasih dalam bahasa Arab melalui latihan individu.",
+      "Peserta didik dapat menggunakan bahasa Arab dengan benar tanpa berpartisipasi dalam diskusi atau kegiatan kelompok."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang pengajar menjelaskan materi tentang Ilmu Lughah dan ruang lingkupnya, dengan tujuan agar peserta didik memiliki sikap penerimaan terhadap tradisi.\n\nSebagai mahasiswa, Anda diminta untuk menentukan rumusan indikator tujuan pembelajaran ranah sikap yang paling sesuai dengan materi ini.\n\nRumusan indikator tujuan pembelajaran yang paling sesuai adalah...",
+    "o": [
+      "Peserta didik dapat mendefinisikan ruang lingkup ilmu lughah dan menerapkannya dalam kehidupan sehari-hari.",
+      "Peserta didik dapat memahami perbedaan antara ilmu lughah dan ilmu lainnya, serta menghargai berbagai tradisi bahasa Arab.",
+      "Peserta didik dapat mengidentifikasi bentuk-bentuk ilmu lughah dalam berbagai disiplin ilmu.",
+      "Peserta didik dapat berbicara tentang ilmu lughah tanpa menghargai konteks tradisi bahasa Arab.",
+      "Peserta didik dapat menunjukkan sikap positif terhadap pembelajaran bahasa Arab dengan mengabaikan tradisi lisan yang ada."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang dosen mengajarkan materi tentang konsep dan teori keterampilan reseptif, dengan tujuan agar peserta didik memiliki kemampuan berpikir dinamis dan inovatif.\n\nSebagai mahasiswa, Anda diminta untuk menentukan rumusan indikator tujuan pembelajaran ranah pengetahuan yang paling sesuai dengan materi tersebut.\n\nRumusan indikator tujuan pembelajaran yang paling sesuai adalah...",
+    "o": [
+      "Peserta didik dapat menjelaskan definisi keterampilan reseptif tanpa memberikan contoh yang relevan.",
+      "Peserta didik dapat mengidentifikasi berbagai teori keterampilan reseptif dan menjelaskan penerapannya dalam konteks pendidikan.",
+      "Peserta didik dapat menyebutkan teori keterampilan reseptif tanpa memahami hubungan antar teori tersebut.",
+      "Peserta didik dapat menganalisis keterampilan reseptif dalam bahasa Arab dan menghubungkannya dengan metode pembelajaran yang inovatif.",
+      "Peserta didik dapat menghafal teori keterampilan reseptif tanpa memahami penerapannya dalam situasi nyata."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Seorang guru merencanakan tujuan pembelajaran pada materi ilmu sharaf dengan pendekatan PBL, yang berfokus pada klasifikasi kata isim dan fi’il.\n\nSebagai mahasiswa, Anda diminta untuk menganalisis materi ajar berdasarkan struktur keilmuan pada perencanaan tujuan pembelajaran yang sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan tujuan pembelajaran berikut yang paling sesuai dengan perencanaan tujuan pembelajaran untuk materi klasifikasi kata isim dan fi’il dalam pendekatan PBL?",
+    "o": [
+      "Peserta didik dapat mengidentifikasi perbedaan antara kata kerja dan kata benda dalam bahasa Arab tanpa mempertimbangkan konteks.",
+      "Peserta didik dapat memahami konsep dasar ilmu sharaf dan menganalisis penggunaan kata isim dan fi’il dalam kalimat secara kritis dan reflektif.",
+      "Peserta didik dapat menghafal definisi kata isim dan fi’il tanpa melibatkan analisis praktis dalam konteks kehidupan sehari-hari.",
+      "Peserta didik dapat mendeskripsikan fungsi setiap kata dalam kalimat bahasa Arab tanpa menggunakan pendekatan berbasis masalah.",
+      "Peserta didik dapat menilai pentingnya pemahaman kata isim dan fi’il hanya dalam konteks teori bahasa Arab."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan tujuan pembelajaran pada materi ilmu nahwu dengan pendekatan PjBL, yang fokus pada struktur jumlah ismiyyah (kalimat nomina).\n\nSebagai mahasiswa, Anda diminta untuk menganalisis materi ajar berdasarkan struktur keilmuan pada pelaksanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan tujuan pembelajaran berikut yang paling sesuai dengan pelaksanaan tujuan pembelajaran untuk materi jumlah ismiyyah dengan pendekatan PjBL?",
+    "o": [
+      "Peserta didik dapat memahami konsep dasar jumlah ismiyyah dan mempraktikkannya dalam kalimat sederhana tanpa mempertimbangkan konteks.",
+      "Peserta didik dapat merancang dan mempresentasikan proyek yang menunjukkan penerapan struktur jumlah ismiyyah dalam kalimat kompleks secara kreatif dan kolaboratif.",
+      "Peserta didik dapat menghafal definisi jumlah ismiyyah tanpa memahami penggunaannya dalam berbagai situasi komunikasi.",
+      "Peserta didik dapat menjelaskan teori jumlah ismiyyah tanpa melibatkan keterampilan berkomunikasi dalam bahasa Arab.",
+      "Peserta didik dapat menyusun kalimat jumlah ismiyyah dengan benar tanpa menggunakan pendekatan berbasis proyek."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melakukan evaluasi pembelajaran pada materi ilmu balaghah dengan pendekatan DBL, yang menekankan pada pengembangan keterampilan berpikir kritis peserta didik.\n\nSebagai mahasiswa, Anda diminta untuk menguraikan materi balaghah dalam evaluasi tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan evaluasi tujuan pembelajaran berikut yang paling sesuai dengan pendekatan DBL pada materi ilmu balaghah?",
+    "o": [
+      "Peserta didik dapat mendeskripsikan struktur balaghah tanpa menerapkannya dalam konteks sastra Arab.",
+      "Peserta didik dapat mengevaluasi teks sastra Arab berdasarkan prinsip balaghah dan menjelaskan makna retoris dari setiap kalimat dengan kritis.",
+      "Peserta didik dapat menghafal definisi balaghah tanpa memperhatikan penggunaannya dalam karya sastra.",
+      "Peserta didik dapat mengidentifikasi unsur-unsur balaghah dalam teks tanpa mempertimbangkan konteks sejarah dan budaya.",
+      "Peserta didik dapat mendiskusikan teori balaghah tanpa mengaitkannya dengan keterampilan menulis dan berbicara dalam bahasa Arab."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru merencanakan materi ajar ilmu lughah dengan pendekatan TPACK (teknologi, pedagogi, konten), yang fokus pada kontribusi ilmu lughah dalam pembelajaran bahasa.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat untuk kontribusi ilmu lughah dalam perencanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai untuk perencanaan tujuan pembelajaran ilmu lughah dengan pendekatan TPACK?",
+    "o": [
+      "Peserta didik dapat menghafal teori-teori ilmu lughah tanpa menggunakan teknologi atau metode pedagogi inovatif.",
+      "Peserta didik dapat mempelajari ilmu lughah menggunakan aplikasi teknologi untuk memahami konteks linguistik dan penerapannya dalam pembelajaran bahasa.",
+      "Peserta didik dapat memahami kontribusi ilmu lughah dalam bahasa Arab tanpa mempertimbangkan metode pengajaran yang efektif.",
+      "Peserta didik dapat menggunakan pengetahuan linguistik untuk menjelaskan struktur kalimat dalam bahasa Arab tanpa keterlibatan teknologi.",
+      "Peserta didik dapat mempelajari ilmu lughah secara pasif tanpa menggunakan alat atau sumber teknologi dalam pembelajaran."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan materi ajar keterampilan bahasa dengan pendekatan DL (direct learning), yang fokus pada keterampilan produktif.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat tentang keterampilan produktif dalam pelaksanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan pelaksanaan tujuan pembelajaran keterampilan produktif dengan pendekatan DL?",
+    "o": [
+      "Peserta didik dapat mempelajari keterampilan berbicara dan menulis dalam bahasa Arab tanpa mempertimbangkan penguatan keterampilan melalui latihan langsung.",
+      "Peserta didik dapat mengembangkan keterampilan berbicara dan menulis dengan melakukan kegiatan praktis yang terstruktur dalam bahasa Arab, langsung dan intensif.",
+      "Peserta didik dapat memahami teori keterampilan produktif dalam bahasa Arab tanpa melibatkan latihan berbicara atau menulis.",
+      "Peserta didik dapat menghafal kosakata bahasa Arab tanpa mengintegrasikannya dalam kegiatan berbicara atau menulis.",
+      "Peserta didik dapat melakukan latihan berbicara dalam bahasa Arab tanpa memperhatikan struktur kalimat yang benar."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan materi ajar pembelajaran bahasa secara logis dengan model pelayanan konseling.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar tentang teori-teori pemerolehan bahasa dalam mengevaluasi tujuan pembelajaran yang sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan tujuan pembelajaran mengenai teori-teori pemerolehan bahasa dalam model pelayanan konseling?",
+    "o": [
+      "Peserta didik dapat memahami teori pemerolehan bahasa dengan melakukan kegiatan berbicara dan menulis secara terstruktur dalam bahasa asing.",
+      "Peserta didik dapat mengidentifikasi teori pemerolehan bahasa dan menghubungkannya dengan konteks sosial melalui bimbingan konseling.",
+      "Peserta didik dapat menghafal teori pemerolehan bahasa tanpa memahami penerapannya dalam kehidupan sehari-hari.",
+      "Peserta didik dapat menjelaskan teori pemerolehan bahasa tanpa melibatkan keterampilan berbicara dan mendengarkan dalam bahasa Arab.",
+      "Peserta didik dapat mempelajari teori pemerolehan bahasa tanpa memperhatikan karakteristik individual masing-masing peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan program penguatan profil pelajar Pancasila (P5) secara logis.\n\nSebagai mahasiswa, Anda diminta untuk menentukan pengembangan materi ajar nilai-nilai P5 dalam merencanakan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan pengembangan materi ajar berikut yang paling sesuai untuk tujuan pembelajaran nilai-nilai P5?",
+    "o": [
+      "Peserta didik dapat memahami nilai-nilai Pancasila dan menerapkannya secara praktis dalam kehidupan sehari-hari tanpa melibatkan diskusi kelompok.",
+      "Peserta didik dapat mendiskusikan dan menerapkan nilai-nilai Pancasila melalui proyek-proyek berbasis masalah yang relevan dengan kehidupan mereka.",
+      "Peserta didik dapat menghafal nilai-nilai Pancasila tanpa melakukan refleksi pribadi atau sosial terkait implementasinya.",
+      "Peserta didik dapat menjelaskan nilai-nilai Pancasila tanpa keterlibatan langsung dalam tindakan sosial.",
+      "Peserta didik dapat memahami nilai-nilai Pancasila hanya dalam konteks sejarah tanpa memperhatikan relevansi saat ini."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan program penguatan profil pelajar rahmatan lil alamin (PPRA) secara logis.\n\nSebagai mahasiswa, Anda diminta untuk menentukan pengembangan materi ajar nilai-nilai PPRA dalam melaksanakan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan pengembangan materi ajar berikut yang paling sesuai untuk tujuan pembelajaran nilai-nilai PPRA?",
+    "o": [
+      "Peserta didik dapat memahami nilai-nilai rahmatan lil alamin dan menerapkannya dalam kehidupan sehari-hari tanpa melibatkan diskusi atau refleksi pribadi.",
+      "Peserta didik dapat mengaplikasikan nilai-nilai rahmatan lil alamin dalam konteks sosial melalui berbagai kegiatan praktis dan proyek berbasis masalah.",
+      "Peserta didik dapat menghafal nilai-nilai rahmatan lil alamin tanpa melibatkan interaksi dengan teman sebaya atau masyarakat.",
+      "Peserta didik dapat memahami nilai-nilai rahmatan lil alamin hanya dalam konteks teori tanpa menerapkannya dalam kehidupan nyata.",
+      "Peserta didik dapat menjelaskan nilai-nilai rahmatan lil alamin tanpa mempraktikkannya dalam konteks interaksi sosial."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan materi ajar tentang implementasi nilai-nilai moderasi beragama secara logis.\n\nSebagai mahasiswa, Anda diminta untuk menentukan pengembangan materi ajar mengenai nilai-nilai Islam sebagai agama moderat atau wasathiyah yang tepat sesuai dengan implementasi moderasi beragama dalam mengevaluasi tujuan pembelajaran yang sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan pengembangan materi ajar berikut yang paling sesuai dengan tujuan pembelajaran moderasi beragama dalam konteks Islam sebagai agama moderat?",
+    "o": [
+      "Peserta didik dapat memahami konsep moderasi beragama tanpa melibatkan penerapan nilai-nilai tersebut dalam kehidupan sosial mereka.",
+      "Peserta didik dapat mengidentifikasi nilai-nilai moderasi beragama dan menerapkannya dalam kehidupan sehari-hari dengan menghormati perbedaan.",
+      "Peserta didik dapat menghafal definisi moderasi beragama tanpa mempraktekkannya dalam interaksi sosial.",
+      "Peserta didik dapat menjelaskan nilai-nilai moderasi beragama tanpa memahami dampaknya dalam kehidupan sosial.",
+      "Peserta didik dapat memahami konsep moderasi beragama tanpa melakukan kegiatan refleksi diri terhadap nilai-nilai tersebut."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru membahas alasan implementasi nilai-nilai moderasi beragama di kelas.\n\nSebagai mahasiswa, Anda diminta untuk menilai pengembangan materi ajar Islam sebagai agama moderat atau wasathiyah dengan alasan yang tepat sesuai dengan implementasi moderasi beragama.\n\nManakah dari alasan berikut yang paling tepat untuk mengembangkan materi ajar nilai-nilai Islam sebagai agama moderat dalam pembelajaran moderasi beragama?",
+    "o": [
+      "Peserta didik dapat memahami nilai-nilai Islam secara ekstrem tanpa menghormati perbedaan keyakinan dan pandangan.",
+      "Peserta didik dapat menghargai perbedaan pendapat dalam Islam sebagai bagian dari kemanusiaan dan perdamaian antarumat beragama.",
+      "Peserta didik dapat menghafal pandangan ekstrem dalam Islam tanpa memperhatikan konteks sosial dan budaya masyarakat.",
+      "Peserta didik dapat memahami Islam hanya dari perspektif satu kelompok tanpa mempertimbangkan pandangan lain yang moderat.",
+      "Peserta didik dapat memahami ajaran Islam hanya dalam konteks teoritis tanpa melibatkan praktek nyata dalam kehidupan sehari-hari."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran materi Mizan Sharfi sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis masalah yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran berbasis masalah untuk materi Mizan Sharfi?",
+    "o": [
+      "Peserta didik dapat menghafal aturan-aturan mizan sharfi tanpa mengaitkannya dengan masalah nyata dalam kalimat bahasa Arab.",
+      "Peserta didik dapat menganalisis kesalahan dalam penggunaan mizan sharfi dalam kalimat bahasa Arab melalui studi kasus yang relevan.",
+      "Peserta didik dapat mempelajari mizan sharfi hanya dalam bentuk teori tanpa mempraktikkannya dalam kalimat.",
+      "Peserta didik dapat menggunakan mizan sharfi dalam kalimat bahasa Arab tanpa melibatkan solusi berbasis masalah yang konkret.",
+      "Peserta didik dapat menjelaskan teori mizan sharfi tanpa mengaitkannya dengan situasi pembelajaran yang praktis dan berbasis masalah."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Pengembangan Jumlah Ismiyyah sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis masalah yang sesuai dengan pengetahuan pedagogik.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran berbasis masalah untuk materi Pengembangan Jumlah Ismiyyah?",
+    "o": [
+      "Peserta didik dapat mempelajari jumlah ismiyyah melalui ceramah tanpa melibatkan masalah kontekstual.",
+      "Peserta didik dapat menganalisis penggunaan jumlah ismiyyah dalam berbagai konteks kalimat melalui studi kasus berbasis masalah.",
+      "Peserta didik hanya menghafal aturan jumlah ismiyyah tanpa terlibat dalam problem solving terkait materi tersebut.",
+      "Peserta didik dapat mempraktikkan penggunaan jumlah ismiyyah tanpa memahami penerapannya dalam situasi kehidupan nyata.",
+      "Peserta didik dapat menghafal teori jumlah ismiyyah tanpa keterlibatan dalam proses diskusi atau pemecahan masalah."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Ilmu Ma’ani sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis masalah yang sesuai dengan pengetahuan teknologi.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran berbasis masalah untuk materi Ilmu Ma’ani dengan menggunakan pengetahuan teknologi?",
+    "o": [
+      "Peserta didik dapat belajar teori Ilmu Ma’ani dengan membaca buku teks tanpa menggunakan teknologi pembelajaran.",
+      "Peserta didik dapat mengidentifikasi makna dalam teks Arab menggunakan perangkat lunak analisis bahasa untuk mendalami Ilmu Ma’ani.",
+      "Peserta didik hanya menghafal definisi Ilmu Ma’ani tanpa memanfaatkan teknologi pembelajaran interaktif.",
+      "Peserta didik dapat mendiskusikan teori Ilmu Ma’ani tanpa menggunakan alat digital atau teknologi dalam proses pembelajaran.",
+      "Peserta didik dapat menganalisis Ilmu Ma’ani hanya dengan mengerjakan soal-soal tertulis tanpa penerapan teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Bahasa Arab di Antara Rumpun Semit sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis perbedaan individu yang sesuai dengan materi pembelajaran tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis perbedaan individu untuk materi Bahasa Arab di Antara Rumpun Semit?",
+    "o": [
+      "Peserta didik dapat belajar tentang rumpun Semit tanpa memperhatikan perbedaan kemampuan bahasa mereka.",
+      "Peserta didik dapat memahami hubungan bahasa Arab dengan rumpun Semit melalui materi yang disesuaikan dengan tingkat pemahaman dan kemampuan masing-masing individu.",
+      "Peserta didik belajar tentang bahasa Arab tanpa memperhatikan latar belakang bahasa asli mereka.",
+      "Peserta didik dapat menghafal kata-kata Arab tanpa mempertimbangkan kesulitan atau perbedaan dalam latar belakang bahasa mereka.",
+      "Peserta didik belajar tentang rumpun Semit melalui ceramah tanpa memberikan perhatian pada perbedaan individu dalam pemahaman materi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Keterampilan Interaktif sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis perbedaan individu yang sesuai dengan pengetahuan pedagogik.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis perbedaan individu untuk materi Keterampilan Interaktif?",
+    "o": [
+      "Peserta didik dapat mengembangkan keterampilan interaktif tanpa memperhatikan perbedaan gaya belajar dan kemampuan mereka.",
+      "Peserta didik dapat berlatih keterampilan interaktif dengan teknik yang berbeda sesuai dengan gaya belajar dan kemampuan individu masing-masing.",
+      "Peserta didik belajar keterampilan interaktif tanpa ada penyesuaian dengan perbedaan kemampuan individu dalam hal interaksi.",
+      "Peserta didik dapat melakukan keterampilan interaktif dalam kegiatan kelompok tanpa memperhatikan perbedaan kemampuan peserta didik.",
+      "Peserta didik hanya diberikan instruksi untuk mengembangkan keterampilan interaktif tanpa mempertimbangkan karakteristik dan kemampuan mereka."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Keterampilan Mediatif sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis perbedaan individu yang sesuai dengan pengetahuan teknologi.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis perbedaan individu untuk materi Keterampilan Mediatif dengan memanfaatkan teknologi?",
+    "o": [
+      "Peserta didik belajar keterampilan mediatif melalui ceramah tanpa menggunakan teknologi.",
+      "Peserta didik dapat mempelajari keterampilan mediatif melalui perangkat lunak interaktif yang disesuaikan dengan kemampuan dan gaya belajar individu mereka.",
+      "Peserta didik hanya menghafal teori-teori keterampilan mediatif tanpa melibatkan teknologi atau penyesuaian gaya belajar.",
+      "Peserta didik bekerja dalam kelompok besar tanpa mempertimbangkan perbedaan kemampuan mereka dalam memanfaatkan teknologi untuk keterampilan mediatif.",
+      "Peserta didik hanya diberi tugas tertulis untuk mengembangkan keterampilan mediatif tanpa penerapan teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi tahap-tahap pemerolehan bahasa sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis pembelajaran mendalam yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran mendalam untuk materi tahap-tahap pemerolehan bahasa?",
+    "o": [
+      "Peserta didik hanya menghafal tahap-tahap pemerolehan bahasa tanpa memahami proses-proses yang terlibat dalam pemerolehan bahasa.",
+      "Peserta didik diberikan kesempatan untuk menjelajahi dan menganalisis tahap-tahap pemerolehan bahasa dengan refleksi mendalam dan diskusi kelompok.",
+      "Peserta didik belajar tahap-tahap pemerolehan bahasa hanya melalui ceramah tanpa keterlibatan aktif dalam proses pembelajaran.",
+      "Peserta didik diberikan materi pemerolehan bahasa secara terpisah tanpa menghubungkannya dengan konteks kehidupan nyata.",
+      "Peserta didik menghafal teori tentang pemerolehan bahasa tanpa melakukan aktivitas yang mendalam untuk memahami tahap-tahap tersebut."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi bahasa Arab sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis pembelajaran mendalam yang sesuai dengan pengetahuan pedagogi.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran mendalam untuk materi pembelajaran bahasa Arab dengan memperhatikan pengetahuan pedagogi?",
+    "o": [
+      "Peserta didik hanya mempelajari teori bahasa Arab tanpa keterlibatan aktif dalam konteks kehidupan sehari-hari.",
+      "Peserta didik diberikan kesempatan untuk memecahkan masalah bahasa Arab dalam konteks budaya, sejarah, dan aplikasinya dalam kehidupan nyata.",
+      "Peserta didik menghafal kosakata bahasa Arab tanpa penjelasan kontekstual tentang penggunaannya dalam masyarakat.",
+      "Peserta didik hanya mengerjakan latihan bahasa Arab tanpa mendiskusikan makna atau aplikasi praktis dari materi tersebut.",
+      "Peserta didik belajar bahasa Arab hanya melalui tugas individu tanpa kolaborasi atau diskusi kelompok."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi implementasi pendidikan karakter atau pendidikan nilai sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis pembelajaran mendalam yang sesuai dengan pengetahuan teknologi.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran mendalam untuk materi implementasi pendidikan karakter dengan memanfaatkan teknologi?",
+    "o": [
+      "Peserta didik belajar pendidikan karakter hanya melalui ceramah dan diskusi tanpa menggunakan teknologi.",
+      "Peserta didik dapat mendalami pendidikan karakter melalui platform e-learning yang mendukung diskusi mendalam dan analisis nilai-nilai karakter secara interaktif.",
+      "Peserta didik hanya mempelajari teori pendidikan karakter tanpa penggunaan teknologi dalam proses pembelajaran.",
+      "Peserta didik diberikan materi pendidikan karakter melalui pembelajaran tatap muka tanpa alat teknologi yang dapat memperdalam pemahaman mereka.",
+      "Peserta didik belajar pendidikan karakter melalui materi cetak tanpa melibatkan teknologi atau interaksi mendalam dengan materi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi implementasi moderasi beragama di Indonesia sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis TPACK yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis TPACK untuk materi implementasi moderasi beragama?",
+    "o": [
+      "Peserta didik belajar moderasi beragama hanya melalui bacaan teks tanpa menggunakan teknologi atau perangkat digital.",
+      "Peserta didik dapat mendalami konsep moderasi beragama dengan menggunakan video, diskusi online, dan aplikasi interaktif yang memperkuat pemahaman mereka.",
+      "Peserta didik hanya mempelajari teori tentang moderasi beragama tanpa melibatkan teknologi atau perangkat digital dalam proses pembelajaran.",
+      "Peserta didik belajar moderasi beragama melalui ceramah tanpa memanfaatkan teknologi untuk mendalami materi secara lebih luas.",
+      "Peserta didik diberikan latihan moderasi beragama secara tertulis tanpa penerapan teknologi dalam memfasilitasi diskusi atau pembelajaran."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru merencanakan pembelajaran materi Ashwat (Fonologi) dengan pendekatan DL (direct learning), yang menekankan pada pengenalan bunyi bahasa secara langsung.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat untuk pengenalan bunyi bahasa dalam perencanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan perencanaan tujuan pembelajaran Ashwat dengan pendekatan DL?",
+    "o": [
+      "Peserta didik dapat memahami teori fonologi tanpa melakukan latihan pengucapan bunyi.",
+      "Peserta didik dapat mengidentifikasi dan menirukan bunyi-bunyi bahasa Arab secara langsung melalui latihan intensif.",
+      "Peserta didik dapat menjelaskan struktur bahasa Arab tanpa mempraktikkan pengucapan bunyinya.",
+      "Peserta didik dapat menghafal nama-nama huruf hijaiyah tanpa memperhatikan cara pengucapannya.",
+      "Peserta didik dapat memahami perbedaan bunyi bahasa Arab dan bahasa lain tanpa melakukan latihan mendengar."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan pembelajaran materi Mufradat (Kosakata) dengan pendekatan PjBL (project-based learning), yang fokus pada pengembangan kreativitas dan kolaborasi.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat tentang pengayaan kosakata dalam pelaksanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan pelaksanaan tujuan pembelajaran Mufradat dengan pendekatan PjBL?",
+    "o": [
+      "Peserta didik dapat menghafal kosakata baru tanpa menggunakan teknologi atau metode kolaboratif.",
+      "Peserta didik dapat membuat proyek kamus tematik bergambar melalui kerja kelompok untuk memperkaya kosakata bahasa Arab.",
+      "Peserta didik dapat memahami makna kata tanpa melakukan kegiatan kreatif atau proyek kelompok.",
+      "Peserta didik dapat menggunakan kosakata dalam kalimat tanpa terlibat dalam kegiatan berbasis proyek.",
+      "Peserta didik belajar kosakata melalui ceramah tanpa menggunakan alat bantu visual atau kolaborasi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru merencanakan pembelajaran materi Qawaid (Tata Bahasa) dengan pendekatan DBL (discovery-based learning), yang menekankan pada kemampuan peserta didik menemukan sendiri konsep tata bahasa.\n\nSebagai mahasiswa, Anda diminta untuk menguraikan materi Qawaid dalam perencanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan uraian materi berikut yang paling sesuai dengan pendekatan DBL pada materi Qawaid?",
+    "o": [
+      "Peserta didik dapat menghafal aturan tata bahasa Arab tanpa memahami penggunaannya.",
+      "Peserta didik dapat menemukan dan merumuskan aturan tata bahasa Arab sendiri melalui analisis contoh-contoh kalimat yang diberikan.",
+      "Peserta didik dapat memahami aturan tata bahasa Arab melalui penjelasan langsung dari guru.",
+      "Peserta didik dapat mengidentifikasi kesalahan tata bahasa tanpa memahami konsep dasar tata bahasa tersebut.",
+      "Peserta didik dapat menggunakan bahasa Arab tanpa mempertimbangkan struktur tata bahasa yang benar."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan pembelajaran materi Maharah Istima’ (Keterampilan Mendengar) dengan pendekatan TPACK (teknologi, pedagogi, konten), yang fokus pada peningkatan keterampilan mendengar dengan bantuan media audio-visual.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat tentang keterampilan mendengar dalam pelaksanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan pelaksanaan tujuan pembelajaran Maharah Istima’ dengan pendekatan TPACK?",
+    "o": [
+      "Peserta didik dapat mendengarkan teks bahasa Arab tanpa menggunakan bantuan media audio-visual.",
+      "Peserta didik dapat mendengarkan materi bahasa Arab melalui media audio-visual interaktif untuk meningkatkan pemahaman dan keterampilan mendengar.",
+      "Peserta didik dapat memahami teks Arab tanpa menggunakan teknologi audio-visual.",
+      "Peserta didik dapat mendengar cerita bahasa Arab tanpa melakukan analisis atau diskusi tentang cerita tersebut.",
+      "Peserta didik mendengar kosakata bahasa Arab melalui rekaman audio tanpa melibatkan teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru merencanakan pembelajaran materi Maharah Kalam (Keterampilan Berbicara) dengan pendekatan DL (direct learning), yang fokus pada keterampilan produktif secara langsung.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat tentang keterampilan produktif dalam perencanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan perencanaan tujuan pembelajaran Maharah Kalam dengan pendekatan DL?",
+    "o": [
+      "Peserta didik dapat berbicara bahasa Arab tanpa melakukan latihan langsung dalam konteks komunikasi.",
+      "Peserta didik dapat melakukan praktik berbicara langsung melalui simulasi dialog dan bermain peran untuk meningkatkan keterampilan produktif.",
+      "Peserta didik dapat memahami konsep keterampilan berbicara tanpa terlibat dalam praktik langsung.",
+      "Peserta didik dapat menghafal frasa bahasa Arab tanpa menggunakannya dalam percakapan nyata.",
+      "Peserta didik dapat berbicara bahasa Arab tanpa memperhatikan pengucapan yang benar."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru merencanakan pembelajaran materi Maharah Qira’ah (Keterampilan Membaca) dengan pendekatan PjBL (project-based learning), yang fokus pada keterampilan produktif dan kolaboratif.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat tentang keterampilan produktif dan kolaboratif dalam perencanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan perencanaan tujuan pembelajaran Maharah Qira’ah dengan pendekatan PjBL?",
+    "o": [
+      "Peserta didik dapat membaca teks Arab tanpa melakukan analisis atau proyek berbasis kelompok.",
+      "Peserta didik dapat menyusun proyek presentasi berdasarkan hasil membaca teks Arab untuk meningkatkan keterampilan membaca secara kolaboratif.",
+      "Peserta didik dapat membaca teks Arab tanpa memahami konteks sosial budaya dari teks tersebut.",
+      "Peserta didik dapat menghafal kosakata dari teks membaca tanpa menggunakannya dalam proyek.",
+      "Peserta didik membaca teks Arab tanpa melakukan diskusi kelompok."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melaksanakan pembelajaran materi Maharah Kitabah (Keterampilan Menulis) dengan pendekatan DBL (discovery-based learning), yang fokus pada keterampilan produktif dan berpikir kritis.\n\nSebagai mahasiswa, Anda diminta untuk menentukan alur materi ajar yang tepat tentang keterampilan produktif dan berpikir kritis dalam pelaksanaan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan alur materi ajar berikut yang paling sesuai dengan pelaksanaan tujuan pembelajaran Maharah Kitabah dengan pendekatan DBL?",
+    "o": [
+      "Peserta didik dapat menulis teks Arab tanpa melakukan analisis atau penelitian.",
+      "Peserta didik dapat menemukan konsep penulisan teks Arab melalui analisis dokumen otentik dan menyusun karangan secara mandiri.",
+      "Peserta didik dapat menyalin teks Arab tanpa memahami struktur penulisan yang benar.",
+      "Peserta didik dapat menghafal aturan penulisan tanpa menerapkannya dalam karangan.",
+      "Peserta didik menulis teks Arab tanpa melibatkan kemampuan berpikir kritis."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru merencanakan program penguatan profil pelajar Pancasila (P5) secara logis pada pembelajaran bahasa Arab.\n\nSebagai mahasiswa, Anda diminta untuk menentukan pengembangan materi ajar nilai-nilai P5 dalam merencanakan tujuan pembelajaran sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan pengembangan materi ajar berikut yang paling sesuai untuk tujuan pembelajaran nilai-nilai P5?",
+    "o": [
+      "Peserta didik dapat memahami nilai-nilai Pancasila tanpa dikaitkan dengan konteks pembelajaran bahasa Arab.",
+      "Peserta didik dapat mendiskusikan dan mengimplementasikan nilai-nilai Pancasila dalam proyek kelompok berbahasa Arab yang relevan.",
+      "Peserta didik dapat menghafal nilai-nilai Pancasila tanpa melakukan kegiatan aplikasi dalam situasi nyata.",
+      "Peserta didik dapat menjelaskan nilai-nilai Pancasila tanpa melibatkan keterampilan bahasa Arab.",
+      "Peserta didik dapat memahami nilai-nilai Pancasila tanpa melakukan refleksi sosial."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru merencanakan materi ajar implementasi nilai-nilai moderasi beragama.\n\nSebagai mahasiswa, Anda diminta untuk menentukan pengembangan materi ajar mengenai nilai-nilai Islam sebagai agama moderat atau wasathiyah yang tepat sesuai dengan implementasi moderasi beragama dalam merencanakan tujuan pembelajaran yang sesuai dengan karakteristik peserta didik.\n\nManakah dari rumusan pengembangan materi ajar berikut yang paling sesuai dengan tujuan pembelajaran moderasi beragama?",
+    "o": [
+      "Peserta didik dapat memahami konsep moderasi beragama tanpa mengaitkannya dengan kehidupan sosial.",
+      "Peserta didik dapat mendalami konsep moderasi beragama dalam teks Arab untuk menerapkan nilai-nilai toleransi dan menghormati perbedaan.",
+      "Peserta didik dapat menghafal definisi moderasi beragama tanpa melakukan analisis konteks.",
+      "Peserta didik dapat menjelaskan nilai-nilai moderasi beragama tanpa terlibat dalam kegiatan diskusi.",
+      "Peserta didik dapat memahami konsep moderasi beragama tanpa keterlibatan aktif dalam refleksi diri."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru membahas alasan implementasi nilai-nilai moderasi beragama di kelas bahasa Arab.\n\nSebagai mahasiswa, Anda diminta untuk menilai pengembangan materi ajar Islam sebagai agama moderat atau wasathiyah dengan alasan yang tepat sesuai dengan implementasi moderasi beragama.\n\nManakah dari alasan berikut yang paling tepat untuk mengembangkan materi ajar nilai-nilai Islam sebagai agama moderat dalam pembelajaran bahasa Arab?",
+    "o": [
+      "Peserta didik dapat memahami nilai-nilai Islam ekstrem tanpa menghormati perbedaan.",
+      "Peserta didik dapat menghargai perbedaan pendapat dalam teks Arab sebagai bagian dari kekayaan keilmuan Islam dan kerukunan.",
+      "Peserta didik dapat menghafal pandangan ekstrem tanpa memperhatikan konteks sosial.",
+      "Peserta didik dapat memahami Islam dari satu perspektif tanpa mempertimbangkan pandangan lain.",
+      "Peserta didik dapat memahami ajaran Islam tanpa keterlibatan praktek dalam kehidupan sehari-hari."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Struktur Kalimat Nominal dan Verbal sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis proyek (PjBL) yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan PjBL untuk materi Struktur Kalimat Nominal dan Verbal?",
+    "o": [
+      "Peserta didik dapat menghafal definisi kalimat nominal dan verbal tanpa membuat proyek.",
+      "Peserta didik dapat membuat video edukasi yang menjelaskan perbedaan dan penggunaan kalimat nominal dan verbal dalam situasi nyata.",
+      "Peserta didik dapat mempelajari teori struktur kalimat melalui ceramah tanpa mengerjakan proyek.",
+      "Peserta didik dapat menggunakan kalimat dalam percakapan tanpa memahami struktur proyek.",
+      "Peserta didik hanya mendengarkan penjelasan guru tanpa terlibat dalam pembuatan proyek."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Jenis-jenis Kata (Isim, Fi'il, Huruf) sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis masalah (PBL) yang sesuai dengan karakteristik peserta didik.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan PBL untuk materi Jenis-jenis Kata?",
+    "o": [
+      "Peserta didik dapat menghafal jenis-jenis kata tanpa melakukan analisis kasus.",
+      "Peserta didik dapat menganalisis dan mengoreksi kesalahan penggunaan jenis kata dalam teks Arab otentik yang disajikan oleh guru.",
+      "Peserta didik dapat mempelajari jenis kata melalui ceramah tanpa keterlibatan dalam pemecahan masalah.",
+      "Peserta didik dapat menyusun kalimat tanpa mempertimbangkan masalah kontekstual dari penggunaan kata.",
+      "Peserta didik hanya mendengarkan penjelasan tentang jenis-jenis kata tanpa keterlibatan aktif."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Balaghah (Retorika) sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis teknologi (TPACK) yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan TPACK untuk materi Balaghah?",
+    "o": [
+      "Peserta didik belajar Balaghah hanya dengan membaca buku teks tanpa alat teknologi.",
+      "Peserta didik dapat menganalisis gaya bahasa (Balaghah) dalam puisi Arab menggunakan alat bantu perangkat lunak analisis teks.",
+      "Peserta didik hanya menghafal definisi Balaghah tanpa menggunakan teknologi pembelajaran.",
+      "Peserta didik dapat mendiskusikan teori Balaghah tanpa menggunakan media digital.",
+      "Peserta didik menganalisis teks sastra tanpa bantuan teknologi audio-visual."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Sastra Arab sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis perbedaan individu yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis perbedaan individu untuk materi Sastra Arab?",
+    "o": [
+      "Peserta didik dapat belajar sastra Arab tanpa mempertimbangkan minat atau kemampuan bahasa mereka.",
+      "Peserta didik dapat memilih dan menganalisis karya sastra Arab yang sesuai dengan tingkat kemampuan dan minat individu mereka.",
+      "Peserta didik belajar sastra Arab melalui ceramah tanpa ada penyesuaian dengan minat individu.",
+      "Peserta didik menghafal puisi Arab tanpa memperhatikan kesulitan pemahaman individu.",
+      "Peserta didik menganalisis sastra Arab tanpa memperhatikan karakteristik individual masing-masing peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Keterampilan Membaca (Qira'ah) sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis perbedaan individu yang sesuai dengan pengetahuan pedagogik.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis perbedaan individu untuk materi Keterampilan Membaca?",
+    "o": [
+      "Peserta didik dapat meningkatkan keterampilan membaca tanpa memperhatikan perbedaan kecepatan baca mereka.",
+      "Peserta didik dapat menggunakan teks bacaan dengan tingkat kesulitan yang berbeda sesuai dengan kemampuan membaca masing-masing individu.",
+      "Peserta didik belajar membaca tanpa ada penyesuaian dengan gaya belajar individu.",
+      "Peserta didik membaca teks Arab dalam kelompok tanpa memperhatikan perbedaan kemampuan baca peserta didik.",
+      "Peserta didik hanya diberikan instruksi umum untuk membaca tanpa mempertimbangkan karakteristik individual."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Keterampilan Menulis (Kitabah) sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis perbedaan individu yang sesuai dengan pengetahuan teknologi.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis perbedaan individu untuk materi Keterampilan Menulis dengan memanfaatkan teknologi?",
+    "o": [
+      "Peserta didik belajar keterampilan menulis melalui metode konvensional tanpa teknologi.",
+      "Peserta didik dapat mempelajari keterampilan menulis melalui aplikasi edukasi yang disesuaikan dengan tingkat kemampuan dan gaya belajar individu.",
+      "Peserta didik hanya menghafal kaidah menulis tanpa melibatkan teknologi.",
+      "Peserta didik bekerja dalam kelompok tanpa memanfaatkan teknologi untuk mendukung penulisan individu.",
+      "Peserta didik hanya diberi tugas menulis di buku tanpa penerapan teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Metode Pembelajaran Bahasa Arab sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis pembelajaran mendalam yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran mendalam untuk materi Metode Pembelajaran Bahasa Arab?",
+    "o": [
+      "Peserta didik hanya menghafal definisi metode tanpa memahami penerapannya.",
+      "Peserta didik dapat menganalisis, membandingkan, dan mempraktikkan berbagai metode pembelajaran bahasa Arab melalui refleksi dan simulasi.",
+      "Peserta didik belajar metode melalui ceramah tanpa keterlibatan aktif dalam simulasi.",
+      "Peserta didik mempelajari metode secara terpisah tanpa menghubungkannya dengan konteks kelas.",
+      "Peserta didik menghafal keunggulan metode tanpa melakukan aktivitas mendalam."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Media Pembelajaran Bahasa Arab sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis pembelajaran mendalam yang sesuai dengan pengetahuan pedagogi.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran mendalam untuk materi Media Pembelajaran Bahasa Arab?",
+    "o": [
+      "Peserta didik hanya mempelajari jenis media tanpa keterlibatan dalam pembuatannya.",
+      "Peserta didik diberikan kesempatan untuk merancang dan memproduksi media pembelajaran bahasa Arab yang inovatif untuk memecahkan masalah pembelajaran.",
+      "Peserta didik menghafal definisi media tanpa penjelasan fungsional penggunaannya.",
+      "Peserta didik hanya mengerjakan tugas tentang media tanpa mendiskusikan aplikasi praktisnya.",
+      "Peserta didik belajar tentang media hanya melalui tugas individu tanpa kolaborasi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Evaluasi Pembelajaran Bahasa Arab sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis pembelajaran mendalam yang sesuai dengan pengetahuan teknologi.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan pembelajaran mendalam untuk materi Evaluasi Pembelajaran Bahasa Arab dengan memanfaatkan teknologi?",
+    "o": [
+      "Peserta didik belajar evaluasi hanya melalui teori tanpa menggunakan teknologi.",
+      "Peserta didik dapat mendalami teknik evaluasi dengan menggunakan platform berbasis AI untuk analisis data hasil belajar secara mendalam.",
+      "Peserta didik hanya mempelajari jenis evaluasi tanpa penggunaan teknologi.",
+      "Peserta didik diberikan materi evaluasi melalui pembelajaran konvensional tanpa teknologi.",
+      "Peserta didik belajar evaluasi melalui materi cetak tanpa melibatkan interaksi teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Pendidikan Nilai sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis TPACK yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis TPACK untuk materi Pendidikan Nilai?",
+    "o": [
+      "Peserta didik belajar pendidikan nilai hanya melalui bacaan tanpa menggunakan teknologi.",
+      "Peserta didik dapat mendalami konsep nilai dengan menggunakan video dokumenter, diskusi online, dan aplikasi interaktif.",
+      "Peserta didik hanya mempelajari teori pendidikan nilai tanpa melibatkan teknologi.",
+      "Peserta didik belajar pendidikan nilai melalui ceramah tanpa memanfaatkan teknologi.",
+      "Peserta didik diberikan latihan pendidikan nilai secara tertulis tanpa penerapan teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menerapkan pembelajaran dengan materi Metode Pembelajaran Bahasa Arab (PBL) sesuai dengan struktur keilmuan.\n\nSebagai mahasiswa, Anda diminta untuk memilih rancangan pembelajaran berbasis TPACK yang sesuai dengan materi tersebut.\n\nManakah dari rancangan pembelajaran berikut yang paling sesuai dengan pendekatan berbasis TPACK untuk materi Metode Pembelajaran Bahasa Arab (PBL)?",
+    "o": [
+      "Peserta didik belajar metode PBL hanya melalui bacaan teks tanpa menggunakan teknologi.",
+      "Peserta didik dapat mendalami metode PBL dengan menggunakan video simulasi, diskusi online, dan aplikasi interaktif yang memperkuat pemahaman.",
+      "Peserta didik hanya mempelajari teori tentang PBL tanpa melibatkan teknologi.",
+      "Peserta didik belajar PBL melalui ceramah tanpa memanfaatkan teknologi.",
+      "Peserta didik diberikan tugas terkait PBL secara tertulis tanpa penerapan teknologi dalam diskusi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan deskripsi masalah guru dalam mengintegrasikan teknologi digital dan AI dalam pembelajaran Bahasa Arab. Mahasiswa diharapkan dapat mengidentifikasi solusi yang tepat untuk menilai kemampuan guru profesional dalam menggunakan teknologi pembelajaran.\n\nManakah pernyataan yang paling tepat untuk menilai kemampuan guru tersebut?",
+    "o": [
+      "Menilai kemampuan guru dalam menggunakan teknologi hanya untuk mempercepat pengajaran.",
+      "Menilai kemampuan guru dalam mengintegrasikan teknologi digital dan AI untuk memperkaya materi pembelajaran bahasa Arab dan meningkatkan keterampilan peserta didik.",
+      "Mengabaikan penggunaan teknologi dan fokus pada metode pengajaran tradisional.",
+      "Menilai kemampuan guru berdasarkan penguasaan teori bahasa Arab saja tanpa mempertimbangkan penggunaan teknologi.",
+      "Mengutamakan pengajaran langsung tanpa mempertimbangkan perkembangan teknologi dalam pembelajaran."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Disajikan narasi kemampuan guru dalam penggunaan AI untuk pembelajaran bahasa Arab yang bermakna, mahasiswa dapat mengidentifikasi masalah dan solusinya secara ilmiah untuk menunjukkan jati diri sebagai guru profesional sesuai dengan karakteristik dan gaya belajar peserta didik Gen Z dan Alpha.\n\nMasalah yang mungkin dihadapi dalam pembelajaran ini adalah:",
+    "o": [
+      "Ketergantungan pada teknologi yang mengurangi interaksi langsung dengan siswa.",
+      "Kesulitan dalam menyesuaikan pembelajaran dengan gaya belajar Gen Z dan Alpha, yang cenderung lebih interaktif dan berbasis teknologi.",
+      "Terlalu banyak penggunaan teknologi yang mengabaikan aspek sosial dan emosional dalam pembelajaran.",
+      "Mengabaikan aspek kreatif dalam penggunaan AI dan teknologi untuk mendukung pembelajaran.",
+      "Semua jawaban di atas adalah masalah yang perlu diperhatikan."
+    ],
+    "a": 4
+  }
+]
