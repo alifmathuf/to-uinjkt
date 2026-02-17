@@ -280,6 +280,26 @@ async function submitExam(auto = false) {
   localStorage.setItem("pgScore", score);
   localStorage.setItem("reviewSoal", JSON.stringify(soalUjian));
   localStorage.setItem("reviewJawaban", JSON.stringify(jawaban));
+ 
+   // ================= BUILD REVIEW DATA =================
+let reviewData = [];
+
+soalUjian.forEach((s, i) => {
+
+  reviewData.push({
+    q: s.q,
+    options: s.o,          // opsi jawaban
+    user: jawaban[i] !== null 
+      ? String.fromCharCode(65 + jawaban[i]) 
+      : "-",
+    correct: String.fromCharCode(65 + s.a),
+    explanation: s.pembahasan || ""
+  });
+
+});
+
+// simpan untuk halaman result
+localStorage.setItem("reviewData", JSON.stringify(reviewData));
 
   localStorage.removeItem("examEndTime");
   localStorage.removeItem("pgAnswers");
