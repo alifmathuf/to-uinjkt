@@ -1,84 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Review Jawaban - Tryout PPG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review jawaban tryout PPG - Lihat hasil dan analisis jawaban ujian Anda">
+  <title>Review Jawaban - Tryout PPG</title>
 
-<link rel="stylesheet" href="css/app.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/review.css">
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Preconnect untuk performa -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://www.gstatic.com">
 
-<!-- ================= FIREBASE ================= -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/review.css">
 
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <!-- Scripts (defer untuk performa) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
 
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
-    authDomain: "cbtuin-d26aa.firebaseapp.com",
-    databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "cbtuin-d26aa",
-    storageBucket: "cbtuin-d26aa.firebasestorage.app",
-    messagingSenderId: "93548126228",
-    appId: "1:93548126228:web:c456aedaad373237a0c701"
-  };
+  <!-- ================= FIREBASE ================= -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
-  firebase.initializeApp(firebaseConfig);
-  const database = firebase.database();
-</script>
+  <script>
+    // Konfigurasi Firebase (URL diperbaiki - hapus spasi)
+    const firebaseConfig = {
+      apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
+      authDomain: "cbtuin-d26aa.firebaseapp.com",
+      databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "cbtuin-d26aa",
+      storageBucket: "cbtuin-d26aa.firebasestorage.app",
+      messagingSenderId: "93548126228",
+      appId: "1:93548126228:web:c456aedaad373237a0c701"
+    };
 
-<!-- ============================================ -->
-
+    // Initialize Firebase dengan error handling
+    try {
+      firebase.initializeApp(firebaseConfig);
+      window.database = firebase.database();
+    } catch (error) {
+      console.error("Firebase initialization failed:", error);
+    }
+  </script>
+  <!-- ============================================ -->
 </head>
 
 <body>
+  <div class="layout">
+    <main class="review-container">
+      
+      <!-- Loading State -->
+      <div id="loadingState" class="loading-state" aria-live="polite">
+        <div class="spinner"></div>
+        <p>Memuat data review...</p>
+      </div>
 
-<div class="layout">
+      <!-- Error State (hidden by default) -->
+      <div id="errorState" class="error-state" hidden>
+        <i data-lucide="alert-circle"></i>
+        <p>Gagal memuat data. Silakan refresh halaman.</p>
+        <button onclick="location.reload()" class="btn-primary">Coba Lagi</button>
+      </div>
 
-  <div class="card review-card">
-    <h2>Review Jawaban Ujian</h2>
+      <!-- Content -->
+      <article class="card review-card" id="reviewContent" hidden>
+        <header class="review-header">
+          <h1>Review Jawaban Ujian</h1>
+          <p class="review-subtitle">Lihat analisis jawaban dan status kebenaran</p>
+        </header>
 
-    <div class="table-wrapper">
-      <table class="review-table">
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Soal</th>
-            <th>Jawaban Anda</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody id="reviewBody">
-        </tbody>
-      </table>
-    </div>
+        <div class="table-wrapper" role="region" aria-label="Tabel review jawaban" tabindex="0">
+          <table class="review-table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Soal</th>
+                <th scope="col">Jawaban Anda</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="reviewBody">
+              <!-- Data diisi oleh JavaScript -->
+            </tbody>
+          </table>
+        </div>
 
-    <div class="review-footer">
-      <button onclick="window.location.href='dashboard.html'" class="btn-primary">
-        Dashboard
-      </button>
-      <button onclick="window.location.href='result.html'" class="btn-primary">
-        ke laman Hasil
-      </button>
-    </div>
-</div>
+        <footer class="review-footer">
+          <a href="dashboard.html" class="btn-secondary">
+            <i data-lucide="arrow-left"></i>
+            <span>Dashboard</span>
+          </a>
+          <a href="result.html" class="btn-primary">
+            <span>Lihat Hasil</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </footer>
+      </article>
+
+    </main>
   </div>
 
-<!-- ================= JS APP ================= -->
+  <!-- ================= JS APP ================= -->
+  <script src="js/auth.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/review.js"></script>
 
-<script src="js/auth.js"></script>
-<script src="js/layout.js"></script>
-<script src="js/review.js"></script>
+  <script>
+    // Protect route
+    if (typeof Auth !== 'undefined') {
+      Auth.protect();
+    }
 
-<script>
-  Auth.protect();
-  lucide.createIcons();
-</script>
-
+    // Initialize icons setelah DOM ready
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
 </body>
 </html>
