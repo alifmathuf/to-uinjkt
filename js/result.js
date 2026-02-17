@@ -1,7 +1,11 @@
 /* ===============================
    RESULT ENGINE - FINAL STABLE
 ================================ */
-
+function getKey(key) {
+  const user = Auth.getUser();
+  if (!user) return key;
+  return `${key}_${user.id}`;
+}
 Auth.protect();
 
 const user = Auth.getUser();
