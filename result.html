@@ -43,44 +43,53 @@ firebase.initializeApp(firebaseConfig);
 
 
 
-<!-- LAYOUT -->
 <div class="layout">
-<!-- OVERLAY -->
-<div id="sidebarOverlay" class="sidebar-overlay"></div>
 
-<!-- SIDEBAR -->
-<aside class="sidebar" id="sidebar">
-  
-  <!-- CLOSE BUTTON (Mobile) -->
-  <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
-    <i data-lucide="x"></i>
-  </button>
-  
-  <div class="app-title">TRY OUT PPG</div>
+  <!-- OVERLAY (untuk menutup sidebar di mobile) -->
+  <div id="sidebarOverlay" class="sidebar-overlay"></div>
 
-  <nav class="menu">
-    <a href="dashboard.html">
-      <i data-lucide="layout-dashboard"></i>
-      <span>Dashboard</span>
-    </a>
-    <a href="result.html" class="active">
-      <i data-lucide="bar-chart-3"></i>
-      <span>Result</span>
-    </a>
-    <a href="review.html">
-      <i data-lucide="eye"></i>
-      <span>Review</span>
-    </a>
-    <a href="leaderboard.html">
-      <i data-lucide="trophy"></i>
-      <span>Leaderboard</span>
-    </a>
-    <a href="#" onclick="Auth.logout(); return false;">
-      <i data-lucide="log-out"></i>
-      <span>Logout</span>
-    </a>
-  </nav>
-</aside>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <!-- TOMBOL CLOSE (Mobile Only) -->
+    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
+      <i data-lucide="x"></i>
+    </button>
+    
+    <div class="app-title">HASIL UJIAN</div>
+
+    <nav class="menu">
+      <a href="dashboard.html" class="active">
+        <i data-lucide="layout-dashboard" class="icon"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="leaderboard.html">
+        <i data-lucide="trophy" class="icon"></i>
+        <span>Peringkat</span>
+      </a>
+
+      <a href="statistik.html">
+        <i data-lucide="bar-chart" class="icon"></i>
+        <span>Statistik</span>
+      </a>
+
+      <a href="riwayat.html">
+        <i data-lucide="history" class="icon"></i>
+        <span>Riwayat</span>
+      </a>
+
+      <a href="result.html">
+        <i data-lucide="bar-chart-3"></i>
+        <span>Result</span>
+      </a>
+
+      <a href="review.html">
+        <i data-lucide="eye"></i>
+        <span>Review</span>
+      </a>
+    </nav>
+  </aside>
+
   <!-- CONTENT -->
   <main class="content">
 
@@ -88,7 +97,7 @@ firebase.initializeApp(firebaseConfig);
     <header class="topbar">
       <div class="topbar-left">
         <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
-        <span class="app-title-desktop">Hasil Ujian</span>
+        <span class="app-title-desktop">HASIL UJIAN</span>
       </div>
 
       <div class="user-info">
@@ -96,7 +105,14 @@ firebase.initializeApp(firebaseConfig);
           <div id="greeting"></div>
           <strong id="userInfo"></strong>
         </div>
-        <div id="avatar" class="avatar"></div>
+
+        <div class="avatar-wrap">
+          <div id="avatar" class="avatar"></div>
+
+          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
+            <i data-lucide="log-out" class="icon"></i>
+          </button>
+        </div>
       </div>
     </header>
 
