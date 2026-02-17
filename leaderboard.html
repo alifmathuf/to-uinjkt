@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leaderboard - Tryout PPG</title>
+<title>Leaderboard - Tryout UP</title>
 
 <link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
 <link rel="shortcut icon" href="assets/logo-uin.svg">
@@ -45,22 +45,36 @@
 
   <!-- SIDEBAR -->
   <aside class="sidebar" id="sidebar">
-    
     <!-- TOMBOL CLOSE (Mobile Only) -->
     <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
       <i data-lucide="x"></i>
     </button>
     
-    <div class="app-title">TRY OUT PPG</div>
+    <div class="app-title">Tryout PPG</div>
 
     <nav class="menu">
       <a href="dashboard.html">
-        <i data-lucide="layout-dashboard"></i>
+        <i data-lucide="layout-dashboard" class="icon"></i>
         <span>Dashboard</span>
       </a>
 
+      <a href="leaderboard.html" class="active">
+        <i data-lucide="trophy" class="icon"></i>
+        <span>Peringkat</span>
+      </a>
+
+      <a href="statistik.html">
+        <i data-lucide="bar-chart" class="icon"></i>
+        <span>Statistik</span>
+      </a>
+
+      <a href="riwayat.html">
+        <i data-lucide="history" class="icon"></i>
+        <span>Riwayat</span>
+      </a>
+
       <a href="result.html">
-        <i data-lucide="bar-chart-2"></i>
+        <i data-lucide="bar-chart-3"></i>
         <span>Result</span>
       </a>
 
@@ -68,18 +82,7 @@
         <i data-lucide="eye"></i>
         <span>Review</span>
       </a>
-
-      <a href="leaderboard.html" class="active">
-        <i data-lucide="trophy"></i>
-        <span>Peringkat</span>
-      </a>
-
-      <a href="#" onclick="Auth.logout(); return false;">
-        <i data-lucide="log-out"></i>
-        <span>Logout</span>
-      </a>
     </nav>
-    
   </aside>
 
   <!-- CONTENT -->
@@ -91,8 +94,23 @@
         <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
         <span class="app-title-desktop">Leaderboard</span>
       </div>
+
+      <div class="user-info">
+        <div class="user-text">
+          <div id="greeting"></div>
+          <strong id="userInfo"></strong>
+        </div>
+
+        <div class="avatar-wrap">
+          <div id="avatar" class="avatar"></div>
+
+          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
+            <i data-lucide="log-out" class="icon"></i>
+          </button>
+        </div>
+      </div>
     </header>
-     
+
     <!-- MAIN CONTENT -->
     <div class="card leaderboard-card">
       <h2>🏆 Leaderboard Top 10</h2>
@@ -115,9 +133,11 @@
     </div>
 
   </main>
-
 </div>
 
+<footer class="footer">
+  © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
+</footer>
 
 <!-- ================= JS APP ================= -->
 <script src="js/auth.js"></script>
