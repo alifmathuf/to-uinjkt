@@ -187,56 +187,10 @@ function exportPG(){
 }
 
 
-/* ================= EXPORT PDF STUDI KASUS ================= */
+/* ================= STUDI KASUS ================= */
 
-function exportCase(){
+document.getElementById("totalWords").innerText =
+  totalWords;
 
-  const caseData = JSON.parse(localStorage.getItem("caseResult"));
-
-  if(!caseData){
-    alert("Data studi kasus tidak ditemukan");
-    return;
-  }
-
-  const { jsPDF } = window.jspdf;
-  const doc = new jsPDF();
-  let y = 15;
-
-  doc.setFontSize(16);
-  doc.text("HASIL STUDI KASUS", 14, y);
-  y += 10;
-
-  doc.setFontSize(12);
-  doc.text(caseData.title, 14, y);
-  y += 8;
-
-  const sections = [
-    { label:"Deskripsi", text: caseData.deskripsi },
-    { label:"Upaya", text: caseData.upaya },
-    { label:"Hasil", text: caseData.hasil },
-    { label:"Hikmah", text: caseData.hikmah }
-  ];
-
-  doc.setFontSize(10);
-
-  sections.forEach(sec => {
-
-    if(!sec.text) return;
-
-    if(y > 260){
-      doc.addPage();
-      y = 15;
-    }
-
-    doc.setFont(undefined,'bold');
-    doc.text(sec.label, 14, y);
-    y += 6;
-
-    doc.setFont(undefined,'normal');
-    const split = doc.splitTextToSize(sec.text, 180);
-    doc.text(split, 14, y);
-    y += split.length * 6 + 4;
-  });
-
-  doc.save("hasil-studi-kasus.pdf");
-}
+document.getElementById("totalChars").innerText =
+  totalChars;
