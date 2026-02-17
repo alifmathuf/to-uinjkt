@@ -2,7 +2,11 @@
    PG EXAM ENGINE - STABLE FIREBASE VERSION
    CLEAN PREMIUM FIXED
 ================================ */
-
+function getKey(key) {
+  const user = Auth.getUser();
+  if (!user) return key;
+  return `${key}_${user.id}`;
+}
 const examState = JSON.parse(localStorage.getItem("examState"));
 if (!examState) window.location.href = "dashboard.html";
 
