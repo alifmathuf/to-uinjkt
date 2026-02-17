@@ -114,6 +114,32 @@
     <!-- MAIN CONTENT -->
     <div class="card leaderboard-card">
       <h2>🏆 Peringkat Top 10</h2>
+            <!-- FILTER SECTION -->
+      <div class="filter-section">
+        <div class="filter-group">
+          <label for="filterMapel">Mapel:</label>
+<select id="filterMapel" onchange="filterLeaderboard()">
+  <option value="all">Semua Mapel</option>
+</select>
+
+<select id="filterPaket" onchange="filterLeaderboard()">
+  <option value="all">Semua Paket</option>
+</select>
+            
+        </div>
+        
+        <div class="filter-group">
+          <label for="filterPaket">Paket:</label>
+          <select id="filterPaket" onchange="filterLeaderboard()">
+            <option value="all">Semua Paket</option>
+          </select>
+        </div>
+        
+        <button class="btn-refresh" onclick="refreshData()" title="Refresh Data">
+          <i data-lucide="refresh-cw"></i>
+        </button>
+      </div>
+      <!-- END FILTER -->
 
       <div class="table-wrapper">
         <table>
