@@ -74,7 +74,7 @@ function renderContent(){
   if(currentStep===2){
     renderOptions([
       "paket1","paket2","paket3",
-      "paket4","paket5"
+      "paket4","paket5""paket6SKI"
     ],"paket");
   }
 
