@@ -187,10 +187,3 @@ function exportPG(){
 }
 
 
-/* ================= STUDI KASUS ================= */
-
-document.getElementById("totalWords").innerText =
-  totalWords;
-
-document.getElementById("totalChars").innerText =
-  totalChars;
