@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Seorang guru mengajarkan kepada siswa tentang pengenalan huruf dan kata dengan tujuan untuk meningkatkan keimanan dan ketakwaan. Dalam hal ini, guru menekankan pentingnya mengenal huruf untuk mendalami makna doa-doa yang diucapkan setiap hari.\n\nBerdasarkan kasus di atas, tujuan pembelajaran yang paling sesuai dengan ranah sikap adalah:",
+    "o": [
+      "Siswa dapat mengenal huruf dengan baik dan membaca doa-doa pendek",
+      "Siswa dapat meningkatkan rasa cinta terhadap huruf Arab",
+      "Siswa dapat menulis huruf dengan tepat dan rapi",
+      "Siswa dapat membaca dan menghafal doa-doa harian",
+      "Siswa dapat mengembangkan sikap disiplin dalam belajar huruf"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru mengajarkan tentang Pancasila di kelas. Siswa diminta untuk berpikir kritis mengenai bagaimana nilai-nilai dalam Pancasila diterapkan dalam kehidupan keluarga.\n\nBerdasarkan kasus di atas, tujuan pembelajaran yang paling sesuai dengan ranah pengetahuan adalah:",
+    "o": [
+      "Siswa dapat menjelaskan arti setiap sila dalam Pancasila",
+      "Siswa dapat mendiskusikan peran keluarga dalam menjaga nilai-nilai Pancasila",
+      "Siswa dapat menyebutkan tokoh-tokoh penggagas Pancasila",
+      "Siswa dapat menggambarkan hubungan antara Pancasila dan kehidupan bernegara",
+      "Siswa dapat mengkritisi penerapan Pancasila dalam kehidupan sehari-hari"
+    ],
+    "a": 4
+  },
+  {
+    "q": "Dalam pembelajaran ilmu fisika, guru memberikan contoh penerapan teori hukum Newton dalam kehidupan sehari-hari, seperti gerakan mobil yang mengalami gaya dorong.\n\nBerdasarkan kasus di atas, tujuan pembelajaran yang paling sesuai dengan ranah keterampilan adalah:",
+    "o": [
+      "Siswa dapat menyebutkan hukum-hukum Newton",
+      "Siswa dapat mengamati gerakan benda yang sesuai dengan hukum Newton",
+      "Siswa dapat membuat eksperimen sederhana tentang hukum Newton",
+      "Siswa dapat menyelesaikan soal-soal fisika yang berhubungan dengan hukum Newton",
+      "Siswa dapat menggambar diagram gaya dalam gerakan benda"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru membahas tentang pentingnya menjaga hubungan baik dengan keluarga dan lingkungan sekitar. Guru menjelaskan berbagai tradisi yang ada di masyarakat dan bagaimana sikap toleransi dapat dijaga.\n\nBerdasarkan kasus di atas, rumusan tujuan pembelajaran yang paling sesuai dengan ranah sikap adalah:",
+    "o": [
+      "Siswa dapat menghormati setiap tradisi yang ada di masyarakat",
+      "Siswa dapat mengenal lebih dalam tentang budaya lokal",
+      "Siswa dapat menyebutkan jenis-jenis tradisi di masyarakat",
+      "Siswa dapat berbicara tentang pentingnya menghormati keberagaman budaya",
+      "Siswa dapat menganalisis pengaruh tradisi terhadap kehidupan keluarga"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pelajaran matematika, guru memberikan soal tentang operasi bilangan bulat dan bilangan pecahan. Siswa diminta untuk menyelesaikan soal-soal yang menantang dan merumuskan cara-cara penyelesaiannya.\n\nBerdasarkan kasus di atas, rumusan indikator tujuan pembelajaran yang paling sesuai dengan ranah pengetahuan adalah:",
+    "o": [
+      "Siswa dapat menyelesaikan soal matematika dengan cara yang benar",
+      "Siswa dapat menerapkan operasi bilangan dengan mudah",
+      "Siswa dapat berpikir logis dalam menyelesaikan soal matematika",
+      "Siswa dapat menyusun rumus untuk menyelesaikan soal matematika",
+      "Siswa dapat menganalisis cara yang efektif dalam menyelesaikan soal bilangan"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru merencanakan pembelajaran bahasa Indonesia dengan pendekatan Project Based Learning (PBL). Dalam rencana pembelajaran, guru memfokuskan pada materi membaca dan menulis kalimat sederhana, yang disesuaikan dengan tingkat kemampuan peserta didik dan karakteristiknya.\n\nBerdasarkan kasus di atas, tujuan pembelajaran yang paling sesuai dengan ranah pengetahuan dan keterampilan adalah:",
+    "o": [
+      "Siswa dapat membaca dan menulis kalimat dengan benar dan jelas",
+      "Siswa dapat menyusun proyek berbasis kalimat sederhana",
+      "Siswa dapat berkolaborasi dalam proyek menulis kalimat yang menggambarkan kehidupan sehari-hari",
+      "Siswa dapat menyelesaikan soal-soal membaca kalimat dengan tingkat kesulitan yang beragam",
+      "Siswa dapat mendiskusikan pentingnya keterampilan menulis kalimat dalam kehidupan sosial"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru merancang pembelajaran Pendidikan Pancasila dan Kewarganegaraan dengan pendekatan Project Based Learning (PjBL). Dalam pembelajaran ini, siswa diminta untuk mengkaji kehidupan sosial di masyarakat, seperti hubungan antara individu, keluarga, dan negara, serta pentingnya nilai-nilai Pancasila dalam kehidupan bermasyarakat.\n\nBerdasarkan kasus di atas, tujuan pembelajaran yang paling sesuai dengan ranah pengetahuan dan keterampilan adalah:",
+    "o": [
+      "Siswa dapat menjelaskan nilai-nilai Pancasila dalam kehidupan bermasyarakat",
+      "Siswa dapat menyusun laporan proyek mengenai penerapan nilai Pancasila dalam kehidupan sehari-hari",
+      "Siswa dapat berdebat tentang isu-isu sosial dalam masyarakat",
+      "Siswa dapat menggambarkan cara-cara masyarakat menjaga kedamaian",
+      "Siswa dapat mengenali peran Pancasila dalam perkembangan masyarakat"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru melakukan evaluasi pembelajaran dengan pendekatan Discovery Based Learning (DBL) pada materi Ilmu Pengetahuan Alam, khususnya tentang Ilmu Kehidupan dan Getaran dan Gelombang. Siswa diminta untuk mengamati fenomena alam dan mengidentifikasi prinsip-prinsip fisika yang terjadi.\n\nBerdasarkan kasus di atas, tujuan evaluasi pembelajaran yang paling sesuai dengan ranah pengetahuan dan keterampilan adalah:",
+    "o": [
+      "Siswa dapat mendemonstrasikan eksperimen tentang getaran dan gelombang",
+      "Siswa dapat menjelaskan fenomena gelombang yang terjadi dalam kehidupan sehari-hari",
+      "Siswa dapat menganalisis dampak getaran terhadap kehidupan sosial",
+      "Siswa dapat mengidentifikasi jenis-jenis gelombang yang ditemukan di alam",
+      "Siswa dapat membuat laporan tentang eksperimen gelombang dan getaran"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang guru merencanakan materi ajar Ilmu Pengetahuan Sosial (IPS) dengan pendekatan TPACK. Materi yang diajarkan adalah tentang Kehidupan Sosial dan Budaya. Guru memanfaatkan teknologi untuk membantu siswa memahami berbagai aspek kehidupan sosial melalui media digital.\n\nBerdasarkan kasus di atas, tujuan pembelajaran yang paling sesuai dengan ranah pengetahuan dan keterampilan adalah:",
+    "o": [
+      "Siswa dapat menggunakan teknologi untuk menelusuri sejarah kehidupan sosial dan budaya",
+      "Siswa dapat menggambarkan kehidupan sosial di masa lalu dengan menggunakan alat digital",
+      "Siswa dapat membandingkan budaya berbagai negara melalui video dan artikel online",
+      "Siswa dapat menjelaskan pentingnya memahami budaya melalui platform online",
+      "Siswa dapat mengidentifikasi peran teknologi dalam pelestarian budaya"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru merencanakan pelaksanaan materi ajar matematika tentang Bilangan Pecahan dengan pendekatan Direct Learning (DL). Siswa diberikan penjelasan langsung mengenai cara mengoperasikan bilangan pecahan dalam berbagai konteks masalah.\n\nBerdasarkan kasus di atas, tujuan pembelajaran yang paling sesuai dengan ranah keterampilan adalah:",
+    "o": [
+      "Siswa dapat menyelesaikan soal bilangan pecahan dengan tepat",
+      "Siswa dapat menjelaskan cara menghitung pecahan dalam kehidupan nyata",
+      "Siswa dapat membuat diagram pecahan untuk memvisualisasikan konsep",
+      "Siswa dapat menerapkan konsep pecahan dalam situasi praktis",
+      "Siswa dapat mendiskusikan cara-cara praktis untuk mengoperasikan pecahan"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang guru merancang pembelajaran tematik dengan pendekatan konseling. Dalam hal ini, guru berfokus pada pembelajaran yang berorientasi pada karakteristik peserta didik, mengidentifikasi kebutuhan emosional dan sosial mereka, serta menyediakan materi yang relevan dengan topik yang sedang dibahas.\n\nBerdasarkan kasus di atas, alur materi ajar yang paling sesuai dengan karakteristik peserta didik dalam mengevaluasi tujuan pembelajaran adalah:",
+    "o": [
+      "Siswa dapat mengidentifikasi tema yang relevan dengan kehidupan sehari-hari",
+      "Siswa dapat menggali informasi terkait tema melalui diskusi kelompok",
+      "Siswa dapat merancang proyek tematik yang menyentuh nilai-nilai emosional dan sosial",
+      "Siswa dapat melakukan refleksi pribadi tentang tema yang dipelajari",
+      "Siswa dapat menyelesaikan tugas individu terkait tema dengan bimbingan konseling"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru merencanakan program penguatan Profil Pelajar Pancasila (P5). Dalam perencanaan ini, guru menyesuaikan materi ajar dengan nilai-nilai Pancasila, bertujuan untuk membangun karakter peserta didik yang sesuai dengan tujuan pendidikan nasional.\n\nBerdasarkan kasus di atas, pengembangan materi ajar yang paling sesuai dengan tujuan pembelajaran berdasarkan nilai-nilai Pancasila adalah:",
+    "o": [
+      "Siswa dapat menggali dan memahami makna setiap sila dalam Pancasila",
+      "Siswa dapat mendiskusikan peran Pancasila dalam kehidupan sosial",
+      "Siswa dapat mengidentifikasi contoh-contoh penerapan nilai Pancasila dalam kehidupan sehari-hari",
+      "Siswa dapat mengembangkan proyek yang mencerminkan pengamalan nilai Pancasila",
+      "Siswa dapat menganalisis penerapan Pancasila dalam konteks global"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Seorang guru merencanakan pembelajaran dengan fokus pada penguatan Profil Pelajar Rahmatan Lil-Alamin (PPRA). Guru ingin menanamkan nilai-nilai rahmatan lil-alamin dalam kehidupan sehari-hari, menekankan pentingnya kasih sayang, kedamaian, dan kesejahteraan bagi umat manusia.\n\nBerdasarkan kasus di atas, pengembangan materi ajar yang paling sesuai dengan tujuan pembelajaran dalam konteks PPRA adalah:",
+    "o": [
+      "Siswa dapat mendiskusikan cara-cara menciptakan kedamaian di lingkungan sekitar",
+      "Siswa dapat menyusun rencana aksi sosial yang mencerminkan nilai-nilai rahmatan lil-alamin",
+      "Siswa dapat menggambarkan pentingnya toleransi antar umat beragama",
+      "Siswa dapat mengidentifikasi cara-cara untuk mengatasi konflik dengan pendekatan damai",
+      "Siswa dapat mengevaluasi pengaruh nilai rahmatan lil-alamin dalam kehidupan sosial"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru mengajarkan tentang nilai-nilai moderasi beragama, dengan fokus pada Islam sebagai agama yang moderat (wasathiyah). Guru menekankan pentingnya menghormati perbedaan dan menjaga harmoni antar umat beragama dalam konteks kehidupan sosial.\n\nBerdasarkan kasus di atas, pengembangan materi ajar yang paling sesuai untuk implementasi moderasi beragama dalam tujuan pembelajaran adalah:",
+    "o": [
+      "Siswa dapat menjelaskan makna dan pentingnya moderasi dalam agama",
+      "Siswa dapat menganalisis contoh-contoh moderasi beragama dalam kehidupan masyarakat",
+      "Siswa dapat mengidentifikasi tindakan ekstremisme dalam agama dan dampaknya",
+      "Siswa dapat menyusun rencana pembelajaran yang mengintegrasikan nilai-nilai moderasi beragama",
+      "Siswa dapat menerapkan prinsip-prinsip moderasi beragama dalam kehidupan sehari-hari"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru menjelaskan alasan mengapa nilai-nilai moderasi beragama penting untuk diterapkan dalam kehidupan sehari-hari. Guru membahas peran Islam sebagai agama yang moderat (wasathiyah), menekankan keseimbangan antara kebebasan beragama dan penghormatan terhadap perbedaan.\n\nBerdasarkan kasus di atas, alasan yang paling tepat untuk pengembangan materi ajar Islam sebagai agama moderat atau wasathiyah dalam tujuan pembelajaran adalah:",
+    "o": [
+      "Siswa dapat memahami pentingnya kesetaraan antar umat beragama dalam masyarakat",
+      "Siswa dapat mengidentifikasi contoh-contoh sikap moderat dalam kehidupan sosial",
+      "Siswa dapat menjelaskan dampak dari ketidakmoderatannya dalam kehidupan sosial",
+      "Siswa dapat menyarankan cara-cara untuk mengurangi ketegangan antar agama",
+      "Siswa dapat membandingkan pandangan agama yang moderat dengan pandangan agama yang ekstrem"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang guru mengajarkan materi menulis cerita sederhana dan membaca nyaring. Guru memilih pendekatan pembelajaran berbasis masalah untuk melibatkan siswa dalam merancang cerita mereka sendiri dan membaca cerita secara lantang di depan kelas, dengan tujuan untuk meningkatkan keterampilan menulis dan berbicara.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan pembelajaran berbasis masalah adalah:",
+    "o": [
+      "Siswa dapat menulis cerita berdasarkan tema yang ditentukan oleh guru",
+      "Siswa dapat mengidentifikasi masalah dalam cerita yang mereka tulis dan menyelesaikannya",
+      "Siswa dapat membacakan cerita yang telah mereka buat dengan intonasi yang tepat",
+      "Siswa dapat bekerja dalam kelompok untuk menyelesaikan cerita pendek",
+      "Siswa dapat memberikan umpan balik kepada teman sekelas mengenai cerita yang dibaca"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru mengajarkan materi menghargai keragaman kepada siswa. Untuk itu, guru menggunakan pendekatan pembelajaran berbasis masalah, dimana siswa diajak untuk memecahkan masalah sosial yang berkaitan dengan keragaman budaya, suku, agama, dan ras.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan pembelajaran berbasis masalah adalah:",
+    "o": [
+      "Siswa dapat menjelaskan pentingnya keragaman dalam masyarakat",
+      "Siswa dapat menyelesaikan studi kasus tentang diskriminasi dan keragaman",
+      "Siswa dapat mendiskusikan keuntungan keragaman dalam kehidupan sehari-hari",
+      "Siswa dapat membuat presentasi mengenai keragaman budaya di Indonesia",
+      "Siswa dapat melakukan kunjungan ke komunitas yang berbeda untuk memahami keragaman"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru mengajarkan materi tentang makhluk hidup dan lingkungan atau perubahan alam dengan menggunakan pendekatan pembelajaran berbasis masalah. Guru mengajak siswa untuk memecahkan masalah yang berkaitan dengan perubahan iklim dan dampaknya terhadap ekosistem.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan pembelajaran berbasis masalah adalah:",
+    "o": [
+      "Siswa dapat mendiskusikan perubahan alam yang terjadi di sekitar mereka",
+      "Siswa dapat merancang eksperimen tentang perubahan suhu dan dampaknya terhadap tumbuhan",
+      "Siswa dapat menyelidiki masalah perubahan iklim dan mencari solusi untuk menguranginya",
+      "Siswa dapat menggambar diagram rantai makanan yang terpengaruh perubahan alam",
+      "Siswa dapat membuat laporan tentang pengaruh perubahan iklim terhadap makhluk hidup"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru mengajarkan materi peta dan bumi kepada siswa dengan pendekatan pembelajaran berbasis perbedaan individu. Guru menyesuaikan gaya belajar siswa, sehingga setiap siswa dapat bekerja dengan kecepatan dan cara yang sesuai dengan kebutuhan mereka dalam memahami topik geografi ini.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan berbasis perbedaan individu adalah:",
+    "o": [
+      "Siswa dapat membuat peta sederhana berdasarkan pengamatan mereka",
+      "Siswa dapat bekerja dalam kelompok untuk mengidentifikasi lokasi pada peta dunia",
+      "Siswa dapat memecahkan soal-soal geografi yang terkait dengan peta dan bumi",
+      "Siswa dapat memilih metode yang paling sesuai dengan gaya belajar mereka dalam mempelajari peta",
+      "Siswa dapat mempresentasikan hasil kerja kelompok mengenai peta bumi"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Seorang guru mengajarkan materi geometri dengan pendekatan berbasis perbedaan individu. Guru memberikan berbagai jenis tugas yang dapat dipilih oleh siswa sesuai dengan preferensi belajar mereka, seperti tugas menggambar bangun geometri atau memecahkan soal-soal geometri dalam bentuk tulisan.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan berbasis perbedaan individu adalah:",
+    "o": [
+      "Siswa dapat menggambar bangun geometri dengan menggunakan alat gambar",
+      "Siswa dapat menyelesaikan soal-soal geometri yang berfokus pada rumus dan teori",
+      "Siswa dapat memilih cara belajar yang paling sesuai untuk mempelajari konsep geometri",
+      "Siswa dapat berdiskusi dalam kelompok mengenai geometri dan aplikasinya",
+      "Siswa dapat membuat model bangun geometri dalam bentuk tiga dimensi"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru mengajarkan materi pengukuran kepada siswa dengan pendekatan berbasis perbedaan individu. Guru mengidentifikasi gaya belajar masing-masing siswa, seperti visual, auditori, dan kinestetik, dan menyediakan alat pembelajaran yang sesuai untuk setiap jenis gaya belajar dalam memahami konsep pengukuran.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan berbasis perbedaan individu sesuai dengan pengetahuan teknologi adalah:",
+    "o": [
+      "Siswa dapat memanfaatkan aplikasi digital untuk mengukur panjang dan berat",
+      "Siswa dapat mengukur objek menggunakan penggaris dan alat ukur lainnya secara manual",
+      "Siswa dapat mengembangkan model pengukuran menggunakan teknologi 3D",
+      "Siswa dapat bekerja dalam kelompok untuk melakukan pengukuran di luar kelas",
+      "Siswa dapat membuat laporan hasil pengukuran menggunakan perangkat lunak spreadsheet"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang guru mengajarkan prinsip-prinsip pembelajaran tematik. Guru menggunakan pendekatan pembelajaran mendalam untuk membimbing siswa dalam menghubungkan berbagai topik dengan pengalaman hidup mereka, sehingga siswa memahami konsep secara menyeluruh dan aplikatif.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan pembelajaran mendalam adalah:",
+    "o": [
+      "Siswa dapat mengidentifikasi tema utama dalam topik yang dipelajari dan mengaitkannya dengan pengalaman sehari-hari",
+      "Siswa dapat membuat proyek kelompok yang mencerminkan penerapan prinsip tematik",
+      "Siswa dapat mengorganisir informasi yang mereka peroleh dalam bentuk mind map",
+      "Siswa dapat mengerjakan soal-soal yang menguji pemahaman terhadap prinsip pembelajaran tematik",
+      "Siswa dapat mendiskusikan konsep-konsep penting yang terdapat dalam materi pembelajaran tematik"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang guru mengajarkan materi tentang kelebihan dan kekurangan pembelajaran tematik. Guru menggunakan pendekatan pembelajaran mendalam untuk membantu siswa menganalisis dan menilai aspek-aspek positif dan negatif dari metode pembelajaran tematik yang mereka alami selama proses belajar.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan pembelajaran mendalam adalah:",
+    "o": [
+      "Siswa dapat menyusun argumen tentang kelebihan dan kekurangan pembelajaran tematik",
+      "Siswa dapat membuat laporan tertulis mengenai pengalaman mereka selama pembelajaran tematik",
+      "Siswa dapat berdiskusi dalam kelompok tentang pengalaman mereka dengan pembelajaran tematik",
+      "Siswa dapat menggambarkan kelebihan dan kekurangan pembelajaran tematik dalam bentuk diagram",
+      "Siswa dapat membuat presentasi kelompok yang membahas evaluasi pembelajaran tematik"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang guru mengajarkan materi tentang implementasi pendidikan karakter atau pendidikan nilai. Dengan pendekatan pembelajaran mendalam, guru mendorong siswa untuk merefleksikan nilai-nilai moral dan etika yang dipelajari dan menerapkannya dalam kehidupan sehari-hari.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan pembelajaran mendalam sesuai dengan pengetahuan teknologi adalah:",
+    "o": [
+      "Siswa dapat menggunakan platform digital untuk berdiskusi tentang nilai-nilai karakter dalam kehidupan mereka",
+      "Siswa dapat menulis jurnal pribadi mengenai penerapan nilai-nilai karakter dalam kegiatan sehari-hari",
+      "Siswa dapat membuat video yang menggambarkan penerapan pendidikan karakter dalam masyarakat",
+      "Siswa dapat berpartisipasi dalam forum online untuk mendiskusikan masalah karakter dan etika",
+      "Siswa dapat berkolaborasi dalam proyek kelompok untuk merancang kegiatan yang mempromosikan pendidikan karakter"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru mengajarkan materi tentang implementasi moderasi beragama di Indonesia. Guru menggunakan pendekatan berbasis TPACK (Technological Pedagogical Content Knowledge), yang mengintegrasikan teknologi, pedagogi, dan konten materi untuk mengajarkan nilai-nilai moderasi beragama secara efektif.\n\nBerdasarkan kasus di atas, rancangan pembelajaran yang paling sesuai dengan pendekatan berbasis TPACK sesuai dengan materi pembelajaran adalah:",
+    "o": [
+      "Siswa dapat mengakses artikel online yang membahas moderasi beragama dan berdiskusi menggunakan aplikasi forum",
+      "Siswa dapat membuat presentasi digital yang menunjukkan contoh moderasi beragama dalam berbagai agama di Indonesia",
+      "Siswa dapat menggunakan aplikasi video untuk merekam wawancara dengan tokoh agama mengenai moderasi beragama",
+      "Siswa dapat berpartisipasi dalam diskusi kelas yang berbasis online untuk mengeksplorasi moderasi beragama",
+      "Siswa dapat membuat infografis interaktif yang menggambarkan prinsip moderasi beragama di Indonesia"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru ingin menerapkan model pembelajaran Problem Based Learning (PBL) untuk materi Ilmu Pengetahuan Sosial (IPS) tentang interaksi sosial. Guru tersebut ingin memastikan siswa memahami konsep interaksi sosial melalui pengalaman nyata.\n\nBerdasarkan kasus di atas, langkah pembelajaran yang paling sesuai adalah:",
+    "o": [
+      "Guru menjelaskan konsep interaksi sosial menggunakan slide presentasi.",
+      "Siswa diminta mengamati dan menganalisis fenomena interaksi sosial di sekitar sekolah.",
+      "Siswa mengerjakan latihan soal tentang interaksi sosial secara individu.",
+      "Guru memberikan kuis mengenai jenis-jenis interaksi sosial.",
+      "Siswa membaca buku teks tentang teori interaksi sosial."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran IPA materi ekosistem, guru menggunakan model Project Based Learning (PjBL) untuk membuat diorama ekosistem. Guru ingin memastikan seluruh siswa aktif dan bertanggung jawab dalam proyek tersebut.\n\nBerdasarkan kasus di atas, kegiatan yang paling tepat dilakukan guru adalah:",
+    "o": [
+      "Guru menentukan semua bahan proyek dan membagikannya ke siswa.",
+      "Guru memberikan kebebasan penuh kepada siswa tanpa bimbingan.",
+      "Guru membagi siswa dalam kelompok dan memfasilitasi diskusi serta pembagian tugas proyek.",
+      "Guru mengerjakan proyek di depan kelas dan siswa meniru.",
+      "Guru memberikan ujian tertulis tentang ekosistem sebelum proyek dimulai."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru ingin mengajarkan konsep matematika tentang pecahan menggunakan model Discovery Learning. Guru ingin siswa menemukan sendiri konsep pecahan tersebut.\n\nBerdasarkan kasus di atas, kegiatan awal yang paling tepat adalah:",
+    "o": [
+      "Guru menjelaskan rumus penjumlahan pecahan di papan tulis.",
+      "Guru memberikan lembar kerja berisi latihan soal pecahan.",
+      "Guru menunjukkan benda konkret (seperti buah apel) dan membaginya menjadi beberapa bagian.",
+      "Siswa diminta menghafal definisi pecahan.",
+      "Guru memberikan kuis tentang jenis-jenis pecahan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menyadari bahwa kemampuan membaca siswa di kelas berbeda-beda. Guru ingin menerapkan strategi pembelajaran yang berbeda untuk setiap kelompok siswa agar tujuan pembelajaran tercapai.\n\nBerdasarkan kasus di atas, strategi yang paling tepat digunakan adalah:",
+    "o": [
+      "Memberikan materi yang sama dan kecepatan yang sama kepada semua siswa.",
+      "Mengelompokkan siswa berdasarkan tingkat kemampuan membaca dan memberikan materi yang disesuaikan.",
+      "Fokus pada siswa yang pandai saja agar kelas lebih cepat selesai.",
+      "Meminta siswa yang pandai mengajari siswa yang lambat tanpa bimbingan guru.",
+      "Memberikan tugas tambahan yang sulit kepada siswa yang lambat."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru IPS ingin menerapkan pembelajaran berdiferensiasi pada materi keragaman budaya. Guru tersebut menyadari siswa memiliki gaya belajar yang berbeda-beda (visual, auditori, kinestetik).\n\nBerdasarkan kasus di atas, kegiatan yang paling sesuai adalah:",
+    "o": [
+      "Guru meminta semua siswa membaca buku teks secara diam.",
+      "Guru menayangkan video, mengadakan diskusi audio, dan meminta siswa membuat kerajinan tangan tentang budaya.",
+      "Guru ceramah selama jam pelajaran berlangsung.",
+      "Siswa diminta menggambar peta keragaman budaya saja.",
+      "Guru memberikan tugas merangkum bab tentang budaya."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tematik, guru ingin meningkatkan keterampilan berpikir tingkat tinggi (HOTS) siswa pada tema 'Lingkungan Sahabat Kita'.\n\nBerdasarkan kasus di atas, rumusan tujuan pembelajaran yang paling sesuai adalah:",
+    "o": [
+      "Siswa dapat menyebutkan macam-macam polusi.",
+      "Siswa dapat mengidentifikasi penyebab pencemaran air di lingkungan sekitar.",
+      "Siswa dapat menganalisis dampak pencemaran air dan merumuskan solusi mengatasinya.",
+      "Siswa dapat menghafal definisi lingkungan sehat.",
+      "Siswa dapat menggambar pemandangan lingkungan yang bersih."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru ingin mengevaluasi hasil belajar siswa materi PPKn tentang hak dan kewajiban menggunakan penilaian kinerja.\n\nBerdasarkan kasus di atas, bentuk evaluasi yang paling tepat adalah:",
+    "o": [
+      "Tes tertulis pilihan ganda.",
+      "Tes tertulis uraian.",
+      "Simulasi atau bermain peran tentang penerapan hak dan kewajiban di sekolah.",
+      "Tes lisan berupa tanya jawab langsung.",
+      "Tugas merangkum materi hak dan kewajiban."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru ingin menggunakan teknologi dalam pembelajaran IPA materi tata surya untuk memudahkan siswa memvisualisasikan planet-planet.\n\nBerdasarkan kasus di atas, teknologi yang paling tepat digunakan adalah:",
+    "o": [
+      "Microsoft Word untuk membuat laporan.",
+      "Kalkulator untuk menghitung jarak antarplanet.",
+      "Aplikasi simulasi tata surya atau video 3D.",
+      "E-mail untuk mengirim tugas.",
+      "Mesin ketik untuk mencatat materi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menyadari perlunya penguatan Profil Pelajar Pancasila dalam pembelajaran. Pada materi sejarah perjuangan bangsa, guru ingin menekankan nilai gotong royong.\n\nBerdasarkan kasus di atas, aktivitas yang paling tepat adalah:",
+    "o": [
+      "Siswa membaca buku sejarah secara mandiri.",
+      "Siswa mengerjakan tugas individu tentang tokoh sejarah.",
+      "Siswa melakukan diskusi kelompok untuk menganalisis perjuangan rakyat.",
+      "Guru menceritakan kisah sejarah di depan kelas.",
+      "Siswa menonton film sejarah secara individu."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam rangka mengimplementasikan moderasi beragama, guru ingin mengajarkan toleransi di kelas yang memiliki siswa dengan latar belakang agama berbeda.\n\nBerdasarkan kasus di atas, kegiatan yang paling sesuai adalah:",
+    "o": [
+      "Guru memisahkan siswa berdasarkan agama.",
+      "Siswa diminta mempelajari agama lain saja.",
+      "Diskusi kelompok tentang cara menghargai ibadah teman yang berbeda agama.",
+      "Guru hanya mengajarkan satu agama di kelas.",
+      "Siswa diminta menghafal kitab suci agama lain."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru ingin menggunakan AI (Artificial Intelligence) dalam pembelajaran bahasa untuk membantu siswa meningkatkan keterampilan menulis.\n\nBerdasarkan kasus di atas, penggunaan AI yang paling tepat adalah:",
+    "o": [
+      "AI mengerjakan tugas menulis siswa secara keseluruhan.",
+      "AI digunakan siswa untuk mengecek tata bahasa (grammar) dan struktur kalimat pada draf tulisan mereka.",
+      "AI digunakan untuk menggantikan peran guru dalam memberikan nilai.",
+      "AI digunakan untuk mencari jawaban soal pilihan ganda.",
+      "AI digunakan untuk membuat presentasi tanpa melibatkan pemikiran siswa."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin menerapkan pembelajaran tematik yang mendalam tentang materi 'Perubahan Wujud Benda' dengan menggunakan alat peraga.\n\nBerdasarkan kasus di atas, pendekatan yang paling sesuai adalah:",
+    "o": [
+      "Guru menjelaskan teori perubahan wujud benda di papan tulis.",
+      "Siswa diminta menghafal jenis-jenis perubahan wujud.",
+      "Siswa melakukan percobaan langsung menggunakan es batu dan air panas untuk mengamati perubahan wujud.",
+      "Siswa membaca buku teks tentang perubahan wujud.",
+      "Guru memberikan soal pilihan ganda tentang perubahan wujud benda."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran PjBL, guru ingin siswa menghasilkan produk di akhir materi 'Seni Rupa Daerah'.\n\nBerdasarkan kasus di atas, aktivitas yang paling sesuai adalah:",
+    "o": [
+      "Siswa menonton video tentang seni rupa.",
+      "Siswa membuat kerajinan tangan khas daerah secara berkelompok.",
+      "Siswa mengerjakan tes tertulis tentang sejarah seni rupa.",
+      "Siswa mendengarkan ceramah guru tentang jenis seni rupa.",
+      "Siswa merangkum buku tentang seni rupa."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin mengukur kemampuan siswa dalam menganalisis data pada materi IPA tentang gaya dan gerak menggunakan penilaian autentik.\n\nBerdasarkan kasus di atas, bentuk evaluasi yang paling tepat adalah:",
+    "o": [
+      "Tes pilihan ganda tentang definisi gaya.",
+      "Tugas proyek membuat laporan hasil percobaan gaya dan gerak.",
+      "Tes tertulis uraian tentang rumus gaya.",
+      "Kuis lisan tentang jenis-jenis gaya.",
+      "Siswa diminta menghafal hukum Newton."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru IPS ingin menerapkan pembelajaran berbantuan teknologi (ICT) untuk materi 'Peta Dunia'.\n\nBerdasarkan kasus di atas, teknologi yang paling tepat digunakan adalah:",
+    "o": [
+      "Kalkulator untuk menghitung skala peta.",
+      "Google Earth atau aplikasi peta interaktif.",
+      "PowerPoint berisi foto pemandangan.",
+      "E-mail untuk mengirim tugas.",
+      "Printer untuk mencetak gambar peta."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran PPKn, guru ingin menerapkan pendidikan nilai dengan fokus pada karakter 'Jujur'.\n\nBerdasarkan kasus di atas, strategi yang paling tepat adalah:",
+    "o": [
+      "Guru menjelaskan definisi jujur di depan kelas.",
+      "Guru memberikan denda bagi siswa yang berbohong.",
+      "Guru menciptakan lingkungan kelas yang aman dan diskusi tentang dilema moral.",
+      "Guru menghukum siswa yang tidak jujur.",
+      "Siswa diminta menghafal ayat tentang kejujuran."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru ingin mengintegrasikan prinsip moderasi beragama dalam materi 'Kisah Nabi' pada pelajaran Akidah Akhlak.\n\nBerdasarkan kasus di atas, pendekatan yang paling sesuai adalah:",
+    "o": [
+      "Menekankan aspek kekerasan dalam kisah perang nabi.",
+      "Mengambil ibrah (pelajaran) tentang kasih sayang dan kedamaian nabi terhadap semua golongan.",
+      "Hanya menceritakan kisah nabi kepada golongan tertentu saja.",
+      "Menghindari pembahasan kisah nabi karena sensitif.",
+      "Fokus pada hafalan tahun dan tempat kejadian kisah nabi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin menggunakan teknologi AI untuk memberikan feedback (umpan balik) yang personal kepada siswa pada materi Matematika.\n\nBerdasarkan kasus di atas, solusi ilmiah yang tepat adalah:",
+    "o": [
+      "Menggunakan AI sebagai alat pendukung untuk menganalisis kesalahan umum siswa dan memberikan penjelasan tambahan.",
+      "Membiarkan AI memberikan nilai tanpa pengecekan guru.",
+      "Menghindari AI karena membuat siswa malas.",
+      "Menggunakan AI hanya untuk kuis pilihan ganda.",
+      "Menggunakan AI untuk membuat soal ujian."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran tematik materi 'Ekosistem', guru ingin menggunakan pendekatan ilmiah (Scientific Approach).\n\nBerdasarkan kasus di atas, langkah pertama yang paling tepat adalah:",
+    "o": [
+      "Guru menjelaskan pengertian ekosistem.",
+      "Siswa diminta mengamati ekosistem di kolam sekolah.",
+      "Siswa merumuskan hipotesis tentang ekosistem.",
+      "Siswa menyimpulkan hasil pengamatan.",
+      "Siswa mempresentasikan laporan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin mengevaluasi keterampilan bicara siswa pada pelajaran Bahasa Indonesia materi 'Berpidato'.\n\nBerdasarkan kasus di atas, teknik penilaian yang paling tepat adalah:",
+    "o": [
+      "Tes tertulis tentang struktur pidato.",
+      "Tes lisan berupa pidato langsung di depan kelas dengan rubrik penilaian.",
+      "Kuis pilihan ganda tentang tema pidato.",
+      "Tugas membuat draf pidato tertulis.",
+      "Merangkum pidato tokoh terkenal."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran IPA materi 'Energi Alternatif', guru ingin menggunakan model Discovery Learning.\n\nBerdasarkan kasus di atas, kegiatan yang paling sesuai adalah:",
+    "o": [
+      "Guru menjelaskan jenis-jenis energi alternatif.",
+      "Siswa diminta mencari informasi dan menyimpulkan potensi energi alternatif di sekitar mereka.",
+      "Siswa membaca buku tentang energi matahari.",
+      "Guru menunjukkan gambar kincir angin.",
+      "Siswa menghafal definisi energi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru menyadari siswa kesulitan memahami konsep abstrak pada materi 'Peredaran Darah Manusia'.\n\nBerdasarkan kasus di atas, solusi TPACK yang paling tepat adalah:",
+    "o": [
+      "Guru ceramah lebih lama.",
+      "Menggunakan media video animasi interaktif tentang peredaran darah.",
+      "Meminta siswa membaca bab peredaran darah tiga kali.",
+      "Memberikan kuis tentang nama-nama organ peredaran darah.",
+      "Siswa diminta menggambar ulang gambar di buku paket."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin menanamkan nilai profil pelajar Pancasila 'Bernalar Kritis' dalam materi 'Sejarah Proklamasi'.\n\nBerdasarkan kasus di atas, kegiatan yang paling tepat adalah:",
+    "o": [
+      "Siswa menghafal tanggal proklamasi.",
+      "Diskusi tentang alasan di balik pemilihan lokasi dan waktu proklamasi.",
+      "Siswa merangkum isi teks proklamasi.",
+      "Guru membacakan teks proklamasi.",
+      "Siswa menonton video proklamasi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin mengimplementasikan pembelajaran berbasis moderasi beragama pada pelajaran SBdP (Seni Budaya dan Prakarya).\n\nBerdasarkan kasus di atas, kegiatan yang paling sesuai adalah:",
+    "o": [
+      "Mempelajari seni rupa dari satu agama saja.",
+      "Siswa diminta menggambar simbol agama tertentu saja.",
+      "Mempelajari dan menghargai keragaman seni rupa dari berbagai budaya dan agama di Indonesia.",
+      "Menghindari pelajaran seni yang berkaitan dengan budaya.",
+      "Fokus pada teknik menggambar tanpa memperhatikan nilai budaya."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menggunakan AI untuk mengajarkan mata pelajaran bahasa Indonesia, IPA, IPS, PPKn, atau Matematika. Dalam pengajaran ini, AI digunakan untuk memberikan pengalaman belajar yang lebih personal dan sesuai dengan karakteristik siswa.\n\nBerdasarkan narasi di atas, masalah yang mungkin timbul dalam penggunaan AI untuk pembelajaran dan solusi ilmiah untuk mengatasinya adalah:",
+    "o": [
+      "Masalah: AI mungkin tidak memahami konteks lokal siswa. Solusi: Mengadaptasi AI dengan materi yang relevan secara budaya dan sosial.",
+      "Masalah: AI terlalu mahal untuk diterapkan. Solusi: Menggunakan sumber daya terbuka yang lebih terjangkau.",
+      "Masalah: AI dapat menggantikan guru dalam mengajar. Solusi: Memanfaatkan AI sebagai alat pendukung, bukan pengganti guru.",
+      "Masalah: AI terlalu kompleks untuk siswa. Solusi: Menyederhanakan penggunaan AI agar lebih mudah dipahami siswa.",
+      "Masalah: Siswa tidak tertarik dengan penggunaan AI. Solusi: Mengintegrasikan teknologi AI dengan pendekatan pembelajaran yang menarik dan relevan."
+    ],
+    "a": 0
+  }
+]
