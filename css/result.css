@@ -131,8 +131,18 @@ canvas{
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:600px){
-  .result-buttons{
-    flex-direction:row !important;
-    flex-wrap:nowrap !important;
+
+  .score-number{
+    font-size:42px;
   }
+
+  .result-card{
+    padding:20px;
+  }
+
+  .result-buttons{
+    flex-direction:column;
+    gap:10px;
+  }
+
 }
