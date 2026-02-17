@@ -58,7 +58,7 @@
 .sidebar .app-title {
   font-size: 18px;                  /* Diperkecil dari 20px */
   font-weight: 700;
-  margin-bottom: 24px;              /* Diperkecil dari 32px */
+  margin-bottom: 28px;              /* Diperkecil dari 32px */
   color: var(--text-primary);
   padding-right: 40px;
 }
