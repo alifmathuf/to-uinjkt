@@ -281,9 +281,9 @@ textarea:focus{
   
   /* Topbar menyambung ke sidebar */
   .topbar {
-    margin-left: -24px;
+    margin-left: -16px;
     margin-right: -24px;
-    padding-left: 24px;
+    padding-left: 16px;
     padding-right: 24px;
     border-bottom: 1px solid var(--border-soft);
     position: relative;
