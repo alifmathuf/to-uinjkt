@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Riwayat Ujian</title>
 
+<link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
+<link rel="shortcut icon" href="assets/logo-uin.svg">
+
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/layout.css">
 <script src="https://unpkg.com/lucide@latest"></script>
@@ -18,7 +21,7 @@ const firebaseConfig = {
   authDomain: "cbtuin-d26aa.firebaseapp.com",
   databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "cbtuin-d26aa",
-  storageBucket: "cbtuin-d26aa.firebasestorage.app",
+  storageBucket: "cbtuin-d26aa.appspot.com",
   messagingSenderId: "93548126228",
   appId: "1:93548126228:web:c456aedaad373237a0c701"
 };
@@ -29,49 +32,82 @@ firebase.initializeApp(firebaseConfig);
 
 <body>
 
-<div class="layout">
+<!-- OVERLAY -->
+<div id="sidebarOverlay" class="sidebar-overlay"></div>
 
-<div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
-
-<aside class="sidebar">
-  <div class="app-title"></div>
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  
+  <!-- CLOSE BUTTON (Mobile) -->
+  <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
+    <i data-lucide="x"></i>
+  </button>
+  
+  <div class="app-title">TRY OUT PPG</div>
 
   <nav class="menu">
-    <a href="dashboard.html"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
-    <a href="leaderboard.html"><i data-lucide="trophy"></i><span>Peringkat</span></a>
-    <a href="statistik.html"><i data-lucide="bar-chart"></i><span>Statistik</span></a>
-    <a href="riwayat.html" class="active"><i data-lucide="history"></i><span>Riwayat</span></a>
+    <a href="dashboard.html">
+      <i data-lucide="layout-dashboard"></i>
+      <span>Dashboard</span>
+    </a>
+    <a href="leaderboard.html">
+      <i data-lucide="trophy"></i>
+      <span>Peringkat</span>
+    </a>
+    <a href="statistik.html">
+      <i data-lucide="bar-chart"></i>
+      <span>Statistik</span>
+    </a>
+    <a href="riwayat.html" class="active">
+      <i data-lucide="history"></i>
+      <span>Riwayat</span>
+    </a>
+    <a href="#" onclick="Auth.logout(); return false;">
+      <i data-lucide="log-out"></i>
+      <span>Logout</span>
+    </a>
   </nav>
 </aside>
 
-<main class="content">
+<!-- LAYOUT -->
+<div class="layout">
 
-<header class="topbar">
-  <div>
-    <button class="hamburger" onclick="toggleSidebar()">☰</button>
-    <span class="app-title-desktop">Riwayat Ujian</span>
-  </div>
+  <!-- CONTENT -->
+  <main class="content">
 
-  <div class="user-info">
-    <div>
-      <div id="greeting"></div>
-      <strong id="userInfo"></strong>
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+        <span class="app-title-desktop">Riwayat Ujian</span>
+      </div>
+
+      <div class="user-info">
+        <div class="user-text">
+          <div id="greeting"></div>
+          <strong id="userInfo"></strong>
+        </div>
+        <div id="avatar" class="avatar"></div>
+      </div>
+    </header>
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+      
+      <h2>Riwayat Ujian</h2>
+      
+      <div id="historyList" class="history-grid"></div>
+
     </div>
-    <div id="avatar"></div>
-  </div>
-</header>
 
-<section>
+  </main>
 
-<h2>Riwayat Ujian</h2>
+</div><!-- /layout -->
 
-<div id="historyList" class="history-grid"></div>
-
-
-</section>
-
-</main>
-</div>
+<!-- FOOTER -->
+<footer class="footer">
+  © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
+</footer>
 
 <script src="js/auth.js"></script>
 <script src="js/layout.js"></script>
