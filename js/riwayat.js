@@ -52,21 +52,27 @@ db.ref(`exams/${user.id}`)
 
       container.innerHTML += `
         <div class="history-card">
-          <div class="history-score ${scoreClass}">
-            ${nilai}
-          </div>
-
-          <div class="history-title">
-            ${exam.mapel || "Ujian"} • ${exam.paket || "-"}
+          
+          <div class="card-header">
+            <div class="history-title">
+              ${exam.mapel || "Ujian"}
+              <span class="paket">${exam.paket || "-"}</span>
+            </div>
+            <div class="history-score ${scoreClass}">
+              ${nilai}
+            </div>
           </div>
 
           <div class="history-meta">
-            Benar: ${exam.score}/${exam.total} • ${tanggal}
+            <span>✓ Benar: ${exam.score}/${exam.total}</span>
+            <span>•</span>
+            <span>${tanggal}</span>
           </div>
 
           <div class="badge-status ${badgeClass}">
             ${badgeText}
           </div>
+
         </div>
       `;
     });
