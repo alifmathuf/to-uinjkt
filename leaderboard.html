@@ -39,7 +39,7 @@
 
 <div class="layout">
 
-   <!-- OVERLAY (untuk menutup sidebar di mobile) -->
+  <!-- OVERLAY (untuk menutup sidebar di mobile) -->
   <div id="sidebarOverlay" class="sidebar-overlay"></div>
 
   <!-- SIDEBAR -->
@@ -48,32 +48,16 @@
     <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
       <i data-lucide="x"></i>
     </button>
-    
-    <div class="app-title">Tryout PPG</div>
+    <div class="app-title">TRY OUT PPG</div>
 
-    <nav class="menu">
-      <a href="dashboard.html" class="active">
-        <i data-lucide="layout-dashboard" class="icon"></i>
+    <div class="menu">
+      <a href="dashboard.html">
+        <i data-lucide="layout-dashboard"></i>
         <span>Dashboard</span>
       </a>
 
-      <a href="leaderboard.html">
-        <i data-lucide="trophy" class="icon"></i>
-        <span>Peringkat</span>
-      </a>
-
-      <a href="statistik.html">
-        <i data-lucide="bar-chart" class="icon"></i>
-        <span>Statistik</span>
-      </a>
-
-      <a href="riwayat.html">
-        <i data-lucide="history" class="icon"></i>
-        <span>Riwayat</span>
-      </a>
-
       <a href="result.html">
-        <i data-lucide="bar-chart-3"></i>
+        <i data-lucide="bar-chart-2"></i>
         <span>Result</span>
       </a>
 
@@ -81,13 +65,17 @@
         <i data-lucide="eye"></i>
         <span>Review</span>
       </a>
-    </nav>
-  </aside>
+
+      <a href="leaderboard.html">
+        <i data-lucide="trophy"></i>
+        <span>Peringkat</span>
+      </a>
 
       <a href="#" onclick="Auth.logout()">
         <i data-lucide="log-out"></i>
         <span>Logout</span>
       </a>
+        </aside>
     </div>
   </div>
 
