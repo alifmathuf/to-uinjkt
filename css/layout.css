@@ -36,8 +36,8 @@ textarea:focus{
 /* ================= SIDEBAR ================= */
 
 .sidebar {
-  width: 240px;
-  padding: 24px;
+  width: 220px;                     /* Diperkecil dari 240px */
+  padding: 20px;                    /* Diperkecil dari 24px */
   background: rgba(17, 24, 39, 0.96);
   backdrop-filter: blur(14px);
   border-right: 1px solid var(--border-soft);
@@ -85,13 +85,13 @@ textarea:focus{
 .sidebar-close {
   display: none;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 12px;                        /* Diperkecil dari 16px */
+  right: 12px;                      /* Diperkecil dari 16px */
   background: none;
   border: none;
   color: var(--text-secondary);
   cursor: pointer;
-  padding: 8px;
+  padding: 6px;                     /* Diperkecil dari 8px */
   border-radius: 8px;
   transition: all 0.2s ease;
 }
@@ -102,11 +102,11 @@ textarea:focus{
 }
 
 .sidebar .app-title {
-  font-size: 20px;
+  font-size: 18px;                  /* Diperkecil dari 20px */
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 24px;              /* Diperkecil dari 32px */
   color: var(--text-primary);
-  padding-right: 40px; /* Space untuk tombol close */
+  padding-right: 40px;
 }
 
 /* ===== MENU ===== */
@@ -115,12 +115,13 @@ textarea:focus{
   display:flex;
   align-items:center;
   gap:12px;
-  padding:12px 14px;
+  padding:10px 12px;               /* Diperkecil dari 12px 14px */
   border-radius:var(--radius-sm);
   color:var(--text-secondary);
-  margin-bottom:6px;
+  margin-bottom:4px;               /* Diperkecil dari 6px */
   position:relative;
   text-decoration:none;
+  font-size: 14px;                  /* Tambahan: konsisten ukuran font */
 }
 
 .menu a:hover{
@@ -136,7 +137,7 @@ textarea:focus{
 .menu a.active::before{
   content:"";
   position:absolute;
-  left:-24px;
+  left:-20px;                      /* Sesuaikan dengan padding baru */
   top:6px;
   bottom:6px;
   width:4px;
@@ -156,8 +157,9 @@ textarea:focus{
 
 .content{
   flex:1;
-  padding:32px;
-  margin-left: 0; /* Default mobile: tidak ada margin */
+  padding:24px;                    /* Diperkecil dari 32px */
+  margin-left: 0;
+  max-width: calc(100% - 220px);   /* Batasi lebar maksimal */
 }
 
 
@@ -167,13 +169,20 @@ textarea:focus{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding-bottom:16px;
-  margin-bottom:24px;
+  padding:12px 0;                  /* Diperkecil dari 16px bottom only */
+  margin-bottom:20px;              /* Diperkecil dari 24px */
   border-bottom:1px solid var(--border-soft);
+  min-height: 48px;               /* Tinggi minimum, tidak terlalu tinggi */
+  margin-left: -24px;             /* Mulai dari kiri sidebar */
+  margin-right: -24px;            /* Sampai kanan */
+  padding-left: 24px;             /* Padding kembali untuk konten */
+  padding-right: 24px;
+  width: calc(100% + 48px);       /* Lebar penuh termasuk padding negatif */
+  box-sizing: border-box;
 }
 
 .app-title-desktop{
-  font-size:20px;
+  font-size:18px;                  /* Diperkecil dari 20px */
   font-weight:700;
   color:var(--text-primary);
 }
@@ -181,26 +190,26 @@ textarea:focus{
 .user-info{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:12px;                        /* Diperkecil dari 14px */
 }
 
 /* avatar + logout */
 .avatar-wrap{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:8px;                         /* Diperkecil dari 10px */
 }
 
 .avatar{
-  width:40px;
-  height:40px;
+  width:36px;                      /* Diperkecil dari 40px */
+  height:36px;                     /* Diperkecil dari 40px */
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#fff;
   font-weight:600;
-  font-size:16px;
+  font-size:14px;                  /* Diperkecil dari 16px */
 }
 
 .logout-btn{
@@ -211,7 +220,7 @@ textarea:focus{
   align-items:center;
   justify-content:center;
   color:var(--text-secondary);
-  padding:6px;
+  padding:4px;                     /* Diperkecil dari 6px */
   border-radius:8px;
 }
 
@@ -224,13 +233,13 @@ textarea:focus{
 /* ================= HAMBURGER ================= */
 
 .hamburger{
-  display:none; /* Hidden di desktop */
-  font-size:22px;
+  display:none;
+  font-size:20px;                  /* Diperkecil dari 22px */
   cursor:pointer;
   color:var(--text-primary);
   background:none;
   border:none;
-  padding: 8px;
+  padding: 6px;                    /* Diperkecil dari 8px */
   margin-right: 12px;
   border-radius: 8px;
   transition: background 0.2s ease;
@@ -250,6 +259,7 @@ textarea:focus{
     visibility: visible;
     height: auto;
     min-height: 100vh;
+    border-right: 1px solid var(--border-soft); /* Garis tetap ada */
   }
   
   .sidebar-overlay {
@@ -265,7 +275,29 @@ textarea:focus{
   }
   
   .content {
-    margin-left: 240px; /* Space untuk sidebar */
+    margin-left: 220px;           /* Sesuaikan dengan width sidebar baru */
+    padding: 24px;                /* Konsisten */
+  }
+  
+  /* Topbar menyambung ke sidebar */
+  .topbar {
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 1px solid var(--border-soft);
+    position: relative;
+  }
+  
+  /* Garis bawah topbar menyambung sidebar */
+  .topbar::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: -220px;                 /* Sesuaikan dengan lebar sidebar */
+    width: 220px;
+    height: 1px;
+    background: var(--border-soft);
   }
 }
 
@@ -288,8 +320,25 @@ textarea:focus{
   }
   
   .content {
-    padding: 20px;
+    padding: 16px;                /* Diperkecil dari 20px */
     width: 100%;
+    max-width: 100%;
+  }
+  
+  .topbar {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: calc(100% + 32px);
+    min-height: 44px;             /* Lebih kecil di mobile */
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  /* Hapus pseudo-element di mobile */
+  .topbar::before {
+    display: none;
   }
 }
 
@@ -302,16 +351,30 @@ textarea:focus{
   }
   
   .content {
-    padding: 16px;
+    padding: 12px;                /* Diperkecil dari 16px */
   }
   
   .topbar {
-    flex-wrap: wrap;
-    gap: 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% + 24px);
+    min-height: 40px;             /* Lebih kecil lagi */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
   }
   
   .user-info {
     width: 100%;
     justify-content: flex-end;
+    gap: 8px;
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
   }
 }
