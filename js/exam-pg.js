@@ -298,9 +298,9 @@ function shuffle(arr) {
 /* ================= FULLSCREEN ================= */
 
 document.addEventListener("fullscreenchange", () => {
-  if (!document.fullscreenElement) {
-    submitExam(true);
-  }
+ if (!document.fullscreenElement) {
+  alert("Fullscreen keluar!");
+}
 });
 
 
