@@ -154,7 +154,7 @@ function renderChart(correct, total) {
 
 function exportPG(){
 
-  const review = JSON.parse(localStorage.getItem("reviewData"));
+  const review = JSON.parse(localStorage.getItem(getKey("reviewData")));
   if(!review || review.length === 0){
     alert("Data tidak ditemukan");
     return;
