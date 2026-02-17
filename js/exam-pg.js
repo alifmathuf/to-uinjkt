@@ -36,7 +36,7 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
     startTimer();
     renderNumberNav();
     renderQuestion();
-    enterFullscreen();
+
   })
   .catch(err => {
     console.error(err);
@@ -296,12 +296,6 @@ function shuffle(arr) {
 
 
 /* ================= FULLSCREEN ================= */
-
-function enterFullscreen() {
-  if (document.documentElement.requestFullscreen) {
-    document.documentElement.requestFullscreen().catch(() => {});
-  }
-}
 
 document.addEventListener("fullscreenchange", () => {
   if (!document.fullscreenElement) {
