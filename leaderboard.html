@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leaderboard - Tryout PPG</title>
 
+<link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
+<link rel="shortcut icon" href="assets/logo-uin.svg">
+
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/leaderboard.css">
@@ -12,7 +15,6 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <!-- ================= FIREBASE ================= -->
-
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
@@ -22,7 +24,7 @@
     authDomain: "cbtuin-d26aa.firebaseapp.com",
     databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "cbtuin-d26aa",
-    storageBucket: "cbtuin-d26aa.firebasestorage.app",
+    storageBucket: "cbtuin-d26aa.appspot.com",
     messagingSenderId: "93548126228",
     appId: "1:93548126228:web:c456aedaad373237a0c701"
   };
@@ -30,7 +32,6 @@
   firebase.initializeApp(firebaseConfig);
   const database = firebase.database();
 </script>
-
 <!-- ============================================ -->
 
 </head>
@@ -44,13 +45,15 @@
 
   <!-- SIDEBAR -->
   <aside class="sidebar" id="sidebar">
+    
     <!-- TOMBOL CLOSE (Mobile Only) -->
     <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
       <i data-lucide="x"></i>
     </button>
+    
     <div class="app-title">TRY OUT PPG</div>
 
-    <div class="menu">
+    <nav class="menu">
       <a href="dashboard.html">
         <i data-lucide="layout-dashboard"></i>
         <span>Dashboard</span>
@@ -66,27 +69,31 @@
         <span>Review</span>
       </a>
 
-      <a href="leaderboard.html">
+      <a href="leaderboard.html" class="active">
         <i data-lucide="trophy"></i>
         <span>Peringkat</span>
       </a>
 
-      <a href="#" onclick="Auth.logout()">
+      <a href="#" onclick="Auth.logout(); return false;">
         <i data-lucide="log-out"></i>
         <span>Logout</span>
       </a>
-   
-    </div>
-  </div>
-     </aside>
-  <!-- CONTENT -->
-  <div class="content">
+    </nav>
+    
+  </aside>
 
-    <div class="topbar">
-      <span class="hamburger" onclick="toggleSidebar()">☰</span>
-    </div>
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+        <span class="app-title-desktop">Leaderboard</span>
+      </div>
+    </header>
      
-  
+    <!-- MAIN CONTENT -->
     <div class="card leaderboard-card">
       <h2>🏆 Leaderboard Top 10</h2>
 
@@ -101,18 +108,21 @@
             </tr>
           </thead>
           <tbody id="leaderboardBody">
+            <!-- Data akan diisi oleh JS -->
           </tbody>
         </table>
       </div>
-
     </div>
 
-  </div>
+  </main>
 
 </div>
 
-<!-- ================= JS APP ================= -->
+<footer class="footer">
+  © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
+</footer>
 
+<!-- ================= JS APP ================= -->
 <script src="js/auth.js"></script>
 <script src="js/layout.js"></script>
 <script src="js/leaderboard.js"></script>
