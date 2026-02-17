@@ -1,5 +1,5 @@
 /* =================================================
-   GLOBAL LAYOUT SYSTEM — CLEAN MATCH VERSION
+   GLOBAL LAYOUT SYSTEM — STABLE MATCH VERSION
 ================================================= */
 
 /* ================= BASE ================= */
@@ -10,32 +10,12 @@
   background:var(--bg-primary);
 }
 
-/* Smooth interaction */
-button,
-.menu a,
-.option-item{
-  transition:var(--transition);
-}
-
-button:hover{
-  transform:translateY(-1px);
-}
-
-:focus{ outline:none; }
-
-button:focus,
-a:focus,
-input:focus,
-textarea:focus{
-  box-shadow:0 0 0 2px var(--primary);
-}
-
 
 /* ================= SIDEBAR ================= */
 
 .sidebar {
   width: 220px;
-  padding: 24px 18px;
+  padding: 20px;
   background: rgba(17, 24, 39, 0.96);
   backdrop-filter: blur(14px);
   border-right: 1px solid var(--border-soft);
@@ -44,11 +24,11 @@ textarea:focus{
   transition: transform 0.3s ease;
   z-index: 1000;
 
+  /* mobile default */
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-
   transform: translateX(-100%);
   visibility: hidden;
 }
@@ -58,10 +38,20 @@ textarea:focus{
   visibility: visible;
 }
 
-.sidebar .app-title {
+/* tombol close */
+.sidebar-close {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
   font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 28px;
+  cursor: pointer;
+}
+
+.sidebar-close:hover {
   color: var(--text-primary);
 }
 
@@ -71,10 +61,10 @@ textarea:focus{
   display:flex;
   align-items:center;
   gap:12px;
-  padding:12px 14px;
+  padding:10px 12px;
   border-radius:var(--radius-sm);
   color:var(--text-secondary);
-  margin-bottom:6px;
+  margin-bottom:4px;
   text-decoration:none;
   font-size:14px;
 }
@@ -112,16 +102,17 @@ textarea:focus{
   border-bottom:1px solid var(--border-soft);
 }
 
-.app-title-desktop{
-  font-size:18px;
-  font-weight:700;
-  color:var(--text-primary);
-}
-
+/* pastikan avatar & logout sejajar */
 .user-info{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:12px;
+}
+
+.avatar-wrap{
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 
 .avatar{
@@ -163,12 +154,8 @@ textarea:focus{
   color:var(--text-primary);
   background:none;
   border:none;
-  padding:8px;
+  padding:6px;
   border-radius:8px;
-}
-
-.hamburger:hover {
-  background: var(--bg-hover);
 }
 
 
@@ -177,19 +164,22 @@ textarea:focus{
 @media (min-width: 1025px) {
 
   .sidebar {
-    position: relative;
-    transform: translateX(0);
+    position: relative;   /* PENTING supaya tidak nutup */
+    transform: none;
     visibility: visible;
     height: auto;
-    min-height: 100vh;
   }
 
-  .content {
-    padding: 32px;
+  .sidebar-close {
+    display: none !important;
   }
 
   .hamburger {
     display: none !important;
+  }
+
+  .content {
+    padding: 32px;
   }
 }
 
@@ -202,8 +192,8 @@ textarea:focus{
     display:block;
   }
 
-  .app-title-desktop {
-    display:none;
+  .sidebar-close {
+    display:block;
   }
 
   .content {
@@ -224,14 +214,4 @@ textarea:focus{
     padding: 18px;
   }
 
-  .topbar {
-    padding: 12px 0;
-    margin-bottom: 18px;
-  }
-
-  .avatar {
-    width:32px;
-    height:32px;
-    font-size:12px;
-  }
 }
