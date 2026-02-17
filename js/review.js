@@ -78,16 +78,13 @@ function tampilkanReview(soal, jawaban) {
       ? `<span class="correct">✓</span>`
       : `<span class="wrong">✗</span>`;
 
-    // Batasi panjang teks soal
-    let soalText = s.q;
-    if (soalText.length > 100) {
-      soalText = soalText.substring(0, 100) + "...";
-    }
+    // Tampilkan soal lengkap tanpa dipotong
+    const soalText = s.q;
 
     const row = `
       <tr>
         <td class="col-no">${i + 1}</td>
-        <td class="col-soal" title="${s.q}">${soalText}</td>
+        <td class="col-soal">${soalText}</td>
         <td class="col-jawaban">${userAnswerText}</td>
         <td class="col-status">${statusIcon}</td>
       </tr>
