@@ -35,8 +35,9 @@ const Auth = {
 
   logout(){
     localStorage.removeItem("cbtUser");
+    localStorage.removeItem("studiKasusData");      // ⬅️ Tambah
+    localStorage.removeItem("jawabanStudiKasus");   // ⬅️ Tambah
     window.location.href = "index.html";
-  },
 
   isLoggedIn(){
     return !!localStorage.getItem("cbtUser");
