@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Seorang pendidik Bahasa Arab menjelaskan kepada peserta didik tentang klasifikasi kata dalam bahasa Arab, mencakup pembagian kata menjadi isim, fi'il, dan huruf, serta karakteristik masing-masing.\n\nSetelah pembelajaran, pendidik ingin merumuskan tujuan pembelajaran ranah sikap yang tidak hanya menekankan pemahaman konsep, tetapi juga mendorong peningkatan keimanan, ketakwaan, dan akhlak mulia peserta didik.\n\nBerdasarkan deskripsi tersebut, rumusan tujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu mengklasifikasikan kata-kata dalam bahasa Arab menjadi isim, fi'il, dan huruf dengan benar.",
+      "Peserta didik dapat menjelaskan perbedaan karakteristik antara isim, fi'il, dan huruf dalam bahasa Arab.",
+      "Peserta didik menunjukkan sikap menghargai keindahan struktur bahasa Arab sebagai bahasa Al-Qur'an dalam kehidupan sehari-hari.",
+      "Peserta didik mampu mengidentifikasi contoh-contoh isim, fi'il, dan huruf dalam teks bahasa Arab.",
+      "Peserta didik dapat menganalisis fungsi masing-masing jenis kata dalam kalimat bahasa Arab."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Dalam suatu praktik pembelajaran Bahasa Arab, seorang dosen membahas materi tentang Struktur Jumlah Fi'liyyah (Kalimat Verba), mencakup susunan kalimat yang diawali dengan kata kerja dan unsur-unsur pelengkapnya.\n\nSetelah pembelajaran, dosen ingin merumuskan tujuan pembelajaran ranah pengetahuan yang mendorong peserta didik untuk mampu berpikir kritis dalam menganalisis struktur kalimat.\n\nBerdasarkan deskripsi tersebut, rumusan tujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menghafal definisi Jumlah Fi'liyyah dan contoh-contohnya.",
+      "Peserta didik dapat menganalisis struktur Jumlah Fi'liyyah dan membandingkannya dengan struktur kalimat dalam bahasa Indonesia secara kritis.",
+      "Peserta didik mampu menulis contoh Jumlah Fi'liyyah tanpa kesalahan gramatika.",
+      "Peserta didik dapat menyebutkan jenis-jenis fi'il dalam bahasa Arab.",
+      "Peserta didik mampu menerjemahkan Jumlah Fi'liyyah ke dalam bahasa Indonesia."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang calon guru Bahasa Arab menyampaikan materi tentang Fashahah (kefasihan berbahasa), mencakup kriteria kefasihan dalam berbahasa Arab dan faktor-faktor yang mempengaruhinya.\n\nSetelah pembelajaran, calon guru ingin merumuskan tujuan pembelajaran ranah keterampilan yang dapat menumbuhkan semangat bergotong royong peserta didik.\n\nBerdasarkan deskripsi tersebut, rumusan tujuan pembelajaran ranah keterampilan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu menjelaskan pengertian Fashahah dan kriterianya secara individu.",
+      "Peserta didik dapat mempraktikkan berbicara bahasa Arab dengan fasih di depan kelas.",
+      "Peserta didik mampu menulis teks bahasa Arab yang memenuhi kriteria Fashahah.",
+      "Peserta didik dapat berkolaborasi dalam kelompok untuk menghasilkan percakapan bahasa Arab yang fasih dan bermakna.",
+      "Peserta didik mampu mengidentifikasi kesalahan dalam pengucapan bahasa Arab."
+    ],
+    "a": 4
+  },
+  {
+    "q": "Seorang mahasiswa PPG Bahasa Arab mengembangkan materi ajar tentang Ilmu Lughah dan Ruang Lingkupnya, mencakup sejarah perkembangan ilmu bahasa Arab dan cabang-cabangnya.\n\nDalam pengembangan materi tersebut, mahasiswa ingin merumuskan indikator tujuan pembelajaran ranah sikap yang dapat menumbuhkan sikap penerimaan terhadap tradisi peserta didik.\n\nBerdasarkan deskripsi tersebut, rumusan indikator tujuan pembelajaran ranah sikap yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu mendeskripsikan sejarah perkembangan Ilmu Lughah secara lengkap.",
+      "Peserta didik dapat membandingkan Ilmu Lughah dengan ilmu bahasa lainnya.",
+      "Peserta didik menunjukkan sikap menghargai dan menerima keberagaman tradisi lokal dalam konteks pembelajaran bahasa Arab.",
+      "Peserta didik mampu menganalisis cabang-cabang Ilmu Lughah secara sistematis.",
+      "Peserta didik dapat menjelaskan kontribusi ilmuwan Arab dalam perkembangan Ilmu Lughah."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Dalam konteks pembelajaran Bahasa Arab, seorang pendidik menyampaikan materi tentang Konsep dan Teori Keterampilan Reseptif, mencakup keterampilan menyimak dan membaca dalam bahasa Arab.\n\nSetelah pembelajaran, pendidik ingin merumuskan indikator tujuan pembelajaran ranah pengetahuan yang dapat mengembangkan kemampuan berpikir dinamis dan inovatif peserta didik.\n\nBerdasarkan deskripsi tersebut, rumusan indikator tujuan pembelajaran ranah pengetahuan yang paling tepat adalah …",
+    "o": [
+      "Peserta didik mampu mendefinisikan keterampilan reseptif dan memberikan contohnya.",
+      "Peserta didik dapat merancang strategi inovatif untuk meningkatkan keterampilan reseptif dengan memanfaatkan teknologi digital yang relevan.",
+      "Peserta didik mampu menghafal teori-teori keterampilan reseptif dari berbagai ahli.",
+      "Peserta didik dapat menjelaskan perbedaan antara keterampilan menyimak dan membaca.",
+      "Peserta didik mampu mengidentifikasi faktor-faktor yang mempengaruhi keterampilan reseptif."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang dosen Bahasa Arab merencanakan tujuan pembelajaran pada materi Ilmu Sharaf dengan pendekatan PBL (Problem Based Learning), yang berfokus pada klasifikasi kata isim dan fi'il.\n\nBerdasarkan deskripsi aktivitas pembelajaran tersebut, analisis materi ajar berdasarkan struktur keilmuan yang paling tepat adalah …",
+    "o": [
+      "Mengidentifikasi masalah klasifikasi kata dalam bahasa Arab dan merumuskan solusi berdasarkan prinsip Ilmu Sharaf.",
+      "Menghafal definisi isim dan fi'il tanpa memahami konteks penggunaannya.",
+      "Menerjemahkan istilah-istilah Ilmu Sharaf ke dalam bahasa Indonesia saja.",
+      "Menyalin contoh-contoh kalimat dari buku teks tanpa analisis.",
+      "Mengingat nama-nama ilmuwan Sharaf yang terkenal dalam sejarah."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pelaksanaan pembelajaran Ilmu Nahwu dengan pendekatan PjBL (Project Based Learning), seorang guru Bahasa Arab menyajikan materi tentang Struktur Jumlah Ismiyyah (Kalimat Nomina).\n\nBerdasarkan deskripsi aktivitas tersebut, analisis materi ajar berdasarkan struktur keilmuan pada pelaksanaan tujuan pembelajaran yang paling tepat adalah …",
+    "o": [
+      "Mengajak peserta didik menghafal pola-pola Jumlah Ismiyyah secara mekanis.",
+      "Meminta peserta didik membuat proyek analisis struktur Jumlah Ismiyyah dalam teks keagamaan dengan mempertimbangkan karakteristik peserta didik.",
+      "Memberikan tugas menulis ulang definisi Jumlah Ismiyyah dari buku paket.",
+      "Menguji peserta didik dengan soal pilihan ganda tentang Jumlah Ismiyyah.",
+      "Menjelaskan teori Jumlah Ismiyyah tanpa contoh aplikatif."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang pendidik melakukan evaluasi pembelajaran pada materi Ilmu Balaghah dengan pendekatan DBL (Design Based Learning), yang mencakup materi tentang gaya bahasa dan kesan yang ditimbulkannya.\n\nBerdasarkan narasi kasus tersebut, penguraian materi Balaghah dalam evaluasi tujuan pembelajaran yang paling sesuai dengan karakteristik peserta didik adalah …",
+    "o": [
+      "Menilai peserta didik berdasarkan kemampuan menghafal definisi istilah Balaghah.",
+      "Mengevaluasi kemampuan peserta didik dalam mendesain karya tulis yang menerapkan prinsip-prinsip Balaghah sesuai karakteristik dan kebutuhan peserta didik.",
+      "Memberikan nilai berdasarkan keaktifan peserta didik dalam mengikuti pembelajaran.",
+      "Menguji peserta didik dengan pertanyaan tentang sejarah Ilmu Balaghah.",
+      "Menilai tugas peserta didik tanpa rubrik yang jelas."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang mahasiswa PPG menyusun perencanaan materi ajar Ilmu Lughah secara logis dengan pendekatan TPACK, yang mencakup materi tentang Kontribusi Ilmu Lughah (Linguistik) dalam Pembelajaran Bahasa.\n\nBerdasarkan pernyataan praktik pedagogi tersebut, penentuan alur materi ajar yang paling tepat dalam perencanaan tujuan pembelajaran adalah …",
+    "o": [
+      "Langsung membahas kontribusi Ilmu Lughah tanpa memahami dasar-dasarnya terlebih dahulu.",
+      "Mengajarkan teori linguistik modern tanpa menghubungkannya dengan bahasa Arab.",
+      "Menggunakan teknologi secara berlebihan tanpa mempertimbangkan materi dan pedagogi.",
+      "Menyusun alur dari pengenalan dasar Ilmu Lughah, perkembangannya, hingga kontribusinya dalam pembelajaran bahasa Arab dengan integrasi teknologi yang sesuai karakteristik peserta didik.",
+      "Fokus pada hafalan istilah-istilah linguistik tanpa pemahaman konseptual."
+    ],
+    "a": 4
+  },
+  {
+    "q": "Dalam pelaksanaan materi ajar Keterampilan Bahasa secara logis dengan pendekatan Deep Learning (DL), seorang guru Bahasa Arab menyajikan materi tentang Keterampilan Produktif.\n\nBerdasarkan pernyataan praktik pedagogi tersebut, penentuan alur materi ajar yang paling tepat pada pelaksanaan tujuan pembelajaran adalah …",
+    "o": [
+      "Mengajarkan keterampilan menulis dan berbicara secara terpisah tanpa koneksi.",
+      "Menyusun alur pembelajaran yang mendalam dari pemahaman konsep, aplikasi, kreativitas, hingga refleksi keterampilan produktif sesuai karakteristik peserta didik.",
+      "Fokus pada latihan menulis tanpa memperhatikan aspek berbicara.",
+      "Memberikan tugas menghafal dialog tanpa pemahaman makna.",
+      "Mengabaikan proses dan langsung menilai hasil akhir keterampilan peserta didik."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang pendidik Bahasa Arab melaksanakan materi ajar pembelajaran bahasa secara logis dengan model pelayanan konseling, yang mencakup teori-teori pemerolehan bahasa.\n\nBerdasarkan pernyataan praktik pedagogi tersebut, penentuan alur materi ajar yang paling tepat dalam mengevaluasi tujuan pembelajaran adalah …",
+    "o": [
+      "Menguji peserta didik dengan soal-soal teori pemerolehan bahasa secara abstrak.",
+      "Mengevaluasi pemahaman peserta didik tentang teori pemerolehan bahasa dengan memberikan layanan konseling untuk mengatasi kesulitan individual sesuai karakteristik peserta didik.",
+      "Memberikan nilai berdasarkan jumlah teori yang dihafal peserta didik.",
+      "Mengabaikan kesulitan individual peserta didik dalam evaluasi.",
+      "Menilai peserta didik hanya berdasarkan tes tertulis tanpa observasi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pelaksanaan program penguatan Profil Pelajar Pancasila (P5) secara logis, seorang calon guru Bahasa Arab merencanakan pengembangan materi ajar nilai-nilai P5.\n\nBerdasarkan pernyataan praktik pedagogi tersebut, penentuan pengembangan materi ajar nilai-nilai P5 yang paling tepat dalam merencanakan tujuan pembelajaran adalah …",
+    "o": [
+      "Mengintegrasikan nilai-nilai P5 secara terpisah dari materi Bahasa Arab.",
+      "Mengembangkan materi ajar yang mengintegrasikan nilai-nilai P5 dengan materi Bahasa Arab sesuai karakteristik peserta didik.",
+      "Fokus hanya pada aspek kognitif Bahasa Arab tanpa nilai-nilai karakter.",
+      "Memberikan ceramah tentang P5 tanpa koneksi dengan pembelajaran bahasa.",
+      "Mengabaikan keberagaman karakteristik peserta didik dalam pengembangan materi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang dosen Bahasa Arab melaksanakan program Penguatan Profil Pelajar Rahmatan lil 'Alamin (PPRA) secara logis dalam pembelajaran.\n\nBerdasarkan pernyataan praktik pedagogi tersebut, penentuan pengembangan materi ajar nilai-nilai PPRA yang paling tepat dalam melaksanakan tujuan pembelajaran adalah …",
+    "o": [
+      "Mengajarkan nilai-nilai PPRA sebagai materi tersendiri tanpa konteks bahasa Arab.",
+      "Mengembangkan materi ajar Bahasa Arab yang mencerminkan nilai-nilai rahmatan lil 'alamin sesuai karakteristik peserta didik.",
+      "Mengabaikan nilai-nilai keislaman dalam pembelajaran Bahasa Arab.",
+      "Fokus hanya pada aspek teknis bahasa tanpa nilai-nilai moral.",
+      "Memberikan tugas tanpa mempertimbangkan karakteristik individual peserta didik."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam praktik pedagogi atau praktik di masyarakat tentang implementasi nilai-nilai moderasi beragama secara logis, seorang pendidik Bahasa Arab mengevaluasi tujuan pembelajaran.\n\nBerdasarkan pernyataan tersebut, penentuan pengembangan materi ajar nilai-nilai Islam sebagai agama moderat atau wasathiyah yang paling tepat sesuai dengan implementasi moderasi beragama adalah …",
+    "o": [
+      "Mengajarkan nilai-nilai Islam secara ekstrem tanpa mempertimbangkan konteks keberagaman.",
+      "Mengembangkan materi ajar yang menunjukkan Islam sebagai agama moderat (wasathiyah) dengan mengintegrasikan semangat toleransi dan moderasi sesuai karakteristik peserta didik.",
+      "Mengabaikan nilai-nilai moderasi dalam pembelajaran Bahasa Arab.",
+      "Fokus hanya pada aspek ritual keagamaan tanpa pemahaman moderasi.",
+      "Menyampaikan materi tanpa menghubungkan dengan konteks kehidupan bermasyarakat."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam praktik pedagogi atau praktik di masyarakat tentang alasan implementasi nilai-nilai moderasi beragama, seorang mahasiswa PPG menilai pengembangan materi ajar Islam sebagai agama moderat atau wasathiyah.\n\nBerdasarkan pernyataan tersebut, penilaian pengembangan materi ajar yang paling tepat sesuai dengan implementasi moderasi beragama adalah …",
+    "o": [
+      "Menilai bahwa moderasi beragama tidak relevan dengan pembelajaran Bahasa Arab.",
+      "Menilai bahwa pengembangan materi ajar Islam sebagai agama moderat perlu dilakukan dengan alasan membangun sikap toleransi, menghindari ekstremisme, dan memperkuat persatuan bangsa sesuai karakteristik peserta didik.",
+      "Menganggap bahwa nilai-nilai moderasi cukup diajarkan secara teoritis tanpa praktik.",
+      "Menilai bahwa moderasi beragama hanya penting untuk mata pelajaran tertentu saja.",
+      "Mengabaikan konteks keberagaman peserta didik dalam penilaian materi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang calon guru Bahasa Arab merancang pembelajaran dengan materi Mizan Sharfi sesuai dengan struktur keilmuan Ilmu Sharaf.\n\nBerdasarkan deskripsi penerapan pembelajaran tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis masalah (PBL) yang paling tepat sesuai dengan materi pembelajaran adalah …",
+    "o": [
+      "Memberikan ceramah tentang Mizan Sharfi tanpa adanya masalah yang dikaji.",
+      "Merancang pembelajaran yang mempresentasikan masalah autentik terkait penggunaan Mizan Sharfi dalam konteks nyata untuk dianalisis dan diselesaikan peserta didik.",
+      "Mengajarkan Mizan Sharfi melalui hafalan pola-pola tanpa pemahaman makna.",
+      "Memberikan tugas menulis tanpa mengaitkan dengan konsep Mizan Sharfi.",
+      "Mengabaikan struktur keilmuan Ilmu Sharaf dalam perancangan pembelajaran."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam penyusunan rancangan pembelajaran Bahasa Arab, seorang pendidik menyajikan materi Pengembangan Jumlah Ismiyyah sesuai dengan struktur keilmuan Ilmu Nahwu.\n\nBerdasarkan deskripsi penerapan pembelajaran tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis masalah (PBL) yang paling tepat sesuai dengan pengetahuan pedagogik adalah …",
+    "o": [
+      "Menggunakan metode ceramah tanpa interaksi peserta didik.",
+      "Merancang pembelajaran PBL yang mendorong peserta didik menganalisis dan mengembangkan struktur Jumlah Ismiyyah dalam berbagai konteks komunikatif sesuai prinsip pedagogik yang relevan.",
+      "Memberikan latihan drill tanpa pemahaman konseptual.",
+      "Mengabaikan karakteristik peserta didik dalam perancangan pembelajaran.",
+      "Fokus pada penilaian produk tanpa memperhatikan proses pembelajaran."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang dosen Bahasa Arab menyajikan deskripsi kasus penerapan pembelajaran dengan materi Ilmu Ma'ani.\n\nBerdasarkan deskripsi kasus tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis masalah (PBL) yang paling tepat sesuai dengan pengetahuan teknologi adalah …",
+    "o": [
+      "Menggunakan teknologi secara acak tanpa tujuan pedagogis yang jelas.",
+      "Merancang pembelajaran PBL yang mengintegrasikan teknologi digital untuk memfasilitasi analisis konsep-konsep Ilmu Ma'ani dan kolaborasi peserta didik secara efektif.",
+      "Menghindari penggunaan teknologi dalam pembelajaran Ilmu Ma'ani.",
+      "Menggunakan teknologi hanya untuk presentasi one-way dari dosen.",
+      "Memilih teknologi yang tidak sesuai dengan karakteristik materi Ilmu Ma'ani."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam suatu kasus penerapan pembelajaran Bahasa Arab, seorang guru menyajikan materi Bahasa Arab di Antara Rumpun Semit sesuai dengan struktur keilmuan Ilmu Lughah.\n\nBerdasarkan deskripsi kasus tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling tepat sesuai dengan materi pembelajaran adalah …",
+    "o": [
+      "Menggunakan pendekatan yang sama untuk semua peserta didik tanpa memperhatikan perbedaan individual.",
+      "Merancang pembelajaran yang memperhatikan perbedaan gaya belajar, kemampuan, dan latar belakang peserta didik dalam memahami posisi bahasa Arab dalam rumpun bahasa Semit.",
+      "Mengabaikan keberagaman kemampuan bahasa peserta didik.",
+      "Memberikan materi yang identik tanpa diferensiasi.",
+      "Menilai peserta didik dengan standar yang kaku tanpa mempertimbangkan individualitas."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang pendidik Bahasa Arab menyajikan pernyataan kasus penerapan pembelajaran dengan materi Keterampilan Interaktif sesuai dengan struktur keilmuan.\n\nBerdasarkan pernyataan kasus tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling tepat sesuai dengan pengetahuan pedagogi adalah …",
+    "o": [
+      "Menerapkan strategi pembelajaran yang monoton untuk semua peserta didik.",
+      "Merancang pembelajaran yang memanfaatkan pengetahuan pedagogi untuk mengakomodasi perbedaan individual dalam pengembangan keterampilan interaktif bahasa Arab.",
+      "Mengabaikan teori belajar dalam perancangan pembelajaran keterampilan interaktif.",
+      "Fokus hanya pada aspek teknis tanpa memperhatikan aspek sosial-emosional peserta didik.",
+      "Menggunakan metode yang tidak sesuai dengan karakteristik keterampilan interaktif."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pernyataan penerapan pembelajaran Bahasa Arab dengan materi Keterampilan Mediatif sesuai dengan struktur keilmuan, seorang calon guru merancang pembelajaran.\n\nBerdasarkan pernyataan tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling tepat sesuai dengan pengetahuan teknologi adalah …",
+    "o": [
+      "Menggunakan teknologi yang sama untuk semua peserta didik tanpa mempertimbangkan aksesibilitas.",
+      "Merancang pembelajaran yang memanfaatkan teknologi adaptif untuk mengakomodasi perbedaan kemampuan dan gaya belajar peserta didik dalam mengembangkan keterampilan mediatif.",
+      "Menghindari penggunaan teknologi karena dianggap mempersulit pembelajaran.",
+      "Menggunakan teknologi canggih yang tidak dimengerti oleh sebagian peserta didik.",
+      "Mengabaikan etika penggunaan teknologi dalam keterampilan mediatif."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang dosen Bahasa Arab menyajikan narasi kasus penerapan pembelajaran dengan materi tahap-tahap pemerolehan bahasa sesuai dengan struktur keilmuan Pembelajaran Bahasa.\n\nBerdasarkan narasi kasus tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis pembelajaran mendalam (Deep Learning) yang paling tepat sesuai dengan materi pembelajaran untuk mengembangkan kemampuan critical thinking adalah …",
+    "o": [
+      "Mengajarkan tahap-tahap pemerolehan bahasa secara surface learning tanpa analisis kritis.",
+      "Merancang pembelajaran yang mendorong peserta didik menganalisis secara kritis teori-teori pemerolehan bahasa dan aplikasinya dalam konteks pembelajaran Bahasa Arab yang kompleks.",
+      "Meminta peserta didik menghafal urutan tahapan pemerolehan bahasa tanpa pemahaman mendalam.",
+      "Mengabaikan konteks aplikatif dari teori pemerolehan bahasa.",
+      "Fokus pada penilaian hasil tanpa memperhatikan proses berpikir kritis."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam narasi kasus penerapan pembelajaran dengan materi pembelajaran bahasa Arab sesuai dengan struktur keilmuan, seorang pendidik merancang pembelajaran untuk mengembangkan kemampuan creativity peserta didik.\n\nBerdasarkan narasi kasus tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis pembelajaran mendalam (Deep Learning) yang paling tepat sesuai dengan pengetahuan pedagogi adalah …",
+    "o": [
+      "Menggunakan metode konvensional yang tidak mendorong kreativitas.",
+      "Merancang pembelajaran yang melibatkan peserta didik dalam menciptakan metode atau media pembelajaran Bahasa Arab yang inovatif berdasarkan pemahaman pedagogi yang mendalam.",
+      "Memberikan tugas yang bersifat rutin dan repetitif.",
+      "Mengabaikan potensi kreatif peserta didik dalam perancangan pembelajaran.",
+      "Menstandarisasi hasil karya peserta didik tanpa ruang untuk ekspresi kreatif."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru Bahasa Arab menyajikan kasus penerapan pembelajaran dengan materi implementasi pendidikan karakter atau pendidikan nilai sesuai dengan struktur keilmuan.\n\nBerdasarkan kasus tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis pembelajaran mendalam (Deep Learning) yang paling tepat sesuai dengan pengetahuan teknologi untuk mengembangkan kemampuan collaboration atau communication adalah …",
+    "o": [
+      "Menggunakan teknologi untuk pembelajaran individual tanpa kolaborasi.",
+      "Merancang pembelajaran yang memanfaatkan teknologi untuk memfasilitasi kolaborasi dan komunikasi antarpeserta didik dalam proyek pendidikan karakter yang bermakna.",
+      "Menghindari teknologi dalam pembelajaran pendidikan karakter.",
+      "Menggunakan teknologi hanya untuk penilaian tanpa mendukung proses kolaboratif.",
+      "Menerapkan teknologi yang menghambat komunikasi antarpeserta didik."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam kasus penerapan pembelajaran dengan materi implementasi moderasi beragama di Indonesia sesuai dengan struktur keilmuan, seorang pendidik merancang pembelajaran untuk mengembangkan kemampuan adaptif peserta didik.\n\nBerdasarkan kasus tersebut, pilihan rancangan pembelajaran berpendekatan pembelajaran berbasis TPACK yang paling tepat sesuai dengan materi pembelajaran adalah …",
+    "o": [
+      "Mengajarkan moderasi beragama secara teoritis tanpa integrasi teknologi, pedagogi, dan konten.",
+      "Merancang pembelajaran yang mengintegrasikan Technology, Pedagogy, And Content Knowledge (TPACK) untuk membantu peserta didik beradaptasi dengan konteks keberagaman dan moderasi beragama di Indonesia.",
+      "Mengabaikan aspek teknologi dalam pembelajaran moderasi beragama.",
+      "Fokus hanya pada aspek konten tanpa mempertimbangkan pedagogi dan teknologi.",
+      "Menggunakan pendekatan yang tidak sesuai dengan karakteristik materi moderasi beragama."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Diberikan kasus penyajian materi Bina Al-Kalimah yang materinya kurang sesuai dengan perkembangan zaman, seorang mahasiswa PPG Bahasa Arab dituntut untuk menentukan strategi pembelajaran yang tepat.\n\nBerdasarkan kasus tersebut, penentuan penggunaan strategi pembelajaran berpendekatan PBL yang paling tepat guna menciptakan suasana belajar yang aman untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Meneruskan penyajian materi secara konvensional tanpa perubahan.",
+      "Menerapkan strategi PBL dengan mempresentasikan masalah autentik terkait Bina Al-Kalimah dalam konteks kehidupan modern, menciptakan suasana belajar yang aman untuk eksplorasi dan pengembangan karakter.",
+      "Mengabaikan ketidaksesuaian materi dengan perkembangan zaman.",
+      "Menghindari penggunaan pendekatan PBL karena dianggap terlalu kompleks.",
+      "Fokus pada penilaian hasil tanpa memperhatikan suasana belajar."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang calon guru Bahasa Arab menghadapi kasus penyajian materi Pengertian Majrurat Al-Asma yang materinya kurang sesuai dengan perkembangan zaman.\n\nBerdasarkan kasus tersebut, penentuan penggunaan strategi pembelajaran berpendekatan PjBL yang paling tepat guna menciptakan suasana belajar yang nyaman untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Memaksa peserta didik menerima materi secara pasif.",
+      "Menerapkan strategi PjBL dengan merancang proyek yang menghubungkan konsep Majrurat Al-Asma dengan aplikasi kontemporer, menciptakan suasana belajar yang nyaman dan kolaboratif.",
+      "Mengabaikan kenyamanan peserta didik dalam pembelajaran.",
+      "Menggunakan metode tradisional tanpa adaptasi konteks modern.",
+      "Menilai peserta didik dengan standar yang tidak sesuai perkembangan zaman."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam kasus penyajian materi Qashr atau Ilmu Bayan yang materinya kurang sesuai dengan perkembangan zaman, seorang pendidik Bahasa Arab perlu menentukan strategi pembelajaran yang relevan.\n\nBerdasarkan kasus tersebut, penentuan penggunaan strategi pembelajaran berpendekatan DBL yang paling tepat guna menciptakan suasana belajar yang membahagiakan untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Mengajar materi secara monoton tanpa koneksi dengan konteks kekinian.",
+      "Menerapkan strategi DBL dengan meminta peserta didik mendesain karya atau solusi yang menerapkan prinsip Qashr/Ilmu Bayan dalam konteks komunikasi modern, menciptakan suasana belajar yang menyenangkan dan bermakna.",
+      "Mengabaikan aspek kebahagiaan dalam pembelajaran.",
+      "Fokus hanya pada aspek teknis tanpa kreativitas.",
+      "Menghindari inovasi dalam penyajian materi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru Bahasa Arab dihadapkan pada kasus penyajian materi Tata Bahasa Tradisional dan Linguistik Modern yang materinya kurang sesuai dengan perkembangan zaman.\n\nBerdasarkan kasus tersebut, penentuan penggunaan model pembelajaran berpendekatan DL (Deep Learning) yang paling tepat guna menciptakan suasana belajar yang akomodatif untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Mempertahankan pemisahan antara tata bahasa tradisional dan linguistik modern.",
+      "Menerapkan model DL dengan merancang pembelajaran yang mengakomodasi berbagai gaya belajar dan kebutuhan peserta didik dalam memahami keterkaitan tata bahasa tradisional dan linguistik modern secara mendalam.",
+      "Mengabaikan keberagaman kebutuhan peserta didik.",
+      "Menggunakan pendekatan surface learning yang dangkal.",
+      "Tidak memberikan ruang bagi peserta didik untuk eksplorasi mendalam."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam kasus penyajian materi Indikator Keterampilan Reseptif yang materinya kurang sesuai dengan perkembangan zaman, seorang pendidik perlu menentukan model pembelajaran yang tepat.\n\nBerdasarkan kasus tersebut, penentuan penggunaan model pembelajaran berpendekatan TPACK yang paling tepat guna menciptakan suasana belajar yang adaptif untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Menggunakan metode konvensional tanpa integrasi teknologi.",
+      "Menerapkan model TPACK dengan mengintegrasikan teknologi, pedagogi, dan konten keterampilan reseptif yang adaptif terhadap perkembangan zaman dan kebutuhan peserta didik.",
+      "Mengabaikan peran teknologi dalam pembelajaran keterampilan reseptif.",
+      "Tidak memperbarui materi sesuai perkembangan zaman.",
+      "Menggunakan pendekatan yang kaku dan tidak fleksibel."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang mahasiswa PPG Bahasa Arab menghadapi kasus penyajian materi Indikator Keterampilan Produktif yang materinya kurang sesuai dengan perkembangan zaman.\n\nBerdasarkan kasus tersebut, penentuan penggunaan model pembelajaran berbasis pelayanan bimbingan konseling yang paling tepat guna menciptakan suasana belajar yang progresif untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Mengabaikan kebutuhan bimbingan individual peserta didik.",
+      "Menerapkan model pelayanan bimbingan konseling yang membantu peserta didik mengatasi kesulitan dalam mengembangkan keterampilan produktif secara progresif dan personal sesuai perkembangan zaman.",
+      "Memberikan materi yang sama tanpa memperhatikan perkembangan individual.",
+      "Menggunakan pendekatan yang tidak mendukung pertumbuhan progresif peserta didik.",
+      "Fokus hanya pada aspek akademik tanpa bimbingan karakter."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam kasus penyajian materi pengembangan bahan ajar bahasa Arab yang materinya kurang sesuai dengan perkembangan zaman, seorang calon guru perlu menentukan pendekatan pembelajaran yang relevan.\n\nBerdasarkan kasus tersebut, penentuan penggunaan pendekatan pembelajaran berbasis pelayanan ABK (Anak Berkebutuhan Khusus) yang paling tepat guna menciptakan lingkungan belajar yang akomodatif untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Mengabaikan kebutuhan khusus peserta didik dalam pengembangan bahan ajar.",
+      "Menerapkan pendekatan berbasis pelayanan ABK yang mengakomodasi keberagaman kebutuhan peserta didik dalam pengembangan bahan ajar bahasa Arab yang inklusif dan akomodatif.",
+      "Menggunakan bahan ajar yang tidak mempertimbangkan keberagaman peserta didik.",
+      "Menerapkan pendekatan yang eksklusif dan tidak inklusif.",
+      "Tidak memberikan layanan khusus bagi peserta didik berkebutuhan khusus."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang pendidik Bahasa Arab dihadapkan pada kasus penyajian materi pengembangan strategi atau media pembelajaran bahasa Arab yang materinya kurang sesuai dengan perkembangan zaman.\n\nBerdasarkan kasus tersebut, penentuan penggunaan pendekatan pembelajaran yang relevan guna menciptakan lingkungan belajar yang adaptif untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Mempertahankan strategi dan media pembelajaran yang usang.",
+      "Menerapkan pendekatan pembelajaran yang relevan dengan mengembangkan strategi dan media pembelajaran berbasis teknologi dan inovasi pedagogi yang adaptif terhadap perkembangan zaman.",
+      "Menolak perubahan dan inovasi dalam pembelajaran.",
+      "Menggunakan media yang tidak sesuai dengan karakteristik peserta didik zaman now.",
+      "Mengabaikan aspek adaptabilitas dalam pengembangan strategi pembelajaran."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam kasus penyajian materi pendidikan nilai atau pendidikan karakter yang materinya kurang sesuai dengan perkembangan zaman, seorang guru Bahasa Arab perlu menentukan pendekatan yang tepat.\n\nBerdasarkan kasus tersebut, penentuan penggunaan pendekatan pembelajaran yang relevan guna menciptakan lingkungan belajar yang progresif untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Mengajarkan nilai-nilai karakter secara dogmatis dan kaku.",
+      "Menerapkan pendekatan pembelajaran yang relevan dengan mengintegrasikan pendidikan karakter dalam konteks kehidupan modern secara progresif dan kontekstual.",
+      "Mengabaikan perkembangan nilai-nilai karakter yang diperlukan di era modern.",
+      "Menggunakan metode yang tidak mengembangkan karakter unggul peserta didik.",
+      "Fokus hanya pada aspek kognitif tanpa pengembangan karakter."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang dosen Bahasa Arab menghadapi kasus penyajian materi implementasi moderasi beragama di Indonesia yang materinya kurang sesuai dengan perkembangan zaman.\n\nBerdasarkan kasus tersebut, penentuan penggunaan pendekatan pembelajaran yang relevan guna menciptakan lingkungan belajar yang membahagiakan untuk menghasilkan lulusan yang berkarakter unggul dan berdaya saing adalah …",
+    "o": [
+      "Mengajarkan moderasi beragama secara teoretis dan membosankan.",
+      "Menerapkan pendekatan pembelajaran yang relevan dengan menciptakan pengalaman belajar moderasi beragama yang menyenangkan, bermakna, dan terkoneksi dengan realitas keberagaman Indonesia kontemporer.",
+      "Mengabaikan aspek kebahagiaan dalam pembelajaran moderasi beragama.",
+      "Menggunakan pendekatan yang tidak memperhatikan konteks kekinian.",
+      "Fokus pada indoktrinasi tanpa pemahaman mendalam."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam deskripsi pembelajaran materi Klasifikasi kata dalam bahasa Arab dengan pendekatan PBL, seorang calon guru dituntut menentukan teknik asesmen yang tepat.\n\nBerdasarkan deskripsi tersebut, penentuan teknik asesmen yang paling tepat sesuai karakter peserta didik pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan teknik asesmen tertulis saja tanpa memperhatikan aspek sikap dan keterampilan.",
+      "Menerapkan teknik asesmen autentik yang mencakup observasi sikap, penilaian proses dalam PBL, dan penilaian produk keterampilan sesuai karakteristik peserta didik.",
+      "Hanya menilai hasil akhir tanpa memperhatikan proses pembelajaran.",
+      "Menggunakan teknik asesmen yang tidak sesuai dengan pendekatan PBL.",
+      "Menilai peserta didik dengan standar yang tidak memperhatikan individualitas."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang pendidik Bahasa Arab menyajikan deskripsi pembelajaran materi Majzumat dengan pendekatan PjBL.\n\nBerdasarkan deskripsi tersebut, penentuan instrumen asesmen yang paling tepat sesuai karakter peserta didik pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan instrumen asesmen pilihan ganda sebagai satu-satunya alat penilaian.",
+      "Mengembangkan instrumen asesmen berupa rubrik proyek, lembar observasi sikap, dan penilaian portofolio yang sesuai dengan karakteristik peserta didik dalam PjBL.",
+      "Tidak menggunakan instrumen yang jelas dalam penilaian.",
+      "Menilai berdasarkan intuisi tanpa kriteria terukur.",
+      "Menggunakan instrumen yang tidak mencakup aspek sikap dan keterampilan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam deskripsi pembelajaran materi Fashal dan Washal atau Ilmu Badi' dengan pendekatan DL (Deep Learning), seorang guru perlu menentukan teknik asesmen yang tepat.\n\nBerdasarkan deskripsi tersebut, penentuan teknik asesmen yang paling tepat sesuai lingkungan belajar pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan teknik asesmen drill and practice yang dangkal.",
+      "Menerapkan teknik asesmen yang mengukur pemahaman mendalam, refleksi, dan aplikasi kreatif konsep Fashal/Washal/Ilmu Badi' sesuai dengan karakteristik lingkungan belajar.",
+      "Menilai hanya berdasarkan kemampuan menghafal definisi.",
+      "Mengabaikan aspek lingkungan belajar dalam penentuan teknik asesmen.",
+      "Menggunakan teknik asesmen yang tidak sesuai dengan karakteristik deep learning."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang mahasiswa PPG menyajikan deskripsi pembelajaran materi Pembidangan Linguistik, linguistik teoritis, atau linguistik terapan.\n\nBerdasarkan deskripsi tersebut, penentuan instrumen asesmen yang paling tepat sesuai lingkungan belajar pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan instrumen asesmen yang tidak mempertimbangkan konteks lingkungan belajar.",
+      "Mengembangkan instrumen asesmen yang relevan dengan sumber daya dan konteks lingkungan belajar dalam menilai pemahaman pembidangan linguistik dan aplikasinya.",
+      "Menerapkan instrumen asesmen yang monoton untuk semua konteks lingkungan belajar.",
+      "Tidak mempertimbangkan keterbatasan atau kelebihan lingkungan belajar dalam penilaian.",
+      "Menggunakan instrumen yang tidak mencakup aspek sikap dan keterampilan linguistik."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam deskripsi pembelajaran materi Indikator Keterampilan Interaktif, seorang pendidik Bahasa Arab dituntut menentukan teknik asesmen yang tepat.\n\nBerdasarkan deskripsi tersebut, penentuan teknik asesmen yang paling tepat sesuai tujuan pembelajaran pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan teknik asesmen yang tidak selaras dengan tujuan pembelajaran keterampilan interaktif.",
+      "Menerapkan teknik asesmen performatif dan autentik yang selaras dengan tujuan pembelajaran Indikator Keterampilan Interaktif, mencakup aspek sikap, pengetahuan, dan keterampilan.",
+      "Menilai keterampilan interaktif hanya melalui tes tertulis.",
+      "Mengabaikan tujuan pembelajaran dalam menentukan teknik asesmen.",
+      "Menggunakan teknik asesmen yang tidak mengukur keterampilan interaktif secara valid."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang calon guru menyajikan deskripsi pembelajaran materi Indikator Keterampilan Mediatif.\n\nBerdasarkan deskripsi tersebut, penentuan instrumen asesmen yang paling tepat sesuai tujuan pembelajaran pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan instrumen asesmen yang tidak sesuai dengan karakteristik keterampilan mediatif.",
+      "Mengembangkan instrumen asesmen berupa rubrik penilaian keterampilan mediatif yang mencakup aspek sikap penggunaan media, pengetahuan teknis, dan keterampilan produksi media sesuai tujuan pembelajaran.",
+      "Menilai keterampilan mediatif hanya berdasarkan produk akhir tanpa proses.",
+      "Mengabaikan aspek etika dan sikap dalam penggunaan media.",
+      "Menggunakan instrumen yang tidak valid untuk mengukur keterampilan mediatif."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam deskripsi pembelajaran materi pengembangan bahan ajar bahasa Arab, seorang pendidik perlu menentukan teknik asesmen dengan mempertimbangkan hasil asesmen sebelumnya.\n\nBerdasarkan deskripsi tersebut, penentuan teknik asesmen yang paling tepat dengan mempertimbangkan hasil asesmen sebelumnya pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Mengulangi teknik asesmen yang sama tanpa mempertimbangkan hasil sebelumnya.",
+      "Menerapkan teknik asesmen formatif dan sumatif yang mempertimbangkan hasil asesmen sebelumnya (pre-assessment) untuk menyesuaikan strategi pembelajaran dan penilaian aspek sikap, pengetahuan, dan keterampilan.",
+      "Mengabaikan data hasil asesmen sebelumnya dalam perencanaan asesmen.",
+      "Menilai tanpa memperhatikan perkembangan peserta didik dari waktu ke waktu.",
+      "Menggunakan teknik asesmen yang tidak berkesinambungan."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru Bahasa Arab menyajikan deskripsi pembelajaran materi pengembangan strategi atau media pembelajaran bahasa Arab.\n\nBerdasarkan deskripsi tersebut, penentuan instrumen asesmen yang paling tepat dengan mempertimbangkan hasil asesmen sebelumnya pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan instrumen asesmen yang standar tanpa diferensiasi berdasarkan hasil sebelumnya.",
+      "Mengembangkan instrumen asesmen yang disesuaikan dengan hasil asesmen sebelumnya, memungkinkan penilaian pertumbuhan peserta didik dalam aspek sikap, pengetahuan, dan keterampilan pengembangan strategi/media.",
+      "Menerapkan instrumen yang sama untuk semua peserta didik tanpa mempertimbangkan hasil sebelumnya.",
+      "Tidak menggunakan data hasil asesmen untuk perbaikan instrumen.",
+      "Mengabaikan aspek pertumbuhan dan perkembangan peserta didik."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam deskripsi pembelajaran materi implementasi pendidikan nilai atau pendidikan karakter, seorang pendidik perlu menentukan teknik asesmen dengan mempertimbangkan hasil asesmen awal.\n\nBerdasarkan deskripsi tersebut, penentuan teknik asesmen yang paling tepat dengan mempertimbangkan hasil asesmen awal pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan teknik asesmen yang tidak memperhatikan kondisi awal peserta didik.",
+      "Menerapkan teknik asesmen yang berbasis hasil asesmen awal (diagnostic assessment) untuk menentukan baseline dan merencanakan penilaian perkembangan aspek sikap, pengetahuan, dan keterampilan karakter.",
+      "Menilai peserta didik tanpa memahami kondisi awal mereka.",
+      "Mengabaikan hasil asesmen awal dalam penentuan strategi penilaian.",
+      "Menggunakan teknik asesmen yang tidak mengukur pertumbuhan karakter."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang mahasiswa PPG menyajikan deskripsi pembelajaran materi implementasi moderasi beragama di Indonesia.\n\nBerdasarkan deskripsi tersebut, penentuan instrumen asesmen yang paling tepat dengan mempertimbangkan hasil asesmen awal pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Menggunakan instrumen asesmen yang tidak mempertimbangkan pemahaman awal peserta didik tentang moderasi beragama.",
+      "Mengembangkan instrumen asesmen yang didasarkan pada hasil asesmen awal untuk mengukur perkembangan pemahaman dan sikap moderasi beragama secara valid dan berkelanjutan.",
+      "Menilai sikap moderasi tanpa memahami kondisi awal peserta didik.",
+      "Menerapkan instrumen yang sama untuk peserta didik dengan latar belakang yang berbeda.",
+      "Mengabaikan data awal dalam perancangan instrumen penilaian."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam narasi praktik pembelajaran seorang guru Bahasa Arab dengan materi Pengembangan Jumlah Ismiyyah, ditekankan aspek konten, pedagogi, dan teknologi yang berpotensi menimbulkan masalah pembelajaran.\n\nBerdasarkan narasi tersebut, identifikasi praktik baik (best practice) dalam merencanakan pembelajaran yang berkualitas secara berkelanjutan yang paling tepat adalah …",
+    "o": [
+      "Mengabaikan masalah yang muncul dalam perencanaan pembelajaran.",
+      "Mengidentifikasi praktik baik berupa refleksi komprehensif terhadap konten (materi Jumlah Ismiyyah), pedagogi (strategi pengajaran), dan teknologi yang digunakan untuk perbaikan berkelanjutan.",
+      "Melanjutkan praktik yang sama tanpa evaluasi.",
+      "Fokus hanya pada satu aspek tanpa memperhatikan keterkaitan konten, pedagogi, dan teknologi.",
+      "Tidak melakukan tindak lanjut terhadap masalah yang diidentifikasi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang pendidik Bahasa Arab menyajikan narasi praktik pembelajaran dengan materi Ijaz, Musawah, atau Ithnab dalam Ilmu Balaghah, dengan penekanan pada aspek konten, pedagogi, dan teknologi yang berpotensi menimbulkan masalah.\n\nBerdasarkan narasi tersebut, identifikasi praktik baik (best practice) dalam pelaksanaan pembelajaran yang berkualitas secara berkelanjutan yang paling tepat adalah …",
+    "o": [
+      "Meneruskan pelaksanaan pembelajaran tanpa memperbaiki masalah yang ada.",
+      "Mengidentifikasi praktik baik berupa refleksi terhadap pelaksanaan pembelajaran Ijaz/Musawah/Ithnab yang mencakup evaluasi konten, efektivitas pedagogi, dan kelayakan teknologi untuk peningkatan kualitas berkelanjutan.",
+      "Mengabaikan umpan balik dari peserta didik dalam pelaksanaan pembelajaran.",
+      "Tidak melakukan evaluasi terhadap teknologi yang digunakan.",
+      "Fokus hanya pada pencapaian target kurikulum tanpa refleksi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam narasi contoh praktik pembelajaran seorang guru Bahasa Arab dengan materi Konsep dan Teori Keterampilan Reseptif, ditekankan aspek konten, pedagogi, dan teknologi yang berpotensi menimbulkan masalah pembelajaran.\n\nBerdasarkan narasi tersebut, identifikasi praktik baik (best practice) dalam evaluasi pembelajaran yang berkualitas secara berkelanjutan yang paling tepat adalah …",
+    "o": [
+      "Mengabaikan masalah dalam evaluasi dan melanjutkan ke pembelajaran berikutnya.",
+      "Mengidentifikasi praktik baik berupa refleksi komprehensif terhadap evaluasi keterampilan reseptif yang mencakup analisis kesesuaian konten, efektivitas pedagogi, dan kebermanfaatan teknologi sesuai karakteristik dan gaya belajar Gen Z dan Alpha.",
+      "Tidak mengevaluasi efektivitas instrumen penilaian yang digunakan.",
+      "Mengabaikan karakteristik generasi Gen Z dan Alpha dalam evaluasi.",
+      "Fokus hanya pada hasil evaluasi tanpa refleksi proses."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang dosen Bahasa Arab menyajikan narasi kemampuan guru dalam penguasaan materi bahasa Arab di era digital dan AI.\n\nBerdasarkan narasi tersebut, penilaian kemampuan guru sebagai modal pengembangan diri guru secara berkelanjutan yang paling tepat adalah …",
+    "o": [
+      "Menganggap penguasaan materi tradisional cukup tanpa adaptasi era digital.",
+      "Menilai bahwa kemampuan guru dalam menguasai materi bahasa Arab perlu dikembangkan secara berkelanjutan dengan mengintegrasikan kompetensi digital dan AI untuk meningkatkan kualitas pembelajaran.",
+      "Mengabaikan perkembangan teknologi dalam pengembangan diri guru.",
+      "Menilai kemampuan guru hanya berdasarkan kualifikasi akademik tanpa praktik.",
+      "Tidak mempertimbangkan relevansi materi dengan konteks digital."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam narasi kemampuan guru dalam penggunaan AI untuk pembelajaran bahasa Arab yang bermakna, seorang calon guru dituntut mengidentifikasi masalah dan solusinya secara ilmiah.\n\nBerdasarkan narasi tersebut, identifikasi masalah dan solusinya secara ilmiah untuk menunjukkan jati diri sebagai guru profesional sesuai dengan karakteristik dan gaya belajar Peserta Didik Gen Z dan Alpha yang paling tepat adalah …",
+    "o": [
+      "Mengabaikan penggunaan AI dalam pembelajaran bahasa Arab.",
+      "Mengidentifikasi masalah keterbatasan interaksi dalam pembelajaran digital dan merumuskan solusi ilmiah berupa integrasi AI yang personalisasi sesuai karakteristik dan gaya belajar Gen Z dan Alpha untuk pembelajaran yang bermakna.",
+      "Menggunakan AI tanpa mempertimbangkan dampak pedagogisnya.",
+      "Tidak melakukan identifikasi masalah secara sistematis.",
+      "Mengabaikan karakteristik khusus Gen Z dan Alpha dalam penerapan AI."
+    ],
+    "a": 2
+  }
+]
