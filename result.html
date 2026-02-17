@@ -125,10 +125,15 @@ firebase.initializeApp(firebaseConfig);
 
     <div class="result-buttons">
 
-      <div class="result-actions">
-  <button onclick="exportPG()" class="btn-primary">Export Jawaban PG</button>
-  <button onclick="exportCase()" class="btn-secondary">Export Studi Kasus</button>
-</div>
+      <div class="result-buttons">
+        <button class="btn-primary" onclick="exportPDF()">
+          Export PDF
+        </button>
+
+        <button onclick="window.location.href='review.html'">
+          Review Jawaban
+        </button>
+      </div>
 
   </div>
 </div>
