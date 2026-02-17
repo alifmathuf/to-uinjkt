@@ -102,15 +102,24 @@ canvas{
 /* ================= BUTTONS ================= */
 
 .result-buttons{
-  margin-top:36px;
+  margin-top:35px;
   display:flex;
   justify-content:center;
-  gap:16px;
+  align-items:center;
+  gap:12px;
+  flex-wrap:nowrap;   /* ⬅️ penting supaya tidak turun */
 }
 
 .result-buttons button{
-  flex:1;               /* supaya lebar seimbang */
-  max-width:220px;      /* supaya tidak terlalu panjang */
+  flex:1;             /* bagi lebar rata */
+  min-width:0;        /* cegah overflow flex bug */
+  padding:10px 12px;  /* kecilkan supaya muat layar kecil */
+  border-radius:8px;
+  border:none;
+  background:var(--bg-secondary);
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
 }
 
 .result-buttons button:hover{
@@ -138,11 +147,6 @@ canvas{
 
   .result-card{
     padding:20px;
-  }
-
-  .result-buttons{
-    flex-direction:column;
-    gap:10px;
   }
 
 }
