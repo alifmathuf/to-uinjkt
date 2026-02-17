@@ -1,113 +1,90 @@
-/* ================= LAYOUT - MOBILE FIRST ================= */
+/* ================= REVIEW PAGE ================= */
 
-.layout {
-  width: 100%;
-  min-height: 100vh;
-  padding: 12px;                    /* Padding kecil untuk mobile */
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;          /* Mulai dari atas untuk scrolling */
-  overflow-x: hidden;
+.review-container{
+  max-width:1100px;
+  margin:40px auto;
+  padding:24px;
 }
 
-/* Card Container - Tidak terlalu lebar */
-.card.review-card {
-  width: 100%;
-  max-width: 800px;                 /* Dibatasi agar tidak terlalu lebar */
-  margin: 0 auto;
-  padding: 16px;                    /* Padding mobile */
-  box-sizing: border-box;
-  overflow: hidden;                 /* Mencegah overflow */
+.review-container h2{
+  margin-bottom:30px;
+  color:var(--text-primary);
 }
 
 
-/* ================= TABLE - SCROLLING VERTICAL MOBILE ================= */
+/* ===== TABLE ===== */
 
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;                 /* Scroll horizontal jika perlu */
-  overflow-y: visible;
-  -webkit-overflow-scrolling: touch;
-  margin: 16px 0;
-  border-radius: var(--radius);
-  /* Hapus border di sini, biar di tabel */
+.review-table{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--bg-card);
+  border:1px solid var(--border-soft);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
 }
 
-/* Pastikan tabel tidak melebihi wrapper */
-.review-table {
-  width: 100%;
-  min-width: 100%;                  /* Minimum full width container */
-  table-layout: fixed;              /* Kolom tetap proporsional */
+.review-table thead{
+  background:var(--bg-secondary);
+  color:var(--text-primary);
 }
 
-
-/* ================= FOOTER - TOMBOL SEJAJAR MOBILE ================= */
-
-.review-footer {
-  display: flex;
-  flex-direction: row;              /* Sejajar horizontal di mobile */
-  justify-content: center;          /* Tengah */
-  align-items: center;
-  gap: 12px;                        /* Jarak antar tombol */
-  margin-top: 20px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-soft);
-  flex-wrap: wrap;                  /* Wrap jika tidak muat */
+.review-table th{
+  padding:14px;
+  text-align:left;
+  font-weight:600;
+  font-size:14px;
 }
 
-.review-footer button {
-  flex: 1;                          /* Sama besar */
-  min-width: 120px;                 /* Minimum lebar tombol */
-  max-width: 200px;                 /* Maksimum lebar tombol */
-  padding: 12px 16px;
-  font-size: 14px;
-  white-space: nowrap;              /* Teks tidak wrap */
+.review-table td{
+  padding:14px;
+  border-bottom:1px solid var(--border-soft);
+  vertical-align:top;
+  color:var(--text-secondary);
+  font-size:14px;
+}
+
+.review-table tr:last-child td{
+  border-bottom:none;
+}
+
+.review-table tr:hover{
+  background:var(--bg-hover);
 }
 
 
-/* ================= TABLET (768px+) ================= */
+/* ===== STATUS ICON ===== */
 
-@media (min-width: 768px) {
-  .layout {
-    padding: 24px;
-    align-items: center;            /* Tengah vertikal di tablet+ */
-  }
+.correct{
+  color:var(--success);
+  font-size:18px;
+  font-weight:600;
+}
 
-  .card.review-card {
-    padding: 24px;
-  }
-
-  .table-wrapper {
-    overflow-x: visible;            /* Tidak perlu scroll di tablet */
-    margin: 20px 0;
-  }
-
-  .review-table {
-    min-width: auto;                /* Kembali normal */
-  }
-
-  .review-footer {
-    gap: 16px;
-    justify-content: flex-end;      /* Kanan di tablet+ */
-  }
-
-  .review-footer button {
-    flex: 0 0 auto;                 /* Tidak flex, ukuran natural */
-    min-width: 140px;
-  }
+.wrong{
+  color:var(--danger);
+  font-size:18px;
+  font-weight:600;
 }
 
 
-/* ================= DESKTOP (1024px+) ================= */
+/* ===== BUTTON ===== */
 
-@media (min-width: 1024px) {
-  .layout {
-    padding: 40px 24px;
-  }
+.review-footer{
+  margin-top:24px;
+  text-align:right;
+}
 
-  .card.review-card {
-    max-width: 900px;               /* Sedikit lebih lebar di desktop */
-    padding: 32px;
-  }
+.review-footer button{
+  padding:10px 18px;
+  border-radius:var(--radius-sm);
+  border:1px solid var(--border-soft);
+  background:var(--bg-secondary);
+  color:var(--text-primary);
+  cursor:pointer;
+  transition:var(--transition);
+}
+
+.review-footer button:hover{
+  background:var(--bg-hover);
 }
