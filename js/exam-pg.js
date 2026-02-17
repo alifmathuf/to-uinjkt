@@ -8,6 +8,9 @@ function getKey(key) {
   return `${key}_${user.id}`;
 }
 const examState = JSON.parse(localStorage.getItem("examState"));
+if (!localStorage.getItem(getKey("pgAnswers"))) {
+  localStorage.removeItem(getKey("examEndTime"));
+}
 if (!examState) window.location.href = "dashboard.html";
 
 let soalData = [];
@@ -32,7 +35,7 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
     soalData = shuffle(data);
     soalUjian = soalData.slice(0, 50);
 
-    const savedAnswers = localStorage.getItem("pgAnswers");
+    const savedAnswers = localStorage.getItem(getKey("pgAnswers"));
     jawaban = savedAnswers
       ? JSON.parse(savedAnswers)
       : new Array(soalUjian.length).fill(null);
@@ -52,13 +55,12 @@ fetch(`paket/${examState.mapel}/${examState.paket}.json`)
 
 function startTimer() {
 
-  const savedEnd = localStorage.getItem("examEndTime");
-
+  const savedEnd = localStorage.getItem(getKey("examEndTime"));
   if (savedEnd) {
     endTime = parseInt(savedEnd);
   } else {
     endTime = Date.now() + duration * 1000;
-    localStorage.setItem("examEndTime", endTime);
+    localStorage.setItem(getKey("examEndTime"), endTime);
   }
 
   timerInterval = setInterval(() => {
@@ -151,7 +153,7 @@ function updateProgress(){
 function saveAnswer(i) {
 
   jawaban[current] = i;
-  localStorage.setItem("pgAnswers", JSON.stringify(jawaban));
+  localStorage.setItem(getKey("pgAnswers"), JSON.stringify(jawaban));
 
   const user = Auth.getUser();
   if (!user || typeof firebase === "undefined") return;
@@ -305,8 +307,8 @@ soalUjian.forEach((s, i) => {
 // simpan untuk halaman result
 localStorage.setItem("reviewData", JSON.stringify(reviewData));
 
-  localStorage.removeItem("examEndTime");
-  localStorage.removeItem("pgAnswers");
+  localStorage.removeItem(getKey("examEndTime"));
+localStorage.removeItem(getKey("pgAnswers"));
 
   window.location.href = "result.html";
 }
