@@ -174,59 +174,74 @@ function exportPG(){
 
   review.forEach((item, i) => {
 
-    // auto page break
-    if (y > 270) {
-      doc.addPage();
-      y = 15;
-    }
+  // auto page break
+  if (y > 270) {
+    doc.addPage();
+    y = 15;
+  }
 
-    // ================= SOAL =================
-    let soalText = `${i+1}. ${item.q}`;
-    let splitSoal = doc.splitTextToSize(soalText, pageWidth);
+  const isBenar = item.user === item.correct;
 
-    doc.text(splitSoal, margin, y);
-    y += splitSoal.length * 5;
+  // ================= SOAL =================
+  doc.setTextColor(0,0,0);
+  let soalText = `${i+1}. ${item.q}`;
+  let splitSoal = doc.splitTextToSize(soalText, pageWidth);
 
-    // ================= OPSI =================
-    if(item.options && item.options.length){
-      item.options.forEach((opt, idx) => {
-        const huruf = String.fromCharCode(65 + idx);
-        let optText = `${huruf}. ${opt}`;
-        let splitOpt = doc.splitTextToSize(optText, pageWidth - 10);
+  doc.text(splitSoal, margin, y);
+  y += splitSoal.length * 5;
 
-        doc.text(splitOpt, margin + 5, y);
-        y += splitOpt.length * 5;
-      });
-    }
+  // ================= OPSI =================
+  if(item.options && item.options.length){
+    item.options.forEach((opt, idx) => {
+      const huruf = String.fromCharCode(65 + idx);
+      let optText = `${huruf}. ${opt}`;
+      let splitOpt = doc.splitTextToSize(optText, pageWidth - 10);
 
-    // ================= JAWABAN =================
-    doc.text(`Jawaban Anda : ${item.user}`, margin + 5, y);
-    y += 5;
+      doc.text(splitOpt, margin + 5, y);
+      y += splitOpt.length * 5;
+    });
+  }
 
-    doc.text(`Jawaban Benar: ${item.correct}`, margin + 5, y);
-    y += 5;
+  // ================= JAWABAN USER =================
+  if (isBenar) {
+    doc.setTextColor(0, 128, 0); // hijau
+  } else {
+    doc.setTextColor(200, 0, 0); // merah
+  }
 
-    // ================= STATUS =================
-    const status = item.user === item.correct ? "BENAR" : "SALAH";
-    doc.text(`Status : ${status}`, margin + 5, y);
-    y += 6;
+  doc.text(`Jawaban Anda : ${item.user}`, margin + 5, y);
+  y += 5;
 
-    // ================= PEMBAHASAN =================
-    if(item.explanation){
-      let splitExp = doc.splitTextToSize(
-        `Pembahasan: ${item.explanation}`,
-        pageWidth - 5
-      );
-      doc.text(splitExp, margin + 5, y);
-      y += splitExp.length * 5;
-    }
+  // ================= JAWABAN BENAR =================
+  doc.setTextColor(0,0,0);
+  doc.text(`Jawaban Benar: ${item.correct}`, margin + 5, y);
+  y += 5;
 
-    // jarak antar soal
-    y += 5;
+  // ================= STATUS =================
+  if (isBenar) {
+    doc.setTextColor(0, 128, 0);
+  } else {
+    doc.setTextColor(200, 0, 0);
+  }
 
-  });
+  const status = isBenar ? "BENAR" : "SALAH";
+  doc.text(`Status : ${status}`, margin + 5, y);
+  y += 6;
 
-  doc.save("hasil-pg.pdf");
-}
+  // ================= PEMBAHASAN =================
+  doc.setTextColor(0,0,0);
+  if(item.explanation){
+    let splitExp = doc.splitTextToSize(
+      `Pembahasan: ${item.explanation}`,
+      pageWidth - 5
+    );
+    doc.text(splitExp, margin + 5, y);
+    y += splitExp.length * 5;
+  }
 
+  // jarak antar soal
+  y += 5;
 
+});
+
+doc.save("hasil-pg.pdf");
