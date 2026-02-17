@@ -1,104 +1,3 @@
-/* ================= RESULT CARD ================= */
-
-.result-card{
-  max-width:750px;
-  margin:auto;
-  text-align:center;
-  padding:32px;
-  background:var(--bg-card);
-  border-radius:var(--radius);
-  border:1px solid var(--border-soft);
-  box-shadow:var(--shadow-soft);
-}
-
-
-/* ================= SCORE BOX ================= */
-
-.score-box{
-  margin:28px 0 12px 0;
-}
-
-.score-number{
-  font-size:52px;
-  font-weight:700;
-  color:var(--primary);
-}
-
-.score-label{
-  color:var(--text-secondary);
-  font-size:14px;
-  letter-spacing:.5px;
-}
-
-
-/* ================= PG DETAIL ================= */
-
-.pg-detail{
-  margin-top:16px;
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  font-size:14px;
-  color:var(--text-secondary);
-}
-
-.pg-detail div{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:6px;
-}
-
-
-/* ================= STATUS ================= */
-
-#statusBox{
-  margin-top:12px;
-  font-weight:600;
-}
-
-.status-pass{
-  color:var(--success);
-}
-
-.status-fail{
-  color:var(--danger);
-}
-
-
-/* ================= STUDI KASUS ================= */
-
-.case-result{
-  margin-top:12px;
-  font-size:14px;
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  color:var(--text-secondary);
-}
-
-.case-result h3{
-  margin-bottom:6px;
-  font-size:16px;
-  color:var(--text-primary);
-}
-
-.case-result div{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:6px;
-}
-
-
-/* ================= CHART ================= */
-
-canvas{
-  margin-top:28px;
-  max-height:160px;
-}
-
-
 /* ================= BUTTONS ================= */
 
 .result-buttons{
@@ -107,19 +6,25 @@ canvas{
   justify-content:center;
   align-items:center;
   gap:12px;
-  flex-wrap:nowrap;   /* ⬅️ penting supaya tidak turun */
+  flex-wrap:nowrap;
+  max-width: 400px;        /* ⬅️ Batasi lebar container */
+  margin-left: auto;       /* ⬅️ Center container */
+  margin-right: auto;      /* ⬅️ Center container */
 }
 
 .result-buttons button{
-  flex:1;             /* bagi lebar rata */
-  min-width:0;        /* cegah overflow flex bug */
-  padding:10px 12px;  /* kecilkan supaya muat layar kecil */
+  flex:0 0 auto;          /* ⬅️ Hapus flex:1, ukuran natural */
+  min-width: 140px;        /* ⬅️ Lebar minimum */
+  max-width: 180px;        /* ⬅️ Lebar maksimum */
+  width: auto;             /* ⬅️ Ukuran mengikuti konten */
+  padding:10px 20px;       /* ⬅️ Padding horizontal lebih besar */
   border-radius:8px;
   border:none;
   background:var(--bg-secondary);
   color:white;
   cursor:pointer;
   transition:0.3s;
+  white-space: nowrap;     /* ⬅️ Teks tidak wrap */
 }
 
 .result-buttons button:hover{
@@ -140,13 +45,27 @@ canvas{
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:600px){
-
+  
   .score-number{
     font-size:42px;
   }
 
   .result-card{
     padding:20px;
+  }
+
+  /* ⬅️ Tambahan: tombol lebih kecil di mobile */
+  .result-buttons{
+    max-width: 100%;       /* Full width container di mobile */
+    gap: 8px;
+  }
+
+  .result-buttons button{
+    min-width: 120px;      /* Lebar lebih kecil */
+    max-width: 50%;        /* Maksimum setengah container */
+    padding: 10px 14px;    /* Padding lebih kecil */
+    font-size: 13px;       /* Font lebih kecil */
+    flex: 1;               /* Bagi rata di mobile */
   }
 
 }
