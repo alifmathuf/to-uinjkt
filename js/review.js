@@ -1,99 +1,91 @@
-Auth.protect();
-
-const user = Auth.getUser();
+// Cek login
+const user = firebase.auth().currentUser;
 
 if (!user) {
-  window.location.href = "dashboard.html";
+  window.location.href = 'login.html';
+} else {
+  loadReviewData(user.uid);
 }
 
-// Ambil ujian terakhir dari Firebase
-database.ref(`exams/${user.id}`)
-  .orderByChild("submittedAt")
-  .limitToLast(1)
-  .once("value")
-  .then(snapshot => {
-
-    if (!snapshot.exists()) {
-      document.getElementById("reviewBody").innerHTML = `
-        <tr>
-          <td colspan="4" class="empty-state">
-            Belum ada data ujian.
-          </td>
-        </tr>`;
-      return;
-    }
-
-    // Ambil data ujian terakhir
-    const examData = Object.values(snapshot.val())[0];
-    const jawaban = examData.answers;
-    const mapel = examData.mapel;
-    const paket = examData.paket;
-
-    // Ambil ulang soal dari file JSON
-    fetch(`paket/${mapel}/${paket}.json`)
-      .then(res => res.json())
-      .then(soalData => {
-        tampilkanReview(soalData.slice(0, jawaban.length), jawaban);
-      })
-      .catch(err => {
-        console.error("Error loading soal:", err);
-        document.getElementById("reviewBody").innerHTML = `
+function loadReviewData(userId) {
+  const container = document.getElementById("reviewBody");
+  
+  database.ref(`exams/${userId}`)
+    .orderByChild("submittedAt")
+    .limitToLast(1)
+    .once("value")
+    .then(snapshot => {
+      
+      if (!snapshot.exists()) {
+        container.innerHTML = `
           <tr>
-            <td colspan="4" class="empty-state">
-              Gagal memuat soal.
+            <td colspan="4" class="empty-cell">
+              Belum ada data ujian.
             </td>
           </tr>`;
-      });
+        return;
+      }
 
-  })
-  .catch(err => {
-    console.error("Error loading exam:", err);
-    document.getElementById("reviewBody").innerHTML = `
-      <tr>
-        <td colspan="4" class="empty-state">
-          Gagal memuat data ujian.
-        </td>
-      </tr>`;
-  });
+      const examData = Object.values(snapshot.val())[0];
+      const jawaban = examData.answers;
+      const mapel = examData.mapel;
+      const paket = examData.paket;
 
+      fetch(`paket/${mapel}/${paket}.json`)
+        .then(res => res.json())
+        .then(soalData => {
+          tampilkanReview(soalData.slice(0, jawaban.length), jawaban);
+        })
+        .catch(err => {
+          console.error(err);
+          container.innerHTML = `
+            <tr>
+              <td colspan="4" class="empty-cell">
+                Gagal memuat soal.
+              </td>
+            </tr>`;
+        });
+    })
+    .catch(err => {
+      console.error(err);
+      container.innerHTML = `
+        <tr>
+          <td colspan="4" class="empty-cell">
+            Gagal memuat data.
+          </td>
+        </tr>`;
+    });
+}
 
 function tampilkanReview(soal, jawaban) {
-
   const tbody = document.getElementById("reviewBody");
   tbody.innerHTML = "";
 
   soal.forEach((s, i) => {
-
     const userAnswerIndex = jawaban[i];
     const correctIndex = s.a;
 
-    const userAnswerText =
-      userAnswerIndex !== null && userAnswerIndex !== undefined
-        ? s.o[userAnswerIndex]
-        : "-";
+    const userAnswerText = (userAnswerIndex !== null && userAnswerIndex !== undefined)
+      ? s.o[userAnswerIndex]
+      : "-";
 
     const isCorrect = userAnswerIndex === correctIndex;
-
     const statusIcon = isCorrect
-      ? `<span class="correct">✓</span>`
-      : `<span class="wrong">✗</span>`;
+      ? '<span class="status-benar">✓</span>'
+      : '<span class="status-salah">✗</span>';
 
-    // Batasi panjang teks soal
-    let soalText = s.q;
-    if (soalText.length > 100) {
-      soalText = soalText.substring(0, 100) + "...";
-    }
+    // Tampilkan soal lengkap tanpa dipotong
+    const soalText = s.q;
 
     const row = `
       <tr>
-        <td class="col-no">${i + 1}</td>
-        <td class="col-soal" title="${s.q}">${soalText}</td>
-        <td class="col-jawaban">${userAnswerText}</td>
-        <td class="col-status">${statusIcon}</td>
+        <td class="cell-no">${i + 1}</td>
+        <td class="cell-soal">${soalText}</td>
+        <td class="cell-jawaban">${userAnswerText}</td>
+        <td class="cell-status">${statusIcon}</td>
       </tr>
     `;
 
     tbody.innerHTML += row;
-
   });
 }
