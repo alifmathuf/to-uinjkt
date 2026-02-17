@@ -1,19 +1,26 @@
-/* =========================
-   SIDEBAR TOGGLE (mobile)
-========================= */
+function toggleSidebar(){
+  document.querySelector(".sidebar").classList.toggle("active");
+}
+if(window.innerWidth > 1024){
+  document.querySelector(".sidebar").classList.add("collapsed");
+}
 
-document.addEventListener("DOMContentLoaded", () => {
 
-  const toggleBtn = document.getElementById("menuToggle");
-  const sidebar = document.getElementById("sidebar");
+function toggleSidebar(){
+  const sidebar = document.querySelector(".sidebar");
+  const overlay = document.getElementById("sidebarOverlay");
 
-  if(toggleBtn){
-    toggleBtn.onclick = () => {
-      sidebar.classList.toggle("show");
-    };
+  sidebar.classList.toggle("open");
+
+  if(overlay){
+    overlay.classList.toggle("active");
   }
+}
+document.getElementById("sidebarOverlay")
+?.addEventListener("click", toggleSidebar);
 
-});// ===============================
+
+// ===============================
 // AUTO ACTIVE MENU
 // ===============================
 document.addEventListener("DOMContentLoaded", () => {
