@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Dalam sebuah perkuliahan, dosen memberikan materi tentang pentingnya pembentukan akhlak karimah sebagai wujud keimanan dan ketakwaan seseorang. Dosen meminta mahasiswa untuk merumuskan tujuan pembelajaran ranah sikap. Manakah rumusan tujuan pembelajaran ranah sikap yang paling tepat?",
+    "o": [
+      "Mahasiswa dapat memahami konsep akhlak karimah.",
+      "Mahasiswa dapat meningkatkan keimanan, ketakwaan, dan membiasakan perilaku akhlak mulia.",
+      "Mahasiswa dapat mendefinisikan akhlak karimah secara tepat.",
+      "Mahasiswa dapat mengidentifikasi contoh akhlak mulia dalam kehidupan.",
+      "Mahasiswa dapat menghafalkan dalil tentang akhlak mulia."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam perkuliahan Fikih, dosen membahas sebuah kasus tentang pernikahan di masyarakat modern. Mahasiswa diminta merumuskan tujuan pembelajaran di ranah pengetahuan agar peserta didik berpikir kritis. Tujuan pembelajaran pengetahuan mana yang paling tepat?",
+    "o": [
+      "Mahasiswa mampu menghafal syarat dan rukun nikah.",
+      "Mahasiswa mampu menjelaskan perbedaan pendapat ulama tentang pernikahan.",
+      "Mahasiswa mampu menganalisis fenomena pernikahan berdasarkan prinsip fikih Islam.",
+      "Mahasiswa mampu menyebutkan macam-macam akad nikah.",
+      "Mahasiswa mampu menguraikan sejarah hukum pernikahan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Saat membahas kriteria hadis shalih, dosen meminta mahasiswa untuk merumuskan tujuan pembelajaran ranah keterampilan yang mengarahkan peserta didik memiliki semangat gotong royong. Tujuan keterampilan mana yang paling tepat?",
+    "o": [
+      "Mahasiswa mampu mengidentifikasi hadis-hadis shalih.",
+      "Mahasiswa mampu merancang proyek kerja sama dalam mengkaji hadis-hadis shalih.",
+      "Mahasiswa mampu menghafal kriteria hadis shalih.",
+      "Mahasiswa mampu menyebutkan contoh hadis tentang tolong-menolong.",
+      "Mahasiswa mampu membandingkan hadis shahih dan dhaif."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam kuliah Aqidah, dosen mengangkat kasus tentang pemahaman takdir dalam tradisi budaya lokal. Mahasiswa diminta menentukan indikator tujuan pembelajaran ranah sikap. Manakah tujuan sikap yang paling sesuai?",
+    "o": [
+      "Mahasiswa mampu menerima takdir Allah dan menghargai tradisi lokal.",
+      "Mahasiswa mampu membedakan jenis-jenis takdir.",
+      "Mahasiswa mampu menghafal ayat-ayat tentang takdir.",
+      "Mahasiswa mampu menganalisis hubungan takdir dan tradisi.",
+      "Mahasiswa mampu mendefinisikan takdir secara ilmiah."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pada mata kuliah tafsir, dosen menjelaskan tentang ayat-ayat Muhkamat dan Mutasyabihat. Mahasiswa ditugaskan merumuskan indikator tujuan pembelajaran ranah pengetahuan agar peserta didik berpikir dinamis dan inovatif. Manakah tujuan pembelajaran yang paling tepat?",
+    "o": [
+      "Mahasiswa mampu menghafal contoh ayat Muhkamat dan Mutasyabihat.",
+      "Mahasiswa mampu menjelaskan makna ayat Muhkamat dan Mutasyabihat secara literal.",
+      "Mahasiswa mampu mengembangkan pemikiran kritis terhadap pemahaman ayat Muhkamat dan Mutasyabihat.",
+      "Mahasiswa mampu menyebutkan pembagian ayat Muhkamat dan Mutasyabihat.",
+      "Mahasiswa mampu menghafal tafsir klasik terkait ayat Mutasyabihat."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang dosen memberikan deskripsi aktivitas pembelajaran tentang perencanaan tujuan pada materi ayat Muhkamat dan Mutasyabihat dengan pendekatan PBL. Mahasiswa diminta menganalisis struktur keilmuan pada perencanaan tujuan pembelajaran sesuai karakteristik peserta didik. Manakah analisis yang paling tepat?",
+    "o": [
+      "Merancang kegiatan membaca ayat Muhkamat secara mandiri.",
+      "Menyusun tujuan agar peserta didik mampu memahami struktur logika dalam ayat Muhkamat dan Mutasyabihat.",
+      "Memberikan soal pilihan ganda tentang perbedaan Muhkamat dan Mutasyabihat.",
+      "Menugaskan peserta didik untuk menghafalkan ayat-ayat Mutasyabihat.",
+      "Menilai kemampuan hafalan ayat Muhkamat."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pada pelaksanaan pembelajaran klasifikasi hadis dengan pendekatan PjBL, dosen mengarahkan mahasiswa untuk menganalisis struktur keilmuan dalam tujuan pembelajaran sesuai karakteristik peserta didik. Apa analisis tujuan pembelajaran yang paling tepat?",
+    "o": [
+      "Mahasiswa hanya menghafal istilah-istilah klasifikasi hadis.",
+      "Mahasiswa mampu mempraktikkan pengklasifikasian hadis dalam proyek kelompok.",
+      "Mahasiswa mengerjakan latihan pilihan ganda tentang klasifikasi hadis.",
+      "Mahasiswa mempelajari dalil-dalil keutamaan hadis.",
+      "Mahasiswa hanya membaca materi tentang klasifikasi hadis."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam evaluasi materi tentang rahasia takdir dengan pendekatan DBL, guru meminta mahasiswa menguraikan hubungan antara takdir dan iman kepada hari akhir sesuai karakteristik peserta didik. Manakah uraian yang paling tepat?",
+    "o": [
+      "Menyebutkan dalil tentang takdir.",
+      "Menghafal definisi takdir.",
+      "Menjelaskan bahwa keimanan kepada takdir memperkuat keyakinan akan hari akhir.",
+      "Membaca ulang kitab-kitab klasik.",
+      "Menyusun tabel perbandingan tentang takdir."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam praktik pedagogi, dosen meminta mahasiswa menentukan alur materi ajar tentang pembentukan akhlak karimah sebagai pilar karakter bangsa dengan pendekatan TPACK. Manakah alur materi ajar yang paling sesuai?",
+    "o": [
+      "Memulai dengan penghafalan dalil.",
+      "Memberikan simulasi peran tentang perilaku akhlak mulia.",
+      "Menganalisis teks kitab klasik.",
+      "Mencatat definisi akhlak karimah.",
+      "Menghafal nama-nama tokoh Islam."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam praktik pedagogi tentang fiqih kontemporer dengan pendekatan DL, dosen meminta mahasiswa menentukan alur materi ajar yang tepat. Manakah alur yang sesuai?",
+    "o": [
+      "Menganalisis masalah-masalah fiqih aktual dan mencari solusinya.",
+      "Menghafal kitab-kitab fiqih klasik.",
+      "Membaca saja literatur fiqih.",
+      "Membuat ringkasan fiqih tanpa berdiskusi.",
+      "Menyalin materi fiqih dari internet."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pada pelaksanaan materi transformasi peradaban Islam dengan model pelayanan konseling, mahasiswa diminta menentukan alur evaluasi tujuan pembelajaran. Apa alur materi ajar yang paling tepat?",
+    "o": [
+      "Menyalin sejarah peradaban Islam.",
+      "Menghafal tahun-tahun penting peradaban.",
+      "Membuat refleksi pribadi tentang nilai-nilai perubahan peradaban Islam.",
+      "Membaca buku sejarah tanpa diskusi.",
+      "Menonton film dokumenter tanpa analisis."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam praktik pedagogi tentang program Penguatan Profil Pelajar Pancasila (P5), mahasiswa menentukan pengembangan materi ajar nilai-nilai P5. Manakah pendekatan yang paling tepat?",
+    "o": [
+      "Memberikan tugas hafalan tentang sila-sila Pancasila.",
+      "Merancang proyek komunitas sosial yang menerapkan nilai P5.",
+      "Menonton video tentang Pancasila.",
+      "Membaca sejarah Pancasila tanpa refleksi.",
+      "Membuat soal pilihan ganda tentang Pancasila."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pelaksanaan program Penguatan Profil Pelajar Rahmatan lil Alamin (PPRA), mahasiswa diminta menentukan pengembangan materi ajar. Manakah pendekatan yang paling tepat?",
+    "o": [
+      "Membuat presentasi tentang keanekaragaman agama.",
+      "Membuat proyek sosial yang mencerminkan nilai rahmatan lil alamin.",
+      "Menyalin definisi rahmatan lil alamin.",
+      "Menghafal ayat-ayat tentang kasih sayang.",
+      "Menulis esai tentang sejarah Islam."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Mahasiswa belajar tentang praktik moderasi beragama di masyarakat. Mereka diminta menentukan pengembangan materi ajar nilai Islam moderat. Apa pendekatan yang paling tepat?",
+    "o": [
+      "Membuat simulasi debat antar kelompok ekstrem.",
+      "Merancang kegiatan yang menunjukkan toleransi antarumat beragama.",
+      "Menghafal ayat tentang toleransi.",
+      "Membaca buku teks moderasi.",
+      "Membuat kliping berita keagamaan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Mahasiswa mempelajari alasan implementasi moderasi beragama dalam masyarakat. Mereka harus menilai materi ajar Islam sebagai agama moderat. Manakah yang paling sesuai?",
+    "o": [
+      "Menjelaskan pentingnya menghindari sikap ekstrem dalam beragama.",
+      "Menghafalkan pengertian moderasi.",
+      "Membaca contoh kasus intoleransi saja.",
+      "Menulis laporan tanpa analisis.",
+      "Menyalin naskah deklarasi moderasi."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam kajian tafsir berbasis struktur keilmuan, mahasiswa diminta memilih rancangan pembelajaran berbasis masalah. Manakah rancangan yang tepat?",
+    "o": [
+      "Mengidentifikasi masalah kehidupan modern berdasarkan tafsir Al-Qur'an.",
+      "Membaca tafsir klasik tanpa analisis.",
+      "Menghafal tafsir ayat-ayat hukum.",
+      "Menyalin tafsir ulama terdahulu.",
+      "Membuat resume tafsir."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Mahasiswa belajar klasifikasi hadis dengan struktur keilmuan. Mereka diminta memilih rancangan pembelajaran berbasis masalah. Apa rancangan terbaik?",
+    "o": [
+      "Membuat studi kasus tentang perbedaan hadis shahih dan dhaif.",
+      "Menghafal sanad hadis.",
+      "Menyalin kitab hadis tanpa diskusi.",
+      "Membaca saja tentang periwayatan hadis.",
+      "Membuat soal pilihan ganda tentang sanad."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam materi hubungan takdir dengan iman kepada hari akhir, mahasiswa diminta memilih rancangan berbasis masalah sesuai dengan pengetahuan teknologi. Manakah rancangan yang tepat?",
+    "o": [
+      "Membuat podcast tentang hubungan takdir dan hari akhir.",
+      "Menyalin kutipan kitab klasik.",
+      "Membuat poster tentang takdir.",
+      "Membaca kitab tanpa diskusi.",
+      "Menulis catatan ringkas."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam kajian Mu'jizat, karamah, dan sihir, mahasiswa diminta memilih rancangan pembelajaran berbasis perbedaan individu. Rancangan mana yang paling tepat?",
+    "o": [
+      "Membuat proyek penelitian tentang pemahaman individu terhadap mu'jizat.",
+      "Menghafalkan definisi mu'jizat dan karamah.",
+      "Membaca literatur tanpa diskusi.",
+      "Menyalin contoh mu'jizat.",
+      "Membuat tabel tentang jenis mu'jizat."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pada materi pembentukan akhlak karimah, mahasiswa diminta memilih rancangan berbasis perbedaan individu. Manakah rancangan yang paling sesuai?",
+    "o": [
+      "Memberi tugas proyek pengembangan karakter berbasis minat masing-masing peserta didik.",
+      "Menyalin daftar perilaku akhlak mulia.",
+      "Membaca teks akhlak dari kitab klasik.",
+      "Menghafalkan nama-nama sahabat.",
+      "Menulis puisi tentang akhlak."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Seorang dosen menyajikan penerapan pembelajaran fiqih kontemporer sesuai struktur keilmuan. Mahasiswa diminta memilih rancangan pembelajaran berbasis perbedaan individu dengan pengetahuan teknologi. Pilihan manakah yang paling tepat?",
+    "o": [
+      "Menyuruh mahasiswa menulis makalah fiqih kontemporer.",
+      "Memberikan pilihan proyek berbasis minat dengan penggunaan aplikasi digital.",
+      "Menyusun soal pilihan ganda tentang fiqih.",
+      "Memberi tugas membuat peta konsep di papan tulis.",
+      "Menyalin artikel fiqih dari internet."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tentang hak-hak rakyat dalam Islam, dosen menerapkan pendekatan pembelajaran berbasis pembelajaran mendalam. Manakah rancangan pembelajaran yang paling sesuai?",
+    "o": [
+      "Membaca teks tanpa diskusi.",
+      "Membuat proyek analisis pelaksanaan hak-hak rakyat di masyarakat.",
+      "Menghafal pasal-pasal konstitusi.",
+      "Menonton video dokumenter.",
+      "Menulis ringkasan dalil hak-hak rakyat."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pada materi perkembangan kepemimpinan Islam, mahasiswa diminta memilih pembelajaran berbasis pembelajaran mendalam sesuai pengetahuan pedagogi. Pendekatan yang paling tepat adalah:",
+    "o": [
+      "Menganalisis perubahan gaya kepemimpinan Islam dalam proyek reflektif.",
+      "Membaca buku sejarah tanpa diskusi.",
+      "Menghafal nama-nama khalifah.",
+      "Menulis daftar tokoh Islam.",
+      "Menyalin peta perjalanan dakwah."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran pendidikan nilai/karakter, dosen menerapkan pembelajaran mendalam berbasis teknologi. Manakah pilihan terbaik?",
+    "o": [
+      "Membuat poster digital tentang nilai karakter.",
+      "Menghafal nilai-nilai karakter.",
+      "Membaca buku karakter klasik.",
+      "Menyalin kutipan tentang nilai.",
+      "Membuat tabel perilaku."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pada materi Islam sebagai agama moderat, mahasiswa menerapkan pembelajaran berbasis TPACK. Pilihan mana yang paling tepat?",
+    "o": [
+      "Membuat video pendek tentang moderasi beragama.",
+      "Membaca artikel tanpa analisis.",
+      "Menyalin definisi dari internet.",
+      "Membuat soal isian.",
+      "Menghafal ayat-ayat toleransi."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Mahasiswa dihadapkan pada materi kajian tafsir yang kurang relevan dengan perkembangan zaman. Untuk menciptakan suasana belajar aman dan menghasilkan lulusan berkarakter unggul, strategi pembelajaran berbasis apa yang harus dipilih?",
+    "o": [
+      "Drill and practice",
+      "Problem Based Learning (PBL)",
+      "Ceramah klasik",
+      "Role Playing",
+      "Copy paste materi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi klasifikasi hadis yang disajikan kurang sesuai perkembangan zaman. Untuk menciptakan suasana belajar nyaman dan menghasilkan lulusan berdaya saing, mahasiswa sebaiknya memilih strategi pembelajaran berbasis?",
+    "o": [
+      "Discovery Learning",
+      "Project Based Learning (PjBL)",
+      "Ceramah interaktif",
+      "Tanya jawab",
+      "Diskusi kelompok tradisional"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam kasus hubungan takdir dan iman kepada hari akhir yang kurang sesuai perkembangan zaman, pendekatan yang cocok untuk membahagiakan peserta didik adalah?",
+    "o": [
+      "Direct Learning",
+      "Deep Based Learning (DBL)",
+      "Model ceramah",
+      "Hafalan tanpa makna",
+      "Tugas meringkas"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi mu'jizat, karamah, dan sihir yang tidak sesuai perkembangan zaman, perlu pembelajaran berbasis?",
+    "o": [
+      "Drill Learning",
+      "Discovery Learning (DL)",
+      "Ceramah satu arah",
+      "Kuis cepat",
+      "Presentasi power point saja"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus pembentukan akhlak karimah yang materinya kurang update, model pembelajaran terbaik agar adaptif adalah?",
+    "o": [
+      "Ceramah pasif",
+      "Pembelajaran berbasis TPACK",
+      "Tanya jawab sederhana",
+      "Hafalan cepat",
+      "Menulis catatan"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi fiqih kontemporer yang kurang relevan memerlukan penggunaan model berbasis?",
+    "o": [
+      "Presentasi kelompok",
+      "Layanan bimbingan konseling",
+      "Tugas individu saja",
+      "Hafalan kitab kuning",
+      "Ceramah panjang"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi hak-hak rakyat Islam yang kurang sesuai perkembangan zaman perlu pendekatan berbasis?",
+    "o": [
+      "Drill Learning",
+      "Pelayanan ABK (Anak Berkebutuhan Khusus)",
+      "Kuliah satu arah",
+      "Simulasi debat",
+      "Ulangan harian"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi perkembangan kepemimpinan Islam yang kurang update harus menggunakan pendekatan?",
+    "o": [
+      "Drill and Practice",
+      "Pendekatan Relevan",
+      "Hafalan nama tokoh",
+      "Ceramah full",
+      "Simulasi kepemimpinan pasif"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Materi pendidikan nilai/karakter yang tidak sesuai perkembangan zaman, perlu pendekatan?",
+    "o": [
+      "Membaca buku usang",
+      "Drill pembentukan karakter",
+      "Pendekatan Relevan",
+      "Debat nilai",
+      "Hafalan ayat"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Materi Islam moderat yang tidak mengikuti perkembangan zaman, membutuhkan pendekatan?",
+    "o": [
+      "Drill masalah",
+      "Relevan",
+      "Debat terbuka",
+      "Ceramah panjang",
+      "Tanya jawab standar"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tafsir dengan PBL, teknik asesmen yang tepat adalah?",
+    "o": [
+      "Tes hafalan",
+      "Observasi sikap peserta didik",
+      "Menulis esai",
+      "Menjawab soal pilihan ganda",
+      "Membuat poster"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran klasifikasi hadis dengan PjBL, instrumen asesmen yang tepat adalah?",
+    "o": [
+      "Angket refleksi proyek",
+      "Tes pilihan ganda",
+      "Kuis hafalan",
+      "Membaca bersama",
+      "Diskusi formal"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran hubungan takdir dengan iman kepada hari akhir dengan DL, teknik asesmen yang sesuai lingkungan belajar adalah?",
+    "o": [
+      "Observasi kegiatan reflektif",
+      "Ulangan tengah semester",
+      "Pidato wajib",
+      "Uji lisan mendadak",
+      "Penugasan harian"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam materi mu'jizat, karamah atau sihir, instrumen asesmen yang tepat adalah?",
+    "o": [
+      "Lembar observasi praktik",
+      "Tes pilihan ganda",
+      "Ulangan umum",
+      "Esai panjang",
+      "Kuis interaktif"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pada pembelajaran pembentukan akhlak karimah, teknik asesmen yang sesuai tujuan pembelajaran adalah?",
+    "o": [
+      "Observasi perubahan sikap",
+      "Soal isian singkat",
+      "Hafalan tanpa praktik",
+      "Tes cepat",
+      "Tugas copy paste"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam materi fiqih kontemporer, instrumen asesmen yang tepat sesuai tujuan pembelajaran adalah?",
+    "o": [
+      "Rubrik penilaian proyek",
+      "Tes hafalan istilah",
+      "Soal pilihan ganda",
+      "Tugas menyalin materi",
+      "Debat tanpa bimbingan"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pada pembelajaran hak-hak rakyat dalam Islam, teknik asesmen yang mempertimbangkan hasil asesmen sebelumnya adalah?",
+    "o": [
+      "Penilaian berbasis portofolio",
+      "Tes mendadak",
+      "Pilihan ganda biasa",
+      "Tugas menyalin kitab",
+      "Ulangan umum"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran perkembangan kepemimpinan Islam, instrumen asesmen yang mempertimbangkan hasil asesmen sebelumnya adalah?",
+    "o": [
+      "Lembar observasi perkembangan",
+      "Kuis dadakan",
+      "Tes hafalan",
+      "Ujian pilihan ganda",
+      "Tugas lisan"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam materi pendidikan nilai/karakter, teknik asesmen yang mempertimbangkan hasil asesmen awal adalah?",
+    "o": [
+      "Penilaian sikap berdasarkan jurnal",
+      "Tes hafalan",
+      "Ujian tulis biasa",
+      "Membuat slogan",
+      "Ceramah satu arah"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pada materi Islam sebagai agama moderat, instrumen asesmen yang mempertimbangkan hasil asesmen awal adalah?",
+    "o": [
+      "Observasi proyek kolaboratif",
+      "Ujian hafalan biasa",
+      "Kuis pilihan ganda",
+      "Tugas menyalin kitab",
+      "Tes tulis standar"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam praktik pembelajaran fiqih kontemporer dengan aspek konten, pedagogi, teknologi, mahasiswa diminta mengidentifikasi praktik baik dalam merencanakan pembelajaran. Manakah praktik baik berikut?",
+    "o": [
+      "Merancang proyek berbasis teknologi terkini",
+      "Ceramah panjang tanpa refleksi",
+      "Memberikan tugas monoton",
+      "Menilai hafalan cepat",
+      "Membaca artikel tanpa diskusi"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran perkembangan kepemimpinan Islam, mahasiswa mengidentifikasi praktik baik dalam pelaksanaan pembelajaran. Pilihan tepat adalah?",
+    "o": [
+      "Simulasi kepemimpinan berbasis digital",
+      "Hafalan tokoh kepemimpinan",
+      "Ceramah searah",
+      "Membaca sejarah tanpa analisis",
+      "Menulis artikel tanpa bimbingan"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran akhlak karimah, praktik baik dalam evaluasi adalah?",
+    "o": [
+      "Refleksi berbasis portofolio karakter",
+      "Tes pilihan ganda",
+      "Hafalan dalil",
+      "Ceramah evaluatif",
+      "Menulis ulang ayat"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam menilai kemampuan guru di era digital dan AI, aspek utama yang perlu dikaji adalah?",
+    "o": [
+      "Penguasaan teknologi digital untuk pengembangan diri",
+      "Hafalan metode klasik",
+      "Meniru metode guru lama",
+      "Fokus ceramah saja",
+      "Menyusun soal tradisional"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam penggunaan AI untuk pembelajaran bermakna, mahasiswa harus dapat?",
+    "o": [
+      "Mengidentifikasi masalah dan solusi secara ilmiah",
+      "Membaca AI tanpa praktik",
+      "Menyalin soal AI",
+      "Membuat pertanyaan hafalan",
+      "Menghindari penggunaan AI"
+    ],
+    "a": 0
+  }
+]
