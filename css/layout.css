@@ -157,7 +157,7 @@ textarea:focus{
 
 .content{
   flex:1;
-  padding:16px;                    /* Diperkecil dari 32px */
+  padding:12px;                    /* Diperkecil dari 32px */
   margin-left: 0;
   max-width: calc(100% - 220px);   /* Batasi lebar maksimal */
 }
@@ -326,7 +326,7 @@ textarea:focus{
   }
   
   .topbar {
-    margin-left: -16px;
+    margin-left: -12px;
     margin-right: -16px;
     padding-left: 16px;
     padding-right: 16px;
