@@ -33,35 +33,76 @@ firebase.initializeApp(firebaseConfig);
 
 <div class="layout">
 
-<div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+  <!-- OVERLAY (untuk menutup sidebar di mobile) -->
+  <div id="sidebarOverlay" class="sidebar-overlay"></div>
 
-<aside class="sidebar">
-  <div class="app-title"></div>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <!-- TOMBOL CLOSE (Mobile Only) -->
+    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
+      <i data-lucide="x"></i>
+    </button>
+    
+    <div class="app-title">Try Out PPG</div>
 
-  <nav class="menu">
-    <a href="dashboard.html"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
-    <a href="leaderboard.html"><i data-lucide="trophy"></i><span>Peringkat</span></a>
-    <a href="statistik.html" class="active"><i data-lucide="bar-chart"></i><span>Statistik</span></a>
-    <a href="riwayat.html"><i data-lucide="history"></i><span>Riwayat</span></a>
-  </nav>
-</aside>
+    <nav class="menu">
+      <a href="dashboard.html" class="active">
+        <i data-lucide="layout-dashboard" class="icon"></i>
+        <span>Dashboard</span>
+      </a>
 
-<main class="content">
+      <a href="leaderboard.html">
+        <i data-lucide="trophy" class="icon"></i>
+        <span>Peringkat</span>
+      </a>
 
-<header class="topbar">
-  <div>
-    <button class="hamburger" onclick="toggleSidebar()">☰</button>
-    <span class="app-title-desktop">Statistik Nilai</span>
-  </div>
+      <a href="statistik.html">
+        <i data-lucide="bar-chart" class="icon"></i>
+        <span>Statistik</span>
+      </a>
 
-  <div class="user-info">
-    <div>
-      <div id="greeting"></div>
-      <strong id="userInfo"></strong>
-    </div>
-    <div id="avatar"></div>
-  </div>
-</header>
+      <a href="riwayat.html">
+        <i data-lucide="history" class="icon"></i>
+        <span>Riwayat</span>
+      </a>
+
+      <a href="result.html">
+        <i data-lucide="bar-chart-3"></i>
+        <span>Result</span>
+      </a>
+
+      <a href="review.html">
+        <i data-lucide="eye"></i>
+        <span>Review</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+        <span class="app-title-desktop"></span>
+      </div>
+
+      <div class="user-info">
+        <div class="user-text">
+          <div id="greeting"></div>
+          <strong id="userInfo"></strong>
+        </div>
+
+        <div class="avatar-wrap">
+          <div id="avatar" class="avatar"></div>
+
+          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
+            <i data-lucide="log-out" class="icon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
 
 <section>
 
