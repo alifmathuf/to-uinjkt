@@ -1,26 +1,39 @@
-// ===============================
-// SIDEBAR TOGGLE
-// ===============================
-function toggleSidebar(){
-  const sidebar = document.querySelector(".sidebar");
-  const overlay = document.getElementById("sidebarOverlay");
+/* =========================
+   GLOBAL UI CONTROLLER
+========================= */
 
-  if(!sidebar) return;
-
-  sidebar.classList.toggle("open");
-
-  if(overlay){
-    overlay.classList.toggle("show");
-  }
-}
-// klik overlay menutup sidebar
 document.addEventListener("DOMContentLoaded", () => {
-  const overlay = document.getElementById("sidebarOverlay");
-  if(overlay){
-    overlay.addEventListener("click", toggleSidebar);
-  }
-});
 
+  const toggleBtn = document.getElementById("menuToggle");
+  const sidebar = document.getElementById("sidebar");
+
+  /* ===== Sidebar Toggle ===== */
+  if(toggleBtn){
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("show");
+    });
+  }
+
+  /* ===== Auto close on mobile menu click ===== */
+  const links = sidebar ? sidebar.querySelectorAll("a") : [];
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      if(window.innerWidth < 900){
+        sidebar.classList.remove("show");
+      }
+    });
+  });
+
+  /* ===== Close when click outside ===== */
+  document.addEventListener("click", (e) => {
+    if(window.innerWidth < 900 && sidebar.classList.contains("show")){
+      if(!sidebar.contains(e.target) && !toggleBtn.contains(e.target)){
+        sidebar.classList.remove("show");
+      }
+    }
+  });
+
+});
 // ===============================
 // AUTO ACTIVE MENU
 // ===============================
