@@ -1,7 +1,11 @@
 /* =================================
    STUDI KASUS ENGINE - FINAL CLEAN
 ================================= */
-
+function getKey(key) {
+  const user = Auth.getUser();
+  if (!user) return key;
+  return `${key}_${user.id}`;
+}
 const caseState = JSON.parse(localStorage.getItem("examState"));
 if (!caseState) window.location.href = "../dashboard.html";
 
