@@ -35,43 +35,144 @@ textarea:focus{
 
 /* ================= SIDEBAR ================= */
 
-.sidebar{
-  width:240px;
-  padding:24px;
-  background:rgba(17,24,39,0.96); /* lebih solid */
-  backdrop-filter:blur(14px);
-  border-right:1px solid var(--border-soft);
-  display:flex;
-  flex-direction:column;
-  transition:var(--transition);
-  z-index:1000;
+.sidebar {
+  width: 240px;
+  padding: 24px;
+  background: rgba(17, 24, 39, 0.96);
+  backdrop-filter: blur(14px);
+  border-right: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  z-index: 1000;
+  
+  /* Posisi fixed untuk mobile */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  
+  /* Default: sembunyi di mobile */
+  transform: translateX(-100%);
+  visibility: hidden;
 }
 
-/* overlay luar sidebar */
-.sidebar-overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.35);
-  backdrop-filter:blur(2px);
-  z-index:900;
-  opacity:0;
-  pointer-events:none;
-  transition:var(--transition);
+/* Sidebar terbuka (mobile & desktop) */
+.sidebar.open,
+.sidebar.active {
+  transform: translateX(0);
+  visibility: visible;
 }
 
-.sidebar-overlay.show{
-  opacity:1;
-  pointer-events:auto;
+/* Desktop: sidebar selalu terlihat */
+@media (min-width: 1025px) {
+  .sidebar {
+    position: relative;
+    transform: translateX(0);
+    visibility: visible;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  /* Overlay tidak perlu di desktop */
+  .sidebar-overlay {
+    display: none !important;
+  }
 }
 
-.sidebar .app-title{
-  font-size:20px;
-  font-weight:700;
-  margin-bottom:32px;
-  color:var(--text-primary);
+/* Mobile: overlay aktif saat sidebar terbuka */
+@media (max-width: 1024px) {
+  .sidebar.open + .sidebar-overlay,
+  .sidebar.active + .sidebar-overlay,
+  .sidebar-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
+/* Overlay luar sidebar */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+}
 
+.sidebar-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar .app-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--text-primary);
+}
+
+/* Toggle button untuk mobile */
+.sidebar-toggle {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1100;
+  background: var(--primary);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+}
+
+.sidebar-toggle:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+/* Sembunyikan toggle di desktop */
+@media (min-width: 1025px) {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+/* Close button di dalam sidebar (mobile) */
+.sidebar-close {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.sidebar-close:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .sidebar-close {
+    display: block;
+  }
+}
 /* ===== MENU ===== */
 
 .menu a{
