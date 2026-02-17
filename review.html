@@ -17,12 +17,11 @@
   <link rel="stylesheet" href="css/review.css">
 
   <!-- Scripts (defer untuk performa) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+
   <script src="https://unpkg.com/lucide@latest" defer></script>
 
   <!-- ================= FIREBASE ================= -->
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
 
   <!-- ============================================ -->
 </head>
@@ -87,18 +86,5 @@
   <script src="js/layout.js"></script>
   <script src="js/review.js"></script>
 
-  <script>
-    // Protect route
-    if (typeof Auth !== 'undefined') {
-      Auth.protect();
-    }
-
-    // Initialize icons setelah DOM ready
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-      }
-    });
-  </script>
 </body>
 </html>
