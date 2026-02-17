@@ -34,17 +34,11 @@ const Auth = {
   },
 
   logout(){
-
-  clearUserStorage(); // 🔥 wajib
-
-  localStorage.removeItem("cbtUser");
-  localStorage.removeItem("examState");
-
-  localStorage.removeItem("studiKasusData");
-  localStorage.removeItem("jawabanStudiKasus");
-
-  window.location.href = "index.html";
-}
+    localStorage.removeItem("cbtUser");
+    localStorage.removeItem("studiKasusData");      // ⬅️ Tambah
+    localStorage.removeItem("jawabanStudiKasus");   // ⬅️ Tambah
+    window.location.href = "index.html";
+      },
 
   isLoggedIn(){
     return !!localStorage.getItem("cbtUser");
@@ -102,7 +96,7 @@ function login(){
   window.location.href = "dashboard.html";
 }
 async function isAdmin(){
-  const user = Auth.getUser(); // 🔥 pakai ini
+  const user = JSON.parse(localStorage.getItem("user"));
   if(!user) return false;
 
   const snap = await firebase.database()
@@ -112,23 +106,4 @@ async function isAdmin(){
     .once("value");
 
   return snap.exists();
-}
-
-function clearUserStorage() {
-  const user = Auth.getUser();
-  if (!user) return;
-
-  const keys = [
-    "pgAnswers",
-    "examEndTime",
-    "reviewData",
-    "reviewSoal",
-    "reviewJawaban",
-    "caseAnswers",
-    "caseResult"
-  ];
-
-  keys.forEach(k => {
-    localStorage.removeItem(`${k}_${user.id}`);
-  });
 }
