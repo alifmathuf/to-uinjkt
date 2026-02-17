@@ -1,5 +1,5 @@
 /* =================================================
-   GLOBAL LAYOUT SYSTEM — FINAL PRO VERSION (FIXED)
+   GLOBAL LAYOUT SYSTEM — CLEAN MATCH VERSION
 ================================================= */
 
 /* ================= BASE ================= */
@@ -17,12 +17,10 @@ button,
   transition:var(--transition);
 }
 
-/* Lift effect */
 button:hover{
   transform:translateY(-1px);
 }
 
-/* Focus accessibility */
 :focus{ outline:none; }
 
 button:focus,
@@ -36,77 +34,35 @@ textarea:focus{
 /* ================= SIDEBAR ================= */
 
 .sidebar {
-  width: 200px;                     /* Diperkecil dari 240px */
-  padding: 19px;                    /* Diperkecil dari 24px */
+  width: 220px;
+  padding: 24px 18px;
   background: rgba(17, 24, 39, 0.96);
   backdrop-filter: blur(14px);
   border-right: 1px solid var(--border-soft);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, visibility 0.3s ease;
+  transition: transform 0.3s ease;
   z-index: 1000;
-  
-  /* Posisi fixed untuk mobile */
+
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  
-  /* Default: sembunyi di mobile */
+
   transform: translateX(-100%);
   visibility: hidden;
 }
 
-/* Sidebar terbuka */
 .sidebar.open {
   transform: translateX(0);
   visibility: visible;
 }
 
-/* Overlay */
-.sidebar-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-/* Overlay aktif saat sidebar terbuka */
-.sidebar-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Tombol close di sidebar (mobile only) */
-.sidebar-close {
-  display: none;
-  position: absolute;
-  top: 12px;                        /* Diperkecil dari 16px */
-  right: 12px;                      /* Diperkecil dari 16px */
-  background: none;
-  border: none;
-  color: var(--text-secondary);
-  cursor: pointer;
-  padding: 6px;                     /* Diperkecil dari 8px */
-  border-radius: 8px;
-  transition: all 0.2s ease;
-}
-
-.sidebar-close:hover {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.1);
-}
-
 .sidebar .app-title {
-  font-size: 18px;                  /* Diperkecil dari 20px */
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 24px;              /* Diperkecil dari 32px */
+  margin-bottom: 28px;
   color: var(--text-primary);
-  padding-right: 40px;
 }
 
 /* ===== MENU ===== */
@@ -115,37 +71,20 @@ textarea:focus{
   display:flex;
   align-items:center;
   gap:12px;
-  padding:10px 12px;               /* Diperkecil dari 12px 14px */
+  padding:12px 14px;
   border-radius:var(--radius-sm);
   color:var(--text-secondary);
-  margin-bottom:4px;               /* Diperkecil dari 6px */
-  position:relative;
+  margin-bottom:6px;
   text-decoration:none;
-  font-size: 14px;                  /* Tambahan: konsisten ukuran font */
+  font-size:14px;
 }
 
-.menu a:hover{
-  background:var(--bg-hover);
-  color:var(--text-primary);
-}
-
+.menu a:hover,
 .menu a.active{
   background:var(--bg-hover);
   color:var(--text-primary);
 }
 
-.menu a.active::before{
-  content:"";
-  position:absolute;
-  left:-20px;                      /* Sesuaikan dengan padding baru */
-  top:6px;
-  bottom:6px;
-  width:4px;
-  background:var(--primary);
-  border-radius:4px;
-}
-
-/* icon warna ikut text */
 .icon{
   width:18px;
   height:18px;
@@ -157,9 +96,8 @@ textarea:focus{
 
 .content{
   flex:1;
-  padding:12px;                    /* Diperkecil dari 32px */
-  margin-left: 0;
-  max-width: calc(100% - 220px);   /* Batasi lebar maksimal */
+  padding: 24px;
+  width: 100%;
 }
 
 
@@ -169,20 +107,13 @@ textarea:focus{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:12px 0;                  /* Diperkecil dari 16px bottom only */
-  margin-bottom:20px;              /* Diperkecil dari 24px */
+  padding: 16px 0;
+  margin-bottom: 24px;
   border-bottom:1px solid var(--border-soft);
-  min-height: 48px;               /* Tinggi minimum, tidak terlalu tinggi */
-  margin-left: -24px;             /* Mulai dari kiri sidebar */
-  margin-right: -24px;            /* Sampai kanan */
-  padding-left: 24px;             /* Padding kembali untuk konten */
-  padding-right: 24px;
-  width: calc(100% + 48px);       /* Lebar penuh termasuk padding negatif */
-  box-sizing: border-box;
 }
 
 .app-title-desktop{
-  font-size:18px;                  /* Diperkecil dari 20px */
+  font-size:18px;
   font-weight:700;
   color:var(--text-primary);
 }
@@ -190,26 +121,19 @@ textarea:focus{
 .user-info{
   display:flex;
   align-items:center;
-  gap:12px;                        /* Diperkecil dari 14px */
-}
-
-/* avatar + logout */
-.avatar-wrap{
-  display:flex;
-  align-items:center;
-  gap:8px;                         /* Diperkecil dari 10px */
+  gap:14px;
 }
 
 .avatar{
-  width:36px;                      /* Diperkecil dari 40px */
-  height:36px;                     /* Diperkecil dari 40px */
+  width:36px;
+  height:36px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#fff;
   font-weight:600;
-  font-size:14px;                  /* Diperkecil dari 16px */
+  font-size:14px;
 }
 
 .logout-btn{
@@ -220,7 +144,7 @@ textarea:focus{
   align-items:center;
   justify-content:center;
   color:var(--text-secondary);
-  padding:4px;                     /* Diperkecil dari 6px */
+  padding:6px;
   border-radius:8px;
 }
 
@@ -234,15 +158,13 @@ textarea:focus{
 
 .hamburger{
   display:none;
-  font-size:20px;                  /* Diperkecil dari 22px */
+  font-size:20px;
   cursor:pointer;
   color:var(--text-primary);
   background:none;
   border:none;
-  padding: 6px;                    /* Diperkecil dari 8px */
-  margin-right: 12px;
-  border-radius: 8px;
-  transition: background 0.2s ease;
+  padding:8px;
+  border-radius:8px;
 }
 
 .hamburger:hover {
@@ -250,131 +172,66 @@ textarea:focus{
 }
 
 
-/* ================= DESKTOP (1025px ke atas) ================= */
+/* ================= DESKTOP ================= */
 
 @media (min-width: 1025px) {
+
   .sidebar {
     position: relative;
     transform: translateX(0);
     visibility: visible;
     height: auto;
     min-height: 100vh;
-    border-right: 1px solid var(--border-soft); /* Garis tetap ada */
   }
-  
-  .sidebar-overlay {
-    display: none !important;
+
+  .content {
+    padding: 32px;
   }
-  
-  .sidebar-close {
-    display: none !important;
-  }
-  
+
   .hamburger {
     display: none !important;
-  }
-  
-  .content {
-    margin-left: 220px;           /* Sesuaikan dengan width sidebar baru */
-    padding: 24px;                /* Konsisten */
-  }
-  
-  /* Topbar menyambung ke sidebar */
-  .topbar {
-    margin-left: -16px;
-    margin-right: -24px;
-    padding-left: 16px;
-    padding-right: 24px;
-    border-bottom: 1px solid var(--border-soft);
-    position: relative;
-  }
-  
-  /* Garis bawah topbar menyambung sidebar */
-  .topbar::before {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: -220px;                 /* Sesuaikan dengan lebar sidebar */
-    width: 220px;
-    height: 1px;
-    background: var(--border-soft);
   }
 }
 
 
-/* ================= MOBILE (1024px ke bawah) ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 1024px) {
+
   .hamburger {
-    display: block;
+    display:block;
   }
-  
-  .sidebar-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
   .app-title-desktop {
-    display: none;
+    display:none;
   }
-  
+
   .content {
-    padding: 16px;                /* Diperkecil dari 20px */
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .topbar {
-    margin-left: -12px;
-    margin-right: -16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    width: calc(100% + 32px);
-    min-height: 44px;             /* Lebih kecil di mobile */
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  /* Hapus pseudo-element di mobile */
-  .topbar::before {
-    display: none;
+    padding: 20px;
   }
 }
 
 
-/* ================= SMALL MOBILE (768px ke bawah) ================= */
+/* ================= SMALL MOBILE ================= */
 
 @media (max-width: 768px) {
+
   .layout {
     flex-direction: column;
   }
-  
+
   .content {
-    padding: 12px;                /* Diperkecil dari 16px */
+    padding: 18px;
   }
-  
+
   .topbar {
-    margin-left: -12px;
-    margin-right: -12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% + 24px);
-    min-height: 40px;             /* Lebih kecil lagi */
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 16px;
+    padding: 12px 0;
+    margin-bottom: 18px;
   }
-  
-  .user-info {
-    width: 100%;
-    justify-content: flex-end;
-    gap: 8px;
-  }
-  
+
   .avatar {
-    width: 32px;
-    height: 32px;
-    font-size: 12px;
+    width:32px;
+    height:32px;
+    font-size:12px;
   }
 }
