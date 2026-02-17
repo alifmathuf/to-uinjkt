@@ -1,136 +1,86 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riwayat Ujian</title>
-
-<link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
-<link rel="shortcut icon" href="assets/logo-uin.svg">
-
-<link rel="stylesheet" href="css/app.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/riwayat.css">
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-
-<script>
-const firebaseConfig = {
-  apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
-  authDomain: "cbtuin-d26aa.firebaseapp.com",
-  databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "cbtuin-d26aa",
-  storageBucket: "cbtuin-d26aa.appspot.com",
-  messagingSenderId: "93548126228",
-  appId: "1:93548126228:web:c456aedaad373237a0c701"
-};
-
-firebase.initializeApp(firebaseConfig);
-</script>
-</head>
-
-<body>
-
-<div class="layout">
-
-  <!-- OVERLAY (untuk menutup sidebar di mobile) -->
-  <div id="sidebarOverlay" class="sidebar-overlay"></div>
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar" id="sidebar">
-    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
-      <i data-lucide="x"></i>
-    </button>
-    
-    <div class="app-title">Try Out PPG</div>
-
-    <nav class="menu">
-      <a href="dashboard.html">
-        <i data-lucide="layout-dashboard" class="icon"></i>
-        <span>Dashboard</span>
-      </a>
-
-      <a href="leaderboard.html">
-        <i data-lucide="trophy" class="icon"></i>
-        <span>Peringkat</span>
-      </a>
-
-      <a href="statistik.html">
-        <i data-lucide="bar-chart" class="icon"></i>
-        <span>Statistik</span>
-      </a>
-
-      <a href="riwayat.html" class="active">
-        <i data-lucide="history" class="icon"></i>
-        <span>Riwayat</span>
-      </a>
-
-      <a href="result.html">
-        <i data-lucide="bar-chart-3"></i>
-        <span>Result</span>
-      </a>
-
-      <a href="review.html">
-        <i data-lucide="eye"></i>
-        <span>Review</span>
-      </a>
-    </nav>
-  </aside>
-
-  <!-- CONTENT -->
-  <main class="content">
-
-    <!-- TOPBAR -->
-    <header class="topbar">
-      <div class="topbar-left">
-        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
-        <span class="app-title-desktop"></span>
-      </div>
-
-      <div class="user-info">
-        <div class="user-text">
-          <div id="greeting"></div>
-          <strong id="userInfo"></strong>
-        </div>
-
-        <div class="avatar-wrap">
-          <div id="avatar" class="avatar"></div>
-
-          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
-            <i data-lucide="log-out" class="icon"></i>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- CONTENT AREA -->
-    <div class="content-area">
-      
-      <h2>Riwayat Ujian</h2>
-      
-      <div id="historyList" class="history-grid"></div>
-
-    </div>
-
-  </main>
-
-</div><!-- /layout -->
-
-<!-- FOOTER -->
-<footer class="footer">
-  © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
-</footer>
-
-<script src="js/auth.js"></script>
-<script src="js/layout.js"></script>
-<script src="js/riwayat.js"></script>
-
-<script>
 Auth.protect();
-lucide.createIcons();
-</script>
 
-</body>
-</html>
+const user = Auth.getUser();
+const db = firebase.database();
+const container = document.getElementById("historyList");
+
+db.ref(`exams/${user.id}`)
+  .orderByChild("submittedAt")
+  .once("value")
+  .then(snapshot => {
+
+    if (!snapshot.exists()) {
+      container.innerHTML = `
+        <div class="empty-state">
+          Belum ada riwayat ujian.
+        </div>`;
+      return;
+    }
+
+    const data = [];
+    snapshot.forEach(child => data.push(child.val()));
+    data.reverse();
+
+    container.innerHTML = "";
+
+    data.forEach(exam => {
+
+      if (!exam.score || !exam.total) return;
+
+      const nilai = Math.round((exam.score / exam.total) * 100);
+
+      const scoreClass =
+        nilai >= 75 ? "score-green" :
+        nilai >= 60 ? "score-yellow" :
+        "score-red";
+
+      const badgeClass =
+        nilai >= 75 ? "badge-lulus" : "badge-tidak";
+
+      const badgeText =
+        nilai >= 75 ? "LULUS" : "TIDAK LULUS";
+
+      const tanggal = exam.submittedAt
+        ? new Date(exam.submittedAt).toLocaleString("id-ID", {
+            day: '2-digit',
+            month: 'short',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+          })
+        : "-";
+
+      container.innerHTML += `
+        <div class="history-card">
+          
+          <div class="history-score ${scoreClass}">
+            ${nilai}
+          </div>
+
+          <div class="history-title">
+            ${exam.mapel || "Ujian"}
+            <span class="paket">${exam.paket || "-"}</span>
+          </div>
+
+          <div class="history-meta">
+            <span>✓ Benar: ${exam.score}/${exam.total}</span>
+            <span>•</span>
+            <span>${tanggal}</span>
+          </div>
+
+          <div class="badge-status ${badgeClass}">
+            ${badgeText}
+          </div>
+
+        </div>
+      `;
+    });
+
+  })
+  .catch(err => {
+    console.error(err);
+    container.innerHTML = `
+      <div class="empty-state">
+        Gagal memuat riwayat.
+      </div>`;
+  });
