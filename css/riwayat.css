@@ -1,17 +1,19 @@
 /* ===============================
-   HISTORY - BADGE & SCORE FIX
+   HISTORY - ANTI TABRAKAN FIX
 ================================ */
 
 #historyList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
 
-/* Card */
+/* Card dengan posisi relative untuk absolute positioning */
 .history-card {
   padding: 20px;
+  padding-top: 16px;
+  padding-right: 70px; /* Ruang untuk score di kanan */
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
@@ -20,9 +22,7 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   transition: var(--transition);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  min-height: 140px;
 }
 
 .history-card:hover {
@@ -31,43 +31,21 @@
   box-shadow: 0 12px 35px rgba(37, 99, 235, 0.25);
 }
 
-/* Header card - title dan score sejajar */
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-/* Title */
-.history-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text-primary);
-  line-height: 1.4;
-  flex: 1;
-}
-
-.history-title .paket {
-  color: var(--text-secondary);
-  font-weight: 400;
-  font-size: 13px;
-  display: block;
-  margin-top: 4px;
-}
-
-/* Score Circle */
+/* Score Circle - absolute di pojok kanan atas */
 .history-score {
-  width: 48px;
-  height: 48px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   border: 3px solid;
-  flex-shrink: 0;
+  z-index: 2;
 }
 
 .score-green {
@@ -88,27 +66,48 @@
   background: rgba(239, 68, 68, 0.15);
 }
 
-/* Meta */
+/* Title - dengan padding kanan agar tidak tertimpa score */
+.history-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 6px;
+  padding-right: 10px; /* Jarak dari score */
+}
+
+.history-title .paket {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 13px;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Meta info */
 .history-meta {
   font-size: 13px;
   color: var(--text-secondary);
+  margin-bottom: 12px;
   display: flex;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Badge Status - di bawah sendiri */
 .badge-status {
   display: inline-flex;
   align-items: center;
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: 20px;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  align-self: flex-start;
-  margin-top: 4px;
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
 }
 
 .badge-lulus {
@@ -147,15 +146,25 @@
 
   .history-card {
     padding: 16px;
+    padding-right: 60px;
+    padding-bottom: 50px; /* Ruang untuk badge di bawah */
+    min-height: auto;
   }
 
   .history-score {
-    width: 44px;
-    height: 44px;
-    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+    top: 14px;
+    right: 14px;
   }
 
   .history-title {
-    font-size: 14px;
+    font-size: 15px;
+  }
+
+  .badge-status {
+    bottom: 14px;
+    left: 16px;
   }
 }
