@@ -70,9 +70,14 @@
 
 /* ===== BUTTON ===== */
 
+/* ===== BUTTON ===== */
+
 .review-footer{
   margin-top:24px;
-  text-align:right;
+  display:flex;                    /* Tambah flex */
+  justify-content:center;          /* Center horizontal */
+  align-items:center;              /* Center vertical */
+  gap:12px;                        /* Jarak antar tombol */
 }
 
 .review-footer button{
