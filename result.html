@@ -5,14 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Result - Tryout PPG</title>
 
+<link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
+<link rel="shortcut icon" href="assets/logo-uin.svg">
+
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/result.css">
 
 <!-- Chart -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 <!-- Icons -->
 <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -26,7 +29,7 @@ const firebaseConfig = {
   authDomain: "cbtuin-d26aa.firebaseapp.com",
   databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "cbtuin-d26aa",
-  storageBucket: "cbtuin-d26aa.firebasestorage.app",
+  storageBucket: "cbtuin-d26aa.appspot.com",
   messagingSenderId: "93548126228",
   appId: "1:93548126228:web:c456aedaad373237a0c701"
 };
@@ -38,108 +41,137 @@ firebase.initializeApp(firebaseConfig);
 
 <body>
 
+<!-- OVERLAY -->
+<div id="sidebarOverlay" class="sidebar-overlay" onclick="closeSidebar()"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  
+  <!-- CLOSE BUTTON (Mobile) -->
+  <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
+    <i data-lucide="x"></i>
+  </button>
+  
+  <div class="app-title">TRY OUT PPG</div>
+
+  <nav class="menu">
+    <a href="dashboard.html">
+      <i data-lucide="layout-dashboard"></i>
+      <span>Dashboard</span>
+    </a>
+    <a href="result.html" class="active">
+      <i data-lucide="bar-chart-3"></i>
+      <span>Result</span>
+    </a>
+    <a href="review.html">
+      <i data-lucide="eye"></i>
+      <span>Review</span>
+    </a>
+    <a href="leaderboard.html">
+      <i data-lucide="trophy"></i>
+      <span>Leaderboard</span>
+    </a>
+    <a href="#" onclick="Auth.logout(); return false;">
+      <i data-lucide="log-out"></i>
+      <span>Logout</span>
+    </a>
+  </nav>
+</aside>
+
+<!-- LAYOUT -->
 <div class="layout">
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <div class="app-title">TRY OUT PPG</div>
-
-    <div class="menu">
-      <a href="dashboard.html">
-        <i data-lucide="layout-dashboard"></i>
-        <span>Dashboard</span>
-      </a>
-
-      <a href="result.html" class="active">
-        <i data-lucide="bar-chart-3"></i>
-        <span>Result</span>
-      </a>
-
-      <a href="review.html">
-        <i data-lucide="eye"></i>
-        <span>Review</span>
-      </a>
-
-      <a href="leaderboard.html">
-        <i data-lucide="trophy"></i>
-        <span>Leaderboard</span>
-      </a>
-
-      <a href="#" onclick="Auth.logout()">
-        <i data-lucide="log-out"></i>
-        <span>Logout</span>
-      </a>
-    </div>
-  </div>
-
   <!-- CONTENT -->
-  <div class="content">
+  <main class="content">
 
     <!-- TOPBAR -->
-    <div class="topbar">
-      <div>
-        <span class="hamburger" onclick="toggleSidebar()">☰</span>
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
         <span class="app-title-desktop">Hasil Ujian</span>
       </div>
 
       <div class="user-info">
-        <div>
+        <div class="user-text">
           <div id="greeting"></div>
           <strong id="userInfo"></strong>
         </div>
-        <div id="avatar"></div>
+        <div id="avatar" class="avatar"></div>
       </div>
-    </div>
+    </header>
 
     <!-- 🔥 AREA YANG AKAN DIEXPORT KE PDF -->
-    <div id="resultSheet">
+    <div id="resultSheet" class="card result-card">
+      
+      <h2>Hasil Ujian</h2>
 
-      <div id="resultCard" class="card result-card">
+      <div class="score-box">
+        <div class="score-number" id="scoreText">0</div>
+        <div class="score-label">Nilai Pilihan Ganda</div>
+      </div>
 
-        <h2>Hasil Ujian</h2>
-
-        <div class="score-box">
-          <div class="score-number" id="scoreText">0</div>
-          <div class="score-label">Nilai Pilihan Ganda</div>
+      <div class="pg-detail">
+        <div>
+          <i data-lucide="check-circle"></i>
+          Jawaban Benar: <span id="correctCount">0</span>
         </div>
-
-        <div class="pg-detail">
-          <div><i data-lucide="check-circle"></i> Jawaban Benar: <span id="correctCount">0</span></div>
-          <div><i data-lucide="award"></i> Skor Akhir: <span id="finalScore">0</span></div>
-          <div id="statusBox"></div>
+        <div>
+          <i data-lucide="award"></i>
+          Skor Akhir: <span id="finalScore">0</span>
         </div>
+        <div id="statusBox"></div>
+      </div>
 
-        <canvas id="scoreChart" height="120"></canvas>
+      <div class="chart-container">
+        <canvas id="scoreChart"></canvas>
+      </div>
 
-        <hr style="margin:30px 0; opacity:.2;">
+      <hr class="divider">
 
-        <div class="case-result">
-  <h3>Hasil Studi Kasus</h3>
-  <p>Topik: <span id="caseTopic">-</span></p>
-  <p>Total Kata: <span id="caseWords">0</span></p>
-  <p>Total Karakter: <span id="caseChars">0</span></p>
-</div>
-  
+      <!-- STUDI KASUS RESULT -->
+      <div class="case-result">
+        <h3>Hasil Studi Kasus</h3>
+        <div class="case-grid">
+          <div class="case-item">
+            <span class="case-label">Topik:</span>
+            <span class="case-value" id="caseTopic">-</span>
+          </div>
+          <div class="case-item">
+            <span class="case-label">Total Kata:</span>
+            <span class="case-value" id="caseWords">0</span>
+          </div>
+          <div class="case-item">
+            <span class="case-label">Total Karakter:</span>
+            <span class="case-value" id="caseChars">0</span>
+          </div>
+        </div>
+      </div>
 
+    </div>
     <!-- 🔥 END PDF AREA -->
 
+    <!-- ACTION BUTTONS -->
     <div class="result-buttons">
-  <button class="btn-primary" onclick="exportPDF()">
-    <i data-lucide="download"></i>
-    Export PDF
-  </button>
+      <button class="btn-primary" onclick="exportPDF()">
+        <i data-lucide="download"></i>
+        <span>Export PDF</span>
+      </button>
 
-  <button onclick="window.location.href='review.html'">
-    <i data-lucide="eye"></i>
-    Lihat Jawaban
-  </button>
-</div>
+      <button class="btn-secondary" onclick="window.location.href='review.html'">
+        <i data-lucide="eye"></i>
+        <span>Lihat Jawaban</span>
+      </button>
+    </div>
 
-  </div>
+  </main>
+
+</div><!-- /layout -->
+
+<!-- FOOTER -->
 <footer class="footer">
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
-</div>
+
 <!-- JS -->
 <script src="js/auth.js"></script>
 <script src="js/layout.js"></script>
