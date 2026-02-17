@@ -158,29 +158,72 @@ function exportPG(){
 
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
-  let y = 15;
 
+  let y = 15;
+  const margin = 14;
+  const pageWidth = 180;
+
+  doc.setFont("Arial", "Normal");
+
+  // ================= TITLE =================
   doc.setFontSize(16);
-  doc.text("HASIL JAWABAN PILIHAN GANDA", 14, y);
+  doc.text("HASIL JAWABAN PILIHAN GANDA", margin, y);
   y += 10;
 
   doc.setFontSize(10);
 
   review.forEach((item, i) => {
 
-    if(y > 270){
+    // auto page break
+    if (y > 270) {
       doc.addPage();
       y = 15;
     }
 
-    doc.text(`${i+1}. ${item.q}`, 14, y);
+    // ================= SOAL =================
+    let soalText = `${i+1}. ${item.q}`;
+    let splitSoal = doc.splitTextToSize(soalText, pageWidth);
+
+    doc.text(splitSoal, margin, y);
+    y += splitSoal.length * 5;
+
+    // ================= OPSI =================
+    if(item.options && item.options.length){
+      item.options.forEach((opt, idx) => {
+        const huruf = String.fromCharCode(65 + idx);
+        let optText = `${huruf}. ${opt}`;
+        let splitOpt = doc.splitTextToSize(optText, pageWidth - 10);
+
+        doc.text(splitOpt, margin + 5, y);
+        y += splitOpt.length * 5;
+      });
+    }
+
+    // ================= JAWABAN =================
+    doc.text(`Jawaban Anda : ${item.user}`, margin + 5, y);
+    y += 5;
+
+    doc.text(`Jawaban Benar: ${item.correct}`, margin + 5, y);
+    y += 5;
+
+    // ================= STATUS =================
+    const status = item.user === item.correct ? "BENAR" : "SALAH";
+    doc.text(`Status : ${status}`, margin + 5, y);
     y += 6;
-    doc.text(`Jawaban Anda : ${item.user}`, 20, y);
+
+    // ================= PEMBAHASAN =================
+    if(item.explanation){
+      let splitExp = doc.splitTextToSize(
+        `Pembahasan: ${item.explanation}`,
+        pageWidth - 5
+      );
+      doc.text(splitExp, margin + 5, y);
+      y += splitExp.length * 5;
+    }
+
+    // jarak antar soal
     y += 5;
-    doc.text(`Jawaban Benar: ${item.correct}`, 20, y);
-    y += 5;
-    doc.text(`Status : ${item.user === item.correct ? "BENAR" : "SALAH"}`, 20, y);
-    y += 8;
+
   });
 
   doc.save("hasil-pg.pdf");
