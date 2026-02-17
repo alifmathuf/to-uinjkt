@@ -39,8 +39,15 @@
 
 <div class="layout">
 
+    <!-- OVERLAY (untuk menutup sidebar di mobile) -->
+  <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
   <!-- SIDEBAR -->
-  <div class="sidebar">
+  <aside class="sidebar" id="sidebar">
+    <!-- TOMBOL CLOSE (Mobile Only) -->
+    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
+      <i data-lucide="x"></i>
+    </button>
     <div class="app-title">TRY OUT PPG</div>
 
     <div class="menu">
