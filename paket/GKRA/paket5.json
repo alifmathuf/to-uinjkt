@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Seorang guru RA merencanakan pembelajaran tentang karakteristik perkembangan anak usia dini. Untuk mengembangkan keimanan, ketakwaan, dan akhlak mulia peserta didik, rumusan tujuan pembelajaran ranah sikap yang paling tepat adalah…",
+    "o": [
+      "Anak dapat menjelaskan konsep iman dan takwa secara verbal",
+      "Anak dapat membiasakan berdoa sebelum dan sesudah melakukan kegiatan",
+      "Anak dapat menghafal doa-doa harian dengan lancar",
+      "Anak dapat membedakan perilaku baik dan buruk dalam teks cerita",
+      "Anak dapat menyebutkan rukun iman satu persatu dengan benar"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam menyusun perencanaan pembelajaran PAUD, guru perlu merumuskan tujuan ranah pengetahuan. Berdasarkan aspek pembelajaran yang mencakup kognitif, sosial-emosional, bahasa, motorik, dan nilai agama, indikator tujuan yang menunjukkan kemampuan berpikir kritis adalah…",
+    "o": [
+      "Anak dapat mengingat nama-nama hari dalam seminggu",
+      "Anak dapat mengelompokkan benda berdasarkan warna dan bentuk",
+      "Anak dapat memahami konsep bilangan 1-10",
+      "Anak dapat menganalisis masalah sederhana dan menemukan solusi alternatif",
+      "Anak dapat menirukan gerakan tari tradisional dengan benar"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guru RA akan mengimplementasikan pendekatan pembelajaran yang sesuai dengan karakteristik anak usia dini. Untuk mengembangkan nilai kebinekaan global dan semangat bergotong royong, rumusan tujuan pembelajaran ranah keterampilan yang tepat adalah…",
+    "o": [
+      "Anak dapat menjelaskan arti penting kerja sama dalam kelompok",
+      "Anak dapat menghargai perbedaan budaya antar teman sekelas",
+      "Anak dapat bekerja sama dengan teman untuk menyelesaikan proyek sederhana",
+      "Anak dapat menyebutkan contoh-contoh kegiatan gotong royong",
+      "Anak dapat memahami konsep kebinekaan di Indonesia"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Bermain merupakan metode pembelajaran utama di PAUD. Dalam konteks pengembangan materi bermain, indikator tujuan pembelajaran ranah sikap yang dapat menumbuhkan sikap penerimaan terhadap tradisi adalah…",
+    "o": [
+      "Anak dapat memainkan permainan tradisional dengan aturan yang benar",
+      "Anak dapat menjelaskan sejarah permainan tradisional kepada orang lain",
+      "Anak dapat menghargai dan antusias terhadap permainan tradisional sebagai warisan budaya",
+      "Anak dapat membuat variasi permainan tradisional yang baru",
+      "Anak dapat membandingkan permainan tradisional dan modern"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Kurikulum Merdeka memberikan fleksibilitas dalam pembelajaran PAUD. Berdasarkan konsep tersebut, indikator tujuan pembelajaran ranah pengetahuan yang dapat mengembangkan kemampuan berpikir dinamis dan inovatif adalah…",
+    "o": [
+      "Anak dapat memahami konsep dasar ilmu pengetahuan alam",
+      "Anak dapat menguasai keterampilan dasar berhitung dan membaca",
+      "Anak dapat mengembangkan ide-ide kreatif dalam menyelesaikan tantangan sederhana",
+      "Anak dapat mengikuti instruksi guru dengan disiplin",
+      "Anak dapat menghafal lagu-lagu pendidikan dengan baik"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Seorang guru RA menggunakan pendekatan Problem Based Learning (PBL) dalam perencanaan tujuan pembelajaran. Berdasarkan struktur keilmuan prinsip-prinsip pembelajaran berbasis perkembangan anak usia dini, analisis yang tepat terhadap materi ajar adalah…",
+    "o": [
+      "Mengidentifikasi masalah yang sesuai dengan tingkat perkembangan kognitif anak",
+      "Menyusun langkah-langkah pemecahan masalah yang kompleks",
+      "Memilih masalah yang relevan dengan konteks kehidupan anak sehari-hari",
+      "Menentukan metode evaluasi berbasis tes tertulis",
+      "Menguraikan teori perkembangan anak secara mendalam"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pelaksanaan pembelajaran dengan pendekatan Project Based Learning (PjBL), guru menganalisis materi ajar aspek pembelajaran PAUD. Berdasarkan struktur keilmuan, analisis yang paling sesuai dengan karakteristik peserta didik adalah…",
+    "o": [
+      "Menguraikan aspek kognitif, sosial-emosional, bahasa, motorik, dan nilai agama secara terpisah",
+      "Mengintegrasikan seluruh aspek pembelajaran dalam satu proyek bermakna",
+      "Menitikberatkan pada aspek kognitif sebagai fondasi utama",
+      "Mengabaikan aspek motorik karena anak sudah menguasainya",
+      "Memisahkan aspek nilai agama dari aspek lainnya"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA melakukan evaluasi pembelajaran dengan pendekatan Discovery Based Learning (DBL). Berdasarkan struktur keilmuan, penguraian materi pendekatan tematik, saintifik, berbasis proyek, atau berbasis bermain yang tepat adalah…",
+    "o": [
+      "Mengevaluasi penguasaan konsep melalui tes standar",
+      "Menguraikan proses penemuan konsep oleh anak melalui pengalaman langsung",
+      "Membandingkan hasil belajar antar individu anak",
+      "Menilai kemampuan menghafal fakta-fakta ilmiah",
+      "Mengukur kecepatan anak dalam menyelesaikan tugas"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam perencanaan pembelajaran dengan pendekatan TPACK, guru perlu menyusun alur materi ajar secara logis. Berdasarkan konsep bermain sebagai metode pembelajaran utama di PAUD, penentuan alur materi yang tepat adalah…",
+    "o": [
+      "Teori bermain → Jenis permainan → Evaluasi hasil bermain",
+      "Pengenalan permainan → Praktik bermain → Refleksi pengalaman",
+      "Tes kemampuan → Penyuluhan bermain → Latihan individual",
+      "Penjelasan aturan → Penghafalan langkah → Ujian praktik",
+      "Pembelajaran konsep → Drill and practice → Tes tertulis"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pelaksanaan pembelajaran dengan pendekatan Deep Learning (DL) memerlukan alur materi yang logis. Berdasarkan konsep Kurikulum Merdeka dalam konteks PAUD, penentuan alur materi yang sesuai dengan karakteristik peserta didik adalah…",
+    "o": [
+      "Pengenalan konsep dasar → Penguatan melalui latihan berulang → Evaluasi akhir",
+      "Eksplorasi topik secara mendalam → Koneksi antar konsep → Aplikasi dalam konteks nyata",
+      "Penyampaian materi oleh guru → Catatan anak → Ujian tengah semester",
+      "Pembelajaran kelompok → Presentasi hasil → Penilaian antar teman",
+      "Video pembelajaran → Diskusi kelas → Tes online"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam mengevaluasi tujuan pembelajaran dengan model pelayanan konseling, guru perlu menentukan alur materi ajar pembelajaran bahasa. Berdasarkan struktur keilmuan, alur yang logis dan sesuai karakteristik anak usia dini adalah…",
+    "o": [
+      "Kosakata → Tata bahasa → Keterampilan menulis",
+      "Mendengarkan → Berbicara → Membaca → Menulis",
+      "Alfabet → Suku kata → Kata → Kalimat",
+      "Cerita pendek → Analisis struktur → Pembuatan cerita baru",
+      "Tata bahasa → Latihan soal → Ujian harian"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Program Penguatan Profil Pelajar Pancasila (P5) diimplementasikan secara logis dalam pembelajaran. Berdasarkan struktur keilmuan, pengembangan materi ajar nilai-nilai P5 dalam merencanakan tujuan pembelajaran yang tepat adalah…",
+    "o": [
+      "Mengintegrasikan dimensi profil pelajar pancasila dalam setiap aktivitas pembelajaran",
+      "Menyusun materi P5 sebagai pelajaran tersendiri di luar jam pembelajaran reguler",
+      "Mengevaluasi penguatan profil pelajar pancasila melalui tes tertulis",
+      "Memisahkan nilai-nilai P5 berdasarkan mata pelajaran",
+      "Menitikberatkan pada aspek kognitif nilai-nilai pancasila"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Program Penguatan Profil Pelajar Rahmatan lil 'Alamin (PPRA) dilaksanakan secara logis. Berdasarkan struktur keilmuan, pengembangan materi ajar nilai-nilai PPRA dalam pelaksanaan tujuan pembelajaran yang sesuai karakteristik peserta didik adalah…",
+    "o": [
+      "Menyampaikan konsep rahmatan lil 'alamin melalui ceramah",
+      "Menginternalisasi nilai kepedulian sosial dan lingkungan melalui praktik nyata",
+      "Menghafal hadits-hadits tentang rahmatan lil 'alamin",
+      "Menguji pemahaman konsep melalui kuis mingguan",
+      "Membedakan nilai PPRA dengan nilai P5"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Implementasi nilai-nilai moderasi beragama diintegrasikan dalam evaluasi tujuan pembelajaran. Berdasarkan struktur keilmuan, pengembangan materi ajar nilai-nilai Islam sebagai agama moderat atau wasathiyah yang tepat adalah…",
+    "o": [
+      "Menekankan pada perbedaan ajaran antar agama",
+      "Mengembangkan sikap toleransi dan menghargai keberagaman melalui pengalaman belajar",
+      "Menghafal definisi wasathiyah secara verbal",
+      "Menganalisis kitab-kitab klasik tentang moderasi beragama",
+      "Membandingkan tingkat kemoderatan antar pemeluk agama"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam konteks implementasi moderasi beragama, guru menilai pengembangan materi ajar Islam sebagai agama moderat. Penilaian yang komprehensif terhadap alur materi ajar dalam perencanaan, pelaksanaan, dan evaluasi pembelajaran adalah…",
+    "o": [
+      "Mengevaluasi penguasaan materi teoretis tentang wasathiyah",
+      "Menilai sejauh mana nilai moderasi tercermin dalam perilaku sehari-hari anak",
+      "Mengukur kemampuan menghafal dalil-dalil tentang moderasi",
+      "Membandingkan pemahaman moderasi antar individu anak",
+      "Menilai keaktifan anak dalam diskusi tentang agama"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA akan merancang pembelajaran dengan pendekatan Problem Based Learning. Berdasarkan materi tentang pentingnya stimulasi yang sesuai dengan tahap pertumbuhan anak usia dini, rancangan pembelajaran yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Menyajikan masalah kompleks tentang perkembangan anak untuk dianalisis",
+      "Mengidentifikasi masalah stimulasi yang relevan → Eksplorasi solusi → Aplikasi dalam aktivitas bermain",
+      "Memberikan ceramah tentang teori perkembangan anak",
+      "Menyusun daftar pertanyaan tentang stimulasi untuk dijawab anak",
+      "Mengadakan lomba menggambar tentang aktivitas stimulasi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam merancang pembelajaran Problem Based Learning, guru mengintegrasikan aspek pembelajaran PAUD dalam kegiatan yang bermakna. Berdasarkan pengetahuan pedagogik, rancangan yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Menyusun rencana pelajaran harian yang terpisah untuk setiap aspek",
+      "Mengintegrasikan aspek kognitif, sosial-emosional, bahasa, motorik, dan nilai agama dalam satu masalah autentik",
+      "Mengevaluasi setiap aspek pembelajaran secara terpisah",
+      "Menitikberatkan pada aspek kognitif sebagai prioritas utama",
+      "Mengabaikan aspek yang dianggap sudah dikuasai anak"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA merancang pembelajaran Problem Based Learning berdasarkan pengetahuan teknologi. Berdasarkan materi pendekatan tematik, saintifik, berbasis proyek, atau berbasis bermain, rancangan yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Menggunakan teknologi hanya untuk presentasi guru",
+      "Memanfaatkan teknologi sebagai alat bantu anak untuk menyelesaikan masalah dan menemukan konsep",
+      "Menggantikan aktivitas bermain dengan aplikasi digital",
+      "Mengevaluasi keterampilan teknologi anak secara terpisah",
+      "Menghindari penggunaan teknologi karena anak usia dini"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam merancang pembelajaran berbasis perbedaan individu, guru mempertimbangkan materi jenis-jenis permainan edukatif. Berdasarkan struktur keilmuan, rancangan pembelajaran yang terstruktur dan sesuai materi pembelajaran adalah…",
+    "o": [
+      "Menyediakan permainan yang sama untuk seluruh anak",
+      "Menyediakan variasi permainan edukatif yang sesuai dengan minat, gaya belajar, dan kecepatan perkembangan masing-masing anak",
+      "Mengelompokkan anak berdasarkan kemampuan akademik",
+      "Menghindari permainan kompetitif untuk mencegah perasaan kalah",
+      "Menggunakan permainan yang hanya mengasah aspek kognitif"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA merancang pembelajaran berbasis perbedaan individu dengan mempertimbangkan strategi menciptakan lingkungan bermain yang merangsang perkembangan anak. Berdasarkan pengetahuan pedagogi, rancangan yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Menyusun lingkungan bermain yang seragam untuk semua anak",
+      "Menciptakan zona bermain yang berbeda sesuai dengan kebutuhan dan karakteristik perkembangan individual",
+      "Membiarkan anak bermain tanpa arahan dari guru",
+      "Mengatur jadwal bermain yang ketat dan terstruktur",
+      "Menghindari perubahan lingkungan bermain untuk menjaga konsistensi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam merancang pembelajaran berbasis perbedaan individu, guru mempertimbangkan konsep Kurikulum Merdeka. Berdasarkan pengetahuan teknologi, rancangan pembelajaran yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Menggunakan teknologi yang sama untuk seluruh anak tanpa membedakan kemampuan",
+      "Memanfaatkan teknologi adaptif yang dapat disesuaikan dengan kecepatan dan gaya belajar individual",
+      "Menghindari penggunaan teknologi untuk anak yang lambat belajar",
+      "Menggunakan teknologi hanya untuk anak yang berkemampuan tinggi",
+      "Mengevaluasi keterampilan teknologi secara standar untuk semua anak"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA merancang pembelajaran berbasis Deep Learning untuk mengembangkan kemampuan critical thinking. Berdasarkan konsep Kurikulum Merdeka, rancangan pembelajaran yang terstruktur dan sesuai materi pembelajaran adalah…",
+    "o": [
+      "Menyampaikan informasi faktual untuk dihafal anak",
+      "Mengajukan pertanyaan terbuka yang mendorong anak menganalisis, mengevaluasi, dan menciptakan solusi",
+      "Memberikan latihan soal-soal standar secara berulang",
+      "Menekankan pada kecepatan menyelesaikan tugas",
+      "Menggunakan metode ceramah untuk efisiensi waktu"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam merancang pembelajaran berbasis Deep Learning untuk mengembangkan creativity, guru mempertimbangkan metode asesmen autentik. Berdasarkan pengetahuan pedagogi, rancangan yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Menggunakan tes tertulis untuk mengukur kreativitas",
+      "Mengimplementasikan asesmen berbasis observasi, portofolio, dan catatan anekdot selama proses kreatif berlangsung",
+      "Membandingkan hasil karya antar anak",
+      "Menilai kreativitas berdasarkan hasil akhir saja",
+      "Menggunakan rubrik penilaian yang kaku dan standar"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA merancang pembelajaran berbasis Deep Learning untuk mengembangkan collaboration dan communication. Berdasarkan pengetahuan teknologi dan implementasi pendidikan karakter, rancangan yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Menggunakan teknologi untuk pembelajaran individual",
+      "Memanfaatkan platform kolaboratif digital yang mendukung kerja sama tim dan komunikasi antar anak",
+      "Menghindari penggunaan teknologi dalam kegiatan kelompok",
+      "Menggunakan teknologi hanya untuk presentasi guru",
+      "Mengevaluasi keterampilan teknologi secara individual"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam merancang pembelajaran berbasis TPACK untuk mengembangkan kemampuan adaptif, guru mempertimbangkan implementasi moderasi beragama. Berdasarkan materi pembelajaran, rancangan yang terstruktur dan sesuai struktur keilmuan adalah…",
+    "o": [
+      "Mengintegrasikan teknologi, materi moderasi beragama, dan pedagogi yang mendukung sikap adaptif terhadap keberagaman",
+      "Menyampaikan materi moderasi beragama secara teoritis",
+      "Menggunakan teknologi tanpa kaitan dengan materi moderasi",
+      "Mengabaikan aspek pedagogi dalam pembelajaran moderasi",
+      "Menitikberatkan pada aspek teknologi saja"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Guru RA menghadapi materi tentang pentingnya stimulasi yang kurang sesuai dengan perkembangan zaman. Untuk menciptkan suasana belajar yang aman dengan pendekatan PBL, strategi pembelajaran yang paling tepat adalah…",
+    "o": [
+      "Melanjutkan penggunaan materi lama tanpa modifikasi",
+      "Mengidentifikasi masalah kontemporer dalam stimulasi anak dan merancang pembelajaran berbasis masalah yang relevan",
+      "Menghapus materi tersebut dari kurikulum",
+      "Mengganti materi dengan teknologi terbaru tanpa pertimbangan pedagogi",
+      "Menggunakan metode ceramah untuk efisiensi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penyajian materi aspek pembelajaran kognitif, sosial-emosional, bahasa, motorik, dan nilai agama yang kurang sesuai perkembangan zaman, guru menggunakan pendekatan PjBL. Strategi untuk menciptkan suasana belajar yang nyaman adalah…",
+    "o": [
+      "Memaksa anak mengikuti metode pembelajaran konvensional",
+      "Merancang proyek yang mengintegrasikan aspek-aspek pembelajaran dengan konteks kehidupan modern anak",
+      "Mengabaikan aspek yang dianggap tidak relevan",
+      "Menggunakan teknologi tanpa mempertimbangkan kenyamanan anak",
+      "Mengurangi interaksi sosial untuk fokus pada aspek kognitif"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA menyajikan materi pendekatan tematik, saintifik, berbasis proyek, atau berbasis bermain yang kurang sesuai dengan perkembangan zaman. Dengan pendekatan DBL, strategi untuk menciptkan suasana belajar yang membahagiakan adalah…",
+    "o": [
+      "Menerapkan metode tradisional tanpa modifikasi",
+      "Memfasilitasi anak menemukan konsep melalui eksplorasi bermakna yang menyenangkan dan relevan dengan konteks kini",
+      "Mengurangi aktivitas bermain karena dianggap tidak efektif",
+      "Meningkatkan beban akademik untuk mengejar target",
+      "Menggunakan reward dan punishment untuk motivasi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penyajian materi jenis-jenis permainan edukatif yang kurang sesuai perkembangan zaman, guru menggunakan pendekatan Deep Learning. Model pembelajaran untuk menciptkan suasana belajar yang akomodatif adalah…",
+    "o": [
+      "Mempertahankan permainan tradisional tanpa adaptasi",
+      "Mengadaptasi permainan edukatif dengan konteks modern sambil mempertahankan nilai edukasinya",
+      "Mengganti semua permainan dengan permainan digital",
+      "Menghapus permainan yang tidak familiar bagi anak",
+      "Menggunakan permainan kompetitif untuk mendorong semangat"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA menyajikan materi strategi menciptakan lingkungan bermain yang kurang sesuai perkembangan zaman. Dengan pendekatan TPACK, model pembelajaran untuk menciptkan suasana belajar yang adaptif adalah…",
+    "o": [
+      "Menggunakan teknologi lama yang sudah dikuasai",
+      "Mengintegrasikan teknologi modern, materi lingkungan bermain, dan pedagogi untuk menciptkan ruang belajar yang responsif",
+      "Menghindari penggunaan teknologi dalam lingkungan bermain",
+      "Menggantikan semua aktivitas bermain dengan teknologi",
+      "Mengabaikan aspek pedagogi dalam desain lingkungan"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penyajian materi konsep Kurikulum Merdeka yang kurang sesuai perkembangan zaman, guru menggunakan model pelayanan bimbingan konseling. Strategi untuk menciptkan suasana belajar yang progresif adalah…",
+    "o": [
+      "Menerapkan kurikulum secara kaku sesuai panduan lama",
+      "Memberikan layanan konseling yang membantu anak berkembang sesuai potensi dan kebutuhan individual dalam konteks modern",
+      "Mengabaikan kebutuhan individual untuk efisiensi",
+      "Menggunakan pendekatan yang sama untuk semua anak",
+      "Fokus pada perbaikan kesalahan tanpa membangun potensi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA menyajikan materi merancang pembelajaran berpusat pada anak dan berbasis proyek yang kurang sesuai perkembangan zaman. Dengan pendekatan pelayanan ABK, strategi untuk menciptkan lingkungan belajar yang akomodatif adalah…",
+    "o": [
+      "Menerapkan pembelajaran yang sama untuk semua anak termasuk ABK",
+      "Menyediakan layanan pendidikan inklusif yang mengakomodasi kebutuhan khusus anak dalam pembelajaran berbasis proyek modern",
+      "Memisahkan anak ABK dari kelas reguler",
+      "Mengurangi ekspektasi pembelajaran untuk anak ABK",
+      "Mengabaikan kebutuhan khusus dalam perencanaan proyek"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penyajian materi asesmen sebagai alat memahami perkembangan anak yang kurang sesuai perkembangan zaman, guru menggunakan pendekatan pembelajaran yang relevan. Strategi untuk menciptkan lingkungan belajar yang adaptif adalah…",
+    "o": [
+      "Menggunakan instrumen asesmen lama tanpa revisi",
+      "Mengembangkan teknik asesmen autentik yang responsif terhadap perkembangan anak dan tuntutan zaman",
+      "Mengurangi frekuensi asesmen untuk menghemat waktu",
+      "Menggunakan tes standar nasional untuk semua anak",
+      "Mengevaluasi anak hanya berdasarkan aspek kognitif"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA menyajikan materi pendidikan nilai atau karakter yang kurang sesuai perkembangan zaman. Dengan pendekatan pembelajaran yang relevan, strategi untuk menciptkan lingkungan belajar yang progresif adalah…",
+    "o": [
+      "Mengajarkan nilai-nilai secara dogmatis",
+      "Mengkontekstualisasikan nilai-nilai karakter dengan situasi kehidupan modern yang dihadapi anak",
+      "Menghapus materi nilai yang dianggap tidak relevan",
+      "Menggunakan metode ceramah untuk efisiensi waktu",
+      "Mengevaluasi penguatan nilai hanya melalui tes tertulis"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penyajian materi implementasi moderasi beragama yang kurang sesuai perkembangan zaman, guru menggunakan pendekatan pembelajaran yang relevan. Strategi untuk menciptkan lingkungan belajar yang membahagiakan adalah…",
+    "o": [
+      "Mengajarkan moderasi beragama secara teoritis",
+      "Mengintegrasikan nilai moderasi dalam aktivitas sehari-hari yang menyenangkan dan relevan dengan konteks sosial kini",
+      "Menghindari pembahasan agama untuk mencegah konflik",
+      "Mengajarkan toleransi tanpa praktik nyata",
+      "Menggunakan metode intimidasi untuk disiplin"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA menerapkan prinsip-prinsip pembelajaran berbasis perkembangan dengan pendekatan PBL. Untuk mengevaluasi input, proses, dan hasil pada aspek sikap, pengetahuan, atau keterampilan, teknik asesmen yang tepat adalah…",
+    "o": [
+      "Menggunakan tes tertulis standar di akhir pembelajaran",
+      "Menerapkan asesmen berbasis observasi selama proses pemecahan masalah berlangsung",
+      "Memberikan nilai hanya berdasarkan hasil akhir proyek",
+      "Menggunakan tes pilihan ganda untuk semua aspek",
+      "Mengevaluasi anak hanya pada tahap input"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran aspek kognitif, sosial-emosional, bahasa, motorik, dan nilai agama dengan pendekatan PjBL, guru perlu menentukan instrumen asesmen. Instrumen yang tepat sesuai karakteristik peserta didik adalah…",
+    "o": [
+      "Daftar pertanyaan objektif untuk dijawab tertulis",
+      "Rubrik penilaian proyek yang mencakup seluruh aspek perkembangan anak",
+      "Tes IQ untuk mengukur kemampuan kognitif",
+      "Skala penilaian perilaku yang kaku",
+      "Lembar jawaban komputer (LJK)"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA mengimplementasikan pendekatan tematik, saintifik, berbasis proyek, atau berbasis bermain dengan pendekatan Deep Learning. Untuk mengevaluasi input, proses, dan hasil sesuai lingkungan belajar, teknik asesmen yang tepat adalah…",
+    "o": [
+      "Menggunakan tes standar yang sama untuk semua lingkungan",
+      "Menerapkan asesmen kontekstual yang mempertimbangkan karakteristik lingkungan belajar anak",
+      "Mengevaluasi hanya berdasarkan hasil akhir",
+      "Mengabaikan faktor lingkungan dalam penilaian",
+      "Menggunakan teknik asesmen yang tidak relevan dengan pendekatan"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran tentang konsep bermain sebagai metode pembelajaran utama, guru perlu menentukan instrumen asesmen. Instrumen yang tepat sesuai lingkungan belajar pada aspek sikap, pengetahuan, atau keterampilan adalah…",
+    "o": [
+      "Tes tertulis tentang teori bermain",
+      "Catatan anekdot dan checklist observasi selama aktivitas bermain",
+      "Ujian praktik bermain dengan nilai lulus/tidak",
+      "Tes pilihan ganda tentang jenis-jenis permainan",
+      "Penilaian portofolio yang hanya berisi karya anak"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA mengajarkan materi jenis-jenis permainan edukatif. Untuk mengevaluasi input, proses, dan hasil sesuai tujuan pembelajaran, teknik asesmen yang tepat pada aspek sikap, pengetahuan, atau keterampilan adalah…",
+    "o": [
+      "Mengadakan lomba permainan dengan sistem ranking",
+      "Menggunakan teknik asesmen autentik yang sesuai dengan tujuan pembelajaran spesifik setiap permainan",
+      "Memberikan nilai berdasarkan kecepatan menyelesaikan permainan",
+      "Mengevaluasi hanya anak yang menang dalam permainan",
+      "Menggunakan tes lisan tentang aturan permainan"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran konsep Kurikulum Merdeka, guru perlu menentukan instrumen asesmen. Instrumen yang tepat sesuai tujuan pembelajaran pada aspek sikap, pengetahuan, atau keterampilan adalah…",
+    "o": [
+      "Instrumen standar nasional yang sama untuk semua PAUD",
+      "Instrumen asesmen yang fleksibel dan sesuai dengan tujuan pembelajaran spesifik serta karakteristik anak",
+      "Tes akademik yang mengukur penguasaan materi",
+      "Checklist perilaku yang tidak terkait dengan tujuan",
+      "Penilaian berbasis produk akhir saja"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA merancang pembelajaran yang berpusat pada anak dan berbasis proyek. Untuk mengevaluasi input, proses, dan hasil dengan mempertimbangkan hasil asesmen sebelumnya, teknik asesmen yang tepat adalah…",
+    "o": [
+      "Mengulang teknik asesmen yang sama tanpa mempertimbangkan hasil sebelumnya",
+      "Menggunakan teknik asesmen yang berkelanjutan dan mempertimbangkan perkembangan anak dari waktu ke waktu",
+      "Mengabaikan hasil asesmen sebelumnya dalam perencanaan",
+      "Mengevaluasi anak berdasarkan standar kelompok umur saja",
+      "Menggunakan teknik asesmen sumatif di akhir semester"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran metode asesmen autentik berbasis observasi, portofolio, atau catatan anekdot, guru perlu menentukan instrumen asesmen. Instrumen yang tepat dengan mempertimbangkan hasil asesmen sebelumnya adalah…",
+    "o": [
+      "Instrumen standar yang tidak berubah sepanjang tahun",
+      "Instrumen yang dimodifikasi berdasarkan perkembangan dan hasil asesmen sebelumnya setiap anak",
+      "Instrumen yang hanya fokus pada kelemahan anak",
+      "Instrumen yang tidak mencatat perkembangan individual",
+      "Instrumen yang digunakan untuk membandingkan antar anak"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA mengimplementasikan pendidikan nilai atau karakter. Untuk mengevaluasi input, proses, dan hasil dengan mempertimbangkan hasil asesmen awal, teknik asesmen yang tepat pada aspek sikap, pengetahuan, atau keterampilan adalah…",
+    "o": [
+      "Menggunakan teknik asesmen yang sama untuk semua anak tanpa mempertimbangkan baseline",
+      "Menerapkan teknik asesmen yang mempertimbangkan perkembangan individual dari kondisi awal masing-masing anak",
+      "Mengevaluasi hanya berdasarkan target kelas yang seragam",
+      "Mengabaikan asesmen awal dalam proses evaluasi",
+      "Menggunakan teknik asesmen normatif untuk membandingkan antar anak"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran implementasi moderasi beragama, guru perlu menentukan instrumen asesmen. Instrumen yang tepat dengan mempertimbangkan hasil asesmen awal pada aspek sikap, pengetahuan, atau keterampilan adalah…",
+    "o": [
+      "Instrumen yang mengukur penguasaan materi teoretis semata",
+      "Instrumen yang menilai perkembangan sikap toleransi dan pemahaman moderasi dari kondisi awal setiap anak",
+      "Instrumen standar yang tidak memperhatikan latar belakang anak",
+      "Instrumen yang hanya menilai aspek kognitif",
+      "Instrumen yang digunakan untuk ranking antar anak"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru RA merencanakan pembelajaran aspek kognitif, sosial-emosional, bahasa, motorik, dan nilai agama dengan menekankan aspek konten, pedagogi, dan teknologi. Terdapat potensi masalah pembelajaran dalam perencanaan. Praktik baik yang dapat diidentifikasi untuk meningkatkan kualitas pembelajaran secara berkelanjutan adalah…",
+    "o": [
+      "Mengabaikan masalah dan melanjutkan perencanaan sesuai jadwal",
+      "Merefleksikan keterpaduan konten, pedagogi, dan teknologi untuk mengidentifikasi dan memperbaiki kelemahan perencanaan",
+      "Menyalahkan faktor eksternal atas masalah yang terjadi",
+      "Mengubah seluruh rencana tanpa analisis masalah",
+      "Meneruskan praktik yang sama meskipun terdapat masalah"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pelaksanaan pembelajaran dengan materi pendekatan tematik, saintifik, berbasis proyek, atau berbasis bermain, guru menekankan aspek konten, pedagogi, dan teknologi. Terdapat potensi masalah dalam pelaksanaan. Praktik baik untuk meningkatkan kualitas pembelajaran secara berkelanjutan adalah…",
+    "o": [
+      "Melanjutkan pelaksanaan tanpa penyesuaian",
+      "Merefleksikan pelaksanaan secara komprehensif untuk mengidentifikasi best practice dan area perbaikan",
+      "Mengurangi aktivitas yang bermasalah tanpa evaluasi",
+      "Menyalahkan karakteristik anak atas kegagalan",
+      "Mengganti pendekatan pembelajaran secara drastis tanpa refleksi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA melakukan evaluasi pembelajaran dengan materi konsep bermain sebagai metode pembelajaran utama, menekankan aspek konten, pedagogi, dan teknologi sesuai karakteristik Gen Z dan Alpha. Terdapat potensi masalah dalam evaluasi. Praktik baik untuk meningkatkan kualitas secara berkelanjutan adalah…",
+    "o": [
+      "Menggunakan instrumen evaluasi yang sama untuk semua generasi",
+      "Merefleksikan efektivitas evaluasi yang sesuai dengan karakteristik dan gaya belajar Gen Z dan Alpha",
+      "Mengabaikan masukan dari hasil evaluasi",
+      "Mengurangi frekuensi evaluasi untuk menghindari masalah",
+      "Menyalahkan generasi anak atas ketidakefektifan evaluasi"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru RA menunjukkan kemampuan penguasaan materi anak usia dini di era digital dan AI. Untuk menilai kemampuan guru sebagai modal pengembangan diri secara berkelanjutan, aspek yang paling penting adalah…",
+    "o": [
+      "Kemampuan menggunakan gadget canggih",
+      "Kemampuan mengintegrasikan teknologi digital dan AI secara pedagogis dalam pembelajaran anak usia dini",
+      "Jumlah followers di media sosial pendidikan",
+      "Kemampuan menggantikan peran guru dengan teknologi",
+      "Penguasaan teori AI tanpa aplikasi praktis"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru RA menunjukkan kemampuan menggunakan AI untuk pembelajaran anak usia dini yang bermakna. Untuk mengidentifikasi masalah dan solusinya secara ilmiah sebagai wujud jati diri guru profesional sesuai karakteristik Gen Z dan Alpha, pendekatan yang tepat adalah…",
+    "o": [
+      "Menggunakan AI tanpa memahami dampaknya terhadap anak",
+      "Mengidentifikasi masalah pembelajaran, merumuskan solusi berbasis AI yang sesuai karakteristik Gen Z dan Alpha, dan mengevaluasi efektivitasnya secara ilmiah",
+      "Menggantikan seluruh aktivitas guru dengan AI",
+      "Menghindari penggunaan AI karena dianggap tidak cocok untuk anak usia dini",
+      "Menggunakan AI hanya untuk administrasi tanpa integrasi pembelajaran"
+    ],
+    "a": 1
+  }
+]
