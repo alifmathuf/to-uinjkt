@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  window.filterLeaderboard = function() {
+    window.filterLeaderboard = function(event) {  // ⬅️ Tambah (event)
     const target = event.target;
     
     if (target === filterMapel) {
