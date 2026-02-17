@@ -102,7 +102,7 @@ function login(){
   window.location.href = "dashboard.html";
 }
 async function isAdmin(){
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = Auth.getUser(); // 🔥 pakai ini
   if(!user) return false;
 
   const snap = await firebase.database()
