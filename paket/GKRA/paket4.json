@@ -1,0 +1,552 @@
+[
+  {
+    "q": "Dari materi tentang karakteristik perkembangan anak, tujuan pembelajaran ranah sikap yang sesuai dengan indikator \"peserta didik dapat meningkatkan keimanan, ketakwaan, dan akhlak mulia\" adalah...",
+    "o": [
+      "Peserta didik dapat memahami pentingnya pendidikan agama sejak dini.",
+      "Peserta didik dapat membedakan antara sikap positif dan negatif dalam kehidupan sehari-hari.",
+      "Peserta didik dapat membiasakan berdoa sebelum dan sesudah kegiatan.",
+      "Peserta didik dapat menunjukkan rasa hormat terhadap orang yang lebih tua.",
+      "Peserta didik dapat berpartisipasi dalam kegiatan keagamaan secara aktif."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Berdasarkan materi tentang aspek pembelajaran PAUD, tujuan pembelajaran ranah pengetahuan yang sesuai dengan indikator \"peserta didik mampu berpikir kritis\" adalah...",
+    "o": [
+      "Peserta didik dapat menjelaskan langkah-langkah dalam menyelesaikan masalah matematika sederhana.",
+      "Peserta didik dapat menyebutkan berbagai macam alat musik tradisional di Indonesia.",
+      "Peserta didik dapat menyatakan pendapatnya tentang suatu isu sederhana dengan alasan yang jelas.",
+      "Peserta didik dapat mengenal konsep dasar kebersihan diri.",
+      "Peserta didik dapat membandingkan cara hidup masyarakat di daerah yang berbeda."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dari materi tentang pendekatan pembelajaran di PAUD, rumusan tujuan pembelajaran ranah keterampilan yang sesuai dengan indikator \"peserta didik memiliki semangat gotong royong\" adalah...",
+    "o": [
+      "Peserta didik dapat bekerja sama dalam menyelesaikan tugas kelompok.",
+      "Peserta didik dapat melakukan kegiatan individu dengan baik.",
+      "Peserta didik dapat membagikan hasil kerajinan tangan dengan teman-temannya.",
+      "Peserta didik dapat merencanakan kegiatan bersama dalam kelompok.",
+      "Peserta didik dapat menjelaskan manfaat gotong royong dalam kehidupan sehari-hari."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Berdasarkan materi tentang konsep bermain sebagai metode pembelajaran utama di PAUD, rumusan indikator tujuan pembelajaran ranah sikap yang sesuai dengan materi \"peserta didik memiliki sikap penerimaan terhadap tradisi\" adalah...",
+    "o": [
+      "Peserta didik dapat menjelaskan berbagai jenis permainan tradisional.",
+      "Peserta didik dapat menunjukkan sikap terbuka terhadap teman yang berasal dari latar belakang budaya berbeda.",
+      "Peserta didik dapat mengenal berbagai budaya dari wilayah sekitar.",
+      "Peserta didik dapat mengikuti permainan tradisional yang diajarkan dengan penuh semangat.",
+      "Peserta didik dapat memperkenalkan permainan tradisional kepada teman-temannya."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Dari materi tentang Kurikulum Merdeka dalam konteks PAUD, rumusan indikator tujuan pembelajaran ranah pengetahuan yang sesuai dengan indikator \"peserta didik memiliki kemampuan berpikir dinamis dan inovatif\" adalah...",
+    "o": [
+      "Peserta didik dapat menunjukkan kreativitas dalam merancang proyek pembelajaran sederhana.",
+      "Peserta didik dapat memecahkan masalah yang ada dengan cara yang inovatif.",
+      "Peserta didik dapat meniru berbagai ide kreatif dari teman-temannya.",
+      "Peserta didik dapat menyelesaikan masalah dengan mengikuti prosedur yang ada.",
+      "Peserta didik dapat mengidentifikasi masalah dalam kehidupan sehari-hari."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam perencanaan tujuan pembelajaran dengan pendekatan PBL, aktivitas yang dapat menunjukkan penerapan prinsip pembelajaran berbasis perkembangan AUD sesuai dengan struktur keilmuan adalah...",
+    "o": [
+      "Guru menyusun tujuan pembelajaran berdasarkan hasil observasi karakteristik peserta didik.",
+      "Guru memberikan materi pembelajaran berdasarkan standar kurikulum tanpa mempertimbangkan karakteristik peserta didik.",
+      "Guru merancang pembelajaran yang berfokus pada hafalan konsep dasar.",
+      "Guru mengintegrasikan pembelajaran dengan kegiatan yang bersifat individual saja.",
+      "Guru mengembangkan materi ajar yang tidak terkait dengan perkembangan sosial-emosional peserta didik."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pelaksanaan tujuan pembelajaran dengan pendekatan PjBL, aspek yang perlu dianalisis oleh guru berdasarkan struktur keilmuan dan sesuai dengan karakteristik peserta didik adalah...",
+    "o": [
+      "Menyusun rangkaian tes untuk mengukur kemampuan akademis peserta didik.",
+      "Membangun kemampuan sosial-emosional dan moral melalui proyek yang mengintegrasikan nilai agama.",
+      "Fokus pada pengembangan keterampilan motorik tanpa mempertimbangkan aspek kognitif.",
+      "Mengajarkan nilai moral secara terpisah dari aspek lain dalam pembelajaran.",
+      "Providing materi ajar yang hanya berfokus pada kemampuan kognitif tanpa memperhatikan aspek sosial."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam evaluasi pembelajaran dengan pendekatan DBL, langkah yang paling tepat dalam menguraikan materi ajar sesuai dengan karakteristik peserta didik adalah...",
+    "o": [
+      "Menggunakan metode evaluasi yang terpisah berdasarkan materi ajar yang sudah disampaikan.",
+      "Menerapkan evaluasi berbasis tematik yang menghubungkan berbagai aspek pembelajaran dalam konteks kehidupan nyata.",
+      "Menggunakan tes tertulis yang mengukur pemahaman konsep saja.",
+      "Fokus pada penilaian hasil individual tanpa mempertimbangkan kolaborasi kelompok.",
+      "Memberikan evaluasi yang hanya mengukur kemampuan kognitif peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam perencanaan materi ajar dengan pendekatan TPACK, alur materi ajar tentang konsep bermain sebagai metode pembelajaran utama di PAUD yang sesuai dengan karakteristik peserta didik adalah...",
+    "o": [
+      "Menggunakan permainan sebagai kegiatan tambahan tanpa integrasi dengan tujuan pembelajaran.",
+      "Merancang materi ajar yang menekankan pada konsep bermain yang terstruktur untuk mendukung perkembangan kognitif, sosial, dan motorik.",
+      "Memfokuskan materi ajar pada teori bermain tanpa mengaitkannya dengan pengalaman nyata peserta didik.",
+      "Menggunakan teknologi untuk menggantikan peran bermain dalam pembelajaran di PAUD.",
+      "Menyusun materi ajar yang hanya berfokus pada aspek akademis tanpa melibatkan elemen bermain."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pelaksanaan materi ajar dengan pendekatan DL, alur materi konsep Kurikulum Merdeka yang sesuai dengan karakteristik peserta didik adalah...",
+    "o": [
+      "Menggunakan kurikulum yang tidak mengakomodasi perbedaan kebutuhan dan minat peserta didik.",
+      "Menyusun materi ajar yang mengintegrasikan prinsip kebebasan belajar sesuai dengan kecepatan dan gaya belajar peserta didik.",
+      "Menggunakan pendekatan satu arah dalam penyampaian materi pembelajaran.",
+      "Menyusun materi ajar yang hanya menekankan pada pengetahuan akademis tanpa mempertimbangkan keterampilan atau sikap.",
+      "Membatasi fleksibilitas peserta didik dalam memilih materi pembelajaran sesuai dengan minat dan kebutuhannya."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pelaksanaan materi ajar pembelajaran bahasa dengan model pelayanan konseling, alur materi ajar yang sesuai dengan evaluasi tujuan pembelajaran untuk karakteristik peserta didik adalah...",
+    "o": [
+      "Memberikan materi bahasa secara individual tanpa melibatkan interaksi sosial.",
+      "Mengintegrasikan kegiatan konseling untuk mendalami perasaan dan pola pikir peserta didik dalam memahami materi bahasa.",
+      "Menggunakan pendekatan pengajaran yang hanya berfokus pada teknik-teknik berbicara tanpa memperhatikan kondisi peserta didik.",
+      "Fokus pada penggunaan media digital dalam pengajaran bahasa tanpa memberi ruang untuk konsultasi pribadi.",
+      "Memberikan materi secara grup tanpa memperhatikan kebutuhan pribadi peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pelaksanaan program penguatan Profil Pelajar Pancasila (P5), pengembangan materi ajar yang sesuai dengan tujuan pembelajaran yang mencerminkan karakteristik peserta didik adalah...",
+    "o": [
+      "Menyusun materi ajar yang hanya berfokus pada nilai-nilai akademis tanpa mengintegrasikan nilai Pancasila.",
+      "Menggunakan materi ajar yang mengajarkan pentingnya kebebasan individu tanpa memperhatikan nilai-nilai kolektivisme.",
+      "Merancang materi ajar yang mengintegrasikan nilai-nilai Pancasila seperti keadilan sosial, toleransi, dan kepedulian terhadap sesama.",
+      "Fokus pada pengajaran teori-teori Pancasila tanpa melibatkan peserta didik dalam pengalaman nyata.",
+      "Mengabaikan perbedaan karakteristik peserta didik dalam penyampaian nilai-nilai Pancasila."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pelaksanaan program Penguatan Profil Pelajar Rahmatan Lil Alamin (PPRA), pengembangan materi ajar yang tepat untuk tujuan pembelajaran sesuai dengan karakteristik peserta didik adalah...",
+    "o": [
+      "Menggunakan materi ajar yang mengutamakan kedamaian tanpa mengaitkan dengan praktik kehidupan nyata.",
+      "Merancang materi ajar yang mencakup nilai-nilai universal seperti kasih sayang, toleransi, dan saling menghormati.",
+      "Menyampaikan materi ajar yang hanya berfokus pada sisi akademis dan mengabaikan nilai sosial dan agama.",
+      "Menyusun materi ajar yang terfokus pada nilai-nilai moral tanpa mengaitkan dengan kehidupan sehari-hari peserta didik.",
+      "Menggunakan materi ajar yang mengajarkan keunggulan satu agama tanpa menghargai keberagaman."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam implementasi nilai-nilai moderasi beragama, materi ajar yang tepat mengenai Islam sebagai agama moderat atau wasathiyah dalam mengevaluasi tujuan pembelajaran sesuai dengan karakteristik peserta didik adalah...",
+    "o": [
+      "Menekankan pentingnya toleransi terhadap perbedaan pandangan agama dan budaya dalam kehidupan sehari-hari.",
+      "Mengajarkan hanya nilai-nilai agama tertentu tanpa memperhatikan nilai universal yang dapat diterima semua pihak.",
+      "Fokus pada pembelajaran yang hanya mengutamakan doktrin agama tanpa melibatkan keterampilan sosial.",
+      "Mengabaikan ajaran tentang perdamaian antar umat beragama.",
+      "Mengajarkan sikap ekstrem terhadap perbedaan pandangan agama."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Alasan yang tepat dalam mengembangkan materi ajar Islam sebagai agama moderat atau wasathiyah sesuai dengan implementasi moderasi beragama adalah...",
+    "o": [
+      "Agar peserta didik dapat memahami pentingnya hidup harmonis di tengah perbedaan budaya dan agama.",
+      "Agar peserta didik menganggap agama lain sebagai ancaman terhadap keyakinan mereka.",
+      "Agar peserta didik hanya mengutamakan agama mereka tanpa menghargai agama lain.",
+      "Agar peserta didik fokus pada aspek ritual agama tanpa memperhatikan nilai sosial dan kemanusiaan.",
+      "Agar peserta didik terisolasi dalam kelompok agama mereka tanpa membuka diri terhadap keragaman."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan materi stimulasi yang sesuai dengan tahap pertumbuhan anak usia dini, rancangan pembelajaran berpendekatan pembelajaran berbasis masalah yang sesuai dengan materi pembelajaran adalah...",
+    "o": [
+      "Membuat masalah yang tidak relevan dengan tahapan perkembangan anak.",
+      "Merancang pembelajaran yang memotivasi anak untuk mencari solusi melalui diskusi dan eksplorasi pada tahap perkembangan mereka.",
+      "Menyediakan materi yang hanya bersifat hafalan tanpa memberikan kesempatan untuk berpikir kritis.",
+      "Menggunakan materi yang tidak mempertimbangkan perbedaan individu dalam perkembangan anak.",
+      "Membatasi diskusi dan eksperimen di kelas agar fokus pada pengajaran teori."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan materi pengintegrasian aspek pembelajaran PAUD dalam kegiatan pembelajaran yang bermakna, rancangan pembelajaran berpendekatan berbasis masalah yang sesuai dengan pengetahuan pedagogik adalah...",
+    "o": [
+      "Memberikan pengetahuan tanpa memperhatikan pengembangan aspek sosial-emosional anak.",
+      "Merancang kegiatan yang mengajak anak untuk memecahkan masalah secara kolaboratif dan memperkaya pengalaman mereka.",
+      "Menyediakan materi ajar yang hanya fokus pada aspek kognitif tanpa memperhatikan nilai sosial.",
+      "Menyusun pembelajaran yang terpisah dari kehidupan sehari-hari peserta didik.",
+      "Mengabaikan aspek perkembangan motorik anak dalam proses pembelajaran."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan materi pendekatan tematik, saintifik, berbasis proyek, atau berbasis bermain di PAUD, rancangan pembelajaran berpendekatan berbasis masalah yang sesuai dengan pengetahuan teknologi adalah...",
+    "o": [
+      "Menggunakan teknologi untuk menyampaikan informasi tanpa memperhatikan interaksi aktif antara peserta didik.",
+      "Mengintegrasikan teknologi untuk mendukung kegiatan eksplorasi, eksperimen, dan pemecahan masalah dalam pembelajaran berbasis proyek.",
+      "Menggunakan teknologi secara terbatas untuk meningkatkan keterampilan motorik anak.",
+      "Mengabaikan penggunaan teknologi dalam pembelajaran berbasis bermain di PAUD.",
+      "Menyediakan teknologi hanya sebagai hiburan tanpa tujuan pembelajaran yang jelas."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan materi jenis-jenis permainan edukatif, rancangan pembelajaran berpendekatan berbasis perbedaan individu yang sesuai dengan materi pembelajaran adalah...",
+    "o": [
+      "Menggunakan satu jenis permainan untuk semua peserta didik tanpa mempertimbangkan kebutuhan dan perbedaan individu mereka.",
+      "Merancang kegiatan yang mengakomodasi berbagai jenis permainan yang dapat disesuaikan dengan minat dan tingkat perkembangan anak.",
+      "Menyediakan permainan yang hanya fokus pada pengembangan keterampilan motorik tanpa mempertimbangkan perkembangan sosial.",
+      "Menggunakan permainan yang hanya mengutamakan pengetahuan akademis tanpa memperhatikan kreativitas anak.",
+      "Membatasi pilihan permainan edukatif agar peserta didik hanya mengikuti satu alur pembelajaran yang sama."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan materi strategi guru dalam menciptakan lingkungan bermain yang merangsang perkembangan anak, rancangan pembelajaran berpendekatan berbasis perbedaan individu yang sesuai dengan pengetahuan pedagogi adalah...",
+    "o": [
+      "Menciptakan lingkungan bermain yang seragam tanpa mempertimbangkan kebutuhan perkembangan anak yang berbeda.",
+      "Menggunakan berbagai strategi untuk menciptakan lingkungan yang dapat merangsang perkembangan sosial, kognitif, dan motorik sesuai dengan perbedaan individu.",
+      "Membatasi jenis permainan agar sesuai dengan satu gaya belajar saja.",
+      "Fokus pada pengajaran teoretis tanpa memberikan kesempatan untuk bermain yang merangsang perkembangan.",
+      "Menyusun lingkungan bermain yang hanya berfokus pada aspek akademik anak tanpa melibatkan keterampilan sosial."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan konsep Kurikulum Merdeka di PAUD, rancangan pembelajaran berpendekatan berbasis perbedaan individu yang sesuai dengan pengetahuan teknologi adalah...",
+    "o": [
+      "Membatasi penggunaan teknologi dan memfokuskan pada materi yang seragam untuk semua anak.",
+      "Menggunakan teknologi untuk menyesuaikan metode dan media pembelajaran dengan gaya belajar dan kebutuhan individu anak.",
+      "Menyediakan teknologi hanya sebagai hiburan tanpa kaitannya dengan materi pembelajaran.",
+      "Menyusun pembelajaran yang mengabaikan perbedaan kemampuan teknologis antara peserta didik.",
+      "Menyediakan materi yang mengutamakan pengajaran tradisional tanpa memperkenalkan teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan konsep Kurikulum Merdeka di PAUD, rancangan pembelajaran berpendekatan berbasis pembelajaran mendalam yang sesuai dengan materi pembelajaran adalah...",
+    "o": [
+      "Menyusun pembelajaran yang hanya menekankan pada hafalan tanpa mempertimbangkan pemahaman mendalam.",
+      "Merancang pembelajaran yang memungkinkan anak mengkaji dan memahami konsep-konsep secara mendalam, dengan mempertimbangkan minat mereka.",
+      "Fokus pada pengajaran informasi yang bersifat fakta tanpa memberi ruang untuk eksplorasi lebih lanjut.",
+      "Menyusun pembelajaran yang tidak memberi ruang untuk pertanyaan atau eksplorasi dari peserta didik.",
+      "Menggunakan materi yang tidak relevan dengan tahap perkembangan anak dalam pendekatan pembelajaran mendalam."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan metode asesmen autentik berbasis observasi, portofolio, atau catatan anekdot, rancangan pembelajaran berpendekatan berbasis pembelajaran mendalam yang sesuai dengan pengetahuan pedagogi adalah...",
+    "o": [
+      "Menggunakan metode asesmen yang hanya mengandalkan ujian tertulis sebagai satu-satunya cara untuk menilai anak.",
+      "Merancang pembelajaran yang melibatkan observasi aktif dan penggunaan portofolio untuk menilai perkembangan anak secara holistik.",
+      "Menyusun pembelajaran yang tidak memberi kesempatan bagi anak untuk menunjukkan perkembangan sosial-emosional mereka.",
+      "Menggunakan asesmen yang tidak mempertimbangkan konteks perkembangan setiap individu anak.",
+      "Fokus pada asesmen yang hanya menilai pencapaian akademik anak tanpa memperhatikan aspek lainnya."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan implementasi pendidikan karakter atau pendidikan nilai, rancangan pembelajaran berpendekatan berbasis pembelajaran mendalam yang sesuai dengan pengetahuan teknologi adalah...",
+    "o": [
+      "Menggunakan teknologi hanya untuk tujuan penyampaian informasi tanpa memberi ruang untuk diskusi dan refleksi.",
+      "Mengintegrasikan teknologi untuk mendukung diskusi mendalam tentang nilai-nilai karakter, dengan menggunakan media yang sesuai untuk anak usia dini.",
+      "Menggunakan teknologi untuk mengajarkan karakter tanpa melibatkan pengalaman langsung anak.",
+      "Menggunakan teknologi untuk menilai pencapaian karakter anak tanpa melibatkan interaksi sosial.",
+      "Fokus pada pengajaran karakter tanpa memanfaatkan alat teknologi yang dapat memfasilitasi pemahaman lebih mendalam."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam penerapan pembelajaran dengan materi implementasi moderasi beragama di Indonesia, rancangan pembelajaran berpendekatan berbasis TPACK yang sesuai dengan materi pembelajaran adalah...",
+    "o": [
+      "Menggunakan teknologi untuk mengajarkan nilai-nilai moderasi beragama secara terpisah dari pengalaman sosial anak.",
+      "Mengintegrasikan teknologi dalam pembelajaran yang mengajarkan nilai moderasi beragama dengan pendekatan yang mendalam, melibatkan diskusi dan refleksi.",
+      "Mengabaikan teknologi dalam mengajarkan moderasi beragama untuk fokus pada metode tradisional.",
+      "Menggunakan teknologi hanya untuk presentasi materi tanpa memberi kesempatan bagi anak untuk bertanya atau berinteraksi.",
+      "Fokus pada pendekatan yang tidak melibatkan peserta didik dalam memahami nilai-nilai moderasi beragama."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Berdasarkan materi tentang prinsip-prinsip evaluasi pembelajaran anak usia dini, rumusan indikator tujuan pembelajaran ranah sikap yang sesuai untuk mengukur kemampuan peserta didik dalam \"menghargai hasil karya teman\" adalah...",
+    "o": [
+      "Peserta didik dapat menyebutkan nama teman yang membuat karya.",
+      "Peserta didik dapat memberikan pujian terhadap hasil karya teman dengan tulus.",
+      "Peserta didik dapat membuat karya yang lebih baik daripada teman.",
+      "Peserta didik dapat menyimpan hasil karya teman dengan rapi.",
+      "Peserta didik dapat menjelaskan cara membuat karya teman."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dari materi mengenai implementasi asesmen berbasis portofolio, tujuan pembelajaran ranah pengetahuan yang sesuai dengan indikator \"peserta didik mampu menganalisis kemajuan belajar sendiri\" adalah...",
+    "o": [
+      "Peserta didik dapat mengumpulkan semua hasil karyanya dalam satu map.",
+      "Peserta didik dapat menghias portofolio mereka sendiri.",
+      "Peserta didik dapat menceritakan kembali proses pembuatan salah satu karya yang ada di portofolio.",
+      "Peserta didik dapat membandingkan hasil karyanya dari awal semester hingga akhir semester.",
+      "Peserta didik dapat menjelaskan fungsi portofolio kepada orang tua."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Berdasarkan materi tentang penggunaan catatan anekdot (anecdotal record) dalam asesmen, rumusan tujuan pembelajaran ranah keterampilan yang sesuai dengan indikator \"peserta didik menunjukkan kemampuan penyelesaian konflik\" adalah...",
+    "o": [
+      "Peserta didik dapat menceritakan konflik yang dialami kepada guru.",
+      "Peserta didik dapat meminta maaf setelah melakukan kesalahan.",
+      "Peserta didik dapat mencari solusi bersama teman saat terjadi perbedaan pendapat dalam permainan.",
+      "Peserta didik dapat menghindari konflik dengan cara menjauh dari teman.",
+      "Peserta didik dapat menangis ketika mainannya diambil teman."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam merancang laporan hasil belajar (rapor) yang sesuai dengan Kurikulum Merdeka, aktivitas yang menunjukkan prinsip \"otentik\" dalam evaluasi adalah...",
+    "o": [
+      "Guru memberikan nilai berdasarkan hasil ujian tertulis akhir semester.",
+      "Guru menyusun deskripsi perkembangan anak berdasarkan kumpulan observasi dan hasil karya nyata anak sehari-hari.",
+      "Guru menggunakan standar nilai yang sama untuk semua anak tanpa melihat keunikan individu.",
+      "Guru meminta orang tua untuk menilai hasil belajar anaknya sendiri.",
+      "Guru menggunakan hasil tes IQ sebagai acuan utama rapor."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam merancang umpan balik (feedback) hasil asesmen, pendekatan yang paling sesuai dengan karakteristik perkembangan emosional anak usia dini adalah...",
+    "o": [
+      "Memberikan umpan balik berupa nilai angka yang jelas agar anak termotivasi.",
+      "Memberikan umpan balik yang spesifik terhadap usaha anak, dengan bahasa positif dan membangun.",
+      "Membandingkan hasil karya anak dengan hasil karya teman yang lebih baik.",
+      "Fokus pada kesalahan anak agar mereka tidak mengulanginya lagi.",
+      "Memberikan umpan balik hanya kepada orang tua, bukan kepada anak."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Berdasarkan materi tentang pengembangan kurikulum operasional di satuan pendidikan (KOSP), komponen yang menunjukkan jati diri guru profesional dalam menyusun tujuan pembelajaran adalah...",
+    "o": [
+      "Menyalin tujuan pembelajaran dari dokumen kurikulum nasional tanpa penyesuaian.",
+      "Menyusun tujuan pembelajaran berdasarkan visi, misi satuan pendidikan, dan karakteristik peserta didik.",
+      "Menyusun tujuan pembelajaran hanya berdasarkan keinginan orang tua peserta didik.",
+      "Menyusun tujuan pembelajaran yang berfokus pada kemampuan akademis saja.",
+      "Menyusun tujuan pembelajaran yang sulit dicapai agar anak berusaha lebih keras."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam implementasi pembelajaran berdiferensiasi, materi ajar yang tepat untuk anak usia dini yang memiliki gaya belajar kinestetik adalah...",
+    "o": [
+      "Memberikan buku cerita bergambar untuk dibaca anak.",
+      "Menyediakan kegiatan menari, bermain peran, atau membangun dengan balok.",
+      "Memutarkan video pembelajaran tentang tema minggu ini.",
+      "Meminta anak mendengarkan penjelasan guru dengan tenang.",
+      "Memberikan lembar kerja (worksheet) mewarnai."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Berdasarkan teori perkembangan kognitif Piaget, materi pembelajaran yang paling sesuai untuk anak usia 4-6 tahun (tahap pra-operasional) adalah...",
+    "o": [
+      "Pembelajaran konsep abstrak melalui simbol-simbol.",
+      "Pembelajaran berbasis manipulasi benda konkret dan eksplorasi lingkungan.",
+      "Pembelajaran logika deduktif menggunakan aturan yang kompleks.",
+      "Pembelajaran hafalan fakta-fakta sejarah.",
+      "Pembelajaran matematika menggunakan rumus aljabar."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam menggunakan media berbasis teknologi informasi dan komunikasi (TIK) di PAUD, langkah yang menunjukkan guru profesional adalah...",
+    "o": [
+      "Menggunakan TIK untuk menenangkan anak agar guru bisa mengerjakan administrasi.",
+      "Memilih media TIK yang interaktif dan sesuai dengan tema pembelajaran serta aman bagi anak.",
+      "Membiarkan anak menggunakan tablet tanpa pendampingan.",
+      "Menggunakan media TIK yang canggih tetapi tidak relevan dengan tujuan pembelajaran.",
+      "Menghindari penggunaan TIK karena dianggap merusak kreativitas anak."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam membangun kemitraan dengan orang tua (parenting), kegiatan yang paling efektif untuk mendukung perkembangan anak adalah...",
+    "o": [
+      "Mengirimkan rapor hanya pada akhir semester.",
+      "Melakukan pertemuan rutin untuk berbagi informasi perkembangan anak dan memberikan panduan stimulasi di rumah.",
+      "Menyalahkan orang tua jika anak tidak mencapai target perkembangan.",
+      "Meminta orang tua untuk tidak ikut campur dalam urusan sekolah.",
+      "Memberikan tugas rumah (PR) yang berat kepada anak."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Berdasarkan pendekatan *High Scope* dalam PAUD, urutan langkah pembelajaran yang sesuai adalah...",
+    "o": [
+      "Bermain - Perencanaan - Review.",
+      "Perencanaan - Melakukan (Bermain) - Review.",
+      "Review - Perencanaan - Melakukan (Bermain).",
+      "Melakukan (Bermain) - Review - Perencanaan.",
+      "Perencanaan - Review - Melakukan (Bermain)."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam mengembangkan kreativitas anak, guru seharusnya...",
+    "o": [
+      "Memberikan contoh gambar yang harus ditiru persis oleh anak.",
+      "Menyediakan berbagai media dan bahan terbuka (loose parts) serta membebaskan anak bereksplorasi.",
+      "Fokus pada kerapian hasil karya anak.",
+      "Melarang anak menggunakan warna yang tidak sesuai dengan warna asli benda.",
+      "Menilai hasil karya berdasarkan kesesuaian dengan contoh guru."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Tujuan utama dari penerapan disiplin positif di lingkungan PAUD adalah...",
+    "o": [
+      "Membuat anak takut melanggar aturan.",
+      "Mengajarkan anak untuk patuh tanpa bertanya.",
+      "Membantu anak mengembangkan kontrol diri dan pemahaman tentang tanggung jawab.",
+      "Memberikan hukuman yang tegas bagi anak yang nakal.",
+      "Menjaga kelas agar tetap tenang dan tidak berisik."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran berbasis proyek (PjBL) tema \"Lingkunganku\", kegiatan yang menunjukkan keaktifan anak adalah...",
+    "o": [
+      "Anak mendengarkan cerita guru tentang kebersihan lingkungan.",
+      "Anak berjalan-jalan di sekitar sekolah untuk mengamati sampah dan memilahnya.",
+      "Anak mewarnai gambar pemandangan bersih yang disediakan guru.",
+      "Anak menonton video tentang cara menanam pohon.",
+      "Anak menghafal lagu tentang menjaga kebersihan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Salah satu ciri pembelajaran yang berpusat pada anak (child-centered) adalah...",
+    "o": [
+      "Guru menentukan semua aktivitas pembelajaran.",
+      "Anak memiliki kesempatan memilih kegiatan bermain sesuai minatnya.",
+      "Pembelajaran dilakukan secara klasikal terus-menerus.",
+      "Materi pembelajaran disamakan untuk semua tingkat usia.",
+      "Anak harus duduk rapi mendengarkan guru."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam konteks moderasi beragama, guru RA harus menanamkan sikap...",
+    "o": [
+      "Fanatisme berlebihan terhadap satu paham.",
+      "Toleransi dan menghormati perbedaan keyakinan sejak dini.",
+      "Menganggap tradisi lokal bertentangan dengan agama.",
+      "Menghindari bergaul dengan orang yang berbeda agama.",
+      "Memaksakan ajaran agama kepada anak lain."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam menggunakan aplikasi AI (Artificial Intelligence) untuk membuat media pembelajaran, guru perlu memperhatikan...",
+    "o": [
+      "Kecepatan AI dalam menghasilkan gambar.",
+      "Keakuratan, kesesuaian konten dengan nilai moral, dan usia anak.",
+      "Jumlah gambar yang bisa dihasilkan AI.",
+      "Aplikasi AI yang paling mahal dan canggih.",
+      "Penggunaan AI untuk menggantikan tugas guru secara total."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Untuk menangani anak yang memiliki kebutuhan khusus di kelas inklusi, guru PAUD sebaiknya...",
+    "o": [
+      "Meminta anak tersebut untuk mengikuti pelajaran seperti anak lainnya.",
+      "Melakukan modifikasi kurikulum dan lingkungan agar sesuai dengan kebutuhan anak.",
+      "Meminta orang tua memindahkan anak ke sekolah luar biasa.",
+      "Fokus mengajar anak-anak yang normal saja.",
+      "Membiarkan anak tersebut bermain sendiri tanpa bimbingan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kemampuan refleksi guru sangat penting untuk meningkatkan profesionalisme. Aktivitas refleksi yang tepat adalah...",
+    "o": [
+      "Mencari alasan mengapa pembelajaran gagal karena faktor anak.",
+      "Menganalisis proses pembelajaran yang telah dilakukan dan merencanakan perbaikan untuk pertemuan selanjutnya.",
+      "Meminta pujian dari rekan sejawat tentang pengajaran.",
+      "Mengabaikan komentar orang tua tentang perkembangan anak.",
+      "Merasa bahwa metode yang digunakan sudah sempurna."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam Kurikulum Merdeka PAUD, istilah \"Alur Tujuan Pembelajaran\" (ATP) merujuk pada...",
+    "o": [
+      "Daftar nilai hasil belajar anak.",
+      "Rangkaian tujuan pembelajaran yang disusun secara sistematis dan logis di dalam fase pembelajaran.",
+      "Jadwal harian kegiatan di sekolah.",
+      "Daftar nama permainan yang akan dimainkan anak.",
+      "Tema pembelajaran yang ditentukan oleh pemerintah."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Solusi yang tepat untuk masalah kurangnya media pembelajaran berbasis TIK di sekolah adalah...",
+    "o": [
+      "Tidak menggunakan media pembelajaran sama sekali.",
+      "Membuat media pembelajaran sederhana dari bahan daur ulang (bahan *loose parts*).",
+      "Meminta dana ke dinas pendidikan secara terus-menerus.",
+      "Meminjam media TIK dari sekolah lain.",
+      "Menggunakan media yang sudah usang dan rusak."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam mengajarkan konsep nilai moral pada anak usia dini, pendekatan yang paling tepat adalah...",
+    "o": [
+      "Memberikan ceramah tentang dosa dan pahala.",
+      "Melalui keteladanan, pembiasaan, dan cerita yang bermakna.",
+      "Memberikan hukuman fisik jika anak melanggar aturan.",
+      "Menghafal ayat-ayat tentang akhlak.",
+      "Membaca buku teks tentang sopan santun."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Karakteristik peserta didik generasi Alpha cenderung memiliki keunggulan dalam...",
+    "o": [
+      "Fokus pada satu tugas dalam waktu lama.",
+      "Literasi digital yang tinggi sejak dini.",
+      "Kemampuan berkomunikasi tatap muka.",
+      "Kepatuhan mutlak pada aturan.",
+      "Ketergantungan pada metode konvensional."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Untuk memastikan keamanan anak saat bermain di lingkungan sekolah, guru perlu melakukan...",
+    "o": [
+      "Pengecekan rutin alat permainan agar tidak ada yang rusak dan membahayakan.",
+      "Melarang anak bermain di luar ruangan.",
+      "Membiarkan anak bermain sendiri agar mandiri.",
+      "Mengurangi durasi waktu bermain.",
+      "Mewajibkan anak memakai alat pelindung diri lengkap."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Dalam pembelajaran di RA (Raudhatul Athfal), integrasi nilai-nilai keislaman dan kebangsaan bertujuan untuk...",
+    "o": [
+      "Membedakan anak RA dengan PAUD umum.",
+      "Membentuk karakter anak yang beriman, bertakwa, dan cinta tanah air (moderat).",
+      "Menekankan pada pelajaran hafalan.",
+      "Menghindari budaya lokal Indonesia.",
+      "Mempersiapkan anak langsung ke jenjang SMA."
+    ],
+    "a": 1
+  }
+]
