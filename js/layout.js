@@ -1,5 +1,20 @@
 /* =========================
-   GLOBAL UI CONTROLLER
+   SESSION GUARD
+========================= */
+
+const publicPages = ["login.html", "index.html"];
+
+const currentPage = window.location.pathname.split("/").pop();
+
+if(!publicPages.includes(currentPage)){
+  if(localStorage.getItem("cbtLogin") !== "true"){
+    window.location.href = "login.html";
+  }
+}
+
+
+/* =========================
+   SIDEBAR TOGGLE (mobile)
 ========================= */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -7,34 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("menuToggle");
   const sidebar = document.getElementById("sidebar");
 
-  /* ===== Sidebar Toggle ===== */
   if(toggleBtn){
-    toggleBtn.addEventListener("click", () => {
+    toggleBtn.onclick = () => {
       sidebar.classList.toggle("show");
-    });
+    };
   }
 
-  /* ===== Auto close on mobile menu click ===== */
-  const links = sidebar ? sidebar.querySelectorAll("a") : [];
-  links.forEach(link => {
-    link.addEventListener("click", () => {
-      if(window.innerWidth < 900){
-        sidebar.classList.remove("show");
-      }
-    });
-  });
-
-  /* ===== Close when click outside ===== */
-  document.addEventListener("click", (e) => {
-    if(window.innerWidth < 900 && sidebar.classList.contains("show")){
-      if(!sidebar.contains(e.target) && !toggleBtn.contains(e.target)){
-        sidebar.classList.remove("show");
-      }
-    }
-  });
-
-});
-// ===============================
+});// ===============================
 // AUTO ACTIVE MENU
 // ===============================
 document.addEventListener("DOMContentLoaded", () => {
