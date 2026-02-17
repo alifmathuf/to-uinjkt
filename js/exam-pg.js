@@ -288,9 +288,7 @@ async function submitExam(auto = false) {
 localStorage.setItem(getKey("reviewSoal"), JSON.stringify(soalUjian));
 localStorage.setItem(getKey("reviewJawaban"), JSON.stringify(jawaban));
    // ================= BUILD REVIEW DATA =================
-let reviewData = [];
-
-soalUjian.forEach((s, i) => {
+// ================= BUILD REVIEW DATA =================
 let reviewData = [];
 
 soalUjian.forEach((s, i) => {
