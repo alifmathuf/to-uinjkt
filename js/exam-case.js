@@ -211,3 +211,11 @@ function finishCase(){
 
   window.location.href = "result.html";
 }
+
+/* ================= FULLSCREEN PROTECTION ================= */
+
+document.addEventListener("fullscreenchange", () => {
+  if (!document.fullscreenElement) {
+    finishCase();
+  }
+});
