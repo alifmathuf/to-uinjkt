@@ -102,21 +102,16 @@ canvas{
 /* ================= BUTTONS ================= */
 
 .result-buttons{
+.result-buttons{
   margin-top:36px;
   display:flex;
   justify-content:center;
   gap:16px;
-  flex-wrap:wrap;
 }
 
 .result-buttons button{
-  padding:10px 22px;
-  border-radius:var(--radius-sm);
-  border:1px solid var(--border-soft);
-  background:var(--bg-secondary);
-  color:var(--text-primary);
-  cursor:pointer;
-  transition:var(--transition);
+  flex:1;               /* supaya lebar seimbang */
+  max-width:220px;      /* supaya tidak terlalu panjang */
 }
 
 .result-buttons button:hover{
@@ -146,8 +141,4 @@ canvas{
     padding:24px;
   }
 
-  .result-buttons{
-    flex-direction:column;
-    gap:12px;
-  }
 }
