@@ -1,0 +1,553 @@
+[
+    {
+      "q": "Seorang guru kelas 1 MI ingin merumuskan tujuan pembelajaran ranah sikap untuk menumbuhkan keimanan dan ketakwaan pada materi Pengenalan Huruf dan Kata. Manakah rumusan yang paling tepat?",
+      "o": [
+        "Siswa mampu menyebutkan huruf dan kata dengan benar.",
+        "Siswa menunjukkan rasa senang dalam belajar huruf dan kata.",
+        "Siswa mampu membaca huruf dan kata dengan lafal yang tepat.",
+        "Siswa menunjukkan rasa syukur atas nikmat Allah berupa kemampuan membaca.",
+        "Siswa menghafal huruf hijaiyah dan kata sederhana."
+      ],
+      "a": 3
+    },
+    {
+      "q": "Dalam penyusunan RPP tema 'Pancasila dan Keluarga', seorang calon guru perlu merumuskan tujuan pembelajaran ranah pengetahuan yang mengembangkan kemampuan berpikir kritis. Pilihlah rumusan yang paling sesuai!",
+      "o": [
+        "Siswa menyebutkan lima sila Pancasila dengan benar.",
+        "Siswa memiliki sikap menghormati orang tua dalam keluarga.",
+        "Siswa menganalisis hubungan antara nilai-nilai Pancasila dengan kehidupan keluarga sehari-hari.",
+        "Siswa menyanyikan lagu Garuda Pancasila dengan penuh semangat.",
+        "Siswa menunjukkan perilaku gotong royong dalam kelompok belajar."
+      ],
+      "a": 2
+    },
+    {
+      "q": "Seorang mahasiswa PPG sedang menyusun indikator tujuan pembelajaran ranah keterampilan pada materi Ilmu Fisika untuk kelas 4 MI. Indikator manakah yang paling tepat untuk mengembangkan semangat bergotong royong?",
+      "o": [
+        "Siswa mampu menjelaskan konsep gaya dan gerak secara individu.",
+        "Siswa bekerja sama dalam kelompok untuk merancang percobaan sederhana tentang gaya.",
+        "Siswa menghafal rumus gaya dengan benar.",
+        "Siswa menunjukkan sikap jujur saat melakukan percobaan.",
+        "Siswa mampu menghitung besar gaya dengan tepat."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada pembelajaran IPS tema 'Diri Sendiri dan Keluarga', guru ingin menetapkan indikator tujuan ranah sikap yang menumbuhkan sikap penerimaan terhadap tradisi. Manakah yang paling tepat?",
+      "o": [
+        "Siswa mampu menyebutkan nama anggota keluarga dalam bahasa daerah.",
+        "Siswa menunjukkan sikap menghargai dan menerima perbedaan tradisi antar keluarga di lingkungannya.",
+        "Siswa menganalisis sejarah tradisi masing-masing suku bangsa.",
+        "Siswa membuat peta konsep tentang keragaman tradisi Indonesia.",
+        "Siswa mampu membedakan tradisi modern dan tradisional."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru kelas MI sedang menyusun indikator pembelajaran Matematika materi Bilangan. Indikator manakah yang paling sesuai untuk mengembangkan kemampuan berpikir dinamis dan inovatif?",
+      "o": [
+        "Siswa menghitung operasi penjumlahan bilangan dua angka dengan benar.",
+        "Siswa menemukan berbagai cara berbeda untuk menyelesaikan masalah penjumlahan dalam kehidupan sehari-hari.",
+        "Siswa menghafal tabel perkalian 1-10 dengan sempurna.",
+        "Siswa menunjukkan sikap teliti saat mengerjakan soal.",
+        "Siswa menyebutkan sifat-sifat bilangan bulat dengan tepat."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam sebuah studi kasus, guru Bahasa Indonesia menerapkan pendekatan PBL untuk materi membaca dan menulis kalimat sederhana. Analisis manakah yang paling tepat terkait struktur keilmuan materi ajar tersebut?",
+      "o": [
+        "Materi hanya fokus pada aspek kognitif tanpa mempertimbangkan keterampilan berbahasa.",
+        "Analisis materi mencakup aspek fonologi, morfologi, sintaksis, dan pragmatik dalam konteks pembelajaran bermakna.",
+        "Materi diajarkan secara menghafal tanpa memahami struktur bahasa.",
+        "Pembelajaran hanya menekankan pada aspek penilaian hasil belajar.",
+        "Struktur keilmuan diabaikan karena fokus pada pendekatan PBL."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Seorang guru PPKn menerapkan pendekatan PjBL pada materi kehidupan sosial di masyarakat. Bagaimana analisis struktur keilmuan yang paling tepat dalam pelaksanaan pembelajaran ini?",
+      "o": [
+        "Materi dipelajari secara teoritis tanpa praktik lapangan.",
+        "Analisis mencakup konsep-konsep sosiologi, nilai-nilai kebersamaan, dan aplikasinya dalam proyek kehidupan nyata siswa.",
+        "Pembelajaran hanya fokus pada hasil akhir proyek tanpa memahami konsep.",
+        "Struktur keilmuan tidak diperlukan dalam pendekatan PjBL.",
+        "Materi diajarkan sesuai buku paket tanpa analisis mendalam."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Guru IPA melakukan evaluasi pembelajaran dengan pendekatan DBL pada materi Getaran dan Gelombang. Analisis struktur keilmuan manakah yang paling sesuai dalam evaluasi tersebut?",
+      "o": [
+        "Evaluasi hanya mengukur kemampuan menghafal definisi getaran dan gelombang.",
+        "Analisis mencakup pemahaman konsep fisika, keterampilan proses sains, dan aplikasi desain dalam menyelesaikan masalah.",
+        "Evaluasi dilakukan tanpa mempertimbangkan karakteristik siswa.",
+        "Struktur keilmuan diabaikan karena fokus pada aspek desain.",
+        "Evaluasi hanya berfokus pada produk akhir tanpa proses."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam perencanaan pembelajaran IPS dengan pendekatan TPACK, guru akan menyusun alur materi Kehidupan Sosial dan Budaya. Alur manakah yang paling logis?",
+      "o": [
+        "Langsung membahas budaya internasional tanpa memahami budaya lokal terlebih dahulu.",
+        "Dimulai dari pengenalan budaya keluarga, lingkungan sekitar, nasional, hingga internasional dengan integrasi teknologi pembelajaran.",
+        "Materi disusun secara acak tanpa urutan tertentu.",
+        "Hanya fokus pada aspek teknologi tanpa memperhatikan materi.",
+        "Pembelajaran dilakukan secara monoton tanpa variasi."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Guru Matematika menerapkan pendekatan Deep Learning (DL) untuk materi Bilangan Pecahan. Bagaimana alur materi yang paling logis dalam pelaksanaan pembelajaran?",
+      "o": [
+        "Langsung ke operasi hitung pecahan tanpa memahami konsep dasar.",
+        "Dimulai dari pengenalan konsep pecahan, representasi visual, aplikasi nyata, hingga analisis pemecahan masalah kompleks.",
+        "Materi diajarkan sesuai urutan di buku tanpa adaptasi.",
+        "Fokus hanya pada latihan soal tanpa pemahaman konsep.",
+        "Pembelajaran dilakukan secara individual tanpa kolaborasi."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam evaluasi pembelajaran tematik dengan model pelayanan konseling, guru menganalisis alur materi Karakteristik Pembelajaran Tematik. Analisis manakah yang paling tepat?",
+      "o": [
+        "Evaluasi hanya mengukur hasil belajar akademik tanpa aspek psikologis.",
+        "Analisis mencakup aspek akademik, sosial-emosional, dan kebutuhan khusus siswa dengan pendekatan layanan konseling.",
+        "Pembelajaran tematik tidak memerlukan evaluasi komprehensif.",
+        "Fokus hanya pada masalah perilaku tanpa memperhatikan materi.",
+        "Evaluasi dilakukan di akhir semester saja."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Seorang calon guru akan melaksanakan program Penguatan Profil Pelajar Pancasila (P5). Bagaimana pengembangan materi ajar nilai-nilai P5 yang paling tepat dalam perencanaan pembelajaran?",
+      "o": [
+        "Materi P5 dipisahkan dari mata pelajaran inti.",
+        "Pengembangan materi terintegrasi dengan mata pelajaran, berbasis projek nyata, dan mengembangkan dimensi profil pelajar Pancasila.",
+        "P5 hanya dilaksanakan sebagai kegiatan ekstrakurikuler.",
+        "Materi P5 diajarkan secara teoritis tanpa praktik.",
+        "Pengembangan materi tidak mempertimbangkan karakteristik siswa."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam pelaksanaan program Penguatan Profil Pelajar Rahmatan lil 'Alamin (PPRA), calon guru perlu mengembangkan materi ajar. Pendekatan manakah yang paling sesuai?",
+      "o": [
+        "Materi PPRA diajarkan secara terpisah dari kurikulum utama.",
+        "Pengembangan materi mengintegrasikan nilai-nilai Islam rahmatan lil 'alamin dalam setiap pembelajaran dengan pendekatan kontekstual.",
+        "PPRA hanya difokuskan pada aspek ritual keagamaan semata.",
+        "Materi tidak terintegrasi dengan perkembangan zaman.",
+        "Pengembangan materi mengabaikan keberagaman peserta didik."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru akan mengevaluasi pembelajaran tentang implementasi nilai-nilai moderasi beragama. Pengembangan materi ajar Islam sebagai agama moderat (wasathiyyah) manakah yang paling tepat?",
+      "o": [
+        "Materi mengajarkan Islam sebagai satu-satunya agama yang benar.",
+        "Pengembangan materi menekankan konsep wasathiyyah, toleransi, dan penolakan ekstremisme dalam kehidupan bermasyarakat.",
+        "Materi tidak menyentuh aspek keberagaman agama.",
+        "Pembelajaran hanya fokus pada aspek fiqih tanpa konteks sosial.",
+        "Moderasi beragama dianggap tidak relevan untuk siswa MI."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam konteks implementasi moderasi beragama, calon guru perlu menilai pengembangan materi ajar. Penilaian manakah yang paling komprehensif?",
+      "o": [
+        "Materi hanya dinilai dari aspek ketuntasan konten.",
+        "Penilaian mencakup kelengkapan konsep wasathiyyah, relevansi dengan konteks sosial, dan kemampuan mengembangkan sikap toleran.",
+        "Penilaian dilakukan tanpa mempertimbangkan tujuan pembelajaran.",
+        "Hanya fokus pada aspek pengetahuan tanpa sikap.",
+        "Materi tidak perlu dinilai karena bersifat normatif."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Seorang mahasiswa PPG menyusun rancangan pembelajaran Bahasa Indonesia dengan materi menulis cerita sederhana dan membaca nyaring menggunakan pendekatan pembelajaran berbasis masalah. Rancangan manakah yang paling sesuai?",
+      "o": [
+        "Guru menyampaikan materi secara ceramah kemudian siswa mengerjakan latihan.",
+        "Siswa diberi masalah nyata tentang komunikasi, menganalisis teks, dan memproduksi cerita sederhana sebagai solusi.",
+        "Pembelajaran hanya fokus pada menghafal struktur teks.",
+        "Siswa membaca tanpa memahami makna dan tujuan komunikasi.",
+        "Rancangan tidak mempertimbangkan struktur keilmuan bahasa."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru merancang pembelajaran PPKn materi menghargai keragaman dengan pendekatan pembelajaran berbasis masalah. Komponen manakah yang paling penting dalam rancangan tersebut?",
+      "o": [
+        "Penyampaian materi oleh guru secara lengkap.",
+        "Pengetahuan pedagogik tentang cara mengelola diskusi, memfasilitasi kerja sama, dan mengaitkan materi dengan pengalaman siswa.",
+        "Hanya fokus pada pencapaian nilai akhir yang tinggi.",
+        "Pembelajaran tanpa mempertimbangkan latar belakang siswa.",
+        "Rancangan mengabaikan aspek teknologi pembelajaran."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam rancangan pembelajaran IPA materi Makhluk Hidup dan Lingkungan dengan pendekatan pembelajaran berbasis masalah, aspek teknologi manakah yang paling relevan?",
+      "o": [
+        "Penggunaan teknologi hanya untuk guru menyampaikan materi.",
+        "Pemanfaatan digital microscope, aplikasi identifikasi flora/fauna, dan platform kolaborasi untuk observasi dan analisis data.",
+        "Teknologi tidak diperlukan dalam pembelajaran IPA.",
+        "Siswa hanya menonton video tanpa interaksi.",
+        "Penggunaan teknologi tanpa kaitan dengan materi."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Seorang calon guru merancang pembelajaran IPS materi Peta dan Bumi dengan pendekatan pembelajaran berbasis perbedaan individu. Rancangan manakah yang paling tepat?",
+      "o": [
+        "Materi disajikan sama untuk semua siswa tanpa modifikasi.",
+        "Rancangan mencakup diferensiasi konten (peta sederhana hingga kompleks), proses (visual, auditori, kinestetik), dan produk (peta konsep, model, presentasi).",
+        "Pembelajaran hanya untuk siswa dengan kemampuan tinggi.",
+        "Tidak ada penyesuaian untuk siswa dengan kebutuhan khusus.",
+        "Rancangan mengabaikan gaya belajar siswa."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru merancang pembelajaran Matematika materi Geometri dengan pendekatan berbasis perbedaan individu. Aspek pedagogik manakah yang paling krusial?",
+      "o": [
+        "Menggunakan metode yang sama untuk semua siswa agar adil.",
+        "Penerapan strategi scaffolding, grouping yang fleksibel, dan asesmen diagnostik untuk menyesuaikan pembelajaran dengan kesiapan siswa.",
+        "Pembelajaran hanya berfokus pada siswa yang lambat.",
+        "Tidak ada strategi khusus untuk mengakomodasi perbedaan.",
+        "Aspek pedagogik diabaikan karena fokus pada materi."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam rancangan pembelajaran Matematika materi Pengukuran dengan pendekatan berbasis perbedaan individu, pemanfaatan teknologi manakah yang paling sesuai?",
+      "o": [
+        "Semua siswa menggunakan aplikasi yang sama tanpa pilihan.",
+        "Tersedia berbagai tools digital (apps pengukuran virtual, video tutorial level berbeda, games adaptif) yang sesuai dengan profil dan minat siswa.",
+        "Teknologi tidak digunakan karena dapat mengganggu fokus.",
+        "Hanya menggunakan kalkulator untuk semua siswa.",
+        "Penggunaan teknologi tanpa mempertimbangkan kemampuan siswa."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Seorang calon guru merancang pembelajaran tematik dengan materi Prinsip-prinsip Pembelajaran Tematik menggunakan pendekatan pembelajaran mendalam (Deep Learning) untuk mengembangkan critical thinking. Rancangan manakah yang paling tepat?",
+      "o": [
+        "Siswa menghafal definisi prinsip-prinsip pembelajaran tematik.",
+        "Siswa menganalisis kasus-kasus implementasi tematik, mengevaluasi kelebihan dan kekurangannya, serta merancang pembelajaran tematik yang inovatif.",
+        "Pembelajaran hanya berfokus pada aspek teori tanpa aplikasi.",
+        "Siswa mengerjakan latihan soal pilihan ganda.",
+        "Rancangan tidak mengembangkan kemampuan berpikir tingkat tinggi."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru merancang pembelajaran tematik materi Kelebihan dan Kekurangan Pembelajaran Tematik dengan pendekatan pembelajaran mendalam untuk mengembangkan kreativitas. Aspek pedagogik manakah yang paling penting?",
+      "o": [
+        "Guru menyampaikan materi secara lengkap dan sistematis.",
+        "Pembelajaran yang memfasilitasi eksplorasi ide, brainstorming, dan pembuatan produk kreatif berupa inovasi pembelajaran tematik.",
+        "Siswa hanya mendengarkan penjelasan guru.",
+        "Tidak ada ruang bagi siswa untuk bereksperimen.",
+        "Pembelajaran menekankan pada konformitas jawaban."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam rancangan pembelajaran pendidikan karakter dengan pendekatan pembelajaran mendalam untuk mengembangkan kolaborasi dan komunikasi, pemanfaatan teknologi manakah yang paling sesuai?",
+      "o": [
+        "Siswa bekerja individu menggunakan komputer masing-masing.",
+        "Platform kolaboratif online, video conference untuk diskusi kelompok, dan shared documents untuk kerja sama proyek pendidikan karakter.",
+        "Teknologi tidak digunakan dalam pembelajaran karakter.",
+        "Hanya menggunakan media cetak untuk belajar mandiri.",
+        "Penggunaan teknologi tanpa interaksi sosial."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru merancang pembelajaran moderasi beragama dengan pendekatan TPACK untuk mengembangkan kemampuan adaptif siswa. Rancangan manakah yang paling tepat?",
+      "o": [
+        "Materi disampaikan secara monolog oleh guru.",
+        "Integrasi konten moderasi beragama, pedagogi inquiry-based, dan teknologi virtual reality untuk mensimulasikan situasi multikultural.",
+        "Pembelajaran hanya menggunakan metode ceramah.",
+        "Teknologi digunakan tanpa kaitan dengan materi.",
+        "Tidak ada keterkaitan antara konten, pedagogi, dan teknologi."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam kasus penyajian materi struktur teks dan membuat surat yang kurang sesuai dengan perkembangan zaman, strategi pembelajaran berpendekatan PBL manakah yang paling tepat untuk menciptkan suasana belajar yang aman?",
+      "o": [
+        "Guru memaksa siswa menggunakan format surat tradisional tanpa modifikasi.",
+        "Memfasilitasi siswa menganalisis kebutuhan komunikasi modern, merancang format surat elektronik yang etis, dan menciptkan lingkungan yang menerima eksplorasi.",
+        "Menghindari penggunaan teknologi dalam pembelajaran surat menyurat.",
+        "Mengkritik siswa yang menggunakan format non-konvensional.",
+        "Tidak ada penyesuaian dengan perkembangan zaman."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Ketika materi Pancasila sebagai dasar negara kurang sesuai dengan perkembangan zaman, strategi pembelajaran berpendekatan PjBL manakah yang paling tepat untuk menciptkan suasana belajar yang nyaman?",
+      "o": [
+        "Mengajarkan Pancasila secara kaku sesuai buku lama.",
+        "Mengajak siswa membuat proyek aplikasi nilai-nilai Pancasila dalam konteks digital dan isu kontemporer dengan pendampingan yang suportif.",
+        "Menghindari pembahasan isu-isu modern dalam pembelajaran.",
+        "Mengabaikan masukan siswa tentang relevansi materi.",
+        "Suasana kelas yang otoriter dan menakutkan."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada penyajian materi Benda dan Sifatnya yang kurang sesuai dengan perkembangan zaman, strategi pembelajaran berpendekatan DBL manakah yang paling tepat untuk menciptkan suasana belajar yang membahagiakan?",
+      "o": [
+        "Pembelajaran hanya di kelas tanpa eksplorasi nyata.",
+        "Merancang pembelajaran yang menantang siswa mendesain solusi inovatif untuk masalah lingkungan modern dengan penuh semangat dan kegembiraan.",
+        "Mengabaikan perkembangan ilmu pengetahuan terkini.",
+        "Suasana kelas yang tegang dan kompetitif.",
+        "Tidak ada apresiasi terhadap kreativitas siswa."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam kasus penyajian materi Sejarah Bangsa Indonesia yang kurang relevan, model pembelajaran berpendekatan Deep Learning (DL) manakah yang paling tepat untuk menciptkan suasana belajar yang akomodatif?",
+      "o": [
+        "Mengajarkan sejarah secara kronologis tanpa kaitan dengan masa kini.",
+        "Mengakomodasi berbagai perspektif historiografi, memfasilitasi analisis kritis sumber sejarah, dan menghubungkan dengan identitas nasional kontemporer.",
+        "Menolak diskusi tentang interpretasi baru sejarah.",
+        "Hanya menggunakan satu buku teks sebagai sumber.",
+        "Tidak memperhatikan latar belakang budaya siswa."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Ketika materi Statistika atau Peluang kurang sesuai dengan perkembangan zaman, model pembelajaran berpendekatan TPACK manakah yang paling tepat untuk menciptkan suasana belajar yang adaptif?",
+      "o": [
+        "Menggunakan contoh-contoh statistik yang usang dan tidak relevan.",
+        "Mengintegrasikan big data, visualisasi data interaktif, dan aplikasi statistik modern yang adaptif dengan kecepatan belajar siswa.",
+        "Menghindari penggunaan software statistik.",
+        "Pembelajaran yang kaku tanpa fleksibilitas.",
+        "Tidak memanfaatkan teknologi sama sekali."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam kasus penyajian materi Statistika yang kurang sesuai perkembangan zaman, model pembelajaran berbasis pelayanan bimbingan konseling manakah yang paling tepat untuk menciptkan suasana belajar yang progresif?",
+      "o": [
+        "Mengabaikan kecemasan siswa terhadap materi yang sulit.",
+        "Memberikan layanan konseling belajar, bimbingan kelompok untuk mengatasi kesulitan, dan dukungan berkelanjutan untuk perkembangan kompetensi statistik.",
+        "Membiarkan siswa belajar sendiri tanpa bimbingan.",
+        "Menekankan pada perbandingan antar siswa.",
+        "Tidak ada tindak lanjut terhadap kesulitan siswa."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada penyajian materi Jaring Tema dalam Pembelajaran Tematik yang kurang sesuai dengan perkembangan zaman, pendekatan pembelajaran berbasis pelayanan ABK manakah yang paling tepat untuk menciptkan lingkungan belajar yang akomodatif?",
+      "o": [
+        "Menggunakan jaring tema yang sama untuk semua siswa tanpa modifikasi.",
+        "Mengakomodasi kebutuhan siswa berkebutuhan khusus dengan modifikasi jaring tema, alat bantu teknologi, dan strategi pembelajaran inklusif.",
+        "Memisahkan siswa ABK dari kelas reguler.",
+        "Tidak menyediakan dukungan khusus untuk siswa ABK.",
+        "Mengabaikan keberagaman kebutuhan belajar."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Ketika materi Ruang Lingkup Materi Tematik di MI kurang relevan, pendekatan pembelajaran yang relevan manakah yang paling tepat untuk menciptkan lingkungan belajar yang adaptif?",
+      "o": [
+        "Menggunakan materi yang sama tahun demi tahun tanpa perubahan.",
+        "Mengadaptasi ruang lingkup materi dengan isu-isu lokal dan global terkini, teknologi terbaru, dan kebutuhan kompetensi masa depan.",
+        "Menghindari perubahan karena sulit diimplementasikan.",
+        "Tidak mempertimbangkan perkembangan di masyarakat.",
+        "Mengabaikan masukan dari berbagai pemangku kepentingan."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam kasus penyajian materi pendidikan nilai atau karakter yang kurang sesuai perkembangan zaman, pendekatan pembelajaran yang relevan manakah yang paling tepat untuk menciptkan lingkungan belajar yang progresif?",
+      "o": [
+        "Mengajarkan nilai secara dogmatis tanpa konteks.",
+        "Mengembangkan pembelajaran nilai yang progresif dengan mempertimbangkan dinamika sosial, digital ethics, dan isu-isu kontemporer yang relevan dengan kehidupan siswa.",
+        "Mengabaikan perubahan nilai-nilai dalam masyarakat.",
+        "Pembelajaran yang monoton dan tidak menginspirasi.",
+        "Tidak ada inovasi dalam metode pengajaran nilai."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada penyajian materi implementasi moderasi beragama yang kurang sesuai dengan perkembangan zaman, pendekatan pembelajaran yang relevan manakah yang paling tepat untuk menciptkan lingkungan belajar yang membahagiakan?",
+      "o": [
+        "Mengajarkan moderasi beragama secara teoritis tanpa praktik.",
+        "Menciptkan pembelajaran yang menyenangkan melalui simulasi multikultural, kolaborasi antar siswa berbeda latar belakang, dan penyelesaian masalah nyata dengan gembira.",
+        "Menghindari diskusi tentang keragaman agama.",
+        "Suasana kelas yang serius dan menakutkan.",
+        "Tidak ada aktivitas yang melibatkan siswa secara aktif."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam pembelajaran Bahasa Indonesia materi membaca teks dan menyampaikan pendapat dengan pendekatan PBL, teknik asesmen manakah yang paling tepat sesuai karakteristik peserta didik?",
+      "o": [
+        "Tes tulis pilihan ganda tentang struktur teks saja.",
+        "Portofolio proses diskusi, rubrik presentasi, dan penilaian diri terhadap kemampuan menyampaikan pendapat.",
+        "Hanya penilaian hasil akhir tanpa proses.",
+        "Tes lisan tanpa kriteria jelas.",
+        "Penilaian yang sama untuk semua siswa tanpa mempertimbangkan perbedaan."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada pembelajaran PPKn materi hak dan kewajiban warga negara dengan pendekatan PjBL, instrumen asesmen manakah yang paling tepat sesuai karakteristik peserta didik?",
+      "o": [
+        "Ujian harian tentang definisi hak dan kewajiban.",
+        "Lembar observasi proyek, rubrik produk, dan daftar cek partisipasi sosial sesuai tahapan perkembangan siswa.",
+        "Hanya nilai produk akhir proyek.",
+        "Tes tertulis tanpa melihat proses kerja.",
+        "Instrumen yang tidak jelas dan subjektif."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam pembelajaran IPA materi Energi dan Perubahannya dengan pendekatan DL, teknik asesmen manakah yang paling tepat sesuai lingkungan belajar?",
+      "o": [
+        "Tes tertulis di kelas tanpa praktik.",
+        "Asesmen kinerja praktik, analisis kasus energi di lingkungan sekitar, dan refleksi terhadap solusi masalah energi lokal.",
+        "Hanya penilaian hasil ujian.",
+        "Tidak mempertimbangkan konteks lingkungan sekitar.",
+        "Teknik asesmen yang tidak terintegrasi dengan pembelajaran."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada pembelajaran IPS materi Perubahan Sosial dan Ekonomi, instrumen asesmen manakah yang paling tepat sesuai lingkungan belajar?",
+      "o": [
+        "Tes esai tentang teori perubahan sosial.",
+        "Instrumen analisis studi kasus lokal, wawancara masyarakat, dan evaluasi proyek pengabdian yang terkait dengan lingkungan sosial siswa.",
+        "Hanya menggunakan soal-soal dari buku teks.",
+        "Tidak melibatkan interaksi dengan lingkungan sekitar.",
+        "Instrumen yang tidak sesuai dengan konteks lokal."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam pembelajaran Matematika materi Bilangan Pecahan, teknik asesmen manakah yang paling tepat sesuai tujuan pembelajaran?",
+      "o": [
+        "Tes cepat menghitung pecahan.",
+        "Asesmen pemecahan masalah kontekstual, representasi visual, dan komunikasi matematis sesuai kompetensi yang ingin dicapai.",
+        "Hanya penilaian kecepatan menghitung.",
+        "Tes mekanistik tanpa pemahaman konsep.",
+        "Teknik asesmen yang tidak terukur."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada pembelajaran Matematika materi Geometri, instrumen asesmen manakah yang paling tepat sesuai tujuan pembelajaran?",
+      "o": [
+        "Tes menghafal rumus luas dan volume.",
+        "Instrumen penilaian pembuatan bangun geometri, eksplorasi sifat-sifat, dan aplikasi dalam desain sesuai tujuan kompetensi geometri.",
+        "Hanya penilaian hasil perhitungan.",
+        "Tes pilihan ganda tanpa konstruksi.",
+        "Instrumen yang tidak mengukur pemahaman konsep."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam pembelajaran tematik materi Karakteristik Pembelajaran Tematik, teknik asesmen manakah yang paling tepat dengan mempertimbangkan hasil asesmen sebelumnya?",
+      "o": [
+        "Mengulang teknik asesmen yang sama tanpa melihat hasil sebelumnya.",
+        "Teknik asesmen yang disesuaikan berdasarkan hasil asesmen formatif sebelumnya, dengan scaffolding atau enrichment sesuai kebutuhan.",
+        "Tidak mempertimbangkan perkembangan siswa dari waktu ke waktu.",
+        "Asesmen yang terpisah dari proses pembelajaran.",
+        "Teknik yang monoton dan tidak adaptif."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada pembelajaran tematik materi Prinsip-prinsip Pembelajaran Tematik, instrumen asesmen manakah yang paling tepat dengan mempertimbangkan hasil asesmen sebelumnya?",
+      "o": [
+        "Menggunakan instrumen standar tanpa modifikasi.",
+        "Instrumen yang dikembangkan berdasarkan analisis hasil belajar sebelumnya, dengan fokus pada area yang masih perlu diperbaiki atau ditingkatkan.",
+        "Tidak ada kaitan antara asesmen sebelumnya dan saat ini.",
+        "Instrumen yang terlalu sulit atau terlalu mudah.",
+        "Tidak ada umpan balik dari asesmen sebelumnya."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam pembelajaran pendidikan nilai atau karakter, teknik asesmen manakah yang paling tepat dengan mempertimbangkan hasil asesmen awal?",
+      "o": [
+        "Asesmen yang sama untuk semua siswa tanpa melihat profil awal.",
+        "Teknik asesmen yang berbasis pada hasil asesmen awal karakter, dengan pendekatan yang disesuaikan untuk mengembangkan nilai-nilai yang belum internalisasi.",
+        "Mengabaikan kondisi awal siswa.",
+        "Hanya fokus pada asesmen akhir.",
+        "Teknik yang tidak mengukur perkembangan karakter."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Pada pembelajaran moderasi beragama, instrumen asesmen manakah yang paling tepat dengan mempertimbangkan hasil asesmen awal?",
+      "o": [
+        "Instrumen yang identik untuk semua siswa.",
+        "Instrumen yang disusun berdasarkan pemetaan awal sikap toleransi dan pemahaman moderasi, dengan penyesuaian untuk mengukur pertumbuhan sikap.",
+        "Tidak mempertimbangkan latar belakang keagamaan siswa.",
+        "Asesmen yang hanya mengukur pengetahuan.",
+        "Instrumen yang tidak sensitif terhadap konteks keberagaman."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Seorang calon guru merefleksikan praktik perencanaan pembelajaran Bahasa Indonesia dengan materi menulis cerita pendek dan membaca teks informasi. Aspek konten, pedagogi, dan teknologi manakah yang perlu diperbaiki berdasarkan refleksi komprehensif?",
+      "o": [
+        "Hanya fokus pada aspek konten tanpa memperhatikan pedagogi dan teknologi.",
+        "Integrasi analisis struktur teks (konten), strategi scaffolding menulis (pedagogi), dan pemanfaatan platform menulis digital (teknologi) yang saling mendukung.",
+        "Mengabaikan umpan balik dari siswa.",
+        "Tidak melakukan evaluasi terhadap praktik pembelajaran.",
+        "Refleksi yang terpisah-pisah antar aspek."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Dalam refleksi praktik pelaksanaan pembelajaran Matematika materi Pengukuran, aspek manakah yang paling penting untuk meningkatkan kualitas pembelajaran secara berkelanjutan?",
+      "o": [
+        "Hanya mengevaluasi hasil tes siswa.",
+        "Merefleksikan kedalaman konsep pengukuran yang dipahami siswa (konten), efektivitas manipulatif dan aktivitas (pedagogi), serta pemanfaatan alat ukur digital (teknologi).",
+        "Mengabaikan kesulitan yang dialami siswa.",
+        "Tidak membuat rencana perbaikan.",
+        "Refleksi yang tidak komprehensif."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru merefleksikan praktik evaluasi pembelajaran tematik materi Kelebihan dan Kekurangan Pembelajaran Tematik. Praktik baik manakah yang dapat diidentifikasi untuk meningkatkan kualitas secara berkelanjutan sesuai karakteristik Gen Z dan Alpha?",
+      "o": [
+        "Menggunakan metode evaluasi tradisional tanpa adaptasi.",
+        "Menerapkan evaluasi yang mengintegrasikan asesmen otentik, umpan balik instan digital, dan pengembangan keterampilan metakognisi yang sesuai gaya belajar generasi digital.",
+        "Tidak mempertimbangkan karakteristik generasi siswa.",
+        "Evaluasi yang bersifat sumatif semata.",
+        "Mengabaikan perkembangan teknologi dalam evaluasi."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Seorang calon guru ingin menunjukkan jati diri sebagai guru profesional di era digital dan AI. Praktik pengembangan diri manakah yang paling tepat berdasarkan refleksi komprehensif?",
+      "o": [
+        "Hanya mengandalkan pengetahuan yang diperoleh saat kuliah.",
+        "Mengikuti pengembangan kompetensi digital, memanfaatkan AI untuk personalisasi pembelajaran, dan berkolaborasi dalam komunitas belajar profesional.",
+        "Menolak menggunakan teknologi dalam pembelajaran.",
+        "Tidak melakukan refleksi terhadap praktik mengajar.",
+        "Bekerja secara individual tanpa berbagi praktik baik."
+      ],
+      "a": 1
+    },
+    {
+      "q": "Calon guru ingin menyusun publikasi ilmiah atau karya inovatif sebagai bukti profesionalisme. Kemampuan manakah yang paling penting dalam mengidentifikasi masalah pendidikan dan solusinya untuk peserta didik Gen Z dan Alpha?",
+      "o": [
+        "Hanya mengandalkan intuisi tanpa data.",
+        "Kemampuan menganalisis data pembelajaran, memahami karakteristik generasi digital, merancang solusi berbasis AI, dan mengkomunikasikannya secara ilmiah.",
+        "Menulis tanpa dasar penelitian yang kuat.",
+        "Mengabaikan kebutuhan spesifik generasi siswa.",
+        "Tidak mengikuti perkembangan riset terkini."
+      ],
+      "a": 1
+    }
+  ]
+}
