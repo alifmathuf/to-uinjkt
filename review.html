@@ -1,85 +1,44 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Review Jawaban - Tryout PPG</title>
-
-<link rel="stylesheet" href="css/app.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/review.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwayat Ujian</title>
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<!-- ================= FIREBASE ================= -->
-
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyDPUb6ILn9GwB7cg_GzLj5etbDNBJ6in3k",
-    authDomain: "cbtuin-d26aa.firebaseapp.com",
-    databaseURL: "https://cbtuin-d26aa-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "cbtuin-d26aa",
-    storageBucket: "cbtuin-d26aa.firebasestorage.app",
-    messagingSenderId: "93548126228",
-    appId: "1:93548126228:web:c456aedaad373237a0c701"
-  };
-
-  firebase.initializeApp(firebaseConfig);
-  const database = firebase.database();
-</script>
-
-<!-- ============================================ -->
-
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+  
+  <link rel="stylesheet" href="riwayat.css">
 </head>
-
 <body>
 
-<div class="layout">
-
-  <div class="card review-card">
-    <h2>Review Jawaban Ujian</h2>
-
-    <div class="table-wrapper">
-      <table class="review-table">
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Soal</th>
-            <th>Jawaban Anda</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody id="reviewBody">
-        </tbody>
-      </table>
+  <div class="review-container">
+    <!-- Header -->
+    <div class="review-header">
+      <h2>Riwayat Ujian</h2>
     </div>
 
-   <!-- Hapus div penutup berlebih, jadi seperti ini: -->
+    <!-- Scrollable Content -->
+    <div class="history-scroll">
+      <div id="historyList" class="history-list">
+        <div class="loading">Memuat data</div>
+      </div>
+    </div>
+
+    <!-- Footer dengan border halus -->
     <div class="review-footer">
-      <button onclick="window.location.href='dashboard.html'" class="btn-primary">
-        Dashboard
+      <button onclick="window.location.href='dashboard.html'">
+        ← Kembali
       </button>
-      <button onclick="window.location.href='result.html'" class="btn-primary">
-        ke laman Hasil
+      <button onclick="location.reload()">
+        🔄 Refresh
       </button>
     </div>
-  </div>  <!-- tutup card -->
-</div>    <!-- tutup layout -->
+  </div>
 
-<!-- ================= JS APP ================= -->
-
-<script src="js/auth.js"></script>
-<script src="js/layout.js"></script>
-<script src="js/review.js"></script>
-
-<script>
-  Auth.protect();
-  lucide.createIcons();
-</script>
+  <script src="riwayat.js"></script>
 
 </body>
 </html>
