@@ -144,39 +144,130 @@ function renderChart(correct, total) {
   });
 }
 
-/* ================= EXPORT PDF PG ================= */
-
-function exportPG(){
-  const review = JSON.parse(localStorage.getItem("reviewData"));
-  if(!review || review.length === 0){
-    alert("Data tidak ditemukan");
-    return;
-  }
-
+function exportAllPDF() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
-  let y = 15;
-
+  
+  // AMBIL DATA
+  const reviewData = JSON.parse(localStorage.getItem("reviewData")) || [];
+  const caseResult = JSON.parse(localStorage.getItem("caseResult")) || null;
+  const hasPG = reviewData.length > 0;
+  const hasCase = caseResult && caseResult.title;
+  
+  if (!hasPG && !hasCase) {
+    alert("Belum ada jawaban untuk di-export");
+    return;
+  }
+  
+  const user = Auth.getUser();
+  let startY = 20;
+  
+  // ================= HEADER =================
   doc.setFontSize(16);
-  doc.text("HASIL JAWABAN PILIHAN GANDA", 14, y);
-  y += 10;
-
+  doc.text("HASIL UJIAN", 105, startY, { align: "center" });
+  startY += 10;
+  
   doc.setFontSize(10);
-
-  review.forEach((item, i) => {
-    if(y > 270){
+  doc.text(`Nama: ${user?.nama || '-'}`, 14, startY);
+  doc.text(`Kelas: ${user?.kelas || '-'}`, 105, startY);
+  startY += 15;
+  
+  // ================= BAGIAN 1: PG (TABEL) =================
+  if (hasPG) {
+    doc.setFontSize(12);
+    doc.text("A. PILIHAN GANDA", 14, startY);
+    startY += 8;
+    
+    // SIAPKAN DATA TABEL
+    const tableData = reviewData.map((item, i) => [
+      i + 1,
+      item.q.substring(0, 50) + (item.q.length > 50 ? '...' : ''),
+      item.user,
+      item.correct,
+      item.user === item.correct ? 'BENAR' : 'SALAH'
+    ]);
+    
+    // BUAT TABEL
+    doc.autoTable({
+      head: [['No', 'Soal', 'Jawaban Anda', 'Kunci', 'Status']],
+      body: tableData,
+      startY: startY,
+      theme: 'grid',
+      styles: { fontSize: 8, cellPadding: 2 },
+      headStyles: { fillColor: [41, 128, 185], textColor: 255 },
+      columnStyles: {
+        0: { cellWidth: 10 },
+        1: { cellWidth: 70 },
+        2: { cellWidth: 25 },
+        3: { cellWidth: 25 },
+        4: { cellWidth: 20 }
+      },
+      didParseCell: function(data) {
+        // Warna status benar/salah
+        if (data.column.index === 4) {
+          if (data.cell.raw === 'BENAR') {
+            data.cell.styles.textColor = [34, 197, 94];
+          } else {
+            data.cell.styles.textColor = [239, 68, 68];
+          }
+        }
+      }
+    });
+    
+    startY = doc.lastAutoTable.finalY + 15;
+  }
+  
+  // ================= BAGIAN 2: STUDI KASUS (TABEL) =================
+  if (hasCase) {
+    // Cek perlu halaman baru?
+    if (startY > 220) {
       doc.addPage();
-      y = 15;
+      startY = 20;
     }
-    doc.text(`${i+1}. ${item.q}`, 14, y);
-    y += 6;
-    doc.text(`Jawaban Anda : ${item.user}`, 20, y);
-    y += 5;
-    doc.text(`Jawaban Benar: ${item.correct}`, 20, y);
-    y += 5;
-    doc.text(`Status : ${item.user === item.correct ? "BENAR" : "SALAH"}`, 20, y);
-    y += 8;
-  });
-
-  doc.save("hasil-pg.pdf");
+    
+    doc.setFontSize(12);
+    doc.text("B. STUDI KASUS", 14, startY);
+    startY += 8;
+    
+    // INFO KASUS
+    doc.setFontSize(10);
+    doc.text(`Topik: ${caseResult.title}`, 14, startY);
+    doc.text(`Total Kata: ${caseResult.words}`, 100, startY);
+    startY += 10;
+    
+    // TABEL JAWABAN
+    const caseData = [
+      ['1. Deskripsi Masalah', caseResult.deskripsi || '-'],
+      ['2. Upaya Penyelesaian', caseResult.upaya || '-'],
+      ['3. Hasil', caseResult.hasil || '-'],
+      ['4. Hikmah', caseResult.hikmah || '-']
+    ];
+    
+    doc.autoTable({
+      body: caseData,
+      startY: startY,
+      theme: 'grid',
+      styles: { fontSize: 9, cellPadding: 3, valign: 'top' },
+      columnStyles: {
+        0: { cellWidth: 50, fillColor: [240, 240, 240], fontStyle: 'bold' },
+        1: { cellWidth: 130 }
+      }
+    });
+  }
+  
+  // ================= FOOTER =================
+  const pageCount = doc.internal.getNumberOfPages();
+  for (let i = 1; i <= pageCount; i++) {
+    doc.setPage(i);
+    doc.setFontSize(8);
+    doc.text(
+      `Di-export: ${new Date().toLocaleString("id-ID")} | Halaman ${i} dari ${pageCount}`,
+      105,
+      290,
+      { align: "center" }
+    );
+  }
+  
+  // SIMPAN
+  doc.save(`hasil-ujian-${user?.nama || 'user'}-${Date.now()}.pdf`);
 }
