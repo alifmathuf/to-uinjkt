@@ -24,63 +24,22 @@ const db = firebase.database();
 /* ================= AMBIL UJIAN TERAKHIR ================= */
 
 db.ref(`exams/${user.id}`)
-  .once("value")
-  .then(snapshot => {
-    if (!snapshot.exists()) {
-      alert("Belum ada hasil ujian.");
-      window.location.href = "dashboard.html";
-      return;
-    }
+.limitToLast(1)
+.once("value")
+.then(snapshot => {
 
-    // Kumpulkan semua ujian dengan submittedAt
-    const exams = [];
-    
-    snapshot.forEach(child => {
-      const examData = child.val();
-      
-      // Handle nested structure (jika ada sub-folder paket)
-      if (examData.submittedAt) {
-        // Structure: exams/{userId}/{examKey}/submittedAt
-        exams.push({
-          key: child.key,
-          ...examData
-        });
-      } else {
-        // Structure: exams/{userId}/{mapel}/{paket}/submittedAt
-        Object.keys(examData).forEach(subKey => {
-          const subData = examData[subKey];
-          if (subData && subData.submittedAt) {
-            exams.push({
-              key: `${child.key}/${subKey}`,
-              ...subData
-            });
-          }
-        });
-      }
-    });
+  if (!snapshot.exists()) {
+    alert("Belum ada hasil ujian.");
+    window.location.href = "dashboard.html";
+    return;
+  }
 
-    if (exams.length === 0) {
-      alert("Belum ada hasil ujian.");
-      window.location.href = "dashboard.html";
-      return;
-    }
+  const examKey = Object.keys(snapshot.val())[0];
+  const examData = snapshot.val()[examKey];
 
-    // Urutkan dari yang terbaru (submittedAt terbesar)
-    exams.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
-    
-    // Ambil yang terakhir
-    const lastExam = exams[0];
-
-    const correct = lastExam.score || 0;
-    const total = lastExam.total || 0;
-    const finalScore = Math.round((correct / total) * 100);
-
-    // ... lanjutkan tampilkan data seperti biasa
-    const mapel = lastExam.mapel || "-";
-    const paket = lastExam.paket || "-";
-    
-    // Update DOM...
-  });
+  const correct = examData.score || 0;
+  const total = examData.total || 0;
+  const finalScore = Math.round((correct / total) * 100);
 
   /* ================= TAMPILKAN INFO MAPEL & PAKET ================= */
   const mapel = examData.mapel || "-";
