@@ -38,12 +38,11 @@ const database = firebase.database();
 
 <div class="layout">
 
-  <!-- OVERLAY (untuk menutup sidebar di mobile) -->
+  <!-- OVERLAY -->
   <div id="sidebarOverlay" class="sidebar-overlay"></div>
 
   <!-- SIDEBAR -->
   <aside class="sidebar" id="sidebar">
-    <!-- TOMBOL CLOSE (Mobile Only) -->
     <button class="sidebar-close" onclick="closeSidebar()" aria-label="Tutup Menu">
       <i data-lucide="x"></i>
     </button>
@@ -76,54 +75,82 @@ const database = firebase.database();
         <span>Result</span>
       </a>
 
-     
+      <a href="review.html">
+        <i data-lucide="eye"></i>
+        <span>Review</span>
+      </a>
     </nav>
   </aside>
 
   <!-- CONTENT -->
   <main class="content">
 
- <!-- GANTI BAGIAN TOPBAR -->
-<header class="topbar">
-  <div class="topbar-left">
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
-    <span class="app-title-desktop"></span>
-  </div>
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+        <span class="app-title-desktop"></span>
+      </div>
 
-  <div class="user-info compact">
-    <div class="user-text">
-      <div id="greeting">Selamat datang,</div>
-      <strong id="userInfo">admin (admin)</strong>
+      <div class="user-info compact">
+        <div class="user-text">
+          <div id="greeting">Selamat datang,</div>
+          <strong id="userInfo">admin (admin)</strong>
+        </div>
+
+        <div class="avatar-wrap">
+          <div id="avatar" class="avatar"></div>
+          <button class="logout-btn" onclick="Auth.logout()" title="Logout">
+            <i data-lucide="log-out" class="icon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- GUIDE PANEL -->
+    <div class="guide-panel">
+      <div class="guide-icon">
+        <i data-lucide="info"></i>
+      </div>
+      <div class="guide-content">
+        <p class="guide-title">Panduan Memulai Ujian</p>
+        <ol class="guide-steps">
+          <li><span class="step-num">1</span> Pilih mata pelajaran</li>
+          <li><span class="step-num">2</span> Pilih paket soal</li>
+          <li><span class="step-num">3</span> Pilih tipe ujian</li>
+          <li><span class="step-num">4</span> Kerjakan dengan teliti</li>
+        </ol>
+        <p class="guide-tip">
+          <i data-lucide="menu"></i>
+          Akses menu lainnya via tombol <strong>☰</strong> di pojok kiri atas
+        </p>
+      </div>
     </div>
 
-    <div class="avatar-wrap">
-      <div id="avatar" class="avatar"></div>
-      <button class="logout-btn" onclick="Auth.logout()" title="Logout">
-        <i data-lucide="log-out" class="icon"></i>
-      </button>
-    </div>
-  </div>
-</header>
+    <!-- STEPPER -->
+    <div class="stepper">
+      <div class="step active" data-step="1">
+        <span class="dot"></span>
+        <span class="label">Mapel</span>
+      </div>
 
-<!-- TAMBAHKAN GUIDE PANEL -->
-<div class="guide-panel">
-  <div class="guide-icon">
-    <i data-lucide="info"></i>
-  </div>
-  <div class="guide-content">
-    <p class="guide-title">Panduan Memulai Ujian</p>
-    <ol class="guide-steps">
-      <li><span class="step-num">1</span> Pilih mata pelajaran</li>
-      <li><span class="step-num">2</span> Pilih paket soal</li>
-      <li><span class="step-num">3</span> Pilih tipe ujian</li>
-      <li><span class="step-num">4</span> Kerjakan dengan teliti</li>
-    </ol>
-    <p class="guide-tip">
-      <i data-lucide="menu"></i>
-      Akses menu lainnya via tombol <strong>☰</strong> di pojok kiri atas
-    </p>
-  </div>
-</div>
+      <div class="step" data-step="2">
+        <span class="dot"></span>
+        <span class="label">Paket</span>
+      </div>
+
+      <div class="step" data-step="3">
+        <span class="dot"></span>
+        <span class="label">Tipe</span>
+      </div>
+
+      <div class="step" data-step="4">
+        <span class="dot"></span>
+        <span class="label">Konfirmasi</span>
+      </div>
+
+      <div class="progress-line"></div>
+    </div>
 
     <!-- STEP CONTENT -->
     <div id="stepContent"></div>
