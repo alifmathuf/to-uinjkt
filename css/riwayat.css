@@ -1,137 +1,69 @@
-/* ===============================
-   HISTORY CARD GLASS VERSION
-================================ */
-
-#historyList{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-  gap:24px;
-  margin-top:20px;
-}
-
-/* Card */
 .history-card{
+  padding:20px;
   display:flex;
   flex-direction:column;
-  padding:22px;
-  border-radius:var(--radius);
-
-  background:rgba(255,255,255,0.05);
-  backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
-
-  border:1px solid rgba(255,255,255,0.12);
-  box-shadow:0 8px 24px rgba(0,0,0,0.25);
-
-  transition:var(--transition);
+  gap:16px;
 }
 
-.history-card:hover{
-  transform:translateY(-6px);
-  border-color:var(--primary);
-  box-shadow:0 12px 35px rgba(37,99,235,0.25);
-}
-
-/* Header dengan title dan badge */
-.history-header{
+.history-top{
   display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:12px;
-  margin-bottom:12px;
+  align-items:center;
+  gap:10px;
 }
 
 .history-title{
-  font-size:16px;
+  font-size:15px;
   font-weight:600;
   color:var(--text-primary);
-  line-height:1.3;
   flex:1;
 }
 
-/* Badge Status */
-.badge-status{
-  display:inline-flex;
-  align-items:center;
-  padding:4px 10px;
-  border-radius:20px;
-  font-size:11px;
-  font-weight:600;
-  letter-spacing:0.5px;
-  text-transform:uppercase;
-  flex-shrink:0;
+.history-center{
+  text-align:center;
+  padding:8px 0;
 }
 
-.badge-lulus{
-  background:rgba(22,163,74,0.15);
-  color:var(--success);
-  border:1px solid rgba(22,163,74,0.3);
-}
-
-.badge-tidak{
-  background:rgba(220,38,38,0.15);
-  color:var(--danger);
-  border:1px solid rgba(220,38,38,0.3);
-}
-
-/* Score */
 .history-score{
-  font-size:42px;
-  font-weight:700;
+  font-size:48px;
+  font-weight:800;
   line-height:1;
-  margin-bottom:16px;
+  margin-bottom:4px;
 }
 
-.score-green{ color:var(--success); }
-.score-yellow{ color:var(--warning); }
-.score-red{ color:var(--danger); }
+.history-correct{
+  font-size:13px;
+  color:var(--text-secondary);
+}
 
-/* Footer: Meta + Review sejajar */
-.history-footer{
+.history-action{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:12px;
-  margin-top:auto;
   padding-top:12px;
-  border-top:1px solid rgba(255,255,255,0.08);
+  border-top:1px solid var(--border-soft);
 }
 
-/* Meta */
-.history-meta{
+.history-date{
   font-size:12px;
-  color:var(--text-secondary);
-  flex:1;
+  color:var(--text-muted);
 }
 
-/* ===============================
-   TOMBOL REVIEW (SEJAJAR TANGGAL)
-================================ */
-
-.btn-review{
-  display:inline-flex;
+.btn-icon{
+  width:36px;
+  height:36px;
+  display:flex;
   align-items:center;
-  gap:6px;
-  padding:6px 12px;
-  background:transparent;
+  justify-content:center;
+  border-radius:10px;
+  background:var(--bg-hover);
   border:1px solid var(--border-soft);
-  border-radius:var(--radius);
   color:var(--text-secondary);
-  font-size:11px;
-  font-weight:500;
-  text-decoration:none;
   transition:var(--transition);
-  flex-shrink:0;
 }
 
-.btn-review:hover{
+.btn-icon:hover{
   background:var(--primary);
   border-color:var(--primary);
   color:var(--text-primary);
-  box-shadow:0 4px 15px rgba(37,99,235,0.3);
-}
-
-.btn-review i{
-  width:12px;
-  height:12px;
+  transform:scale(1.05);
 }
