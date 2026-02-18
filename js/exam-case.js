@@ -26,7 +26,6 @@ const steps = [
   "Hikmah / Pengalaman Berharga"
 ];
 
-// ✅ SUDAH PAKAI getKey
 let selectedTopic = localStorage.getItem(getKey("caseTopic"));
 let currentStep = parseInt(localStorage.getItem(getKey("caseStep"))) || 0;
 let answers = JSON.parse(localStorage.getItem(getKey("caseAnswers"))) || [];
@@ -35,78 +34,59 @@ let duration = 30 * 60;
 let caseEndTime;
 let timerInterval;
 
-
 /* ================= INIT ================= */
-
 initCase();
 
-function initCase(){
-
-  if(!selectedTopic){
-    selectedTopic = topics[Math.floor(Math.random()*topics.length)];
+function initCase() {
+  if (!selectedTopic) {
+    selectedTopic = topics[Math.floor(Math.random() * topics.length)];
     localStorage.setItem(getKey("caseTopic"), selectedTopic);
   }
 
   const topicEl = document.getElementById("caseTopic");
-  if(topicEl){
-    topicEl.innerText = selectedTopic.toUpperCase();
-  }
+  if (topicEl) topicEl.innerText = selectedTopic.toUpperCase();
 
   startCaseTimer();
   renderStep();
 }
 
-
 /* ================= TIMER ================= */
-
-function startCaseTimer(){
-
+function startCaseTimer() {
   const saved = localStorage.getItem(getKey("caseEndTime"));
 
-  if(saved){
+  if (saved) {
     caseEndTime = parseInt(saved);
   } else {
-    caseEndTime = Date.now() + duration*1000;
+    caseEndTime = Date.now() + duration * 1000;
     localStorage.setItem(getKey("caseEndTime"), caseEndTime);
   }
 
-  timerInterval = setInterval(()=>{
+  timerInterval = setInterval(() => {
+    const remain = Math.floor((caseEndTime - Date.now()) / 1000);
 
-    const remain = Math.floor((caseEndTime - Date.now())/1000);
-
-    if(remain <= 0){
+    if (remain <= 0) {
       clearInterval(timerInterval);
       finishCase();
       return;
     }
 
-    const m = Math.floor(remain/60);
-    const s = remain%60;
+    const m = Math.floor(remain / 60);
+    const s = remain % 60;
 
     const timerEl = document.getElementById("caseTimer");
-    if(timerEl){
-      timerEl.innerText =
-        `${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
-    }
-
-  },1000);
+    if (timerEl) timerEl.innerText = `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+  }, 1000);
 }
 
-
 /* ================= RENDER STEP ================= */
-
-function renderStep(){
-
-  if(currentStep >= steps.length){
+function renderStep() {
+  if (currentStep >= steps.length) {
     finishCase();
     return;
   }
 
-  document.getElementById("caseStepInfo").innerText =
-    `Soal ${currentStep+1} dari ${steps.length}`;
-
-  document.getElementById("caseStepTitle").innerText =
-    steps[currentStep];
+  document.getElementById("caseStepInfo").innerText = `Soal ${currentStep + 1} dari ${steps.length}`;
+  document.getElementById("caseStepTitle").innerText = steps[currentStep];
 
   const textarea = document.getElementById("essayInput");
   textarea.value = answers[currentStep] || "";
@@ -116,106 +96,60 @@ function renderStep(){
   updateButtons();
 }
 
-
 /* ================= PROGRESS ================= */
-
-function updateProgress(){
-
+function updateProgress() {
   const total = steps.length;
-  const percent = ((currentStep+1)/total)*100;
+  const percent = ((currentStep + 1) / total) * 100;
 
   const progressText = document.getElementById("progressText");
   const progressFill = document.getElementById("progressFill");
 
-  if(progressText){
-    progressText.innerText =
-      `${currentStep+1} / ${total}`;
-  }
-
-  if(progressFill){
-    progressFill.style.width =
-      percent + "%";
-  }
+  if (progressText) progressText.innerText = `${currentStep + 1} / ${total}`;
+  if (progressFill) progressFill.style.width = percent + "%";
 }
 
-
 /* ================= WORD COUNTER ================= */
-
-function updateCounter(){
-
+function updateCounter() {
   const text = document.getElementById("essayInput").value.trim();
   const words = text === "" ? 0 : text.split(/\s+/).length;
-
   document.getElementById("wordCount").innerText = words;
 }
 
-document
-  .getElementById("essayInput")
-  .addEventListener("input", updateCounter);
-
+document.getElementById("essayInput").addEventListener("input", updateCounter);
 
 /* ================= BUTTON CONTROL ================= */
-
-function updateButtons(){
-
+function updateButtons() {
   const saveBtn = document.getElementById("saveBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  // Tombol simpan aktif hanya sampai step 3 (index 0-2)
-  if(saveBtn){
-    saveBtn.disabled = currentStep >= 3; // disable di step 4
-  }
-
-  // Tombol selesai hanya muncul & enable di step 4 (index 3)
-  if(finishBtn){
-    finishBtn.disabled = currentStep !== 3; 
-  }
+  if (saveBtn) saveBtn.disabled = currentStep === steps.length - 1; // step 4 disable
+  if (finishBtn) finishBtn.disabled = currentStep !== steps.length - 1; // step 1-3 disable
 }
-
 
 /* ================= SAVE STEP ================= */
-
-function saveStep(){
-
+function saveStep() {
   const text = document.getElementById("essayInput").value.trim();
-  const words = text === "" ? 0 : text.split(/\s+/).length;
-
-  if(words < 150){
-    alert("Minimal 150 kata!");
-    return;
-  }
 
   answers[currentStep] = text;
-
-  // ✅ FIX STORAGE
   localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
 
-  currentStep++;
-  localStorage.setItem(getKey("caseStep"), currentStep);
-
-  renderStep();
+  if (currentStep < steps.length - 1) {
+    currentStep++;
+    localStorage.setItem(getKey("caseStep"), currentStep);
+    renderStep();
+  }
 }
 
-
 /* ================= FINISH ================= */
+function finishCase() {
+  if (timerInterval) clearInterval(timerInterval);
 
-function finishCase(){
+  const totalWords = answers.reduce((acc, txt) => acc + (txt ? txt.split(/\s+/).length : 0), 0);
+  const totalChars = answers.reduce((acc, txt) => acc + (txt ? txt.length : 0), 0);
 
-  if(timerInterval){
-    clearInterval(timerInterval);
-  }
-
-  const totalWords = answers.reduce((acc, txt)=>{
-    return acc + (txt ? txt.split(/\s+/).length : 0);
-  },0);
-
-  const totalChars = answers.reduce((acc, txt)=>{
-    return acc + (txt ? txt.length : 0);
-  },0);
-
-  // ✅ FIX STORAGE
   localStorage.setItem(getKey("caseTotalWords"), totalWords);
   localStorage.setItem(getKey("caseTotalChars"), totalChars);
+  localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers)); // pastikan tersimpan
 
   localStorage.removeItem(getKey("caseStep"));
   localStorage.removeItem(getKey("caseEndTime"));
@@ -223,11 +157,7 @@ function finishCase(){
   window.location.href = "result.html";
 }
 
-
 /* ================= FULLSCREEN PROTECTION ================= */
-
 document.addEventListener("fullscreenchange", () => {
-  if (!document.fullscreenElement) {
-    finishCase();
-  }
+  if (!document.fullscreenElement) finishCase();
 });
