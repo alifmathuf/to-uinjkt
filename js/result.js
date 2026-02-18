@@ -1,5 +1,5 @@
 /* ===============================
-   RESULT ENGINE - FINAL GABUNGAN
+   RESULT ENGINE
 ================================ */
 
 function getKey(key) {
