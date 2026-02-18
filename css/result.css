@@ -18,7 +18,15 @@
   font-weight: 500;
   letter-spacing: 0.5px;
 }
+#examMapel{
+  color: var(--primary);
+  font-weight: 600;
+}
 
+#examPaket{
+  color: var(--accent);
+  font-weight: 600;
+}
 /* ================= SCORE BOX ================= */
 
 .score-box{
