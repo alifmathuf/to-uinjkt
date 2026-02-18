@@ -41,6 +41,16 @@ db.ref(`exams/${user.id}`)
   const total = examData.total || 0;
   const finalScore = Math.round((correct / total) * 100);
 
+  /* ================= TAMPILKAN INFO MAPEL & PAKET ================= */
+  const mapel = examData.mapel || "-";
+  const paket = examData.paket || "-";
+  
+  const examMapelEl = document.getElementById("examMapel");
+  const examPaketEl = document.getElementById("examPaket");
+  
+  if(examMapelEl) examMapelEl.innerText = mapel;
+  if(examPaketEl) examPaketEl.innerText = paket;
+
   /* ================= TAMPILKAN NILAI PG ================= */
 
   document.getElementById("scoreText").innerText = finalScore;
@@ -59,7 +69,7 @@ db.ref(`exams/${user.id}`)
 
   if (typeof lucide !== "undefined") lucide.createIcons();
 
-  saveToFirebaseLeaderboard(finalScore, correct, total, examKey);
+  saveToFirebaseLeaderboard(finalScore, correct, total, examKey, mapel, paket);
   renderChart(correct, total);
 
   /* ================= LOAD STUDI KASUS ================= */
@@ -102,7 +112,7 @@ function loadCaseResult(){
 
 /* ================= SAVE GLOBAL LEADERBOARD ================= */
 
-function saveToFirebaseLeaderboard(score, correct, total, examId) {
+function saveToFirebaseLeaderboard(score, correct, total, examId, mapel, paket) {
   if (!user || !examId) return;
 
   db.ref(`leaderboard/${examId}/${user.id}`).set({
@@ -111,6 +121,8 @@ function saveToFirebaseLeaderboard(score, correct, total, examId) {
     score: score,
     correct: correct,
     total: total,
+    mapel: mapel || "-",
+    paket: paket || "-",
     updatedAt: Date.now()
   });
 }
@@ -157,6 +169,10 @@ function exportAllPDF() {
   const reviewData = JSON.parse(localStorage.getItem(getKey("reviewData"))) || [];
   const caseResult = JSON.parse(localStorage.getItem("caseResult")) || null;
   
+  // Ambil info mapel & paket dari DOM
+  const mapel = document.getElementById("examMapel")?.innerText || "-";
+  const paket = document.getElementById("examPaket")?.innerText || "-";
+  
   const hasPG = reviewData.length > 0;
   const hasCase = caseResult && caseResult.title;
   
@@ -175,7 +191,12 @@ function exportAllPDF() {
   doc.setFontSize(10);
   doc.text(`Nama: ${user?.nama || '-'}`, 14, startY);
   doc.text(`Kelas: ${user?.kelas || '-'}`, 105, startY);
-  startY += 15;
+  startY += 6;
+  
+  // TAMBAHKAN MAPEL & PAKET DI PDF
+  doc.text(`Mapel: ${mapel}`, 14, startY);
+  doc.text(`Paket: ${paket}`, 105, startY);
+  startY += 10;
   
   // ================= BAGIAN 1: PG (TABEL) =================
   if (hasPG) {
