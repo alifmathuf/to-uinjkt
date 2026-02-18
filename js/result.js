@@ -1,6 +1,11 @@
 /* ===============================
-   RESULT ENGINE - FINAL STABLE
+   RESULT ENGINE - FIX PG + PDF
 ================================ */
+function getKey(key) {
+  const user = Auth.getUser();
+  if (!user) return key;
+  return `${key}_${user.id}`;
+}
 
 Auth.protect();
 
@@ -8,15 +13,12 @@ const user = Auth.getUser();
 if (!user) window.location.href = "dashboard.html";
 
 /* ================= USER INFO ================= */
-
 document.getElementById("greeting").innerText = "Hasil Ujian";
-document.getElementById("userInfo").innerText =
-  `${user.nama} (${user.kelas})`;
+document.getElementById("userInfo").innerText = `${user.nama} (${user.kelas})`;
 
 const db = firebase.database();
 
 /* ================= AMBIL UJIAN TERAKHIR ================= */
-
 db.ref(`exams/${user.id}`)
 .limitToLast(1)
 .once("value")
@@ -33,51 +35,53 @@ db.ref(`exams/${user.id}`)
 
   const correct = examData.score || 0;
   const total = examData.total || 0;
+
   const finalScore = Math.round((correct / total) * 100);
 
   /* ================= TAMPILKAN NILAI PG ================= */
-
-  document.getElementById("scoreText").innerText = finalScore;
-  document.getElementById("correctCount").innerText = correct;
-  document.getElementById("finalScore").innerText = finalScore;
-
+  const scoreText = document.getElementById("scoreText");
+  const correctCount = document.getElementById("correctCount");
+  const finalScoreEl = document.getElementById("finalScore");
   const statusBox = document.getElementById("statusBox");
 
-  if (finalScore >= 75) {
-    statusBox.innerHTML = `<i data-lucide="check-circle"></i> LULUS`;
-    statusBox.className = "status-pass";
-  } else {
-    statusBox.innerHTML = `<i data-lucide="x-circle"></i> TIDAK LULUS`;
-    statusBox.className = "status-fail";
+  if(scoreText) scoreText.innerText = finalScore;
+  if(correctCount) correctCount.innerText = correct;
+  if(finalScoreEl) finalScoreEl.innerText = finalScore;
+
+  if(statusBox){
+    if(finalScore >= 75){
+      statusBox.innerHTML = `<i data-lucide="check-circle"></i> LULUS`;
+      statusBox.className = "status-pass";
+    } else {
+      statusBox.innerHTML = `<i data-lucide="x-circle"></i> TIDAK LULUS`;
+      statusBox.className = "status-fail";
+    }
   }
 
-  if (typeof lucide !== "undefined") lucide.createIcons();
+  if(typeof lucide !== "undefined") lucide.createIcons();
 
   saveToFirebaseLeaderboard(finalScore, correct, total, examKey);
   renderChart(correct, total);
 
-  /* ================= LOAD STUDI KASUS ================= */
-  loadCaseResult();
-
+  loadCaseResult(); // Load PG review + studi kasus
 })
 .catch(err => console.log("Result load error:", err));
 
-/* ================= LOAD STUDI KASUS ================= */
-
-function getCaseKey(key) {
-  const user = Auth.getUser();
-  if (!user) return key;
-  return `${key}_${user.id}`;
-}
-
+/* ================= LOAD CASE + REVIEW DATA ================= */
 function loadCaseResult(){
 
-  const answers = JSON.parse(localStorage.getItem(getCaseKey("caseAnswers"))) || [];
-  const totalWords = parseInt(localStorage.getItem(getCaseKey("caseTotalWords"))) || 0;
-  const totalChars = parseInt(localStorage.getItem(getCaseKey("caseTotalChars"))) || 0;
-  const topic = localStorage.getItem(getCaseKey("caseTopic")) || "-";
+  // Ambil review PG
+  const review = JSON.parse(localStorage.getItem(getKey("reviewData"))) || [];
 
-  // tampilkan di result
+  // Tampilkan review PG di console atau element (bisa disesuaikan)
+  console.log("Review PG:", review);
+
+  // Ambil studi kasus
+  const answers = JSON.parse(localStorage.getItem("caseAnswers")) || [];
+  const totalWords = parseInt(localStorage.getItem("caseTotalWords")) || 0;
+  const totalChars = parseInt(localStorage.getItem("caseTotalChars")) || 0;
+  const topic = localStorage.getItem("caseTopic") || "-";
+
   const topicEl = document.getElementById("caseTopic");
   const wordEl = document.getElementById("caseWords");
   const charEl = document.getElementById("caseChars");
@@ -86,7 +90,7 @@ function loadCaseResult(){
   if(wordEl) wordEl.innerText = totalWords;
   if(charEl) charEl.innerText = totalChars;
 
-  // simpan untuk export PDF
+  // Siapkan data export PDF
   const caseResult = {
     title: topic,
     deskripsi: answers[0] || "",
@@ -100,13 +104,9 @@ function loadCaseResult(){
   localStorage.setItem("caseResult", JSON.stringify(caseResult));
 }
 
-
-
-/* ================= SAVE GLOBAL LEADERBOARD ================= */
-
-function saveToFirebaseLeaderboard(score, correct, total, examId) {
-  if (!user || !examId) return;
-
+/* ================= SAVE LEADERBOARD ================= */
+function saveToFirebaseLeaderboard(score, correct, total, examId){
+  if(!user || !examId) return;
   db.ref(`leaderboard/${examId}/${user.id}`).set({
     nama: user.nama,
     kelas: user.kelas,
@@ -118,162 +118,82 @@ function saveToFirebaseLeaderboard(score, correct, total, examId) {
 }
 
 /* ================= CHART ================= */
-
 let chartInstance;
-
-function renderChart(correct, total) {
+function renderChart(correct, total){
   const ctx = document.getElementById("scoreChart");
-  if (!ctx) return;
+  if(!ctx) return;
 
-  if (chartInstance) chartInstance.destroy();
+  if(chartInstance) chartInstance.destroy();
 
   chartInstance = new Chart(ctx, {
     type: "doughnut",
     data: {
       labels: ["Benar", "Salah"],
-      datasets: [{
-        data: [correct, total - correct],
-        backgroundColor: ["#22c55e", "#334155"],
-        borderWidth: 0
+      datasets:[{
+        data:[correct, total-correct],
+        backgroundColor:["#22c55e","#334155"],
+        borderWidth:0
       }]
     },
-    options: {
-      responsive: true,
-      plugins: { legend: { position: "bottom" } }
-    }
+    options:{ responsive:true, plugins:{legend:{position:"bottom"}} }
   });
 }
 
-function exportAllPDF() {
-  // ✅ Perbaikan akses jsPDF untuk versi UMD 2.5.1
-  const jsPDF = window.jspdf.jsPDF;
-  if (!jsPDF) {
-    alert("Library PDF belum siap. Tunggu sebentar dan coba lagi.");
+/* ================= EXPORT PDF PG ================= */
+function exportPG(){
+  const review = JSON.parse(localStorage.getItem(getKey("reviewData")));
+  if(!review || review.length === 0){
+    alert("Data PG tidak ditemukan");
     return;
   }
-  
+
+  const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
+  let y = 15, margin = 14, pageWidth = 180;
 
-
-  const reviewData = JSON.parse(localStorage.getItem(getKey("reviewData")) || [];
-  const caseResult = JSON.parse(localStorage.getItem("caseResult")) || null;
-  const hasPG = reviewData.length > 0;
-  const hasCase = caseResult && caseResult.title;
-  
-  if (!hasPG && !hasCase) {
-    alert("Belum ada jawaban untuk di-export");
-    return;
-  }
-  
-  const user = Auth.getUser();
-  let startY = 20;
-  
-  // ================= HEADER =================
+  doc.setFont("Arial", "Normal");
   doc.setFontSize(16);
-  doc.text("HASIL UJIAN", 105, startY, { align: "center" });
-  startY += 10;
-  
+  doc.text("HASIL JAWABAN PILIHAN GANDA", margin, y); y+=10;
   doc.setFontSize(10);
-  doc.text(`Nama: ${user?.nama || '-'}`, 14, startY);
-  doc.text(`Kelas: ${user?.kelas || '-'}`, 105, startY);
-  startY += 15;
-  
-  // ================= BAGIAN 1: PG (TABEL) =================
-  if (hasPG) {
-    doc.setFontSize(12);
-    doc.text("A. PILIHAN GANDA", 14, startY);
-    startY += 8;
-    
-    // SIAPKAN DATA TABEL
-    const tableData = reviewData.map((item, i) => [
-      i + 1,
-      item.q.substring(0, 50) + (item.q.length > 50 ? '...' : ''),
-      item.user,
-      item.correct,
-      item.user === item.correct ? 'BENAR' : 'SALAH'
-    ]);
-    
-    // BUAT TABEL
-    doc.autoTable({
-      head: [['No', 'Soal', 'Jawaban Anda', 'Kunci', 'Status']],
-      body: tableData,
-      startY: startY,
-      theme: 'grid',
-      styles: { fontSize: 8, cellPadding: 2 },
-      headStyles: { fillColor: [41, 128, 185], textColor: 255 },
-      columnStyles: {
-        0: { cellWidth: 10 },
-        1: { cellWidth: 70 },
-        2: { cellWidth: 25 },
-        3: { cellWidth: 25 },
-        4: { cellWidth: 20 }
-      },
-      didParseCell: function(data) {
-        // Warna status benar/salah
-        if (data.column.index === 4) {
-          if (data.cell.raw === 'BENAR') {
-            data.cell.styles.textColor = [34, 197, 94];
-          } else {
-            data.cell.styles.textColor = [239, 68, 68];
-          }
-        }
-      }
-    });
-    
-    startY = doc.lastAutoTable.finalY + 15;
-  }
-  
-  // ================= BAGIAN 2: STUDI KASUS (TABEL) =================
-  if (hasCase) {
-    // Cek perlu halaman baru?
-    if (startY > 220) {
-      doc.addPage();
-      startY = 20;
+
+  review.forEach((item,i)=>{
+    if(y>270){ doc.addPage(); y=15; }
+
+    const isBenar = item.user === item.correct;
+
+    doc.setTextColor(0,0,0);
+    let soalText = `${i+1}. ${item.q}`;
+    let splitSoal = doc.splitTextToSize(soalText,pageWidth);
+    doc.text(splitSoal, margin, y);
+    y += splitSoal.length*5;
+
+    if(item.options && item.options.length){
+      item.options.forEach((opt,idx)=>{
+        const huruf = String.fromCharCode(65+idx);
+        let optText = `${huruf}. ${opt}`;
+        let splitOpt = doc.splitTextToSize(optText,pageWidth-10);
+        doc.text(splitOpt, margin+5, y);
+        y += splitOpt.length*5;
+      });
     }
-    
-    doc.setFontSize(12);
-    doc.text("B. STUDI KASUS", 14, startY);
-    startY += 8;
-    
-    // INFO KASUS
-    doc.setFontSize(10);
-    doc.text(`Topik: ${caseResult.title}`, 14, startY);
-    doc.text(`Total Kata: ${caseResult.words}`, 100, startY);
-    startY += 10;
-    
-    // TABEL JAWABAN
-    const caseData = [
-      ['1. Deskripsi Masalah', caseResult.deskripsi || '-'],
-      ['2. Upaya Penyelesaian', caseResult.upaya || '-'],
-      ['3. Hasil', caseResult.hasil || '-'],
-      ['4. Hikmah', caseResult.hikmah || '-']
-    ];
-    
-    doc.autoTable({
-      body: caseData,
-      startY: startY,
-      theme: 'grid',
-      styles: { fontSize: 9, cellPadding: 3, valign: 'top' },
-      columnStyles: {
-        0: { cellWidth: 50, fillColor: [240, 240, 240], fontStyle: 'bold' },
-        1: { cellWidth: 130 }
-      }
-    });
-  }
-  
-  // ================= FOOTER =================
-  const pageCount = doc.internal.getNumberOfPages();
-  for (let i = 1; i <= pageCount; i++) {
-    doc.setPage(i);
-    doc.setFontSize(8);
-    doc.text(
-      `Di-export: ${new Date().toLocaleString("id-ID")} | Halaman ${i} dari ${pageCount}`,
-      105,
-      290,
-      { align: "center" }
-    );
-  }
-  
-  // SIMPAN
-  doc.save(`hasil-ujian-${user?.nama || 'user'}-${Date.now()}.pdf`);
+
+    doc.setTextColor(isBenar?0:200, isBenar?128:0, 0);
+    doc.text(`Jawaban Anda : ${item.user}`, margin+5, y); y+=5;
+
+    doc.setTextColor(0,0,0);
+    doc.text(`Jawaban Benar: ${item.correct}`, margin+5, y); y+=5;
+
+    doc.setTextColor(isBenar?0:200, isBenar?128:0, 0);
+    doc.text(`Status : ${isBenar?"BENAR":"SALAH"}`, margin+5, y); y+=6;
+
+    if(item.explanation){
+      doc.setTextColor(0,0,0);
+      let splitExp = doc.splitTextToSize(`Pembahasan: ${item.explanation}`, pageWidth-5);
+      doc.text(splitExp, margin+5, y); y+=splitExp.length*5;
+    }
+
+    y+=5;
+  });
+
+  doc.save("hasil-pg.pdf");
 }
