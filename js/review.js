@@ -67,7 +67,7 @@ function tampilkanReview(soal, jawaban, examData) {
         <td>${i+1}</td>
         <td class="soal-text">${s.q}</td>
         <td class="jawaban-user ${isEmpty ? 'text-muted' : ''}">${userAnswerText}</td>
-        <td class="jawaban-benar">${correctAnswerText}</td>
+        
         <td class="status ${statusClass}">
           <span class="status-icon">${statusIcon}</span>
           ${statusText}
