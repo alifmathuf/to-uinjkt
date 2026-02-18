@@ -119,8 +119,8 @@ function updateButtons() {
   const saveNextBtn = document.getElementById("saveNextBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  // Step 1-3: Simpan & Lanjut aktif, Selesai disabled
-  // Step 4: Simpan & Lanjut disabled, Selesai aktif
+  // Step 0-2 (tampilan 1-3): Simpan & Lanjut aktif, Selesai disabled
+  // Step 3 (tampilan 4): Simpan & Lanjut disabled, Selesai aktif
   if (currentStep < 3) {
     if (saveNextBtn) {
       saveNextBtn.disabled = false;
@@ -133,7 +133,7 @@ function updateButtons() {
       finishBtn.style.cursor = "not-allowed";
     }
   } else {
-    // Step 4 (terakhir)
+    // Step 4 (index 3)
     if (saveNextBtn) {
       saveNextBtn.disabled = true;
       saveNextBtn.style.opacity = "0.5";
@@ -147,23 +147,28 @@ function updateButtons() {
   }
 }
 
-
 /* ================= SAVE & NEXT ================= */
 function saveAndNext() {
+  console.log("saveAndNext() dipanggil, step:", currentStep);
+  
   // Simpan jawaban current step
   const text = document.getElementById("essayInput").value.trim();
   answers[currentStep] = text;
   localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
+  console.log("Jawaban tersimpan:", answers);
 
   // Lanjut ke step berikutnya
   currentStep++;
   localStorage.setItem(getKey("caseStep"), currentStep);
+  console.log("Pindah ke step:", currentStep);
 
   renderStep();
 }
 
 /* ================= FINISH ================= */
 function finishCase() {
+  console.log("finishCase() dipanggil");
+  
   if (timerInterval) clearInterval(timerInterval);
 
   // simpan jawaban terakhir (step 4)
@@ -177,6 +182,9 @@ function finishCase() {
 
   localStorage.setItem(getKey("caseTotalWords"), totalWords);
   localStorage.setItem(getKey("caseTotalChars"), totalChars);
+
+  console.log("Total words:", totalWords);
+  console.log("Total chars:", totalChars);
 
   // cleanup progress tracking
   localStorage.removeItem(getKey("caseStep"));
