@@ -48,24 +48,23 @@ db.ref(`exams/${user.id}`)
 
     const div = document.createElement("div");
     div.className = "history-card";
-    div.innerHTML = `
-      <div class="history-badge ${badgeClass}">${badgeText}</div>
-      
-      <div class="history-content">
-        <div class="history-title">${exam.mapel || "Ujian"} • ${exam.paket || ""}</div>
-        
-        <div class="history-score ${scoreClass}">${nilai}</div>
-        
-        <div class="history-correct">Benar: ${exam.score}/${exam.total || 0}</div>
-      </div>
+   div.innerHTML = `
+  <div class="history-header">
+    <div class="history-title">${exam.mapel || "Ujian"} • ${exam.paket || ""}</div>
+    <div class="badge-status ${badgeClass}">${badgeText}</div>
+  </div>
 
-      <div class="history-footer">
-        <span class="history-date">${tanggal}</span>
-        <a href="review.html?exam=${exam.key}" class="btn-review-corner" title="Review Jawaban">
-          <i data-lucide="eye"></i>
-        </a>
-      </div>
-    `;
+  <div class="history-score ${scoreClass}">${nilai}</div>
+  
+  <div class="history-correct">Benar: ${exam.score}/${exam.total || 0}</div>
+
+  <div class="history-footer">
+    <span class="history-date">${tanggal}</span>
+    <a href="review.html?exam=${exam.key}" class="btn-review-icon" title="Review">
+      <i data-lucide="eye"></i>
+    </a>
+  </div>
+`;
     
     container.appendChild(div);
   });
