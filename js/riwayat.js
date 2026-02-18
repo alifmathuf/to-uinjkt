@@ -5,7 +5,6 @@ const db = firebase.database();
 const container = document.getElementById("historyList");
 
 db.ref(`exams/${user.id}`)
-.orderByChild("submittedAt")
 .once("value")
 .then(snapshot => {
 
@@ -17,54 +16,59 @@ db.ref(`exams/${user.id}`)
     return;
   }
 
-  const data = [];
-  snapshot.forEach(child => data.push(child.val()));
-  data.reverse();
+  const exams = [];
+  snapshot.forEach(child => {
+    exams.push({
+      key: child.key,
+      ...child.val()
+    });
+  });
+
+  // Urutkan dari terbaru ke lama
+  exams.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
 
   container.innerHTML = "";
 
-  data.forEach(exam => {
+  exams.forEach(exam => {
+    
+    // Lewati kalau tidak ada score
+    if (!exam.score && exam.score !== 0) return;
 
-    if (!exam.score || !exam.total) return;
-
-    const nilai = Math.round((exam.score / exam.total) * 100);
+    const nilai = exam.total ? Math.round((exam.score / exam.total) * 100) : 0;
 
     const scoreClass =
       nilai >= 75 ? "score-green" :
       nilai >= 60 ? "score-yellow" :
       "score-red";
 
-    const badgeClass =
-      nilai >= 75 ? "badge-lulus" : "badge-tidak";
-
-    const badgeText =
-      nilai >= 75 ? "LULUS" : "TIDAK";
+    const badgeClass = nilai >= 75 ? "badge-lulus" : "badge-tidak";
+    const badgeText = nilai >= 75 ? "LULUS" : "TIDAK";
 
     const tanggal = exam.submittedAt
       ? new Date(exam.submittedAt).toLocaleString("id-ID")
       : "-";
 
-    container.innerHTML += `
-      <div class="history-card">
+    const div = document.createElement("div");
+    div.className = "history-card";
+    div.innerHTML = `
+      <div class="history-title">
+        ${exam.mapel || "Ujian"} • ${exam.paket || ""}
+      </div>
 
-        <div class="history-title">
-          ${exam.mapel || "Ujian"} • ${exam.paket || ""}
-        </div>
+      <div class="history-score ${scoreClass}">
+        ${nilai}
+      </div>
 
-        <div class="history-score ${scoreClass}">
-          ${nilai}
-        </div>
+      <div class="history-meta">
+        Benar: ${exam.score}/${exam.total || 0} • ${tanggal}
+      </div>
 
-        <div class="history-meta">
-          Benar: ${exam.score}/${exam.total} • ${tanggal}
-        </div>
-
-        <div class="badge-status ${badgeClass}">
-          ${badgeText}
-        </div>
-
+      <div class="badge-status ${badgeClass}">
+        ${badgeText}
       </div>
     `;
+    
+    container.appendChild(div);
   });
 
 })
