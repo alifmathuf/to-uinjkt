@@ -15,7 +15,7 @@ if (!user) window.location.href = "dashboard.html";
 
 /* ================= USER INFO ================= */
 
-document.getElementById("greeting").innerText = "Hasil Ujian";
+document.getElementById("greeting").innerText = "";
 document.getElementById("userInfo").innerText =
   `${user.nama} (${user.kelas})`;
 
