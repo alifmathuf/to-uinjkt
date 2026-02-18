@@ -149,7 +149,7 @@
       "Berteman dengan siapa saja.",
       "Menghargai perbedaan kesukaan.",
       "Menghindari konflik dengan menerima perbedaan.",
-      "—"
+      "-"
     ],
     "a": 3
   },
@@ -165,389 +165,388 @@
     "a": 0
   },
   {
-  "q": "Seorang anak terlihat kesulitan menyelesaikan puzzle saat bermain di sentra permainan. Anak tersebut tidak bisa menemukan potongan puzzle yang sesuai untuk membentuk gambar pesawat.\n\nLangkah yang dapat dilakukan guru untuk mendukung perkembangan kognitif dan problem-solving anak adalah ....",
-  "o": [
-    "Guru langsung membantu anak menyusun puzzle hingga selesai.",
-    "Guru meminta teman lain membantu menyelesaikan puzzle.",
-    "Guru bertanya bagian yang sulit lalu memberi petunjuk.",
-    "Guru mendampingi anak mencoba berbagai cara hingga berhasil.",
-    "Guru mengobservasi kesulitan untuk program selanjutnya."
-  ],
-  "a": 2
-},
-{
-  "q": "Guru menemukan pohon cabai yang ditanam anak layu dan mengajak anak mencari penyebabnya.\n\nDiskusi ini bertujuan untuk ....",
-  "o": [
-    "Memahami pentingnya perawatan tanaman.",
-    "Mengidentifikasi kebutuhan tanaman agar tumbuh baik.",
-    "Mengajarkan cara merawat tanaman rutin.",
-    "Melatih pengambilan keputusan.",
-    "Membiasakan berpikir terbuka."
-  ],
-  "a": 1
-},
-{
-  "q": "Guru mengajak anak berbagi mainan lalu berdiskusi tentang perasaan mereka.\n\nPendekatan yang digunakan adalah ....",
-  "o": [
-    "Pendekatan berbasis masalah.",
-    "Pendekatan berbasis pengalaman.",
-    "Pendekatan tematik.",
-    "Pendekatan bermain.",
-    "Pendekatan pembelajaran mendalam."
-  ],
-  "a": 1
-},
-{
-  "q": "Seorang anak kesulitan berinteraksi karena masalah komunikasi.\n\nTindakan guru yang tepat adalah ....",
-  "o": [
-    "Memberikan kegiatan kelompok untuk melatih interaksi.",
-    "Mengabaikan masalah komunikasi.",
-    "Memberi waktu bermain sendiri.",
-    "Memaksa anak berbicara.",
-    "Melatih komunikasi di rumah."
-  ],
-  "a": 0
-},
-{
-  "q": "Implementasi Kurikulum Merdeka menempatkan anak sebagai subjek aktif.\n\nLangkah guru yang sesuai adalah ....",
-  "o": [
-    "Menyusun kegiatan eksplorasi bahan alam.",
-    "Menyediakan APE motorik.",
-    "Membangun sudut tematik kaya stimulasi.",
-    "Menyediakan banyak referensi.",
-    "Merancang kegiatan individual."
-  ],
-  "a": 2
-},
-{
-  "q": "Pak Herman merancang beberapa kegiatan bermain.\n\nStrategi untuk mendukung keterampilan sosial anak adalah ....",
-  "o": [
-    "Mengamati perkembangan setiap anak.",
-    "Memberi tugas tambahan.",
-    "Menggunakan alat bantu visual.",
-    "Membagi kelompok sesuai perkembangan.",
-    "Membuat jadwal rotasi."
-  ],
-  "a": 3
-},
-{
-  "q": "Bu Yanti ingin mengajarkan siklus hidup ayam dengan pembelajaran mendalam.\n\nStrategi yang sesuai adalah ....",
-  "o": [
-    "Memberi kesempatan eksplorasi mandiri.",
-    "Eksplorasi fakta.",
-    "Fokus eksplorasi pengetahuan.",
-    "Pembelajaran menyenangkan.",
-    "Pilihan sesuai minat."
-  ],
-  "a": 0
-},
-{
-  "q": "Guru mengamati kreativitas anak melalui kerajinan bahan bekas.\n\nJenis asesmen paling tepat adalah ....",
-  "o": [
-    "Observasi.",
-    "Ceklis.",
-    "Portofolio.",
-    "Penilaian diri.",
-    "Penilaian sikap."
-  ],
-  "a": 2
-},
-{
-  "q": "Bu Siti membagi anak dalam kelompok membuat gambar kolaboratif.\n\nTujuan pembelajaran adalah ....",
-  "o": [
-    "Berkompetisi antar kelompok.",
-    "Mengembangkan keterampilan menggambar.",
-    "Belajar bekerja sama.",
-    "Memahami makna sahabat.",
-    "Membuat kesepakatan kerja."
-  ],
-  "a": 2
-},
-{
-  "q": "Pak Andi ingin menanamkan nilai ramah budaya.\n\nKegiatan yang sesuai adalah ....",
-  "o": [
-    "Menari tarian daerah.",
-    "Diskusi budaya.",
-    "Mengenal gambar budaya.",
-    "Berbagi makanan khas daerah.",
-    "Berkeliling lingkungan."
-  ],
-  "a": 3
-},
-{
-  "q": "Memperingati hari kemerdekaan dengan pendekatan berbasis masalah.\n\nLangkah kegiatan yang sesuai adalah ....",
-  "o": [
-    "Cerita perjuangan dan menggambar.",
-    "Diskusi arti kemerdekaan dan bermain peran.",
-    "Menyanyi lagu perjuangan.",
-    "Menceritakan pahlawan.",
-    "Mencari referensi sejarah."
-  ],
-  "a": 1
-},
-{
-  "q": "Bu Rani melakukan refleksi setelah proyek taman bunga.\n\nPrinsip PJBL yang digunakan adalah ....",
-  "o": [
-    "Autentik.",
-    "Refleksi.",
-    "Kolaborasi.",
-    "Pemecahan masalah.",
-    "Berpusat pada anak."
-  ],
-  "a": 1
-},
-{
-  "q": "Bu Ana merancang proyek kebun sekolah dengan DBL.\n\nPrinsip yang sesuai adalah ....",
-  "o": [
-    "Eksplorasi melalui pengalaman langsung.",
-    "Fokus hasil optimal.",
-    "Berbasis sumber belajar.",
-    "Memberi tantangan.",
-    "Pilihan eksplorasi mandiri."
-  ],
-  "a": 0
-},
-{
-  "q": "Anak bermain balok membangun berbagai bentuk.\n\nPerkembangan utama yang dikembangkan adalah ....",
-  "o": [
-    "Motorik kasar.",
-    "Berpikir logis dan kreativitas.",
-    "Membaca menulis.",
-    "Sosial emosional.",
-    "Nilai moral agama."
-  ],
-  "a": 1
-},
-{
-  "q": "Permainan balok dalam teori Piaget.\n\nProses perkembangan kognitif yang terjadi adalah ....",
-  "o": [
-    "Memahami bentuk dan warna.",
-    "Berpikir logis dan menyusun ide kompleks.",
-    "Eksplorasi bagian balok.",
-    "Bermain imajinatif.",
-    "Memahami keseimbangan bangunan."
-  ],
-  "a": 1
-},
-  ,
-{
-  "q": "Saat mendesain kegiatan belajar Kurikulum Merdeka fase fondasi, strategi berikut sesuai prinsip merdeka bermain, kecuali ....",
-  "o": [
-    "Memfokuskan seluruh kegiatan pada literasi dan numerasi.",
-    "Menggunakan cerita bergambar mengenalkan huruf dan angka.",
-    "Mengintegrasikan mengenal warna dengan menggambar.",
-    "Memfasilitasi bermain peran tokoh cerita.",
-    "Menyediakan pilihan sumber belajar sesuai minat."
-  ],
-  "a": 0
-},
-{
-  "q": "Guru mendapati anak mengalami hambatan komunikasi.\n\nLangkah strategis dukungan langsung adalah ....",
-  "o": [
-    "Meminta anak sering berbicara di depan teman.",
-    "Menggunakan alat bantu komunikasi seperti gambar.",
-    "Memberikan penguatan saat anak berbicara jelas.",
-    "Mengobservasi dan berdiskusi dengan orang tua.",
-    "Membuat media komunikasi tambahan."
-  ],
-  "a": 1
-},
-{
-  "q": "Guru ingin menilai sikap kerjasama saat bermain estafet.\n\nTeknik asesmen paling tepat adalah ....",
-  "o": [
-    "Skala penilaian kuantitatif.",
-    "Observasi saat bermain kelompok.",
-    "Catatan observasi lengkap.",
-    "Kuesioner orang tua.",
-    "Catatan anekdot."
-  ],
-  "a": 1
-},
-{
-  "q": "Aktivitas pembelajaran berpusat pada anak yang paling sesuai adalah ....",
-  "o": [
-    "Puzzle berkelompok.",
-    "Menggambar bebas.",
-    "Menyusun kalimat kartu kata.",
-    "Menyanyi sambil bermain alat musik.",
-    "Bermain peran dengan peran ditentukan guru."
-  ],
-  "a": 3
-},
-{
-  "q": "Strategi menanamkan nilai berbagi pada anak egosentris adalah ....",
-  "o": [
-    "Menasehati manfaat berbagi.",
-    "Memberi contoh berbagi sederhana dan menyenangkan.",
-    "Memberi hukuman.",
-    "Mendorong berbagi walau belum paham.",
-    "Mengajak bermain bersama."
-  ],
-  "a": 1
-},
-{
-  "q": "Pernyataan yang tidak mendukung penerapan ZPD adalah ....",
-  "o": [
-    "Memberi bantuan bertahap.",
-    "Eksplorasi bebas tanpa scaffolding.",
-    "Panduan seperlunya saat berkarya.",
-    "Belajar berpasangan.",
-    "Memberi pemahaman kegiatan."
-  ],
-  "a": 1
-},
-{
-  "q": "Guru ingin memahami perkembangan anak yang belum mengenal warna.\n\nTindak lanjut paling tepat adalah ....",
-  "o": [
-    "Mengamati berbagai aktivitas anak.",
-    "Memberikan stimulasi warna tambahan.",
-    "Kegiatan tambahan khusus.",
-    "Diskusi dengan orang tua.",
-    "Belajar tambahan di rumah."
-  ],
-  "a": 0
-},
-{
-  "q": "Teknik asesmen keterampilan sosial saat bermain peran adalah ....",
-  "o": [
-    "Checklist perilaku sosial.",
-    "Emoticon perasaan.",
-    "Laporan tertulis.",
-    "Cerita pengalaman bermain.",
-    "Diskusi perasaan."
-  ],
-  "a": 0
-},
-{
-  "q": "Kegiatan bermain paling efektif melatih komunikasi anak adalah ....",
-  "o": [
-    "Puzzle kelompok.",
-    "Bermain peran pedagang dan pembeli.",
-    "Menyusun balok.",
-    "Bermain musik.",
-    "Estafet kelompok."
-  ],
-  "a": 1
-},
-{
-  "q": "Teknik asesmen memahami instruksi bermain balok adalah ....",
-  "o": [
-    "Rubrik hasil akhir.",
-    "Tes mengikuti instruksi.",
-    "Wawancara.",
-    "Observasi proses bermain.",
-    "Catatan anekdot."
-  ],
-  "a": 3
-},
-{
-  "q": "Instrumen asesmen pengetahuan konsep warna adalah ....",
-  "o": [
-    "Pertanyaan menyebut warna.",
-    "Lembar observasi pencampuran warna.",
-    "Portofolio karya.",
-    "Lembar kerja mencatat warna.",
-    "Catatan anekdot."
-  ],
-  "a": 1
-},
-{
-  "q": "Teknik asesmen perubahan sikap kejujuran adalah ....",
-  "o": [
-    "Wawancara.",
-    "Observasi pengakuan kesalahan.",
-    "Tes tertulis.",
-    "Daftar situasi jujur.",
-    "Catatan anekdot."
-  ],
-  "a": 1
-},
-{
-  "q": "Metode asesmen autentik berhitung paling tepat adalah ....",
-  "o": [
-    "Portofolio hasil berhitung.",
-    "Catatan anekdot.",
-    "Observasi langsung.",
-    "Menulis angka.",
-    "Menjawab pertanyaan."
-  ],
-  "a": 0
-},
-{
-  "q": "Langkah menilai perkembangan tanggung jawab anak adalah ....",
-  "o": [
-    "Tugas individual dan anekdot.",
-    "Catatan waktu.",
-    "Menggambar proses.",
-    "Diskusi kelas dan catatan partisipasi.",
-    "Catatan anekdot umum."
-  ],
-  "a": 3
-},
-{
-  "q": "Instrumen asesmen sikap moderasi beragama adalah ....",
-  "o": [
-    "Catatan anekdot perubahan sikap.",
-    "Portofolio diskusi.",
-    "Catatan perilaku menerima perbedaan.",
-    "Observasi langsung.",
-    "Catatan perkembangan umum."
-  ],
-  "a": 2
-},
-{
-  "q": "Prinsip penggunaan teknologi dalam proyek taman mini adalah ....",
-  "o": [
-    "Melibatkan anak secara interaktif.",
-    "Menghindari teknologi.",
-    "Mencari informasi mandiri tanpa bimbingan.",
-    "Menampilkan hasil dewasa saja.",
-    "Mencari kegiatan untuk adaptasi guru."
-  ],
-  "a": 0
-},
-{
-  "q": "Langkah meningkatkan praktik teknologi sesuai perkembangan anak adalah ....",
-  "o": [
-    "Memberi kesempatan anak menggunakan tablet.",
-    "Mengganti kegiatan.",
-    "Menambah pertanyaan.",
-    "Mengurangi teknologi.",
-    "Analisis video."
-  ],
-  "a": 0
-},
-{
-  "q": "Penggunaan teknologi profesional untuk asesmen sosial adalah ....",
-  "o": [
-    "Merekam video untuk analisis internal.",
-    "Aplikasi skor otomatis.",
-    "Unggah video online.",
-    "Catatan digital darurat.",
-    "Platform berbayar terbatas."
-  ],
-  "a": 0
-},
-{
-  "q": "Pemanfaatan teknologi untuk merancang pembelajaran adalah ....",
-  "o": [
-    "Aplikasi desain gratis.",
-    "Membeli materi digital.",
-    "Kolaborasi rencana dengan kolega.",
-    "Mencari materi sesuai kebutuhan.",
-    "Menyadur ide pembelajaran."
-  ],
-  "a": 0
-},
-{
-  "q": "Langkah penelitian ilmiah memahami antusias membaca anak adalah ....",
-  "o": [
-    "Observasi mendalam.",
-    "Mengganti kegiatan.",
-    "Wawancara anak.",
-    "Menganalisis pola keterlibatan.",
-    "Menyimpulkan dan menyebarkan."
-  ],
-  "a": 3
-}
+    "q": "Seorang anak terlihat kesulitan menyelesaikan puzzle saat bermain di sentra permainan. Anak tersebut tidak bisa menemukan potongan puzzle yang sesuai untuk membentuk gambar pesawat.\n\nLangkah yang dapat dilakukan guru untuk mendukung perkembangan kognitif dan problem-solving anak adalah ....",
+    "o": [
+      "Guru langsung membantu anak menyusun puzzle hingga selesai.",
+      "Guru meminta teman lain membantu menyelesaikan puzzle.",
+      "Guru bertanya bagian yang sulit lalu memberi petunjuk.",
+      "Guru mendampingi anak mencoba berbagai cara hingga berhasil.",
+      "Guru mengobservasi kesulitan untuk program selanjutnya."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menemukan pohon cabai yang ditanam anak layu dan mengajak anak mencari penyebabnya.\n\nDiskusi ini bertujuan untuk ....",
+    "o": [
+      "Memahami pentingnya perawatan tanaman.",
+      "Mengidentifikasi kebutuhan tanaman agar tumbuh baik.",
+      "Mengajarkan cara merawat tanaman rutin.",
+      "Melatih pengambilan keputusan.",
+      "Membiasakan berpikir terbuka."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru mengajak anak berbagi mainan lalu berdiskusi tentang perasaan mereka.\n\nPendekatan yang digunakan adalah ....",
+    "o": [
+      "Pendekatan berbasis masalah.",
+      "Pendekatan berbasis pengalaman.",
+      "Pendekatan tematik.",
+      "Pendekatan bermain.",
+      "Pendekatan pembelajaran mendalam."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang anak kesulitan berinteraksi karena masalah komunikasi.\n\nTindakan guru yang tepat adalah ....",
+    "o": [
+      "Memberikan kegiatan kelompok untuk melatih interaksi.",
+      "Mengabaikan masalah komunikasi.",
+      "Memberi waktu bermain sendiri.",
+      "Memaksa anak berbicara.",
+      "Melatih komunikasi di rumah."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Implementasi Kurikulum Merdeka menempatkan anak sebagai subjek aktif.\n\nLangkah guru yang sesuai adalah ....",
+    "o": [
+      "Menyusun kegiatan eksplorasi bahan alam.",
+      "Menyediakan APE motorik.",
+      "Membangun sudut tematik kaya stimulasi.",
+      "Menyediakan banyak referensi.",
+      "Merancang kegiatan individual."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pak Herman merancang beberapa kegiatan bermain.\n\nStrategi untuk mendukung keterampilan sosial anak adalah ....",
+    "o": [
+      "Mengamati perkembangan setiap anak.",
+      "Memberi tugas tambahan.",
+      "Menggunakan alat bantu visual.",
+      "Membagi kelompok sesuai perkembangan.",
+      "Membuat jadwal rotasi."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Bu Yanti ingin mengajarkan siklus hidup ayam dengan pembelajaran mendalam.\n\nStrategi yang sesuai adalah ....",
+    "o": [
+      "Memberi kesempatan eksplorasi mandiri.",
+      "Eksplorasi fakta.",
+      "Fokus eksplorasi pengetahuan.",
+      "Pembelajaran menyenangkan.",
+      "Pilihan sesuai minat."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Guru mengamati kreativitas anak melalui kerajinan bahan bekas.\n\nJenis asesmen paling tepat adalah ....",
+    "o": [
+      "Observasi.",
+      "Ceklis.",
+      "Portofolio.",
+      "Penilaian diri.",
+      "Penilaian sikap."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Bu Siti membagi anak dalam kelompok membuat gambar kolaboratif.\n\nTujuan pembelajaran adalah ....",
+    "o": [
+      "Berkompetisi antar kelompok.",
+      "Mengembangkan keterampilan menggambar.",
+      "Belajar bekerja sama.",
+      "Memahami makna sahabat.",
+      "Membuat kesepakatan kerja."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pak Andi ingin menanamkan nilai ramah budaya.\n\nKegiatan yang sesuai adalah ....",
+    "o": [
+      "Menari tarian daerah.",
+      "Diskusi budaya.",
+      "Mengenal gambar budaya.",
+      "Berbagi makanan khas daerah.",
+      "Berkeliling lingkungan."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Memperingati hari kemerdekaan dengan pendekatan berbasis masalah.\n\nLangkah kegiatan yang sesuai adalah ....",
+    "o": [
+      "Cerita perjuangan dan menggambar.",
+      "Diskusi arti kemerdekaan dan bermain peran.",
+      "Menyanyi lagu perjuangan.",
+      "Menceritakan pahlawan.",
+      "Mencari referensi sejarah."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Bu Rani melakukan refleksi setelah proyek taman bunga.\n\nPrinsip PJBL yang digunakan adalah ....",
+    "o": [
+      "Autentik.",
+      "Refleksi.",
+      "Kolaborasi.",
+      "Pemecahan masalah.",
+      "Berpusat pada anak."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Bu Ana merancang proyek kebun sekolah dengan DBL.\n\nPrinsip yang sesuai adalah ....",
+    "o": [
+      "Eksplorasi melalui pengalaman langsung.",
+      "Fokus hasil optimal.",
+      "Berbasis sumber belajar.",
+      "Memberi tantangan.",
+      "Pilihan eksplorasi mandiri."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Anak bermain balok membangun berbagai bentuk.\n\nPerkembangan utama yang dikembangkan adalah ....",
+    "o": [
+      "Motorik kasar.",
+      "Berpikir logis dan kreativitas.",
+      "Membaca menulis.",
+      "Sosial emosional.",
+      "Nilai moral agama."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Permainan balok dalam teori Piaget.\n\nProses perkembangan kognitif yang terjadi adalah ....",
+    "o": [
+      "Memahami bentuk dan warna.",
+      "Berpikir logis dan menyusun ide kompleks.",
+      "Eksplorasi bagian balok.",
+      "Bermain imajinatif.",
+      "Memahami keseimbangan bangunan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Saat mendesain kegiatan belajar Kurikulum Merdeka fase fondasi, strategi berikut sesuai prinsip merdeka bermain, kecuali ....",
+    "o": [
+      "Memfokuskan seluruh kegiatan pada literasi dan numerasi.",
+      "Menggunakan cerita bergambar mengenalkan huruf dan angka.",
+      "Mengintegrasikan mengenal warna dengan menggambar.",
+      "Memfasilitasi bermain peran tokoh cerita.",
+      "Menyediakan pilihan sumber belajar sesuai minat."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Guru mendapati anak mengalami hambatan komunikasi.\n\nLangkah strategis dukungan langsung adalah ....",
+    "o": [
+      "Meminta anak sering berbicara di depan teman.",
+      "Menggunakan alat bantu komunikasi seperti gambar.",
+      "Memberikan penguatan saat anak berbicara jelas.",
+      "Mengobservasi dan berdiskusi dengan orang tua.",
+      "Membuat media komunikasi tambahan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin menilai sikap kerjasama saat bermain estafet.\n\nTeknik asesmen paling tepat adalah ....",
+    "o": [
+      "Skala penilaian kuantitatif.",
+      "Observasi saat bermain kelompok.",
+      "Catatan observasi lengkap.",
+      "Kuesioner orang tua.",
+      "Catatan anekdot."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Aktivitas pembelajaran berpusat pada anak yang paling sesuai adalah ....",
+    "o": [
+      "Puzzle berkelompok.",
+      "Menggambar bebas.",
+      "Menyusun kalimat kartu kata.",
+      "Menyanyi sambil bermain alat musik.",
+      "Bermain peran dengan peran ditentukan guru."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Strategi menanamkan nilai berbagi pada anak egosentris adalah ....",
+    "o": [
+      "Menasehati manfaat berbagi.",
+      "Memberi contoh berbagi sederhana dan menyenangkan.",
+      "Memberi hukuman.",
+      "Mendorong berbagi walau belum paham.",
+      "Mengajak bermain bersama."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pernyataan yang tidak mendukung penerapan ZPD adalah ....",
+    "o": [
+      "Memberi bantuan bertahap.",
+      "Eksplorasi bebas tanpa scaffolding.",
+      "Panduan seperlunya saat berkarya.",
+      "Belajar berpasangan.",
+      "Memberi pemahaman kegiatan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru ingin memahami perkembangan anak yang belum mengenal warna.\n\nTindak lanjut paling tepat adalah ....",
+    "o": [
+      "Mengamati berbagai aktivitas anak.",
+      "Memberikan stimulasi warna tambahan.",
+      "Kegiatan tambahan khusus.",
+      "Diskusi dengan orang tua.",
+      "Belajar tambahan di rumah."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Teknik asesmen keterampilan sosial saat bermain peran adalah ....",
+    "o": [
+      "Checklist perilaku sosial.",
+      "Emoticon perasaan.",
+      "Laporan tertulis.",
+      "Cerita pengalaman bermain.",
+      "Diskusi perasaan."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Kegiatan bermain paling efektif melatih komunikasi anak adalah ....",
+    "o": [
+      "Puzzle kelompok.",
+      "Bermain peran pedagang dan pembeli.",
+      "Menyusun balok.",
+      "Bermain musik.",
+      "Estafet kelompok."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Teknik asesmen memahami instruksi bermain balok adalah ....",
+    "o": [
+      "Rubrik hasil akhir.",
+      "Tes mengikuti instruksi.",
+      "Wawancara.",
+      "Observasi proses bermain.",
+      "Catatan anekdot."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Instrumen asesmen pengetahuan konsep warna adalah ....",
+    "o": [
+      "Pertanyaan menyebut warna.",
+      "Lembar observasi pencampuran warna.",
+      "Portofolio karya.",
+      "Lembar kerja mencatat warna.",
+      "Catatan anekdot."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Teknik asesmen perubahan sikap kejujuran adalah ....",
+    "o": [
+      "Wawancara.",
+      "Observasi pengakuan kesalahan.",
+      "Tes tertulis.",
+      "Daftar situasi jujur.",
+      "Catatan anekdot."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Metode asesmen autentik berhitung paling tepat adalah ....",
+    "o": [
+      "Portofolio hasil berhitung.",
+      "Catatan anekdot.",
+      "Observasi langsung.",
+      "Menulis angka.",
+      "Menjawab pertanyaan."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Langkah menilai perkembangan tanggung jawab anak adalah ....",
+    "o": [
+      "Tugas individual dan anekdot.",
+      "Catatan waktu.",
+      "Menggambar proses.",
+      "Diskusi kelas dan catatan partisipasi.",
+      "Catatan anekdot umum."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Instrumen asesmen sikap moderasi beragama adalah ....",
+    "o": [
+      "Catatan anekdot perubahan sikap.",
+      "Portofolio diskusi.",
+      "Catatan perilaku menerima perbedaan.",
+      "Observasi langsung.",
+      "Catatan perkembangan umum."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Prinsip penggunaan teknologi dalam proyek taman mini adalah ....",
+    "o": [
+      "Melibatkan anak secara interaktif.",
+      "Menghindari teknologi.",
+      "Mencari informasi mandiri tanpa bimbingan.",
+      "Menampilkan hasil dewasa saja.",
+      "Mencari kegiatan untuk adaptasi guru."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Langkah meningkatkan praktik teknologi sesuai perkembangan anak adalah ....",
+    "o": [
+      "Memberi kesempatan anak menggunakan tablet.",
+      "Mengganti kegiatan.",
+      "Menambah pertanyaan.",
+      "Mengurangi teknologi.",
+      "Analisis video."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Penggunaan teknologi profesional untuk asesmen sosial adalah ....",
+    "o": [
+      "Merekam video untuk analisis internal.",
+      "Aplikasi skor otomatis.",
+      "Unggah video online.",
+      "Catatan digital darurat.",
+      "Platform berbayar terbatas."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pemanfaatan teknologi untuk merancang pembelajaran adalah ....",
+    "o": [
+      "Aplikasi desain gratis.",
+      "Membeli materi digital.",
+      "Kolaborasi rencana dengan kolega.",
+      "Mencari materi sesuai kebutuhan.",
+      "Menyadur ide pembelajaran."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Langkah penelitian ilmiah memahami antusias membaca anak adalah ....",
+    "o": [
+      "Observasi mendalam.",
+      "Mengganti kegiatan.",
+      "Wawancara anak.",
+      "Menganalisis pola keterlibatan.",
+      "Menyimpulkan dan menyebarkan."
+    ],
+    "a": 3
+  }
 ]
