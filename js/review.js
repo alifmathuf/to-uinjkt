@@ -75,41 +75,17 @@ function tampilkanReview(soal, jawaban){
 }
 
 
-function exportReviewPDF(){
+// Ambil exam key dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const examKey = urlParams.get('exam');
 
-  const soalList = document.querySelectorAll(".question-review");
-
-  if(soalList.length === 0){
-    alert("Data soal tidak ditemukan");
-    return;
-  }
-
-  let html = `
-    <h2 style="text-align:center">REVIEW HASIL UJIAN</h2>
-    <hr>
-  `;
-
-  soalList.forEach((item, i)=>{
-
-    const soal   = item.querySelector(".soal-text")?.innerText || "-";
-    const user   = item.querySelector(".jawaban-user")?.innerText || "-";
-    const benar  = item.querySelector(".jawaban-benar")?.innerText || "-";
-    const status = item.querySelector(".status")?.innerText || "-";
-
-    html += `
-      <div style="margin-bottom:18px;">
-        <b>${i+1}. ${soal}</b><br>
-        Jawaban Anda : ${user}<br>
-        Kunci Jawaban : ${benar}<br>
-        Status : <b>${status}</b>
-      </div>
-    `;
-  });
-
-  html2pdf().from(html).set({
-    margin: 10,
-    filename: "review-hasil.pdf",
-    html2canvas: { scale: 2 },
-    jsPDF: { orientation: "portrait", unit: "mm", format: "a4" }
-  }).save();
+if (examKey) {
+  // Load specific exam review
+  db.ref(`exams/${user.id}/${examKey}`).once("value")
+    .then(snapshot => {
+      const examData = snapshot.val();
+      // Tampilkan review untuk exam ini
+    });
+} else {
+  // Load review terakhir (default behavior)
 }
