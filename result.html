@@ -14,6 +14,7 @@
 
 <!-- Chart -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <!-- Icons -->
@@ -167,7 +168,7 @@ firebase.initializeApp(firebaseConfig);
 
       <!-- ACTION BUTTONS -->
       <div class="result-buttons">
-        <button class="btn-primary" onclick="exportPG()">
+        <button class="btn-primary" onclick="exportAllPDF()">
           <i data-lucide="download"></i>
           <span>Export PDF</span>
         </button>
