@@ -7,8 +7,10 @@ if(!user) window.location.href = "dashboard.html";
 
 function loadReviewFromStorage() {
   
-  // Ambil data dari localStorage (disimpan saat ujian selesai)
-  const reviewData = JSON.parse(localStorage.getItem("lastReviewData")) || null;
+  // Coba ambil dari key umum dulu, fallback ke user-specific
+  let reviewData = JSON.parse(localStorage.getItem("lastReviewData")) || 
+                   JSON.parse(localStorage.getItem(`${user.id}_lastReviewData`)) || 
+                   null;
   
   if (!reviewData) {
     alert("Belum ada data review. Silakan kerjakan ujian terlebih dahulu.");
@@ -18,10 +20,7 @@ function loadReviewFromStorage() {
 
   const { soal, jawaban, examData } = reviewData;
 
-  // Update info halaman
   updatePageInfo(examData);
-
-  // Tampilkan review
   tampilkanReview(soal, jawaban, examData);
 }
 
@@ -79,73 +78,9 @@ function tampilkanReview(soal, jawaban, examData) {
     tbody.innerHTML += row;
   });
 
-  // Simpan untuk export PDF
   window.currentReviewData = { soal, jawaban, examData };
-}
-
-// Load saat page ready
-loadReviewFromStorage();
-
-
-/* ================= EXPORT PDF ================= */
-
-function exportReviewPDF() {
-  const data = window.currentReviewData;
   
-  if(!data || !data.soal) {
-    alert("Data review tidak tersedia");
-    return;
-  }
-
-  const { soal, jawaban, examData } = data;
-
-  let html = `
-    <div style="font-family:Arial,sans-serif;padding:20px;">
-      <h2 style="text-align:center;color:#1e293b;">REVIEW HASIL UJIAN</h2>
-      <div style="text-align:center;margin-bottom:20px;color:#64748b;">
-        ${examData.mapel || 'Ujian'} • ${examData.paket || ''}<br>
-        ${examData.submittedAt ? new Date(examData.submittedAt).toLocaleString("id-ID") : ''}
-      </div>
-      <hr style="margin-bottom:20px;">
-  `;
-
-  soal.forEach((s, i) => {
-    const userAnswerIndex = jawaban[i];
-    const correctIndex = s.a;
-    
-    const userAnswerText = userAnswerIndex !== null && userAnswerIndex !== undefined
-      ? s.o[userAnswerIndex]
-      : "Tidak dijawab";
-    const correctAnswerText = s.o[correctIndex];
-    
-    const isCorrect = userAnswerIndex === correctIndex;
-    const statusColor = isCorrect ? '#16a34a' : '#dc2626';
-    const statusText = isCorrect ? 'Benar' : 'Salah';
-
-    html += `
-      <div style="margin-bottom:20px;padding:15px;border:1px solid #e2e8f0;border-radius:8px;">
-        <div style="font-weight:bold;margin-bottom:10px;color:#1e293b;">
-          ${i+1}. ${s.q}
-        </div>
-        <div style="margin-left:15px;line-height:1.8;color:#475569;">
-          <div>Jawaban Anda: <b style="color:${isCorrect ? '#16a34a' : '#dc2626'}">${userAnswerText}</b></div>
-          <div>Kunci Jawaban: <b style="color:#16a34a">${correctAnswerText}</b></div>
-          <div>Status: <b style="color:${statusColor}">${statusText}</b></div>
-        </div>
-      </div>
-    `;
-  });
-
-  html += `</div>`;
-
-  if (typeof html2pdf !== 'undefined') {
-    html2pdf().from(html).set({
-      margin: 10,
-      filename: `review-${examData.mapel || 'ujian'}-${Date.now()}.pdf`,
-      html2canvas: { scale: 2 },
-      jsPDF: { orientation: "portrait", unit: "mm", format: "a4" }
-    }).save();
-  } else {
-    alert("Library PDF belum tersedia");
-  }
+  if (typeof lucide !== "undefined") lucide.createIcons();
 }
+
+loadReviewFromStorage();
