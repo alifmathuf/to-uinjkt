@@ -1,91 +1,68 @@
-Auth.protect();
+function loadReview(examId) {
+  
+  if (examId) {
+    // Load specific exam
+    database.ref(`exams/${user.id}/${examId}`).once("value")
+      .then(snapshot => processExamData(snapshot.val(), examId));
+  } else {
+    // Load LAST exam by submittedAt
+    database.ref(`exams/${user.id}`).once("value")
+      .then(snapshot => {
+        if(!snapshot.exists()) return;
 
-const user = Auth.getUser();
+        const exams = [];
+        
+        snapshot.forEach(child => {
+          const examData = child.val();
+          
+          if (examData.submittedAt) {
+            exams.push({
+              key: child.key,
+              ...examData
+            });
+          } else {
+            Object.keys(examData).forEach(subKey => {
+              const subData = examData[subKey];
+              if (subData && subData.submittedAt) {
+                exams.push({
+                  key: `${child.key}/${subKey}`,
+                  ...subData
+                });
+              }
+            });
+          }
+        });
 
-if(!user){
-  window.location.href = "dashboard.html";
+        if (exams.length === 0) {
+          alert("Belum ada data ujian.");
+          window.location.href = "dashboard.html";
+          return;
+        }
+
+        // Sort by submittedAt descending
+        exams.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
+        
+        const lastExam = exams[0];
+        processExamData(lastExam, lastExam.key);
+      });
+  }
 }
 
-// Ambil ujian terakhir dari Firebase
-database.ref(`exams/${user.id}`)
-.orderByChild("submittedAt")
-.limitToLast(1)
-.once("value")
-.then(snapshot=>{
-
-  if(!snapshot.exists()){
-    alert("Belum ada data ujian.");
-    window.location.href = "dashboard.html";
+function processExamData(examData, examKey) {
+  if(!examData) {
+    alert("Data ujian tidak ditemukan.");
     return;
   }
 
-  // Ambil data ujian terakhir
-  const examData = Object.values(snapshot.val())[0];
-
-  const jawaban = examData.answers;
+  const jawaban = examData.answers || [];
   const mapel = examData.mapel;
   const paket = examData.paket;
 
-  // Ambil ulang soal dari file JSON
+  updatePageInfo(examData, examKey);
+
   fetch(`paket/${mapel}/${paket}.json`)
-  .then(res=>res.json())
-  .then(soalData=>{
-
-    tampilkanReview(soalData.slice(0, jawaban.length), jawaban);
-
-  });
-
-});
-
-
-function tampilkanReview(soal, jawaban){
-
-  const tbody = document.getElementById("reviewBody");
-  tbody.innerHTML = "";
-
-  soal.forEach((s, i)=>{
-
-    const userAnswerIndex = jawaban[i];
-    const correctIndex = s.a;
-
-    const userAnswerText =
-      userAnswerIndex !== null && userAnswerIndex !== undefined
-        ? s.o[userAnswerIndex]
-        : "-";
-
-    const isCorrect = userAnswerIndex === correctIndex;
-
-    const statusIcon = isCorrect
-      ? `<span class="correct">✔</span>`
-      : `<span class="wrong">✖</span>`;
-
-    const row = `
-      <tr>
-        <td>${i+1}</td>
-        <td>${s.q}</td>
-        <td>${userAnswerText}</td>
-        <td>${statusIcon}</td>
-      </tr>
-    `;
-
-    tbody.innerHTML += row;
-
-  });
-
-}
-
-
-// Ambil exam key dari URL
-const urlParams = new URLSearchParams(window.location.search);
-const examKey = urlParams.get('exam');
-
-if (examKey) {
-  // Load specific exam review
-  db.ref(`exams/${user.id}/${examKey}`).once("value")
-    .then(snapshot => {
-      const examData = snapshot.val();
-      // Tampilkan review untuk exam ini
+    .then(res => res.json())
+    .then(soalData => {
+      tampilkanReview(soalData.slice(0, jawaban.length), jawaban, examData);
     });
-} else {
-  // Load review terakhir (default behavior)
 }
