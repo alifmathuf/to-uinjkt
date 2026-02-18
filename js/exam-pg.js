@@ -283,32 +283,39 @@ async function submitExam(auto = false) {
     console.log("Firebase submit error:", err);
   }
 
+  /* ================= SAVE UNTUK RESULT & REVIEW ================= */
   
- localStorage.setItem(getKey("pgScore"), score);
-localStorage.setItem(getKey("reviewSoal"), JSON.stringify(soalUjian));
-localStorage.setItem(getKey("reviewJawaban"), JSON.stringify(jawaban));
-   // ================= BUILD REVIEW DATA =================
-// ================= BUILD REVIEW DATA =================
-let reviewData = [];
+  // Untuk result.js (score sementara)
+  localStorage.setItem(getKey("pgScore"), score);
+  
+  // Untuk review.js - Simpan dengan key umum (tanpa user id) agar mudah diakses
+  const reviewData = {
+    soal: soalUjian.map(s => ({
+      q: s.q,
+      o: s.o,
+      a: s.a,
+      pembahasan: s.pembahasan || ""
+    })),
+    jawaban: jawaban,
+    examData: {
+      mapel: examState.mapel,
+      paket: examState.paket,
+      submittedAt: Date.now(),
+      score: score,
+      total: soalUjian.length
+    }
+  };
+  
+  // Simpan dengan key umum untuk review.js
+  localStorage.setItem("lastReviewData", JSON.stringify(reviewData));
+  
+  // Simpan juga dengan key user-specific sebagai backup
+  localStorage.setItem(getKey("lastReviewData"), JSON.stringify(reviewData));
 
-soalUjian.forEach((s, i) => {
-
-  reviewData.push({
-    q: s.q,
-    options: s.o,
-    user: jawaban[i] !== null 
-      ? String.fromCharCode(65 + jawaban[i]) 
-      : "-",
-    correct: String.fromCharCode(65 + s.a),
-    explanation: s.pembahasan || ""
-  });
-
-});
-
-localStorage.setItem(getKey("reviewData"), JSON.stringify(reviewData));
-
+  // Cleanup exam state
   localStorage.removeItem(getKey("examEndTime"));
-localStorage.removeItem(getKey("pgAnswers"));
+  localStorage.removeItem(getKey("pgAnswers"));
+  localStorage.removeItem("examState");
 
   window.location.href = "result.html";
 }
