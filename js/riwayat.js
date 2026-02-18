@@ -51,8 +51,14 @@ db.ref(`exams/${user.id}`)
     const div = document.createElement("div");
     div.className = "history-card";
     div.innerHTML = `
-      <div class="history-title">
-        ${exam.mapel || "Ujian"} • ${exam.paket || ""}
+      <div class="history-header">
+        <div class="history-title">
+          ${exam.mapel || "Ujian"} • ${exam.paket || ""}
+        </div>
+        <a href="review.html?exam=${exam.key}" class="btn-review">
+          <i data-lucide="eye"></i>
+          <span>Review</span>
+        </a>
       </div>
 
       <div class="history-score ${scoreClass}">
@@ -70,6 +76,11 @@ db.ref(`exams/${user.id}`)
     
     container.appendChild(div);
   });
+
+  // Render icons setelah DOM update
+  if (typeof lucide !== "undefined") {
+    lucide.createIcons();
+  }
 
 })
 .catch(err => {
