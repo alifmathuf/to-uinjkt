@@ -145,8 +145,15 @@ function renderChart(correct, total) {
 }
 
 function exportAllPDF() {
-  const { jsPDF } = window.jspdf;
+  // ✅ Perbaikan akses jsPDF untuk versi UMD 2.5.1
+  const jsPDF = window.jspdf.jsPDF;
+  if (!jsPDF) {
+    alert("Library PDF belum siap. Tunggu sebentar dan coba lagi.");
+    return;
+  }
+  
   const doc = new jsPDF();
+  
   
   // AMBIL DATA
   const reviewData = JSON.parse(localStorage.getItem("reviewData")) || [];
