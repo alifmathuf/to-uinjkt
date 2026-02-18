@@ -101,6 +101,7 @@ function loadCaseResult(){
 }
 
 
+
 /* ================= SAVE GLOBAL LEADERBOARD ================= */
 
 function saveToFirebaseLeaderboard(score, correct, total, examId) {
