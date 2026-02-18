@@ -5,22 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login - Tryout PPG</title>
 
-<!-- ===== Favicon ===== -->
 <link rel="icon" type="image/svg+xml" href="assets/logo-uin.svg">
 <link rel="shortcut icon" href="assets/logo-uin.svg">
 
-<!-- ===== Google Fonts ===== -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- ===== CSS dengan versioning ===== -->
-<link rel="stylesheet" href="css/app.css?v=20260218">
-
-<!-- ===== META ANTI-CACHE ===== -->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" href="css/app.css">
 
 <style>
+
 /* ====== LAYOUT ====== */
 
 .login-wrapper{
@@ -29,6 +21,7 @@
 }
 
 /* LEFT SIDE (BRANDING) */
+
 .login-brand{
   flex:1;
   background:linear-gradient(135deg,#1e3a8a,#1e40af);
@@ -58,19 +51,20 @@
 }
 
 /* RIGHT SIDE (FORM) */
+
 .login-form-area{
   flex:1;
   display:flex;
   justify-content:center;
   align-items:center;
-  background:#0f172a;
+  background:var(--bg-main);
   padding:20px;
 }
 
 .login-card{
   width:100%;
   max-width:400px;
-  background:#1e293b;
+  background:var(--bg-card);
   padding:40px;
   border-radius:18px;
   box-shadow:0 20px 40px rgba(0,0,0,.4);
@@ -90,7 +84,7 @@
   display:block;
   font-size:14px;
   margin-bottom:6px;
-  color:#94a3b8;
+  color:var(--text-muted);
 }
 
 .input-group input{
@@ -126,21 +120,27 @@
 }
 
 /* MOBILE */
+
 @media(max-width:768px){
   .login-wrapper{
     flex-direction:column;
   }
+
   .login-brand{
     padding:30px 20px;
   }
+
   .login-brand img{
     width:80px;
   }
+
   .login-card{
     padding:30px;
   }
 }
+
 </style>
+
 </head>
 
 <body>
@@ -152,6 +152,7 @@
     <img src="assets/logo.png" alt="Logo">
     <h1>TRY OUT PPG</h1><br>
     <p>Kumpulan soal-soal Try Out PPG BATCH IV UIN SYAHID JAKARTA </p>
+   
     <p><br>Apresiasi dan terima kasih kami sampaikan kepada segenap panitia dan Prodi PPG UIN Jakarta atas bimbingan dan dukungannya</p>
   </div>
 
@@ -179,18 +180,10 @@
   </div>
 
 </div>
-
 <footer class="footer">
   © 2026 Koorlas SKI Batch IV PPG UIN Jakarta
 </footer>
-
-<!-- ===== JS dengan versioning ===== -->
-<script src="js/auth.js?v=20260218"></script>
-<script>
-function login(){
-  alert('Login sukses (dummy)');
-}
-</script>
+<script src="js/auth.js"></script>
 
 </body>
 </html>
