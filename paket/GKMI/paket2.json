@@ -438,5 +438,115 @@
       "Mengurangi interaksi dengan siswa."
     ],
     "a": 1
+  },
+  {
+    "q": "Seorang guru GKMI di Madrasah Aliyah akan mengajarkan materi \"Sejarah Masuknya Islam di Indonesia\" dengan tema \"Peran Wali Songo dalam Penyebaran Islam\". Guru tersebut ingin merumuskan tujuan pembelajaran ranah sikap yang mengintegrasikan nilai-nilai keislaman dan nasionalisme.\n\nManakah rumusan tujuan pembelajaran ranah sikap yang paling tepat?",
+    "o": [
+      "Siswa dapat menyebutkan nama-nama Wali Songo dan daerah penyebarannya secara berurutan.",
+      "Siswa menunjukkan sikap toleransi dan menghargai perbedaan dalam menyikapi berbagai metode dakwah Wali Songo.",
+      "Siswa menuliskan biografi singkat Wali Songo dengan tulisan yang rapi dan benar.",
+      "Siswa mengelompokkan Wali Songo berdasarkan metode dakwah yang digunakan.",
+      "Siswa menyalin peta penyebaran Islam di Indonesia dari buku teks."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pak Ahmad adalah guru GKMI keturunan Arab yang mengajar di Madrasah Aliyah di daerah Jawa. Ia sering menggunakan istilah-istilah Arab dalam penjelasannya tanpa memberikan terjemahan.\n\nBanyak siswa yang kesulitan memahami materi karena perbedaan bahasa dan budaya. Berdasarkan prinsip moderasi beragama dan pembelajaran inklusif, langkah yang paling tepat bagi Pak Ahmad adalah",
+    "o": [
+      "Tetap menggunakan bahasa Arab penuh untuk menjaga keaslian materi sejarah Islam.",
+      "Menggunakan bahasa Arab dengan memberikan penjelasan dalam bahasa Indonesia dan mengaitkan dengan budaya lokal siswa.",
+      "Menghindari penggunaan bahasa Arab sama sekali agar siswa tidak bingung.",
+      "Menyuruh siswa belajar bahasa Arab terlebih dahulu sebelum mengikuti pembelajaran.",
+      "Mengabaikan kesulitan siswa karena itu merupakan tantangan belajar yang wajar."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru GKMI merancang pembelajaran mengenai konsep \"Dakwah Islam di Era Globalisasi\" dengan menggunakan pendekatan Project Based Learning (PjBL).\n\nGuru tersebut ingin peserta didik dapat mengaplikasikan konsep ini melalui proyek berkelompok, sambil mengembangkan nilai kreativitas dan kerjasama.\n\nSetiap kelompok terdiri dari 5 orang peserta didik dengan latar belakang kemampuan yang beragam. Proyek ini melibatkan perancangan media dakwah digital (poster, video pendek, atau podcast) yang sesuai dengan karakteristik generasi Z.\n\nSetiap anggota kelompok memilih peran sesuai minatnya (penulis naskah, desainer, editor, narator, atau pengisi suara) dan secara kolektif mengevaluasi karya mereka sebelum dipresentasikan.\n\nBagaimanakah rumusan tujuan pembelajaran ranah keterampilan/aplikasi yang paling mencerminkan kinerja proyek tersebut?",
+    "o": [
+      "Peserta didik dapat menyebutkan definisi dakwah dan metode-metode yang digunakan para Nabi secara berurutan.",
+      "Peserta didik dapat membedakan dakwah konvensional dan dakwah digital berdasarkan teori yang dijelaskan guru.",
+      "Peserta didik dapat merancang dan memproduksi media dakwah digital yang kreatif dan sesuai dengan target audiens generasi Z melalui kerja sama kelompok.",
+      "Peserta didik dapat mengidentifikasi platform media sosial yang populer di kalangan generasi Z.",
+      "Peserta didik dapat menuliskan ringkasan sejarah perkembangan teknologi komunikasi."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Pada awal pembelajaran, seorang guru GKMI menyajikan video dokumenter berjudul \"Khilafah Abbasiyah: Kejayaan Peradaban Islam,\" yang menceritakan tentang perkembangan ilmu pengetahuan pada masa keemasan Islam.\n\nDalam video tersebut, siswa melihat bagaimana para ilmuwan Muslim seperti Al-Khawarizmi, Ibnu Sina, dan Al-Biruni berkontribusi pada perkembangan matematika, kedokteran, dan astronomi dengan penuh dedikasi dan semangat keilmuan yang tinggi.\n\nSetelah menonton, guru mengajak siswa berdiskusi dengan pertanyaan: \"Bagaimana perasaan kalian setelah melihat kontribusi para ilmuwan Muslim? Mengapa periode ini disebut sebagai Keemasan Islam? Apa kaitannya dengan rasa cinta kepada agama dan bangsa?\"\n\nSiswa aktif berbagi pendapat dan menyatakan rasa bangga terhadap warisan intelektual Islam serta termotivasi untuk meneladani semangat keilmuan mereka.\n\nBagaimanakah rumusan tujuan pembelajaran ranah sikap yang paling sesuai?",
+    "o": [
+      "Peserta didik mampu menyebutkan nama-nama ilmuwan Muslim dan bidang keahliannya secara lengkap.",
+      "Peserta didik mampu membandingkan peradaban Islam dengan peradaban lain pada masa yang sama.",
+      "Peserta didik mampu mengungkapkan rasa bangga terhadap kontribusi peradaban Islam dan termotivasi untuk mengembangkan semangat keilmuan.",
+      "Peserta didik mampu menganalisis faktor-faktor kejayaan peradaban Abbasiyah secara kritis.",
+      "Peserta didik mampu membuat timeline perkembangan ilmu pengetahuan pada masa Khilafah Abbasiyah."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Bu Fatimah merencanakan pembelajaran materi \"Kerajaan Islam di Indonesia\" dengan kegiatan berkelompok menggunakan media konkret berupa peta sebaran, gambar artefak, dan rekaman cerita lisan (oral history) dari tokoh masyarakat.\n\nSetiap kelompok diberikan wilayah yang berbeda (Aceh, Demak, Mataram, Makassar). Siswa diajak untuk menganalisis faktor-faktor yang mempengaruhi perkembangan kerajaan Islam di wilayah tersebut, mengidentifikasi tokoh-tokoh penting, dan merumuskan karakteristik unik setiap kerajaan.\n\nSetelah itu, mereka diberi tantangan untuk merancang presentasi kreatif yang menggambarkan \"dialog antar kerajaan\" tentang strategi penyebaran Islam dan toleransi beragama.\n\nDari situasi di atas, tentukan rumusan indikator tujuan pembelajaran ranah pengetahuan yang paling sesuai dengan materi supaya peserta didik memiliki kemampuan berpikir dinamis dan inovatif!",
+    "o": [
+      "Siswa dapat menyebutkan nama-nama kerajaan Islam di Indonesia dan tahun berdirinya secara berurutan.",
+      "Siswa dapat menghafalkan daftar raja-raja dari setiap kerajaan Islam di Indonesia.",
+      "Siswa dapat membandingkan letak geografis berbagai kerajaan Islam di Indonesia.",
+      "Siswa dapat menganalisis faktor-faktor perkembangan kerajaan Islam dan merancang presentasi kreatif yang menggambarkan dialog antar kerajaan dengan pendekatan historis yang inovatif.",
+      "Siswa dapat mengidentifikasi artefak peninggalan kerajaan Islam dari gambar yang ditampilkan."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Seorang guru GKMI kelas XI MA merancang pembelajaran PBL dengan materi \"Konflik dan Rekonsiliasi dalam Sejarah Islam\" dan \"Menulis Resensi Buku Sejarah\" bertema \"Pembelajaran dari Peristiwa Shiffin\".\n\nBerikut rancangannya:\n1. Tujuan Pembelajaran:\n- Siswa mampu menganalisis faktor-faktor konflik dalam peristiwa Shiffin secara objektif\n- Siswa dapat menulis resensi kritis tentang buku sejarah Islam dengan pendekatan moderasi\n- Siswa menunjukkan sikap tasamuh (toleransi) dalam menyikapi perbedaan pandangan\n2. Skenario PBL:\n- Masalah: \"Bagaimana memahami peristiwa Shiffin tanpa memunculkan fanatisme mazhab atau golongan?\"\n- Siswa berdiskusi dalam kelompok kecil dengan membaca sumber primer dan sekunder\n- Menulis resensi buku dengan pendekatan kritis dan moderat\n\nManakah analisis yang PALING TEPAT tentang rancangan ini?",
+    "o": [
+      "Rancangan tidak tepat karena membahas konflik dapat memicu perpecahan di kalangan siswa.",
+      "Rancangan efektif karena mengintegrasikan analisis historis, keterampilan menulis, dan sikap toleransi melalui pendekatan moderasi beragama.",
+      "Siswa MA belum mampu menulis resensi kritis karena terlalu sulit.",
+      "Pendekatan PBL kurang cocok untuk materi sejarah yang bersifat faktual.",
+      "Siswa sebaiknya hanya menghafal kronologi peristiwa tanpa analisis kritis."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pak Hasan merupakan guru GKMI yang akan menyampaikan materi \"Reformasi Bidang Kehidupan pada Masa Khulafaur Rasyidin\" dengan menggunakan pendekatan Discovery Learning (DL).\n\nUrutan kegiatan yang tepat adalah:\n1. Guru menyajikan permasalahan sosial kontemporer yang relevan dengan reformasi masa Khulafaur Rasyidin.\n2. Siswa mengamati dan mengidentifikasi masalah tersebut.\n3. Siswa mengumpulkan data dari berbagai sumber tentang reformasi yang dilakukan Khulafaur Rasyidin.\n4. Siswa menganalisis dan menyimpulkan pelajaran yang dapat diambil.\n5. Siswa mempresentasikan hasil temuan dan merefleksikan relevansinya dengan kehidupan modern.\n\nManakah urutan yang benar?",
+    "o": [
+      "1-3-2-4-5",
+      "1-2-3-4-5",
+      "1-3-4-2-5",
+      "1-2-5-3-4",
+      "1-4-2-3-5"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru GKMI MI mengajarkan topik \"Tokoh-tokoh Perempuan dalam Sejarah Islam\".\n\nSetiap kelompok telah membuat infografis tentang kontribusi perempuan Muslim (seperti Khadijah, Aisyah, Nusaybah) dengan gaya desain dan kedalaman informasi yang disesuaikan dengan minat serta kesiapan masing-masing.\n\nKini guru menyiapkan evaluasi yang harus menegaskan konsep pokok bahwa perempuan memiliki peran strategis dalam sejarah Islam dan mengakomodasi kemampuan beragam peserta didik.\n\nPertimbangan evaluasi manakah yang paling selaras dengan prinsip pembelajaran tersebut?",
+    "o": [
+      "Guru menggunakan rubrik tunggal yang menilai desain, konten, dan presentasi setiap kelompok dengan bobot seragam.",
+      "Guru menyiapkan rubrik bertingkat yang menilai desain, kedalaman konten, analisis, dan presentasi dengan kriteria berbeda untuk tiga tingkat kesiapan.",
+      "Guru memilih bentuk laporan video bagi seluruh kelompok, lalu menilai ketepatan konsep berdasarkan durasi presentasi.",
+      "Guru menawarkan tiga format pelaporan—infografis, video, atau esai—namun seluruh karya dinilai memakai satu daftar cek konsep akademik.",
+      "Guru membedakan tugas akhir menjadi kuis konsep untuk kelompok pemula dan proyek tambahan untuk kelompok mahir."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru GKMI di kelas VIII MTs sedang menyusun alur materi ajar tema \"Perkembangan Ilmu Pengetahuan pada Masa Bani Umayyah\".\n\nManakah aktivitas yang sesuai dengan karakteristik belajar siswa MTs yang sedang mencari identitas dan memerlukan koneksi dengan kehidupan nyata?",
+    "o": [
+      "Siswa menghafal daftar ilmuwan Bani Umayyah dan karyanya secara berurutan.",
+      "Siswa mengamati video tentang perkembangan ilmu pengetahuan, menganalisis faktor-faktor pendukungnya, dan merancang inovasi sederhana yang terinspirasi dari semangat keilmuan tersebut.",
+      "Siswa mengamati video, merancang inovasi, lalu menganalisis faktor-faktor pendukung perkembangan ilmu pengetahuan.",
+      "Siswa menyebutkan contoh ilmuwan, merancang inovasi, lalu mengamati video tentang perkembangan ilmu pengetahuan.",
+      "Siswa mengidentifikasi ilmuwan yang terlupakan, merancang inovasi, dan menjelaskan definisi ilmu pengetahuan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran GKMI, guru ingin mengajarkan konsep \"Sejarah Perkembangan Tafsir Al-Qur'an\" kepada siswa kelas XII MA.\n\nPeserta didik cenderung kritis, memiliki pemikiran abstrak yang matang, dan lebih mudah memahami konsep jika dikaitkan dengan konteks kontemporer.\n\nGuru berencana menerapkan pendekatan Deep Learning (DL) agar siswa tidak hanya mampu menyebutkan nama-nama mufassir, tetapi juga memahami konteks sosial-politik yang mempengaruhi perkembangan tafsir dan relevansinya dengan isu-isu kekinian.\n\nGuru harus merancang alur kegiatan yang memungkinkan siswa mengeksplorasi, menganalisis, dan merefleksikan konsep tafsir secara bertahap.\n\nDalam situasi ini, pendekatan alur pembelajaran manakah yang paling tepat?",
+    "o": [
+      "Guru memperkenalkan nama-nama mufassir klasik, meminta siswa menghafal karya-karyanya, lalu langsung memberikan kuis pengetahuan.",
+      "Guru membagikan daftar kitab tafsir, meminta siswa membaca sendiri konsep tafsir melalui diskusi kelompok tanpa arahan, lalu menyimpulkan.",
+      "Guru menjelaskan definisi tafsir menggunakan papan tulis, kemudian memberikan soal latihan individu tentang metodologi tafsir.",
+      "Guru menayangkan video tentang perkembangan tafsir, kemudian memberikan latihan soal berdasarkan video tersebut.",
+      "Guru menyajikan isu kontemporer yang relevan dengan tafsir, memfasilitasi siswa mengeksplorasi berbagai aliran tafsir, menganalisis konteks historisnya, dan merefleksikan relevansinya dengan isu kekinian."
+    ],
+    "a": 4
   }
 ]
