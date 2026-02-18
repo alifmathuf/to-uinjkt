@@ -1,3 +1,11 @@
+Auth.protect();
+
+const user = Auth.getUser();
+
+if(!user){
+  window.location.href = "dashboard.html";
+}
+
 function loadReview(examId) {
   
   if (examId) {
