@@ -24,14 +24,12 @@ db.ref(`exams/${user.id}`)
     });
   });
 
-  // Urutkan dari terbaru ke lama
   exams.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
 
   container.innerHTML = "";
 
   exams.forEach(exam => {
     
-    // Lewati kalau tidak ada score
     if (!exam.score && exam.score !== 0) return;
 
     const nilai = exam.total ? Math.round((exam.score / exam.total) * 100) : 0;
@@ -51,28 +49,27 @@ db.ref(`exams/${user.id}`)
     const div = document.createElement("div");
     div.className = "history-card";
     div.innerHTML = `
-  <div class="history-top">
-    <div class="badge-status ${badgeClass}">${badgeText}</div>
-    <div class="history-title">${exam.mapel || "Ujian"} • ${exam.paket || ""}</div>
-  </div>
+      <div class="history-badge ${badgeClass}">${badgeText}</div>
+      
+      <div class="history-content">
+        <div class="history-title">${exam.mapel || "Ujian"} • ${exam.paket || ""}</div>
+        
+        <div class="history-score ${scoreClass}">${nilai}</div>
+        
+        <div class="history-correct">Benar: ${exam.score}/${exam.total || 0}</div>
+      </div>
 
-  <div class="history-center">
-    <div class="history-score ${scoreClass}">${nilai}</div>
-    <div class="history-correct">Benar: ${exam.score}/${exam.total || 0}</div>
-  </div>
-
-  <div class="history-action">
-    <span class="history-date">${tanggal}</span>
-    <a href="review.html?exam=${exam.key}" class="btn-icon" title="Review Jawaban">
-      <i data-lucide="eye"></i>
-    </a>
-  </div>
-`;;
+      <div class="history-footer">
+        <span class="history-date">${tanggal}</span>
+        <a href="review.html?exam=${exam.key}" class="btn-review-corner" title="Review Jawaban">
+          <i data-lucide="eye"></i>
+        </a>
+      </div>
+    `;
     
     container.appendChild(div);
   });
 
-  // Render icons setelah DOM update
   if (typeof lucide !== "undefined") {
     lucide.createIcons();
   }
