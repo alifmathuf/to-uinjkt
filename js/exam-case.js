@@ -119,28 +119,34 @@ function updateButtons() {
   const saveNextBtn = document.getElementById("saveNextBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  // Step 1-3: tampilkan "Simpan & Lanjut"
-  if (saveNextBtn) {
-    if (currentStep < 3) {
-      saveNextBtn.style.display = "inline-block";
-      saveNextBtn.innerText = "💾 Simpan & Lanjut";
+  // Step 1-3: Simpan & Lanjut aktif, Selesai disabled
+  // Step 4: Simpan & Lanjut disabled, Selesai aktif
+  if (currentStep < 3) {
+    if (saveNextBtn) {
       saveNextBtn.disabled = false;
-    } else {
-      saveNextBtn.style.display = "none";
+      saveNextBtn.style.opacity = "1";
+      saveNextBtn.style.cursor = "pointer";
     }
-  }
-
-  // Step 4: tampilkan "Selesai"
-  if (finishBtn) {
-    if (currentStep === 3) {
-      finishBtn.style.display = "inline-block";
-      finishBtn.innerText = "✅ Selesai";
+    if (finishBtn) {
+      finishBtn.disabled = true;
+      finishBtn.style.opacity = "0.5";
+      finishBtn.style.cursor = "not-allowed";
+    }
+  } else {
+    // Step 4 (terakhir)
+    if (saveNextBtn) {
+      saveNextBtn.disabled = true;
+      saveNextBtn.style.opacity = "0.5";
+      saveNextBtn.style.cursor = "not-allowed";
+    }
+    if (finishBtn) {
       finishBtn.disabled = false;
-    } else {
-      finishBtn.style.display = "none";
+      finishBtn.style.opacity = "1";
+      finishBtn.style.cursor = "pointer";
     }
   }
 }
+
 
 /* ================= SAVE & NEXT ================= */
 function saveAndNext() {
