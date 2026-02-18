@@ -6,41 +6,87 @@ if(!user){
   window.location.href = "dashboard.html";
 }
 
-// Ambil ujian terakhir dari Firebase
-database.ref(`exams/${user.id}`)
-.orderByChild("submittedAt")
-.limitToLast(1)
-.once("value")
-.then(snapshot=>{
+// Ambil exam key dari URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const examKey = urlParams.get('exam');
 
-  if(!snapshot.exists()){
-    alert("Belum ada data ujian.");
-    window.location.href = "dashboard.html";
-    return;
+// Fungsi untuk load review
+function loadReview(examId) {
+  let query;
+  
+  if (examId) {
+    // Load specific exam by key
+    query = database.ref(`exams/${user.id}/${examId}`).once("value");
+  } else {
+    // Load last exam (default)
+    query = database.ref(`exams/${user.id}`)
+      .orderByChild("submittedAt")
+      .limitToLast(1)
+      .once("value");
   }
 
-  // Ambil data ujian terakhir
-  const examData = Object.values(snapshot.val())[0];
+  query.then(snapshot => {
+    if(!snapshot.exists()){
+      alert("Belum ada data ujian.");
+      window.location.href = "dashboard.html";
+      return;
+    }
 
-  const jawaban = examData.answers;
-  const mapel = examData.mapel;
-  const paket = examData.paket;
+    // Ambil data ujian
+    let examData;
+    if (examId) {
+      examData = snapshot.val();
+    } else {
+      examData = Object.values(snapshot.val())[0];
+    }
 
-  // Ambil ulang soal dari file JSON
-  fetch(`paket/${mapel}/${paket}.json`)
-  .then(res=>res.json())
-  .then(soalData=>{
+    // Simpan examKey untuk referensi
+    const currentExamKey = examId || Object.keys(snapshot.val())[0];
 
-    tampilkanReview(soalData.slice(0, jawaban.length), jawaban);
+    const jawaban = examData.answers || [];
+    const mapel = examData.mapel;
+    const paket = examData.paket;
 
+    // Update title/page info jika ada
+    updatePageInfo(examData, currentExamKey);
+
+    // Ambil soal dari JSON
+    return fetch(`paket/${mapel}/${paket}.json`)
+      .then(res => res.json())
+      .then(soalData => {
+        tampilkanReview(soalData.slice(0, jawaban.length), jawaban, examData);
+      });
+
+  }).catch(err => {
+    console.error("Error loading review:", err);
+    alert("Gagal memuat data review.");
   });
+}
 
-});
+// Update info halaman
+function updatePageInfo(examData, examKey) {
+  const titleEl = document.getElementById("reviewTitle");
+  const metaEl = document.getElementById("reviewMeta");
+  
+  if (titleEl) {
+    titleEl.innerText = `Review: ${examData.mapel || 'Ujian'} • ${examData.paket || ''}`;
+  }
+  
+  if (metaEl && examData.submittedAt) {
+    const tanggal = new Date(examData.submittedAt).toLocaleString("id-ID");
+    metaEl.innerText = `Dikerjakan: ${tanggal}`;
+  }
+}
+
+// Load review (dengan atau tanpa parameter)
+loadReview(examKey);
 
 
-function tampilkanReview(soal, jawaban){
+function tampilkanReview(soal, jawaban, examData){
 
   const tbody = document.getElementById("reviewBody");
+  if (!tbody) return;
+  
   tbody.innerHTML = "";
 
   soal.forEach((s, i)=>{
@@ -51,20 +97,27 @@ function tampilkanReview(soal, jawaban){
     const userAnswerText =
       userAnswerIndex !== null && userAnswerIndex !== undefined
         ? s.o[userAnswerIndex]
-        : "-";
+        : "Tidak dijawab";
+
+    const correctAnswerText = s.o[correctIndex];
 
     const isCorrect = userAnswerIndex === correctIndex;
+    const isEmpty = userAnswerIndex === null || userAnswerIndex === undefined;
 
-    const statusIcon = isCorrect
-      ? `<span class="correct">✔</span>`
-      : `<span class="wrong">✖</span>`;
+    let statusClass = isCorrect ? "correct" : (isEmpty ? "empty" : "wrong");
+    let statusText = isCorrect ? "Benar" : (isEmpty ? "Kosong" : "Salah");
+    let statusIcon = isCorrect ? "✓" : (isEmpty ? "−" : "✗");
 
     const row = `
-      <tr>
+      <tr class="${statusClass}">
         <td>${i+1}</td>
-        <td>${s.q}</td>
-        <td>${userAnswerText}</td>
-        <td>${statusIcon}</td>
+        <td class="soal-text">${s.q}</td>
+        <td class="jawaban-user ${isEmpty ? 'text-muted' : ''}">${userAnswerText}</td>
+        <td class="jawaban-benar">${correctAnswerText}</td>
+        <td class="status ${statusClass}">
+          <span class="status-icon">${statusIcon}</span>
+          ${statusText}
+        </td>
       </tr>
     `;
 
@@ -72,44 +125,73 @@ function tampilkanReview(soal, jawaban){
 
   });
 
+  // Simpan data untuk export PDF
+  window.currentReviewData = {
+    soal: soal,
+    jawaban: jawaban,
+    examData: examData
+  };
 }
 
 
 function exportReviewPDF(){
 
-  const soalList = document.querySelectorAll(".question-review");
-
-  if(soalList.length === 0){
-    alert("Data soal tidak ditemukan");
+  const data = window.currentReviewData;
+  
+  if(!data || !data.soal){
+    alert("Data review tidak tersedia");
     return;
   }
 
+  const { soal, jawaban, examData } = data;
+
   let html = `
-    <h2 style="text-align:center">REVIEW HASIL UJIAN</h2>
-    <hr>
+    <div style="font-family:Arial,sans-serif;padding:20px;">
+      <h2 style="text-align:center;color:#1e293b;">REVIEW HASIL UJIAN</h2>
+      <div style="text-align:center;margin-bottom:20px;color:#64748b;">
+        ${examData.mapel || 'Ujian'} • ${examData.paket || ''}<br>
+        ${examData.submittedAt ? new Date(examData.submittedAt).toLocaleString("id-ID") : ''}
+      </div>
+      <hr style="margin-bottom:20px;">
   `;
 
-  soalList.forEach((item, i)=>{
-
-    const soal   = item.querySelector(".soal-text")?.innerText || "-";
-    const user   = item.querySelector(".jawaban-user")?.innerText || "-";
-    const benar  = item.querySelector(".jawaban-benar")?.innerText || "-";
-    const status = item.querySelector(".status")?.innerText || "-";
+  soal.forEach((s, i)=>{
+    const userAnswerIndex = jawaban[i];
+    const correctIndex = s.a;
+    
+    const userAnswerText = userAnswerIndex !== null && userAnswerIndex !== undefined
+      ? s.o[userAnswerIndex]
+      : "Tidak dijawab";
+    const correctAnswerText = s.o[correctIndex];
+    
+    const isCorrect = userAnswerIndex === correctIndex;
+    const statusColor = isCorrect ? '#16a34a' : '#dc2626';
+    const statusText = isCorrect ? 'Benar' : 'Salah';
 
     html += `
-      <div style="margin-bottom:18px;">
-        <b>${i+1}. ${soal}</b><br>
-        Jawaban Anda : ${user}<br>
-        Kunci Jawaban : ${benar}<br>
-        Status : <b>${status}</b>
+      <div style="margin-bottom:20px;padding:15px;border:1px solid #e2e8f0;border-radius:8px;">
+        <div style="font-weight:bold;margin-bottom:10px;color:#1e293b;">
+          ${i+1}. ${s.q}
+        </div>
+        <div style="margin-left:15px;line-height:1.8;color:#475569;">
+          <div>Jawaban Anda: <b style="color:${isCorrect ? '#16a34a' : '#dc2626'}">${userAnswerText}</b></div>
+          <div>Kunci Jawaban: <b style="color:#16a34a">${correctAnswerText}</b></div>
+          <div>Status: <b style="color:${statusColor}">${statusText}</b></div>
+        </div>
       </div>
     `;
   });
 
-  html2pdf().from(html).set({
-    margin: 10,
-    filename: "review-hasil.pdf",
-    html2canvas: { scale: 2 },
-    jsPDF: { orientation: "portrait", unit: "mm", format: "a4" }
-  }).save();
+  html += `</div>`;
+
+  if (typeof html2pdf !== 'undefined') {
+    html2pdf().from(html).set({
+      margin: 10,
+      filename: `review-${examData.mapel || 'ujian'}-${Date.now()}.pdf`,
+      html2canvas: { scale: 2 },
+      jsPDF: { orientation: "portrait", unit: "mm", format: "a4" }
+    }).save();
+  } else {
+    alert("Library PDF belum tersedia");
+  }
 }
