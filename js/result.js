@@ -32,14 +32,8 @@ db.ref(`exams/${user.id}`)
     alert("Belum ada hasil ujian.");
     window.location.href = "dashboard.html";
     return;
-     
   }
-/* ================= TAMPILKAN INFO EXAM ================= */
-const mapelEl = document.getElementById("examMapel");
-const paketEl = document.getElementById("examPaket");
 
-if(mapelEl) mapelEl.innerText = (examData.mapel || "-").toUpperCase();
-if(paketEl) paketEl.innerText = examData.paket || "-";
   const examKey = Object.keys(snapshot.val())[0];
   const examData = snapshot.val()[examKey];
 
