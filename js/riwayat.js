@@ -51,29 +51,28 @@ db.ref(`exams/${user.id}`)
     const div = document.createElement("div");
     div.className = "history-card";
     div.innerHTML = `
-      <div class="history-main">
-        <div class="history-header">
-          <div class="history-title">
-            ${exam.mapel || "Ujian"} • ${exam.paket || ""}
-          </div>
-          <div class="badge-status ${badgeClass}">
-            ${badgeText}
-          </div>
+      <div class="history-header">
+        <div class="history-title">
+          ${exam.mapel || "Ujian"} • ${exam.paket || ""}
         </div>
-
-        <div class="history-score ${scoreClass}">
-          ${nilai}
-        </div>
-
-        <div class="history-meta">
-          Benar: ${exam.score}/${exam.total || 0} • ${tanggal}
+        <div class="badge-status ${badgeClass}">
+          ${badgeText}
         </div>
       </div>
 
-      <a href="review.html?exam=${exam.key}" class="btn-review">
-        <i data-lucide="eye"></i>
-        <span>Review</span>
-      </a>
+      <div class="history-score ${scoreClass}">
+        ${nilai}
+      </div>
+
+      <div class="history-footer">
+        <div class="history-meta">
+          Benar: ${exam.score}/${exam.total || 0} • ${tanggal}
+        </div>
+        <a href="review.html?exam=${exam.key}" class="btn-review">
+          <i data-lucide="eye"></i>
+          <span>Review</span>
+        </a>
+      </div>
     `;
     
     container.appendChild(div);
