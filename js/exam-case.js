@@ -116,19 +116,40 @@ document.getElementById("essayInput").addEventListener("input", updateCounter);
 
 /* ================= BUTTON CONTROL ================= */
 function updateButtons() {
-  const saveBtn = document.getElementById("saveBtn");
+  const saveNextBtn = document.getElementById("saveNextBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  if (saveBtn) saveBtn.disabled = currentStep >= 3; // step 4 disable save
-  if (finishBtn) finishBtn.disabled = currentStep !== 3; // step 4 enable finish
+  // Step 1-3: tampilkan "Simpan & Lanjut"
+  if (saveNextBtn) {
+    if (currentStep < 3) {
+      saveNextBtn.style.display = "inline-block";
+      saveNextBtn.innerText = "💾 Simpan & Lanjut";
+      saveNextBtn.disabled = false;
+    } else {
+      saveNextBtn.style.display = "none";
+    }
+  }
+
+  // Step 4: tampilkan "Selesai"
+  if (finishBtn) {
+    if (currentStep === 3) {
+      finishBtn.style.display = "inline-block";
+      finishBtn.innerText = "✅ Selesai";
+      finishBtn.disabled = false;
+    } else {
+      finishBtn.style.display = "none";
+    }
+  }
 }
 
-/* ================= SAVE STEP ================= */
-function saveStep() {
+/* ================= SAVE & NEXT ================= */
+function saveAndNext() {
+  // Simpan jawaban current step
   const text = document.getElementById("essayInput").value.trim();
   answers[currentStep] = text;
-
   localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
+
+  // Lanjut ke step berikutnya
   currentStep++;
   localStorage.setItem(getKey("caseStep"), currentStep);
 
@@ -139,20 +160,23 @@ function saveStep() {
 function finishCase() {
   if (timerInterval) clearInterval(timerInterval);
 
-  // simpan jawaban terakhir
+  // simpan jawaban terakhir (step 4)
   const text = document.getElementById("essayInput").value.trim();
   answers[currentStep] = text;
   localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
 
+  // hitung statistik
   const totalWords = answers.reduce((acc, txt) => acc + (txt ? txt.split(/\s+/).length : 0), 0);
   const totalChars = answers.reduce((acc, txt) => acc + (txt ? txt.length : 0), 0);
 
   localStorage.setItem(getKey("caseTotalWords"), totalWords);
   localStorage.setItem(getKey("caseTotalChars"), totalChars);
 
+  // cleanup progress tracking
   localStorage.removeItem(getKey("caseStep"));
   localStorage.removeItem(getKey("caseEndTime"));
 
+  // redirect ke halaman hasil
   window.location.href = "result.html";
 }
 
