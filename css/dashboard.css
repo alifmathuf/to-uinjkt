@@ -151,3 +151,155 @@
   background:var(--gradient-primary);
   border-color:transparent;
 }
+/* ===============================
+   COMPACT USER INFO
+================================ */
+
+.user-info.compact{
+  gap:12px;
+}
+
+.user-info.compact .user-text{
+  text-align:right;
+  line-height:1.4;
+}
+
+.user-info.compact #greeting{
+  font-size:12px;
+  color:var(--text-muted);
+  font-weight:400;
+  letter-spacing:0.3px;
+}
+
+.user-info.compact #userInfo{
+  font-size:15px;
+  color:var(--text-primary);
+  font-weight:700;
+  letter-spacing:0.3px;
+}
+
+/* ===============================
+   GUIDE PANEL ELEGAN
+================================ */
+
+.guide-panel{
+  display:flex;
+  gap:16px;
+  padding:20px 24px;
+  margin-bottom:24px;
+  background:linear-gradient(
+    135deg,
+    rgba(29,78,216,0.08) 0%,
+    rgba(37,99,235,0.04) 100%
+  );
+  border:1px solid rgba(59,130,246,0.15);
+  border-radius:var(--radius);
+  backdrop-filter:blur(10px);
+}
+
+.guide-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  background:var(--gradient-primary);
+  border-radius:12px;
+  color:white;
+  flex-shrink:0;
+}
+
+.guide-icon i{
+  width:20px;
+  height:20px;
+}
+
+.guide-content{
+  flex:1;
+}
+
+.guide-title{
+  font-size:14px;
+  font-weight:600;
+  color:var(--primary-light);
+  margin-bottom:12px;
+  letter-spacing:0.3px;
+}
+
+.guide-steps{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 24px;
+  list-style:none;
+  padding:0;
+  margin:0 0 12px 0;
+}
+
+.guide-steps li{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+  color:var(--text-secondary);
+}
+
+.step-num{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:20px;
+  height:20px;
+  background:var(--bg-card);
+  border:1px solid var(--border-soft);
+  border-radius:6px;
+  font-size:11px;
+  font-weight:600;
+  color:var(--primary);
+}
+
+.guide-tip{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding-top:12px;
+  border-top:1px solid rgba(59,130,246,0.1);
+  font-size:12px;
+  color:var(--text-muted);
+}
+
+.guide-tip i{
+  width:14px;
+  height:14px;
+  color:var(--text-secondary);
+}
+
+.guide-tip strong{
+  color:var(--text-primary);
+  font-weight:600;
+  background:var(--bg-card);
+  padding:2px 6px;
+  border-radius:4px;
+  border:1px solid var(--border-soft);
+}
+
+/* ===============================
+   RESPONSIVE GUIDE
+================================ */
+
+@media (max-width:640px){
+  .guide-panel{
+    flex-direction:column;
+    gap:12px;
+    padding:16px;
+  }
+  
+  .guide-icon{
+    width:36px;
+    height:36px;
+  }
+  
+  .guide-steps{
+    flex-direction:column;
+    gap:6px;
+  }
+}
