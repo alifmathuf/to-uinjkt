@@ -1,552 +1,431 @@
- [
-    {
-      "q": "Pembelajaran tentang Pengertian Al-Quran, Wahyu, Ilham, dan Ta'lim.\n\nGuru merumuskan tujuan pembelajaran ranah sikap untuk meningkatkan keimanan, ketakwaan, dan akhlak mulia peserta didik.\n\nRumusan tujuan pembelajaran ranah sikap yang paling sesuai adalah …",
-      "o": [
-        "Peserta didik dapat menjelaskan perbedaan wahyu dan ilham secara teksual.",
-        "Peserta didik memiliki sikap kritis terhadap berbagai sumber ajaran.",
-        "Peserta didik menunjukkan sikap taat dan khidmat dalam mempelajari Al-Quran sebagai firman Allah.",
-        "Peserta didik mampu menganalisis sejarah turunnya wahyu.",
-        "Peserta didik dapat membandingkan konsep wahyu dalam berbagai agama."
-      ],
-      "a": 2
-    },
-    {
-      "q": "Dalam pembelajaran Ulum al-Hadis, guru merumuskan tujuan ranah pengetahuan untuk mengembangkan kemampuan bernalar kritis.\n\nRumusan tujuan pembelajaran yang paling tepat adalah …",
-      "o": [
-        "Peserta didik hafal definisi hadis dan kategori-kategorinya.",
-        "Peserta didik dapat menganalisis kualitas sanad dan matan hadis secara kritis.",
-        "Peserta didik menerima semua hadis tanpa verifikasi.",
-        "Peserta didik menghafal nama-nama periwayat hadis.",
-        "Peserta didik dapat menyebutkan jumlah hadis dalam kitab Shahih Bukhari."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pembelajaran tentang sejarah pertumbuhan dan penghimpunan hadis menggunakan pendekatan yang mengembangkan nilai kebinekaan global dan bergotong royong.\n\nRumusan tujuan pembelajaran ranah keterampilan yang paling sesuai adalah …",
-      "o": [
-        "Peserta didik dapat mengerjakan soal tentang periwayat hadis secara individual.",
-        "Peserta didik mampu berkolaborasi dalam tim untuk menganalisis proses kodifikasi hadis dan menghargai kontribusi ulama dari berbagai daerah.",
-        "Peserta didik dapat menghafal nama-nama imam hadis secara mandiri.",
-        " "Peserta didik mampu bersaing dalam kelompok untuk menemukan hadis terbanyak.",
-        "Peserta didik dapat bekerja sendiri dalam menyusun silsilah periwayat."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus: Guru akan mengajarkan metode tafsir tematik kepada peserta didik yang berasal dari berbagai latar belakang budaya.\n\nRumusan indikator tujuan pembelajaran ranah sikap yang paling sesuai adalah …",
-      "o": [
-        "Peserta didik menolak semua interpretasi yang berbeda dengan pemahaman kelompoknya.",
-        "Peserta didik menghargai dan menerima keragaman tradisi penafsiran dalam Islam dengan sikap terbuka.",
-        "Peserta didik menganggap tradisi sendiri sebagai yang paling benar.",
-        "Peserta didik mengkritik tradisi penafsiran dari daerah lain.",
-        "Peserta didik mengabaikan perbedaan tradisi dalam penafsiran."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pembelajaran konsep tawassuth dalam Al-Quran dan hadis bertujuan mengembangkan kemampuan berpikir dinamis dan inovatif.\n\nRumusan indikator tujuan pembelajaran ranah pengetahuan yang paling sesuai adalah …",
-      "o": [
-        "Peserta didik menghafal definisi tawassuth secara harfiah.",
-        "Peserta didik dapat menganalisis konsep tawassuth dan mengaplikasikannya secara inovatif dalam konteks kehidupan modern yang dinamis.",
-        "Peserta didik menyalin konsep tawassuth dari buku teks.",
-        "Peserta didik menghafal ayat-ayat tentang tawassuth tanpa pemahaman.",
-        "Peserta didik mengikuti penjelasan guru tanpa bertanya."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi: Seorang guru merencanakan pembelajaran materi nuzul Al-Quran menggunakan pendekatan Problem Based Learning (PBL) dengan mempertimbangkan karakteristik peserta didik.\n\nAnalisis materi ajar berdasarkan struktur keilmuan yang paling tepat adalah …",
-      "o": [
-        "Guru hanya menyampaikan urutan turunnya ayat secara kronologis tanpa konteks.",
-        "Guru menganalisis sebab-sebab turunnya wahyu (asbab al-nuzul), konteks historis, dan kaitannya dengan situasi peserta didik dalam merencanakan tujuan pembelajaran.",
-        "Guru meminta peserta didik menghafal nama-nama surat tanpa pemahaman konteks.",
-        "Guru mengabaikan struktur keilmuan dan langsung ke aktivitas praktik.",
-        "Guru menyampaikan materi tanpa mempertimbangkan karakteristik peserta didik."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi aktivitas: Guru melaksanakan pembelajaran tentang hadis dha'if menggunakan pendekatan Project Based Learning (PjBL).\n\nAnalisis materi ajar kriteria hadis dha'if berdasarkan struktur keilmuan yang paling sesuai adalah …",
-      "o": [
-        "Guru menjelaskan bahwa hadis dha'if tidak boleh digunakan sama sekali dalam semua konteks.",
-        "Guru menganalisis kriteria-kriteria hadis dha'if (kelemahan sanad/matannya) dan konteks penggunaannya dalam pelaksanaan pembelajaran yang sesuai karakteristik peserta didik.",
-        "Guru meminta peserta didik menghafal definisi hadis dha'if tanpa pemahaman kriteria.",
-        "Guru mengabaikan perbedaan tingkat kelemahan hadis dha'if.",
-        "Guru tidak menjelaskan metodologi kritik hadis."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus evaluasi: Guru melakukan evaluasi pembelajaran materi keotentikan hadis dengan pendekatan Discovery Based Learning (DBL).\n\nUraian materi ajar macam-macam hadis dalam evaluasi tujuan pembelajaran yang paling sesuai dengan karakteristik peserta didik adalah …",
-      "o": [
-        "Peserta didik diuji kemampuan menghafal klasifikasi hadis secara teoritis.",
-        "Peserta didik menguraikan kriteria keotentikan hadis shahih, hasan, dan dha'if serta mengaplikasikannya dalam menilai hadis secara praktis sesuai tingkat kemampuan.",
-        "Peserta didik hanya menyebutkan nama-nama jenis hadis tanpa pemahaman.",
-        "Evaluasi dilakukan tanpa mempertimbangkan karakteristik peserta didik.",
-        "Peserta didik dinilai dari kemampuan menyalin definisi dari buku."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pernyataan praktik pedagogi: Perencanaan materi kajian tafsir Al-Quran secara logis dengan pendekatan TPACK.\n\nPenentuan alur materi ajar metode tafsir tematik yang paling sesuai dengan karakteristik peserta didik adalah …",
-      "o": [
-        "Alur yang acak tanpa keterkaitan antara tema-tema yang dibahas.",
-        "Alur yang logis: pengenalan konsep tematik → identifikasi ayat-ayat terkait tema → analisis hubungan antar ayat → aplikasi dalam kehidupan, dengan integrasi teknologi yang sesuai.",
-        "Alur yang hanya fokus pada hafalan ayat tanpa pemahaman tematik.",
-        "Alur yang mengabaikan karakteristik dan kebutuhan peserta didik.",
-        "Alur yang hanya berpusat pada ceramah guru tanpa interaksi teknologi."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Praktik pedagogi: Pelaksanaan materi ajar konsep tawassuth secara logis dengan pendekatan Deep Learning (DL).\n\nPenentuan alur materi ajar tentang konsep tawassuth yang paling sesuai dalam pelaksanaan tujuan pembelajaran adalah …",
-      "o": [
-        "Alur: definisi → contoh → aplikasi mendalam dalam berbagai konteks kehidupan yang mendorong pemahaman komprehensif dan kritis.",
-        "Alur yang hanya menyampaikan definisi secara dangkal.",
-        "Alur yang tidak terstruktur dan membingungkan peserta didik.",
-        "Alur yang mengabaikan kedalaman pemahaman konsep.",
-        "Alur yang hanya fokus pada hafalan tanpa aplikasi."
-      ],
-      "a": 0
-    },
-    {
-      "q": "Pernyataan praktik pedagogi: Pelaksanaan materi ajar hermeneutik secara logis dengan model pelayanan konseling.\n\nPenentuan alur materi ajar Hermeneutik dalam Kajian Al-Quran untuk mengevaluasi tujuan pembelajaran yang paling sesuai adalah …",
-      "o": [
-        "Alur yang rigid dan tidak memperhatikan kebutuhan individual peserta didik.",
-        "Alur yang logis dengan pendekatan konseling: identifikasi pemahaman awal → eksplorasi metode hermeneutik → aplikasi interpretasi → refleksi personal sesuai karakteristik peserta didik.",
-        "Alur yang hanya fokus pada aspek teknis tanpa pemahaman makna.",
-        "Alur yang mengabaikan evaluasi pembelajaran.",
-        "Alur yang tidak melibatkan partisipasi aktif peserta didik."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pernyataan praktik pedagogi tentang pelaksanaan program penguatan profil pelajar Pancasila (P5) secara logis.\n\nPengembangan materi ajar nilai-nilai P5 dalam merencanakan tujuan pembelajaran yang paling sesuai dengan karakteristik peserta didik adalah …",
-      "o": [
-        "Materi yang terpisah dari konteks Qur'an dan Hadis.",
-        "Pengembangan materi yang mengintegrasikan nilai-nilai P5 (beriman, bertakwa, berakhlak mulia, mandiri, bergotong royong, kreatif) dengan kajian Qur'an dan Hadis secara terstruktur.",
-        "Materi yang hanya fokus pada aspek kognitif tanpa pengembangan karakter.",
-        "Pengembangan materi tanpa mempertimbangkan karakteristik peserta didik.",
-        "Materi yang tidak terintegrasi dengan profil pelajar Pancasila."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pernyataan praktik pedagogi tentang pelaksanaan program Penguatan Profil Pelajar Rahmatan lil Alamin (PPRA) secara logis.\n\nPengembangan materi ajar nilai-nilai PPRA dalam melaksanakan tujuan pembelajaran yang paling sesuai dengan karakteristik peserta didik adalah …",
-      "o": [
-        "Materi yang eksklusif dan tidak menghargai keberagaman.",
-        "Pengembangan materi yang menekankan nilai rahmatan lil alamin (kasih sayang, toleransi, perdamaian) melalui kajian ayat-ayat dan hadis relevant dengan pendekatan yang sesuai karakteristik peserta didik.",
-        "Materi yang hanya fokus pada aspek ritual keagamaan.",
-        "Pengembangan materi tanpa mempertimbangkan konteks sosial peserta didik.",
-        "Materi yang tidak mengaitkan dengan konsep rahmatan lil alamin."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Praktik di masyarakat tentang implementasi nilai-nilai moderasi beragama secara logis.\n\nPengembangan materi ajar nilai-nilai Islam sebagai agama moderat atau wasathiyah yang tepat sesuai dengan implementasi moderasi beragama dalam mengevaluasi tujuan pembelajaran adalah …",
-      "o": [
-        "Materi yang mengajarkan sikap ekstrem dan tidak toleran.",
-        "Pengembangan materi yang menganalisis konsep wasathiyyah (pertengahan) dalam Al-Quran dan hadis serta aplikasinya dalam kehidupan bermasyarakat yang plural.",
-        "Materi yang mengabaikan konteks keberagaman masyarakat.",
-        "Pengembangan materi tanpa dasar keilmuan yang kuat.",
-        "Materi yang hanya bersifat teoritis tanpa aplikasi praktis."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Praktik pedagogi tentang alasan implementasi nilai-nilai moderasi beragama.\n\nPenilaian pengembangan materi ajar Islam sebagai agama moderat atau wasathiyah dengan alasan yang paling tepat adalah …",
-      "o": [
-        "Islam moderat berarti mengikuti perkembangan zaman tanpa prinsip.",
-        "Penilaian komprehensif: materi yang mengembangkan pemahaman wasathiyyah berdasarkan dalil, konteks historis, dan relevansinya dengan kehidupan bermasyarakat yang harmonis.",
-        "Materi yang mengajarkan toleransi tanpa batasan prinsip syariah.",
-        "Penilaian yang hanya berfokus pada aspek hukum formal.",
-        "Materi yang mengabaikan kekhasan Islam sebagai agama rahmatan lil alamin."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi penerapan pembelajaran dengan materi Konsep Ayat dan Surat Makkiyah dan Madaniyah sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran berbasis masalah (PBL) yang paling sesuai dengan materi pembelajaran adalah …",
-      "o": [
-        "Rancangan yang hanya menyampaikan perbedaan teoritis tanpa masalah kontekstual.",
-        "Rancangan PBL yang mempresentasikan masalah autentik tentang penerapan nilai-nilai Makkiyah/Madaniyah dalam kehidupan modern, menganalisis ayat-surat, dan merancang solusi.",
-        "Rancangan yang tidak melibatkan peserta didik dalam penyelesaian masalah.",
-        "Rancangan yang hanya fokus pada hafalan klasifikasi surat.",
-        "Rancangan tanpa integrasi struktur keilmuan materi."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pernyataan penerapan pembelajaran dengan materi Perbedaan Al-Quran, Hadis Nabawi, dan Hadis Qudsi sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran berbasis masalah yang paling sesuai dengan pengetahuan pedagogik adalah …",
-      "o": [
-        "Rancangan yang menggunakan ceramah satu arah tanpa interaksi.",
-        "Rancangan PBL yang memfasilitasi peserta didik menganalisis perbedaan ketiga sumber ajaran melalui penyelesaian masalah autentik dengan scaffolding yang sesuai tahap perkembangan kognitif.",
-        "Rancangan yang memberikan masalah tanpa panduan dari guru.",
-        "Rancangan yang hanya fokus pada aspek hafalan perbedaan.",
-        "Rancangan tanpa mempertimbangkan pengetahuan pedagogik."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi kasus penerapan pembelajaran dengan materi Metode Takhrij Hadis sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran berbasis masalah yang paling sesuai dengan pengetahuan teknologi adalah …",
-      "o": [
-        "Rancangan yang hanya menggunakan buku teks tanpa teknologi.",
-        "Rancangan yang mengintegrasikan penggunaan aplikasi/software takhrij hadis digital, database hadis online, dan platform kolaboratif untuk menganalisis sanad dan matan hadis.",
-        "Rancangan yang menggunakan teknologi tanpa kaitan dengan materi takhrij.",
-        "Rancangan yang mengabaikan aspek teknologi dalam pembelajaran.",
-        "Rancangan yang hanya fokus pada teori tanpa praktik teknologi."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi kasus penerapan pembelajaran dengan materi Metode Tafsir Kontekstual sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling sesuai dengan materi pembelajaran adalah …",
-      "o": [
-        "Rancangan yang sama untuk semua peserta didik tanpa diferensiasi.",
-        "Rancangan yang membedakan tugas berdasarkan gaya belajar, minat, dan kemampuan: analisis teks bagi yang linguistic, visualisasi konsep bagi yang visual, dan aplikasi praktis bagi yang kinestetik dalam memahami tafsir kontekstual.",
-        "Rancangan yang hanya fokus pada kelompok berkemampuan tinggi.",
-        "Rancangan tanpa mempertimbangkan perbedaan individual.",
-        "Rancangan yang mengabaikan materi tafsir kontekstual."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pernyataan kasus penerapan pembelajaran dengan materi ajar Konsep Tasamuh dalam Al-Quran dan Hadis sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling sesuai dengan pengetahuan pedagogi adalah …",
-      "o": [
-        "Rancangan yang menggunakan strategi yang sama untuk semua peserta didik.",
-        "Rancangan yang menerapkan diferensiasi proses: kelompok diskusi untuk yang ekstrover, refleksi individual untuk yang introver, dengan pendekatan pedagogi yang memperhatikan kecerdasan majemuk peserta didik.",
-        "Rancangan yang tidak memiliki strategi pedagogi yang jelas.",
-        "Rancangan yang hanya fokus pada pencapaian akademik tanpa memperhatikan sosial-emosional.",
-        "Rancangan tanpa mempertimbangkan konsep tasamuh."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Pernyataan penerapan pembelajaran dengan materi Konsep Tawazun dalam Al-Quran dan Hadis sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling sesuai dengan pengetahuan teknologi adalah …",
-      "o": [
-        "Rancangan yang tidak menggunakan teknologi sama sekali.",
-        "Rancangan yang memanfaatkan teknologi adaptif: platform pembelajaran dengan jalur yang berbeda, aplikasi simulasi keseimbangan hidup, dan assessment digital yang menyesuaikan tingkat kesulitan.",
-        "Rancangan yang menggunakan teknologi tanpa diferensiasi.",
-        "Rancangan yang hanya fokus pada teknologi tanpa konten tawazun.",
-        "Rancangan tanpa mempertimbangkan akses teknologi peserta didik."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi kasus penerapan pembelajaran dengan materi Pendekatan Semantik dalam Kajian Al-Quran sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran mendalam (Deep Learning) yang paling sesuai dengan materi pembelajaran untuk mengembangkan critical thinking adalah …",
-      "o": [
-        "Rancangan yang hanya menyampaikan definisi istilah-istilah semantik.",
-        "Rancangan yang mendorong peserta didik menganalisis makna kata-kata kunci dalam Al-Quran secara mendalam, mengeksplorasi nuansa linguistik, dan mengkritisi interpretasi dengan argumentasi yang kuat.",
-        "Rancangan yang menghindari diskusi kritis tentang makna ayat.",
-        "Rancangan yang hanya fokus pada hafalan kosakata.",
-        "Rancangan tanpa pengembangan kemampuan berpikir kritis."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi kasus penerapan pembelajaran dengan materi Wawasan Kebangsaan dalam Perspektif Al-Quran dan Hadis sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran mendalam yang paling sesuai dengan pengetahuan pedagogi untuk mengembangkan creativity adalah …",
-      "o": [
-        "Rancangan yang menggunakan metode ceramah dan hafalan.",
-        "Rancangan yang memfasilitasi peserta didik menciptakan proyek kreatif (video, karya tulis, kampanye) yang mengintegrasikan nilai-nilai kebangsaan dari perspektif Qur'ani dengan pendekatan pedagogi yang inovatif.",
-        "Rancangan yang membatasi kreativitas peserta didik.",
-        "Rancangan tanpa kaitan antara wawasan kebangsaan dan Al-Quran.",
-        "Rancangan yang hanya fokus pada aspek teori tanpa kreasi."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penerapan pembelajaran dengan materi Pengertian Pendidikan Karakter sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan pembelajaran mendalam yang paling sesuai dengan pengetahuan teknologi untuk mengembangkan collaboration atau communication adalah …",
-      "o": [
-        "Rancangan yang tidak menggunakan teknologi dalam kolaborasi.",
-        "Rancangan yang memanfaatkan platform kolaboratif online, tools komunikasi digital, dan media sosial edukatif untuk memfasilitasi kerja sama tim dalam menganalisis dan menyebarkan nilai-nilai karakter.",
-        "Rancangan yang menggunakan teknologi hanya untuk presentasi guru.",
-        "Rancangan tanpa aktivitas kolaboratif antar peserta didik.",
-        "Rancangan yang mengabaikan aspek komunikasi dan kerja sama."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penerapan pembelajaran dengan materi Kajian Historis Moderasi Beragama di Indonesia sesuai dengan struktur keilmuan.\n\nRancangan pembelajaran berpendekatan TPACK yang paling sesuai dengan materi pembelajaran untuk mengembangkan kemampuan adaptif adalah …",
-      "o": [
-        "Rancangan yang memisahkan penggunaan teknologi dari materi dan pedagogi.",
-        "Rancangan yang mengintegrasikan Content (sejarah moderasi), Pedagogy (inkuiri historis), dan Technology (arsip digital, VR tempat bersejarah) secara sinergis untuk pembelajaran yang adaptif terhadap perkembangan zaman.",
-        "Rancangan yang hanya fokus pada satu aspek TPACK.",
-        "Rancangan tanpa mempertimbangkan konteks historis Indonesia.",
-        "Rancangan yang tidak mengembangkan kemampuan adaptif peserta didik."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Qashash dalam Al-Quran yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan strategi pembelajaran berpendekatan PBL yang paling tepat untuk menciptakan suasana belajar yang aman dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Strategi yang menghindari pembahasan kisah-kisah tersebut.",
-        "Strategi PBL yang menghadirkan masalah kontekstual: bagaimana relevansi kisah Nabi dengan tantangan modern, mendorong analisis kritis nilai-nilai timeless, dan merancang aplikasi dalam kehidupan dengan suasana yang kondusif.",
-        "Strategi yang mengajarkan kisah secara literal tanpa kontekstualisasi.",
-        "Strategi yang membuat peserta didik merasa takut berpendapat.",
-        "Strategi tanpa fokus pada pengembangan karakter."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Pemahaman tentang Struktur Hadis yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan strategi pembelajaran berpendekatan PjBL yang paling tepat untuk menciptakan suasana belajar yang nyaman dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Strategi yang memaksa menghafal struktur hadis dengan cara tradisional.",
-        "Strategi PjBL yang mengajak peserta didik membuat proyek digital (podcast, video edukasi) tentang struktur hadis dengan bahasa dan format yang relevan dengan generasi sekarang, menciptakan suasana belajar yang menyenangkan.",
-        "Strategi yang mengabaikan struktur keilmuan hadis.",
-        "Strategi yang membuat peserta didik merasa tertekan.",
-        "Strategi tanpa inovasi dalam penyampaian materi."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Metode Takhrij Hadis yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan strategi pembelajaran berpendekatan DBL yang paling tepat untuk menciptakan suasana belajar yang membahagiakan dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Strategi yang menggunakan metode drill dan hafalan.",
-        "Strategi DBL yang memfasilitasi peserta didik menemukan metode takhrij melalui eksplorasi database hadis digital, investigasi sanad secara interaktif, dan menemukan kebenaran dengan proses yang menyenangkan.",
-        "Strategi yang membosankan dan monoton.",
-        "Strategi yang tidak melibatkan aktivitas discovery.",
-        "Strategi yang menekan kreativitas peserta didik."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Metode Tafsir Kontemporer yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan model pembelajaran berpendekatan DL yang paling tepat untuk menciptakan suasana belajar yang akomodatif dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Model yang hanya menyampaikan teori-teori tafsir klasik.",
-        "Model DL yang mengakomodasi berbagai perspektif: analisis mendalam metode kontemporer, koneksi dengan isu-isu aktual (gender, lingkungan, HAM), dan fleksibilitas dalam interpretasi yang sesuai prinsip.",
-        "Model yang tertutup terhadap pendekatan baru.",
-        "Model yang tidak akomodatif terhadap pertanyaan kritis.",
-        "Model yang menghambat pengembangan karakter terbuka."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Konsep Tawassuth dalam Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan model pembelajaran berpendekatan TPACK yang paling tepat untuk menciptakan suasana belajar yang adaptif dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Model yang menggunakan metode ceramah konvensional.",
-        "Model TPACK yang mengintegrasikan konten tawassuth, pedagogi inkuiri, dan teknologi (simulasi, gamifikasi) untuk pembelajaran yang adaptif terhadap perubahan sosial dan perkembangan teknologi.",
-        "Model yang kaku dan tidak adaptif.",
-        "Model tanpa integrasi teknologi yang bermakna.",
-        "Model yang tidak menghasilkan lulusan berdaya saing."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Konsep Tawazun dalam Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan model pembelajaran berbasis pelayanan bimbingan konseling yang paling tepat untuk menciptakan suasana belajar yang progresif dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Model yang mengabaikan aspek bimbingan individual.",
-        "Model yang mengintegrasikan layanan konseling untuk membantu peserta didik menemukan keseimbangan (tawazun) dalam kehidupan modern: bimbingan karir, kesehatan mental, dan spiritual dengan pendekatan yang progresif.",
-        "Model yang statis dan tidak progresif.",
-        "Model tanpa layanan bimbingan yang terintegrasi.",
-        "Model yang tidak mengembangkan karakter tawazun."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Pendekatan Semantik dalam Kajian Al-Quran yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan pendekatan pembelajaran berbasis pelayanan ABK yang paling tepat untuk menciptakan lingkungan belajar yang akomodatif dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Pendekatan yang sama untuk semua peserta didik tanpa modifikasi.",
-        "Pendekatan yang mengakomodasi Anak Berkebutuhan Khusus: modifikasi materi semantik untuk tuna netra (braille), tuna rungu (visualisasi), dan tuna daksa (teknologi assistif) dengan lingkungan yang inklusif.",
-        "Pendekatan yang eksklusif dan tidak inklusif.",
-        "Pendekatan tanpa layanan khusus untuk ABK.",
-        "Pendekatan yang menghambat partisipasi ABK."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Wawasan Kebangsaan dalam Perspektif Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan pendekatan pembelajaran yang relevan yang paling tepat untuk menciptakan lingkungan belajar yang adaptif dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Pendekatan yang menggunakan contoh-contoh usang.",
-        "Pendekatan yang menghubungkan wawasan kebangsaan dengan isu-isu aktual: radikalisme, hoaks, persatuan dalam keberagaman, menggunakan kasus-kasus terkini yang relevan dengan kehidupan peserta didik.",
-        "Pendekatan yang tidak adaptif terhadap perkembangan sosial.",
-        "Pendekatan yang membuat materi terasa jauh dari realitas.",
-        "Pendekatan yang tidak mengembangkan daya saing."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Pendidikan Karakter dalam Perspektif Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan pendekatan pembelajaran yang relevan yang paling tepat untuk menciptakan lingkungan belajar yang progresif dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Pendekatan yang menggunakan cerita moral yang tidak relatable.",
-        "Pendekatan yang mengintegrasikan pendidikan karakter dengan tantangan generasi Z dan Alpha: digital citizenship, etika online, keseimbangan virtual-real, dengan metode yang progresif dan kontekstual.",
-        "Pendekatan yang ketinggalan zaman dan tidak progresif.",
-        "Pendekatan yang tidak menghubungkan karakter dengan realitas digital.",
-        "Pendekatan yang tidak mengembangkan karakter unggul."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Kasus penyajian materi Moderasi Beragama dalam Konteks Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman.\n\nPenggunaan pendekatan pembelajaran yang relevan yang paling tepat untuk menciptakan lingkungan belajar yang membahagiakan dan menghasilkan lulusan berkarakter unggul adalah …",
-      "o": [
-        "Pendekatan yang menggunakan contoh konflik yang membuat peserta didik cemas.",
-        "Pendekatan yang menghadirkan studi kasus moderasi beragama yang sukses, dialog antarumat beragama yang konstruktif, dan merancang proyek kerukunan yang membahagiakan dan bermakna.",
-        "Pendekatan yang membuat suasana belajar tegang dan tidak menyenangkan.",
-        "Pendekatan yang tidak memberikan solusi konstruktif.",
-        "Pendekatan yang menghambat pembentukan karakter rahmatan lil alamin."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Qashash Dalam Al-Quran dengan pendekatan PBL.\n\nPenentuan teknik asesmen yang paling tepat sesuai karakter peserta didik pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Tes tulis pilihan ganda sebagai satu-satunya instrumen.",
-        "Teknik asesmen komprehensif: observasi sikap (rubric), penilaian proyek PBL (portfolio), dan tes keterampilan analisis kisah sesuai karakteristik peserta didik.",
-        "Asesmen yang hanya mengukur aspek kognitif.",
-        "Teknik asesmen yang tidak sesuai dengan pendekatan PBL.",
-        "Penilaian tanpa mempertimbangkan perkembangan sikap."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Pemahaman tentang Struktur Hadis dengan pendekatan PjBL.\n\nPenentuan instrumen asesmen yang paling tepat sesuai karakter peserta didik pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Ujian harian dengan soal objektif.",
-        "Instrumen asesmen autentik: rubrik penilaian proyek, checklist sikap kolaborasi, dan lembar penilaian keterampilan presentasi struktur hadis yang sesuai karakteristik peserta didik.",
-        "Instrumen yang hanya fokus pada hasil akhir tanpa proses.",
-        "Asesmen tanpa variasi instrumen sesuai aspek yang dinilai.",
-        "Penilaian yang tidak sesuai dengan karakteristik individu."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Al-Jarh wa Ta'dil Hadis dengan pendekatan DL.\n\nPenentuan teknik asesmen yang paling tepat sesuai lingkungan belajar pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Tes standar nasional yang sama untuk semua sekolah.",
-        "Teknik asesmen yang disesuaikan lingkungan: observasi partisipasi dalam diskusi mendalam, penilaian refleksi diri, dan proyek analisis kritis yang mempertimbangkan konteks lingkungan belajar.",
-        "Teknik asesmen yang tidak memperhatikan konteks lokal.",
-        "Asesmen yang hanya berbasis tes tertulis.",
-        "Penilaian yang mengabaikan karakteristik lingkungan."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Studi Makkiyah dan Madaniyah dalam Penafsiran Al-Quran.\n\nPenentuan instrumen asesmen yang paling tepat sesuai lingkungan belajar pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Instrumen generik yang digunakan di semua konteks.",
-        "Instrumen yang disesuaikan: penilaian portofolio reflektif untuk lingkungan yang reflektif, atau presentasi komunitas untuk lingkungan yang kolaboratif, mempertimbangkan fasilitas dan budaya sekolah.",
-        "Instrumen yang tidak relevan dengan lingkungan belajar.",
-        "Asesmen yang memaksakan format tertentu tanpa pertimbangan konteks.",
-        "Penilaian yang tidak mengakomodasi keberagaman lingkungan."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Konsep Tawassuth dalam Al-Quran dan Hadis.\n\nPenentuan teknik asesmen yang paling tepat sesuai tujuan pembelajaran pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Teknik asesmen yang tidak terkait dengan tujuan pembelajaran.",
-        "Teknik asesmen aligned: jika tujuan sikap → observasi perilaku moderat; jika pengetahuan → tes analisis konsep; jika keterampilan → penilaian kinerja aplikasi tawassuth.",
-        "Teknik asesmen yang tidak sesuai dengan domain tujuan.",
-        "Asesmen yang hanya menggunakan satu teknik untuk semua tujuan.",
-        "Penilaian yang tidak mengukur pencapaian tujuan spesifik."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Konsep Tawazun dalam Al-Quran dan Hadis.\n\nPenentuan instrumen asesmen yang paling tepat sesuai tujuan pembelajaran pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Instrumen yang tidak valid untuk tujuan yang diukur.",
-        "Instrumen yang selaras: rubrik sikap keseimbangan hidup, tes pemahaman konsep, atau checklist keterampilan manajemen waktu sesuai tujuan yang ditetapkan.",
-        "Instrumen yang tidak reliable dalam pengukuran.",
-        "Asesmen yang tidak membedakan domain sikap, pengetahuan, dan keterampilan.",
-        "Penilaian yang tidak berbasis kriteria tujuan."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Pendekatan Semantik dalam Kajian Al-Quran.\n\nPenentuan teknik asesmen yang paling tepat dengan mempertimbangkan hasil asesmen sebelumnya pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Teknik asesmen yang sama untuk semua peserta didik tanpa memperhatikan hasil sebelumnya.",
-        "Teknik asesmen formatif berkelanjutan: pre-test untuk mengetahui pemahaman awal, feedback berkala, dan penyesuaian teknik berdasarkan perkembangan hasil asesmen sebelumnya.",
-        "Teknik asesmen sumatif tanpa feedback.",
-        "Asesmen yang tidak memperhatikan baseline kemampuan peserta didik.",
-        "Penilaian yang tidak menggunakan data sebelumnya untuk perbaikan."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Wawasan Kebangsaan dalam Perspektif Al-Quran dan Hadis.\n\nPenentuan instrumen asesmen yang paling tepat dengan mempertimbangkan hasil asesmen sebelumnya pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Instrumen yang tidak mengakomodasi perkembangan dari waktu ke waktu.",
-        "Instrumen yang menggambarkan progress: growth portfolio, grafik perkembangan sikap nasionalisme, dan penyesuaian level kesulitan berdasarkan hasil asesmen diagnostik dan formatif sebelumnya.",
-        "Instrumen yang statis dan tidak adaptif.",
-        "Asesmen yang tidak menunjukkan perkembangan peserta didik.",
-        "Penilaian yang tidak memperhatikan hasil belajar sebelumnya."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Pengembangan Nilai-Nilai Karakter dalam Pendidikan.\n\nPenentuan teknik asesmen yang paling tepat dengan mempertimbangkan hasil asesmen awal pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Teknik asesmen yang sama untuk semua tingkat kemampuan.",
-        "Teknik asesmen yang diferensiasi berdasarkan hasil asesmen awal: scaffolding untuk yang memerlukan, enrichment untuk yang advanced, dengan teknik yang sesuai kebutuhan individual.",
-        "Teknik asesmen yang tidak memperhatikan perbedaan kemampuan awal.",
-        "Asesmen yang tidak menggunakan data diagnostik.",
-        "Penilaian yang tidak adaptif terhadap hasil awal."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Deskripsi pembelajaran materi Nilai-nilai Moderasi Beragama dalam Al-Quran dan Hadis.\n\nPenentuan instrumen asesmen yang paling tepat dengan mempertimbangkan hasil asesmen awal pada aspek sikap, pengetahuan, atau keterampilan adalah …",
-      "o": [
-        "Instrumen yang tidak membedakan tingkat kemampuan awal peserta didik.",
-        "Instrumen yang disesuaikan: untuk pemula fokus pada pemahaman dasar, untuk lanjutan fokus pada analisis dan aplikasi, berdasarkan hasil asesmen awal yang komprehensif.",
-        "Instrumen yang terlalu sulit atau terlalu mudah tanpa pertimbangan awal.",
-        "Asesmen yang tidak memperhatikan readiness peserta didik.",
-        "Penilaian yang tidak menggunakan data awal untuk penyesuaian."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi praktik pembelajaran seorang guru dengan materi Studi Makkiyah dan Madaniyah dalam Penafsiran Al-Quran dengan menekankan pada aspek konten, pedagogi, dan teknologi yang berpotensi menimbulkan masalah pembelajaran.\n\nIdentifikasi praktik baik/best practice dalam merencanakan pembelajaran yang berkualitas secara berkelanjutan adalah …",
-      "o": [
-        "Praktik yang mengabaikan masalah dalam pembelajaran.",
-        "Praktik reflektif: mengidentifikasi kelemahan konten (kedalaman materi), pedagogi (strategi tidak sesuai), dan teknologi (tidak berfungsi), kemudian merencanakan perbaikan berkelanjutan.",
-        "Praktik yang tidak melakukan refleksi komprehensif.",
-        "Praktik yang hanya fokus pada satu aspek tanpa integrasi.",
-        "Praktik yang tidak berkelanjutan dalam perbaikan."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi praktik pembelajaran seorang guru dengan materi Metode Takhrij Hadis dengan menekankan pada aspek konten, pedagogi, dan teknologi yang berpotensi menimbulkan masalah pembelajaran.\n\nIdentifikasi praktik baik/best practice dalam pelaksanaan pembelajaran yang berkualitas secara berkelanjutan adalah …",
-      "o": [
-        "Praktik yang melanjutkan pembelajaran meski terjadi masalah.",
-        "Praktik refleksi dalam aksi: monitoring keterlaksanaan konten (pemahaman metode), pedagogi (efektivitas strategi), dan teknologi (penggunaan database), dengan penyesuaian real-time dan evaluasi pasca pembelajaran.",
-        "Praktik yang tidak responsif terhadap masalah yang muncul.",
-        "Praktik tanpa evaluasi pelaksanaan secara komprehensif.",
-        "Praktik yang tidak mengintegrasikan TPACK dalam refleksi."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi contoh praktik pembelajaran seorang guru dengan materi Hermeneutik dalam Kajian Al-Quran dengan menekankan pada aspek konten, pedagogi, dan teknologi yang berpotensi menimbulkan masalah pembelajaran.\n\nIdentifikasi praktik baik/best practice dalam evaluasi pembelajaran yang berkualitas secara berkelanjutan adalah …",
-      "o": [
-        "Praktik yang tidak mengevaluasi hasil pembelajaran secara menyeluruh.",
-        "Praktik evaluasi komprehensif: menilai penguasaan konten hermeneutik, efektivitas pedagogi dalam memfasilitasi pemahaman, dan manfaat teknologi, dengan refleksi untuk perbaikan siklus berikutnya.",
-        "Praktik evaluasi yang superficial dan tidak mendalam.",
-        "Praktik yang tidak melibatkan peserta didik dalam evaluasi.",
-        "Praktik tanpa rencana tindak lanjut dari hasil evaluasi."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi kemampuan guru dalam penguasaan materi Qur'an hadis di era digital dan AI.\n\nPenilaian kemampuan guru sebagai modal pengembangan diri guru secara berkelanjutan yang paling tepat adalah …",
-      "o": [
-        "Penilaian yang mengabaikan perkembangan teknologi.",
-        "Penilaian komprehensif: penguasaan konten keilmuan Qur'an hadis, literasi digital dalam mengakses sumber keislaman, dan kemampuan menggunakan AI untuk pembelajaran yang bermakna sebagai dasar pengembangan diri.",
-        "Penilaian yang hanya fokus pada aspek tradisional tanpa teknologi.",
-        "Penilaian yang tidak melihat potensi pengembangan diri.",
-        "Penilaian yang tidak relevan dengan tuntutan era digital."
-      ],
-      "a": 1
-    },
-    {
-      "q": "Narasi kemampuan guru dalam penggunaan AI untuk pembelajaran Qur'an hadis yang bermakna.\n\nIdentifikasi masalah dan solusinya secara ilmiah untuk menunjukkan jati diri sebagai guru profesional sesuai dengan karakteristik dan Gaya Belajar Peserta Didik Gen Z dan Alpha yang paling tepat adalah …",
-      "o": [
-        "Mengabaikan karakteristik generasi Z dan Alpha dalam pembelajaran.",
-        "Identifikasi masalah: peserta didik Gen Z/Alpha memerlukan pembelajaran interaktif dan visual. Solusi: menggunakan AI untuk personalisasi pembelajaran, chatbot tanya jawab fiqih, dan analisis data untuk adaptasi gaya belajar, menunjukkan profesionalisme guru.",
-        "Menggunakan AI tanpa mempertimbangkan kebutuhan generasi.",
-        "Tidak mengidentifikasi masalah secara ilmiah.",
-        "Solusi yang tidak menunjukkan jati diri guru profesional."
-      ],
-      "a": 1
-    }
-  ]
+[
+  {
+    "q": "Pembelajaran tentang Pengertian Al-Quran, Wahyu, Ilham, dan Ta'lim. Guru merumuskan tujuan pembelajaran ranah sikap untuk meningkatkan keimanan, ketakwaan, dan akhlak mulia peserta didik. Rumusan tujuan pembelajaran ranah sikap yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat menjelaskan perbedaan wahyu dan ilham secara tekstual.",
+      "Peserta didik memiliki sikap kritis terhadap berbagai sumber ajaran.",
+      "Peserta didik menunjukkan sikap taat dan khidmat dalam mempelajari Al-Quran sebagai firman Allah.",
+      "Peserta didik mampu menganalisis sejarah turunnya wahyu.",
+      "Peserta didik dapat membandingkan konsep wahyu dalam berbagai agama."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam pembelajaran Ulum al-Hadis, guru merumuskan tujuan ranah pengetahuan untuk mengembangkan kemampuan bernalar kritis. Rumusan tujuan pembelajaran yang paling tepat adalah …",
+    "o": [
+      "Peserta didik hafal definisi hadis dan kategori-kategorinya.",
+      "Peserta didik dapat menganalisis kualitas sanad dan matan hadis secara kritis.",
+      "Peserta didik menerima semua hadis tanpa verifikasi.",
+      "Peserta didik menghafal nama-nama periwayat hadis.",
+      "Peserta didik dapat menyebutkan jumlah hadis dalam kitab Shahih Bukhari."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pembelajaran tentang sejarah pertumbuhan dan penghimpunan hadis menggunakan pendekatan yang mengembangkan nilai kebinekaan global dan bergotong royong. Rumusan tujuan pembelajaran ranah keterampilan yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik dapat mengerjakan soal tentang periwayat hadis secara individual.",
+      "Peserta didik mampu berkolaborasi dalam tim untuk menganalisis proses kodifikasi hadis dan menghargai kontribusi ulama dari berbagai daerah.",
+      "Peserta didik dapat menghafal nama-nama imam hadis secara mandiri.",
+      "Peserta didik mampu bersaing dalam kelompok untuk menemukan hadis terbanyak.",
+      "Peserta didik dapat bekerja sendiri dalam menyusun silsilah periwayat."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus: Guru akan mengajarkan metode tafsir tematik kepada peserta didik yang berasal dari berbagai latar belakang budaya. Rumusan indikator tujuan pembelajaran ranah sikap yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik menolak semua interpretasi yang berbeda dengan pemahaman kelompoknya.",
+      "Peserta didik menghargai dan menerima keragaman tradisi penafsiran dalam Islam dengan sikap terbuka.",
+      "Peserta didik menganggap tradisi sendiri sebagai yang paling benar.",
+      "Peserta didik mengkritik tradisi penafsiran dari daerah lain.",
+      "Peserta didik mengabaikan perbedaan tradisi dalam penafsiran."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pembelajaran konsep tawassuth dalam Al-Quran dan hadis bertujuan mengembangkan kemampuan berpikir dinamis dan inovatif. Rumusan indikator tujuan pembelajaran ranah pengetahuan yang paling sesuai adalah …",
+    "o": [
+      "Peserta didik menghafal definisi tawassuth secara harfiah.",
+      "Peserta didik dapat menganalisis konsep tawassuth dan mengaplikasikannya secara inovatif dalam konteks kehidupan modern yang dinamis.",
+      "Peserta didik menyalin konsep tawassuth dari buku teks.",
+      "Peserta didik menghafal ayat-ayat tentang tawassuth tanpa pemahaman.",
+      "Peserta didik mengikuti penjelasan guru tanpa bertanya."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Narasi: Seorang guru merencanakan pembelajaran materi nuzul Al-Quran menggunakan pendekatan Problem Based Learning (PBL) dengan mempertimbangkan karakteristik peserta didik. Analisis materi ajar berdasarkan struktur keilmuan yang paling tepat adalah …",
+    "o": [
+      "Guru hanya menyampaikan urutan turunnya ayat secara kronologis tanpa konteks.",
+      "Guru menganalisis sebab-sebab turunnya wahyu (asbab al-nuzul), konteks historis, dan kaitannya dengan situasi peserta didik dalam merencanakan tujuan pembelajaran.",
+      "Guru meminta peserta didik menghafal nama-nama surat tanpa pemahaman konteks.",
+      "Guru mengabaikan struktur keilmuan dan langsung ke aktivitas praktik.",
+      "Guru menyampaikan materi tanpa mempertimbangkan karakteristik peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi aktivitas: Guru melaksanakan pembelajaran tentang hadis dha'if menggunakan pendekatan Project Based Learning (PjBL). Analisis materi ajar kriteria hadis dha'if berdasarkan struktur keilmuan yang paling sesuai adalah …",
+    "o": [
+      "Guru menjelaskan bahwa hadis dha'if tidak boleh digunakan sama sekali dalam semua konteks.",
+      "Guru menganalisis kriteria-kriteria hadis dha'if (kelemahan sanad/matannya) dan konteks penggunaannya dalam pelaksanaan pembelajaran yang sesuai karakteristik peserta didik.",
+      "Guru meminta peserta didik menghafal definisi hadis dha'if tanpa pemahaman kriteria.",
+      "Guru mengabaikan perbedaan tingkat kelemahan hadis dha'if.",
+      "Guru tidak menjelaskan metodologi kritik hadis."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus evaluasi: Guru melakukan evaluasi pembelajaran materi keotentikan hadis dengan pendekatan Discovery Based Learning (DBL). Uraian materi ajar macam-macam hadis dalam evaluasi tujuan pembelajaran yang paling sesuai dengan karakteristik peserta didik adalah …",
+    "o": [
+      "Peserta didik diuji kemampuan menghafal klasifikasi hadis secara teoritis.",
+      "Peserta didik menguraikan kriteria keotentikan hadis shahih, hasan, dan dha'if serta mengaplikasikannya dalam menilai hadis secara praktis sesuai tingkat kemampuan.",
+      "Peserta didik hanya menyebutkan nama-nama jenis hadis tanpa pemahaman.",
+      "Evaluasi dilakukan tanpa mempertimbangkan karakteristik peserta didik.",
+      "Peserta didik dinilai dari kemampuan menyalin definisi dari buku."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pernyataan praktik pedagogi: Perencanaan materi kajian tafsir Al-Quran secara logis dengan pendekatan TPACK. Penentuan alur materi ajar metode tafsir tematik yang paling sesuai dengan karakteristik peserta didik adalah …",
+    "o": [
+      "Alur yang acak tanpa keterkaitan antara tema-tema yang dibahas.",
+      "Alur yang logis: pengenalan konsep tematik → identifikasi ayat-ayat terkait tema → analisis hubungan antar ayat → aplikasi dalam kehidupan, dengan integrasi teknologi yang sesuai.",
+      "Alur yang hanya fokus pada hafalan ayat tanpa pemahaman tematik.",
+      "Alur yang mengabaikan karakteristik dan kebutuhan peserta didik.",
+      "Alur yang hanya berpusat pada ceramah guru tanpa interaksi teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Praktik pedagogi: Pelaksanaan materi ajar konsep tawassuth secara logis dengan pendekatan Deep Learning (DL). Penentuan alur materi ajar tentang konsep tawassuth yang paling sesuai dalam pelaksanaan tujuan pembelajaran adalah …",
+    "o": [
+      "Alur: definisi → contoh → aplikasi mendalam dalam berbagai konteks kehidupan yang mendorong pemahaman komprehensif dan kritis.",
+      "Alur yang hanya menyampaikan definisi secara dangkal.",
+      "Alur yang tidak terstruktur dan membingungkan peserta didik.",
+      "Alur yang mengabaikan kedalaman pemahaman konsep.",
+      "Alur yang hanya fokus pada hafalan tanpa aplikasi."
+    ],
+    "a": 0
+  },
+  {
+    "q": "Pernyataan praktik pedagogi: Pelaksanaan materi ajar hermeneutik secara logis dengan model pelayanan konseling. Penentuan alur materi ajar Hermeneutik dalam Kajian Al-Quran untuk mengevaluasi tujuan pembelajaran yang paling sesuai adalah …",
+    "o": [
+      "Alur yang rigid dan tidak memperhatikan kebutuhan individual peserta didik.",
+      "Alur yang logis dengan pendekatan konseling: identifikasi pemahaman awal → eksplorasi metode hermeneutik → aplikasi interpretasi → refleksi personal sesuai karakteristik peserta didik.",
+      "Alur yang hanya fokus pada aspek teknis tanpa pemahaman makna.",
+      "Alur yang mengabaikan evaluasi pembelajaran.",
+      "Alur yang tidak melibatkan partisipasi aktif peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pernyataan praktik pedagogi tentang pelaksanaan program penguatan profil pelajar Pancasila (P5) secara logis. Pengembangan materi ajar nilai-nilai P5 dalam merencanakan tujuan pembelajaran yang paling sesuai dengan karakteristik peserta didik adalah …",
+    "o": [
+      "Materi yang terpisah dari konteks Qur'an dan Hadis.",
+      "Pengembangan materi yang mengintegrasikan nilai-nilai P5 (beriman, bertakwa, berakhlak mulia, mandiri, bergotong royong, kreatif) dengan kajian Qur'an dan Hadis secara terstruktur.",
+      "Materi yang hanya fokus pada aspek kognitif tanpa pengembangan karakter.",
+      "Pengembangan materi tanpa mempertimbangkan karakteristik peserta didik.",
+      "Materi yang tidak terintegrasi dengan profil pelajar Pancasila."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pernyataan praktik pedagogi tentang pelaksanaan program Penguatan Profil Pelajar Rahmatan lil Alamin (PPRA) secara logis. Pengembangan materi ajar nilai-nilai PPRA dalam melaksanakan tujuan pembelajaran yang paling sesuai dengan karakteristik peserta didik adalah …",
+    "o": [
+      "Materi yang eksklusif dan tidak menghargai keberagaman.",
+      "Pengembangan materi yang menekankan nilai rahmatan lil alamin (kasih sayang, toleransi, perdamaian) melalui kajian ayat-ayat dan hadis relevan dengan pendekatan yang sesuai karakteristik peserta didik.",
+      "Materi yang hanya fokus pada aspek ritual keagamaan.",
+      "Pengembangan materi tanpa mempertimbangkan konteks sosial peserta didik.",
+      "Materi yang tidak mengaitkan dengan konsep rahmatan lil alamin."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Praktik di masyarakat tentang implementasi nilai-nilai moderasi beragama secara logis. Pengembangan materi ajar nilai-nilai Islam sebagai agama moderat atau wasathiyah yang tepat sesuai dengan implementasi moderasi beragama dalam mengevaluasi tujuan pembelajaran adalah …",
+    "o": [
+      "Materi yang mengajarkan sikap ekstrem dan tidak toleran.",
+      "Pengembangan materi yang menganalisis konsep wasathiyyah (pertengahan) dalam Al-Quran dan hadis serta aplikasinya dalam kehidupan bermasyarakat yang plural.",
+      "Materi yang mengabaikan konteks keberagaman masyarakat.",
+      "Pengembangan materi tanpa dasar keilmuan yang kuat.",
+      "Materi yang hanya bersifat teoritis tanpa aplikasi praktis."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Praktik pedagogi tentang alasan implementasi nilai-nilai moderasi beragama. Penilaian pengembangan materi ajar Islam sebagai agama moderat atau wasathiyah dengan alasan yang paling tepat adalah …",
+    "o": [
+      "Islam moderat berarti mengikuti perkembangan zaman tanpa prinsip.",
+      "Penilaian komprehensif: materi yang mengembangkan pemahaman wasathiyyah berdasarkan dalil, konteks historis, dan relevansinya dengan kehidupan bermasyarakat yang harmonis.",
+      "Materi yang mengajarkan toleransi tanpa batasan prinsip syariah.",
+      "Penilaian yang hanya berfokus pada aspek hukum formal.",
+      "Materi yang mengabaikan kekhasan Islam sebagai agama rahmatan lil alamin."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi penerapan pembelajaran dengan materi Konsep Ayat dan Surat Makkiyah dan Madaniyah sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran berbasis masalah (PBL) yang paling sesuai dengan materi pembelajaran adalah …",
+    "o": [
+      "Rancangan yang hanya menyampaikan perbedaan teoritis tanpa masalah kontekstual.",
+      "Rancangan PBL yang mempresentasikan masalah autentik tentang penerapan nilai-nilai Makkiyah/Madaniyah dalam kehidupan modern, menganalisis ayat-surat, dan merancang solusi.",
+      "Rancangan yang tidak melibatkan peserta didik dalam penyelesaian masalah.",
+      "Rancangan yang hanya fokus pada hafalan klasifikasi surat.",
+      "Rancangan tanpa integrasi struktur keilmuan materi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pernyataan penerapan pembelajaran dengan materi Perbedaan Al-Quran, Hadis Nabawi, dan Hadis Qudsi sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran berbasis masalah yang paling sesuai dengan pengetahuan pedagogik adalah …",
+    "o": [
+      "Rancangan yang menggunakan ceramah satu arah tanpa interaksi.",
+      "Rancangan PBL yang memfasilitasi peserta didik menganalisis perbedaan ketiga sumber ajaran melalui penyelesaian masalah autentik dengan scaffolding yang sesuai tahap perkembangan kognitif.",
+      "Rancangan yang memberikan masalah tanpa panduan dari guru.",
+      "Rancangan yang hanya fokus pada aspek hafalan perbedaan.",
+      "Rancangan tanpa mempertimbangkan pengetahuan pedagogik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi kasus penerapan pembelajaran dengan materi Metode Takhrij Hadis sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran berbasis masalah yang paling sesuai dengan pengetahuan teknologi adalah …",
+    "o": [
+      "Rancangan yang hanya menggunakan buku teks tanpa teknologi.",
+      "Rancangan yang mengintegrasikan penggunaan aplikasi/software takhrij hadis digital, database hadis online, dan platform kolaboratif untuk menganalisis sanad dan matan hadis.",
+      "Rancangan yang menggunakan teknologi tanpa kaitan dengan materi takhrij.",
+      "Rancangan yang mengabaikan aspek teknologi dalam pembelajaran.",
+      "Rancangan yang hanya fokus pada teori tanpa praktik teknologi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi kasus penerapan pembelajaran dengan materi Metode Tafsir Kontekstual sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling sesuai dengan materi pembelajaran adalah …",
+    "o": [
+      "Rancangan yang sama untuk semua peserta didik tanpa diferensiasi.",
+      "Rancangan yang membedakan tugas berdasarkan gaya belajar, minat, dan kemampuan: analisis teks bagi yang linguistic, visualisasi konsep bagi yang visual, dan aplikasi praktis bagi yang kinestetik dalam memahami tafsir kontekstual.",
+      "Rancangan yang hanya fokus pada kelompok berkemampuan tinggi.",
+      "Rancangan tanpa mempertimbangkan perbedaan individual.",
+      "Rancangan yang mengabaikan materi tafsir kontekstual."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pernyataan kasus penerapan pembelajaran dengan materi ajar Konsep Tasamuh dalam Al-Quran dan Hadis sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling sesuai dengan pengetahuan pedagogi adalah …",
+    "o": [
+      "Rancangan yang menggunakan strategi yang sama untuk semua peserta didik.",
+      "Rancangan yang menerapkan diferensiasi proses: kelompok diskusi untuk yang ekstrover, refleksi individual untuk yang introver, dengan pendekatan pedagogi yang memperhatikan kecerdasan majemuk peserta didik.",
+      "Rancangan yang tidak memiliki strategi pedagogi yang jelas.",
+      "Rancangan yang hanya fokus pada pencapaian akademik tanpa memperhatikan sosial-emosional.",
+      "Rancangan tanpa mempertimbangkan konsep tasamuh."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pernyataan penerapan pembelajaran dengan materi Konsep Tawazun dalam Al-Quran dan Hadis sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran berbasis perbedaan individu yang paling sesuai dengan pengetahuan teknologi adalah …",
+    "o": [
+      "Rancangan yang tidak menggunakan teknologi sama sekali.",
+      "Rancangan yang memanfaatkan teknologi adaptif: platform pembelajaran dengan jalur yang berbeda, aplikasi simulasi keseimbangan hidup, dan assessment digital yang menyesuaikan tingkat kesulitan.",
+      "Rancangan yang menggunakan teknologi tanpa diferensiasi.",
+      "Rancangan yang hanya fokus pada teknologi tanpa konten tawazun.",
+      "Rancangan tanpa mempertimbangkan akses teknologi peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Narasi kasus penerapan pembelajaran dengan materi Pendekatan Semantik dalam Kajian Al-Quran sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran mendalam (Deep Learning) yang paling sesuai dengan materi pembelajaran untuk mengembangkan critical thinking adalah …",
+    "o": [
+      "Rancangan yang hanya menyampaikan definisi istilah-istilah semantik.",
+      "Rancangan yang mendorong peserta didik menganalisis makna kata-kata kunci dalam Al-Quran secara mendalam, mengeksplorasi nuansa linguistik, dan mengkritisi interpretasi dengan argumentasi yang kuat.",
+      "Rancangan yang menghindari diskusi kritis tentang makna ayat.",
+      "Rancangan yang hanya fokus pada hafalan kosakata.",
+      "Rancangan tanpa pengembangan kemampuan berpikir kritis."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Narasi kasus penerapan pembelajaran dengan materi Wawasan Kebangsaan dalam Perspektif Al-Quran dan Hadis sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran mendalam yang paling sesuai dengan pengetahuan pedagogi untuk mengembangkan creativity adalah …",
+    "o": [
+      "Rancangan yang menggunakan metode ceramah dan hafalan.",
+      "Rancangan yang memfasilitasi peserta didik menciptakan proyek kreatif (video, karya tulis, kampanye) yang mengintegrasikan nilai-nilai kebangsaan dari perspektif Qur'ani dengan pendekatan pedagogi yang inovatif.",
+      "Rancangan yang membatasi kreativitas peserta didik.",
+      "Rancangan tanpa kaitan antara wawasan kebangsaan dan Al-Quran.",
+      "Rancangan yang hanya fokus pada aspek teori tanpa kreasi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penerapan pembelajaran dengan materi Pengertian Pendidikan Karakter sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan pembelajaran mendalam yang paling sesuai dengan pengetahuan teknologi untuk mengembangkan collaboration atau communication adalah …",
+    "o": [
+      "Rancangan yang tidak menggunakan teknologi dalam kolaborasi.",
+      "Rancangan yang memanfaatkan platform kolaboratif online, tools komunikasi digital, dan media sosial edukatif untuk memfasilitasi kerja sama tim dalam menganalisis dan menyebarkan nilai-nilai karakter.",
+      "Rancangan yang menggunakan teknologi hanya untuk presentasi guru.",
+      "Rancangan tanpa aktivitas kolaboratif antar peserta didik.",
+      "Rancangan yang mengabaikan aspek komunikasi dan kerja sama."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penerapan pembelajaran dengan materi Kajian Historis Moderasi Beragama di Indonesia sesuai dengan struktur keilmuan. Rancangan pembelajaran berpendekatan TPACK yang paling sesuai dengan materi pembelajaran untuk mengembangkan kemampuan adaptif adalah …",
+    "o": [
+      "Rancangan yang memisahkan penggunaan teknologi dari materi dan pedagogi.",
+      "Rancangan yang mengintegrasikan Content (sejarah moderasi), Pedagogy (inkuiri historis), dan Technology (arsip digital, VR tempat bersejarah) secara sinergis untuk pembelajaran yang adaptif terhadap perkembangan zaman.",
+      "Rancangan yang hanya fokus pada satu aspek TPACK.",
+      "Rancangan tanpa mempertimbangkan konteks historis Indonesia.",
+      "Rancangan yang tidak mengembangkan kemampuan adaptif peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Qashash dalam Al-Quran yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan strategi pembelajaran berpendekatan PBL yang paling tepat untuk menciptakan suasana belajar yang aman dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Strategi yang menghindari pembahasan kisah-kisah tersebut.",
+      "Strategi PBL yang menghadirkan masalah kontekstual: bagaimana relevansi kisah Nabi dengan tantangan modern, mendorong analisis kritis nilai-nilai timeless, dan merancang aplikasi dalam kehidupan dengan suasana yang kondusif.",
+      "Strategi yang mengajarkan kisah secara literal tanpa kontekstualisasi.",
+      "Strategi yang membuat peserta didik merasa takut berpendapat.",
+      "Strategi tanpa fokus pada pengembangan karakter."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Pemahaman tentang Struktur Hadis yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan strategi pembelajaran berpendekatan PjBL yang paling tepat untuk menciptakan suasana belajar yang nyaman dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Strategi yang memaksa menghafal struktur hadis dengan cara tradisional.",
+      "Strategi PjBL yang mengajak peserta didik membuat proyek digital (podcast, video edukasi) tentang struktur hadis dengan bahasa dan format yang relevan dengan generasi sekarang, menciptakan suasana belajar yang menyenangkan.",
+      "Strategi yang mengabaikan struktur keilmuan hadis.",
+      "Strategi yang membuat peserta didik merasa tertekan.",
+      "Strategi tanpa inovasi dalam penyampaian materi."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Metode Takhrij Hadis yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan strategi pembelajaran berpendekatan DBL yang paling tepat untuk menciptakan suasana belajar yang membahagiakan dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Strategi yang menggunakan metode drill dan hafalan.",
+      "Strategi DBL yang memfasilitasi peserta didik menemukan metode takhrij melalui eksplorasi database hadis digital, investigasi sanad secara interaktif, dan menemukan kebenaran dengan proses yang menyenangkan.",
+      "Strategi yang membosankan dan monoton.",
+      "Strategi yang tidak melibatkan aktivitas discovery.",
+      "Strategi yang menekan kreativitas peserta didik."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Metode Tafsir Kontemporer yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan model pembelajaran berpendekatan DL yang paling tepat untuk menciptakan suasana belajar yang akomodatif dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Model yang hanya menyampaikan teori-teori tafsir klasik.",
+      "Model DL yang mengakomodasi berbagai perspektif: analisis mendalam metode kontemporer, koneksi dengan isu-isu aktual (gender, lingkungan, HAM), dan fleksibilitas dalam interpretasi yang sesuai prinsip.",
+      "Model yang tertutup terhadap pendekatan baru.",
+      "Model yang tidak akomodatif terhadap pertanyaan kritis.",
+      "Model yang menghambat pengembangan karakter terbuka."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Konsep Tawassuth dalam Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan model pembelajaran berpendekatan TPACK yang paling tepat untuk menciptakan suasana belajar yang adaptif dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Model yang menggunakan metode ceramah konvensional.",
+      "Model TPACK yang mengintegrasikan konten tawassuth, pedagogi inkuiri, dan teknologi (simulasi, gamifikasi) untuk pembelajaran yang adaptif terhadap perubahan sosial dan perkembangan teknologi.",
+      "Model yang kaku dan tidak adaptif.",
+      "Model tanpa integrasi teknologi yang bermakna.",
+      "Model yang tidak menghasilkan lulusan berdaya saing."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Konsep Tawazun dalam Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan model pembelajaran berbasis pelayanan bimbingan konseling yang paling tepat untuk menciptakan suasana belajar yang progresif dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Model yang mengabaikan aspek bimbingan individual.",
+      "Model yang mengintegrasikan layanan konseling untuk membantu peserta didik menemukan keseimbangan (tawazun) dalam kehidupan modern: bimbingan karir, kesehatan mental, dan spiritual dengan pendekatan yang progresif.",
+      "Model yang statis dan tidak progresif.",
+      "Model tanpa layanan bimbingan yang terintegrasi.",
+      "Model yang tidak mengembangkan karakter tawazun."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Pendekatan Semantik dalam Kajian Al-Quran yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan pendekatan pembelajaran berbasis pelayanan ABK yang paling tepat untuk menciptakan lingkungan belajar yang akomodatif dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Pendekatan yang sama untuk semua peserta didik tanpa modifikasi.",
+      "Pendekatan yang mengakomodasi Anak Berkebutuhan Khusus: modifikasi materi semantik untuk tuna netra (braille), tuna rungu (visualisasi), dan tuna daksa (teknologi assistif) dengan lingkungan yang inklusif.",
+      "Pendekatan yang eksklusif dan tidak inklusif.",
+      "Pendekatan tanpa layanan khusus untuk ABK.",
+      "Pendekatan yang menghambat partisipasi ABK."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Wawasan Kebangsaan dalam Perspektif Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan pendekatan pembelajaran yang relevan yang paling tepat untuk menciptakan lingkungan belajar yang adaptif dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Pendekatan yang menggunakan contoh-contoh usang.",
+      "Pendekatan yang menghubungkan wawasan kebangsaan dengan isu-isu aktual: radikalisme, hoaks, persatuan dalam keberagaman, menggunakan kasus-kasus terkini yang relevan dengan kehidupan peserta didik.",
+      "Pendekatan yang tidak adaptif terhadap perkembangan sosial.",
+      "Pendekatan yang membuat materi terasa jauh dari realitas.",
+      "Pendekatan yang tidak mengembangkan daya saing."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Pendidikan Karakter dalam Perspektif Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan pendekatan pembelajaran yang relevan yang paling tepat untuk menciptakan lingkungan belajar yang progresif dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Pendekatan yang menggunakan cerita moral yang tidak relatable.",
+      "Pendekatan yang mengintegrasikan pendidikan karakter dengan tantangan generasi Z dan Alpha: digital citizenship, etika online, keseimbangan virtual-real, dengan metode yang progresif dan kontekstual.",
+      "Pendekatan yang ketinggalan zaman dan tidak progresif.",
+      "Pendekatan yang tidak menghubungkan karakter dengan realitas digital.",
+      "Pendekatan yang tidak mengembangkan karakter unggul."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Kasus penyajian materi Moderasi Beragama dalam Konteks Al-Quran dan Hadis yang materinya kurang sesuai dengan perkembangan zaman. Penggunaan pendekatan pembelajaran yang relevan yang paling tepat untuk menciptakan lingkungan belajar yang membahagiakan dan menghasilkan lulusan berkarakter unggul adalah …",
+    "o": [
+      "Pendekatan yang menggunakan contoh konflik yang membuat peserta didik cemas.",
+      "Pendekatan yang menghadirkan studi kasus moderasi beragama yang sukses, dialog antarumat beragama yang konstruktif, dan merancang proyek kerukunan yang membahagiakan dan bermakna.",
+      "Pendekatan yang membuat suasana belajar tegang dan tidak menyenangkan.",
+      "Pendekatan yang tidak memberikan solusi konstruktif.",
+      "Pendekatan yang menghambat pembentukan karakter rahmatan lil alamin."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi pembelajaran materi Qashash Dalam Al-Quran dengan pendekatan PBL. Penentuan teknik asesmen yang paling tepat sesuai karakter peserta didik pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Tes tulis pilihan ganda sebagai satu-satunya instrumen.",
+      "Teknik asesmen komprehensif: observasi sikap (rubric), penilaian proyek PBL (portfolio), dan tes keterampilan analisis kisah sesuai karakteristik peserta didik.",
+      "Asesmen yang hanya mengukur aspek kognitif.",
+      "Teknik asesmen yang tidak sesuai dengan pendekatan PBL.",
+      "Penilaian tanpa mempertimbangkan perkembangan sikap."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi pembelajaran materi Pemahaman tentang Struktur Hadis dengan pendekatan PjBL. Penentuan instrumen asesmen yang paling tepat sesuai karakter peserta didik pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Ujian harian dengan soal objektif.",
+      "Instrumen asesmen autentik: rubrik penilaian proyek, checklist sikap kolaborasi, dan lembar penilaian keterampilan presentasi struktur hadis yang sesuai karakteristik peserta didik.",
+      "Instrumen yang hanya fokus pada hasil akhir tanpa proses.",
+      "Asesmen tanpa variasi instrumen sesuai aspek yang dinilai.",
+      "Penilaian yang tidak sesuai dengan karakteristik individu."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi pembelajaran materi Al-Jarh wa Ta'dil Hadis dengan pendekatan DL. Penentuan teknik asesmen yang paling tepat sesuai lingkungan belajar pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Tes standar nasional yang sama untuk semua sekolah.",
+      "Teknik asesmen yang disesuaikan lingkungan: observasi partisipasi dalam diskusi mendalam, penilaian refleksi diri, dan proyek analisis kritis yang mempertimbangkan konteks lingkungan belajar.",
+      "Teknik asesmen yang tidak memperhatikan konteks lokal.",
+      "Asesmen yang hanya berbasis tes tertulis.",
+      "Penilaian yang mengabaikan karakteristik lingkungan."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Deskripsi pembelajaran materi Studi Makkiyah dan Madaniyah dalam Penafsiran Al-Quran. Penentuan instrumen asesmen yang paling tepat sesuai lingkungan belajar pada aspek sikap, pengetahuan, atau keterampilan adalah …",
+    "o": [
+      "Instrumen generik yang digunakan di semua konteks.",
+      "Instrumen yang disesuaikan: penilaian portofolio reflektif untuk lingkungan yang reflektif, atau presentasi komunitas untuk lingkungan yang kolaboratif, mempertimbangkan fasilitas dan budaya sekolah.",
+      "Instrumen yang tidak relevan dengan lingkungan belajar.",
+      "Asesmen yang memaksakan format tertentu tanpa pertimbangan konteks.",
+      "Penilaian yang tidak mengakomodasi keberagaman lingkungan."
+    ],
+    "a": 1
+  }
+]
