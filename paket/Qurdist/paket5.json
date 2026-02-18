@@ -427,5 +427,126 @@
       "Penilaian yang tidak mengakomodasi keberagaman lingkungan."
     ],
     "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran materi Konsep Tawazun, guru ingin menggunakan instrumen asesmen yang paling tepat untuk mengukur ranah sikap sosial sesuai dengan tujuan pembelajaran. Instrumen manakah yang paling valid?",
+    "o": [
+      "Tes objektif pilihan ganda tentang dalil-dalil tawazun.",
+      "Lembar observasi penilaian diri (self-assessment) mengenai keseimbangan waktu belajar dan beribadah.",
+      "Ujian lisan mengenai definisi tawazun menurut para ulama.",
+      "Tugas membuat peta konsep tentang unsur-unsur keseimbangan dalam Islam.",
+      "Menyalin ayat-ayat bertema tawazun ke dalam buku tugas."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru akan mengevaluasi hasil belajar materi 'Sejarah Kodifikasi Hadis' dengan memperhatikan perbedaan individu. Instrumen yang paling sesuai untuk mengakomodasi siswa dengan gaya belajar visual adalah …",
+    "o": [
+      "Tes hafalan nama-nama periwayat secara lisan.",
+      "Tugas menyusun garis waktu (timeline) sejarah hadis dalam bentuk infografis.",
+      "Diskusi panel mengenai tantangan kodifikasi di zaman dinasti Umayyah.",
+      "Mendengarkan rekaman audio ceramah tentang sejarah hadis.",
+      "Menulis esai panjang tanpa ilustrasi mengenai biografi Imam Bukhari."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Guru Al-Qur'an Hadis ingin menilai keterampilan siswa dalam melakukan Takhrij Hadis menggunakan aplikasi digital. Kriteria penilaian (rubrik) yang paling tepat untuk aspek keterampilan adalah …",
+    "o": [
+      "Ketepatan menyebutkan definisi takhrij secara teoretis.",
+      "Kecepatan dalam menghafal sanad hadis yang dicari.",
+      "Kecakapan menggunakan kata kunci (keyphrase) pada aplikasi dan ketepatan menemukan sumber kitab asli.",
+      "Jumlah hadis yang berhasil disalin dari aplikasi ke buku tulis.",
+      "Kerapihan tulisan tangan saat merangkum hasil takhrij."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Dalam merancang evaluasi materi 'Keadilan Gender dalam Perspektif Al-Qur'an', guru ingin mengedepankan berpikir kritis. Manakah bentuk soal yang paling mendukung Deep Learning?",
+    "o": [
+      "Sebutkan ayat yang membahas tentang waris.",
+      "Pilihlah arti kata 'an-Nisa' dari opsi berikut.",
+      "Analisis perbandingan penafsiran klasik dan kontemporer mengenai peran publik perempuan dan dampaknya di era modern.",
+      "Siapakah tokoh mufasir yang menulis kitab tafsir al-Misbah?",
+      "Urutkan surat-surat dalam juz 30 yang membahas tentang keluarga."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru melaksanakan program Penguatan Profil Pelajar Rahmatan lil Alamin (PPRA) melalui materi Tasamuh. Instrumen asesmen yang tepat untuk mengukur ketercapaian nilai 'Syura' (Musyawarah) adalah …",
+    "o": [
+      "Tes tulis mengenai pengertian syura dalam Al-Qur'an.",
+      "Penilaian antar teman (peer assessment) dalam aktivitas diskusi kelompok penyelesaian konflik.",
+      "Hafalan surat Asy-Syura ayat 38.",
+      "Membuat poster berisi slogan tentang pentingnya bermusyawarah.",
+      "Mengerjakan LKS tentang sejarah musyawarah di zaman sahabat."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru ingin menerapkan asesmen diagnostik non-kognitif sebelum memulai materi 'Hermeneutika Al-Qur'an'. Hal utama yang ingin dipetakan adalah …",
+    "o": [
+      "Nilai rapor siswa pada semester sebelumnya.",
+      "Kesiapan sarana teknologi yang dimiliki siswa dan minat belajar terhadap kajian teks.",
+      "Jumlah hafalan ayat Al-Qur'an siswa.",
+      "Kemampuan siswa dalam menulis kaligrafi.",
+      "Daftar kehadiran siswa di perpustakaan sekolah."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Pada materi 'Etika Komunikasi di Media Sosial' (Kajian Hadis), guru menggunakan teknik penilaian portofolio. Dokumen manakah yang paling tepat dimasukkan dalam portofolio tersebut?",
+    "o": [
+      "Kumpulan nilai ulangan harian bab hadis.",
+      "Log aktivitas siswa dalam menyaring berita (tabayyun) dan komentar positif di platform digital selama satu bulan.",
+      "Foto siswa saat sedang membaca kitab hadis di kelas.",
+      "Daftar kosakata sulit yang ditemukan dalam teks hadis.",
+      "Buku catatan harian yang berisi jadwal shalat lima waktu."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Evaluasi materi 'Wawasan Kebangsaan' bertujuan mengukur sikap patriotisme siswa. Manakah indikator soal yang paling mencerminkan moderasi beragama?",
+    "o": [
+      "Siswa dapat menyebutkan jumlah provinsi di Indonesia.",
+      "Siswa dapat menjelaskan makna Hubbul Wathan Minal Iman dan memberikan contoh perilaku menjaga persatuan di tengah perbedaan agama.",
+      "Siswa dapat menghafal teks Pancasila dengan lancar.",
+      "Siswa dapat mewarnai gambar bendera Merah Putih.",
+      "Siswa dapat menyanyi lagu kebangsaan Indonesia Raya."
+    ],
+    "a": 1
+  },
+  {
+    "q": "Dalam pembelajaran berpendekatan TPACK pada materi 'Makkiyah-Madaniyah', guru memberikan kuis interaktif melalui platform Gamifikasi (seperti Quizizz). Tujuan penggunaan teknologi ini dalam evaluasi adalah …",
+    "o": [
+      "Hanya untuk hiburan agar siswa tidak mengantuk.",
+      "Mengurangi beban guru dalam mengoreksi secara manual.",
+      "Meningkatkan keterlibatan (engagement) siswa dan memberikan umpan balik (feedback) instan terhadap pemahaman klasifikasi ayat.",
+      "Menggantikan seluruh proses pembelajaran tatap muka.",
+      "Memastikan siswa mahir bermain game di sekolah."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Guru menemukan hasil evaluasi materi 'Kriteria Hadis Shahih' menunjukkan sebagian besar siswa gagal membedakan antara 'Dhabith' dan 'Adil'. Tindakan reflektif yang paling tepat adalah …",
+    "o": [
+      "Menyalahkan siswa karena kurang belajar di rumah.",
+      "Melakukan remedial dengan memberikan soal yang sama persis.",
+      "Memperbaiki strategi pembelajaran dengan menggunakan analogi dunia nyata dan metode komparasi visual pada pertemuan berikutnya.",
+      "Melanjutkan materi ke 'Hadis Hasan' agar kurikulum selesai tepat waktu.",
+      "Memberikan tambahan tugas merangkum isi buku paket."
+    ],
+    "a": 2
+  },
+  {
+    "q": "Asesmen sumatif materi 'Metode Tafsir Maudu'i' menunjukkan lulusan memiliki karakter kreatif. Produk evaluasi manakah yang paling menunjukkan kreativitas tersebut?",
+    "o": [
+      "Lembar jawaban pilihan ganda yang benar semua.",
+      "Makalah yang disalin dari internet tanpa perubahan.",
+      "Video kampanye sosial berbasis tafsir tematik yang diproduksi secara berkelompok dengan pendekatan kekinian.",
+      "Buku saku berisi kumpulan doa-doa dari Al-Qur'an.",
+      "Kertas ulangan yang berisi jawaban definisi dari buku teks."
+    ],
+    "a": 2
   }
 ]
