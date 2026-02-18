@@ -38,6 +38,17 @@ let timerInterval;
 initCase();
 
 function initCase() {
+  // Cek apakah ini session baru atau lanjutan
+  const savedStep = localStorage.getItem(getKey("caseStep"));
+  
+  // Jika tidak ada savedStep, ini session baru -> bersihkan jawaban lama
+  if (!savedStep) {
+    answers = [];
+    localStorage.removeItem(getKey("caseAnswers"));
+    currentStep = 0;
+    localStorage.setItem(getKey("caseStep"), 0);
+  }
+
   if (!selectedTopic) {
     selectedTopic = topics[Math.floor(Math.random() * topics.length)];
     localStorage.setItem(getKey("caseTopic"), selectedTopic);
@@ -78,6 +89,7 @@ function startCaseTimer() {
 /* ================= RENDER STEP ================= */
 function renderStep() {
   if (currentStep >= steps.length) {
+    finish steps.length) {
     finishCase();
     return;
   }
@@ -88,6 +100,7 @@ function renderStep() {
     steps[currentStep];
 
   const textarea = document.getElementById("essayInput");
+  // Tampilkan jawaban yang sudah tersimpan untuk step ini (jika ada)
   textarea.value = answers[currentStep] || "";
 
   updateProgress();
@@ -119,41 +132,52 @@ function updateButtons() {
   const saveNextBtn = document.getElementById("saveNextBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  // KEDUA TOMBOL TETAP TAMPIL, YANG BERUBAH HANYA DISABLED/ENABLED
+  console.log("Current step:", currentStep); // Debug
   
+  // PERBAIKAN: Step 4 adalah index 3, jadi < 3 artinya step 1-3 (index 0-2)
   if (currentStep < 3) {
-    // Step 1-3: Simpan & Lanjut aktif, Selesai disabled
+    // Step 1-3 (index 0, 1, 2): Simpan & Lanjut aktif, Selesai disabled
+    console.log("Mode: Step 1-3, Simpan aktif, Selesai disabled");
+    
     if (saveNextBtn) {
       saveNextBtn.disabled = false;
       saveNextBtn.style.opacity = "1";
       saveNextBtn.style.cursor = "pointer";
       saveNextBtn.style.pointerEvents = "auto";
+      saveNextBtn.onclick = saveAndNext; // Pastikan fungsi terpasang
     }
     if (finishBtn) {
       finishBtn.disabled = true;
       finishBtn.style.opacity = "0.4";
       finishBtn.style.cursor = "not-allowed";
-      finishBtn.style.pointerEvents = "none"; // Mencegah klik
+      finishBtn.style.pointerEvents = "none";
+      finishBtn.onclick = null; // Hapus onclick
     }
   } else {
-    // Step 4: Simpan & Lanjut disabled, Selesai aktif
+    // Step 4 (index 3): Simpan & Lanjut disabled, Selesai aktif
+    console.log("Mode: Step 4, Simpan disabled, Selesai aktif");
+    
     if (saveNextBtn) {
       saveNextBtn.disabled = true;
       saveNextBtn.style.opacity = "0.4";
       saveNextBtn.style.cursor = "not-allowed";
       saveNextBtn.style.pointerEvents = "none";
+      saveNextBtn.onclick = null; // Hapus onclick
     }
     if (finishBtn) {
       finishBtn.disabled = false;
       finishBtn.style.opacity = "1";
       finishBtn.style.cursor = "pointer";
       finishBtn.style.pointerEvents = "auto";
+      finishBtn.onclick = finishCase; // Pasang onclick
     }
   }
 }
 
 /* ================= SAVE & NEXT ================= */
 function saveAndNext() {
+  console.log("saveAndNext() dipanggil");
+  
   // Simpan jawaban current step
   const text = document.getElementById("essayInput").value.trim();
   answers[currentStep] = text;
@@ -168,6 +192,8 @@ function saveAndNext() {
 
 /* ================= FINISH ================= */
 function finishCase() {
+  console.log("finishCase() dipanggil");
+  
   if (timerInterval) clearInterval(timerInterval);
 
   // simpan jawaban terakhir (step 4)
