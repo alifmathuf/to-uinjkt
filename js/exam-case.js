@@ -116,36 +116,38 @@ document.getElementById("essayInput").addEventListener("input", updateCounter);
 
 /* ================= BUTTON CONTROL ================= */
 function updateButtons() {
-  // SESUAI HTML ANDA: saveNextBtn dan finishBtn
   const saveNextBtn = document.getElementById("saveNextBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  // Step 1-3: Simpan & Lanjut aktif, Selesai disabled
-  // Step 4: Simpan & Lanjut disabled, Selesai aktif
+  // KEDUA TOMBOL TETAP TAMPIL, YANG BERUBAH HANYA DISABLED/ENABLED
   
   if (currentStep < 3) {
-    // Step 1, 2, 3
+    // Step 1-3: Simpan & Lanjut aktif, Selesai disabled
     if (saveNextBtn) {
       saveNextBtn.disabled = false;
       saveNextBtn.style.opacity = "1";
       saveNextBtn.style.cursor = "pointer";
+      saveNextBtn.style.pointerEvents = "auto";
     }
     if (finishBtn) {
       finishBtn.disabled = true;
-      finishBtn.style.opacity = "0.5";
+      finishBtn.style.opacity = "0.4";
       finishBtn.style.cursor = "not-allowed";
+      finishBtn.style.pointerEvents = "none"; // Mencegah klik
     }
   } else {
-    // Step 4
+    // Step 4: Simpan & Lanjut disabled, Selesai aktif
     if (saveNextBtn) {
       saveNextBtn.disabled = true;
-      saveNextBtn.style.opacity = "0.5";
+      saveNextBtn.style.opacity = "0.4";
       saveNextBtn.style.cursor = "not-allowed";
+      saveNextBtn.style.pointerEvents = "none";
     }
     if (finishBtn) {
       finishBtn.disabled = false;
       finishBtn.style.opacity = "1";
       finishBtn.style.cursor = "pointer";
+      finishBtn.style.pointerEvents = "auto";
     }
   }
 }
