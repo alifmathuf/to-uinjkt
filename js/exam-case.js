@@ -50,7 +50,7 @@ function initCase() {
   renderStep();
 }
 
-/* ================= TIMER ================= */
+/* ================= TIMER - TETAP NORMAL ================= */
 function startCaseTimer() {
   const saved = localStorage.getItem(getKey("caseEndTime"));
 
@@ -99,7 +99,7 @@ function renderStep() {
 function updateProgress() {
   const total = steps.length;
   const percent = ((currentStep + 1) / total) * 100;
-  const progressText = document const progressText = document.getElementById("progressText");
+  const progressText = document.getElementById("progressText");
   const progressFill = document.getElementById("progressFill");
 
   if (progressText) progressText.innerText = `${currentStep + 1} / ${total}`;
@@ -114,50 +114,41 @@ function updateCounter() {
 }
 document.getElementById("essayInput").addEventListener("input", updateCounter);
 
-/* ================= BUTTON CONTROL - HANYA INI YANG DIUBAH ================= */
+/* ================= BUTTON CONTROL ================= */
 function updateButtons() {
   const saveNextBtn = document.getElementById("saveNextBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  // Step 0,1,2 (tampilan 1,2,3): Simpan aktif, Selesai disabled
-  // Step 3 (tampilan 4): Simpan disabled, Selesai aktif
-  
   if (currentStep < 3) {
-    // Simpan & Lanjut: AKTIF
+    // Step 1-3
     saveNextBtn.disabled = false;
     saveNextBtn.style.opacity = "1";
     saveNextBtn.style.cursor = "pointer";
-    
-    // Selesai: DISABLED
     finishBtn.disabled = true;
     finishBtn.style.opacity = "0.4";
     finishBtn.style.cursor = "not-allowed";
   } else {
-    // Step 4: Simpan disabled, Selesai aktif
+    // Step 4
     saveNextBtn.disabled = true;
     saveNextBtn.style.opacity = "0.4";
     saveNextBtn.style.cursor = "not-allowed";
-    
     finishBtn.disabled = false;
     finishBtn.style.opacity = "1";
     finishBtn.style.cursor = "pointer";
   }
 }
 
-/* ================= SAVE & NEXT ================= */
+/* ================= SAVE & NEXT - POLA DARI KODE JALAN ================= */
 function saveAndNext() {
-  // Cek jika sedang di step 4, jangan lanjut
+  // CEK STEP TERAKHIR - DARI KODE YANG JALAN
   if (currentStep >= 3) {
-    console.log("Sudah di step terakhir, gunakan tombol Selesai");
-    return;
+    return; // Stop, tidak lanjut
   }
-
-  // Simpan jawaban current step
+  
   const text = document.getElementById("essayInput").value.trim();
   answers[currentStep] = text;
   localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
 
-  // Lanjut ke step berikutnya
   currentStep++;
   localStorage.setItem(getKey("caseStep"), currentStep);
 
@@ -168,23 +159,19 @@ function saveAndNext() {
 function finishCase() {
   if (timerInterval) clearInterval(timerInterval);
 
-  // simpan jawaban terakhir (step 4)
   const text = document.getElementById("essayInput").value.trim();
   answers[currentStep] = text;
   localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
 
-  // hitung statistik
   const totalWords = answers.reduce((acc, txt) => acc + (txt ? txt.split(/\s+/).length : 0), 0);
   const totalChars = answers.reduce((acc, txt) => acc + (txt ? txt.length : 0), 0);
 
   localStorage.setItem(getKey("caseTotalWords"), totalWords);
   localStorage.setItem(getKey("caseTotalChars"), totalChars);
 
-  // cleanup progress tracking
   localStorage.removeItem(getKey("caseStep"));
   localStorage.removeItem(getKey("caseEndTime"));
 
-  // redirect ke halaman hasil
   window.location.href = "result.html";
 }
 
