@@ -27,18 +27,19 @@ db.ref(`exams/${user.id}`)
 .limitToLast(1)
 .once("value")
 .then(snapshot => {
+
+  if (!snapshot.exists()) {
+    alert("Belum ada hasil ujian.");
+    window.location.href = "dashboard.html";
+    return;
+     
+  }
 /* ================= TAMPILKAN INFO EXAM ================= */
 const mapelEl = document.getElementById("examMapel");
 const paketEl = document.getElementById("examPaket");
 
 if(mapelEl) mapelEl.innerText = (examData.mapel || "-").toUpperCase();
 if(paketEl) paketEl.innerText = examData.paket || "-";
-  if (!snapshot.exists()) {
-    alert("Belum ada hasil ujian.");
-    window.location.href = "dashboard.html";
-    return;
-  }
-
   const examKey = Object.keys(snapshot.val())[0];
   const examData = snapshot.val()[examKey];
 
