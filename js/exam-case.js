@@ -116,18 +116,19 @@ document.getElementById("essayInput").addEventListener("input", updateCounter);
 
 /* ================= BUTTON CONTROL ================= */
 function updateButtons() {
-  const saveBtn = document.getElementById("saveBtn");
+  // SESUAI HTML ANDA: saveNextBtn dan finishBtn
+  const saveNextBtn = document.getElementById("saveNextBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  // Step 1-3: Simpan & Lanjut aktif, Selesai disabled (tapi tampil)
+  // Step 1-3: Simpan & Lanjut aktif, Selesai disabled
   // Step 4: Simpan & Lanjut disabled, Selesai aktif
   
   if (currentStep < 3) {
     // Step 1, 2, 3
-    if (saveBtn) {
-      saveBtn.disabled = false;
-      saveBtn.style.opacity = "1";
-      saveBtn.style.cursor = "pointer";
+    if (saveNextBtn) {
+      saveNextBtn.disabled = false;
+      saveNextBtn.style.opacity = "1";
+      saveNextBtn.style.cursor = "pointer";
     }
     if (finishBtn) {
       finishBtn.disabled = true;
@@ -136,10 +137,10 @@ function updateButtons() {
     }
   } else {
     // Step 4
-    if (saveBtn) {
-      saveBtn.disabled = true;
-      saveBtn.style.opacity = "0.5";
-      saveBtn.style.cursor = "not-allowed";
+    if (saveNextBtn) {
+      saveNextBtn.disabled = true;
+      saveNextBtn.style.opacity = "0.5";
+      saveNextBtn.style.cursor = "not-allowed";
     }
     if (finishBtn) {
       finishBtn.disabled = false;
