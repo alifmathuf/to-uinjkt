@@ -64,12 +64,18 @@ db.ref(`exams/${user.id}`)
 
 /* ================= LOAD STUDI KASUS ================= */
 
+function getCaseKey(key) {
+  const user = Auth.getUser();
+  if (!user) return key;
+  return `${key}_${user.id}`;
+}
+
 function loadCaseResult(){
 
-  const answers = JSON.parse(localStorage.getItem("caseAnswers")) || [];
-  const totalWords = parseInt(localStorage.getItem("caseTotalWords")) || 0;
-  const totalChars = parseInt(localStorage.getItem("caseTotalChars")) || 0;
-  const topic = localStorage.getItem("caseTopic") || "-";
+  const answers = JSON.parse(localStorage.getItem(getCaseKey("caseAnswers"))) || [];
+  const totalWords = parseInt(localStorage.getItem(getCaseKey("caseTotalWords"))) || 0;
+  const totalChars = parseInt(localStorage.getItem(getCaseKey("caseTotalChars"))) || 0;
+  const topic = localStorage.getItem(getCaseKey("caseTopic")) || "-";
 
   // tampilkan di result
   const topicEl = document.getElementById("caseTopic");
@@ -93,6 +99,7 @@ function loadCaseResult(){
 
   localStorage.setItem("caseResult", JSON.stringify(caseResult));
 }
+
 
 /* ================= SAVE GLOBAL LEADERBOARD ================= */
 
