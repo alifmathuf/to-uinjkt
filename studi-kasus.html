@@ -70,15 +70,17 @@
   </div>
 
   <!-- ================= FOOTER ================= -->
-  <div class="case-footer">
 
-    <button id="saveNextBtn" class="case-btn-primary" onclick="saveAndNext()">
-      Simpan & Lanjut
-    </button>
+    <div class="case-footer">
+  <button id="saveBtn" class="case-btn-primary" onclick="saveAndNext()">
+    Simpan & Lanjut
+  </button>
+  
+  <button id="finishBtn" class="case-btn-secondary" onclick="finishCase()" disabled>
+    Selesai
+  </button>
+</div>
 
-    <button id="finishBtn" class="case-btn-secondary" onclick="finishCase()" disabled>
-      Selesai
-    </button>
 
   </div>
 
