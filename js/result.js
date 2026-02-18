@@ -153,10 +153,9 @@ function exportAllPDF() {
   }
   
   const doc = new jsPDF();
-  
-  
-  // AMBIL DATA
-  const reviewData = JSON.parse(localStorage.getItem("reviewData")) || [];
+
+
+  const reviewData = JSON.parse(localStorage.getItem(getKey("reviewData")) || [];
   const caseResult = JSON.parse(localStorage.getItem("caseResult")) || null;
   const hasPG = reviewData.length > 0;
   const hasCase = caseResult && caseResult.title;
