@@ -526,5 +526,27 @@
       "Semua jawaban di atas adalah masalah yang perlu diperhatikan."
     ],
     "a": 4
+  },
+  {
+    "q": "Disajikan deskripsi materi 'Al-Hiwar' (Percakapan) bertema 'Kegiatan Sehari-hari' yang kurang menarik minat siswa, mahasiswa dapat menentukan penggunaan strategi Task-Based Learning (TBL) guna menciptakan suasana belajar aktif dan kolaboratif. Strategi manakah yang paling tepat untuk mencapai tujuan tersebut?",
+    "o": [
+      "Siswa diminta menghafalkan naskah hiwar yang ada di buku paket secara mandiri lalu menyetorkannya kepada guru",
+      "Siswa bekerja dalam kelompok untuk merancang simulasi jadwal harian seorang tokoh terkenal dan mempresentasikannya menggunakan bahasa Arab",
+      "Guru menjelaskan kaidah fi'il mudhari' yang digunakan dalam hiwar melalui presentasi Powerpoint yang searah",
+      "Siswa mengerjakan soal pilihan ganda mengenai kosakata kegiatan sehari-hari di aplikasi kuis daring secara individual",
+      "Siswa menyalin teks percakapan dari buku ke dalam buku tulis masing-masing untuk memperkuat ingatan"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Seorang guru Bahasa Arab ingin mengajarkan maharah qira'ah (keterampilan membaca) materi 'Peradaban Islam'. Beliau ingin menerapkan pendekatan TPACK agar siswa memiliki kemampuan berpikir kritis dan literasi digital. Langkah pelaksanaan pembelajaran yang paling sesuai adalah...",
+    "o": [
+      "Meminta siswa membaca teks di buku cetak secara bergantian lalu menerjemahkannya kata demi kata ke bahasa Indonesia",
+      "Memberikan modul PDF berisi rangkuman teks dan meminta siswa merangkum ulang di buku catatan masing-masing",
+      "Guru memutarkan video dokumenter sejarah Islam tanpa memberikan lembar kerja atau diskusi lanjutan",
+      "Menugaskan siswa mencari artikel digital tambahan, menganalisis perbedaan data sejarah, dan menyajikannya dalam bentuk infografis digital",
+      "Menginstruksikan siswa untuk menulis kosakata sulit dari teks bacaan ke dalam kamus saku pribadi"
+    ],
+    "a": 3
   }
 ]
