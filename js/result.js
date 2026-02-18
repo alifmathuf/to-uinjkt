@@ -21,10 +21,9 @@ document.getElementById("userInfo").innerText =
 
 const db = firebase.database();
 
-/* ================= AMBIL UJIAN TERAKHIR ================= */
+/* ================= AMBIL UJIAN TERAKHIR BERDASARKAN WAKTU ================= */
 
 db.ref(`exams/${user.id}`)
-.limitToLast(1)
 .once("value")
 .then(snapshot => {
 
@@ -34,8 +33,46 @@ db.ref(`exams/${user.id}`)
     return;
   }
 
-  const examKey = Object.keys(snapshot.val())[0];
-  const examData = snapshot.val()[examKey];
+  // Kumpulkan semua ujian dengan submittedAt
+  const exams = [];
+  
+  snapshot.forEach(child => {
+    const examData = child.val();
+    
+    // Handle struktur flat: exams/{userId}/{examKey}/
+    if (examData.submittedAt) {
+      exams.push({
+        key: child.key,
+        ...examData
+      });
+    } 
+    // Handle struktur nested: exams/{userId}/{mapel}/{paket}/
+    else {
+      Object.keys(examData).forEach(subKey => {
+        const subData = examData[subKey];
+        if (subData && subData.submittedAt) {
+          exams.push({
+            key: `${child.key}/${subKey}`,
+            ...subData
+          });
+        }
+      });
+    }
+  });
+
+  if (exams.length === 0) {
+    alert("Belum ada hasil ujian.");
+    window.location.href = "dashboard.html";
+    return;
+  }
+
+  // Urutkan dari yang terbaru (submittedAt terbesar)
+  exams.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
+  
+  // Ambil ujian terakhir
+  const lastExam = exams[0];
+  const examKey = lastExam.key;
+  const examData = lastExam;
 
   const correct = examData.score || 0;
   const total = examData.total || 0;
