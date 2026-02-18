@@ -1,5 +1,5 @@
 /* =================================
-   STUDI KASUS ENGINE - FINAL CLEAN
+   STUDI KASUS ENGINE - FINAL FIX
 ================================= */
 function getKey(key) {
   const user = Auth.getUser();
@@ -54,27 +54,24 @@ function initCase() {
 function startCaseTimer() {
   const saved = localStorage.getItem(getKey("caseEndTime"));
 
-  if (saved) {
-    caseEndTime = parseInt(saved);
-  } else {
+  if (saved) caseEndTime = parseInt(saved);
+  else {
     caseEndTime = Date.now() + duration * 1000;
     localStorage.setItem(getKey("caseEndTime"), caseEndTime);
   }
 
   timerInterval = setInterval(() => {
     const remain = Math.floor((caseEndTime - Date.now()) / 1000);
-
     if (remain <= 0) {
       clearInterval(timerInterval);
       finishCase();
       return;
     }
-
     const m = Math.floor(remain / 60);
     const s = remain % 60;
-
     const timerEl = document.getElementById("caseTimer");
-    if (timerEl) timerEl.innerText = `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+    if (timerEl) timerEl.innerText =
+      `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
   }, 1000);
 }
 
@@ -85,8 +82,10 @@ function renderStep() {
     return;
   }
 
-  document.getElementById("caseStepInfo").innerText = `Soal ${currentStep + 1} dari ${steps.length}`;
-  document.getElementById("caseStepTitle").innerText = steps[currentStep];
+  document.getElementById("caseStepInfo").innerText =
+    `Soal ${currentStep + 1} dari ${steps.length}`;
+  document.getElementById("caseStepTitle").innerText =
+    steps[currentStep];
 
   const textarea = document.getElementById("essayInput");
   textarea.value = answers[currentStep] || "";
@@ -100,7 +99,6 @@ function renderStep() {
 function updateProgress() {
   const total = steps.length;
   const percent = ((currentStep + 1) / total) * 100;
-
   const progressText = document.getElementById("progressText");
   const progressFill = document.getElementById("progressFill");
 
@@ -114,7 +112,6 @@ function updateCounter() {
   const words = text === "" ? 0 : text.split(/\s+/).length;
   document.getElementById("wordCount").innerText = words;
 }
-
 document.getElementById("essayInput").addEventListener("input", updateCounter);
 
 /* ================= BUTTON CONTROL ================= */
@@ -122,34 +119,36 @@ function updateButtons() {
   const saveBtn = document.getElementById("saveBtn");
   const finishBtn = document.getElementById("finishBtn");
 
-  if (saveBtn) saveBtn.disabled = currentStep === steps.length - 1; // step 4 disable
-  if (finishBtn) finishBtn.disabled = currentStep !== steps.length - 1; // step 1-3 disable
+  if (saveBtn) saveBtn.disabled = currentStep >= 3; // step 4 disable save
+  if (finishBtn) finishBtn.disabled = currentStep !== 3; // step 4 enable finish
 }
 
 /* ================= SAVE STEP ================= */
 function saveStep() {
   const text = document.getElementById("essayInput").value.trim();
-
   answers[currentStep] = text;
-  localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
 
-  if (currentStep < steps.length - 1) {
-    currentStep++;
-    localStorage.setItem(getKey("caseStep"), currentStep);
-    renderStep();
-  }
+  localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
+  currentStep++;
+  localStorage.setItem(getKey("caseStep"), currentStep);
+
+  renderStep();
 }
 
 /* ================= FINISH ================= */
 function finishCase() {
   if (timerInterval) clearInterval(timerInterval);
 
+  // simpan jawaban terakhir
+  const text = document.getElementById("essayInput").value.trim();
+  answers[currentStep] = text;
+  localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers));
+
   const totalWords = answers.reduce((acc, txt) => acc + (txt ? txt.split(/\s+/).length : 0), 0);
   const totalChars = answers.reduce((acc, txt) => acc + (txt ? txt.length : 0), 0);
 
   localStorage.setItem(getKey("caseTotalWords"), totalWords);
   localStorage.setItem(getKey("caseTotalChars"), totalChars);
-  localStorage.setItem(getKey("caseAnswers"), JSON.stringify(answers)); // pastikan tersimpan
 
   localStorage.removeItem(getKey("caseStep"));
   localStorage.removeItem(getKey("caseEndTime"));
