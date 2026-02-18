@@ -11,6 +11,13 @@
   box-shadow:var(--shadow-soft);
 }
 
+.exam-info{
+  margin: 8px 0 16px 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 
 /* ================= SCORE BOX ================= */
 
@@ -29,6 +36,7 @@
   font-size:14px;
   letter-spacing:.5px;
 }
+
 
 
 /* ================= PG DETAIL ================= */
